@@ -51,7 +51,7 @@ $(function() {
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0"
+<iframe src="javascript:void(0)" frameborder="0" 
         name="MSearchResults" id="MSearchResults">
 </iframe>
 </div>
@@ -69,6 +69,8 @@ $(function() {
 <div class="title">engine::platform::opengl::OpenGLVertexBuffer Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="OpenGLBuffer_8h_source.html">OpenGLBuffer.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for engine::platform::opengl::OpenGLVertexBuffer:</div>
 <div class="dyncontent">
@@ -91,19 +93,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a481164805afb44795f3e545e07c3b3bc"><td class="memItemLeft" align="right" valign="top"><a id="a481164805afb44795f3e545e07c3b3bc"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>OpenGLVertexBuffer</b> (float *vertices, uint32_t size)</td></tr>
 <tr class="separator:a481164805afb44795f3e545e07c3b3bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac50918719a747f81d7fe94dfcc8dec13"><td class="memItemLeft" align="right" valign="top"><a id="ac50918719a747f81d7fe94dfcc8dec13"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Bind</b> () const override</td></tr>
+<tr class="memitem:ac50918719a747f81d7fe94dfcc8dec13"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1platform_1_1opengl_1_1OpenGLVertexBuffer.html#ac50918719a747f81d7fe94dfcc8dec13">Bind</a> () const override</td></tr>
 <tr class="separator:ac50918719a747f81d7fe94dfcc8dec13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9069ca746c0de9dd9418ba9c5ee7b67b"><td class="memItemLeft" align="right" valign="top"><a id="a9069ca746c0de9dd9418ba9c5ee7b67b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Unbind</b> () const override</td></tr>
+<tr class="memitem:a9069ca746c0de9dd9418ba9c5ee7b67b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1platform_1_1opengl_1_1OpenGLVertexBuffer.html#a9069ca746c0de9dd9418ba9c5ee7b67b">Unbind</a> () const override</td></tr>
 <tr class="separator:a9069ca746c0de9dd9418ba9c5ee7b67b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classengine_1_1renderer_1_1VertexBuffer"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classengine_1_1renderer_1_1VertexBuffer')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classengine_1_1renderer_1_1VertexBuffer.html">engine::renderer::VertexBuffer</a></td></tr>
-<tr class="memitem:ab769bac40b3e30891fa4d5ee35ae6f2b inherit pub_methods_classengine_1_1renderer_1_1VertexBuffer"><td class="memItemLeft" align="right" valign="top"><a id="ab769bac40b3e30891fa4d5ee35ae6f2b"></a>
-virtual const <a class="el" href="classengine_1_1renderer_1_1BufferLayout.html">BufferLayout</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetLayout</b> () const =0</td></tr>
-<tr class="separator:ab769bac40b3e30891fa4d5ee35ae6f2b inherit pub_methods_classengine_1_1renderer_1_1VertexBuffer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2885e3856bfb698178b6cd00a4dc7aab inherit pub_methods_classengine_1_1renderer_1_1VertexBuffer"><td class="memItemLeft" align="right" valign="top"><a id="a2885e3856bfb698178b6cd00a4dc7aab"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetLayout</b> (const <a class="el" href="classengine_1_1renderer_1_1BufferLayout.html">BufferLayout</a> &amp;)=0</td></tr>
-<tr class="separator:a2885e3856bfb698178b6cd00a4dc7aab inherit pub_methods_classengine_1_1renderer_1_1VertexBuffer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d4f81503171f6bbe41ece0fada23390"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classengine_1_1renderer_1_1BufferLayout.html">renderer::BufferLayout</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1platform_1_1opengl_1_1OpenGLVertexBuffer.html#a0d4f81503171f6bbe41ece0fada23390">GetLayout</a> () const override</td></tr>
+<tr class="separator:a0d4f81503171f6bbe41ece0fada23390"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a957a9dc55dc35ce4302654e1a394e5f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1platform_1_1opengl_1_1OpenGLVertexBuffer.html#a957a9dc55dc35ce4302654e1a394e5f8">SetLayout</a> (const <a class="el" href="classengine_1_1renderer_1_1BufferLayout.html">renderer::BufferLayout</a> &amp;layout) override</td></tr>
+<tr class="separator:a957a9dc55dc35ce4302654e1a394e5f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -112,6 +109,122 @@ Additional Inherited Members</h2></td></tr>
 static <a class="el" href="classengine_1_1renderer_1_1VertexBuffer.html">VertexBuffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>Create</b> (float *vertices, uint32_t size)</td></tr>
 <tr class="separator:ad7590ff8837ebcf2ed645f4a379e04d8 inherit pub_static_methods_classengine_1_1renderer_1_1VertexBuffer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The OpenGL VertexBuffer implementation based off the generic VertexBuffer base class provided by the engines renderer. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac50918719a747f81d7fe94dfcc8dec13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac50918719a747f81d7fe94dfcc8dec13">&#9670;&nbsp;</a></span>Bind()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void engine::platform::opengl::OpenGLVertexBuffer::Bind </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Create and bind the vertex buffer on the GPU. Will set the renderer_ID_. </p>
+
+<p>Implements <a class="el" href="classengine_1_1renderer_1_1VertexBuffer.html">engine::renderer::VertexBuffer</a>.</p>
+
+</div>
+</div>
+<a id="a0d4f81503171f6bbe41ece0fada23390"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d4f81503171f6bbe41ece0fada23390">&#9670;&nbsp;</a></span>GetLayout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classengine_1_1renderer_1_1BufferLayout.html">renderer::BufferLayout</a>&amp; engine::platform::opengl::OpenGLVertexBuffer::GetLayout </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the BufferLayout associated with the current VertexBuffer. </p>
+
+<p>Implements <a class="el" href="classengine_1_1renderer_1_1VertexBuffer.html">engine::renderer::VertexBuffer</a>.</p>
+
+</div>
+</div>
+<a id="a957a9dc55dc35ce4302654e1a394e5f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a957a9dc55dc35ce4302654e1a394e5f8">&#9670;&nbsp;</a></span>SetLayout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void engine::platform::opengl::OpenGLVertexBuffer::SetLayout </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classengine_1_1renderer_1_1BufferLayout.html">renderer::BufferLayout</a> &amp;&#160;</td>
+          <td class="paramname"><em>layout</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set the BufferLayout associated with the current VertexBuffer. </p>
+
+<p>Implements <a class="el" href="classengine_1_1renderer_1_1VertexBuffer.html">engine::renderer::VertexBuffer</a>.</p>
+
+</div>
+</div>
+<a id="a9069ca746c0de9dd9418ba9c5ee7b67b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9069ca746c0de9dd9418ba9c5ee7b67b">&#9670;&nbsp;</a></span>Unbind()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void engine::platform::opengl::OpenGLVertexBuffer::Unbind </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Unbind and delete the vertex buffer on GPU using the renderer_ID_ associated with it. </p>
+
+<p>Implements <a class="el" href="classengine_1_1renderer_1_1VertexBuffer.html">engine::renderer::VertexBuffer</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>engine/src/platform/opengl/<a class="el" href="OpenGLBuffer_8h_source.html">OpenGLBuffer.h</a></li>
 <li>engine/src/platform/opengl/OpenGLBuffer.cpp</li>

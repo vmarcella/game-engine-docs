@@ -1,8 +1,8 @@
 var indexSectionsWithContent =
 {
-  0: "abegiklmorsvw",
+  0: "abegiklmorsuvw",
   1: "abegiklmorsvw",
-  2: "o"
+  2: "bgosu"
 };
 
 var indexSectionNames =
@@ -18,3 +18,4 @@ var indexSectionLabels =
   1: "Classes",
   2: "Functions"
 };
+

@@ -1,31 +1,54 @@
 \hypertarget{structengine_1_1renderer_1_1BufferElement}{}\section{engine\+:\+:renderer\+:\+:Buffer\+Element Struct Reference}
 \label{structengine_1_1renderer_1_1BufferElement}\index{engine\+::renderer\+::\+Buffer\+Element@{engine\+::renderer\+::\+Buffer\+Element}}
+
+
+{\ttfamily \#include $<$Buffer.\+h$>$}
+
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
-\item
-\mbox{\Hypertarget{structengine_1_1renderer_1_1BufferElement_afcfba21a475250f0ef5f002893b2ebb0}\label{structengine_1_1renderer_1_1BufferElement_afcfba21a475250f0ef5f002893b2ebb0}}
-{\bfseries Buffer\+Element} (Shader\+Data\+Type type, const std\+::string \&name)
+\item 
+\hyperlink{structengine_1_1renderer_1_1BufferElement_a76049a787d70b0adf984e65a9994bc1d}{Buffer\+Element} (Shader\+Data\+Type type, const std\+::string \&name, bool normalized=false)
+\item 
+\mbox{\Hypertarget{structengine_1_1renderer_1_1BufferElement_a577994a84ccd055e3ec24655bb011689}\label{structengine_1_1renderer_1_1BufferElement_a577994a84ccd055e3ec24655bb011689}} 
+std\+::string {\bfseries To\+String} () const
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
-\item
-\mbox{\Hypertarget{structengine_1_1renderer_1_1BufferElement_ad15963c4b3ba16476cce390f77bcb549}\label{structengine_1_1renderer_1_1BufferElement_ad15963c4b3ba16476cce390f77bcb549}}
+\item 
+\mbox{\Hypertarget{structengine_1_1renderer_1_1BufferElement_ad15963c4b3ba16476cce390f77bcb549}\label{structengine_1_1renderer_1_1BufferElement_ad15963c4b3ba16476cce390f77bcb549}} 
 Shader\+Data\+Type {\bfseries Type}
-\item
-\mbox{\Hypertarget{structengine_1_1renderer_1_1BufferElement_a4d15f927313a59f54d234c435a254fb8}\label{structengine_1_1renderer_1_1BufferElement_a4d15f927313a59f54d234c435a254fb8}}
+\item 
+\mbox{\Hypertarget{structengine_1_1renderer_1_1BufferElement_a4d15f927313a59f54d234c435a254fb8}\label{structengine_1_1renderer_1_1BufferElement_a4d15f927313a59f54d234c435a254fb8}} 
 std\+::string {\bfseries Name}
-\item
-\mbox{\Hypertarget{structengine_1_1renderer_1_1BufferElement_acbe3158f166940f1b6a0c9f1add6e028}\label{structengine_1_1renderer_1_1BufferElement_acbe3158f166940f1b6a0c9f1add6e028}}
-uint32\+\_\+t {\bfseries Offset}
-\item
-\mbox{\Hypertarget{structengine_1_1renderer_1_1BufferElement_aa56181d65756cf32e9c3957bad71c2c1}\label{structengine_1_1renderer_1_1BufferElement_aa56181d65756cf32e9c3957bad71c2c1}}
+\item 
+\mbox{\Hypertarget{structengine_1_1renderer_1_1BufferElement_aa56181d65756cf32e9c3957bad71c2c1}\label{structengine_1_1renderer_1_1BufferElement_aa56181d65756cf32e9c3957bad71c2c1}} 
 uint32\+\_\+t {\bfseries Size}
-\item
-\mbox{\Hypertarget{structengine_1_1renderer_1_1BufferElement_ab87e87069a1ef81d4b115b9407b46de5}\label{structengine_1_1renderer_1_1BufferElement_ab87e87069a1ef81d4b115b9407b46de5}}
-uint32\+\_\+t {\bfseries Count}
+\item 
+\mbox{\Hypertarget{structengine_1_1renderer_1_1BufferElement_acbe3158f166940f1b6a0c9f1add6e028}\label{structengine_1_1renderer_1_1BufferElement_acbe3158f166940f1b6a0c9f1add6e028}} 
+uint32\+\_\+t {\bfseries Offset}
+\item 
+\mbox{\Hypertarget{structengine_1_1renderer_1_1BufferElement_aa67fb27da8ee0faae62a142614a537ff}\label{structengine_1_1renderer_1_1BufferElement_aa67fb27da8ee0faae62a142614a537ff}} 
+uint32\+\_\+t {\bfseries Components}
+\item 
+\mbox{\Hypertarget{structengine_1_1renderer_1_1BufferElement_ae6515d1eab82fff649da068b2ae863c0}\label{structengine_1_1renderer_1_1BufferElement_ae6515d1eab82fff649da068b2ae863c0}} 
+bool {\bfseries Normalized}
 \end{DoxyCompactItemize}
 
 
+\subsection{Detailed Description}
+A generic buffer element that allows contexts to access. These components are to be used in the process of creatintg a \hyperlink{classengine_1_1renderer_1_1BufferLayout}{Buffer\+Layout}.
+
+The creation of every buffer is logged if E\+N\+G\+I\+N\+E\+\_\+\+D\+E\+V\+E\+L\+O\+P\+M\+E\+N\+T\+\_\+\+M\+O\+DE is enabled at compile time of of the engine. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structengine_1_1renderer_1_1BufferElement_a76049a787d70b0adf984e65a9994bc1d}\label{structengine_1_1renderer_1_1BufferElement_a76049a787d70b0adf984e65a9994bc1d}} 
+\index{engine\+::renderer\+::\+Buffer\+Element@{engine\+::renderer\+::\+Buffer\+Element}!Buffer\+Element@{Buffer\+Element}}
+\index{Buffer\+Element@{Buffer\+Element}!engine\+::renderer\+::\+Buffer\+Element@{engine\+::renderer\+::\+Buffer\+Element}}
+\subsubsection{\texorpdfstring{Buffer\+Element()}{BufferElement()}}
+{\footnotesize\ttfamily engine\+::renderer\+::\+Buffer\+Element\+::\+Buffer\+Element (\begin{DoxyParamCaption}\item[{Shader\+Data\+Type}]{type,  }\item[{const std\+::string \&}]{name,  }\item[{bool}]{normalized = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a buffer element with a shader type and variable name to be used by the current graphics context shader A\+PI. 
+
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
-\item
+\item 
 engine/src/core/renderer/Buffer.\+h\end{DoxyCompactItemize}

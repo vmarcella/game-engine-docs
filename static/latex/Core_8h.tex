@@ -5,8 +5,7 @@
 Core macros to be used all throughout the engine for development and production purposes.  
 
 
-This graph shows which files directly or indirectly include this file\+:
-\nopagebreak
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -16,32 +15,18 @@ This graph shows which files directly or indirectly include this file\+:
 \subsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\Hypertarget{Core_8h_a0697ee40f69dc5dab56d13131f4c4835}\label{Core_8h_a0697ee40f69dc5dab56d13131f4c4835}} 
 \#define \hyperlink{Core_8h_a0697ee40f69dc5dab56d13131f4c4835}{E\+N\+G\+I\+N\+E\+\_\+\+A\+PI}
 \begin{DoxyCompactList}\small\item\em Handles exporting the engine if it\textquotesingle{}s being built as a dll. Potentially deprecated. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{Core_8h_ae79feff140f19bd881e457bfa4cbfbd4}\label{Core_8h_ae79feff140f19bd881e457bfa4cbfbd4}} 
 \#define \hyperlink{Core_8h_ae79feff140f19bd881e457bfa4cbfbd4}{E\+N\+G\+I\+N\+E\+\_\+\+D\+E\+B\+U\+G\+\_\+\+B\+R\+E\+AK}()
 \begin{DoxyCompactList}\small\item\em Allows the execution of breakpoints throughout the engine when debuggin. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{Core_8h_ad27cc17b25bb93134368d5eb21126eae}\label{Core_8h_ad27cc17b25bb93134368d5eb21126eae}} 
-\#define {\bfseries B\+IT}(x)~(1 $<$$<$ x)
-\end{DoxyCompactItemize}
+\#define \hyperlink{Core_8h_ad27cc17b25bb93134368d5eb21126eae}{B\+IT}(x)~(1 $<$$<$ x)
+\begin{DoxyCompactList}\small\item\em Creates the bit representation of an integer. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 Core macros to be used all throughout the engine for development and production purposes. 
 
 This header includes core macros that are used all throughout the engine for many different internal usage. You most likely won\textquotesingle{}t need to use anything from this file specifically and instead might find {\ttfamily \hyperlink{Log_8h_source}{core/\+Log.\+h}} and {\ttfamily \hyperlink{Assert_8h_source}{core/\+Assert.\+h}} more useful as they extend core and provide logging and assertions (If enabled). 
-
-\subsection{Macro Definition Documentation}
-\mbox{\Hypertarget{Core_8h_a0697ee40f69dc5dab56d13131f4c4835}\label{Core_8h_a0697ee40f69dc5dab56d13131f4c4835}} 
-\index{Core.\+h@{Core.\+h}!E\+N\+G\+I\+N\+E\+\_\+\+A\+PI@{E\+N\+G\+I\+N\+E\+\_\+\+A\+PI}}
-\index{E\+N\+G\+I\+N\+E\+\_\+\+A\+PI@{E\+N\+G\+I\+N\+E\+\_\+\+A\+PI}!Core.\+h@{Core.\+h}}
-\subsubsection{\texorpdfstring{E\+N\+G\+I\+N\+E\+\_\+\+A\+PI}{ENGINE\_API}}
-{\footnotesize\ttfamily \#define E\+N\+G\+I\+N\+E\+\_\+\+A\+PI}
-
-
-
-Handles exporting the engine if it\textquotesingle{}s being built as a dll. Potentially deprecated. 
-
-Creates the bit representation of an integer.
-
-B\+I\+T(x) 

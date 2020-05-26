@@ -75,6 +75,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a9740cd2e55318cbc5684a6c4c2f3304f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1Application.html#a9740cd2e55318cbc5684a6c4c2f3304f">Application</a> ()</td></tr>
+<tr class="separator:a9740cd2e55318cbc5684a6c4c2f3304f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4dcdf08d920f7f63013a25cb1e80438b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1Application.html#a4dcdf08d920f7f63013a25cb1e80438b">Run</a> ()</td></tr>
 <tr class="separator:a4dcdf08d920f7f63013a25cb1e80438b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a093e14152fc1eda1b5eba682a2b4afd9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1Application.html#a093e14152fc1eda1b5eba682a2b4afd9">OnEvent</a> (<a class="el" href="classengine_1_1events_1_1Event.html">events::Event</a> *event)</td></tr>
@@ -93,7 +95,26 @@ Static Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An individual platform independent application instance that manages the lifecycle of the core and lower level components of the engine. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a9740cd2e55318cbc5684a6c4c2f3304f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9740cd2e55318cbc5684a6c4c2f3304f">&#9670;&nbsp;</a></span>Application()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">engine::Application::Application </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>TODO(C3NZ): This should not carry as much of a load as it currently does and should instead be delegated to applications attempting to use the engine. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a639cdab87d3c5a14d0a9e9203d6c7c97"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a639cdab87d3c5a14d0a9e9203d6c7c97">&#9670;&nbsp;</a></span>GetApplication()</h2>
 
@@ -161,7 +182,8 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The primary event handler for all applications. </p>
+<p>The primary event handler for all applications.</p>
+<p>This function only specifically listens for when the window is requested to close before passing the event to layers on the <a class="el" href="classengine_1_1LayerStack.html">LayerStack</a>. </p>
 
 </div>
 </div>
@@ -217,7 +239,8 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Controls the applications lifecycle and all lower level functionality like input, events, rendering, networking, etc. </p>
+<p>Controls the applications lifecycle and all lower level functionality like input, events, rendering, networking, etc.</p>
+<p>This currently does a lot of custom rendering when in reality it should be implemented by a child project that is running the game. This will change in the future, but at the moment implements a lot of specific rendering tests that are for ensuring that the renderer currently works. </p>
 
 </div>
 </div>

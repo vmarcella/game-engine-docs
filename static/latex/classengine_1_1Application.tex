@@ -7,6 +7,8 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\hyperlink{classengine_1_1Application_a9740cd2e55318cbc5684a6c4c2f3304f}{Application} ()
+\item 
 void \hyperlink{classengine_1_1Application_a4dcdf08d920f7f63013a25cb1e80438b}{Run} ()
 \item 
 void \hyperlink{classengine_1_1Application_a093e14152fc1eda1b5eba682a2b4afd9}{On\+Event} (\hyperlink{classengine_1_1events_1_1Event}{events\+::\+Event} $\ast$event)
@@ -27,6 +29,15 @@ static \hyperlink{classengine_1_1Application}{Application} \& \hyperlink{classen
 \subsection{Detailed Description}
 An individual platform independent application instance that manages the lifecycle of the core and lower level components of the engine. 
 
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classengine_1_1Application_a9740cd2e55318cbc5684a6c4c2f3304f}\label{classengine_1_1Application_a9740cd2e55318cbc5684a6c4c2f3304f}} 
+\index{engine\+::\+Application@{engine\+::\+Application}!Application@{Application}}
+\index{Application@{Application}!engine\+::\+Application@{engine\+::\+Application}}
+\subsubsection{\texorpdfstring{Application()}{Application()}}
+{\footnotesize\ttfamily engine\+::\+Application\+::\+Application (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+T\+O\+D\+O(\+C3\+N\+Z)\+: This should not carry as much of a load as it currently does and should instead be delegated to applications attempting to use the engine. 
+
 \subsection{Member Function Documentation}
 \mbox{\Hypertarget{classengine_1_1Application_a639cdab87d3c5a14d0a9e9203d6c7c97}\label{classengine_1_1Application_a639cdab87d3c5a14d0a9e9203d6c7c97}} 
 \index{engine\+::\+Application@{engine\+::\+Application}!Get\+Application@{Get\+Application}}
@@ -46,7 +57,9 @@ This gets the window implementiation for the current window system. Currently, o
 \subsubsection{\texorpdfstring{On\+Event()}{OnEvent()}}
 {\footnotesize\ttfamily void engine\+::\+Application\+::\+On\+Event (\begin{DoxyParamCaption}\item[{\hyperlink{classengine_1_1events_1_1Event}{events\+::\+Event} $\ast$}]{event }\end{DoxyParamCaption})}
 
-The primary event handler for all applications. \mbox{\Hypertarget{classengine_1_1Application_adb129a86a6cdbd80b25094d08605d213}\label{classengine_1_1Application_adb129a86a6cdbd80b25094d08605d213}} 
+The primary event handler for all applications.
+
+This function only specifically listens for when the window is requested to close before passing the event to layers on the \hyperlink{classengine_1_1LayerStack}{Layer\+Stack}. \mbox{\Hypertarget{classengine_1_1Application_adb129a86a6cdbd80b25094d08605d213}\label{classengine_1_1Application_adb129a86a6cdbd80b25094d08605d213}} 
 \index{engine\+::\+Application@{engine\+::\+Application}!Push\+Layer@{Push\+Layer}}
 \index{Push\+Layer@{Push\+Layer}!engine\+::\+Application@{engine\+::\+Application}}
 \subsubsection{\texorpdfstring{Push\+Layer()}{PushLayer()}}
@@ -64,7 +77,9 @@ Attaches an overlay to the application instance. This allows the application ins
 \subsubsection{\texorpdfstring{Run()}{Run()}}
 {\footnotesize\ttfamily void engine\+::\+Application\+::\+Run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Controls the applications lifecycle and all lower level functionality like input, events, rendering, networking, etc. 
+Controls the applications lifecycle and all lower level functionality like input, events, rendering, networking, etc.
+
+This currently does a lot of custom rendering when in reality it should be implemented by a child project that is running the game. This will change in the future, but at the moment implements a lot of specific rendering tests that are for ensuring that the renderer currently works. 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

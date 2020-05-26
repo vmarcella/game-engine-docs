@@ -7,31 +7,64 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classengine_1_1Application_a4dcdf08d920f7f63013a25cb1e80438b}\label{classengine_1_1Application_a4dcdf08d920f7f63013a25cb1e80438b}} 
-void {\bfseries Run} ()
+void \hyperlink{classengine_1_1Application_a4dcdf08d920f7f63013a25cb1e80438b}{Run} ()
 \item 
-\mbox{\Hypertarget{classengine_1_1Application_a093e14152fc1eda1b5eba682a2b4afd9}\label{classengine_1_1Application_a093e14152fc1eda1b5eba682a2b4afd9}} 
-void {\bfseries On\+Event} (\hyperlink{classengine_1_1events_1_1Event}{events\+::\+Event} $\ast$event)
+void \hyperlink{classengine_1_1Application_a093e14152fc1eda1b5eba682a2b4afd9}{On\+Event} (\hyperlink{classengine_1_1events_1_1Event}{events\+::\+Event} $\ast$event)
 \item 
-\mbox{\Hypertarget{classengine_1_1Application_adb129a86a6cdbd80b25094d08605d213}\label{classengine_1_1Application_adb129a86a6cdbd80b25094d08605d213}} 
-void {\bfseries Push\+Layer} (\hyperlink{classengine_1_1Layer}{Layer} $\ast$layer)
+void \hyperlink{classengine_1_1Application_adb129a86a6cdbd80b25094d08605d213}{Push\+Layer} (\hyperlink{classengine_1_1Layer}{Layer} $\ast$layer)
 \item 
-\mbox{\Hypertarget{classengine_1_1Application_a00041c455b5699665d21662be95abd85}\label{classengine_1_1Application_a00041c455b5699665d21662be95abd85}} 
-void {\bfseries Push\+Overlay} (\hyperlink{classengine_1_1Layer}{Layer} $\ast$layer)
+void \hyperlink{classengine_1_1Application_a00041c455b5699665d21662be95abd85}{Push\+Overlay} (\hyperlink{classengine_1_1Layer}{Layer} $\ast$layer)
 \item 
-\mbox{\Hypertarget{classengine_1_1Application_a0c66a3ff294bcc497bb2e8eb7330124c}\label{classengine_1_1Application_a0c66a3ff294bcc497bb2e8eb7330124c}} 
-const \hyperlink{classengine_1_1Window}{Window} \& {\bfseries Get\+Window} () const
+const \hyperlink{classengine_1_1Window}{Window} \& \hyperlink{classengine_1_1Application_a0c66a3ff294bcc497bb2e8eb7330124c}{Get\+Window} () const
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classengine_1_1Application_a639cdab87d3c5a14d0a9e9203d6c7c97}\label{classengine_1_1Application_a639cdab87d3c5a14d0a9e9203d6c7c97}} 
-static \hyperlink{classengine_1_1Application}{Application} \& {\bfseries Get\+Application} ()
+static \hyperlink{classengine_1_1Application}{Application} \& \hyperlink{classengine_1_1Application_a639cdab87d3c5a14d0a9e9203d6c7c97}{Get\+Application} ()
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-An individual platform independent application instance that manages the lifecycle of core components of an application being created through our 
+An individual platform independent application instance that manages the lifecycle of the core and lower level components of the engine. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classengine_1_1Application_a639cdab87d3c5a14d0a9e9203d6c7c97}\label{classengine_1_1Application_a639cdab87d3c5a14d0a9e9203d6c7c97}} 
+\index{engine\+::\+Application@{engine\+::\+Application}!Get\+Application@{Get\+Application}}
+\index{Get\+Application@{Get\+Application}!engine\+::\+Application@{engine\+::\+Application}}
+\subsubsection{\texorpdfstring{Get\+Application()}{GetApplication()}}
+{\footnotesize\ttfamily static \hyperlink{classengine_1_1Application}{Application}\& engine\+::\+Application\+::\+Get\+Application (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+The application is instantiated at runtime and this function is independent of any single application instance (There can currently only be one instance running, anyways.) \mbox{\Hypertarget{classengine_1_1Application_a0c66a3ff294bcc497bb2e8eb7330124c}\label{classengine_1_1Application_a0c66a3ff294bcc497bb2e8eb7330124c}} 
+\index{engine\+::\+Application@{engine\+::\+Application}!Get\+Window@{Get\+Window}}
+\index{Get\+Window@{Get\+Window}!engine\+::\+Application@{engine\+::\+Application}}
+\subsubsection{\texorpdfstring{Get\+Window()}{GetWindow()}}
+{\footnotesize\ttfamily const \hyperlink{classengine_1_1Window}{Window}\& engine\+::\+Application\+::\+Get\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+This gets the window implementiation for the current window system. Currently, only opengl is known to be supported for both linux and windows platforms. \mbox{\Hypertarget{classengine_1_1Application_a093e14152fc1eda1b5eba682a2b4afd9}\label{classengine_1_1Application_a093e14152fc1eda1b5eba682a2b4afd9}} 
+\index{engine\+::\+Application@{engine\+::\+Application}!On\+Event@{On\+Event}}
+\index{On\+Event@{On\+Event}!engine\+::\+Application@{engine\+::\+Application}}
+\subsubsection{\texorpdfstring{On\+Event()}{OnEvent()}}
+{\footnotesize\ttfamily void engine\+::\+Application\+::\+On\+Event (\begin{DoxyParamCaption}\item[{\hyperlink{classengine_1_1events_1_1Event}{events\+::\+Event} $\ast$}]{event }\end{DoxyParamCaption})}
+
+The primary event handler for all applications. \mbox{\Hypertarget{classengine_1_1Application_adb129a86a6cdbd80b25094d08605d213}\label{classengine_1_1Application_adb129a86a6cdbd80b25094d08605d213}} 
+\index{engine\+::\+Application@{engine\+::\+Application}!Push\+Layer@{Push\+Layer}}
+\index{Push\+Layer@{Push\+Layer}!engine\+::\+Application@{engine\+::\+Application}}
+\subsubsection{\texorpdfstring{Push\+Layer()}{PushLayer()}}
+{\footnotesize\ttfamily void engine\+::\+Application\+::\+Push\+Layer (\begin{DoxyParamCaption}\item[{\hyperlink{classengine_1_1Layer}{Layer} $\ast$}]{layer }\end{DoxyParamCaption})}
+
+Attaches a layer to the application instance. This allows the application instance to propage events, rendering, and any desired pieces of data into the layer. \mbox{\Hypertarget{classengine_1_1Application_a00041c455b5699665d21662be95abd85}\label{classengine_1_1Application_a00041c455b5699665d21662be95abd85}} 
+\index{engine\+::\+Application@{engine\+::\+Application}!Push\+Overlay@{Push\+Overlay}}
+\index{Push\+Overlay@{Push\+Overlay}!engine\+::\+Application@{engine\+::\+Application}}
+\subsubsection{\texorpdfstring{Push\+Overlay()}{PushOverlay()}}
+{\footnotesize\ttfamily void engine\+::\+Application\+::\+Push\+Overlay (\begin{DoxyParamCaption}\item[{\hyperlink{classengine_1_1Layer}{Layer} $\ast$}]{layer }\end{DoxyParamCaption})}
+
+Attaches an overlay to the application instance. This allows the application instance to propage events, renderine, and any desired pieces of data into the layer. \mbox{\Hypertarget{classengine_1_1Application_a4dcdf08d920f7f63013a25cb1e80438b}\label{classengine_1_1Application_a4dcdf08d920f7f63013a25cb1e80438b}} 
+\index{engine\+::\+Application@{engine\+::\+Application}!Run@{Run}}
+\index{Run@{Run}!engine\+::\+Application@{engine\+::\+Application}}
+\subsubsection{\texorpdfstring{Run()}{Run()}}
+{\footnotesize\ttfamily void engine\+::\+Application\+::\+Run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Controls the applications lifecycle and all lower level functionality like input, events, rendering, networking, etc. 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

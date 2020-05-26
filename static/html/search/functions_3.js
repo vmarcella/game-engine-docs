@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['setlayout',['SetLayout',['../classengine_1_1platform_1_1opengl_1_1OpenGLVertexBuffer.html#a957a9dc55dc35ce4302654e1a394e5f8',1,'engine::platform::opengl::OpenGLVertexBuffer']]]
+  ['pushlayer',['PushLayer',['../classengine_1_1Application.html#adb129a86a6cdbd80b25094d08605d213',1,'engine::Application']]],
+  ['pushoverlay',['PushOverlay',['../classengine_1_1Application.html#a00041c455b5699665d21662be95abd85',1,'engine::Application']]]
 ];

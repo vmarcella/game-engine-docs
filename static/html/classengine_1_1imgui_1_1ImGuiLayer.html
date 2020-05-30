@@ -69,6 +69,11 @@ $(function() {
 <div class="title">engine::imgui::ImGuiLayer Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>An abstract Imgui layer implementation.  
+ <a href="classengine_1_1imgui_1_1ImGuiLayer.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="ImGuiLayer_8h_source.html">ImGuiLayer.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for engine::imgui::ImGuiLayer:</div>
 <div class="dyncontent">
@@ -88,21 +93,21 @@ Collaboration diagram for engine::imgui::ImGuiLayer:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab3820ce44fcc9471f14c905510848f3e"><td class="memItemLeft" align="right" valign="top"><a id="ab3820ce44fcc9471f14c905510848f3e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAttach</b> () override</td></tr>
-<tr class="separator:ab3820ce44fcc9471f14c905510848f3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af84a7c8e766167706345754587ced38e"><td class="memItemLeft" align="right" valign="top"><a id="af84a7c8e766167706345754587ced38e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnDetach</b> () override</td></tr>
-<tr class="separator:af84a7c8e766167706345754587ced38e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa2388f874b2ede821ec8ba4f8642900"><td class="memItemLeft" align="right" valign="top"><a id="aaa2388f874b2ede821ec8ba4f8642900"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnImGuiRender</b> () override</td></tr>
-<tr class="separator:aaa2388f874b2ede821ec8ba4f8642900"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a246081f496037b22475d76e3a9897ac9"><td class="memItemLeft" align="right" valign="top"><a id="a246081f496037b22475d76e3a9897ac9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Begin</b> ()</td></tr>
-<tr class="separator:a246081f496037b22475d76e3a9897ac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ad4c7169268bc19745b50b00282c9a9"><td class="memItemLeft" align="right" valign="top"><a id="a7ad4c7169268bc19745b50b00282c9a9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>End</b> ()</td></tr>
-<tr class="separator:a7ad4c7169268bc19745b50b00282c9a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8580bd31942d4bc33f268053d2adec31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1imgui_1_1ImGuiLayer.html#a8580bd31942d4bc33f268053d2adec31">OnAttach</a> () override</td></tr>
+<tr class="memdesc:a8580bd31942d4bc33f268053d2adec31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles an ImGuiLayers attachment to the engine.  <a href="#a8580bd31942d4bc33f268053d2adec31">More...</a><br /></td></tr>
+<tr class="separator:a8580bd31942d4bc33f268053d2adec31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad443a984abe93f4101fdbadcea01bf9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1imgui_1_1ImGuiLayer.html#ad443a984abe93f4101fdbadcea01bf9b">OnDetach</a> () override</td></tr>
+<tr class="memdesc:ad443a984abe93f4101fdbadcea01bf9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles an ImGuiLayers detachment to the engine.  <a href="#ad443a984abe93f4101fdbadcea01bf9b">More...</a><br /></td></tr>
+<tr class="separator:ad443a984abe93f4101fdbadcea01bf9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeacc4aecfc119192fbe98e961b88813e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1imgui_1_1ImGuiLayer.html#aeacc4aecfc119192fbe98e961b88813e">OnImGuiRender</a> () override</td></tr>
+<tr class="memdesc:aeacc4aecfc119192fbe98e961b88813e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles an ImGuiRender Call by the engine.  <a href="#aeacc4aecfc119192fbe98e961b88813e">More...</a><br /></td></tr>
+<tr class="separator:aeacc4aecfc119192fbe98e961b88813e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaecbd780bfe93ea0b85c9b31c3a931de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1imgui_1_1ImGuiLayer.html#aaecbd780bfe93ea0b85c9b31c3a931de">Begin</a> ()</td></tr>
+<tr class="memdesc:aaecbd780bfe93ea0b85c9b31c3a931de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiates the context for the Imgui layer.  <a href="#aaecbd780bfe93ea0b85c9b31c3a931de">More...</a><br /></td></tr>
+<tr class="separator:aaecbd780bfe93ea0b85c9b31c3a931de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca4c57dc3361ed5c4c75a9c43b8dc1e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1imgui_1_1ImGuiLayer.html#aca4c57dc3361ed5c4c75a9c43b8dc1e6">End</a> ()</td></tr>
+<tr class="memdesc:aca4c57dc3361ed5c4c75a9c43b8dc1e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes and cleans up the context for the Imgui layer.  <a href="#aca4c57dc3361ed5c4c75a9c43b8dc1e6">More...</a><br /></td></tr>
+<tr class="separator:aca4c57dc3361ed5c4c75a9c43b8dc1e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classengine_1_1Layer"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classengine_1_1Layer')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classengine_1_1Layer.html">engine::Layer</a></td></tr>
 <tr class="memitem:a7c94872b9fc69fd1695e21319c6ae495 inherit pub_methods_classengine_1_1Layer"><td class="memItemLeft" align="right" valign="top"><a id="a7c94872b9fc69fd1695e21319c6ae495"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Layer</b> (const std::string &amp;name=&quot;Layer&quot;)</td></tr>
@@ -124,6 +129,141 @@ Additional Inherited Members</h2></td></tr>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>debug_name_</b></td></tr>
 <tr class="separator:a9283719bf3b3d956809ef351a43ee16f inherit pro_attribs_classengine_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>An abstract Imgui layer implementation. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="aaecbd780bfe93ea0b85c9b31c3a931de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaecbd780bfe93ea0b85c9b31c3a931de">&#9670;&nbsp;</a></span>Begin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">engine::imgui::ImGuiLayer::Begin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Instantiates the context for the Imgui layer. </p>
+<p>Must be closed out with <a class="el" href="classengine_1_1imgui_1_1ImGuiLayer.html#aca4c57dc3361ed5c4c75a9c43b8dc1e6" title="Closes and cleans up the context for the Imgui layer. ">End()</a> in order to prevent the imgui context from leaking and interfering with other graphics trying to be rendered. </p>
+
+</div>
+</div>
+<a id="aca4c57dc3361ed5c4c75a9c43b8dc1e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca4c57dc3361ed5c4c75a9c43b8dc1e6">&#9670;&nbsp;</a></span>End()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">engine::imgui::ImGuiLayer::End </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Closes and cleans up the context for the Imgui layer. </p>
+<p>Must be opened with <a class="el" href="classengine_1_1imgui_1_1ImGuiLayer.html#aaecbd780bfe93ea0b85c9b31c3a931de" title="Instantiates the context for the Imgui layer. ">Begin()</a> in order to prevent the imgui context from leaking and interfering with other graphics trying to be rendered. </p>
+
+</div>
+</div>
+<a id="a8580bd31942d4bc33f268053d2adec31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8580bd31942d4bc33f268053d2adec31">&#9670;&nbsp;</a></span>OnAttach()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">engine::imgui::ImGuiLayer::OnAttach </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Handles an ImGuiLayers attachment to the engine. </p>
+<p>The default OnAttach creates a context, activates dark mode, and register inputs with GLFW keys. This implementation currently only supports OpenGL and will be modified in the future to use engine specified key codes.</p>
+<p>This is currently setup with a default implementation but will most likely be delegated to users that would like to implement their own imgui layers. </p>
+
+<p>Reimplemented from <a class="el" href="classengine_1_1Layer.html">engine::Layer</a>.</p>
+
+</div>
+</div>
+<a id="ad443a984abe93f4101fdbadcea01bf9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad443a984abe93f4101fdbadcea01bf9b">&#9670;&nbsp;</a></span>OnDetach()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">engine::imgui::ImGuiLayer::OnDetach </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Handles an ImGuiLayers detachment to the engine. </p>
+<p>Currently also only supports OpenGL.</p>
+<p>This is currently setup with a default implementation but will most likely be delegated to users that would like to implement their own imgui layers. </p>
+
+<p>Reimplemented from <a class="el" href="classengine_1_1Layer.html">engine::Layer</a>.</p>
+
+</div>
+</div>
+<a id="aeacc4aecfc119192fbe98e961b88813e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeacc4aecfc119192fbe98e961b88813e">&#9670;&nbsp;</a></span>OnImGuiRender()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">engine::imgui::ImGuiLayer::OnImGuiRender </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Handles an ImGuiRender Call by the engine. </p>
+<p>This will only be called when the engine is compiled with imgui attached. </p>
+
+<p>Reimplemented from <a class="el" href="classengine_1_1Layer.html">engine::Layer</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>engine/src/core/imgui/<a class="el" href="ImGuiLayer_8h_source.html">ImGuiLayer.h</a></li>
 <li>engine/src/core/imgui/ImGuiLayer.cpp</li>

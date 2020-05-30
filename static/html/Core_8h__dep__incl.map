@@ -2,7 +2,7 @@
 <area shape="rect" id="node2" href="$Application_8h.html" title="Contains the Application class definitions. " alt="" coords="771,355,962,382"/>
 <area shape="rect" id="node5" href="$Assert_8h.html" title="This is a utility file that is primarily used for debugging the internals of the engine when incorrec..." alt="" coords="1214,177,1378,203"/>
 <area shape="rect" id="node8" href="$ApplicationEvent_8h.html" title="Events that are to be specifically handled at the application level. " alt="" coords="501,169,656,211"/>
-<area shape="rect" id="node9" href="$ImGuiLayer_8h_source.html" title="engine/src/core/imgui\l/ImGuiLayer.h" alt="" coords="277,259,424,300"/>
+<area shape="rect" id="node9" href="$ImGuiLayer_8h.html" title="The ImGuiLayer implementation for dev tool creation. " alt="" coords="277,259,424,300"/>
 <area shape="rect" id="node10" href="$Event_8h.html" title="The Event class and dispatcher core implementations. " alt="" coords="387,80,541,121"/>
 <area shape="rect" id="node13" href="$Layer_8h_source.html" title="engine/src/core/Layer.h" alt="" coords="681,177,839,203"/>
 <area shape="rect" id="node14" href="$LayerStack_8h_source.html" title="engine/src/core/LayerStack.h" alt="" coords="896,266,1088,293"/>

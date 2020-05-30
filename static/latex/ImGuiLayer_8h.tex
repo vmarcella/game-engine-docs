@@ -1,0 +1,40 @@
+\hypertarget{ImGuiLayer_8h}{}\section{engine/src/core/imgui/\+Im\+Gui\+Layer.h File Reference}
+\label{ImGuiLayer_8h}\index{engine/src/core/imgui/\+Im\+Gui\+Layer.\+h@{engine/src/core/imgui/\+Im\+Gui\+Layer.\+h}}
+
+
+The Im\+Gui\+Layer implementation for dev tool creation.  
+
+
+{\ttfamily \#include \char`\"{}core/\+Core.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}core/\+Layer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}core/events/\+Application\+Event.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}core/events/\+Event.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}core/events/\+Key\+Event.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}core/events/\+Mouse\+Event.\+h\char`\"{}}\newline
+Include dependency graph for Im\+Gui\+Layer.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ImGuiLayer_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=299pt]{ImGuiLayer_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classengine_1_1imgui_1_1ImGuiLayer}{engine\+::imgui\+::\+Im\+Gui\+Layer}
+\begin{DoxyCompactList}\small\item\em An abstract Imgui layer implementation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The Im\+Gui\+Layer implementation for dev tool creation. 
+
+Any application that inherits from the game engine should not compile with imgui. It is very performance heavy and will cause your application to perform magnitudes slower. 

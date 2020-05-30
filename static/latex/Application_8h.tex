@@ -1,0 +1,58 @@
+\hypertarget{Application_8h}{}\section{engine/src/core/\+Application.h File Reference}
+\label{Application_8h}\index{engine/src/core/\+Application.\+h@{engine/src/core/\+Application.\+h}}
+
+
+Contains the Application class definitions.  
+
+
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include \char`\"{}core/\+Core.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}core/\+Layer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}core/\+Layer\+Stack.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}core/\+Window.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}core/events/\+Application\+Event.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}core/events/\+Event.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}core/imgui/\+Im\+Gui\+Layer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}core/renderer/\+Buffer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}core/renderer/\+Shader.\+h\char`\"{}}\newline
+Include dependency graph for Application.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Application_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{Application_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classengine_1_1Application}{engine\+::\+Application}
+\begin{DoxyCompactList}\small\item\em The primary driver of all applications extending this engine. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Application $\ast$ \hyperlink{Application_8h_ad48a1c6e635fa178770658de703fc5c5}{engine\+::\+Create\+Application} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains the Application class definitions. 
+
+The Application class is the primary driver of all applications being run by the engine. It is designed to handle everything from events to rendering without having to expose itself to applications that are being created with it. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{Application_8h_file_ad48a1c6e635fa178770658de703fc5c5}\label{Application_8h_file_ad48a1c6e635fa178770658de703fc5c5}} 
+\index{Application.\+h@{Application.\+h}!Create\+Application@{Create\+Application}}
+\index{Create\+Application@{Create\+Application}!Application.\+h@{Application.\+h}}
+\subsubsection{\texorpdfstring{Create\+Application()}{CreateApplication()}}
+{\footnotesize\ttfamily Application$\ast$ engine\+::\+Create\+Application (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This is an external function that is to be defined inside of the client. It allows the game developers to simply write a \hyperlink{Application_8h_ad48a1c6e635fa178770658de703fc5c5}{Create\+Application()} method that initializes their game specific code inside of the engine. 

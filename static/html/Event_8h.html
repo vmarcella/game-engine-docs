@@ -72,7 +72,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>The Generic Event implementation and supported types.  
+<p>The Event class and dispatcher core implementations.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;functional&gt;</code><br />
 <code>#include &lt;ostream&gt;</code><br />
@@ -124,6 +124,7 @@ Macros</h2></td></tr>
 <tr class="memdesc:abd52deea587a36ef619e596a0c691839"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper macro to fill out child event classes.  <a href="#abd52deea587a36ef619e596a0c691839">More...</a><br /></td></tr>
 <tr class="separator:abd52deea587a36ef619e596a0c691839"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab6d8678a269133584543156046bb443"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Event_8h.html#aab6d8678a269133584543156046bb443">BIND_EVENT_FN</a>(fn)&#160;&#160;&#160;std::bind(&amp;fn, this, std::placeholders::_1)</td></tr>
+<tr class="memdesc:aab6d8678a269133584543156046bb443"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper macro to bind event handlers to their parent classes.  <a href="#aab6d8678a269133584543156046bb443">More...</a><br /></td></tr>
 <tr class="separator:aab6d8678a269133584543156046bb443"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
@@ -172,7 +173,7 @@ Functions</h2></td></tr>
 <tr class="separator:afc8d5de00f535ecc01ec348d63576638"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The Generic Event implementation and supported types. </p>
+<div class="textblock"><p>The Event class and dispatcher core implementations. </p>
 <p>The event system is a core component of the game engine that enables the engine to act upon user input by propagating the user input as event across layers that are attached to the engines layer stack. This enables events to be passed to prioritized layers. (More specifically, overlays) </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="aab6d8678a269133584543156046bb443"></a>
@@ -190,7 +191,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This is used to bind event handlers inside of classes to the callbacks that they'd like to pass to the EventDispatcher. </p>
+
+<p>Helper macro to bind event handlers to their parent classes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fn</td><td>The function being used to handle an event. This is used to bind event handlers inside of classes to the callbacks that they'd like to pass to the EventDispatcher. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -213,7 +221,7 @@ Functions</h2></td></tr>
 <p>Helper macro to fill out child event classes. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">category</td><td>The child classes engine::events::EventCategory. All children of the base Class Event are to implement this in their class definition in order to be compatible with the EventDispatcher </td></tr>
+    <tr><td class="paramname">category</td><td>The child classes EventCategory. All children of the base Class Event are to implement this in their class definition in order to be compatible with the EventDispatcher </td></tr>
   </table>
   </dd>
 </dl>
@@ -240,7 +248,7 @@ Functions</h2></td></tr>
 <p>Helper macro to fill out child event classes. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">type</td><td>the child classes engine::events::EventType. All children of the base Class Event are to implement this in their class definition in order to be compatible with the EventDispatcher. </td></tr>
+    <tr><td class="paramname">type</td><td>the child classes EventType. All children of the base Class Event are to implement this in their class definition in order to be compatible with the EventDispatcher. </td></tr>
   </table>
   </dd>
 </dl>

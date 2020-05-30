@@ -8,8 +8,8 @@
 <area shape="rect" id="node15" href="$ImGuiLayer_8h_source.html" title="core/imgui/ImGuiLayer.h" alt="" coords="581,80,745,107"/>
 <area shape="rect" id="node18" href="$Buffer_8h_source.html" title="core/renderer/Buffer.h" alt="" coords="1321,80,1469,107"/>
 <area shape="rect" id="node23" href="$Shader_8h_source.html" title="core/renderer/Shader.h" alt="" coords="1575,229,1729,256"/>
-<area shape="rect" id="node16" href="$KeyEvent_8h_source.html" title="core/events/KeyEvent.h" alt="" coords="581,155,744,181"/>
-<area shape="rect" id="node17" href="$MouseEvent_8h_source.html" title="core/events/MouseEvent.h" alt="" coords="379,155,557,181"/>
+<area shape="rect" id="node16" href="$KeyEvent_8h.html" title="Events that specifically deal with key input. " alt="" coords="581,155,744,181"/>
+<area shape="rect" id="node17" href="$MouseEvent_8h.html" title="All events related mouse input. " alt="" coords="379,155,557,181"/>
 <area shape="rect" id="node20" href="$Assert_8h.html" title="This is a utility file that is primarily used for debugging the internals of the engine when incorrec..." alt="" coords="1257,155,1357,181"/>
 <area shape="rect" id="node21" href="$Log_8h_source.html" title="core/Log.h" alt="" coords="1145,229,1228,256"/>
 </map>

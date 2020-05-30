@@ -1,5 +1,5 @@
 <map id="engine::events::MouseButtonEvent" name="engine::events::MouseButtonEvent">
-<area shape="rect" id="node3" href="$classengine_1_1events_1_1MouseButtonPressedEvent.html" title="engine::events::MouseButton\lPressedEvent" alt="" coords="5,169,197,211"/>
-<area shape="rect" id="node4" href="$classengine_1_1events_1_1MouseButtonReleasedEvent.html" title="engine::events::MouseButton\lReleasedEvent" alt="" coords="221,169,413,211"/>
+<area shape="rect" id="node3" href="$classengine_1_1events_1_1MouseButtonPressedEvent.html" title="Generated whenever the user presses a mouse button within the application. " alt="" coords="5,169,197,211"/>
+<area shape="rect" id="node4" href="$classengine_1_1events_1_1MouseButtonReleasedEvent.html" title="Generated whenever the user releases a mouse button within an application. " alt="" coords="221,169,413,211"/>
 <area shape="rect" id="node2" href="$classengine_1_1events_1_1Event.html" title="The abstract Event class. " alt="" coords="135,5,284,32"/>
 </map>

@@ -126,7 +126,7 @@ std::vector&lt; <a class="el" href="structengine_1_1renderer_1_1BufferElement.ht
 </div><div class="memdoc">
 
 <p>Instantiate a <a class="el" href="classengine_1_1renderer_1_1BufferLayout.html" title="A layout that specifies the elements to be associated with a vertex buffer. ">BufferLayout</a> with an initializer list of BufferElements. </p>
-<p>Stride is calculated once a non empty elements e.g. </p><div class="fragment"><div class="line">{c++}</div><div class="line">  renderer::BufferLayout layout_init_list = {</div><div class="line">      { renderer::ShaderDataType::Float3, <span class="stringliteral">&quot;a_Position&quot;</span>},</div><div class="line">      { renderer::ShaderDataType::Float4, <span class="stringliteral">&quot;a_Color&quot;</span>},</div><div class="line">      { renderer::ShaderDataType::Float3, <span class="stringliteral">&quot;a_Normal&quot;</span>}};</div><div class="line"></div><div class="line">  renderer::BufferLayout layout(layout_init_list);</div></div><!-- fragment --> 
+<p>Stride is calculated once a non empty elements e.g. </p><div class="fragment"><div class="line">renderer::BufferLayout layout_init_list = {</div><div class="line">    { renderer::ShaderDataType::Float3, <span class="stringliteral">&quot;a_Position&quot;</span>},</div><div class="line">    { renderer::ShaderDataType::Float4, <span class="stringliteral">&quot;a_Color&quot;</span>},</div><div class="line">    { renderer::ShaderDataType::Float3, <span class="stringliteral">&quot;a_Normal&quot;</span>}};</div><div class="line"></div><div class="line">renderer::BufferLayout layout(layout_init_list);</div></div><!-- fragment --> 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>

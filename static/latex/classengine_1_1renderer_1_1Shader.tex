@@ -1,20 +1,46 @@
 \hypertarget{classengine_1_1renderer_1_1Shader}{}\section{engine\+:\+:renderer\+:\+:Shader Class Reference}
 \label{classengine_1_1renderer_1_1Shader}\index{engine\+::renderer\+::\+Shader@{engine\+::renderer\+::\+Shader}}
+
+
+The \hyperlink{classengine_1_1renderer_1_1Shader}{Shader} A\+PI.  
+
+
+
+
+{\ttfamily \#include $<$Shader.\+h$>$}
+
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classengine_1_1renderer_1_1Shader_a48fb2f9ae7b37051093275c2ecbbae9e}\label{classengine_1_1renderer_1_1Shader_a48fb2f9ae7b37051093275c2ecbbae9e}} 
-{\bfseries Shader} (const std\+::string \&vertex\+Source, const std\+::string \&fragment\+Source)
-\item 
-\mbox{\Hypertarget{classengine_1_1renderer_1_1Shader_ada9e74af27cf5dec958de71bc6aa0366}\label{classengine_1_1renderer_1_1Shader_ada9e74af27cf5dec958de71bc6aa0366}} 
-void {\bfseries Bind} () const
-\item 
-\mbox{\Hypertarget{classengine_1_1renderer_1_1Shader_aa129bc5d8c6fb821eacd9ebab21793b6}\label{classengine_1_1renderer_1_1Shader_aa129bc5d8c6fb821eacd9ebab21793b6}} 
-void {\bfseries Unbind} () const
-\end{DoxyCompactItemize}
+\hyperlink{classengine_1_1renderer_1_1Shader_a48fb2f9ae7b37051093275c2ecbbae9e}{Shader} (const std\+::string \&vertex\+Source, const std\+::string \&fragment\+Source)
+\begin{DoxyCompactList}\small\item\em Instantiates a \hyperlink{classengine_1_1renderer_1_1Shader}{Shader} with vertex and fragment source strings. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classengine_1_1renderer_1_1Shader_a44e090922cee0b54525dee744a4896ba}\label{classengine_1_1renderer_1_1Shader_a44e090922cee0b54525dee744a4896ba}} 
+void \hyperlink{classengine_1_1renderer_1_1Shader_a44e090922cee0b54525dee744a4896ba}{Bind} () const
+\begin{DoxyCompactList}\small\item\em Binds the shader to the current graphics context. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classengine_1_1renderer_1_1Shader_a9dad03ff8a12cebea905b507e4e58833}\label{classengine_1_1renderer_1_1Shader_a9dad03ff8a12cebea905b507e4e58833}} 
+void \hyperlink{classengine_1_1renderer_1_1Shader_a9dad03ff8a12cebea905b507e4e58833}{Unbind} () const
+\begin{DoxyCompactList}\small\item\em Unbinds the shader from the current graphics context. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+The \hyperlink{classengine_1_1renderer_1_1Shader}{Shader} A\+PI. 
+
+Expects sources to be strings that are designed for the shading language that is being used in the A\+PI. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classengine_1_1renderer_1_1Shader_a48fb2f9ae7b37051093275c2ecbbae9e}\label{classengine_1_1renderer_1_1Shader_a48fb2f9ae7b37051093275c2ecbbae9e}} 
+\index{engine\+::renderer\+::\+Shader@{engine\+::renderer\+::\+Shader}!Shader@{Shader}}
+\index{Shader@{Shader}!engine\+::renderer\+::\+Shader@{engine\+::renderer\+::\+Shader}}
+\subsubsection{\texorpdfstring{Shader()}{Shader()}}
+{\footnotesize\ttfamily engine\+::renderer\+::\+Shader\+::\+Shader (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{vertex\+Source,  }\item[{const std\+::string \&}]{fragment\+Source }\end{DoxyParamCaption})}
+
+
+
+Instantiates a \hyperlink{classengine_1_1renderer_1_1Shader}{Shader} with vertex and fragment source strings. 
+
+Source strings are expected to be written for the shading language that the current graphics A\+PI is using to compile shaders. 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-engine/src/core/renderer/Shader.\+h\item 
+engine/src/core/renderer/\hyperlink{Shader_8h}{Shader.\+h}\item 
 engine/src/core/renderer/Shader.\+cpp\end{DoxyCompactItemize}

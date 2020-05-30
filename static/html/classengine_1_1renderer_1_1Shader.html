@@ -69,19 +69,61 @@ $(function() {
 <div class="title">engine::renderer::Shader Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>The <a class="el" href="classengine_1_1renderer_1_1Shader.html" title="The Shader API. ">Shader</a> API.  
+ <a href="classengine_1_1renderer_1_1Shader.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Shader_8h_source.html">Shader.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a48fb2f9ae7b37051093275c2ecbbae9e"><td class="memItemLeft" align="right" valign="top"><a id="a48fb2f9ae7b37051093275c2ecbbae9e"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Shader</b> (const std::string &amp;vertexSource, const std::string &amp;fragmentSource)</td></tr>
+<tr class="memitem:a48fb2f9ae7b37051093275c2ecbbae9e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1renderer_1_1Shader.html#a48fb2f9ae7b37051093275c2ecbbae9e">Shader</a> (const std::string &amp;vertexSource, const std::string &amp;fragmentSource)</td></tr>
+<tr class="memdesc:a48fb2f9ae7b37051093275c2ecbbae9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiates a <a class="el" href="classengine_1_1renderer_1_1Shader.html" title="The Shader API. ">Shader</a> with vertex and fragment source strings.  <a href="#a48fb2f9ae7b37051093275c2ecbbae9e">More...</a><br /></td></tr>
 <tr class="separator:a48fb2f9ae7b37051093275c2ecbbae9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada9e74af27cf5dec958de71bc6aa0366"><td class="memItemLeft" align="right" valign="top"><a id="ada9e74af27cf5dec958de71bc6aa0366"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Bind</b> () const</td></tr>
-<tr class="separator:ada9e74af27cf5dec958de71bc6aa0366"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa129bc5d8c6fb821eacd9ebab21793b6"><td class="memItemLeft" align="right" valign="top"><a id="aa129bc5d8c6fb821eacd9ebab21793b6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Unbind</b> () const</td></tr>
-<tr class="separator:aa129bc5d8c6fb821eacd9ebab21793b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44e090922cee0b54525dee744a4896ba"><td class="memItemLeft" align="right" valign="top"><a id="a44e090922cee0b54525dee744a4896ba"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1renderer_1_1Shader.html#a44e090922cee0b54525dee744a4896ba">Bind</a> () const</td></tr>
+<tr class="memdesc:a44e090922cee0b54525dee744a4896ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds the shader to the current graphics context. <br /></td></tr>
+<tr class="separator:a44e090922cee0b54525dee744a4896ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dad03ff8a12cebea905b507e4e58833"><td class="memItemLeft" align="right" valign="top"><a id="a9dad03ff8a12cebea905b507e4e58833"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1renderer_1_1Shader.html#a9dad03ff8a12cebea905b507e4e58833">Unbind</a> () const</td></tr>
+<tr class="memdesc:a9dad03ff8a12cebea905b507e4e58833"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unbinds the shader from the current graphics context. <br /></td></tr>
+<tr class="separator:a9dad03ff8a12cebea905b507e4e58833"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The <a class="el" href="classengine_1_1renderer_1_1Shader.html" title="The Shader API. ">Shader</a> API. </p>
+<p>Expects sources to be strings that are designed for the shading language that is being used in the API. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a48fb2f9ae7b37051093275c2ecbbae9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48fb2f9ae7b37051093275c2ecbbae9e">&#9670;&nbsp;</a></span>Shader()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">engine::renderer::Shader::Shader </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>vertexSource</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>fragmentSource</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Instantiates a <a class="el" href="classengine_1_1renderer_1_1Shader.html" title="The Shader API. ">Shader</a> with vertex and fragment source strings. </p>
+<p>Source strings are expected to be written for the shading language that the current graphics API is using to compile shaders. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>engine/src/core/renderer/<a class="el" href="Shader_8h_source.html">Shader.h</a></li>
 <li>engine/src/core/renderer/Shader.cpp</li>

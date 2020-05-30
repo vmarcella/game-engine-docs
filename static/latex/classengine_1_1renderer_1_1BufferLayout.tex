@@ -46,13 +46,12 @@ Instantiate a \hyperlink{classengine_1_1renderer_1_1BufferLayout}{Buffer\+Layout
 
 Stride is calculated once a non empty elements e.\+g. 
 \begin{DoxyCode}
-\{c++\}
-  renderer::BufferLayout layout\_init\_list = \{
-      \{ renderer::ShaderDataType::Float3, \textcolor{stringliteral}{"a\_Position"}\},
-      \{ renderer::ShaderDataType::Float4, \textcolor{stringliteral}{"a\_Color"}\},
-      \{ renderer::ShaderDataType::Float3, \textcolor{stringliteral}{"a\_Normal"}\}\};
+renderer::BufferLayout layout\_init\_list = \{
+    \{ renderer::ShaderDataType::Float3, \textcolor{stringliteral}{"a\_Position"}\},
+    \{ renderer::ShaderDataType::Float4, \textcolor{stringliteral}{"a\_Color"}\},
+    \{ renderer::ShaderDataType::Float3, \textcolor{stringliteral}{"a\_Normal"}\}\};
 
-  renderer::BufferLayout layout(layout\_init\_list);
+renderer::BufferLayout layout(layout\_init\_list);
 \end{DoxyCode}
  
 

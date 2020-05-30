@@ -1,7 +1,7 @@
 <map id="engine/src/core/events/Event.h" name="engine/src/core/events/Event.h">
 <area shape="rect" id="node2" href="$Application_8h.html" title="Contains the Application class definitions. " alt="" coords="534,273,725,300"/>
 <area shape="rect" id="node4" href="$Engine_8h.html" title="The entrypoint into the game engine source code. " alt="" coords="480,423,617,449"/>
-<area shape="rect" id="node5" href="$ApplicationEvent_8h_source.html" title="engine/src/core/events\l/ApplicationEvent.h" alt="" coords="454,95,608,136"/>
+<area shape="rect" id="node5" href="$ApplicationEvent_8h.html" title="Events that are to be specifically handled at the application level. " alt="" coords="454,95,608,136"/>
 <area shape="rect" id="node6" href="$ImGuiLayer_8h_source.html" title="engine/src/core/imgui\l/ImGuiLayer.h" alt="" coords="344,184,491,225"/>
 <area shape="rect" id="node7" href="$KeyEvent_8h_source.html" title="engine/src/core/events\l/KeyEvent.h" alt="" coords="46,95,200,136"/>
 <area shape="rect" id="node8" href="$MouseEvent_8h_source.html" title="engine/src/core/events\l/MouseEvent.h" alt="" coords="224,95,379,136"/>

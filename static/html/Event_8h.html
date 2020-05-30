@@ -65,8 +65,7 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
 <div class="title">Event.h File Reference</div>  </div>
 </div><!--header-->
@@ -94,7 +93,7 @@ This graph shows which files directly or indirectly include this file:</div>
 <map name="engine_2src_2core_2events_2Event_8hdep" id="engine_2src_2core_2events_2Event_8hdep">
 <area shape="rect" id="node2" href="Application_8h.html" title="Contains the Application class definitions. " alt="" coords="534,273,725,300"/>
 <area shape="rect" id="node4" href="Engine_8h.html" title="The entrypoint into the game engine source code. " alt="" coords="480,423,617,449"/>
-<area shape="rect" id="node5" href="ApplicationEvent_8h_source.html" title="engine/src/core/events\l/ApplicationEvent.h" alt="" coords="454,95,608,136"/>
+<area shape="rect" id="node5" href="ApplicationEvent_8h.html" title="Events that are to be specifically handled at the application level. " alt="" coords="454,95,608,136"/>
 <area shape="rect" id="node6" href="ImGuiLayer_8h_source.html" title="engine/src/core/imgui\l/ImGuiLayer.h" alt="" coords="344,184,491,225"/>
 <area shape="rect" id="node7" href="KeyEvent_8h_source.html" title="engine/src/core/events\l/KeyEvent.h" alt="" coords="46,95,200,136"/>
 <area shape="rect" id="node8" href="MouseEvent_8h_source.html" title="engine/src/core/events\l/MouseEvent.h" alt="" coords="224,95,379,136"/>
@@ -113,6 +112,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The abstract <a class="el" href="classengine_1_1events_1_1Event.html" title="The abstract Event class. ">Event</a> class.  <a href="classengine_1_1events_1_1Event.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1events_1_1EventDispatcher.html">engine::events::EventDispatcher</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The event handling system.  <a href="classengine_1_1events_1_1EventDispatcher.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -166,11 +166,6 @@ Enumerations</h2></td></tr>
  }<tr class="memdesc:a1e3bf91397b8a47069494aede2669474"><td class="mdescLeft">&#160;</td><td class="mdescRight">An events specific category.  <a href="Event_8h.html#a1e3bf91397b8a47069494aede2669474">More...</a><br /></td></tr>
 </td></tr>
 <tr class="separator:a1e3bf91397b8a47069494aede2669474"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:afc8d5de00f535ecc01ec348d63576638"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Event_8h.html#afc8d5de00f535ecc01ec348d63576638">engine::events::operator&lt;&lt;</a> (std::ostream &amp;os, const Event &amp;event)</td></tr>
-<tr class="separator:afc8d5de00f535ecc01ec348d63576638"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The Event class and dispatcher core implementations. </p>
@@ -295,44 +290,6 @@ Functions</h2></td></tr>
 
 <p>An Events specific type. </p>
 <p>This defines all the EventTypes that are available within the engine. Events that are not registered here cannot be used for instantiating classes that want to extend the base class Event and use the event dispatcher. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="file_afc8d5de00f535ecc01ec348d63576638"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#file_afc8d5de00f535ecc01ec348d63576638">&#9670;&nbsp;</a></span>operator<<()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::ostream&amp; engine::events::operator&lt;&lt; </td>
-          <td>(</td>
-          <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>os</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classengine_1_1events_1_1Event.html">Event</a> &amp;&#160;</td>
-          <td class="paramname"><em>event</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>All events have a default ToString(), but should most likely implement their own to more specifically display the data associated with them. </p>
 
 </div>
 </div>

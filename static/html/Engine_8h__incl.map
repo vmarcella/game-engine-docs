@@ -14,7 +14,7 @@
 <area shape="rect" id="node4" href="$Core_8h.html" title="Core macros to be used all throughout the engine for development and production purposes. " alt="" coords="793,453,884,480"/>
 <area shape="rect" id="node11" href="$LayerStack_8h_source.html" title="core/LayerStack.h" alt="" coords="741,229,869,256"/>
 <area shape="rect" id="node13" href="$core_2Window_8h_source.html" title="core/Window.h" alt="" coords="1012,304,1121,331"/>
-<area shape="rect" id="node14" href="$ApplicationEvent_8h_source.html" title="core/events/ApplicationEvent.h" alt="" coords="1145,304,1348,331"/>
+<area shape="rect" id="node14" href="$ApplicationEvent_8h.html" title="Events that are to be specifically handled at the application level. " alt="" coords="1145,304,1348,331"/>
 <area shape="rect" id="node17" href="$KeyEvent_8h_source.html" title="core/events/KeyEvent.h" alt="" coords="1575,304,1737,331"/>
 <area shape="rect" id="node18" href="$MouseEvent_8h_source.html" title="core/events/MouseEvent.h" alt="" coords="1372,304,1551,331"/>
 <area shape="rect" id="node21" href="$Assert_8h.html" title="This is a utility file that is primarily used for debugging the internals of the engine when incorrec..." alt="" coords="234,304,334,331"/>

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['renderer',['Renderer',['../classengine_1_1renderer_1_1Renderer.html',1,'engine::renderer']]],
-  ['run',['Run',['../classengine_1_1Application.html#a4dcdf08d920f7f63013a25cb1e80438b',1,'engine::Application']]]
+  ['pushlayer',['PushLayer',['../classengine_1_1Application.html#adb129a86a6cdbd80b25094d08605d213',1,'engine::Application']]],
+  ['pushoverlay',['PushOverlay',['../classengine_1_1Application.html#a00041c455b5699665d21662be95abd85',1,'engine::Application']]]
 ];

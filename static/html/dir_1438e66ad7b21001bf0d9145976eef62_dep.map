@@ -1,4 +1,6 @@
 <map id="engine/src/core/imgui" name="engine/src/core/imgui">
 <area shape="rect" id="node1" href="dir_1438e66ad7b21001bf0d9145976eef62.html" title="imgui" alt="" coords="27,52,99,100"/>
+<area shape="rect" id="node2" href="dir_e9c5a27cebf3dd153f40247fcd131daf.html" title="events" alt="" coords="27,148,99,196"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000004_000003.html" title="2" alt="" coords="67,122,75,137"/>
 <area shape="rect" id="clust1" href="dir_5e835386694ce392648cfcf102577fe3.html" title="core" alt="" coords="16,16,109,111"/>
 </map>

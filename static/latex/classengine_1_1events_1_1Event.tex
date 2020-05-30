@@ -2,6 +2,11 @@
 \label{classengine_1_1events_1_1Event}\index{engine\+::events\+::\+Event@{engine\+::events\+::\+Event}}
 
 
+The abstract \hyperlink{classengine_1_1events_1_1Event}{Event} class.  
+
+
+
+
 {\ttfamily \#include $<$Event.\+h$>$}
 
 
@@ -17,7 +22,7 @@ Inheritance diagram for engine\+:\+:events\+:\+:Event\+:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classengine_1_1events_1_1Event_a99604df0759386f2cea0071efa52d6e9}\label{classengine_1_1events_1_1Event_a99604df0759386f2cea0071efa52d6e9}} 
-virtual Event\+Type {\bfseries Get\+Event\+Type} () const =0
+virtual \hyperlink{Event_8h_a10b3e1cfc8aaa02ff37fd47f0fae2b8a}{Event\+Type} {\bfseries Get\+Event\+Type} () const =0
 \item 
 \mbox{\Hypertarget{classengine_1_1events_1_1Event_a11bf339abb972f3c06f1cf20a0ff894b}\label{classengine_1_1events_1_1Event_a11bf339abb972f3c06f1cf20a0ff894b}} 
 virtual const char $\ast$ {\bfseries Get\+Name} () const =0
@@ -28,9 +33,8 @@ virtual int {\bfseries Get\+Category\+Flags} () const =0
 \mbox{\Hypertarget{classengine_1_1events_1_1Event_afad3baa55387283c7cfe692292edc269}\label{classengine_1_1events_1_1Event_afad3baa55387283c7cfe692292edc269}} 
 virtual std\+::string {\bfseries To\+String} () const
 \item 
-\mbox{\Hypertarget{classengine_1_1events_1_1Event_a1f55831a2eb7d5a22125e347fb6673a3}\label{classengine_1_1events_1_1Event_a1f55831a2eb7d5a22125e347fb6673a3}} 
-bool {\bfseries Is\+In\+Category} (Event\+Category category)
-\item 
+bool \hyperlink{classengine_1_1events_1_1Event_abf217454944fb4cceb6dee40d886a0c4}{Is\+In\+Category} (\hyperlink{Event_8h_a1e3bf91397b8a47069494aede2669474}{Event\+Category} category)
+\begin{DoxyCompactList}\small\item\em Check if an event belongs to an Event\+Category. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classengine_1_1events_1_1Event_a39202ff693f2701f2f736dfd0b4f3878}\label{classengine_1_1events_1_1Event_a39202ff693f2701f2f736dfd0b4f3878}} 
 bool {\bfseries Has\+Been\+Handled} ()
 \end{DoxyCompactItemize}
@@ -55,8 +59,28 @@ class {\bfseries Event\+Dispatcher}
 
 
 \subsection{Detailed Description}
-The base \hyperlink{classengine_1_1events_1_1Event}{Event} implementation that is the parent class for any \hyperlink{classengine_1_1events_1_1Event}{Event} that would like to be passed into and handled by the \hyperlink{classengine_1_1events_1_1EventDispatcher}{Event\+Dispatcher} system. All Children class must override the functions provided by this class in order to be able to be propagated through the \hyperlink{classengine_1_1events_1_1EventDispatcher}{Event\+Dispatcher}. There are macros provided in {\ttfamily \hyperlink{Event_8h_source}{core/events/\+Event.\+h}} that are documented and make the process of creating child classes of \hyperlink{classengine_1_1events_1_1Event}{Event} magnitudes easier. 
+The abstract \hyperlink{classengine_1_1events_1_1Event}{Event} class. 
+
+The base \hyperlink{classengine_1_1events_1_1Event}{Event} implementation that is the parent class for any \hyperlink{classengine_1_1events_1_1Event}{Event} that would like to be passed into and handled by the \hyperlink{classengine_1_1events_1_1EventDispatcher}{Event\+Dispatcher} system. All Children class must override the functions provided by this class in order to be able to be propagated through the \hyperlink{classengine_1_1events_1_1EventDispatcher}{Event\+Dispatcher}. There are macros provided in {\ttfamily \hyperlink{Event_8h}{core/events/\+Event.\+h}} that are documented and make the process of creating child classes of \hyperlink{classengine_1_1events_1_1Event}{Event} magnitudes easier. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classengine_1_1events_1_1Event_abf217454944fb4cceb6dee40d886a0c4}\label{classengine_1_1events_1_1Event_abf217454944fb4cceb6dee40d886a0c4}} 
+\index{engine\+::events\+::\+Event@{engine\+::events\+::\+Event}!Is\+In\+Category@{Is\+In\+Category}}
+\index{Is\+In\+Category@{Is\+In\+Category}!engine\+::events\+::\+Event@{engine\+::events\+::\+Event}}
+\subsubsection{\texorpdfstring{Is\+In\+Category()}{IsInCategory()}}
+{\footnotesize\ttfamily engine\+::events\+::\+Event\+::\+Is\+In\+Category (\begin{DoxyParamCaption}\item[{\hyperlink{Event_8h_a1e3bf91397b8a47069494aede2669474}{Event\+Category}}]{category }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check if an event belongs to an Event\+Category. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em category} & The category to be checked against. \\
+\hline
+\end{DoxyParams}
+
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-engine/src/core/events/Event.\+h\end{DoxyCompactItemize}
+engine/src/core/events/\hyperlink{Event_8h}{Event.\+h}\end{DoxyCompactItemize}

@@ -1,4 +1,4 @@
 <map id="engine::events::KeyReleasedEvent" name="engine::events::KeyReleasedEvent">
 <area shape="rect" id="node2" href="$classengine_1_1events_1_1KeyEvent.html" title="engine::events::KeyEvent" alt="" coords="16,80,188,107"/>
-<area shape="rect" id="node3" href="$classengine_1_1events_1_1Event.html" title="engine::events::Event" alt="" coords="27,5,177,32"/>
+<area shape="rect" id="node3" href="$classengine_1_1events_1_1Event.html" title="The abstract Event class. " alt="" coords="27,5,177,32"/>
 </map>

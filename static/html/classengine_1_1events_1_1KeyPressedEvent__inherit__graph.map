@@ -1,4 +1,4 @@
 <map id="engine::events::KeyPressedEvent" name="engine::events::KeyPressedEvent">
 <area shape="rect" id="node2" href="$classengine_1_1events_1_1KeyEvent.html" title="engine::events::KeyEvent" alt="" coords="13,80,185,107"/>
-<area shape="rect" id="node3" href="$classengine_1_1events_1_1Event.html" title="engine::events::Event" alt="" coords="24,5,173,32"/>
+<area shape="rect" id="node3" href="$classengine_1_1events_1_1Event.html" title="The abstract Event class. " alt="" coords="24,5,173,32"/>
 </map>

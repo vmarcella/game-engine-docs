@@ -1,5 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classengine_1_1events_1_1Event.html" title="engine::events::Event" alt="" coords="5,247,155,274"/>
+<area shape="rect" id="node1" href="$classengine_1_1events_1_1Event.html" title="The abstract Event class. " alt="" coords="5,247,155,274"/>
 <area shape="rect" id="node2" href="$classengine_1_1events_1_1AppRenderEvent.html" title="engine::events::AppRender\lEvent" alt="" coords="214,5,394,47"/>
 <area shape="rect" id="node3" href="$classengine_1_1events_1_1AppTickEvent.html" title="engine::events::AppTickEvent" alt="" coords="205,71,403,98"/>
 <area shape="rect" id="node4" href="$classengine_1_1events_1_1AppUpdateEvent.html" title="engine::events::AppUpdate\lEvent" alt="" coords="214,123,394,164"/>

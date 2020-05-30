@@ -1,4 +1,4 @@
 <map id="engine::events::MouseButtonPressedEvent" name="engine::events::MouseButtonPressedEvent">
 <area shape="rect" id="node2" href="$classengine_1_1events_1_1MouseButtonEvent.html" title="engine::events::MouseButton\lEvent" alt="" coords="5,80,197,121"/>
-<area shape="rect" id="node3" href="$classengine_1_1events_1_1Event.html" title="engine::events::Event" alt="" coords="27,5,176,32"/>
+<area shape="rect" id="node3" href="$classengine_1_1events_1_1Event.html" title="The abstract Event class. " alt="" coords="27,5,176,32"/>
 </map>

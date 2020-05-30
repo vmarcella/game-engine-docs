@@ -1,0 +1,168 @@
+\hypertarget{Event_8h}{}\section{engine/src/core/events/\+Event.h File Reference}
+\label{Event_8h}\index{engine/src/core/events/\+Event.\+h@{engine/src/core/events/\+Event.\+h}}
+
+
+The Generic Event implementation and supported types.  
+
+
+{\ttfamily \#include $<$functional$>$}\newline
+{\ttfamily \#include $<$ostream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$spdlog/fmt/ostr.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}core/\+Core.\+h\char`\"{}}\newline
+Include dependency graph for Event.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Event_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Event_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classengine_1_1events_1_1Event}{engine\+::events\+::\+Event}
+\begin{DoxyCompactList}\small\item\em The abstract \hyperlink{classengine_1_1events_1_1Event}{Event} class. \end{DoxyCompactList}\item 
+class \hyperlink{classengine_1_1events_1_1EventDispatcher}{engine\+::events\+::\+Event\+Dispatcher}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{Event_8h_a80d534fc4d69a68eefd1573fd0ac2f44}{E\+V\+E\+N\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+T\+Y\+PE}(type)
+\begin{DoxyCompactList}\small\item\em Helper macro to fill out child event classes. \end{DoxyCompactList}\item 
+\#define \hyperlink{Event_8h_abd52deea587a36ef619e596a0c691839}{E\+V\+E\+N\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+C\+A\+T\+E\+G\+O\+RY}(category)~int Get\+Category\+Flags() const override \{ return category; \}
+\begin{DoxyCompactList}\small\item\em Helper macro to fill out child event classes. \end{DoxyCompactList}\item 
+\#define \hyperlink{Event_8h_aab6d8678a269133584543156046bb443}{B\+I\+N\+D\+\_\+\+E\+V\+E\+N\+T\+\_\+\+FN}(fn)~std\+::bind(\&fn, this, std\+::placeholders\+::\+\_\+1)
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{Event_8h_a10b3e1cfc8aaa02ff37fd47f0fae2b8a}{engine\+::events\+::\+Event\+Type} \{ \newline
+{\bfseries None} = 0, 
+{\bfseries k\+Window\+Close}, 
+{\bfseries k\+Window\+Resize}, 
+{\bfseries k\+Window\+Focus}, 
+\newline
+{\bfseries k\+Window\+Lost\+Focus}, 
+{\bfseries k\+Window\+Moved}, 
+{\bfseries k\+App\+Tick}, 
+{\bfseries k\+App\+Update}, 
+\newline
+{\bfseries k\+App\+Render}, 
+{\bfseries k\+Key\+Pressed}, 
+{\bfseries k\+Key\+Released}, 
+{\bfseries k\+Key\+Typed}, 
+\newline
+{\bfseries k\+Mouse\+Button\+Pressed}, 
+{\bfseries k\+Mouse\+Button\+Released}, 
+{\bfseries k\+Mouse\+Moved}, 
+{\bfseries k\+Mouse\+Scrolled}
+ \}\begin{DoxyCompactList}\small\item\em An Events specific type. \end{DoxyCompactList}
+\item 
+enum \hyperlink{Event_8h_a1e3bf91397b8a47069494aede2669474}{engine\+::events\+::\+Event\+Category} \{ \newline
+{\bfseries None} = 0, 
+{\bfseries None} = 0, 
+{\bfseries k\+Event\+Category\+Application} = B\+IT(0), 
+{\bfseries k\+Event\+Category\+Input} = B\+IT(1), 
+\newline
+{\bfseries k\+Event\+Category\+Keyboard} = B\+IT(2), 
+{\bfseries k\+Event\+Category\+Mouse} = B\+IT(3), 
+{\bfseries k\+Event\+Category\+Mouse\+Button} = B\+IT(4)
+ \}\begin{DoxyCompactList}\small\item\em An events specific category. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{Event_8h_afc8d5de00f535ecc01ec348d63576638}{engine\+::events\+::operator$<$$<$} (std\+::ostream \&os, const Event \&event)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The Generic Event implementation and supported types. 
+
+The event system is a core component of the game engine that enables the engine to act upon user input by propagating the user input as event across layers that are attached to the engines layer stack. This enables events to be passed to prioritized layers. (More specifically, overlays) 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{Event_8h_aab6d8678a269133584543156046bb443}\label{Event_8h_aab6d8678a269133584543156046bb443}} 
+\index{Event.\+h@{Event.\+h}!B\+I\+N\+D\+\_\+\+E\+V\+E\+N\+T\+\_\+\+FN@{B\+I\+N\+D\+\_\+\+E\+V\+E\+N\+T\+\_\+\+FN}}
+\index{B\+I\+N\+D\+\_\+\+E\+V\+E\+N\+T\+\_\+\+FN@{B\+I\+N\+D\+\_\+\+E\+V\+E\+N\+T\+\_\+\+FN}!Event.\+h@{Event.\+h}}
+\subsubsection{\texorpdfstring{B\+I\+N\+D\+\_\+\+E\+V\+E\+N\+T\+\_\+\+FN}{BIND\_EVENT\_FN}}
+{\footnotesize\ttfamily \#define B\+I\+N\+D\+\_\+\+E\+V\+E\+N\+T\+\_\+\+FN(\begin{DoxyParamCaption}\item[{}]{fn }\end{DoxyParamCaption})~std\+::bind(\&fn, this, std\+::placeholders\+::\+\_\+1)}
+
+This is used to bind event handlers inside of classes to the callbacks that they\textquotesingle{}d like to pass to the Event\+Dispatcher. \mbox{\Hypertarget{Event_8h_abd52deea587a36ef619e596a0c691839}\label{Event_8h_abd52deea587a36ef619e596a0c691839}} 
+\index{Event.\+h@{Event.\+h}!E\+V\+E\+N\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+C\+A\+T\+E\+G\+O\+RY@{E\+V\+E\+N\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+C\+A\+T\+E\+G\+O\+RY}}
+\index{E\+V\+E\+N\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+C\+A\+T\+E\+G\+O\+RY@{E\+V\+E\+N\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+C\+A\+T\+E\+G\+O\+RY}!Event.\+h@{Event.\+h}}
+\subsubsection{\texorpdfstring{E\+V\+E\+N\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+C\+A\+T\+E\+G\+O\+RY}{EVENT\_CLASS\_CATEGORY}}
+{\footnotesize\ttfamily \#define E\+V\+E\+N\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+C\+A\+T\+E\+G\+O\+RY(\begin{DoxyParamCaption}\item[{}]{category }\end{DoxyParamCaption})~int Get\+Category\+Flags() const override \{ return category; \}}
+
+
+
+Helper macro to fill out child event classes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em category} & The child classes engine\+::events\+::\+Event\+Category. All children of the base Class Event are to implement this in their class definition in order to be compatible with the Event\+Dispatcher \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{Event_8h_a80d534fc4d69a68eefd1573fd0ac2f44}\label{Event_8h_a80d534fc4d69a68eefd1573fd0ac2f44}} 
+\index{Event.\+h@{Event.\+h}!E\+V\+E\+N\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+T\+Y\+PE@{E\+V\+E\+N\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+T\+Y\+PE}}
+\index{E\+V\+E\+N\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+T\+Y\+PE@{E\+V\+E\+N\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+T\+Y\+PE}!Event.\+h@{Event.\+h}}
+\subsubsection{\texorpdfstring{E\+V\+E\+N\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+T\+Y\+PE}{EVENT\_CLASS\_TYPE}}
+{\footnotesize\ttfamily \#define E\+V\+E\+N\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+T\+Y\+PE(\begin{DoxyParamCaption}\item[{}]{type }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keyword}{static} \hyperlink{Event_8h_a10b3e1cfc8aaa02ff37fd47f0fae2b8a}{EventType} GetStaticType() \{ \textcolor{keywordflow}{return} EventType::type; \} \(\backslash\)
+    EventType GetEventType()\textcolor{keyword}{ const override }\{ \textcolor{keywordflow}{return} GetStaticType(); \} \(\backslash\)
+    const \textcolor{keywordtype}{char}* GetName()\textcolor{keyword}{ const override }\{ \textcolor{keywordflow}{return} #type; \}
+\end{DoxyCode}
+
+
+Helper macro to fill out child event classes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & the child classes engine\+::events\+::\+Event\+Type. All children of the base Class Event are to implement this in their class definition in order to be compatible with the Event\+Dispatcher. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{Event_8h_file_a1e3bf91397b8a47069494aede2669474}\label{Event_8h_file_a1e3bf91397b8a47069494aede2669474}} 
+\index{Event.\+h@{Event.\+h}!Event\+Category@{Event\+Category}}
+\index{Event\+Category@{Event\+Category}!Event.\+h@{Event.\+h}}
+\subsubsection{\texorpdfstring{Event\+Category}{EventCategory}}
+{\footnotesize\ttfamily enum \hyperlink{Event_8h_a1e3bf91397b8a47069494aede2669474}{engine\+::events\+::\+Event\+Category}}
+
+
+
+An events specific category. 
+
+This is primarily used for determining what categories an event belongs to. Event\+Category is set in any children class of Event using the macro {\ttfamily E\+V\+E\+N\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+C\+A\+T\+E\+G\+O\+RY(Event\+Category\+:\+:...)} like so. \mbox{\Hypertarget{Event_8h_file_a10b3e1cfc8aaa02ff37fd47f0fae2b8a}\label{Event_8h_file_a10b3e1cfc8aaa02ff37fd47f0fae2b8a}} 
+\index{Event.\+h@{Event.\+h}!Event\+Type@{Event\+Type}}
+\index{Event\+Type@{Event\+Type}!Event.\+h@{Event.\+h}}
+\subsubsection{\texorpdfstring{Event\+Type}{EventType}}
+{\footnotesize\ttfamily enum \hyperlink{Event_8h_a10b3e1cfc8aaa02ff37fd47f0fae2b8a}{engine\+::events\+::\+Event\+Type}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+An Events specific type. 
+
+This defines all the Event\+Types that are available within the engine. Events that are not registered here cannot be used for instantiating classes that want to extend the base class Event and use the event dispatcher. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{Event_8h_file_afc8d5de00f535ecc01ec348d63576638}\label{Event_8h_file_afc8d5de00f535ecc01ec348d63576638}} 
+\index{Event.\+h@{Event.\+h}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Event.\+h@{Event.\+h}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily std\+::ostream\& engine\+::events\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \hyperlink{classengine_1_1events_1_1Event}{Event} \&}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+All events have a default To\+String(), but should most likely implement their own to more specifically display the data associated with them. 

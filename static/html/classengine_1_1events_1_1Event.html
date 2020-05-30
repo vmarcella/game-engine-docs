@@ -73,6 +73,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>The abstract <a class="el" href="classengine_1_1events_1_1Event.html" title="The abstract Event class. ">Event</a> class.  
+ <a href="classengine_1_1events_1_1Event.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="Event_8h_source.html">Event.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for engine::events::Event:</div>
@@ -99,7 +102,7 @@ Inheritance diagram for engine::events::Event:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a99604df0759386f2cea0071efa52d6e9"><td class="memItemLeft" align="right" valign="top"><a id="a99604df0759386f2cea0071efa52d6e9"></a>
-virtual EventType&#160;</td><td class="memItemRight" valign="bottom"><b>GetEventType</b> () const =0</td></tr>
+virtual <a class="el" href="Event_8h.html#a10b3e1cfc8aaa02ff37fd47f0fae2b8a">EventType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetEventType</b> () const =0</td></tr>
 <tr class="separator:a99604df0759386f2cea0071efa52d6e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11bf339abb972f3c06f1cf20a0ff894b"><td class="memItemLeft" align="right" valign="top"><a id="a11bf339abb972f3c06f1cf20a0ff894b"></a>
 virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><b>GetName</b> () const =0</td></tr>
@@ -110,9 +113,9 @@ virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>GetCategoryFla
 <tr class="memitem:afad3baa55387283c7cfe692292edc269"><td class="memItemLeft" align="right" valign="top"><a id="afad3baa55387283c7cfe692292edc269"></a>
 virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><b>ToString</b> () const</td></tr>
 <tr class="separator:afad3baa55387283c7cfe692292edc269"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f55831a2eb7d5a22125e347fb6673a3"><td class="memItemLeft" align="right" valign="top"><a id="a1f55831a2eb7d5a22125e347fb6673a3"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsInCategory</b> (EventCategory category)</td></tr>
-<tr class="separator:a1f55831a2eb7d5a22125e347fb6673a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf217454944fb4cceb6dee40d886a0c4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1events_1_1Event.html#abf217454944fb4cceb6dee40d886a0c4">IsInCategory</a> (<a class="el" href="Event_8h.html#a1e3bf91397b8a47069494aede2669474">EventCategory</a> category)</td></tr>
+<tr class="memdesc:abf217454944fb4cceb6dee40d886a0c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if an event belongs to an EventCategory.  <a href="#abf217454944fb4cceb6dee40d886a0c4">More...</a><br /></td></tr>
+<tr class="separator:abf217454944fb4cceb6dee40d886a0c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39202ff693f2701f2f736dfd0b4f3878"><td class="memItemLeft" align="right" valign="top"><a id="a39202ff693f2701f2f736dfd0b4f3878"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasBeenHandled</b> ()</td></tr>
 <tr class="separator:a39202ff693f2701f2f736dfd0b4f3878"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -136,8 +139,44 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>EventDispatcher</b><
 <tr class="separator:aad5f38ccd490ea17008460423f52325a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The base <a class="el" href="classengine_1_1events_1_1Event.html">Event</a> implementation that is the parent class for any <a class="el" href="classengine_1_1events_1_1Event.html">Event</a> that would like to be passed into and handled by the <a class="el" href="classengine_1_1events_1_1EventDispatcher.html">EventDispatcher</a> system. All Children class must override the functions provided by this class in order to be able to be propagated through the <a class="el" href="classengine_1_1events_1_1EventDispatcher.html">EventDispatcher</a>. There are macros provided in <code><a class="el" href="Event_8h_source.html">core/events/Event.h</a></code> that are documented and make the process of creating child classes of <a class="el" href="classengine_1_1events_1_1Event.html">Event</a> magnitudes easier. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+<div class="textblock"><p>The abstract <a class="el" href="classengine_1_1events_1_1Event.html" title="The abstract Event class. ">Event</a> class. </p>
+<p>The base <a class="el" href="classengine_1_1events_1_1Event.html" title="The abstract Event class. ">Event</a> implementation that is the parent class for any <a class="el" href="classengine_1_1events_1_1Event.html" title="The abstract Event class. ">Event</a> that would like to be passed into and handled by the <a class="el" href="classengine_1_1events_1_1EventDispatcher.html">EventDispatcher</a> system. All Children class must override the functions provided by this class in order to be able to be propagated through the <a class="el" href="classengine_1_1events_1_1EventDispatcher.html">EventDispatcher</a>. There are macros provided in <code><a class="el" href="Event_8h.html" title="The Generic Event implementation and supported types. ">core/events/Event.h</a></code> that are documented and make the process of creating child classes of <a class="el" href="classengine_1_1events_1_1Event.html" title="The abstract Event class. ">Event</a> magnitudes easier. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="abf217454944fb4cceb6dee40d886a0c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf217454944fb4cceb6dee40d886a0c4">&#9670;&nbsp;</a></span>IsInCategory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">engine::events::Event::IsInCategory </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="Event_8h.html#a1e3bf91397b8a47069494aede2669474">EventCategory</a>&#160;</td>
+          <td class="paramname"><em>category</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if an event belongs to an EventCategory. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">category</td><td>The category to be checked against. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>engine/src/core/events/<a class="el" href="Event_8h_source.html">Event.h</a></li>
 </ul>
 </div><!-- contents -->

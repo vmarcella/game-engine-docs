@@ -70,20 +70,27 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>A layout that specifies the elements to be associated with a vertex buffer.  
+ <a href="classengine_1_1renderer_1_1BufferLayout.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="Buffer_8h_source.html">Buffer.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aad7d69ca7a55c528fd619bc2f51635f0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1renderer_1_1BufferLayout.html#aad7d69ca7a55c528fd619bc2f51635f0">BufferLayout</a> (const std::initializer_list&lt; <a class="el" href="structengine_1_1renderer_1_1BufferElement.html">BufferElement</a> &gt; &amp;elements)</td></tr>
+<tr class="memdesc:aad7d69ca7a55c528fd619bc2f51635f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiate a <a class="el" href="classengine_1_1renderer_1_1BufferLayout.html" title="A layout that specifies the elements to be associated with a vertex buffer. ">BufferLayout</a> with an initializer list of BufferElements.  <a href="#aad7d69ca7a55c528fd619bc2f51635f0">More...</a><br /></td></tr>
 <tr class="separator:aad7d69ca7a55c528fd619bc2f51635f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2a3753096d6a8171179d6e9c86facb8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1renderer_1_1BufferLayout.html#ae2a3753096d6a8171179d6e9c86facb8">BufferLayout</a> ()</td></tr>
+<tr class="memitem:ae2a3753096d6a8171179d6e9c86facb8"><td class="memItemLeft" align="right" valign="top"><a id="ae2a3753096d6a8171179d6e9c86facb8"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1renderer_1_1BufferLayout.html#ae2a3753096d6a8171179d6e9c86facb8">BufferLayout</a> ()</td></tr>
+<tr class="memdesc:ae2a3753096d6a8171179d6e9c86facb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiates an empty <a class="el" href="classengine_1_1renderer_1_1BufferLayout.html" title="A layout that specifies the elements to be associated with a vertex buffer. ">BufferLayout</a>. <br /></td></tr>
 <tr class="separator:ae2a3753096d6a8171179d6e9c86facb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf641c0a93611af20c756b881518d4c9"><td class="memItemLeft" align="right" valign="top"><a id="abf641c0a93611af20c756b881518d4c9"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetStride</b> () const</td></tr>
-<tr class="separator:abf641c0a93611af20c756b881518d4c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed5ee70b0eeef0dd0695f98e2e08a979"><td class="memItemLeft" align="right" valign="top"><a id="aed5ee70b0eeef0dd0695f98e2e08a979"></a>
-const std::vector&lt; <a class="el" href="structengine_1_1renderer_1_1BufferElement.html">BufferElement</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetElements</b> () const</td></tr>
-<tr class="separator:aed5ee70b0eeef0dd0695f98e2e08a979"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf525eed067da7cfa637c9fe795767b5"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1renderer_1_1BufferLayout.html#abf525eed067da7cfa637c9fe795767b5">GetStride</a> () const</td></tr>
+<tr class="memdesc:abf525eed067da7cfa637c9fe795767b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the overall stride of the current buffer layout.  <a href="#abf525eed067da7cfa637c9fe795767b5">More...</a><br /></td></tr>
+<tr class="separator:abf525eed067da7cfa637c9fe795767b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdb110b3851f860c2d602d1b12a8568a"><td class="memItemLeft" align="right" valign="top"><a id="abdb110b3851f860c2d602d1b12a8568a"></a>
+const std::vector&lt; <a class="el" href="structengine_1_1renderer_1_1BufferElement.html">BufferElement</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1renderer_1_1BufferLayout.html#abdb110b3851f860c2d602d1b12a8568a">GetElements</a> () const</td></tr>
+<tr class="memdesc:abdb110b3851f860c2d602d1b12a8568a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a const reference to the elements associated with this layout. <br /></td></tr>
+<tr class="separator:abdb110b3851f860c2d602d1b12a8568a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8256cfd10160a6fe261a21a81a9a588d"><td class="memItemLeft" align="right" valign="top"><a id="a8256cfd10160a6fe261a21a81a9a588d"></a>
 std::vector&lt; <a class="el" href="structengine_1_1renderer_1_1BufferElement.html">BufferElement</a> &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> ()</td></tr>
 <tr class="separator:a8256cfd10160a6fe261a21a81a9a588d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -92,10 +99,10 @@ std::vector&lt; <a class="el" href="structengine_1_1renderer_1_1BufferElement.ht
 <tr class="separator:a10e0aeab4adbb50e425d84bfd3b753a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The layout for a given vertex buffer for creating shaders to be run by the gpu. </p>
+<div class="textblock"><p>A layout that specifies the elements to be associated with a vertex buffer. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aad7d69ca7a55c528fd619bc2f51635f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad7d69ca7a55c528fd619bc2f51635f0">&#9670;&nbsp;</a></span>BufferLayout() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aad7d69ca7a55c528fd619bc2f51635f0">&#9670;&nbsp;</a></span>BufferLayout()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -117,11 +124,14 @@ std::vector&lt; <a class="el" href="structengine_1_1renderer_1_1BufferElement.ht
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Instantiate a <a class="el" href="classengine_1_1renderer_1_1BufferLayout.html">BufferLayout</a> with an initializer list of BufferElements. e.g. </p><div class="fragment"><div class="line">{c++}</div><div class="line">  renderer::BufferLayout layout_init_list = {</div><div class="line">      { renderer::ShaderDataType::Float3, <span class="stringliteral">&quot;a_Position&quot;</span>},</div><div class="line">      { renderer::ShaderDataType::Float4, <span class="stringliteral">&quot;a_Color&quot;</span>},</div><div class="line">      { renderer::ShaderDataType::Float3, <span class="stringliteral">&quot;a_Normal&quot;</span>}};</div><div class="line"></div><div class="line">  renderer::BufferLayout layout(layout_init_list);</div></div><!-- fragment --> 
+
+<p>Instantiate a <a class="el" href="classengine_1_1renderer_1_1BufferLayout.html" title="A layout that specifies the elements to be associated with a vertex buffer. ">BufferLayout</a> with an initializer list of BufferElements. </p>
+<p>Stride is calculated once a non empty elements e.g. </p><div class="fragment"><div class="line">{c++}</div><div class="line">  renderer::BufferLayout layout_init_list = {</div><div class="line">      { renderer::ShaderDataType::Float3, <span class="stringliteral">&quot;a_Position&quot;</span>},</div><div class="line">      { renderer::ShaderDataType::Float4, <span class="stringliteral">&quot;a_Color&quot;</span>},</div><div class="line">      { renderer::ShaderDataType::Float3, <span class="stringliteral">&quot;a_Normal&quot;</span>}};</div><div class="line"></div><div class="line">  renderer::BufferLayout layout(layout_init_list);</div></div><!-- fragment --> 
 </div>
 </div>
-<a id="ae2a3753096d6a8171179d6e9c86facb8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2a3753096d6a8171179d6e9c86facb8">&#9670;&nbsp;</a></span>BufferLayout() <span class="overload">[2/2]</span></h2>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="abf525eed067da7cfa637c9fe795767b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf525eed067da7cfa637c9fe795767b5">&#9670;&nbsp;</a></span>GetStride()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -130,10 +140,10 @@ std::vector&lt; <a class="el" href="structengine_1_1renderer_1_1BufferElement.ht
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">engine::renderer::BufferLayout::BufferLayout </td>
+          <td class="memname">engine::renderer::BufferLayout::GetStride </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -142,7 +152,9 @@ std::vector&lt; <a class="el" href="structengine_1_1renderer_1_1BufferElement.ht
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Instantiate an empty <a class="el" href="classengine_1_1renderer_1_1BufferLayout.html">BufferLayout</a>. </p>
+
+<p>Get the overall stride of the current buffer layout. </p>
+<p>The stride is essentially the total size of the Buffer layout elements. </p>
 
 </div>
 </div>

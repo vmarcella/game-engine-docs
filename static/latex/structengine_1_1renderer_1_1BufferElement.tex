@@ -2,21 +2,29 @@
 \label{structengine_1_1renderer_1_1BufferElement}\index{engine\+::renderer\+::\+Buffer\+Element@{engine\+::renderer\+::\+Buffer\+Element}}
 
 
+A generic buffer element representation to be used in conjuction with Buffer\+Layouts.  
+
+
+
+
 {\ttfamily \#include $<$Buffer.\+h$>$}
 
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{structengine_1_1renderer_1_1BufferElement_a76049a787d70b0adf984e65a9994bc1d}{Buffer\+Element} (Shader\+Data\+Type type, const std\+::string \&name, bool normalized=false)
+\hyperlink{structengine_1_1renderer_1_1BufferElement_a76049a787d70b0adf984e65a9994bc1d}{Buffer\+Element} (\hyperlink{Buffer_8h_a8d90f87a6e9335927edd305c1e1345c1}{Shader\+Data\+Type} type, const std\+::string \&name, bool normalized=false)
 \item 
 \mbox{\Hypertarget{structengine_1_1renderer_1_1BufferElement_a577994a84ccd055e3ec24655bb011689}\label{structengine_1_1renderer_1_1BufferElement_a577994a84ccd055e3ec24655bb011689}} 
 std\+::string {\bfseries To\+String} () const
+\item 
+\mbox{\Hypertarget{structengine_1_1renderer_1_1BufferElement_abf7ee73bd035e7090ea79924370fdef8}\label{structengine_1_1renderer_1_1BufferElement_abf7ee73bd035e7090ea79924370fdef8}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os)
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{structengine_1_1renderer_1_1BufferElement_ad15963c4b3ba16476cce390f77bcb549}\label{structengine_1_1renderer_1_1BufferElement_ad15963c4b3ba16476cce390f77bcb549}} 
-Shader\+Data\+Type {\bfseries Type}
+\hyperlink{Buffer_8h_a8d90f87a6e9335927edd305c1e1345c1}{Shader\+Data\+Type} {\bfseries Type}
 \item 
 \mbox{\Hypertarget{structengine_1_1renderer_1_1BufferElement_a4d15f927313a59f54d234c435a254fb8}\label{structengine_1_1renderer_1_1BufferElement_a4d15f927313a59f54d234c435a254fb8}} 
 std\+::string {\bfseries Name}
@@ -36,19 +44,26 @@ bool {\bfseries Normalized}
 
 
 \subsection{Detailed Description}
-A generic buffer element that allows contexts to access. These components are to be used in the process of creatintg a \hyperlink{classengine_1_1renderer_1_1BufferLayout}{Buffer\+Layout}.
+A generic buffer element representation to be used in conjuction with Buffer\+Layouts. 
 
-The creation of every buffer is logged if E\+N\+G\+I\+N\+E\+\_\+\+D\+E\+V\+E\+L\+O\+P\+M\+E\+N\+T\+\_\+\+M\+O\+DE is enabled at compile time of of the engine. 
+The creation of every buffer is logged if E\+N\+G\+I\+N\+E\+\_\+\+D\+E\+V\+E\+L\+O\+P\+M\+E\+N\+T\+\_\+\+M\+O\+DE is enabled at compile time of of the engine. (Will disable in the future, but currently still testing.) 
 
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{structengine_1_1renderer_1_1BufferElement_a76049a787d70b0adf984e65a9994bc1d}\label{structengine_1_1renderer_1_1BufferElement_a76049a787d70b0adf984e65a9994bc1d}} 
 \index{engine\+::renderer\+::\+Buffer\+Element@{engine\+::renderer\+::\+Buffer\+Element}!Buffer\+Element@{Buffer\+Element}}
 \index{Buffer\+Element@{Buffer\+Element}!engine\+::renderer\+::\+Buffer\+Element@{engine\+::renderer\+::\+Buffer\+Element}}
 \subsubsection{\texorpdfstring{Buffer\+Element()}{BufferElement()}}
-{\footnotesize\ttfamily engine\+::renderer\+::\+Buffer\+Element\+::\+Buffer\+Element (\begin{DoxyParamCaption}\item[{Shader\+Data\+Type}]{type,  }\item[{const std\+::string \&}]{name,  }\item[{bool}]{normalized = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily engine\+::renderer\+::\+Buffer\+Element\+::\+Buffer\+Element (\begin{DoxyParamCaption}\item[{\hyperlink{Buffer_8h_a8d90f87a6e9335927edd305c1e1345c1}{Shader\+Data\+Type}}]{type,  }\item[{const std\+::string \&}]{name,  }\item[{bool}]{normalized = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Create a buffer element with a shader type and variable name to be used by the current graphics context shader A\+PI. 
+
+\begin{DoxyParams}{Parameters}
+{\em type} & The Shader\+Data\+Type that should be sent into the graphics A\+PI. \\
+\hline
+{\em name} & The name to be registered in the graphics A\+PI. \\
+\hline
+\end{DoxyParams}
+
 
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-engine/src/core/renderer/Buffer.\+h\end{DoxyCompactItemize}
+engine/src/core/renderer/\hyperlink{Buffer_8h}{Buffer.\+h}\end{DoxyCompactItemize}

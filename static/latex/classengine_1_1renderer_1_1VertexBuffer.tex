@@ -2,6 +2,11 @@
 \label{classengine_1_1renderer_1_1VertexBuffer}\index{engine\+::renderer\+::\+Vertex\+Buffer@{engine\+::renderer\+::\+Vertex\+Buffer}}
 
 
+The base \hyperlink{classengine_1_1renderer_1_1VertexBuffer}{Vertex\+Buffer} class to be used for creating vertex buffers.  
+
+
+
+
 {\ttfamily \#include $<$Buffer.\+h$>$}
 
 
@@ -16,30 +21,77 @@ Inheritance diagram for engine\+:\+:renderer\+:\+:Vertex\+Buffer\+:\nopagebreak
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classengine_1_1renderer_1_1VertexBuffer_acccb2af8de4a3a557f308757010a1fe7}\label{classengine_1_1renderer_1_1VertexBuffer_acccb2af8de4a3a557f308757010a1fe7}} 
-virtual void {\bfseries Bind} () const =0
-\item 
-\mbox{\Hypertarget{classengine_1_1renderer_1_1VertexBuffer_ab2bc17d0e37c25c369367ea6b1137283}\label{classengine_1_1renderer_1_1VertexBuffer_ab2bc17d0e37c25c369367ea6b1137283}} 
-virtual void {\bfseries Unbind} () const =0
-\item 
-\mbox{\Hypertarget{classengine_1_1renderer_1_1VertexBuffer_ab769bac40b3e30891fa4d5ee35ae6f2b}\label{classengine_1_1renderer_1_1VertexBuffer_ab769bac40b3e30891fa4d5ee35ae6f2b}} 
-virtual const \hyperlink{classengine_1_1renderer_1_1BufferLayout}{Buffer\+Layout} \& {\bfseries Get\+Layout} () const =0
-\item 
-\mbox{\Hypertarget{classengine_1_1renderer_1_1VertexBuffer_a2885e3856bfb698178b6cd00a4dc7aab}\label{classengine_1_1renderer_1_1VertexBuffer_a2885e3856bfb698178b6cd00a4dc7aab}} 
-virtual void {\bfseries Set\+Layout} (const \hyperlink{classengine_1_1renderer_1_1BufferLayout}{Buffer\+Layout} \&)=0
-\end{DoxyCompactItemize}
+virtual void \hyperlink{classengine_1_1renderer_1_1VertexBuffer_a62c7bd816aa10b69d1e903918ecc4414}{Bind} () const =0
+\begin{DoxyCompactList}\small\item\em Bind the vertex buffer to the current rendering context. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classengine_1_1renderer_1_1VertexBuffer_a06b240b93506dfd383b3a3f8947eb26f}{Unbind} () const =0
+\begin{DoxyCompactList}\small\item\em Unbind the vertex buffer to the current rendering context. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classengine_1_1renderer_1_1VertexBuffer_a3186b40aa8c8c471fe80c29645859aa5}\label{classengine_1_1renderer_1_1VertexBuffer_a3186b40aa8c8c471fe80c29645859aa5}} 
+virtual const \hyperlink{classengine_1_1renderer_1_1BufferLayout}{Buffer\+Layout} \& \hyperlink{classengine_1_1renderer_1_1VertexBuffer_a3186b40aa8c8c471fe80c29645859aa5}{Get\+Layout} () const =0
+\begin{DoxyCompactList}\small\item\em Get the \hyperlink{classengine_1_1renderer_1_1BufferLayout}{Buffer\+Layout} tied to the current \hyperlink{classengine_1_1renderer_1_1VertexBuffer}{Vertex\+Buffer}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classengine_1_1renderer_1_1VertexBuffer_afad191b22fec9bc2519e43d543e5c75e}\label{classengine_1_1renderer_1_1VertexBuffer_afad191b22fec9bc2519e43d543e5c75e}} 
+virtual void \hyperlink{classengine_1_1renderer_1_1VertexBuffer_afad191b22fec9bc2519e43d543e5c75e}{Set\+Layout} (const \hyperlink{classengine_1_1renderer_1_1BufferLayout}{Buffer\+Layout} \&)=0
+\begin{DoxyCompactList}\small\item\em Set the \hyperlink{classengine_1_1renderer_1_1BufferLayout}{Buffer\+Layout} for the current \hyperlink{classengine_1_1renderer_1_1VertexBuffer}{Vertex\+Buffer}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classengine_1_1renderer_1_1VertexBuffer_ad7590ff8837ebcf2ed645f4a379e04d8}\label{classengine_1_1renderer_1_1VertexBuffer_ad7590ff8837ebcf2ed645f4a379e04d8}} 
-static \hyperlink{classengine_1_1renderer_1_1VertexBuffer}{Vertex\+Buffer} $\ast$ {\bfseries Create} (float $\ast$vertices, uint32\+\_\+t size)
-\end{DoxyCompactItemize}
+static \hyperlink{classengine_1_1renderer_1_1VertexBuffer}{Vertex\+Buffer} $\ast$ \hyperlink{classengine_1_1renderer_1_1VertexBuffer_a4c337f1549556946735a47708a55ab9c}{Create} (float $\ast$vertices, uint32\+\_\+t size)
+\begin{DoxyCompactList}\small\item\em Creates a \hyperlink{classengine_1_1renderer_1_1VertexBuffer}{Vertex\+Buffer} through the Graphics A\+PI that is being used at compile time. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-Generic \hyperlink{classengine_1_1renderer_1_1VertexBuffer}{Vertex\+Buffer} implementation to represent generalized Vertex buffers to be implemented for platform specific graphics libraries. 
+The base \hyperlink{classengine_1_1renderer_1_1VertexBuffer}{Vertex\+Buffer} class to be used for creating vertex buffers. 
+
+Platform specific graphics A\+PI should extend this class in order to be supported by the the rendering A\+PI. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classengine_1_1renderer_1_1VertexBuffer_a62c7bd816aa10b69d1e903918ecc4414}\label{classengine_1_1renderer_1_1VertexBuffer_a62c7bd816aa10b69d1e903918ecc4414}} 
+\index{engine\+::renderer\+::\+Vertex\+Buffer@{engine\+::renderer\+::\+Vertex\+Buffer}!Bind@{Bind}}
+\index{Bind@{Bind}!engine\+::renderer\+::\+Vertex\+Buffer@{engine\+::renderer\+::\+Vertex\+Buffer}}
+\subsubsection{\texorpdfstring{Bind()}{Bind()}}
+{\footnotesize\ttfamily engine\+::renderer\+::\+Vertex\+Buffer\+::\+Bind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Bind the vertex buffer to the current rendering context. 
+
+The binding process is entirely dependent upon the grahpics A\+PI. However, it should be noted that this function needs to be called by the user whenever they\textquotesingle{}re trying to bind the buffer to the render A\+PI. 
+
+Implemented in \hyperlink{classengine_1_1platform_1_1opengl_1_1OpenGLVertexBuffer_ac50918719a747f81d7fe94dfcc8dec13}{engine\+::platform\+::opengl\+::\+Open\+G\+L\+Vertex\+Buffer}.
+
+\mbox{\Hypertarget{classengine_1_1renderer_1_1VertexBuffer_a4c337f1549556946735a47708a55ab9c}\label{classengine_1_1renderer_1_1VertexBuffer_a4c337f1549556946735a47708a55ab9c}} 
+\index{engine\+::renderer\+::\+Vertex\+Buffer@{engine\+::renderer\+::\+Vertex\+Buffer}!Create@{Create}}
+\index{Create@{Create}!engine\+::renderer\+::\+Vertex\+Buffer@{engine\+::renderer\+::\+Vertex\+Buffer}}
+\subsubsection{\texorpdfstring{Create()}{Create()}}
+{\footnotesize\ttfamily engine\+::renderer\+::\+Vertex\+Buffer\+::\+Create (\begin{DoxyParamCaption}\item[{float $\ast$}]{vertices,  }\item[{uint32\+\_\+t}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a \hyperlink{classengine_1_1renderer_1_1VertexBuffer}{Vertex\+Buffer} through the Graphics A\+PI that is being used at compile time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertices} & -\/ a pointer to an array of vertices to be registered. \\
+\hline
+{\em size} & -\/ The size of the vertices in bytes. This is the primary method of creating platform independent vertex buffers and what should be used by users to create Vertex Buffers that are compatible with the rendering A\+PI. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classengine_1_1renderer_1_1VertexBuffer_a06b240b93506dfd383b3a3f8947eb26f}\label{classengine_1_1renderer_1_1VertexBuffer_a06b240b93506dfd383b3a3f8947eb26f}} 
+\index{engine\+::renderer\+::\+Vertex\+Buffer@{engine\+::renderer\+::\+Vertex\+Buffer}!Unbind@{Unbind}}
+\index{Unbind@{Unbind}!engine\+::renderer\+::\+Vertex\+Buffer@{engine\+::renderer\+::\+Vertex\+Buffer}}
+\subsubsection{\texorpdfstring{Unbind()}{Unbind()}}
+{\footnotesize\ttfamily engine\+::renderer\+::\+Vertex\+Buffer\+::\+Unbind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Unbind the vertex buffer to the current rendering context. 
+
+The unbinding process is entirely dependent upon the grahpics A\+PI. However, it should be noted that this function needs to be called by the user whenever they\textquotesingle{}re trying to unbind the buffer from the render A\+PI. (For cleaning up anything still in memory.) 
+
+Implemented in \hyperlink{classengine_1_1platform_1_1opengl_1_1OpenGLVertexBuffer_a9069ca746c0de9dd9418ba9c5ee7b67b}{engine\+::platform\+::opengl\+::\+Open\+G\+L\+Vertex\+Buffer}.
+
+
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-engine/src/core/renderer/Buffer.\+h\item 
+engine/src/core/renderer/\hyperlink{Buffer_8h}{Buffer.\+h}\item 
 engine/src/core/renderer/Buffer.\+cpp\end{DoxyCompactItemize}

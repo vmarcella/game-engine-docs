@@ -1,0 +1,67 @@
+\hypertarget{Buffer_8h}{}\section{engine/src/core/renderer/\+Buffer.h File Reference}
+\label{Buffer_8h}\index{engine/src/core/renderer/\+Buffer.\+h@{engine/src/core/renderer/\+Buffer.\+h}}
+
+
+Buffer abstractions that allow the ease of implementing Buffers for any graphics A\+PI.  
+
+
+{\ttfamily \#include $<$bits/stdint-\/uintn.\+h$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$ostream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include \char`\"{}core/\+Assert.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}core/\+Log.\+h\char`\"{}}\newline
+Include dependency graph for Buffer.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Buffer_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Buffer_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structengine_1_1renderer_1_1BufferElement}{engine\+::renderer\+::\+Buffer\+Element}
+\begin{DoxyCompactList}\small\item\em A generic buffer element representation to be used in conjuction with Buffer\+Layouts. \end{DoxyCompactList}\item 
+class \hyperlink{classengine_1_1renderer_1_1BufferLayout}{engine\+::renderer\+::\+Buffer\+Layout}
+\begin{DoxyCompactList}\small\item\em A layout that specifies the elements to be associated with a vertex buffer. \end{DoxyCompactList}\item 
+class \hyperlink{classengine_1_1renderer_1_1VertexBuffer}{engine\+::renderer\+::\+Vertex\+Buffer}
+\begin{DoxyCompactList}\small\item\em The base \hyperlink{classengine_1_1renderer_1_1VertexBuffer}{Vertex\+Buffer} class to be used for creating vertex buffers. \end{DoxyCompactList}\item 
+class \hyperlink{classengine_1_1renderer_1_1IndexBuffer}{engine\+::renderer\+::\+Index\+Buffer}
+\begin{DoxyCompactList}\small\item\em The base \hyperlink{classengine_1_1renderer_1_1IndexBuffer}{Index\+Buffer} class to be used for creating index buffers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{Buffer_8h_a8d90f87a6e9335927edd305c1e1345c1}\label{Buffer_8h_a8d90f87a6e9335927edd305c1e1345c1}} 
+enum \hyperlink{Buffer_8h_a8d90f87a6e9335927edd305c1e1345c1}{engine\+::renderer\+::\+Shader\+Data\+Type} \{ \newline
+{\bfseries None} = 0, 
+{\bfseries Bool}, 
+{\bfseries Float}, 
+{\bfseries Float2}, 
+\newline
+{\bfseries Float3}, 
+{\bfseries Float4}, 
+{\bfseries Int}, 
+{\bfseries Int2}, 
+\newline
+{\bfseries Int3}, 
+{\bfseries Int4}, 
+{\bfseries Mat3}, 
+{\bfseries Mat4}
+ \}\begin{DoxyCompactList}\small\item\em Data types that are compatible with shaders supported by the engine. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Buffer abstractions that allow the ease of implementing Buffers for any graphics A\+PI. 
+
+All platform specific graphics A\+PI will implement buffer implementations in their corresponding A\+PI syntax through this generalized engine A\+PI. This will allow application developers to not have to worry (Not entirely true) about platform specific buffer implementations. 

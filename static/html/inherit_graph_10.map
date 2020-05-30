@@ -1,4 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classengine_1_1renderer_1_1IndexBuffer.html" title="engine::renderer::IndexBuffer" alt="" coords="5,13,196,39"/>
+<area shape="rect" id="node1" href="$classengine_1_1renderer_1_1IndexBuffer.html" title="The base IndexBuffer class to be used for creating index buffers. " alt="" coords="5,13,196,39"/>
 <area shape="rect" id="node2" href="$classengine_1_1platform_1_1opengl_1_1OpenGLIndexBuffer.html" title="engine::platform::opengl\l::OpenGLIndexBuffer" alt="" coords="244,5,405,47"/>
 </map>

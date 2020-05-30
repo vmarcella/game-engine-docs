@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['setlayout',['SetLayout',['../classengine_1_1platform_1_1opengl_1_1OpenGLVertexBuffer.html#a957a9dc55dc35ce4302654e1a394e5f8',1,'engine::platform::opengl::OpenGLVertexBuffer']]],
-  ['shader',['Shader',['../classengine_1_1renderer_1_1Shader.html',1,'engine::renderer']]]
+  ['setlayout',['SetLayout',['../classengine_1_1renderer_1_1VertexBuffer.html#afad191b22fec9bc2519e43d543e5c75e',1,'engine::renderer::VertexBuffer::SetLayout()'],['../classengine_1_1platform_1_1opengl_1_1OpenGLVertexBuffer.html#a957a9dc55dc35ce4302654e1a394e5f8',1,'engine::platform::opengl::OpenGLVertexBuffer::SetLayout()']]],
+  ['shader',['Shader',['../classengine_1_1renderer_1_1Shader.html',1,'engine::renderer']]],
+  ['shaderdatatype',['ShaderDataType',['../Buffer_8h.html#a8d90f87a6e9335927edd305c1e1345c1',1,'engine::renderer']]]
 ];

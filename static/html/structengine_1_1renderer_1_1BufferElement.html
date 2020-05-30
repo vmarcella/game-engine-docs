@@ -71,20 +71,26 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>A generic buffer element representation to be used in conjuction with BufferLayouts.  
+ <a href="structengine_1_1renderer_1_1BufferElement.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="Buffer_8h_source.html">Buffer.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a76049a787d70b0adf984e65a9994bc1d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structengine_1_1renderer_1_1BufferElement.html#a76049a787d70b0adf984e65a9994bc1d">BufferElement</a> (ShaderDataType type, const std::string &amp;name, bool normalized=false)</td></tr>
+<tr class="memitem:a76049a787d70b0adf984e65a9994bc1d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structengine_1_1renderer_1_1BufferElement.html#a76049a787d70b0adf984e65a9994bc1d">BufferElement</a> (<a class="el" href="Buffer_8h.html#a8d90f87a6e9335927edd305c1e1345c1">ShaderDataType</a> type, const std::string &amp;name, bool normalized=false)</td></tr>
 <tr class="separator:a76049a787d70b0adf984e65a9994bc1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a577994a84ccd055e3ec24655bb011689"><td class="memItemLeft" align="right" valign="top"><a id="a577994a84ccd055e3ec24655bb011689"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>ToString</b> () const</td></tr>
 <tr class="separator:a577994a84ccd055e3ec24655bb011689"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf7ee73bd035e7090ea79924370fdef8"><td class="memItemLeft" align="right" valign="top"><a id="abf7ee73bd035e7090ea79924370fdef8"></a>
+std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (std::ostream &amp;os)</td></tr>
+<tr class="separator:abf7ee73bd035e7090ea79924370fdef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:ad15963c4b3ba16476cce390f77bcb549"><td class="memItemLeft" align="right" valign="top"><a id="ad15963c4b3ba16476cce390f77bcb549"></a>
-ShaderDataType&#160;</td><td class="memItemRight" valign="bottom"><b>Type</b></td></tr>
+<a class="el" href="Buffer_8h.html#a8d90f87a6e9335927edd305c1e1345c1">ShaderDataType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Type</b></td></tr>
 <tr class="separator:ad15963c4b3ba16476cce390f77bcb549"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d15f927313a59f54d234c435a254fb8"><td class="memItemLeft" align="right" valign="top"><a id="a4d15f927313a59f54d234c435a254fb8"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>Name</b></td></tr>
@@ -103,8 +109,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>Normalized</b></td></
 <tr class="separator:ae6515d1eab82fff649da068b2ae863c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A generic buffer element that allows contexts to access. These components are to be used in the process of creatintg a <a class="el" href="classengine_1_1renderer_1_1BufferLayout.html">BufferLayout</a>.</p>
-<p>The creation of every buffer is logged if ENGINE_DEVELOPMENT_MODE is enabled at compile time of of the engine. </p>
+<div class="textblock"><p>A generic buffer element representation to be used in conjuction with BufferLayouts. </p>
+<p>The creation of every buffer is logged if ENGINE_DEVELOPMENT_MODE is enabled at compile time of of the engine. (Will disable in the future, but currently still testing.) </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a76049a787d70b0adf984e65a9994bc1d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a76049a787d70b0adf984e65a9994bc1d">&#9670;&nbsp;</a></span>BufferElement()</h2>
@@ -118,7 +124,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>Normalized</b></td></
         <tr>
           <td class="memname">engine::renderer::BufferElement::BufferElement </td>
           <td>(</td>
-          <td class="paramtype">ShaderDataType&#160;</td>
+          <td class="paramtype"><a class="el" href="Buffer_8h.html#a8d90f87a6e9335927edd305c1e1345c1">ShaderDataType</a>&#160;</td>
           <td class="paramname"><em>type</em>, </td>
         </tr>
         <tr>
@@ -145,7 +151,13 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>Normalized</b></td></
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Create a buffer element with a shader type and variable name to be used by the current graphics context shader API. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>The ShaderDataType that should be sent into the graphics API. </td></tr>
+    <tr><td class="paramname">name</td><td>The name to be registered in the graphics API. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

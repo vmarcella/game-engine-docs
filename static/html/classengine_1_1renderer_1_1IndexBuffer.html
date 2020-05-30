@@ -71,6 +71,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>The base <a class="el" href="classengine_1_1renderer_1_1IndexBuffer.html" title="The base IndexBuffer class to be used for creating index buffers. ">IndexBuffer</a> class to be used for creating index buffers.  
+ <a href="classengine_1_1renderer_1_1IndexBuffer.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="Buffer_8h_source.html">Buffer.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for engine::renderer::IndexBuffer:</div>
@@ -83,25 +86,104 @@ Inheritance diagram for engine::renderer::IndexBuffer:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7c52dbc4b44f40576d5ea779adab9ff1"><td class="memItemLeft" align="right" valign="top"><a id="a7c52dbc4b44f40576d5ea779adab9ff1"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Bind</b> () const =0</td></tr>
-<tr class="separator:a7c52dbc4b44f40576d5ea779adab9ff1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34fa5a15f323617a82ffc1641312b214"><td class="memItemLeft" align="right" valign="top"><a id="a34fa5a15f323617a82ffc1641312b214"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Unbind</b> () const =0</td></tr>
-<tr class="separator:a34fa5a15f323617a82ffc1641312b214"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a231d15b46a8b932b3a03b6be95256bac"><td class="memItemLeft" align="right" valign="top"><a id="a231d15b46a8b932b3a03b6be95256bac"></a>
-virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetCount</b> () const =0</td></tr>
-<tr class="separator:a231d15b46a8b932b3a03b6be95256bac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a050664f22cc88b809bc386c1e4dba359"><td class="memItemLeft" align="right" valign="top"><a id="a050664f22cc88b809bc386c1e4dba359"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1renderer_1_1IndexBuffer.html#a050664f22cc88b809bc386c1e4dba359">Bind</a> () const =0</td></tr>
+<tr class="memdesc:a050664f22cc88b809bc386c1e4dba359"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind the current <a class="el" href="classengine_1_1renderer_1_1IndexBuffer.html" title="The base IndexBuffer class to be used for creating index buffers. ">IndexBuffer</a> to the current rendering context. <br /></td></tr>
+<tr class="separator:a050664f22cc88b809bc386c1e4dba359"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fd1ab43d3963533370c4d8e2e2282f4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1renderer_1_1IndexBuffer.html#a8fd1ab43d3963533370c4d8e2e2282f4">Unbind</a> () const =0</td></tr>
+<tr class="memdesc:a8fd1ab43d3963533370c4d8e2e2282f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unbind the current <a class="el" href="classengine_1_1renderer_1_1IndexBuffer.html" title="The base IndexBuffer class to be used for creating index buffers. ">IndexBuffer</a> from the current rendering context.  <a href="#a8fd1ab43d3963533370c4d8e2e2282f4">More...</a><br /></td></tr>
+<tr class="separator:a8fd1ab43d3963533370c4d8e2e2282f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42571fcc830427648852258124e92844"><td class="memItemLeft" align="right" valign="top"><a id="a42571fcc830427648852258124e92844"></a>
+virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1renderer_1_1IndexBuffer.html#a42571fcc830427648852258124e92844">GetCount</a> () const =0</td></tr>
+<tr class="memdesc:a42571fcc830427648852258124e92844"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the count of indices within the current <a class="el" href="classengine_1_1renderer_1_1IndexBuffer.html" title="The base IndexBuffer class to be used for creating index buffers. ">IndexBuffer</a>. <br /></td></tr>
+<tr class="separator:a42571fcc830427648852258124e92844"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a745efbbda6626a5dd4dd99d78018fe59"><td class="memItemLeft" align="right" valign="top"><a id="a745efbbda6626a5dd4dd99d78018fe59"></a>
-static <a class="el" href="classengine_1_1renderer_1_1IndexBuffer.html">IndexBuffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>Create</b> (uint32_t *indices, uint32_t count)</td></tr>
-<tr class="separator:a745efbbda6626a5dd4dd99d78018fe59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a4773cdd0dab8101ca9662ff6c0a460"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classengine_1_1renderer_1_1IndexBuffer.html">IndexBuffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1renderer_1_1IndexBuffer.html#a2a4773cdd0dab8101ca9662ff6c0a460">Create</a> (uint32_t *indices, uint32_t count)</td></tr>
+<tr class="memdesc:a2a4773cdd0dab8101ca9662ff6c0a460"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="classengine_1_1renderer_1_1IndexBuffer.html" title="The base IndexBuffer class to be used for creating index buffers. ">IndexBuffer</a> through the Graphics API that is being used at compile time.  <a href="#a2a4773cdd0dab8101ca9662ff6c0a460">More...</a><br /></td></tr>
+<tr class="separator:a2a4773cdd0dab8101ca9662ff6c0a460"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Generic <a class="el" href="classengine_1_1renderer_1_1IndexBuffer.html">IndexBuffer</a> implementation to represent generalized Vertex buffers to be implemented for platform specific graphics libraries. </p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+<div class="textblock"><p>The base <a class="el" href="classengine_1_1renderer_1_1IndexBuffer.html" title="The base IndexBuffer class to be used for creating index buffers. ">IndexBuffer</a> class to be used for creating index buffers. </p>
+<p>Platform specific graphics API should extend this class in order to be supported by the the rendering API. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2a4773cdd0dab8101ca9662ff6c0a460"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a4773cdd0dab8101ca9662ff6c0a460">&#9670;&nbsp;</a></span>Create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">engine::renderer::IndexBuffer::Create </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramname"><em>indices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a <a class="el" href="classengine_1_1renderer_1_1IndexBuffer.html" title="The base IndexBuffer class to be used for creating index buffers. ">IndexBuffer</a> through the Graphics API that is being used at compile time. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">indices</td><td>- a pointer to an array of indices to be registered. </td></tr>
+    <tr><td class="paramname">size</td><td>- The size of the vertices in bytes. This is the primary method of creating platform independent index buffers and what should be used by users to create Vertex Buffers that are compatible with the rendering API. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8fd1ab43d3963533370c4d8e2e2282f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fd1ab43d3963533370c4d8e2e2282f4">&#9670;&nbsp;</a></span>Unbind()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">engine::renderer::IndexBuffer::Unbind </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Unbind the current <a class="el" href="classengine_1_1renderer_1_1IndexBuffer.html" title="The base IndexBuffer class to be used for creating index buffers. ">IndexBuffer</a> from the current rendering context. </p>
+<p>Any vertex buffer that relies on this buffer will not be able to access the contents of it once unbound from the graphics context. </p>
+
+<p>Implemented in <a class="el" href="classengine_1_1platform_1_1opengl_1_1OpenGLIndexBuffer.html#a9fc400e4c464a2dbf7df76eba359639e">engine::platform::opengl::OpenGLIndexBuffer</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>engine/src/core/renderer/<a class="el" href="Buffer_8h_source.html">Buffer.h</a></li>
 <li>engine/src/core/renderer/Buffer.cpp</li>
 </ul>

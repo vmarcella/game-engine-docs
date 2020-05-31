@@ -69,21 +69,30 @@ $(function() {
 <div class="title">engine::LayerStack Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>A stack based data structure for the storage of layers to be managed by the engine.  
+ <a href="classengine_1_1LayerStack.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="LayerStack_8h_source.html">LayerStack.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3e18dd7877bf00498b9771cf91fc9b7c"><td class="memItemLeft" align="right" valign="top"><a id="a3e18dd7877bf00498b9771cf91fc9b7c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>PushLayer</b> (<a class="el" href="classengine_1_1Layer.html">Layer</a> *layer)</td></tr>
-<tr class="separator:a3e18dd7877bf00498b9771cf91fc9b7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b84a2581e5647cd73b5924c7982680f"><td class="memItemLeft" align="right" valign="top"><a id="a4b84a2581e5647cd73b5924c7982680f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>PushOverlay</b> (<a class="el" href="classengine_1_1Layer.html">Layer</a> *overlay)</td></tr>
-<tr class="separator:a4b84a2581e5647cd73b5924c7982680f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a864050f5ad6ed9ffe04974c9411fad94"><td class="memItemLeft" align="right" valign="top"><a id="a864050f5ad6ed9ffe04974c9411fad94"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>PopLayer</b> (<a class="el" href="classengine_1_1Layer.html">Layer</a> *layer)</td></tr>
-<tr class="separator:a864050f5ad6ed9ffe04974c9411fad94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecbddf93a6f5846a902570a980a63ddb"><td class="memItemLeft" align="right" valign="top"><a id="aecbddf93a6f5846a902570a980a63ddb"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>PopOverlay</b> (<a class="el" href="classengine_1_1Layer.html">Layer</a> *layer)</td></tr>
-<tr class="separator:aecbddf93a6f5846a902570a980a63ddb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0af3e9ae8559e5321312834061d45ff2"><td class="memItemLeft" align="right" valign="top"><a id="a0af3e9ae8559e5321312834061d45ff2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1LayerStack.html#a0af3e9ae8559e5321312834061d45ff2">PushLayer</a> (<a class="el" href="classengine_1_1Layer.html">Layer</a> *layer)</td></tr>
+<tr class="memdesc:a0af3e9ae8559e5321312834061d45ff2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push a layer on to the <a class="el" href="classengine_1_1Layer.html">Layer</a> stack. <br /></td></tr>
+<tr class="separator:a0af3e9ae8559e5321312834061d45ff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5afd12a6e1912070f4256b43558c2ebd"><td class="memItemLeft" align="right" valign="top"><a id="a5afd12a6e1912070f4256b43558c2ebd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1LayerStack.html#a5afd12a6e1912070f4256b43558c2ebd">PushOverlay</a> (<a class="el" href="classengine_1_1Layer.html">Layer</a> *overlay)</td></tr>
+<tr class="memdesc:a5afd12a6e1912070f4256b43558c2ebd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pushes an overlay on to the back of the stack. <br /></td></tr>
+<tr class="separator:a5afd12a6e1912070f4256b43558c2ebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1308d64db567b107f4e17a274792ee8e"><td class="memItemLeft" align="right" valign="top"><a id="a1308d64db567b107f4e17a274792ee8e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1LayerStack.html#a1308d64db567b107f4e17a274792ee8e">PopLayer</a> (<a class="el" href="classengine_1_1Layer.html">Layer</a> *layer)</td></tr>
+<tr class="memdesc:a1308d64db567b107f4e17a274792ee8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pops a layer off the layer stack. <br /></td></tr>
+<tr class="separator:a1308d64db567b107f4e17a274792ee8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fe9370bb2a2b65561ea5ef998213510"><td class="memItemLeft" align="right" valign="top"><a id="a9fe9370bb2a2b65561ea5ef998213510"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1LayerStack.html#a9fe9370bb2a2b65561ea5ef998213510">PopOverlay</a> (<a class="el" href="classengine_1_1Layer.html">Layer</a> *layer)</td></tr>
+<tr class="memdesc:a9fe9370bb2a2b65561ea5ef998213510"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pops an overlay off the layer stack. <br /></td></tr>
+<tr class="separator:a9fe9370bb2a2b65561ea5ef998213510"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a341bf522aa1af78ba06e3fdf510df271"><td class="memItemLeft" align="right" valign="top"><a id="a341bf522aa1af78ba06e3fdf510df271"></a>
 std::vector&lt; <a class="el" href="classengine_1_1Layer.html">Layer</a> * &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> ()</td></tr>
 <tr class="separator:a341bf522aa1af78ba06e3fdf510df271"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -91,7 +100,10 @@ std::vector&lt; <a class="el" href="classengine_1_1Layer.html">Layer</a> * &gt;:
 std::vector&lt; <a class="el" href="classengine_1_1Layer.html">Layer</a> * &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> ()</td></tr>
 <tr class="separator:ad05cf0f1deec9dd7f7d8ead15febf657"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following files:<ul>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A stack based data structure for the storage of layers to be managed by the engine. </p>
+<p>The layer stack is completely managed by the engine. However, the engine does expose functionality to safely interact with the one that is being used for any given application being powered by the engine. </p>
+</div><hr/>The documentation for this class was generated from the following files:<ul>
 <li>engine/src/core/<a class="el" href="LayerStack_8h_source.html">LayerStack.h</a></li>
 <li>engine/src/core/LayerStack.cpp</li>
 </ul>

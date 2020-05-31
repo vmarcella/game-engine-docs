@@ -1,0 +1,70 @@
+\hypertarget{Log_8h}{}\section{engine/src/core/\+Log.h File Reference}
+\label{Log_8h}\index{engine/src/core/\+Log.\+h@{engine/src/core/\+Log.\+h}}
+
+
+The engines logging utility.  
+
+
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include \char`\"{}spdlog/spdlog.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Core.\+h\char`\"{}}\newline
+Include dependency graph for Log.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{Log_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Log_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classengine_1_1logging_1_1Log}{engine\+::logging\+::\+Log}
+\begin{DoxyCompactList}\small\item\em The container class for managing static instances of the engine and client loggers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{Log_8h_af5a23626565ced5d88975f395e9bb90f}\label{Log_8h_af5a23626565ced5d88975f395e9bb90f}} 
+\#define \hyperlink{Log_8h_af5a23626565ced5d88975f395e9bb90f}{E\+N\+G\+I\+N\+E\+\_\+\+C\+O\+R\+E\+\_\+\+T\+R\+A\+CE}(...)~\+::engine\+::logging\+::\+Log\+::\+Get\+Core\+Logger()-\/$>$trace(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Engine core trace output. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{Log_8h_a739403158db489937bdfbd8b7ac0d4e7}\label{Log_8h_a739403158db489937bdfbd8b7ac0d4e7}} 
+\#define \hyperlink{Log_8h_a739403158db489937bdfbd8b7ac0d4e7}{E\+N\+G\+I\+N\+E\+\_\+\+C\+O\+R\+E\+\_\+\+I\+N\+FO}(...)~\+::engine\+::logging\+::\+Log\+::\+Get\+Core\+Logger()-\/$>$info(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Engine core info output. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{Log_8h_ac25562774ec02e9eae9332e0ead10f77}\label{Log_8h_ac25562774ec02e9eae9332e0ead10f77}} 
+\#define \hyperlink{Log_8h_ac25562774ec02e9eae9332e0ead10f77}{E\+N\+G\+I\+N\+E\+\_\+\+C\+O\+R\+E\+\_\+\+W\+A\+RN}(...)~\+::engine\+::logging\+::\+Log\+::\+Get\+Core\+Logger()-\/$>$warn(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Engine core warning output. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{Log_8h_aff5012374c85142810c91f85d79b9171}\label{Log_8h_aff5012374c85142810c91f85d79b9171}} 
+\#define \hyperlink{Log_8h_aff5012374c85142810c91f85d79b9171}{E\+N\+G\+I\+N\+E\+\_\+\+C\+O\+R\+E\+\_\+\+E\+R\+R\+OR}(...)~\+::engine\+::logging\+::\+Log\+::\+Get\+Core\+Logger()-\/$>$error(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Engine core error output. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{Log_8h_abff61c530e46d525b7dce899a8cc9fb5}\label{Log_8h_abff61c530e46d525b7dce899a8cc9fb5}} 
+\#define \hyperlink{Log_8h_abff61c530e46d525b7dce899a8cc9fb5}{E\+N\+G\+I\+N\+E\+\_\+\+C\+O\+R\+E\+\_\+\+F\+A\+T\+AL}(...)~\+::engine\+::logging\+::\+Log\+::\+Get\+Core\+Logger()-\/$>$fatal(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Engine core fatal output. Exits the application. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{Log_8h_a1b2aceda03105a3a5b0451909977ef39}\label{Log_8h_a1b2aceda03105a3a5b0451909977ef39}} 
+\#define \hyperlink{Log_8h_a1b2aceda03105a3a5b0451909977ef39}{E\+N\+G\+I\+N\+E\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+T\+R\+A\+CE}(...)~\+::engine\+::logging\+::\+Log\+::\+Get\+Client\+Logger()-\/$>$trace(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Engine client trace output. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{Log_8h_a70e0e1b7956842e4d5cb98ba690fbf7c}\label{Log_8h_a70e0e1b7956842e4d5cb98ba690fbf7c}} 
+\#define \hyperlink{Log_8h_a70e0e1b7956842e4d5cb98ba690fbf7c}{E\+N\+G\+I\+N\+E\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+I\+N\+FO}(...)~\+::engine\+::logging\+::\+Log\+::\+Get\+Client\+Logger()-\/$>$info(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Engine client info output. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{Log_8h_afc2502f303d62594e2766a27740d05e5}\label{Log_8h_afc2502f303d62594e2766a27740d05e5}} 
+\#define \hyperlink{Log_8h_afc2502f303d62594e2766a27740d05e5}{E\+N\+G\+I\+N\+E\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+W\+A\+RN}(...)~\+::engine\+::logging\+::\+Log\+::\+Get\+Client\+Logger()-\/$>$warn(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Engine client warning output. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{Log_8h_a0b819644df5f3d4cbd1a4e134e14be34}\label{Log_8h_a0b819644df5f3d4cbd1a4e134e14be34}} 
+\#define \hyperlink{Log_8h_a0b819644df5f3d4cbd1a4e134e14be34}{E\+N\+G\+I\+N\+E\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+E\+R\+R\+OR}(...)~\+::engine\+::logging\+::\+Log\+::\+Get\+Client\+Logger()-\/$>$error(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Engine client error output. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{Log_8h_a4519c5865a32471160438536f2c14b95}\label{Log_8h_a4519c5865a32471160438536f2c14b95}} 
+\#define \hyperlink{Log_8h_a4519c5865a32471160438536f2c14b95}{E\+N\+G\+I\+N\+E\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+F\+A\+T\+AL}(...)~\+::engine\+::logging\+::\+Log\+::\+Get\+Client\+Logger()-\/$>$fatal(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Engine client fatal output. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The engines logging utility. 
+
+Can be used both in the engine and client application. 

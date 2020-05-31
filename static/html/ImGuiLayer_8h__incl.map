@@ -1,6 +1,6 @@
 <map id="engine/src/core/imgui/ImGuiLayer.h" name="engine/src/core/imgui/ImGuiLayer.h">
 <area shape="rect" id="node2" href="$Core_8h.html" title="Core macros to be used all throughout the engine for development and production purposes. " alt="" coords="15,244,105,271"/>
-<area shape="rect" id="node3" href="$Layer_8h_source.html" title="core/Layer.h" alt="" coords="31,95,126,121"/>
+<area shape="rect" id="node3" href="$Layer_8h.html" title="The Layer implementation that allows application to specify layers to be attached to the game..." alt="" coords="31,95,126,121"/>
 <area shape="rect" id="node4" href="$Event_8h.html" title="The Event class and dispatcher core implementations. " alt="" coords="237,169,376,196"/>
 <area shape="rect" id="node9" href="$ApplicationEvent_8h.html" title="Events that are to be specifically handled at the application level. " alt="" coords="201,95,404,121"/>
 <area shape="rect" id="node11" href="$KeyEvent_8h.html" title="Events that specifically deal with key input. " alt="" coords="428,95,591,121"/>

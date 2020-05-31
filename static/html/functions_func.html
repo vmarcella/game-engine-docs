@@ -91,6 +91,7 @@ $(function() {
 <li>Create()
 : <a class="el" href="classengine_1_1renderer_1_1IndexBuffer.html#a2a4773cdd0dab8101ca9662ff6c0a460">engine::renderer::IndexBuffer</a>
 , <a class="el" href="classengine_1_1renderer_1_1VertexBuffer.html#a4c337f1549556946735a47708a55ab9c">engine::renderer::VertexBuffer</a>
+, <a class="el" href="classengine_1_1Window.html#ac835a4aa07cfb1d589f777e54da39932">engine::Window</a>
 </li>
 </ul>
 
@@ -115,6 +116,7 @@ $(function() {
 </li>
 <li>GetHeight()
 : <a class="el" href="classengine_1_1events_1_1WindowResizeEvent.html#af918787c7055557358d6babefdd208b2">engine::events::WindowResizeEvent</a>
+, <a class="el" href="classengine_1_1Window.html#a19464c47ee28b320979a3255a92ccf3f">engine::Window</a>
 </li>
 <li>GetKeyCode()
 : <a class="el" href="classengine_1_1events_1_1KeyEvent.html#a2140c6615ec67c2f0cca0b1932968947">engine::events::KeyEvent</a>
@@ -132,6 +134,12 @@ $(function() {
 <li>GetMouseY()
 : <a class="el" href="classengine_1_1Input.html#aa6fa67ccfdb48ac903c927157f0809c2">engine::Input</a>
 </li>
+<li>GetName()
+: <a class="el" href="classengine_1_1Layer.html#a770a8fb58326ed32779e84bf54a93eef">engine::Layer</a>
+</li>
+<li>GetNativeWindow()
+: <a class="el" href="classengine_1_1Window.html#a075f0ad97b7d7d3730a710385abde3d6">engine::Window</a>
+</li>
 <li>GetRepeatCount()
 : <a class="el" href="classengine_1_1events_1_1KeyPressedEvent.html#a6287172d5b6c9600fcc129d69cda49cd">engine::events::KeyPressedEvent</a>
 </li>
@@ -140,6 +148,7 @@ $(function() {
 </li>
 <li>GetWidth()
 : <a class="el" href="classengine_1_1events_1_1WindowResizeEvent.html#a0858a751bbb0a18846c7377dbbe3d977">engine::events::WindowResizeEvent</a>
+, <a class="el" href="classengine_1_1Window.html#a5969984ab8a150119367a43ab8d0ffd1">engine::Window</a>
 </li>
 <li>GetWindow()
 : <a class="el" href="classengine_1_1Application.html#a0c66a3ff294bcc497bb2e8eb7330124c">engine::Application</a>
@@ -150,6 +159,9 @@ $(function() {
 <h3><a id="index_h"></a>- h -</h3><ul>
 <li>HasBeenHandled()
 : <a class="el" href="classengine_1_1events_1_1Event.html#a8d8413f3ea8c3d00b3f43a757a92f623">engine::events::Event</a>
+</li>
+<li>HasVerticalSync()
+: <a class="el" href="classengine_1_1Window.html#a3c1d2e008a8b83a83be692ca864beec1">engine::Window</a>
 </li>
 </ul>
 
@@ -180,15 +192,23 @@ $(function() {
 <h3><a id="index_o"></a>- o -</h3><ul>
 <li>OnAttach()
 : <a class="el" href="classengine_1_1imgui_1_1ImGuiLayer.html#a8580bd31942d4bc33f268053d2adec31">engine::imgui::ImGuiLayer</a>
+, <a class="el" href="classengine_1_1Layer.html#ace68c1d4e441165d6741a74d4b11c7f0">engine::Layer</a>
 </li>
 <li>OnDetach()
 : <a class="el" href="classengine_1_1imgui_1_1ImGuiLayer.html#ad443a984abe93f4101fdbadcea01bf9b">engine::imgui::ImGuiLayer</a>
+, <a class="el" href="classengine_1_1Layer.html#acfa7e624cfd2cb85803382511454d098">engine::Layer</a>
 </li>
 <li>OnEvent()
 : <a class="el" href="classengine_1_1Application.html#a093e14152fc1eda1b5eba682a2b4afd9">engine::Application</a>
+, <a class="el" href="classengine_1_1Layer.html#a982be4dc6ab1d3d71162719138312872">engine::Layer</a>
 </li>
 <li>OnImGuiRender()
 : <a class="el" href="classengine_1_1imgui_1_1ImGuiLayer.html#aeacc4aecfc119192fbe98e961b88813e">engine::imgui::ImGuiLayer</a>
+, <a class="el" href="classengine_1_1Layer.html#a002df9fddaba135a8bd7abc14e3fb067">engine::Layer</a>
+</li>
+<li>OnUpdate()
+: <a class="el" href="classengine_1_1Layer.html#a449eaba4fc30454d281419173bd6624b">engine::Layer</a>
+, <a class="el" href="classengine_1_1Window.html#a4ded827d5389fe158daf76df45884bf2">engine::Window</a>
 </li>
 <li>OpenGLIndexBuffer()
 : <a class="el" href="classengine_1_1platform_1_1opengl_1_1OpenGLIndexBuffer.html#a88830d5185f3fd37d8274029f8d78746">engine::platform::opengl::OpenGLIndexBuffer</a>
@@ -200,11 +220,19 @@ $(function() {
 
 
 <h3><a id="index_p"></a>- p -</h3><ul>
+<li>PopLayer()
+: <a class="el" href="classengine_1_1LayerStack.html#a1308d64db567b107f4e17a274792ee8e">engine::LayerStack</a>
+</li>
+<li>PopOverlay()
+: <a class="el" href="classengine_1_1LayerStack.html#a9fe9370bb2a2b65561ea5ef998213510">engine::LayerStack</a>
+</li>
 <li>PushLayer()
 : <a class="el" href="classengine_1_1Application.html#adb129a86a6cdbd80b25094d08605d213">engine::Application</a>
+, <a class="el" href="classengine_1_1LayerStack.html#a0af3e9ae8559e5321312834061d45ff2">engine::LayerStack</a>
 </li>
 <li>PushOverlay()
 : <a class="el" href="classengine_1_1Application.html#a00041c455b5699665d21662be95abd85">engine::Application</a>
+, <a class="el" href="classengine_1_1LayerStack.html#a5afd12a6e1912070f4256b43558c2ebd">engine::LayerStack</a>
 </li>
 </ul>
 
@@ -217,9 +245,15 @@ $(function() {
 
 
 <h3><a id="index_s"></a>- s -</h3><ul>
+<li>SetEventCallback()
+: <a class="el" href="classengine_1_1Window.html#afca9bd918d022b0e91d8b274648b1324">engine::Window</a>
+</li>
 <li>SetLayout()
 : <a class="el" href="classengine_1_1platform_1_1opengl_1_1OpenGLVertexBuffer.html#a957a9dc55dc35ce4302654e1a394e5f8">engine::platform::opengl::OpenGLVertexBuffer</a>
 , <a class="el" href="classengine_1_1renderer_1_1VertexBuffer.html#afad191b22fec9bc2519e43d543e5c75e">engine::renderer::VertexBuffer</a>
+</li>
+<li>SetVerticalSync()
+: <a class="el" href="classengine_1_1Window.html#a17dd0ec2fd18f4ee6a56ebbed211f45d">engine::Window</a>
 </li>
 <li>Shader()
 : <a class="el" href="classengine_1_1renderer_1_1Shader.html#a48fb2f9ae7b37051093275c2ecbbae9e">engine::renderer::Shader</a>

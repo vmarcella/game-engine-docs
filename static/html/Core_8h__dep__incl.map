@@ -4,12 +4,12 @@
 <area shape="rect" id="node8" href="$ApplicationEvent_8h.html" title="Events that are to be specifically handled at the application level. " alt="" coords="501,169,656,211"/>
 <area shape="rect" id="node9" href="$ImGuiLayer_8h.html" title="The ImGuiLayer implementation for dev tool creation. " alt="" coords="277,259,424,300"/>
 <area shape="rect" id="node10" href="$Event_8h.html" title="The Event class and dispatcher core implementations. " alt="" coords="387,80,541,121"/>
-<area shape="rect" id="node13" href="$Layer_8h_source.html" title="engine/src/core/Layer.h" alt="" coords="681,177,839,203"/>
-<area shape="rect" id="node14" href="$LayerStack_8h_source.html" title="engine/src/core/LayerStack.h" alt="" coords="896,266,1088,293"/>
-<area shape="rect" id="node15" href="$core_2Window_8h_source.html" title="engine/src/core/Window.h" alt="" coords="864,177,1037,203"/>
+<area shape="rect" id="node13" href="$Layer_8h.html" title="The Layer implementation that allows application to specify layers to be attached to the game..." alt="" coords="681,177,839,203"/>
+<area shape="rect" id="node14" href="$LayerStack_8h.html" title="The LayerStack Definition for handling multiple layers. " alt="" coords="896,266,1088,293"/>
+<area shape="rect" id="node15" href="$core_2Window_8h.html" title="The Abstract Window definition. " alt="" coords="864,177,1037,203"/>
 <area shape="rect" id="node16" href="$core_2Input_8h.html" title="The input abstraction class that handles input across. " alt="" coords="1099,437,1253,464"/>
-<area shape="rect" id="node17" href="$Log_8h_source.html" title="engine/src/core/Log.h" alt="" coords="1343,87,1489,114"/>
-<area shape="rect" id="node3" href="$Entrypoint_8h_source.html" title="engine/src/core/Entrypoint.h" alt="" coords="889,437,1074,464"/>
+<area shape="rect" id="node17" href="$Log_8h.html" title="The engines logging utility. " alt="" coords="1343,87,1489,114"/>
+<area shape="rect" id="node3" href="$Entrypoint_8h.html" title="The entrypoint into the engine. " alt="" coords="889,437,1074,464"/>
 <area shape="rect" id="node4" href="$Engine_8h.html" title="The entrypoint into the game engine source code. " alt="" coords="847,512,985,539"/>
 <area shape="rect" id="node6" href="$Buffer_8h.html" title="Buffer abstractions that allow the ease of implementing Buffers for any graphics API. " alt="" coords="1216,259,1379,300"/>
 <area shape="rect" id="node7" href="$OpenGLBuffer_8h_source.html" title="engine/src/platform\l/opengl/OpenGLBuffer.h" alt="" coords="1216,348,1379,389"/>

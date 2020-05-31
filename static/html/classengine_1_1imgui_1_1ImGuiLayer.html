@@ -112,15 +112,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7c94872b9fc69fd1695e21319c6ae495 inherit pub_methods_classengine_1_1Layer"><td class="memItemLeft" align="right" valign="top"><a id="a7c94872b9fc69fd1695e21319c6ae495"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Layer</b> (const std::string &amp;name=&quot;Layer&quot;)</td></tr>
 <tr class="separator:a7c94872b9fc69fd1695e21319c6ae495 inherit pub_methods_classengine_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0d270c6ec083e85b33f786ef381e083 inherit pub_methods_classengine_1_1Layer"><td class="memItemLeft" align="right" valign="top"><a id="ad0d270c6ec083e85b33f786ef381e083"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnUpdate</b> ()</td></tr>
-<tr class="separator:ad0d270c6ec083e85b33f786ef381e083 inherit pub_methods_classengine_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a586fe29f7ae93c7c0334b3eb86ee6d3f inherit pub_methods_classengine_1_1Layer"><td class="memItemLeft" align="right" valign="top"><a id="a586fe29f7ae93c7c0334b3eb86ee6d3f"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEvent</b> (<a class="el" href="classengine_1_1events_1_1Event.html">events::Event</a> *event)</td></tr>
-<tr class="separator:a586fe29f7ae93c7c0334b3eb86ee6d3f inherit pub_methods_classengine_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a511e798109a6b06a0fe8b0e4af9c0f inherit pub_methods_classengine_1_1Layer"><td class="memItemLeft" align="right" valign="top"><a id="a2a511e798109a6b06a0fe8b0e4af9c0f"></a>
-const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetName</b> () const</td></tr>
-<tr class="separator:a2a511e798109a6b06a0fe8b0e4af9c0f inherit pub_methods_classengine_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a449eaba4fc30454d281419173bd6624b inherit pub_methods_classengine_1_1Layer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1Layer.html#a449eaba4fc30454d281419173bd6624b">OnUpdate</a> ()</td></tr>
+<tr class="memdesc:a449eaba4fc30454d281419173bd6624b inherit pub_methods_classengine_1_1Layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles what to do when the game engine requests to update the layer.  <a href="classengine_1_1Layer.html#a449eaba4fc30454d281419173bd6624b">More...</a><br /></td></tr>
+<tr class="separator:a449eaba4fc30454d281419173bd6624b inherit pub_methods_classengine_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a982be4dc6ab1d3d71162719138312872 inherit pub_methods_classengine_1_1Layer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1Layer.html#a982be4dc6ab1d3d71162719138312872">OnEvent</a> (<a class="el" href="classengine_1_1events_1_1Event.html">events::Event</a> *event)</td></tr>
+<tr class="memdesc:a982be4dc6ab1d3d71162719138312872 inherit pub_methods_classengine_1_1Layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles what to do when the game engine passes an event.  <a href="classengine_1_1Layer.html#a982be4dc6ab1d3d71162719138312872">More...</a><br /></td></tr>
+<tr class="separator:a982be4dc6ab1d3d71162719138312872 inherit pub_methods_classengine_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a770a8fb58326ed32779e84bf54a93eef inherit pub_methods_classengine_1_1Layer"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1Layer.html#a770a8fb58326ed32779e84bf54a93eef">GetName</a> () const</td></tr>
+<tr class="memdesc:a770a8fb58326ed32779e84bf54a93eef inherit pub_methods_classengine_1_1Layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the name of the layer.  <a href="classengine_1_1Layer.html#a770a8fb58326ed32779e84bf54a93eef">More...</a><br /></td></tr>
+<tr class="separator:a770a8fb58326ed32779e84bf54a93eef inherit pub_methods_classengine_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -199,7 +199,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>debug_name_</b
 <p>The default OnAttach creates a context, activates dark mode, and register inputs with GLFW keys. This implementation currently only supports OpenGL and will be modified in the future to use engine specified key codes.</p>
 <p>This is currently setup with a default implementation but will most likely be delegated to users that would like to implement their own imgui layers. </p>
 
-<p>Reimplemented from <a class="el" href="classengine_1_1Layer.html">engine::Layer</a>.</p>
+<p>Reimplemented from <a class="el" href="classengine_1_1Layer.html#ace68c1d4e441165d6741a74d4b11c7f0">engine::Layer</a>.</p>
 
 </div>
 </div>
@@ -230,7 +230,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>debug_name_</b
 <p>Currently also only supports OpenGL.</p>
 <p>This is currently setup with a default implementation but will most likely be delegated to users that would like to implement their own imgui layers. </p>
 
-<p>Reimplemented from <a class="el" href="classengine_1_1Layer.html">engine::Layer</a>.</p>
+<p>Reimplemented from <a class="el" href="classengine_1_1Layer.html#acfa7e624cfd2cb85803382511454d098">engine::Layer</a>.</p>
 
 </div>
 </div>
@@ -260,7 +260,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>debug_name_</b
 <p>Handles an ImGuiRender Call by the engine. </p>
 <p>This will only be called when the engine is compiled with imgui attached. </p>
 
-<p>Reimplemented from <a class="el" href="classengine_1_1Layer.html">engine::Layer</a>.</p>
+<p>Reimplemented from <a class="el" href="classengine_1_1Layer.html#a002df9fddaba135a8bd7abc14e3fb067">engine::Layer</a>.</p>
 
 </div>
 </div>

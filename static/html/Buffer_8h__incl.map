@@ -1,5 +1,5 @@
 <map id="engine/src/core/renderer/Buffer.h" name="engine/src/core/renderer/Buffer.h">
 <area shape="rect" id="node6" href="$Assert_8h.html" title="This is a utility file that is primarily used for debugging the internals of the engine when incorrec..." alt="" coords="409,95,509,121"/>
-<area shape="rect" id="node8" href="$Log_8h_source.html" title="core/Log.h" alt="" coords="505,169,588,196"/>
+<area shape="rect" id="node8" href="$Log_8h.html" title="The engines logging utility. " alt="" coords="505,169,588,196"/>
 <area shape="rect" id="node7" href="$Core_8h.html" title="Core macros to be used all throughout the engine for development and production purposes. " alt="" coords="401,244,492,271"/>
 </map>

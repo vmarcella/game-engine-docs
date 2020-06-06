@@ -1,0 +1,69 @@
+\hypertarget{classengine_1_1renderer_1_1VertexArray}{}\section{engine\+:\+:renderer\+:\+:Vertex\+Array Class Reference}
+\label{classengine_1_1renderer_1_1VertexArray}\index{engine\+::renderer\+::\+Vertex\+Array@{engine\+::renderer\+::\+Vertex\+Array}}
+
+
+The abstraction for representing Vertex arrays and their sub components.  
+
+
+
+
+{\ttfamily \#include $<$Vertex\+Array.\+h$>$}
+
+
+
+Inheritance diagram for engine\+:\+:renderer\+:\+:Vertex\+Array\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=201pt]{classengine_1_1renderer_1_1VertexArray__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classengine_1_1renderer_1_1VertexArray_ab60053c2018237aa12b76d2ebe1077ef}\label{classengine_1_1renderer_1_1VertexArray_ab60053c2018237aa12b76d2ebe1077ef}} 
+virtual void \hyperlink{classengine_1_1renderer_1_1VertexArray_ab60053c2018237aa12b76d2ebe1077ef}{Bind} () const =0
+\begin{DoxyCompactList}\small\item\em Bind the Vertex array and it\textquotesingle{}s components to the rendering A\+PI and G\+PU. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classengine_1_1renderer_1_1VertexArray_aec996c39722893593ad02f72a1f8eab0}\label{classengine_1_1renderer_1_1VertexArray_aec996c39722893593ad02f72a1f8eab0}} 
+virtual void \hyperlink{classengine_1_1renderer_1_1VertexArray_aec996c39722893593ad02f72a1f8eab0}{Unbind} () const =0
+\begin{DoxyCompactList}\small\item\em Unbind the vertex array and it\textquotesingle{}s components from the rendering A\+PI and memory. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classengine_1_1renderer_1_1VertexArray_a13355d9a1eb63677fe19b911ac5a5fe0}\label{classengine_1_1renderer_1_1VertexArray_a13355d9a1eb63677fe19b911ac5a5fe0}} 
+virtual void \hyperlink{classengine_1_1renderer_1_1VertexArray_a13355d9a1eb63677fe19b911ac5a5fe0}{Add\+Vertex\+Buffer} (const std\+::shared\+\_\+ptr$<$ \hyperlink{classengine_1_1renderer_1_1VertexBuffer}{Vertex\+Buffer} $>$ \&vertex\+\_\+buffer)=0
+\begin{DoxyCompactList}\small\item\em Add a vertex buffer to the vertex array. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classengine_1_1renderer_1_1VertexArray_a0eb0b7ee1d2c1946283c71f8d2ff72f2}\label{classengine_1_1renderer_1_1VertexArray_a0eb0b7ee1d2c1946283c71f8d2ff72f2}} 
+virtual void \hyperlink{classengine_1_1renderer_1_1VertexArray_a0eb0b7ee1d2c1946283c71f8d2ff72f2}{Set\+Index\+Buffer} (const std\+::shared\+\_\+ptr$<$ \hyperlink{classengine_1_1renderer_1_1IndexBuffer}{Index\+Buffer} $>$ \&index\+\_\+buffer)=0
+\begin{DoxyCompactList}\small\item\em Set the index buffer of the vertex array. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classengine_1_1renderer_1_1VertexArray_a4d7dbed7dc462c0598e3ac12d4db21c2}\label{classengine_1_1renderer_1_1VertexArray_a4d7dbed7dc462c0598e3ac12d4db21c2}} 
+virtual const std\+::shared\+\_\+ptr$<$ \hyperlink{classengine_1_1renderer_1_1IndexBuffer}{Index\+Buffer} $>$ \& {\bfseries Get\+Index\+Buffer} () const =0
+\item 
+\mbox{\Hypertarget{classengine_1_1renderer_1_1VertexArray_a463c5dea836e8bef06ec7746286663d6}\label{classengine_1_1renderer_1_1VertexArray_a463c5dea836e8bef06ec7746286663d6}} 
+virtual const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classengine_1_1renderer_1_1VertexBuffer}{Vertex\+Buffer} $>$ $>$ \& {\bfseries Get\+Vertex\+Buffers} () const =0
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classengine_1_1renderer_1_1VertexArray}{Vertex\+Array} $\ast$ \hyperlink{classengine_1_1renderer_1_1VertexArray_a2d704ca4eedd99430dc6ec6ae59d7559}{Create} ()
+\begin{DoxyCompactList}\small\item\em Creates a vertex array through the platform specific A\+PI that is being used at runtime. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The abstraction for representing Vertex arrays and their sub components. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classengine_1_1renderer_1_1VertexArray_a2d704ca4eedd99430dc6ec6ae59d7559}\label{classengine_1_1renderer_1_1VertexArray_a2d704ca4eedd99430dc6ec6ae59d7559}} 
+\index{engine\+::renderer\+::\+Vertex\+Array@{engine\+::renderer\+::\+Vertex\+Array}!Create@{Create}}
+\index{Create@{Create}!engine\+::renderer\+::\+Vertex\+Array@{engine\+::renderer\+::\+Vertex\+Array}}
+\subsubsection{\texorpdfstring{Create()}{Create()}}
+{\footnotesize\ttfamily Vertex\+Array\+::\+Create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a vertex array through the platform specific A\+PI that is being used at runtime. 
+
+Only supports Vertex buffers that are available through the rendering A\+PI. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+engine/src/core/renderer/\hyperlink{VertexArray_8h}{Vertex\+Array.\+h}\item 
+engine/src/core/renderer/Vertex\+Array.\+cpp\end{DoxyCompactItemize}

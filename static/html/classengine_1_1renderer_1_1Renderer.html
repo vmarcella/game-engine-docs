@@ -77,14 +77,50 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aa2fc6d152284fd3c4e66b5ecbf8ab586"><td class="memItemLeft" align="right" valign="top"><a id="aa2fc6d152284fd3c4e66b5ecbf8ab586"></a>
-static <a class="el" href="Renderer_8h.html#a0f30f1565f123b9754d5911f4a3012de">RendererAPI</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetAPI</b> ()</td></tr>
-<tr class="separator:aa2fc6d152284fd3c4e66b5ecbf8ab586"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab32ebce6334f6214f4f5d8ef13f1f267"><td class="memItemLeft" align="right" valign="top"><a id="ab32ebce6334f6214f4f5d8ef13f1f267"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1renderer_1_1Renderer.html#ab32ebce6334f6214f4f5d8ef13f1f267">BeginScene</a> ()</td></tr>
+<tr class="memdesc:ab32ebce6334f6214f4f5d8ef13f1f267"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begin rendering a scene. <br /></td></tr>
+<tr class="separator:ab32ebce6334f6214f4f5d8ef13f1f267"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabecab3b2aea9d925bd7449c7f85539b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1renderer_1_1Renderer.html#aabecab3b2aea9d925bd7449c7f85539b">EndScene</a> ()</td></tr>
+<tr class="separator:aabecab3b2aea9d925bd7449c7f85539b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84944c9f4686a36b2d35b48a39ce4b42"><td class="memItemLeft" align="right" valign="top"><a id="a84944c9f4686a36b2d35b48a39ce4b42"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>Submit</b> (const std::shared_ptr&lt; <a class="el" href="classengine_1_1renderer_1_1VertexArray.html">VertexArray</a> &gt; &amp;vertex_array)</td></tr>
+<tr class="separator:a84944c9f4686a36b2d35b48a39ce4b42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61d12573cda993102d8e335f17380c8a"><td class="memItemLeft" align="right" valign="top"><a id="a61d12573cda993102d8e335f17380c8a"></a>
+static <a class="el" href="classengine_1_1renderer_1_1RendererAPI.html#a624c2793dc8b315466c36332bbc82ef0">RendererAPI::API</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetAPI</b> ()</td></tr>
+<tr class="separator:a61d12573cda993102d8e335f17380c8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A lightweight rendering API implementation. Allows generalized calls to be written for users. </p>
 <p>A lightweight and not fully finished rendering API that lets you set the a specific graphics context to use for rendering. This must be set externally in any rendering application. </p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="aabecab3b2aea9d925bd7449c7f85539b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabecab3b2aea9d925bd7449c7f85539b">&#9670;&nbsp;</a></span>EndScene()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void engine::renderer::Renderer::EndScene </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Stop rendering a scene. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>engine/src/core/renderer/<a class="el" href="Renderer_8h_source.html">Renderer.h</a></li>
 <li>engine/src/core/renderer/Renderer.cpp</li>
 </ul>

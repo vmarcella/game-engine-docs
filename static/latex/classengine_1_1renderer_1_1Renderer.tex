@@ -12,8 +12,16 @@ A lightweight rendering A\+PI implementation. Allows generalized calls to be wri
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classengine_1_1renderer_1_1Renderer_aa2fc6d152284fd3c4e66b5ecbf8ab586}\label{classengine_1_1renderer_1_1Renderer_aa2fc6d152284fd3c4e66b5ecbf8ab586}} 
-static \hyperlink{Renderer_8h_a0f30f1565f123b9754d5911f4a3012de}{Renderer\+A\+PI} {\bfseries Get\+A\+PI} ()
+\mbox{\Hypertarget{classengine_1_1renderer_1_1Renderer_ab32ebce6334f6214f4f5d8ef13f1f267}\label{classengine_1_1renderer_1_1Renderer_ab32ebce6334f6214f4f5d8ef13f1f267}} 
+static void \hyperlink{classengine_1_1renderer_1_1Renderer_ab32ebce6334f6214f4f5d8ef13f1f267}{Begin\+Scene} ()
+\begin{DoxyCompactList}\small\item\em Begin rendering a scene. \end{DoxyCompactList}\item 
+static void \hyperlink{classengine_1_1renderer_1_1Renderer_aabecab3b2aea9d925bd7449c7f85539b}{End\+Scene} ()
+\item 
+\mbox{\Hypertarget{classengine_1_1renderer_1_1Renderer_a84944c9f4686a36b2d35b48a39ce4b42}\label{classengine_1_1renderer_1_1Renderer_a84944c9f4686a36b2d35b48a39ce4b42}} 
+static void {\bfseries Submit} (const std\+::shared\+\_\+ptr$<$ \hyperlink{classengine_1_1renderer_1_1VertexArray}{Vertex\+Array} $>$ \&vertex\+\_\+array)
+\item 
+\mbox{\Hypertarget{classengine_1_1renderer_1_1Renderer_a61d12573cda993102d8e335f17380c8a}\label{classengine_1_1renderer_1_1Renderer_a61d12573cda993102d8e335f17380c8a}} 
+static \hyperlink{classengine_1_1renderer_1_1RendererAPI_a624c2793dc8b315466c36332bbc82ef0}{Renderer\+A\+P\+I\+::\+A\+PI} {\bfseries Get\+A\+PI} ()
 \end{DoxyCompactItemize}
 
 
@@ -21,6 +29,15 @@ static \hyperlink{Renderer_8h_a0f30f1565f123b9754d5911f4a3012de}{Renderer\+A\+PI
 A lightweight rendering A\+PI implementation. Allows generalized calls to be written for users. 
 
 A lightweight and not fully finished rendering A\+PI that lets you set the a specific graphics context to use for rendering. This must be set externally in any rendering application. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classengine_1_1renderer_1_1Renderer_aabecab3b2aea9d925bd7449c7f85539b}\label{classengine_1_1renderer_1_1Renderer_aabecab3b2aea9d925bd7449c7f85539b}} 
+\index{engine\+::renderer\+::\+Renderer@{engine\+::renderer\+::\+Renderer}!End\+Scene@{End\+Scene}}
+\index{End\+Scene@{End\+Scene}!engine\+::renderer\+::\+Renderer@{engine\+::renderer\+::\+Renderer}}
+\subsubsection{\texorpdfstring{End\+Scene()}{EndScene()}}
+{\footnotesize\ttfamily void engine\+::renderer\+::\+Renderer\+::\+End\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Stop rendering a scene. 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

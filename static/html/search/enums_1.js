@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['rendererapi',['RendererAPI',['../Renderer_8h.html#a0f30f1565f123b9754d5911f4a3012de',1,'engine::renderer']]]
+  ['eventcategory',['EventCategory',['../Event_8h.html#a1e3bf91397b8a47069494aede2669474',1,'engine::events']]],
+  ['eventtype',['EventType',['../Event_8h.html#a10b3e1cfc8aaa02ff37fd47f0fae2b8a',1,'engine::events']]]
 ];

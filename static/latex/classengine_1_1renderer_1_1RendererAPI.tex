@@ -1,0 +1,55 @@
+\hypertarget{classengine_1_1renderer_1_1RendererAPI}{}\section{engine\+:\+:renderer\+:\+:Renderer\+A\+PI Class Reference}
+\label{classengine_1_1renderer_1_1RendererAPI}\index{engine\+::renderer\+::\+Renderer\+A\+PI@{engine\+::renderer\+::\+Renderer\+A\+PI}}
+
+
+The Rendering A\+PI for displaying graphics through the engine api!  
+
+
+
+
+{\ttfamily \#include $<$Renderer\+A\+P\+I.\+h$>$}
+
+
+
+Inheritance diagram for engine\+:\+:renderer\+:\+:Renderer\+A\+PI\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{classengine_1_1renderer_1_1RendererAPI__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classengine_1_1renderer_1_1RendererAPI_a624c2793dc8b315466c36332bbc82ef0}\label{classengine_1_1renderer_1_1RendererAPI_a624c2793dc8b315466c36332bbc82ef0}} 
+enum \hyperlink{classengine_1_1renderer_1_1RendererAPI_a624c2793dc8b315466c36332bbc82ef0}{A\+PI} \{ {\bfseries None} = 0, 
+{\bfseries Open\+GL} = 1
+ \}\begin{DoxyCompactList}\small\item\em The A\+P\+Is provided by the engine. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classengine_1_1renderer_1_1RendererAPI_aafd69df2fdce94fbde4142d392a04b37}\label{classengine_1_1renderer_1_1RendererAPI_aafd69df2fdce94fbde4142d392a04b37}} 
+virtual void \hyperlink{classengine_1_1renderer_1_1RendererAPI_aafd69df2fdce94fbde4142d392a04b37}{Set\+Clear\+Color} (const glm\+::vec4 \&color)=0
+\begin{DoxyCompactList}\small\item\em Set the clear color to be used for the renderer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classengine_1_1renderer_1_1RendererAPI_ac4d98acc58992af16ffff59e659e3c60}\label{classengine_1_1renderer_1_1RendererAPI_ac4d98acc58992af16ffff59e659e3c60}} 
+virtual void \hyperlink{classengine_1_1renderer_1_1RendererAPI_ac4d98acc58992af16ffff59e659e3c60}{Clear} ()=0
+\begin{DoxyCompactList}\small\item\em Clear the screen. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classengine_1_1renderer_1_1RendererAPI_ab818163e2f93e9d0a508ac29a65a30af}\label{classengine_1_1renderer_1_1RendererAPI_ab818163e2f93e9d0a508ac29a65a30af}} 
+virtual void \hyperlink{classengine_1_1renderer_1_1RendererAPI_ab818163e2f93e9d0a508ac29a65a30af}{Draw\+Indexed} (const std\+::shared\+\_\+ptr$<$ \hyperlink{classengine_1_1renderer_1_1VertexArray}{Vertex\+Array} $>$ \&vertex\+\_\+array)=0
+\begin{DoxyCompactList}\small\item\em Render a vertex array. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classengine_1_1renderer_1_1RendererAPI_a5e72b9d9f135fe4689f712cf7f5b9a3d}\label{classengine_1_1renderer_1_1RendererAPI_a5e72b9d9f135fe4689f712cf7f5b9a3d}} 
+static \hyperlink{classengine_1_1renderer_1_1RendererAPI_a624c2793dc8b315466c36332bbc82ef0}{A\+PI} \hyperlink{classengine_1_1renderer_1_1RendererAPI_a5e72b9d9f135fe4689f712cf7f5b9a3d}{Get\+A\+PI} ()
+\begin{DoxyCompactList}\small\item\em Return the A\+PI being used within the engine. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The Rendering A\+PI for displaying graphics through the engine api! 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+engine/src/core/renderer/Renderer\+A\+P\+I.\+h\end{DoxyCompactItemize}

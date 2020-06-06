@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['renderer',['Renderer',['../classengine_1_1renderer_1_1Renderer.html',1,'engine::renderer']]],
-  ['renderer_2eh',['Renderer.h',['../Renderer_8h.html',1,'']]],
-  ['rendererapi',['RendererAPI',['../Renderer_8h.html#a0f30f1565f123b9754d5911f4a3012de',1,'engine::renderer']]],
-  ['run',['Run',['../classengine_1_1Application.html#a4dcdf08d920f7f63013a25cb1e80438b',1,'engine::Application']]]
+  ['poplayer',['PopLayer',['../classengine_1_1LayerStack.html#a1308d64db567b107f4e17a274792ee8e',1,'engine::LayerStack']]],
+  ['popoverlay',['PopOverlay',['../classengine_1_1LayerStack.html#a9fe9370bb2a2b65561ea5ef998213510',1,'engine::LayerStack']]],
+  ['pushlayer',['PushLayer',['../classengine_1_1Application.html#adb129a86a6cdbd80b25094d08605d213',1,'engine::Application::PushLayer()'],['../classengine_1_1LayerStack.html#a0af3e9ae8559e5321312834061d45ff2',1,'engine::LayerStack::PushLayer()']]],
+  ['pushoverlay',['PushOverlay',['../classengine_1_1Application.html#a00041c455b5699665d21662be95abd85',1,'engine::Application::PushOverlay()'],['../classengine_1_1LayerStack.html#a5afd12a6e1912070f4256b43558c2ebd',1,'engine::LayerStack::PushOverlay()']]]
 ];

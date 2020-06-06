@@ -1,0 +1,8 @@
+<map id="engine/src/platform/opengl/OpenGLRendererAPI.h" name="engine/src/platform/opengl/OpenGLRendererAPI.h">
+<area shape="rect" id="node2" href="$RendererAPI_8h_source.html" title="core/renderer/RendererAPI.h" alt="" coords="38,95,226,121"/>
+<area shape="rect" id="node5" href="$VertexArray_8h.html" title="The Generic VertexArray API. " alt="" coords="189,169,371,196"/>
+<area shape="rect" id="node6" href="$Buffer_8h.html" title="Buffer abstractions that allow the ease of implementing Buffers for any graphics API. " alt="" coords="294,244,442,271"/>
+<area shape="rect" id="node11" href="$Assert_8h.html" title="This is a utility file that is primarily used for debugging the internals of the engine when incorrec..." alt="" coords="182,319,282,345"/>
+<area shape="rect" id="node13" href="$Log_8h.html" title="The engines logging utility. " alt="" coords="121,393,204,420"/>
+<area shape="rect" id="node12" href="$Core_8h.html" title="Core macros to be used all throughout the engine for development and production purposes. " alt="" coords="237,468,328,495"/>
+</map>

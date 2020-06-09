@@ -13,6 +13,7 @@ var searchData=
   ['getmousey',['GetMouseY',['../classengine_1_1Input.html#aa6fa67ccfdb48ac903c927157f0809c2',1,'engine::Input']]],
   ['getname',['GetName',['../classengine_1_1Layer.html#a770a8fb58326ed32779e84bf54a93eef',1,'engine::Layer']]],
   ['getnativewindow',['GetNativeWindow',['../classengine_1_1Window.html#a075f0ad97b7d7d3730a710385abde3d6',1,'engine::Window']]],
+  ['getposition',['GetPosition',['../classengine_1_1renderer_1_1OrthographicCamera.html#a89c74cc6487f626475fa5735c153fb16',1,'engine::renderer::OrthographicCamera']]],
   ['getrepeatcount',['GetRepeatCount',['../classengine_1_1events_1_1KeyPressedEvent.html#a6287172d5b6c9600fcc129d69cda49cd',1,'engine::events::KeyPressedEvent']]],
   ['getstride',['GetStride',['../classengine_1_1renderer_1_1BufferLayout.html#abf525eed067da7cfa637c9fe795767b5',1,'engine::renderer::BufferLayout']]],
   ['getvertexbuffers',['GetVertexBuffers',['../classengine_1_1platform_1_1opengl_1_1OpenGLVertexArray.html#a0bebcee0be99df9ab3ae3372d1a8dc37',1,'engine::platform::opengl::OpenGLVertexArray']]],

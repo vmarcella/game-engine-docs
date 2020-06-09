@@ -7,5 +7,6 @@ var searchData=
   ['setverticalsync',['SetVerticalSync',['../classengine_1_1Window.html#a17dd0ec2fd18f4ee6a56ebbed211f45d',1,'engine::Window']]],
   ['shader',['Shader',['../classengine_1_1renderer_1_1Shader.html',1,'engine::renderer::Shader'],['../classengine_1_1renderer_1_1Shader.html#a48fb2f9ae7b37051093275c2ecbbae9e',1,'engine::renderer::Shader::Shader()']]],
   ['shader_2eh',['Shader.h',['../Shader_8h.html',1,'']]],
-  ['shaderdatatype',['ShaderDataType',['../Buffer_8h.html#a8d90f87a6e9335927edd305c1e1345c1',1,'engine::renderer']]]
+  ['shaderdatatype',['ShaderDataType',['../Buffer_8h.html#a8d90f87a6e9335927edd305c1e1345c1',1,'engine::renderer']]],
+  ['submit',['Submit',['../classengine_1_1renderer_1_1Renderer.html#a1d894d1fa8231d1c4016fba0e1aaab3e',1,'engine::renderer::Renderer']]]
 ];

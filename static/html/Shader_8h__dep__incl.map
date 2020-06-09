@@ -1,5 +1,6 @@
 <map id="engine/src/core/renderer/Shader.h" name="engine/src/core/renderer/Shader.h">
 <area shape="rect" id="node2" href="$Application_8h.html" title="Contains the Application class definitions. " alt="" coords="51,95,241,121"/>
-<area shape="rect" id="node4" href="$Engine_8h.html" title="The entrypoint into the game engine source code. " alt="" coords="160,244,297,271"/>
-<area shape="rect" id="node3" href="$Entrypoint_8h.html" title="The entrypoint into the engine. " alt="" coords="5,169,191,196"/>
+<area shape="rect" id="node4" href="$Engine_8h.html" title="The entrypoint into the game engine source code. " alt="" coords="185,259,323,285"/>
+<area shape="rect" id="node5" href="$Renderer_8h.html" title="The rendering API. " alt="" coords="317,169,479,211"/>
+<area shape="rect" id="node3" href="$Entrypoint_8h.html" title="The entrypoint into the engine. " alt="" coords="5,177,191,203"/>
 </map>

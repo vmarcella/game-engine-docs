@@ -11,5 +11,7 @@ var searchData=
   ['openglrendererapi_2eh',['OpenGLRendererAPI.h',['../OpenGLRendererAPI_8h.html',1,'']]],
   ['openglvertexarray',['OpenGLVertexArray',['../classengine_1_1platform_1_1opengl_1_1OpenGLVertexArray.html',1,'engine::platform::opengl']]],
   ['openglvertexbuffer',['OpenGLVertexBuffer',['../classengine_1_1platform_1_1opengl_1_1OpenGLVertexBuffer.html',1,'engine::platform::opengl']]],
-  ['operator_3c_3c',['operator&lt;&lt;',['../classengine_1_1events_1_1Event.html#aa3b39b29ab7c13070bc033bc88be4152',1,'engine::events::Event']]]
+  ['operator_3c_3c',['operator&lt;&lt;',['../classengine_1_1events_1_1Event.html#aa3b39b29ab7c13070bc033bc88be4152',1,'engine::events::Event']]],
+  ['orthographiccamera',['OrthographicCamera',['../classengine_1_1renderer_1_1OrthographicCamera.html',1,'engine::renderer']]],
+  ['orthographiccamera_2eh',['OrthographicCamera.h',['../OrthographicCamera_8h.html',1,'']]]
 ];

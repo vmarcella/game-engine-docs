@@ -78,35 +78,40 @@ $(function() {
 <code>#include &quot;<a class="el" href="Event_8h_source.html">core/events/Event.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ImGuiLayer_8h_source.html">core/imgui/ImGuiLayer.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Buffer_8h_source.html">core/renderer/Buffer.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="OrthographicCamera_8h_source.html">core/renderer/OrthographicCamera.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="RenderCommand_8h_source.html">core/renderer/RenderCommand.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Renderer_8h_source.html">core/renderer/Renderer.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Shader_8h_source.html">core/renderer/Shader.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="VertexArray_8h_source.html">core/renderer/VertexArray.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Entrypoint_8h_source.html">core/Entrypoint.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Engine.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="Engine_8h__incl.png" border="0" usemap="#engine_2src_2Engine_8h" alt=""/></div>
 <map name="engine_2src_2Engine_8h" id="engine_2src_2Engine_8h">
-<area shape="rect" id="node2" href="Application_8h.html" title="Contains the Application class definitions. " alt="" coords="1117,155,1243,181"/>
-<area shape="rect" id="node5" href="Layer_8h.html" title="The Layer implementation that allows application to specify layers to be attached to the game..." alt="" coords="862,304,957,331"/>
-<area shape="rect" id="node6" href="Event_8h.html" title="The Event class and dispatcher core implementations. " alt="" coords="696,379,835,405"/>
-<area shape="rect" id="node16" href="ImGuiLayer_8h.html" title="The ImGuiLayer implementation for dev tool creation. " alt="" coords="506,229,670,256"/>
-<area shape="rect" id="node19" href="Buffer_8h.html" title="Buffer abstractions that allow the ease of implementing Buffers for any graphics API. " alt="" coords="1390,304,1538,331"/>
-<area shape="rect" id="node22" href="Log_8h.html" title="The engines logging utility. " alt="" coords="1608,453,1691,480"/>
-<area shape="rect" id="node24" href="Shader_8h.html" title="Shader API to be used with the renderer. " alt="" coords="963,229,1117,256"/>
-<area shape="rect" id="node26" href="core_2Input_8h.html" title="The input abstraction class that handles input across. " alt="" coords="240,80,331,107"/>
-<area shape="rect" id="node28" href="KeyCodes_8h.html" title="Keycodes provided by the engine for capturing input. " alt="" coords="1501,80,1624,107"/>
-<area shape="rect" id="node29" href="MouseButtonCodes_8h.html" title="Mouse button codes supported by the engine. " alt="" coords="1649,80,1826,107"/>
-<area shape="rect" id="node30" href="Renderer_8h.html" title="The rendering API. " alt="" coords="1950,80,2117,107"/>
-<area shape="rect" id="node33" href="Entrypoint_8h.html" title="The entrypoint into the engine. " alt="" coords="1218,80,1339,107"/>
-<area shape="rect" id="node4" href="Core_8h.html" title="Core macros to be used all throughout the engine for development and production purposes. " alt="" coords="939,528,1029,555"/>
-<area shape="rect" id="node11" href="LayerStack_8h.html" title="The LayerStack Definition for handling multiple layers. " alt="" coords="1243,229,1371,256"/>
-<area shape="rect" id="node13" href="core_2Window_8h.html" title="The Abstract Window definition. " alt="" coords="1032,304,1141,331"/>
-<area shape="rect" id="node14" href="ApplicationEvent_8h.html" title="Events that are to be specifically handled at the application level. " alt="" coords="483,304,685,331"/>
-<area shape="rect" id="node25" href="VertexArray_8h.html" title="The Generic VertexArray API. " alt="" coords="1686,229,1869,256"/>
-<area shape="rect" id="node17" href="KeyEvent_8h.html" title="Events that specifically deal with key input. " alt="" coords="93,304,256,331"/>
-<area shape="rect" id="node18" href="MouseEvent_8h.html" title="All events related mouse input. " alt="" coords="280,304,459,331"/>
-<area shape="rect" id="node21" href="Assert_8h.html" title="This is a utility file that is primarily used for debugging the internals of the engine when incorrec..." alt="" coords="1419,379,1519,405"/>
-<area shape="rect" id="node31" href="RendererAPI_8h_source.html" title="core/renderer/RendererAPI.h" alt="" coords="1945,155,2133,181"/>
+<area shape="rect" id="node2" href="Application_8h.html" title="Contains the Application class definitions. " alt="" coords="1159,155,1286,181"/>
+<area shape="rect" id="node5" href="Layer_8h.html" title="The Layer implementation that allows application to specify layers to be attached to the game..." alt="" coords="761,319,855,345"/>
+<area shape="rect" id="node6" href="Event_8h.html" title="The Event class and dispatcher core implementations. " alt="" coords="724,393,863,420"/>
+<area shape="rect" id="node16" href="ImGuiLayer_8h.html" title="The ImGuiLayer implementation for dev tool creation. " alt="" coords="557,237,721,263"/>
+<area shape="rect" id="node19" href="Buffer_8h.html" title="Buffer abstractions that allow the ease of implementing Buffers for any graphics API. " alt="" coords="1267,319,1415,345"/>
+<area shape="rect" id="node22" href="Log_8h.html" title="The engines logging utility. " alt="" coords="1543,468,1625,495"/>
+<area shape="rect" id="node24" href="Shader_8h.html" title="Shader API to be used with the renderer. " alt="" coords="1745,237,1900,263"/>
+<area shape="rect" id="node26" href="VertexArray_8h.html" title="The Generic VertexArray API. " alt="" coords="1487,237,1670,263"/>
+<area shape="rect" id="node27" href="OrthographicCamera_8h.html" title="A 2D orthographic camera implementation that is compatible with the renderer. " alt="" coords="2028,229,2204,271"/>
+<area shape="rect" id="node28" href="core_2Input_8h.html" title="The input abstraction class that handles input across. " alt="" coords="319,80,409,107"/>
+<area shape="rect" id="node30" href="KeyCodes_8h.html" title="Keycodes provided by the engine for capturing input. " alt="" coords="1685,80,1808,107"/>
+<area shape="rect" id="node31" href="MouseButtonCodes_8h.html" title="Mouse button codes supported by the engine. " alt="" coords="1833,80,2010,107"/>
+<area shape="rect" id="node32" href="RenderCommand_8h.html" title="The declaration file for the RenderCommand Wrapper. " alt="" coords="2225,80,2439,107"/>
+<area shape="rect" id="node34" href="Renderer_8h.html" title="The rendering API. " alt="" coords="2034,80,2201,107"/>
+<area shape="rect" id="node35" href="Entrypoint_8h.html" title="The entrypoint into the engine. " alt="" coords="1387,80,1509,107"/>
+<area shape="rect" id="node4" href="Core_8h.html" title="Core macros to be used all throughout the engine for development and production purposes. " alt="" coords="829,543,920,569"/>
+<area shape="rect" id="node11" href="LayerStack_8h.html" title="The LayerStack Definition for handling multiple layers. " alt="" coords="981,237,1109,263"/>
+<area shape="rect" id="node13" href="core_2Window_8h.html" title="The Abstract Window definition. " alt="" coords="1133,319,1243,345"/>
+<area shape="rect" id="node14" href="ApplicationEvent_8h.html" title="Events that are to be specifically handled at the application level. " alt="" coords="93,319,296,345"/>
+<area shape="rect" id="node17" href="KeyEvent_8h.html" title="Events that specifically deal with key input. " alt="" coords="523,319,685,345"/>
+<area shape="rect" id="node18" href="MouseEvent_8h.html" title="All events related mouse input. " alt="" coords="320,319,499,345"/>
+<area shape="rect" id="node21" href="Assert_8h.html" title="This is a utility file that is primarily used for debugging the internals of the engine when incorrec..." alt="" coords="1421,393,1521,420"/>
+<area shape="rect" id="node33" href="RendererAPI_8h_source.html" title="core/renderer/RendererAPI.h" alt="" coords="1891,155,2079,181"/>
 </map>
 </div>
 </div>

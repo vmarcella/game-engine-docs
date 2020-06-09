@@ -63,6 +63,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classengine_1_1renderer_1_1Renderer-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -77,15 +78,14 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ab32ebce6334f6214f4f5d8ef13f1f267"><td class="memItemLeft" align="right" valign="top"><a id="ab32ebce6334f6214f4f5d8ef13f1f267"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1renderer_1_1Renderer.html#ab32ebce6334f6214f4f5d8ef13f1f267">BeginScene</a> ()</td></tr>
-<tr class="memdesc:ab32ebce6334f6214f4f5d8ef13f1f267"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begin rendering a scene. <br /></td></tr>
-<tr class="separator:ab32ebce6334f6214f4f5d8ef13f1f267"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07fcd1f8a780b8ef8fcb01dc97dc0db9"><td class="memItemLeft" align="right" valign="top"><a id="a07fcd1f8a780b8ef8fcb01dc97dc0db9"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1renderer_1_1Renderer.html#a07fcd1f8a780b8ef8fcb01dc97dc0db9">BeginScene</a> (const <a class="el" href="classengine_1_1renderer_1_1OrthographicCamera.html">OrthographicCamera</a> &amp;camera)</td></tr>
+<tr class="memdesc:a07fcd1f8a780b8ef8fcb01dc97dc0db9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begin rendering a scene. <br /></td></tr>
+<tr class="separator:a07fcd1f8a780b8ef8fcb01dc97dc0db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabecab3b2aea9d925bd7449c7f85539b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1renderer_1_1Renderer.html#aabecab3b2aea9d925bd7449c7f85539b">EndScene</a> ()</td></tr>
 <tr class="separator:aabecab3b2aea9d925bd7449c7f85539b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84944c9f4686a36b2d35b48a39ce4b42"><td class="memItemLeft" align="right" valign="top"><a id="a84944c9f4686a36b2d35b48a39ce4b42"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>Submit</b> (const std::shared_ptr&lt; <a class="el" href="classengine_1_1renderer_1_1VertexArray.html">VertexArray</a> &gt; &amp;vertex_array)</td></tr>
-<tr class="separator:a84944c9f4686a36b2d35b48a39ce4b42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d894d1fa8231d1c4016fba0e1aaab3e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1renderer_1_1Renderer.html#a1d894d1fa8231d1c4016fba0e1aaab3e">Submit</a> (const std::shared_ptr&lt; <a class="el" href="classengine_1_1renderer_1_1VertexArray.html">VertexArray</a> &gt; &amp;vertex_array, const std::shared_ptr&lt; <a class="el" href="classengine_1_1renderer_1_1Shader.html">Shader</a> &gt; &amp;shader)</td></tr>
+<tr class="separator:a1d894d1fa8231d1c4016fba0e1aaab3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61d12573cda993102d8e335f17380c8a"><td class="memItemLeft" align="right" valign="top"><a id="a61d12573cda993102d8e335f17380c8a"></a>
 static <a class="el" href="classengine_1_1renderer_1_1RendererAPI.html#a624c2793dc8b315466c36332bbc82ef0">RendererAPI::API</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetAPI</b> ()</td></tr>
 <tr class="separator:a61d12573cda993102d8e335f17380c8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -117,6 +117,43 @@ static <a class="el" href="classengine_1_1renderer_1_1RendererAPI.html#a624c2793
 </table>
 </div><div class="memdoc">
 <p>Stop rendering a scene. </p>
+
+</div>
+</div>
+<a id="a1d894d1fa8231d1c4016fba0e1aaab3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d894d1fa8231d1c4016fba0e1aaab3e">&#9670;&nbsp;</a></span>Submit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void engine::renderer::Renderer::Submit </td>
+          <td>(</td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="classengine_1_1renderer_1_1VertexArray.html">VertexArray</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vertex_array</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="classengine_1_1renderer_1_1Shader.html">Shader</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>shader</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Binds both the shader and vertex array before issuing a draw call. </p>
 
 </div>
 </div>

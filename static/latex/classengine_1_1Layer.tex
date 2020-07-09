@@ -1,33 +1,28 @@
-\hypertarget{classengine_1_1Layer}{}\section{engine\+:\+:Layer Class Reference}
-\label{classengine_1_1Layer}\index{engine\+::\+Layer@{engine\+::\+Layer}}
+\hypertarget{classengine_1_1Layer}{}\doxysection{engine\+::Layer Class Reference}
+\label{classengine_1_1Layer}\index{engine::Layer@{engine::Layer}}
 
 
-Inheritance diagram for engine\+:\+:Layer\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=211pt]{classengine_1_1Layer__inherit__graph}
-\end{center}
-\end{figure}
-\subsection*{Public Member Functions}
+Inheritance diagram for engine\+::Layer\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classengine_1_1Layer_a7c94872b9fc69fd1695e21319c6ae495}\label{classengine_1_1Layer_a7c94872b9fc69fd1695e21319c6ae495}} 
 {\bfseries Layer} (const std\+::string \&name=\char`\"{}Layer\char`\"{})
 \item 
-virtual void \hyperlink{classengine_1_1Layer_ace68c1d4e441165d6741a74d4b11c7f0}{On\+Attach} ()
+virtual void \mbox{\hyperlink{classengine_1_1Layer_ace68c1d4e441165d6741a74d4b11c7f0}{On\+Attach}} ()
 \begin{DoxyCompactList}\small\item\em What to do when a layer is attached to the game engine. \end{DoxyCompactList}\item 
-virtual void \hyperlink{classengine_1_1Layer_acfa7e624cfd2cb85803382511454d098}{On\+Detach} ()
+virtual void \mbox{\hyperlink{classengine_1_1Layer_acfa7e624cfd2cb85803382511454d098}{On\+Detach}} ()
 \begin{DoxyCompactList}\small\item\em Handles what to do when a layer is attached to the game engine. \end{DoxyCompactList}\item 
-virtual void \hyperlink{classengine_1_1Layer_a449eaba4fc30454d281419173bd6624b}{On\+Update} ()
+virtual void \mbox{\hyperlink{classengine_1_1Layer_a85ce49ee4b9f58cad1b302c3cb4a8207}{On\+Update}} (\mbox{\hyperlink{classengine_1_1util_1_1TimeStep}{util\+::\+Time\+Step}} time\+\_\+step)
 \begin{DoxyCompactList}\small\item\em Handles what to do when the game engine requests to update the layer. \end{DoxyCompactList}\item 
-virtual void \hyperlink{classengine_1_1Layer_a982be4dc6ab1d3d71162719138312872}{On\+Event} (\hyperlink{classengine_1_1events_1_1Event}{events\+::\+Event} $\ast$event)
+virtual void \mbox{\hyperlink{classengine_1_1Layer_a982be4dc6ab1d3d71162719138312872}{On\+Event}} (\mbox{\hyperlink{classengine_1_1events_1_1Event}{events\+::\+Event}} $\ast$event)
 \begin{DoxyCompactList}\small\item\em Handles what to do when the game engine passes an event. \end{DoxyCompactList}\item 
-virtual void \hyperlink{classengine_1_1Layer_a002df9fddaba135a8bd7abc14e3fb067}{On\+Im\+Gui\+Render} ()
+virtual void \mbox{\hyperlink{classengine_1_1Layer_a002df9fddaba135a8bd7abc14e3fb067}{On\+Im\+Gui\+Render}} ()
 \begin{DoxyCompactList}\small\item\em Handles what to do when the game engine requests the layer to render Im\+Gui components. \end{DoxyCompactList}\item 
-const std\+::string \& \hyperlink{classengine_1_1Layer_a770a8fb58326ed32779e84bf54a93eef}{Get\+Name} () const
+const std\+::string \& \mbox{\hyperlink{classengine_1_1Layer_a770a8fb58326ed32779e84bf54a93eef}{Get\+Name}} () const
 \begin{DoxyCompactList}\small\item\em Gets the name of the layer. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Protected Attributes}
+\doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classengine_1_1Layer_a9283719bf3b3d956809ef351a43ee16f}\label{classengine_1_1Layer_a9283719bf3b3d956809ef351a43ee16f}} 
@@ -35,11 +30,11 @@ std\+::string {\bfseries debug\+\_\+name\+\_\+}
 \end{DoxyCompactItemize}
 
 
-\subsection{Member Function Documentation}
+\doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classengine_1_1Layer_a770a8fb58326ed32779e84bf54a93eef}\label{classengine_1_1Layer_a770a8fb58326ed32779e84bf54a93eef}} 
-\index{engine\+::\+Layer@{engine\+::\+Layer}!Get\+Name@{Get\+Name}}
-\index{Get\+Name@{Get\+Name}!engine\+::\+Layer@{engine\+::\+Layer}}
-\subsubsection{\texorpdfstring{Get\+Name()}{GetName()}}
+\index{engine::Layer@{engine::Layer}!GetName@{GetName}}
+\index{GetName@{GetName}!engine::Layer@{engine::Layer}}
+\doxysubsubsection{\texorpdfstring{GetName()}{GetName()}}
 {\footnotesize\ttfamily engine\+::\+Layer\+::\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
 
@@ -47,9 +42,9 @@ std\+::string {\bfseries debug\+\_\+name\+\_\+}
 Gets the name of the layer. 
 
 Mainly used for debugging within the engine. \mbox{\Hypertarget{classengine_1_1Layer_ace68c1d4e441165d6741a74d4b11c7f0}\label{classengine_1_1Layer_ace68c1d4e441165d6741a74d4b11c7f0}} 
-\index{engine\+::\+Layer@{engine\+::\+Layer}!On\+Attach@{On\+Attach}}
-\index{On\+Attach@{On\+Attach}!engine\+::\+Layer@{engine\+::\+Layer}}
-\subsubsection{\texorpdfstring{On\+Attach()}{OnAttach()}}
+\index{engine::Layer@{engine::Layer}!OnAttach@{OnAttach}}
+\index{OnAttach@{OnAttach}!engine::Layer@{engine::Layer}}
+\doxysubsubsection{\texorpdfstring{OnAttach()}{OnAttach()}}
 {\footnotesize\ttfamily engine\+::\+Layer\+::\+On\+Attach (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 
@@ -58,12 +53,12 @@ What to do when a layer is attached to the game engine.
 
 Primarily for initializing anything in the layer when it\textquotesingle{}s attached to the engine. 
 
-Reimplemented in \hyperlink{classengine_1_1imgui_1_1ImGuiLayer_a8580bd31942d4bc33f268053d2adec31}{engine\+::imgui\+::\+Im\+Gui\+Layer}.
+Reimplemented in \mbox{\hyperlink{classengine_1_1imgui_1_1ImGuiLayer_a8580bd31942d4bc33f268053d2adec31}{engine\+::imgui\+::\+Im\+Gui\+Layer}}.
 
 \mbox{\Hypertarget{classengine_1_1Layer_acfa7e624cfd2cb85803382511454d098}\label{classengine_1_1Layer_acfa7e624cfd2cb85803382511454d098}} 
-\index{engine\+::\+Layer@{engine\+::\+Layer}!On\+Detach@{On\+Detach}}
-\index{On\+Detach@{On\+Detach}!engine\+::\+Layer@{engine\+::\+Layer}}
-\subsubsection{\texorpdfstring{On\+Detach()}{OnDetach()}}
+\index{engine::Layer@{engine::Layer}!OnDetach@{OnDetach}}
+\index{OnDetach@{OnDetach}!engine::Layer@{engine::Layer}}
+\doxysubsubsection{\texorpdfstring{OnDetach()}{OnDetach()}}
 {\footnotesize\ttfamily engine\+::\+Layer\+::\+On\+Detach (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 
@@ -72,13 +67,13 @@ Handles what to do when a layer is attached to the game engine.
 
 Primarily for cleaning up anything in the layer when it\textquotesingle{}s no longer attached to the engine. 
 
-Reimplemented in \hyperlink{classengine_1_1imgui_1_1ImGuiLayer_ad443a984abe93f4101fdbadcea01bf9b}{engine\+::imgui\+::\+Im\+Gui\+Layer}.
+Reimplemented in \mbox{\hyperlink{classengine_1_1imgui_1_1ImGuiLayer_ad443a984abe93f4101fdbadcea01bf9b}{engine\+::imgui\+::\+Im\+Gui\+Layer}}.
 
 \mbox{\Hypertarget{classengine_1_1Layer_a982be4dc6ab1d3d71162719138312872}\label{classengine_1_1Layer_a982be4dc6ab1d3d71162719138312872}} 
-\index{engine\+::\+Layer@{engine\+::\+Layer}!On\+Event@{On\+Event}}
-\index{On\+Event@{On\+Event}!engine\+::\+Layer@{engine\+::\+Layer}}
-\subsubsection{\texorpdfstring{On\+Event()}{OnEvent()}}
-{\footnotesize\ttfamily engine\+::\+Layer\+::\+On\+Event (\begin{DoxyParamCaption}\item[{\hyperlink{classengine_1_1events_1_1Event}{events\+::\+Event} $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+\index{engine::Layer@{engine::Layer}!OnEvent@{OnEvent}}
+\index{OnEvent@{OnEvent}!engine::Layer@{engine::Layer}}
+\doxysubsubsection{\texorpdfstring{OnEvent()}{OnEvent()}}
+{\footnotesize\ttfamily engine\+::\+Layer\+::\+On\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classengine_1_1events_1_1Event}{events\+::\+Event}} $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 
 
@@ -90,9 +85,9 @@ Handles what to do when the game engine passes an event.
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classengine_1_1Layer_a002df9fddaba135a8bd7abc14e3fb067}\label{classengine_1_1Layer_a002df9fddaba135a8bd7abc14e3fb067}} 
-\index{engine\+::\+Layer@{engine\+::\+Layer}!On\+Im\+Gui\+Render@{On\+Im\+Gui\+Render}}
-\index{On\+Im\+Gui\+Render@{On\+Im\+Gui\+Render}!engine\+::\+Layer@{engine\+::\+Layer}}
-\subsubsection{\texorpdfstring{On\+Im\+Gui\+Render()}{OnImGuiRender()}}
+\index{engine::Layer@{engine::Layer}!OnImGuiRender@{OnImGuiRender}}
+\index{OnImGuiRender@{OnImGuiRender}!engine::Layer@{engine::Layer}}
+\doxysubsubsection{\texorpdfstring{OnImGuiRender()}{OnImGuiRender()}}
 {\footnotesize\ttfamily engine\+::\+Layer\+::\+On\+Im\+Gui\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 
@@ -101,13 +96,13 @@ Handles what to do when the game engine requests the layer to render Im\+Gui com
 
 This can only be accessed if the layer is attached to the engine. 
 
-Reimplemented in \hyperlink{classengine_1_1imgui_1_1ImGuiLayer_aeacc4aecfc119192fbe98e961b88813e}{engine\+::imgui\+::\+Im\+Gui\+Layer}.
+Reimplemented in \mbox{\hyperlink{classengine_1_1imgui_1_1ImGuiLayer_aeacc4aecfc119192fbe98e961b88813e}{engine\+::imgui\+::\+Im\+Gui\+Layer}}.
 
-\mbox{\Hypertarget{classengine_1_1Layer_a449eaba4fc30454d281419173bd6624b}\label{classengine_1_1Layer_a449eaba4fc30454d281419173bd6624b}} 
-\index{engine\+::\+Layer@{engine\+::\+Layer}!On\+Update@{On\+Update}}
-\index{On\+Update@{On\+Update}!engine\+::\+Layer@{engine\+::\+Layer}}
-\subsubsection{\texorpdfstring{On\+Update()}{OnUpdate()}}
-{\footnotesize\ttfamily engine\+::\+Layer\+::\+On\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+\mbox{\Hypertarget{classengine_1_1Layer_a85ce49ee4b9f58cad1b302c3cb4a8207}\label{classengine_1_1Layer_a85ce49ee4b9f58cad1b302c3cb4a8207}} 
+\index{engine::Layer@{engine::Layer}!OnUpdate@{OnUpdate}}
+\index{OnUpdate@{OnUpdate}!engine::Layer@{engine::Layer}}
+\doxysubsubsection{\texorpdfstring{OnUpdate()}{OnUpdate()}}
+{\footnotesize\ttfamily engine\+::\+Layer\+::\+On\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classengine_1_1util_1_1TimeStep}{util\+::\+Time\+Step}}}]{time\+\_\+step }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 
 
@@ -117,5 +112,5 @@ This can only be accessed if the layer is attached to the engine.
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-engine/src/core/\hyperlink{Layer_8h}{Layer.\+h}\item 
+engine/src/core/\mbox{\hyperlink{Layer_8h}{Layer.\+h}}\item 
 engine/src/core/Layer.\+cpp\end{DoxyCompactItemize}

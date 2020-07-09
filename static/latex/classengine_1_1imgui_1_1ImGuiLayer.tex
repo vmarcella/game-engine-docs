@@ -1,5 +1,5 @@
-\hypertarget{classengine_1_1imgui_1_1ImGuiLayer}{}\section{engine\+:\+:imgui\+:\+:Im\+Gui\+Layer Class Reference}
-\label{classengine_1_1imgui_1_1ImGuiLayer}\index{engine\+::imgui\+::\+Im\+Gui\+Layer@{engine\+::imgui\+::\+Im\+Gui\+Layer}}
+\hypertarget{classengine_1_1imgui_1_1ImGuiLayer}{}\doxysection{engine\+::imgui\+::Im\+Gui\+Layer Class Reference}
+\label{classengine_1_1imgui_1_1ImGuiLayer}\index{engine::imgui::ImGuiLayer@{engine::imgui::ImGuiLayer}}
 
 
 An abstract Imgui layer implementation.  
@@ -11,66 +11,56 @@ An abstract Imgui layer implementation.
 
 
 
-Inheritance diagram for engine\+:\+:imgui\+:\+:Im\+Gui\+Layer\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=211pt]{classengine_1_1imgui_1_1ImGuiLayer__inherit__graph}
-\end{center}
-\end{figure}
+Inheritance diagram for engine\+::imgui\+::Im\+Gui\+Layer\+:
+% FIG 0
 
 
-Collaboration diagram for engine\+:\+:imgui\+:\+:Im\+Gui\+Layer\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=211pt]{classengine_1_1imgui_1_1ImGuiLayer__coll__graph}
-\end{center}
-\end{figure}
-\subsection*{Public Member Functions}
+Collaboration diagram for engine\+::imgui\+::Im\+Gui\+Layer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{classengine_1_1imgui_1_1ImGuiLayer_a8580bd31942d4bc33f268053d2adec31}{On\+Attach} () override
+void \mbox{\hyperlink{classengine_1_1imgui_1_1ImGuiLayer_a8580bd31942d4bc33f268053d2adec31}{On\+Attach}} () override
 \begin{DoxyCompactList}\small\item\em Handles an Im\+Gui\+Layers attachment to the engine. \end{DoxyCompactList}\item 
-void \hyperlink{classengine_1_1imgui_1_1ImGuiLayer_ad443a984abe93f4101fdbadcea01bf9b}{On\+Detach} () override
+void \mbox{\hyperlink{classengine_1_1imgui_1_1ImGuiLayer_ad443a984abe93f4101fdbadcea01bf9b}{On\+Detach}} () override
 \begin{DoxyCompactList}\small\item\em Handles an Im\+Gui\+Layers detachment to the engine. \end{DoxyCompactList}\item 
-void \hyperlink{classengine_1_1imgui_1_1ImGuiLayer_aeacc4aecfc119192fbe98e961b88813e}{On\+Im\+Gui\+Render} () override
+void \mbox{\hyperlink{classengine_1_1imgui_1_1ImGuiLayer_aeacc4aecfc119192fbe98e961b88813e}{On\+Im\+Gui\+Render}} () override
 \begin{DoxyCompactList}\small\item\em Handles an Im\+Gui\+Render Call by the engine. \end{DoxyCompactList}\item 
-void \hyperlink{classengine_1_1imgui_1_1ImGuiLayer_aaecbd780bfe93ea0b85c9b31c3a931de}{Begin} ()
+void \mbox{\hyperlink{classengine_1_1imgui_1_1ImGuiLayer_aaecbd780bfe93ea0b85c9b31c3a931de}{Begin}} ()
 \begin{DoxyCompactList}\small\item\em Instantiates the context for the Imgui layer. \end{DoxyCompactList}\item 
-void \hyperlink{classengine_1_1imgui_1_1ImGuiLayer_aca4c57dc3361ed5c4c75a9c43b8dc1e6}{End} ()
+void \mbox{\hyperlink{classengine_1_1imgui_1_1ImGuiLayer_aca4c57dc3361ed5c4c75a9c43b8dc1e6}{End}} ()
 \begin{DoxyCompactList}\small\item\em Closes and cleans up the context for the Imgui layer. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Additional Inherited Members}
+\doxysubsection*{Additional Inherited Members}
 
 
-\subsection{Detailed Description}
+\doxysubsection{Detailed Description}
 An abstract Imgui layer implementation. 
 
-\subsection{Member Function Documentation}
+\doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classengine_1_1imgui_1_1ImGuiLayer_aaecbd780bfe93ea0b85c9b31c3a931de}\label{classengine_1_1imgui_1_1ImGuiLayer_aaecbd780bfe93ea0b85c9b31c3a931de}} 
-\index{engine\+::imgui\+::\+Im\+Gui\+Layer@{engine\+::imgui\+::\+Im\+Gui\+Layer}!Begin@{Begin}}
-\index{Begin@{Begin}!engine\+::imgui\+::\+Im\+Gui\+Layer@{engine\+::imgui\+::\+Im\+Gui\+Layer}}
-\subsubsection{\texorpdfstring{Begin()}{Begin()}}
+\index{engine::imgui::ImGuiLayer@{engine::imgui::ImGuiLayer}!Begin@{Begin}}
+\index{Begin@{Begin}!engine::imgui::ImGuiLayer@{engine::imgui::ImGuiLayer}}
+\doxysubsubsection{\texorpdfstring{Begin()}{Begin()}}
 {\footnotesize\ttfamily engine\+::imgui\+::\+Im\+Gui\+Layer\+::\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
 Instantiates the context for the Imgui layer. 
 
-Must be closed out with \hyperlink{classengine_1_1imgui_1_1ImGuiLayer_aca4c57dc3361ed5c4c75a9c43b8dc1e6}{End()} in order to prevent the imgui context from leaking and interfering with other graphics trying to be rendered. \mbox{\Hypertarget{classengine_1_1imgui_1_1ImGuiLayer_aca4c57dc3361ed5c4c75a9c43b8dc1e6}\label{classengine_1_1imgui_1_1ImGuiLayer_aca4c57dc3361ed5c4c75a9c43b8dc1e6}} 
-\index{engine\+::imgui\+::\+Im\+Gui\+Layer@{engine\+::imgui\+::\+Im\+Gui\+Layer}!End@{End}}
-\index{End@{End}!engine\+::imgui\+::\+Im\+Gui\+Layer@{engine\+::imgui\+::\+Im\+Gui\+Layer}}
-\subsubsection{\texorpdfstring{End()}{End()}}
+Must be closed out with \mbox{\hyperlink{classengine_1_1imgui_1_1ImGuiLayer_aca4c57dc3361ed5c4c75a9c43b8dc1e6}{End()}} in order to prevent the imgui context from leaking and interfering with other graphics trying to be rendered. \mbox{\Hypertarget{classengine_1_1imgui_1_1ImGuiLayer_aca4c57dc3361ed5c4c75a9c43b8dc1e6}\label{classengine_1_1imgui_1_1ImGuiLayer_aca4c57dc3361ed5c4c75a9c43b8dc1e6}} 
+\index{engine::imgui::ImGuiLayer@{engine::imgui::ImGuiLayer}!End@{End}}
+\index{End@{End}!engine::imgui::ImGuiLayer@{engine::imgui::ImGuiLayer}}
+\doxysubsubsection{\texorpdfstring{End()}{End()}}
 {\footnotesize\ttfamily engine\+::imgui\+::\+Im\+Gui\+Layer\+::\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
 Closes and cleans up the context for the Imgui layer. 
 
-Must be opened with \hyperlink{classengine_1_1imgui_1_1ImGuiLayer_aaecbd780bfe93ea0b85c9b31c3a931de}{Begin()} in order to prevent the imgui context from leaking and interfering with other graphics trying to be rendered. \mbox{\Hypertarget{classengine_1_1imgui_1_1ImGuiLayer_a8580bd31942d4bc33f268053d2adec31}\label{classengine_1_1imgui_1_1ImGuiLayer_a8580bd31942d4bc33f268053d2adec31}} 
-\index{engine\+::imgui\+::\+Im\+Gui\+Layer@{engine\+::imgui\+::\+Im\+Gui\+Layer}!On\+Attach@{On\+Attach}}
-\index{On\+Attach@{On\+Attach}!engine\+::imgui\+::\+Im\+Gui\+Layer@{engine\+::imgui\+::\+Im\+Gui\+Layer}}
-\subsubsection{\texorpdfstring{On\+Attach()}{OnAttach()}}
+Must be opened with \mbox{\hyperlink{classengine_1_1imgui_1_1ImGuiLayer_aaecbd780bfe93ea0b85c9b31c3a931de}{Begin()}} in order to prevent the imgui context from leaking and interfering with other graphics trying to be rendered. \mbox{\Hypertarget{classengine_1_1imgui_1_1ImGuiLayer_a8580bd31942d4bc33f268053d2adec31}\label{classengine_1_1imgui_1_1ImGuiLayer_a8580bd31942d4bc33f268053d2adec31}} 
+\index{engine::imgui::ImGuiLayer@{engine::imgui::ImGuiLayer}!OnAttach@{OnAttach}}
+\index{OnAttach@{OnAttach}!engine::imgui::ImGuiLayer@{engine::imgui::ImGuiLayer}}
+\doxysubsubsection{\texorpdfstring{OnAttach()}{OnAttach()}}
 {\footnotesize\ttfamily engine\+::imgui\+::\+Im\+Gui\+Layer\+::\+On\+Attach (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
@@ -81,12 +71,12 @@ The default On\+Attach creates a context, activates dark mode, and register inpu
 
 This is currently setup with a default implementation but will most likely be delegated to users that would like to implement their own imgui layers. 
 
-Reimplemented from \hyperlink{classengine_1_1Layer_ace68c1d4e441165d6741a74d4b11c7f0}{engine\+::\+Layer}.
+Reimplemented from \mbox{\hyperlink{classengine_1_1Layer_ace68c1d4e441165d6741a74d4b11c7f0}{engine\+::\+Layer}}.
 
 \mbox{\Hypertarget{classengine_1_1imgui_1_1ImGuiLayer_ad443a984abe93f4101fdbadcea01bf9b}\label{classengine_1_1imgui_1_1ImGuiLayer_ad443a984abe93f4101fdbadcea01bf9b}} 
-\index{engine\+::imgui\+::\+Im\+Gui\+Layer@{engine\+::imgui\+::\+Im\+Gui\+Layer}!On\+Detach@{On\+Detach}}
-\index{On\+Detach@{On\+Detach}!engine\+::imgui\+::\+Im\+Gui\+Layer@{engine\+::imgui\+::\+Im\+Gui\+Layer}}
-\subsubsection{\texorpdfstring{On\+Detach()}{OnDetach()}}
+\index{engine::imgui::ImGuiLayer@{engine::imgui::ImGuiLayer}!OnDetach@{OnDetach}}
+\index{OnDetach@{OnDetach}!engine::imgui::ImGuiLayer@{engine::imgui::ImGuiLayer}}
+\doxysubsubsection{\texorpdfstring{OnDetach()}{OnDetach()}}
 {\footnotesize\ttfamily engine\+::imgui\+::\+Im\+Gui\+Layer\+::\+On\+Detach (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
@@ -97,12 +87,12 @@ Currently also only supports Open\+GL.
 
 This is currently setup with a default implementation but will most likely be delegated to users that would like to implement their own imgui layers. 
 
-Reimplemented from \hyperlink{classengine_1_1Layer_acfa7e624cfd2cb85803382511454d098}{engine\+::\+Layer}.
+Reimplemented from \mbox{\hyperlink{classengine_1_1Layer_acfa7e624cfd2cb85803382511454d098}{engine\+::\+Layer}}.
 
 \mbox{\Hypertarget{classengine_1_1imgui_1_1ImGuiLayer_aeacc4aecfc119192fbe98e961b88813e}\label{classengine_1_1imgui_1_1ImGuiLayer_aeacc4aecfc119192fbe98e961b88813e}} 
-\index{engine\+::imgui\+::\+Im\+Gui\+Layer@{engine\+::imgui\+::\+Im\+Gui\+Layer}!On\+Im\+Gui\+Render@{On\+Im\+Gui\+Render}}
-\index{On\+Im\+Gui\+Render@{On\+Im\+Gui\+Render}!engine\+::imgui\+::\+Im\+Gui\+Layer@{engine\+::imgui\+::\+Im\+Gui\+Layer}}
-\subsubsection{\texorpdfstring{On\+Im\+Gui\+Render()}{OnImGuiRender()}}
+\index{engine::imgui::ImGuiLayer@{engine::imgui::ImGuiLayer}!OnImGuiRender@{OnImGuiRender}}
+\index{OnImGuiRender@{OnImGuiRender}!engine::imgui::ImGuiLayer@{engine::imgui::ImGuiLayer}}
+\doxysubsubsection{\texorpdfstring{OnImGuiRender()}{OnImGuiRender()}}
 {\footnotesize\ttfamily engine\+::imgui\+::\+Im\+Gui\+Layer\+::\+On\+Im\+Gui\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
@@ -111,11 +101,11 @@ Handles an Im\+Gui\+Render Call by the engine.
 
 This will only be called when the engine is compiled with imgui attached. 
 
-Reimplemented from \hyperlink{classengine_1_1Layer_a002df9fddaba135a8bd7abc14e3fb067}{engine\+::\+Layer}.
+Reimplemented from \mbox{\hyperlink{classengine_1_1Layer_a002df9fddaba135a8bd7abc14e3fb067}{engine\+::\+Layer}}.
 
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-engine/src/core/imgui/\hyperlink{ImGuiLayer_8h}{Im\+Gui\+Layer.\+h}\item 
+engine/src/core/imgui/\mbox{\hyperlink{ImGuiLayer_8h}{Im\+Gui\+Layer.\+h}}\item 
 engine/src/core/imgui/Im\+Gui\+Layer.\+cpp\end{DoxyCompactItemize}

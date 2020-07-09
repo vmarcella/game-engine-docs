@@ -1,0 +1,16 @@
+digraph "engine/src/core/util/Assert.h"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="engine/src/core/util\l/Assert.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="This is a utility file that is primarily used for debugging the internals of the engine when incorrec..."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="core/Core.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Core_8h.html",tooltip="Core macros to be used all throughout the engine for development and production purposes."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="core/util/Log.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Log_8h.html",tooltip="The engines logging utility."];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="memory",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="spdlog/spdlog.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+}

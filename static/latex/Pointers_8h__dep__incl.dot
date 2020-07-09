@@ -1,0 +1,44 @@
+digraph "engine/src/core/memory/Pointers.h"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="engine/src/core/memory\l/Pointers.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Abstraction for handling pointers within the engine. Currently just aliases for unique and shared poi..."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="engine/src/core/Application.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Application_8h.html",tooltip="Contains the Application class definitions."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="engine/src/core/Entrypoint.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Entrypoint_8h.html",tooltip="The entrypoint into the engine."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="engine/src/Engine.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Engine_8h.html",tooltip="The entrypoint into the game engine source code."];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="engine/src/core/LayerStack.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$LayerStack_8h.html",tooltip="The LayerStack Definition for handling multiple layers."];
+  Node5 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="engine/src/core/renderer\l/Buffer.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Buffer_8h.html",tooltip="Buffer abstractions that allow the ease of implementing Buffers for any graphics API."];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="engine/src/core/renderer\l/VertexArray.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$VertexArray_8h.html",tooltip="The Generic VertexArray API."];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="engine/src/core/renderer\l/RendererAPI.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$RendererAPI_8h_source.html",tooltip=" "];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="engine/src/core/renderer\l/RenderCommand.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$RenderCommand_8h.html",tooltip="The declaration file for the RenderCommand Wrapper."];
+  Node9 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="engine/src/core/renderer\l/Renderer.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Renderer_8h.html",tooltip="The rendering API."];
+  Node10 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="engine/src/platform\l/opengl/OpenGLRendererAPI.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$OpenGLRendererAPI_8h.html",tooltip="The OpenGL rendering implementation."];
+  Node7 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node12 [label="engine/src/platform\l/opengl/OpenGLVertexArray.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$OpenGLVertexArray_8h_source.html",tooltip=" "];
+  Node6 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node13 [label="engine/src/platform\l/opengl/OpenGLBuffer.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$OpenGLBuffer_8h_source.html",tooltip=" "];
+  Node6 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node14 [label="engine/src/core/Window.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$core_2Window_8h.html",tooltip="The Abstract Window definition."];
+  Node14 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+}

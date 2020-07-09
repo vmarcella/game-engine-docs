@@ -1,44 +1,38 @@
-\hypertarget{Core_8h}{}\section{engine/src/core/\+Core.h File Reference}
-\label{Core_8h}\index{engine/src/core/\+Core.\+h@{engine/src/core/\+Core.\+h}}
+\hypertarget{Core_8h}{}\doxysection{engine/src/core/\+Core.h File Reference}
+\label{Core_8h}\index{engine/src/core/Core.h@{engine/src/core/Core.h}}
 
 
 Core macros to be used all throughout the engine for development and production purposes.  
 
 
 This graph shows which files directly or indirectly include this file\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{Core_8h__dep__incl}
-\end{center}
-\end{figure}
-\subsection*{Macros}
+% FIG 0
+\doxysubsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{Core_8h_a0697ee40f69dc5dab56d13131f4c4835}\label{Core_8h_a0697ee40f69dc5dab56d13131f4c4835}} 
-\#define \hyperlink{Core_8h_a0697ee40f69dc5dab56d13131f4c4835}{E\+N\+G\+I\+N\+E\+\_\+\+A\+PI}
+\#define \mbox{\hyperlink{Core_8h_a0697ee40f69dc5dab56d13131f4c4835}{E\+N\+G\+I\+N\+E\+\_\+\+A\+PI}}
 \begin{DoxyCompactList}\small\item\em Handles exporting the engine if it\textquotesingle{}s being built as a dll. Potentially deprecated and shouldn\textquotesingle{}t be used outside of the engine. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{Core_8h_a9b3ffcf9f4871788acdf12794eca48cf}\label{Core_8h_a9b3ffcf9f4871788acdf12794eca48cf}} 
-\#define \hyperlink{Core_8h_a9b3ffcf9f4871788acdf12794eca48cf}{E\+N\+G\+I\+N\+E\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+A\+S\+S\+E\+R\+TS}~false
-\begin{DoxyCompactList}\small\item\em Allows the usage of {\ttfamily \hyperlink{Assert_8h}{core/\+Assert.\+h}} Assertions to execute in the engine. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{Core_8h_a9b3ffcf9f4871788acdf12794eca48cf}{E\+N\+G\+I\+N\+E\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+A\+S\+S\+E\+R\+TS}}~false
+\begin{DoxyCompactList}\small\item\em Allows the usage of {\ttfamily core/\+Assert.\+h} Assertions to execute in the engine. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{Core_8h_ae79feff140f19bd881e457bfa4cbfbd4}\label{Core_8h_ae79feff140f19bd881e457bfa4cbfbd4}} 
-\#define \hyperlink{Core_8h_ae79feff140f19bd881e457bfa4cbfbd4}{E\+N\+G\+I\+N\+E\+\_\+\+D\+E\+B\+U\+G\+\_\+\+B\+R\+E\+AK}()
+\#define \mbox{\hyperlink{Core_8h_ae79feff140f19bd881e457bfa4cbfbd4}{E\+N\+G\+I\+N\+E\+\_\+\+D\+E\+B\+U\+G\+\_\+\+B\+R\+E\+AK}}()
 \begin{DoxyCompactList}\small\item\em Allows the execution of breakpoints throughout the engine when debuggin. \end{DoxyCompactList}\item 
-\#define \hyperlink{Core_8h_ad27cc17b25bb93134368d5eb21126eae}{B\+IT}(x)~(1 $<$$<$ x)
+\#define \mbox{\hyperlink{Core_8h_ad27cc17b25bb93134368d5eb21126eae}{B\+IT}}(x)~(1 $<$$<$ x)
 \begin{DoxyCompactList}\small\item\em Creates the bit representation of an integer. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\subsection{Detailed Description}
+\doxysubsection{Detailed Description}
 Core macros to be used all throughout the engine for development and production purposes. 
 
-This header includes core macros that are used all throughout the engine for many different internal usage. You most likely won\textquotesingle{}t need to use anything from this file specifically and instead might find {\ttfamily \hyperlink{Log_8h}{core/\+Log.\+h}} and {\ttfamily \hyperlink{Assert_8h}{core/\+Assert.\+h}} more useful as they extend core and provide logging and assertions (If enabled). 
+This header includes core macros that are used all throughout the engine for many different internal usage. You most likely won\textquotesingle{}t need to use anything from this file specifically and instead might find {\ttfamily core/\+Log.\+h} and {\ttfamily core/\+Assert.\+h} more useful as they extend core and provide logging and assertions (If enabled). 
 
-\subsection{Macro Definition Documentation}
+\doxysubsection{Macro Definition Documentation}
 \mbox{\Hypertarget{Core_8h_ad27cc17b25bb93134368d5eb21126eae}\label{Core_8h_ad27cc17b25bb93134368d5eb21126eae}} 
-\index{Core.\+h@{Core.\+h}!B\+IT@{B\+IT}}
-\index{B\+IT@{B\+IT}!Core.\+h@{Core.\+h}}
-\subsubsection{\texorpdfstring{B\+IT}{BIT}}
+\index{Core.h@{Core.h}!BIT@{BIT}}
+\index{BIT@{BIT}!Core.h@{Core.h}}
+\doxysubsubsection{\texorpdfstring{BIT}{BIT}}
 {\footnotesize\ttfamily \#define B\+IT(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(1 $<$$<$ x)}
 
 
@@ -47,6 +41,6 @@ Creates the bit representation of an integer.
 
 
 \begin{DoxyParams}{Parameters}
-{\em x} & The number to represent in bits. Mostly for internal usage (Check {\ttfamily \hyperlink{Event_8h}{engine/src/core/events/\+Event.\+h}}) \\
+{\em x} & The number to represent in bits. Mostly for internal usage (Check {\ttfamily \mbox{\hyperlink{Event_8h}{engine/src/core/events/\+Event.\+h}}}) \\
 \hline
 \end{DoxyParams}

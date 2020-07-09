@@ -1,0 +1,40 @@
+digraph "engine/src/core/events/Event.h"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="engine/src/core/events\l/Event.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="The Event class and dispatcher core implementations."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="engine/src/core/Application.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Application_8h.html",tooltip="Contains the Application class definitions."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="engine/src/core/Entrypoint.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Entrypoint_8h.html",tooltip="The entrypoint into the engine."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="engine/src/Engine.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Engine_8h.html",tooltip="The entrypoint into the game engine source code."];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="engine/src/core/events\l/ApplicationEvent.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$ApplicationEvent_8h.html",tooltip="Events that are to be specifically handled at the application level."];
+  Node5 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="engine/src/core/imgui\l/ImGuiLayer.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$ImGuiLayer_8h.html",tooltip="The ImGuiLayer implementation for dev tool creation."];
+  Node6 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="engine/src/core/events\l/KeyEvent.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$KeyEvent_8h.html",tooltip="Events that specifically deal with key input."];
+  Node7 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="engine/src/core/events\l/MouseEvent.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$MouseEvent_8h.html",tooltip="All events related mouse input."];
+  Node8 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="engine/src/core/Layer.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Layer_8h.html",tooltip="The Layer implementation that allows application to specify layers to be attached to the game."];
+  Node9 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="engine/src/core/LayerStack.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$LayerStack_8h.html",tooltip="The LayerStack Definition for handling multiple layers."];
+  Node10 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="engine/src/core/Window.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$core_2Window_8h.html",tooltip="The Abstract Window definition."];
+  Node11 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

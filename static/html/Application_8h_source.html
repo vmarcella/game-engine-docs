@@ -97,18 +97,18 @@ $(function() {
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">void</span> PushOverlay(memory::Shared&lt;Layer&gt; layer);</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordtype">void</span> Run();</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keyword">inline</span> <span class="keyword">const</span> <a class="code" href="classengine_1_1Window.html">Window</a>&amp; GetWindow()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> *window_; }</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classengine_1_1Application.html#a11f25e41af0fb736cd4fe28cb3630378">   37</a></span>&#160;  <span class="keyword">inline</span> <span class="keyword">const</span> <a class="code" href="classengine_1_1Window.html">Window</a>&amp; <a class="code" href="classengine_1_1Application.html#a11f25e41af0fb736cd4fe28cb3630378">GetWindow</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> *window_; }</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">inline</span> <span class="keyword">static</span> <a class="code" href="classengine_1_1Application.html">Application</a>&amp; GetApplication() {<span class="keywordflow">return</span> *kApplication_; }</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <a class="code" href="classengine_1_1LayerStack.html">LayerStack</a> layer_stack_;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  LayerStack layer_stack_;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">bool</span> running_ = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  memory::Shared&lt;Window&gt; window_;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  memory::Shared&lt;imgui::ImGuiLayer&gt; imgui_layer_;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keyword">static</span> memory::Unique&lt;Application&gt; kApplication_;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <a class="code" href="classengine_1_1util_1_1Time.html">util::Time</a> last_frame_time_;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  util::Time last_frame_time_;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">bool</span> OnWindowClosed(<span class="keyword">const</span> <a class="code" href="classengine_1_1events_1_1WindowCloseEvent.html">events::WindowCloseEvent</a>&amp; event);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">bool</span> OnWindowClosed(<span class="keyword">const</span> events::WindowCloseEvent&amp; event);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
 <div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="Application_8h.html#ad48a1c6e635fa178770658de703fc5c5">   56</a></span>&#160;<a class="code" href="classengine_1_1Application.html">Application</a>* <a class="code" href="Application_8h.html#ad48a1c6e635fa178770658de703fc5c5">CreateApplication</a>();</div>
@@ -118,13 +118,11 @@ $(function() {
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif  // ENGINE_SRC_CORE_APPLICATION_H_</span></div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassengine_1_1events_1_1WindowCloseEvent_html"><div class="ttname"><a href="classengine_1_1events_1_1WindowCloseEvent.html">engine::events::WindowCloseEvent</a></div><div class="ttdoc">Generated whenever a window is closed.</div><div class="ttdef"><b>Definition:</b> ApplicationEvent.h:59</div></div>
 <div class="ttc" id="acore_2Window_8h_html"><div class="ttname"><a href="core_2Window_8h.html">Window.h</a></div><div class="ttdoc">The Abstract Window definition.</div></div>
 <div class="ttc" id="aclassengine_1_1events_1_1Event_html"><div class="ttname"><a href="classengine_1_1events_1_1Event.html">engine::events::Event</a></div><div class="ttdoc">The abstract Event class.</div><div class="ttdef"><b>Definition:</b> Event.h:108</div></div>
 <div class="ttc" id="aLayer_8h_html"><div class="ttname"><a href="Layer_8h.html">Layer.h</a></div><div class="ttdoc">The Layer implementation that allows application to specify layers to be attached to the game.</div></div>
-<div class="ttc" id="aclassengine_1_1LayerStack_html"><div class="ttname"><a href="classengine_1_1LayerStack.html">engine::LayerStack</a></div><div class="ttdoc">A stack based data structure for the storage of layers to be managed by the engine.</div><div class="ttdef"><b>Definition:</b> LayerStack.h:27</div></div>
 <div class="ttc" id="aPointers_8h_html"><div class="ttname"><a href="Pointers_8h.html">Pointers.h</a></div><div class="ttdoc">Abstraction for handling pointers within the engine. Currently just aliases for unique and shared poi...</div></div>
-<div class="ttc" id="aclassengine_1_1util_1_1Time_html"><div class="ttname"><a href="classengine_1_1util_1_1Time.html">engine::util::Time</a></div><div class="ttdoc">A wrapper for working with Time within the game engine. Uses std::steady_clock for a platform indepen...</div><div class="ttdef"><b>Definition:</b> Time.h:27</div></div>
+<div class="ttc" id="aclassengine_1_1Application_html_a11f25e41af0fb736cd4fe28cb3630378"><div class="ttname"><a href="classengine_1_1Application.html#a11f25e41af0fb736cd4fe28cb3630378">engine::Application::GetWindow</a></div><div class="ttdeci">const Window &amp; GetWindow() const</div><div class="ttdoc">Gets a read only reference to the window pointer that is currently being used.</div><div class="ttdef"><b>Definition:</b> Application.h:37</div></div>
 <div class="ttc" id="aEvent_8h_html"><div class="ttname"><a href="Event_8h.html">Event.h</a></div><div class="ttdoc">The Event class and dispatcher core implementations.</div></div>
 <div class="ttc" id="aTime_8h_html"><div class="ttname"><a href="Time_8h.html">Time.h</a></div><div class="ttdoc">Timing.</div></div>
 <div class="ttc" id="aLayerStack_8h_html"><div class="ttname"><a href="LayerStack_8h.html">LayerStack.h</a></div><div class="ttdoc">The LayerStack Definition for handling multiple layers.</div></div>

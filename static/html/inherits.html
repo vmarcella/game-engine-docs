@@ -68,13 +68,13 @@ $(function() {
 <div class="textblock">
 <p><a href="hierarchy.html">Go to the textual class hierarchy</a></p>
 </div><table border="0" cellspacing="10" cellpadding="0">
-<tr><td><img src="inherit_graph_0.png" border="0" usemap="#engine_1_1Application" alt=""/>
-<map name="engine_1_1Application" id="engine_1_1Application">
+<tr><td><img src="inherit_graph_0.png" border="0" usemap="#Application" alt=""/>
+<map name="Application" id="Application">
 <area shape="rect" href="classengine_1_1Application.html" title="The primary driver of all applications extending this engine. " alt="" coords="5,5,137,32"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_1.png" border="0" usemap="#engine_1_1events_1_1Event" alt=""/>
-<map name="engine_1_1events_1_1Event" id="engine_1_1events_1_1Event">
+<tr><td><img src="inherit_graph_1.png" border="0" usemap="#engine_1_1Application" alt=""/>
+<map name="engine_1_1Application" id="engine_1_1Application">
 <area shape="rect" href="classengine_1_1events_1_1Event.html" title="The abstract Event class. " alt="" coords="5,247,155,274"/>
 <area shape="rect" href="classengine_1_1events_1_1AppRenderEvent.html" title="Generated whenever the app renders. " alt="" coords="214,5,394,47"/>
 <area shape="rect" href="classengine_1_1events_1_1AppTickEvent.html" title="Generated whenever the app ticks. " alt="" coords="205,71,403,98"/>
@@ -92,114 +92,116 @@ $(function() {
 <area shape="rect" href="classengine_1_1events_1_1MouseButtonReleasedEvent.html" title="Generated whenever the user releases a mouse button within an application. " alt="" coords="454,312,646,353"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_2.png" border="0" usemap="#engine_1_1events_1_1EventDispatcher" alt=""/>
-<map name="engine_1_1events_1_1EventDispatcher" id="engine_1_1events_1_1EventDispatcher">
+<tr><td><img src="inherit_graph_2.png" border="0" usemap="#engine_1_1events_1_1Event" alt=""/>
+<map name="engine_1_1events_1_1Event" id="engine_1_1events_1_1Event">
 <area shape="rect" href="classengine_1_1events_1_1EventDispatcher.html" title="The event handling system. " alt="" coords="5,5,217,32"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_3.png" border="0" usemap="#engine_1_1Input" alt=""/>
-<map name="engine_1_1Input" id="engine_1_1Input">
+<tr><td><img src="inherit_graph_3.png" border="0" usemap="#engine_1_1events_1_1EventDispatcher" alt=""/>
+<map name="engine_1_1events_1_1EventDispatcher" id="engine_1_1events_1_1EventDispatcher">
 <area shape="rect" href="classengine_1_1Input.html" title="The generalized Input class for all input systems. " alt="" coords="5,5,103,32"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_4.png" border="0" usemap="#engine_1_1Layer" alt=""/>
-<map name="engine_1_1Layer" id="engine_1_1Layer">
+<tr><td><img src="inherit_graph_4.png" border="0" usemap="#engine_1_1Input" alt=""/>
+<map name="engine_1_1Input" id="engine_1_1Input">
 <area shape="rect" href="classengine_1_1Layer.html" title="engine::Layer" alt="" coords="5,5,105,32"/>
 <area shape="rect" href="classengine_1_1imgui_1_1ImGuiLayer.html" title="An abstract Imgui layer implementation. " alt="" coords="153,5,328,32"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_5.png" border="0" usemap="#engine_1_1LayerStack" alt=""/>
-<map name="engine_1_1LayerStack" id="engine_1_1LayerStack">
+<tr><td><img src="inherit_graph_5.png" border="0" usemap="#engine_1_1Layer" alt=""/>
+<map name="engine_1_1Layer" id="engine_1_1Layer">
 <area shape="rect" href="classengine_1_1LayerStack.html" title="A stack based data structure for the storage of layers to be managed by the engine. " alt="" coords="5,5,140,32"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_6.png" border="0" usemap="#engine_1_1logging_1_1Log" alt=""/>
-<map name="engine_1_1logging_1_1Log" id="engine_1_1logging_1_1Log">
+<tr><td><img src="inherit_graph_6.png" border="0" usemap="#engine_1_1LayerStack" alt=""/>
+<map name="engine_1_1LayerStack" id="engine_1_1LayerStack">
 <area shape="rect" href="classengine_1_1logging_1_1Log.html" title="The container class for managing static instances of the engine and client loggers. " alt="" coords="5,5,144,32"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_7.png" border="0" usemap="#engine_1_1renderer_1_1BufferElement" alt=""/>
-<map name="engine_1_1renderer_1_1BufferElement" id="engine_1_1renderer_1_1BufferElement">
+<tr><td><img src="inherit_graph_7.png" border="0" usemap="#engine_1_1logging_1_1Log" alt=""/>
+<map name="engine_1_1logging_1_1Log" id="engine_1_1logging_1_1Log">
 <area shape="rect" href="structengine_1_1renderer_1_1BufferElement.html" title="A generic buffer element representation to be used in conjuction with BufferLayouts. " alt="" coords="5,5,164,47"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_8.png" border="0" usemap="#engine_1_1renderer_1_1BufferLayout" alt=""/>
-<map name="engine_1_1renderer_1_1BufferLayout" id="engine_1_1renderer_1_1BufferLayout">
+<tr><td><img src="inherit_graph_8.png" border="0" usemap="#engine_1_1renderer_1_1BufferElement" alt=""/>
+<map name="engine_1_1renderer_1_1BufferElement" id="engine_1_1renderer_1_1BufferElement">
 <area shape="rect" href="classengine_1_1renderer_1_1BufferLayout.html" title="A layout that specifies the elements to be associated with a vertex buffer. " alt="" coords="5,5,164,47"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_9.png" border="0" usemap="#engine_1_1renderer_1_1GraphicsContext" alt=""/>
-<map name="engine_1_1renderer_1_1GraphicsContext" id="engine_1_1renderer_1_1GraphicsContext">
+<tr><td><img src="inherit_graph_9.png" border="0" usemap="#engine_1_1renderer_1_1BufferLayout" alt=""/>
+<map name="engine_1_1renderer_1_1BufferLayout" id="engine_1_1renderer_1_1BufferLayout">
 <area shape="rect" href="classengine_1_1renderer_1_1GraphicsContext.html" title="The GrahpicsContext base class implementation. " alt="" coords="5,5,180,47"/>
 <area shape="rect" href="classengine_1_1platform_1_1opengl_1_1OpenGLContext.html" title="engine::platform::opengl\l::OpenGLContext" alt="" coords="228,5,389,47"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_10.png" border="0" usemap="#engine_1_1renderer_1_1IndexBuffer" alt=""/>
-<map name="engine_1_1renderer_1_1IndexBuffer" id="engine_1_1renderer_1_1IndexBuffer">
+<tr><td><img src="inherit_graph_10.png" border="0" usemap="#engine_1_1renderer_1_1GraphicsContext" alt=""/>
+<map name="engine_1_1renderer_1_1GraphicsContext" id="engine_1_1renderer_1_1GraphicsContext">
 <area shape="rect" href="classengine_1_1renderer_1_1IndexBuffer.html" title="The base IndexBuffer class to be used for creating index buffers. " alt="" coords="5,13,196,39"/>
 <area shape="rect" href="classengine_1_1platform_1_1opengl_1_1OpenGLIndexBuffer.html" title="engine::platform::opengl\l::OpenGLIndexBuffer" alt="" coords="244,5,405,47"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_11.png" border="0" usemap="#engine_1_1renderer_1_1OrthographicCamera" alt=""/>
-<map name="engine_1_1renderer_1_1OrthographicCamera" id="engine_1_1renderer_1_1OrthographicCamera">
+<tr><td><img src="inherit_graph_11.png" border="0" usemap="#engine_1_1renderer_1_1IndexBuffer" alt=""/>
+<map name="engine_1_1renderer_1_1IndexBuffer" id="engine_1_1renderer_1_1IndexBuffer">
 <area shape="rect" href="classengine_1_1renderer_1_1OrthographicCamera.html" title="A 2D orthographic camera implementation that is compatible with the engine. " alt="" coords="5,5,203,47"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_12.png" border="0" usemap="#engine_1_1renderer_1_1RenderCommand" alt=""/>
-<map name="engine_1_1renderer_1_1RenderCommand" id="engine_1_1renderer_1_1RenderCommand">
+<tr><td><img src="inherit_graph_12.png" border="0" usemap="#engine_1_1renderer_1_1OrthographicCamera" alt=""/>
+<map name="engine_1_1renderer_1_1OrthographicCamera" id="engine_1_1renderer_1_1OrthographicCamera">
 <area shape="rect" href="classengine_1_1renderer_1_1RenderCommand.html" title="A static wrapper class to send commands to the Renderer. " alt="" coords="5,5,171,47"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_13.png" border="0" usemap="#engine_1_1renderer_1_1Renderer" alt=""/>
-<map name="engine_1_1renderer_1_1Renderer" id="engine_1_1renderer_1_1Renderer">
+<tr><td><img src="inherit_graph_13.png" border="0" usemap="#engine_1_1renderer_1_1RenderCommand" alt=""/>
+<map name="engine_1_1renderer_1_1RenderCommand" id="engine_1_1renderer_1_1RenderCommand">
 <area shape="rect" href="classengine_1_1renderer_1_1Renderer.html" title="A lightweight rendering API implementation. Allows generalized calls to be written for users..." alt="" coords="5,5,181,32"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_14.png" border="0" usemap="#engine_1_1renderer_1_1RendererAPI" alt=""/>
-<map name="engine_1_1renderer_1_1RendererAPI" id="engine_1_1renderer_1_1RendererAPI">
+<tr><td><img src="inherit_graph_14.png" border="0" usemap="#engine_1_1renderer_1_1Renderer" alt=""/>
+<map name="engine_1_1renderer_1_1Renderer" id="engine_1_1renderer_1_1Renderer">
 <area shape="rect" href="classengine_1_1renderer_1_1RendererAPI.html" title="The Rendering API for displaying graphics through the engine api! " alt="" coords="5,13,204,39"/>
 <area shape="rect" href="classengine_1_1platform_1_1opengl_1_1OpenGLRendererAPI.html" title="The Rendering implementation for OpenGL. " alt="" coords="252,5,413,47"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_15.png" border="0" usemap="#engine_1_1renderer_1_1Shader" alt=""/>
-<map name="engine_1_1renderer_1_1Shader" id="engine_1_1renderer_1_1Shader">
+<tr><td><img src="inherit_graph_15.png" border="0" usemap="#engine_1_1renderer_1_1RendererAPI" alt=""/>
+<map name="engine_1_1renderer_1_1RendererAPI" id="engine_1_1renderer_1_1RendererAPI">
 <area shape="rect" href="classengine_1_1renderer_1_1Shader.html" title="The Shader API. " alt="" coords="5,5,169,32"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_16.png" border="0" usemap="#engine_1_1renderer_1_1VertexArray" alt=""/>
-<map name="engine_1_1renderer_1_1VertexArray" id="engine_1_1renderer_1_1VertexArray">
+<tr><td><img src="inherit_graph_16.png" border="0" usemap="#engine_1_1renderer_1_1Shader" alt=""/>
+<map name="engine_1_1renderer_1_1Shader" id="engine_1_1renderer_1_1Shader">
 <area shape="rect" href="classengine_1_1renderer_1_1VertexArray.html" title="The abstraction for representing Vertex arrays and their sub components. " alt="" coords="5,5,167,47"/>
 <area shape="rect" href="classengine_1_1platform_1_1opengl_1_1OpenGLVertexArray.html" title="engine::platform::opengl\l::OpenGLVertexArray" alt="" coords="215,5,376,47"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_17.png" border="0" usemap="#engine_1_1renderer_1_1VertexBuffer" alt=""/>
-<map name="engine_1_1renderer_1_1VertexBuffer" id="engine_1_1renderer_1_1VertexBuffer">
+<tr><td><img src="inherit_graph_17.png" border="0" usemap="#engine_1_1renderer_1_1VertexArray" alt=""/>
+<map name="engine_1_1renderer_1_1VertexArray" id="engine_1_1renderer_1_1VertexArray">
 <area shape="rect" href="classengine_1_1renderer_1_1VertexBuffer.html" title="The base VertexBuffer class to be used for creating vertex buffers. " alt="" coords="5,5,167,47"/>
 <area shape="rect" href="classengine_1_1platform_1_1opengl_1_1OpenGLVertexBuffer.html" title="engine::platform::opengl\l::OpenGLVertexBuffer" alt="" coords="215,5,376,47"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_18.png" border="0" usemap="#engine_1_1util_1_1Reverse_3_01Container_01_4" alt=""/>
-<map name="engine_1_1util_1_1Reverse_3_01Container_01_4" id="engine_1_1util_1_1Reverse_3_01Container_01_4">
+<tr><td><img src="inherit_graph_18.png" border="0" usemap="#engine_1_1renderer_1_1VertexBuffer" alt=""/>
+<map name="engine_1_1renderer_1_1VertexBuffer" id="engine_1_1renderer_1_1VertexBuffer">
 <area shape="rect" href="classengine_1_1Window.html" title="The generic window implementation that allows platform specific window APIs to expose generic window ..." alt="" coords="5,5,120,32"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_19.png" border="0" usemap="#engine_1_1util_1_1Time" alt=""/>
-<map name="engine_1_1util_1_1Time" id="engine_1_1util_1_1Time">
+<tr><td><img src="inherit_graph_19.png" border="0" usemap="#engine_1_1util_1_1Reverse_3_01Container_01_4" alt=""/>
+<map name="engine_1_1util_1_1Reverse_3_01Container_01_4" id="engine_1_1util_1_1Reverse_3_01Container_01_4">
 <area shape="rect" href="structengine_1_1WindowProperties.html" title="Generic Window properties used to create platform specific windows. " alt="" coords="5,5,180,32"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_20.png" border="0" usemap="#engine_1_1util_1_1TimeStep" alt=""/>
-<map name="engine_1_1util_1_1TimeStep" id="engine_1_1util_1_1TimeStep">
+<tr><td><img src="inherit_graph_20.png" border="0" usemap="#engine_1_1util_1_1Time" alt=""/>
+<map name="engine_1_1util_1_1Time" id="engine_1_1util_1_1Time">
 <area shape="rect" href="classVertexArray.html" title="The abstraction for representing Vertex arrays and their sub components. " alt="" coords="5,5,96,32"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_21.png" border="0" usemap="#engine_1_1Window" alt=""/>
+<tr><td><img src="inherit_graph_21.png" border="0" usemap="#engine_1_1util_1_1TimeStep" alt=""/>
 </td></tr>
-<tr><td><img src="inherit_graph_22.png" border="0" usemap="#engine_1_1WindowProperties" alt=""/>
+<tr><td><img src="inherit_graph_22.png" border="0" usemap="#engine_1_1Window" alt=""/>
 </td></tr>
-<tr><td><img src="inherit_graph_23.png" border="0" usemap="#Shader" alt=""/>
+<tr><td><img src="inherit_graph_23.png" border="0" usemap="#engine_1_1WindowProperties" alt=""/>
 </td></tr>
-<tr><td><img src="inherit_graph_24.png" border="0" usemap="#VertexArray" alt=""/>
+<tr><td><img src="inherit_graph_24.png" border="0" usemap="#Shader" alt=""/>
+</td></tr>
+<tr><td><img src="inherit_graph_25.png" border="0" usemap="#VertexArray" alt=""/>
 </td></tr>
 </table>
 </div><!-- contents -->

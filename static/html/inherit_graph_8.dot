@@ -4,5 +4,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node0 [label="engine::renderer::Buffer\lLayout",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classengine_1_1renderer_1_1BufferLayout.html",tooltip="A layout that specifies the elements to be associated with a vertex buffer."];
+  Node0 [label="engine::renderer::Buffer\lElement",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structengine_1_1renderer_1_1BufferElement.html",tooltip="A generic buffer element representation to be used in conjuction with BufferLayouts."];
 }

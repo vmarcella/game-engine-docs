@@ -69,60 +69,55 @@ $(function() {
 <div class="title">Application.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="Application_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef ENGINE_SRC_CORE_APPLICATION_H_</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define ENGINE_SRC_CORE_APPLICATION_H_</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<a href="Application_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef ENGINE_SRC_CORE_APPLICATION_H_</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define ENGINE_SRC_CORE_APPLICATION_H_</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Core_8h.html">core/Core.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Layer_8h.html">core/Layer.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="LayerStack_8h.html">core/LayerStack.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="core_2Window_8h.html">core/Window.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ApplicationEvent_8h.html">core/events/ApplicationEvent.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Event_8h.html">core/events/Event.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ImGuiLayer_8h.html">core/imgui/ImGuiLayer.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Pointers_8h.html">core/memory/Pointers.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Time_8h.html">core/util/Time.h</a>&quot;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Core_8h.html">core/Core.h</a>&quot;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Layer_8h.html">core/Layer.h</a>&quot;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="LayerStack_8h.html">core/LayerStack.h</a>&quot;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="core_2Window_8h.html">core/Window.h</a>&quot;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ApplicationEvent_8h.html">core/events/ApplicationEvent.h</a>&quot;</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Event_8h.html">core/events/Event.h</a>&quot;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ImGuiLayer_8h.html">core/imgui/ImGuiLayer.h</a>&quot;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Pointers_8h.html">core/memory/Pointers.h</a>&quot;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Time_8h.html">core/util/Time.h</a>&quot;</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">namespace </span>engine {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span>engine {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classengine_1_1Application.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="Core_8h.html#a0697ee40f69dc5dab56d13131f4c4835">ENGINE_API</a> <a class="code" href="classengine_1_1Application.html">Application</a> {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <a class="code" href="classengine_1_1Application.html">Application</a>();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classengine_1_1Application.html">Application</a>();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keywordtype">void</span> OnEvent(<a class="code" href="classengine_1_1events_1_1Event.html">events::Event</a>* event);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keywordtype">void</span> PushLayer(memory::Shared&lt;Layer&gt; layer);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keywordtype">void</span> PushOverlay(memory::Shared&lt;Layer&gt; layer);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keywordtype">void</span> Run();</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classengine_1_1Application.html">   36</a></span>&#160;<span class="keyword">class </span><a class="code" href="Core_8h.html#a0697ee40f69dc5dab56d13131f4c4835">ENGINE_API</a> <a class="code" href="classengine_1_1Application.html">Application</a> {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <a class="code" href="classengine_1_1Application.html">Application</a>();</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classengine_1_1Application.html">Application</a>();</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">void</span> Run();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">void</span> OnEvent(<a class="code" href="classengine_1_1events_1_1Event.html">events::Event</a>* event);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keyword">inline</span> <span class="keyword">const</span> <a class="code" href="classengine_1_1Window.html">Window</a>&amp; GetWindow()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> *window_; }</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">inline</span> <span class="keyword">static</span> <a class="code" href="classengine_1_1Application.html">Application</a>&amp; GetApplication() {<span class="keywordflow">return</span> *kApplication_; }</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <a class="code" href="classengine_1_1LayerStack.html">LayerStack</a> layer_stack_;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keywordtype">bool</span> running_ = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  memory::Shared&lt;Window&gt; window_;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  memory::Shared&lt;imgui::ImGuiLayer&gt; imgui_layer_;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keyword">static</span> memory::Unique&lt;Application&gt; kApplication_;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="classengine_1_1util_1_1Time.html">util::Time</a> last_frame_time_;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">bool</span> OnWindowClosed(<span class="keyword">const</span> <a class="code" href="classengine_1_1events_1_1WindowCloseEvent.html">events::WindowCloseEvent</a>&amp; event);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="Application_8h.html#ad48a1c6e635fa178770658de703fc5c5">   47</a></span>&#160;<a class="code" href="classengine_1_1Application.html">Application</a>* <a class="code" href="Application_8h.html#ad48a1c6e635fa178770658de703fc5c5">CreateApplication</a>();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}  <span class="comment">// namespace engine</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif  // ENGINE_SRC_CORE_APPLICATION_H_</span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordtype">void</span> PushLayer(memory::Shared&lt;Layer&gt; layer);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">void</span> PushOverlay(memory::Shared&lt;Layer&gt; layer);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="classengine_1_1Application.html#aa50effcdd1e02cee220c5d05ef84ec17">   75</a></span>&#160;  <span class="keyword">inline</span> <span class="keyword">const</span> <a class="code" href="classengine_1_1Window.html">Window</a>&amp; <a class="code" href="classengine_1_1Application.html#aa50effcdd1e02cee220c5d05ef84ec17">GetWindow</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> *window_; }</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classengine_1_1Application.html#a639cdab87d3c5a14d0a9e9203d6c7c97">   82</a></span>&#160;  <span class="keyword">inline</span> <span class="keyword">static</span> <a class="code" href="classengine_1_1Application.html">Application</a>&amp; <a class="code" href="classengine_1_1Application.html#a639cdab87d3c5a14d0a9e9203d6c7c97">GetApplication</a>() {<span class="keywordflow">return</span> *kApplication_; }</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordtype">bool</span> running_ = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <a class="code" href="classengine_1_1LayerStack.html">LayerStack</a> layer_stack_;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <a class="code" href="classengine_1_1util_1_1Time.html">util::Time</a> last_frame_time_;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  memory::Shared&lt;imgui::ImGuiLayer&gt; imgui_layer_;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  memory::Shared&lt;Window&gt; window_;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keyword">static</span> memory::Unique&lt;Application&gt; kApplication_;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keywordtype">bool</span> OnWindowClosed(<span class="keyword">const</span> <a class="code" href="classengine_1_1events_1_1WindowCloseEvent.html">events::WindowCloseEvent</a>&amp; event);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;};</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="Application_8h.html#ad48a1c6e635fa178770658de703fc5c5">  104</a></span>&#160;<a class="code" href="classengine_1_1Application.html">Application</a>* <a class="code" href="Application_8h.html#ad48a1c6e635fa178770658de703fc5c5">CreateApplication</a>();</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}  <span class="comment">// namespace engine</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#endif  // ENGINE_SRC_CORE_APPLICATION_H_</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassengine_1_1events_1_1WindowCloseEvent_html"><div class="ttname"><a href="classengine_1_1events_1_1WindowCloseEvent.html">engine::events::WindowCloseEvent</a></div><div class="ttdoc">Generated whenever a window is closed.</div><div class="ttdef"><b>Definition:</b> ApplicationEvent.h:59</div></div>
-<div class="ttc" id="aclassengine_1_1Application_html_a639cdab87d3c5a14d0a9e9203d6c7c97"><div class="ttname"><a href="classengine_1_1Application.html#a639cdab87d3c5a14d0a9e9203d6c7c97">engine::Application::GetApplication</a></div><div class="ttdeci">static Application &amp; GetApplication()</div><div class="ttdef"><b>Definition:</b> Application.h:82</div></div>
 <div class="ttc" id="acore_2Window_8h_html"><div class="ttname"><a href="core_2Window_8h.html">Window.h</a></div><div class="ttdoc">The Abstract Window definition.</div></div>
 <div class="ttc" id="aclassengine_1_1events_1_1Event_html"><div class="ttname"><a href="classengine_1_1events_1_1Event.html">engine::events::Event</a></div><div class="ttdoc">The abstract Event class.</div><div class="ttdef"><b>Definition:</b> Event.h:108</div></div>
 <div class="ttc" id="aLayer_8h_html"><div class="ttname"><a href="Layer_8h.html">Layer.h</a></div><div class="ttdoc">The Layer implementation that allows application to specify layers to be attached to the game.</div></div>
@@ -131,11 +126,10 @@ $(function() {
 <div class="ttc" id="aclassengine_1_1util_1_1Time_html"><div class="ttname"><a href="classengine_1_1util_1_1Time.html">engine::util::Time</a></div><div class="ttdoc">A wrapper for working with Time within the game engine. Uses std::steady_clock for a platform indepen...</div><div class="ttdef"><b>Definition:</b> Time.h:27</div></div>
 <div class="ttc" id="aEvent_8h_html"><div class="ttname"><a href="Event_8h.html">Event.h</a></div><div class="ttdoc">The Event class and dispatcher core implementations.</div></div>
 <div class="ttc" id="aTime_8h_html"><div class="ttname"><a href="Time_8h.html">Time.h</a></div><div class="ttdoc">Timing.</div></div>
-<div class="ttc" id="aclassengine_1_1Application_html_aa50effcdd1e02cee220c5d05ef84ec17"><div class="ttname"><a href="classengine_1_1Application.html#aa50effcdd1e02cee220c5d05ef84ec17">engine::Application::GetWindow</a></div><div class="ttdeci">const Window &amp; GetWindow() const</div><div class="ttdoc">Gets a read only reference to the window pointer that is currently being used.</div><div class="ttdef"><b>Definition:</b> Application.h:75</div></div>
 <div class="ttc" id="aLayerStack_8h_html"><div class="ttname"><a href="LayerStack_8h.html">LayerStack.h</a></div><div class="ttdoc">The LayerStack Definition for handling multiple layers.</div></div>
 <div class="ttc" id="aImGuiLayer_8h_html"><div class="ttname"><a href="ImGuiLayer_8h.html">ImGuiLayer.h</a></div><div class="ttdoc">The ImGuiLayer implementation for dev tool creation.</div></div>
 <div class="ttc" id="aclassengine_1_1Window_html"><div class="ttname"><a href="classengine_1_1Window.html">engine::Window</a></div><div class="ttdoc">The generic window implementation that allows platform specific window APIs to expose generic window ...</div><div class="ttdef"><b>Definition:</b> Window.h:39</div></div>
-<div class="ttc" id="aclassengine_1_1Application_html"><div class="ttname"><a href="classengine_1_1Application.html">engine::Application</a></div><div class="ttdoc">The primary driver of all applications extending this engine.</div><div class="ttdef"><b>Definition:</b> Application.h:36</div></div>
+<div class="ttc" id="aclassengine_1_1Application_html"><div class="ttname"><a href="classengine_1_1Application.html">engine::Application</a></div><div class="ttdef"><b>Definition:</b> Application.h:18</div></div>
 <div class="ttc" id="aApplicationEvent_8h_html"><div class="ttname"><a href="ApplicationEvent_8h.html">ApplicationEvent.h</a></div><div class="ttdoc">Events that are to be specifically handled at the application level.</div></div>
 <div class="ttc" id="aCore_8h_html"><div class="ttname"><a href="Core_8h.html">Core.h</a></div><div class="ttdoc">Core macros to be used all throughout the engine for development and production purposes.</div></div>
 <div class="ttc" id="aApplication_8h_html_ad48a1c6e635fa178770658de703fc5c5"><div class="ttname"><a href="Application_8h.html#ad48a1c6e635fa178770658de703fc5c5">engine::CreateApplication</a></div><div class="ttdeci">Application * CreateApplication()</div></div>

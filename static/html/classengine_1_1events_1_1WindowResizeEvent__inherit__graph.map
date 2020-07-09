@@ -1,3 +1,4 @@
 <map id="engine::events::WindowResizeEvent" name="engine::events::WindowResizeEvent">
-<area shape="rect" id="node2" href="$classengine_1_1events_1_1Event.html" title="The abstract Event class. " alt="" coords="32,5,181,32"/>
+<area shape="rect" id="node1" title="Generated whenever a window is resized." alt="" coords="5,80,227,121"/>
+<area shape="rect" id="node2" href="$classengine_1_1events_1_1Event.html" title="The abstract Event class." alt="" coords="35,5,197,32"/>
 </map>

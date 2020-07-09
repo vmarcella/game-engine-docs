@@ -1,3 +1,4 @@
 <map id="engine::platform::opengl::OpenGLIndexBuffer" name="engine::platform::opengl::OpenGLIndexBuffer">
-<area shape="rect" id="node2" href="$classengine_1_1renderer_1_1IndexBuffer.html" title="The base IndexBuffer class to be used for creating index buffers. " alt="" coords="5,5,196,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="21,80,203,121"/>
+<area shape="rect" id="node2" href="$classengine_1_1renderer_1_1IndexBuffer.html" title="The base IndexBuffer class to be used for creating index buffers." alt="" coords="5,5,219,32"/>
 </map>

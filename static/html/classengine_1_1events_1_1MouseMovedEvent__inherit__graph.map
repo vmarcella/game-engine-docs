@@ -1,3 +1,4 @@
 <map id="engine::events::MouseMovedEvent" name="engine::events::MouseMovedEvent">
-<area shape="rect" id="node2" href="$classengine_1_1events_1_1Event.html" title="The abstract Event class. " alt="" coords="27,5,177,32"/>
+<area shape="rect" id="node1" title="Generated whenever the user moves their mouse within the application." alt="" coords="5,80,219,121"/>
+<area shape="rect" id="node2" href="$classengine_1_1events_1_1Event.html" title="The abstract Event class." alt="" coords="31,5,193,32"/>
 </map>

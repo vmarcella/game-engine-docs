@@ -1,4 +1,11 @@
 <map id="engine/src/core/Window.h" name="engine/src/core/Window.h">
-<area shape="rect" id="node3" href="$Core_8h.html" title="Core macros to be used all throughout the engine for development and production purposes. " alt="" coords="85,155,175,181"/>
-<area shape="rect" id="node4" href="$Event_8h.html" title="The Event class and dispatcher core implementations. " alt="" coords="169,80,307,107"/>
+<area shape="rect" id="node1" title="The Abstract Window definition." alt="" coords="98,5,286,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,155,64,181"/>
+<area shape="rect" id="node3" href="$Core_8h.html" title="Core macros to be used all throughout the engine for development and production purposes." alt="" coords="88,155,184,181"/>
+<area shape="rect" id="node4" href="$Event_8h.html" title="The Event class and dispatcher core implementations." alt="" coords="175,80,326,107"/>
+<area shape="rect" id="node8" href="$Pointers_8h.html" title="Abstraction for handling pointers within the engine. Currently just aliases for unique and shared poi..." alt="" coords="439,80,617,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="209,155,295,181"/>
+<area shape="rect" id="node6" title=" " alt="" coords="319,155,395,181"/>
+<area shape="rect" id="node7" title=" " alt="" coords="420,155,553,181"/>
+<area shape="rect" id="node9" title=" " alt="" coords="577,155,655,181"/>
 </map>

@@ -1,3 +1,4 @@
 <map id="engine/src/core/Input.h" name="engine/src/core/Input.h">
-<area shape="rect" id="node2" href="$Engine_8h.html" title="The entrypoint into the game engine source code. " alt="" coords="14,80,151,107"/>
+<area shape="rect" id="node1" title="The input abstraction class that handles input across." alt="" coords="5,5,176,32"/>
+<area shape="rect" id="node2" href="$Engine_8h.html" title="The entrypoint into the game engine source code." alt="" coords="16,80,165,107"/>
 </map>

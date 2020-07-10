@@ -73,27 +73,14 @@ $(function() {
 <div class="title">engine::Application Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>The primary driver of all applications extending this engine.  
+ <a href="classengine_1_1Application.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Application_8h_source.html">Application.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<<<<<<< HEAD
-<tr class="memitem:ad8fe3b6ea5843b754197694b85d594ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1Application.html#ad8fe3b6ea5843b754197694b85d594ca">OnEvent</a> (<a class="el" href="classengine_1_1events_1_1Event.html">events::Event</a> *event)</td></tr>
-<tr class="memdesc:ad8fe3b6ea5843b754197694b85d594ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Passes events to all the layers.  <a href="classengine_1_1Application.html#ad8fe3b6ea5843b754197694b85d594ca">More...</a><br /></td></tr>
-<tr class="separator:ad8fe3b6ea5843b754197694b85d594ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab86d19bb802be8381da4dd5d67322ea0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1Application.html#ab86d19bb802be8381da4dd5d67322ea0">PushLayer</a> (memory::Shared&lt; <a class="el" href="classengine_1_1Layer.html">Layer</a> &gt; layer)</td></tr>
-<tr class="memdesc:ab86d19bb802be8381da4dd5d67322ea0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attaches a layer to the application instance.  <a href="classengine_1_1Application.html#ab86d19bb802be8381da4dd5d67322ea0">More...</a><br /></td></tr>
-<tr class="separator:ab86d19bb802be8381da4dd5d67322ea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1fe0365f5fa2e5b3fcba0b7edc31fe7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1Application.html#ac1fe0365f5fa2e5b3fcba0b7edc31fe7">PushOverlay</a> (memory::Shared&lt; <a class="el" href="classengine_1_1Layer.html">Layer</a> &gt; layer)</td></tr>
-<tr class="memdesc:ac1fe0365f5fa2e5b3fcba0b7edc31fe7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attaches an overlay to the application instance.  <a href="classengine_1_1Application.html#ac1fe0365f5fa2e5b3fcba0b7edc31fe7">More...</a><br /></td></tr>
-<tr class="separator:ac1fe0365f5fa2e5b3fcba0b7edc31fe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b991c5db973742130e9599020145e56"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1Application.html#a1b991c5db973742130e9599020145e56">Run</a> ()</td></tr>
-<tr class="memdesc:a1b991c5db973742130e9599020145e56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Controls the applications lifecycle and all lower level functionality like input, events, rendering, networking, etc.  <a href="classengine_1_1Application.html#a1b991c5db973742130e9599020145e56">More...</a><br /></td></tr>
-<tr class="separator:a1b991c5db973742130e9599020145e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11f25e41af0fb736cd4fe28cb3630378"><td class="memItemLeft" align="right" valign="top"><a id="a11f25e41af0fb736cd4fe28cb3630378"></a>
-const <a class="el" href="classengine_1_1Window.html">Window</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1Application.html#a11f25e41af0fb736cd4fe28cb3630378">GetWindow</a> () const</td></tr>
-<tr class="memdesc:a11f25e41af0fb736cd4fe28cb3630378"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a read only reference to the window pointer that is currently being used. <br /></td></tr>
-<tr class="separator:a11f25e41af0fb736cd4fe28cb3630378"><td class="memSeparator" colspan="2">&#160;</td></tr>
-=======
 <tr class="memitem:a093e14152fc1eda1b5eba682a2b4afd9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1Application.html#a093e14152fc1eda1b5eba682a2b4afd9">OnEvent</a> (<a class="el" href="classengine_1_1events_1_1Event.html">events::Event</a> *event)</td></tr>
 <tr class="memdesc:a093e14152fc1eda1b5eba682a2b4afd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Passes events to all the layers.  <a href="classengine_1_1Application.html#a093e14152fc1eda1b5eba682a2b4afd9">More...</a><br /></td></tr>
 <tr class="separator:a093e14152fc1eda1b5eba682a2b4afd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -110,7 +97,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a0c66a3ff294bcc497bb2e8eb7330124c"><td class="memItemLeft" align="right" valign="top"><a id="a0c66a3ff294bcc497bb2e8eb7330124c"></a>
 const <a class="el" href="classengine_1_1Window.html">Window</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetWindow</b> () const</td></tr>
 <tr class="separator:a0c66a3ff294bcc497bb2e8eb7330124c"><td class="memSeparator" colspan="2">&#160;</td></tr>
->>>>>>> yeet
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -118,16 +104,18 @@ Static Public Member Functions</h2></td></tr>
 static <a class="el" href="classengine_1_1Application.html">Application</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetApplication</b> ()</td></tr>
 <tr class="separator:a639cdab87d3c5a14d0a9e9203d6c7c97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<<<<<<< HEAD
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad8fe3b6ea5843b754197694b85d594ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad8fe3b6ea5843b754197694b85d594ca">&#9670;&nbsp;</a></span>OnEvent()</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The primary driver of all applications extending this engine. </p>
+<p>The engine implements the application runner as an individual platform independent application instance that manages the lifecycle of the core and lower level components of the engine. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a093e14152fc1eda1b5eba682a2b4afd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a093e14152fc1eda1b5eba682a2b4afd9">&#9670;&nbsp;</a></span>OnEvent()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Application::OnEvent </td>
+          <td class="memname">void engine::Application::OnEvent </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classengine_1_1events_1_1Event.html">events::Event</a> *&#160;</td>
           <td class="paramname"><em>event</em></td><td>)</td>
@@ -137,7 +125,6 @@ static <a class="el" href="classengine_1_1Application.html">Application</a> &amp
 </div><div class="memdoc">
 
 <p>Passes events to all the layers. </p>
-<p>This function only specifically listens for when the window is requested to close before passing the event to layers on the <a class="el" href="classengine_1_1LayerStack.html" title="A stack based data structure for the storage of layers to be managed by the engine.">LayerStack</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">event</td><td>An event pointer generated to be handled by the application. </td></tr>
@@ -147,22 +134,14 @@ static <a class="el" href="classengine_1_1Application.html">Application</a> &amp
 
 </div>
 </div>
-<a id="ab86d19bb802be8381da4dd5d67322ea0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab86d19bb802be8381da4dd5d67322ea0">&#9670;&nbsp;</a></span>PushLayer()</h2>
-=======
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The primary driver of all applications extending this engine. </p>
-<p>The engine implements the application runner as an individual platform independent application instance that manages the lifecycle of the core and lower level components of the engine. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a093e14152fc1eda1b5eba682a2b4afd9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a093e14152fc1eda1b5eba682a2b4afd9">&#9670;&nbsp;</a></span>OnEvent()</h2>
->>>>>>> yeet
+<a id="a3d924eb9d0310d40d6cd913d400d4069"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d924eb9d0310d40d6cd913d400d4069">&#9670;&nbsp;</a></span>PushLayer()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Application::PushLayer </td>
+          <td class="memname">void engine::Application::PushLayer </td>
           <td>(</td>
           <td class="paramtype">memory::Shared&lt; <a class="el" href="classengine_1_1Layer.html">Layer</a> &gt;&#160;</td>
           <td class="paramname"><em>layer</em></td><td>)</td>
@@ -174,66 +153,13 @@ static <a class="el" href="classengine_1_1Application.html">Application</a> &amp
 <p>Attaches a layer to the application instance. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-<<<<<<< HEAD
     <tr><td class="paramname">layer</td><td>This allows the application instance to propage events, rendering, and any desired pieces of data into the layer. </td></tr>
-=======
-    <tr><td class="paramname">event</td><td>An event pointer generated to be handled by the application. </td></tr>
->>>>>>> yeet
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<<<<<<< HEAD
-<a id="ac1fe0365f5fa2e5b3fcba0b7edc31fe7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac1fe0365f5fa2e5b3fcba0b7edc31fe7">&#9670;&nbsp;</a></span>PushOverlay()</h2>
-=======
-<a id="a3d924eb9d0310d40d6cd913d400d4069"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d924eb9d0310d40d6cd913d400d4069">&#9670;&nbsp;</a></span>PushLayer()</h2>
->>>>>>> yeet
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Application::PushOverlay </td>
-          <td>(</td>
-          <td class="paramtype">memory::Shared&lt; <a class="el" href="classengine_1_1Layer.html">Layer</a> &gt;&#160;</td>
-          <td class="paramname"><em>layer</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Attaches an overlay to the application instance. </p>
-<p>This allows the application instance to propage events, renderine, and any desired pieces of data into the layer. </p>
-
-</div>
-</div>
-<<<<<<< HEAD
-<a id="a1b991c5db973742130e9599020145e56"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b991c5db973742130e9599020145e56">&#9670;&nbsp;</a></span>Run()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Application::Run </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Controls the applications lifecycle and all lower level functionality like input, events, rendering, networking, etc. </p>
-<p>This currently does a lot of custom rendering when in reality it should be implemented by a child project that is running the game. This will change in the future, but at the moment implements a lot of specific rendering tests that are for ensuring that the renderer currently works. </p>
-
-</div>
-</div>
-=======
->>>>>>> yeet
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>engine/src/core/<a class="el" href="Application_8h_source.html">Application.h</a></li>
 <li>engine/src/core/Application.cpp</li>

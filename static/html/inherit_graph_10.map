@@ -1,9 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<<<<<<< HEAD
-<area shape="rect" id="node1" href="$classengine_1_1renderer_1_1GraphicsContext.html" title="The GrahpicsContext base class implementation." alt="" coords="5,5,200,47"/>
-<area shape="rect" id="node2" href="$classengine_1_1platform_1_1opengl_1_1OpenGLContext.html" title=" " alt="" coords="248,5,431,47"/>
-=======
 <area shape="rect" id="node1" href="$classengine_1_1renderer_1_1IndexBuffer.html" title="The base IndexBuffer class to be used for creating index buffers." alt="" coords="5,13,219,39"/>
 <area shape="rect" id="node2" href="$classengine_1_1platform_1_1opengl_1_1OpenGLIndexBuffer.html" title=" " alt="" coords="267,5,449,47"/>
->>>>>>> yeet
 </map>

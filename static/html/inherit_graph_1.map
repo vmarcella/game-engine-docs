@@ -1,7 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<<<<<<< HEAD
-<area shape="rect" id="node1" href="$classengine_1_1Application.html" title=" " alt="" coords="5,5,152,32"/>
-=======
 <area shape="rect" id="node1" href="$classengine_1_1events_1_1Event.html" title="The abstract Event class." alt="" coords="5,247,168,274"/>
 <area shape="rect" id="node2" href="$classengine_1_1events_1_1AppRenderEvent.html" title="Generated whenever the app renders." alt="" coords="228,5,425,47"/>
 <area shape="rect" id="node3" href="$classengine_1_1events_1_1AppTickEvent.html" title="Generated whenever the app ticks." alt="" coords="219,71,434,98"/>
@@ -17,5 +14,4 @@
 <area shape="rect" id="node8" href="$classengine_1_1events_1_1KeyTypedEvent.html" title="Generated when a key is typed by the user in the application." alt="" coords="497,181,685,223"/>
 <area shape="rect" id="node10" href="$classengine_1_1events_1_1MouseButtonPressedEvent.html" title="Generated whenever the user presses a mouse button within the application." alt="" coords="485,247,697,288"/>
 <area shape="rect" id="node11" href="$classengine_1_1events_1_1MouseButtonReleasedEvent.html" title="Generated whenever the user releases a mouse button within an application." alt="" coords="485,312,697,353"/>
->>>>>>> yeet
 </map>

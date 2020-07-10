@@ -17,12 +17,6 @@ var searchData=
   ['getstride_63',['GetStride',['../classengine_1_1renderer_1_1BufferLayout.html#abf525eed067da7cfa637c9fe795767b5',1,'engine::renderer::BufferLayout']]],
   ['getvertexbuffers_64',['GetVertexBuffers',['../classengine_1_1platform_1_1opengl_1_1OpenGLVertexArray.html#a0bebcee0be99df9ab3ae3372d1a8dc37',1,'engine::platform::opengl::OpenGLVertexArray']]],
   ['getwidth_65',['GetWidth',['../classengine_1_1events_1_1WindowResizeEvent.html#a0858a751bbb0a18846c7377dbbe3d977',1,'engine::events::WindowResizeEvent::GetWidth()'],['../classengine_1_1Window.html#a5969984ab8a150119367a43ab8d0ffd1',1,'engine::Window::GetWidth()']]],
-<<<<<<< HEAD
-  ['getwindow_66',['GetWindow',['../classengine_1_1Application.html#a11f25e41af0fb736cd4fe28cb3630378',1,'engine::Application']]],
-  ['graphicscontext_67',['GraphicsContext',['../classengine_1_1renderer_1_1GraphicsContext.html',1,'engine::renderer']]],
-  ['graphicscontext_2eh_68',['GraphicsContext.h',['../GraphicsContext_8h.html',1,'']]]
-=======
   ['graphicscontext_66',['GraphicsContext',['../classengine_1_1renderer_1_1GraphicsContext.html',1,'engine::renderer']]],
   ['graphicscontext_2eh_67',['GraphicsContext.h',['../GraphicsContext_8h.html',1,'']]]
->>>>>>> yeet
 ];

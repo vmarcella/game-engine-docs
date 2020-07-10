@@ -10,13 +10,12 @@ var searchData=
   ['getmouseposition_56',['GetMousePosition',['../classengine_1_1Input.html#a4a15d91ac4241fc6dc3584c051e1b50a',1,'engine::Input']]],
   ['getmousex_57',['GetMouseX',['../classengine_1_1Input.html#a13095584400184088868e6ff9c9f0a5d',1,'engine::Input']]],
   ['getmousey_58',['GetMouseY',['../classengine_1_1Input.html#aa6fa67ccfdb48ac903c927157f0809c2',1,'engine::Input']]],
-  ['getname_59',['GetName',['../classengine_1_1Layer.html#a770a8fb58326ed32779e84bf54a93eef',1,'engine::Layer']]],
-  ['getnativewindow_60',['GetNativeWindow',['../classengine_1_1Window.html#a075f0ad97b7d7d3730a710385abde3d6',1,'engine::Window']]],
-  ['getposition_61',['GetPosition',['../classengine_1_1renderer_1_1OrthographicCamera.html#a89c74cc6487f626475fa5735c153fb16',1,'engine::renderer::OrthographicCamera']]],
-  ['getrepeatcount_62',['GetRepeatCount',['../classengine_1_1events_1_1KeyPressedEvent.html#a6287172d5b6c9600fcc129d69cda49cd',1,'engine::events::KeyPressedEvent']]],
-  ['getstride_63',['GetStride',['../classengine_1_1renderer_1_1BufferLayout.html#abf525eed067da7cfa637c9fe795767b5',1,'engine::renderer::BufferLayout']]],
-  ['getvertexbuffers_64',['GetVertexBuffers',['../classengine_1_1platform_1_1opengl_1_1OpenGLVertexArray.html#a0bebcee0be99df9ab3ae3372d1a8dc37',1,'engine::platform::opengl::OpenGLVertexArray']]],
-  ['getwidth_65',['GetWidth',['../classengine_1_1events_1_1WindowResizeEvent.html#a0858a751bbb0a18846c7377dbbe3d977',1,'engine::events::WindowResizeEvent::GetWidth()'],['../classengine_1_1Window.html#a5969984ab8a150119367a43ab8d0ffd1',1,'engine::Window::GetWidth()']]],
-  ['graphicscontext_66',['GraphicsContext',['../classengine_1_1renderer_1_1GraphicsContext.html',1,'engine::renderer']]],
-  ['graphicscontext_2eh_67',['GraphicsContext.h',['../GraphicsContext_8h.html',1,'']]]
+  ['getnativewindow_59',['GetNativeWindow',['../classengine_1_1Window.html#a075f0ad97b7d7d3730a710385abde3d6',1,'engine::Window']]],
+  ['getposition_60',['GetPosition',['../classengine_1_1renderer_1_1OrthographicCamera.html#a89c74cc6487f626475fa5735c153fb16',1,'engine::renderer::OrthographicCamera']]],
+  ['getrepeatcount_61',['GetRepeatCount',['../classengine_1_1events_1_1KeyPressedEvent.html#a6287172d5b6c9600fcc129d69cda49cd',1,'engine::events::KeyPressedEvent']]],
+  ['getstride_62',['GetStride',['../classengine_1_1renderer_1_1BufferLayout.html#abf525eed067da7cfa637c9fe795767b5',1,'engine::renderer::BufferLayout']]],
+  ['getvertexbuffers_63',['GetVertexBuffers',['../classengine_1_1platform_1_1opengl_1_1OpenGLVertexArray.html#a0bebcee0be99df9ab3ae3372d1a8dc37',1,'engine::platform::opengl::OpenGLVertexArray']]],
+  ['getwidth_64',['GetWidth',['../classengine_1_1events_1_1WindowResizeEvent.html#a0858a751bbb0a18846c7377dbbe3d977',1,'engine::events::WindowResizeEvent::GetWidth()'],['../classengine_1_1Window.html#a5969984ab8a150119367a43ab8d0ffd1',1,'engine::Window::GetWidth()']]],
+  ['graphicscontext_65',['GraphicsContext',['../classengine_1_1renderer_1_1GraphicsContext.html',1,'engine::renderer']]],
+  ['graphicscontext_2eh_66',['GraphicsContext.h',['../GraphicsContext_8h.html',1,'']]]
 ];

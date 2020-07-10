@@ -1,14 +1,5 @@
 \hypertarget{classengine_1_1Application}{}\doxysection{engine\+::Application Class Reference}
 \label{classengine_1_1Application}\index{engine::Application@{engine::Application}}
-
-
-The primary driver of all applications extending this engine.  
-
-
-
-
-{\ttfamily \#include $<$Application.\+h$>$}
-
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -17,7 +8,7 @@ void \mbox{\hyperlink{classengine_1_1Application_ad8fe3b6ea5843b754197694b85d594
 void \mbox{\hyperlink{classengine_1_1Application_ab86d19bb802be8381da4dd5d67322ea0}{Push\+Layer}} (memory\+::\+Shared$<$ \mbox{\hyperlink{classengine_1_1Layer}{Layer}} $>$ layer)
 \begin{DoxyCompactList}\small\item\em Attaches a layer to the application instance. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classengine_1_1Application_ac1fe0365f5fa2e5b3fcba0b7edc31fe7}{Push\+Overlay}} (memory\+::\+Shared$<$ \mbox{\hyperlink{classengine_1_1Layer}{Layer}} $>$ layer)
-\begin{DoxyCompactList}\small\item\em Attaches an overlay to the application instance. This allows the application instance to propage events, renderine, and any desired pieces of data into the layer. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Attaches an overlay to the application instance. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classengine_1_1Application_a1b991c5db973742130e9599020145e56}\label{classengine_1_1Application_a1b991c5db973742130e9599020145e56}} 
 void \mbox{\hyperlink{classengine_1_1Application_a1b991c5db973742130e9599020145e56}{Run}} ()
 \begin{DoxyCompactList}\small\item\em Controls the applications lifecycle and all lower level functionality like input, events, rendering, networking, etc. \end{DoxyCompactList}\item 
@@ -31,11 +22,6 @@ const \mbox{\hyperlink{classengine_1_1Window}{Window}} \& {\bfseries Get\+Window
 static \mbox{\hyperlink{classengine_1_1Application}{Application}} \& {\bfseries Get\+Application} ()
 \end{DoxyCompactItemize}
 
-
-\doxysubsection{Detailed Description}
-The primary driver of all applications extending this engine. 
-
-The engine implements the application runner as an individual platform independent application instance that manages the lifecycle of the core and lower level components of the engine. 
 
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classengine_1_1Application_ad8fe3b6ea5843b754197694b85d594ca}\label{classengine_1_1Application_ad8fe3b6ea5843b754197694b85d594ca}} 
@@ -76,9 +62,7 @@ Attaches a layer to the application instance.
 
 
 
-Attaches an overlay to the application instance. This allows the application instance to propage events, renderine, and any desired pieces of data into the layer. 
-
-Attaches an overlay to the application instance.
+Attaches an overlay to the application instance. 
 
 This allows the application instance to propage events, rendering, and any desired pieces of data into the layer. 
 

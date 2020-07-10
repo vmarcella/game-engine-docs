@@ -1,4 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classengine_1_1renderer_1_1VertexBuffer.html" title="The base VertexBuffer class to be used for creating vertex buffers." alt="" coords="5,5,185,47"/>
-<area shape="rect" id="node2" href="$classengine_1_1platform_1_1opengl_1_1OpenGLVertexBuffer.html" title=" " alt="" coords="233,5,416,47"/>
+<area shape="rect" id="node1" href="$classengine_1_1renderer_1_1VertexArray.html" title="The abstraction for representing Vertex arrays and their sub components." alt="" coords="5,5,185,47"/>
+<area shape="rect" id="node2" href="$classengine_1_1platform_1_1opengl_1_1OpenGLVertexArray.html" title=" " alt="" coords="233,5,416,47"/>
 </map>

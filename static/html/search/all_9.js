@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['layer_86',['Layer',['../classengine_1_1Layer.html',1,'engine::Layer'],['../classLayer.html',1,'Layer']]],
+  ['layer_86',['Layer',['../classengine_1_1Layer.html',1,'engine']]],
   ['layer_2eh_87',['Layer.h',['../Layer_8h.html',1,'']]],
   ['layerstack_88',['LayerStack',['../classengine_1_1LayerStack.html',1,'engine']]],
   ['layerstack_2eh_89',['LayerStack.h',['../LayerStack_8h.html',1,'']]],

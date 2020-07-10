@@ -73,21 +73,26 @@ $(function() {
 <div class="title">engine::Layer Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>An abstract data structure that represents a "layer" within the engine.  
+ <a href="classengine_1_1Layer.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Layer_8h_source.html">Layer.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for engine::Layer:</div>
 <div class="dyncontent">
 <div class="center"><img src="classengine_1_1Layer__inherit__graph.png" border="0" usemap="#engine_1_1Layer_inherit__map" alt="Inheritance graph"/></div>
 <map name="engine_1_1Layer_inherit__map" id="engine_1_1Layer_inherit__map">
-<area shape="rect" title=" " alt="" coords="47,5,158,32"/>
+<area shape="rect" title="An abstract data structure that represents a &quot;layer&quot; within the engine." alt="" coords="47,5,158,32"/>
 <area shape="rect" href="classengine_1_1imgui_1_1ImGuiLayer.html" title="An abstract Imgui layer implementation." alt="" coords="5,80,200,107"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa9b7ebb7ef25f36b2c1859e5ee2c867d"><td class="memItemLeft" align="right" valign="top"><a id="aa9b7ebb7ef25f36b2c1859e5ee2c867d"></a>
+<tr class="memitem:a7c94872b9fc69fd1695e21319c6ae495"><td class="memItemLeft" align="right" valign="top"><a id="a7c94872b9fc69fd1695e21319c6ae495"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Layer</b> (const std::string &amp;name=&quot;Layer&quot;)</td></tr>
-<tr class="separator:aa9b7ebb7ef25f36b2c1859e5ee2c867d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a7c94872b9fc69fd1695e21319c6ae495"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7752d9e6be7f306f78af4cf34cf43654"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1Layer.html#a7752d9e6be7f306f78af4cf34cf43654">OnAttach</a> ()</td></tr>
 <tr class="memdesc:a7752d9e6be7f306f78af4cf34cf43654"><td class="mdescLeft">&#160;</td><td class="mdescRight">What to do when a layer is attached to the game engine.  <a href="classengine_1_1Layer.html#a7752d9e6be7f306f78af4cf34cf43654">More...</a><br /></td></tr>
 <tr class="separator:a7752d9e6be7f306f78af4cf34cf43654"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -113,7 +118,10 @@ Protected Attributes</h2></td></tr>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>debug_name_</b></td></tr>
 <tr class="separator:a9283719bf3b3d956809ef351a43ee16f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>An abstract data structure that represents a "layer" within the engine. </p>
+<p>Layers are the primary hook for applications to specify logic that they want to be apart of the engines event loop. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a7752d9e6be7f306f78af4cf34cf43654"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7752d9e6be7f306f78af4cf34cf43654">&#9670;&nbsp;</a></span>OnAttach()</h2>
 

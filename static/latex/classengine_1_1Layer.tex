@@ -2,7 +2,17 @@
 \label{classengine_1_1Layer}\index{engine::Layer@{engine::Layer}}
 
 
-Inheritance diagram for engine\+::Layer\+:\nopagebreak
+An abstract data structure that represents a \char`\"{}layer\char`\"{} within the engine.  
+
+
+
+
+{\ttfamily \#include $<$Layer.\+h$>$}
+
+
+
+Inheritance diagram for engine\+::Layer\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -12,7 +22,7 @@ Inheritance diagram for engine\+::Layer\+:\nopagebreak
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classengine_1_1Layer_aa9b7ebb7ef25f36b2c1859e5ee2c867d}\label{classengine_1_1Layer_aa9b7ebb7ef25f36b2c1859e5ee2c867d}} 
+\mbox{\Hypertarget{classengine_1_1Layer_a7c94872b9fc69fd1695e21319c6ae495}\label{classengine_1_1Layer_a7c94872b9fc69fd1695e21319c6ae495}} 
 {\bfseries Layer} (const std\+::string \&name=\char`\"{}Layer\char`\"{})
 \item 
 virtual void \mbox{\hyperlink{classengine_1_1Layer_a7752d9e6be7f306f78af4cf34cf43654}{On\+Attach}} ()
@@ -35,6 +45,11 @@ const std\+::string \& {\bfseries Get\+Name} () const
 std\+::string {\bfseries debug\+\_\+name\+\_\+}
 \end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+An abstract data structure that represents a \char`\"{}layer\char`\"{} within the engine. 
+
+Layers are the primary hook for applications to specify logic that they want to be apart of the engines event loop. 
 
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classengine_1_1Layer_a7752d9e6be7f306f78af4cf34cf43654}\label{classengine_1_1Layer_a7752d9e6be7f306f78af4cf34cf43654}} 

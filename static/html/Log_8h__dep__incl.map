@@ -1,5 +1,5 @@
 <map id="engine/src/core/util/Log.h" name="engine/src/core/util/Log.h">
-<area shape="rect" id="node1" title="The engines logging utility." alt="" coords="233,5,379,47"/>
+<area shape="rect" id="node1" title="The engines util utility." alt="" coords="233,5,379,47"/>
 <area shape="rect" id="node2" href="$Entrypoint_8h.html" title="The entrypoint into the engine." alt="" coords="5,191,209,218"/>
 <area shape="rect" id="node3" href="$Engine_8h.html" title="The entrypoint into the game engine source code." alt="" coords="274,541,423,568"/>
 <area shape="rect" id="node4" href="$Buffer_8h.html" title="Buffer abstractions that allow the ease of implementing Buffers for any graphics API." alt="" coords="387,184,567,225"/>

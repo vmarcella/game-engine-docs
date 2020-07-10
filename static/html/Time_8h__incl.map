@@ -1,7 +1,6 @@
 <map id="engine/src/core/util/Time.h" name="engine/src/core/util/Time.h">
-<area shape="rect" id="node1" title="Timing." alt="" coords="108,5,255,47"/>
+<area shape="rect" id="node1" title="Cross platform timing utility for the game engine." alt="" coords="63,5,209,47"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,95,72,121"/>
 <area shape="rect" id="node3" title=" " alt="" coords="96,95,176,121"/>
 <area shape="rect" id="node4" title=" " alt="" coords="201,95,253,121"/>
-<area shape="rect" id="node5" title=" " alt="" coords="277,95,336,121"/>
 </map>

@@ -1,5 +1,5 @@
 <map id="engine/src/core/util/Log.h" name="engine/src/core/util/Log.h">
-<area shape="rect" id="node1" title="The engines logging utility." alt="" coords="96,5,243,47"/>
+<area shape="rect" id="node1" title="The engines util utility." alt="" coords="96,5,243,47"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,95,83,121"/>
 <area shape="rect" id="node3" title=" " alt="" coords="107,95,231,121"/>
 <area shape="rect" id="node4" href="$Core_8h.html" title="Core macros to be used all throughout the engine for development and production purposes." alt="" coords="256,95,352,121"/>

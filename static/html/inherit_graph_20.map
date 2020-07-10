@@ -1,3 +1,7 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<<<<<<< HEAD
 <area shape="rect" id="node1" href="$classengine_1_1util_1_1Time.html" title="A wrapper for working with Time within the game engine. Uses std::steady_clock for a platform indepen..." alt="" coords="5,5,140,32"/>
+=======
+<area shape="rect" id="node1" href="$classengine_1_1util_1_1TimeStep.html" title="The timestep between two time intervals. Primarily used for layers to consistently update the engine." alt="" coords="5,5,169,32"/>
+>>>>>>> yeet
 </map>

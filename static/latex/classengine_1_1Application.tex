@@ -1,5 +1,6 @@
 \hypertarget{classengine_1_1Application}{}\doxysection{engine\+::Application Class Reference}
 \label{classengine_1_1Application}\index{engine::Application@{engine::Application}}
+<<<<<<< HEAD
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -14,6 +15,33 @@ void \mbox{\hyperlink{classengine_1_1Application_a1b991c5db973742130e9599020145e
 \mbox{\Hypertarget{classengine_1_1Application_a11f25e41af0fb736cd4fe28cb3630378}\label{classengine_1_1Application_a11f25e41af0fb736cd4fe28cb3630378}} 
 const \mbox{\hyperlink{classengine_1_1Window}{Window}} \& \mbox{\hyperlink{classengine_1_1Application_a11f25e41af0fb736cd4fe28cb3630378}{Get\+Window}} () const
 \begin{DoxyCompactList}\small\item\em Gets a read only reference to the window pointer that is currently being used. \end{DoxyCompactList}\end{DoxyCompactItemize}
+=======
+
+
+The primary driver of all applications extending this engine.  
+
+
+
+
+{\ttfamily \#include $<$Application.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classengine_1_1Application_a093e14152fc1eda1b5eba682a2b4afd9}{On\+Event}} (\mbox{\hyperlink{classengine_1_1events_1_1Event}{events\+::\+Event}} $\ast$event)
+\begin{DoxyCompactList}\small\item\em Passes events to all the layers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classengine_1_1Application_a3d924eb9d0310d40d6cd913d400d4069}{Push\+Layer}} (memory\+::\+Shared$<$ \mbox{\hyperlink{classengine_1_1Layer}{Layer}} $>$ layer)
+\begin{DoxyCompactList}\small\item\em Attaches a layer to the application instance. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classengine_1_1Application_a181eedda6087b49920d5c2b89a05e4d3}\label{classengine_1_1Application_a181eedda6087b49920d5c2b89a05e4d3}} 
+void {\bfseries Push\+Overlay} (memory\+::\+Shared$<$ \mbox{\hyperlink{classengine_1_1Layer}{Layer}} $>$ layer)
+\item 
+\mbox{\Hypertarget{classengine_1_1Application_a4dcdf08d920f7f63013a25cb1e80438b}\label{classengine_1_1Application_a4dcdf08d920f7f63013a25cb1e80438b}} 
+void \mbox{\hyperlink{classengine_1_1Application_a4dcdf08d920f7f63013a25cb1e80438b}{Run}} ()
+\begin{DoxyCompactList}\small\item\em Controls the applications lifecycle and all lower level functionality like input, events, rendering, networking, etc. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classengine_1_1Application_a0c66a3ff294bcc497bb2e8eb7330124c}\label{classengine_1_1Application_a0c66a3ff294bcc497bb2e8eb7330124c}} 
+const \mbox{\hyperlink{classengine_1_1Window}{Window}} \& {\bfseries Get\+Window} () const
+\end{DoxyCompactItemize}
+>>>>>>> yeet
 \doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -22,12 +50,26 @@ static \mbox{\hyperlink{classengine_1_1Application}{Application}} \& {\bfseries 
 \end{DoxyCompactItemize}
 
 
+<<<<<<< HEAD
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classengine_1_1Application_ad8fe3b6ea5843b754197694b85d594ca}\label{classengine_1_1Application_ad8fe3b6ea5843b754197694b85d594ca}} 
 \index{engine::Application@{engine::Application}!OnEvent@{OnEvent}}
 \index{OnEvent@{OnEvent}!engine::Application@{engine::Application}}
 \doxysubsubsection{\texorpdfstring{OnEvent()}{OnEvent()}}
 {\footnotesize\ttfamily Application\+::\+On\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classengine_1_1events_1_1Event}{events\+::\+Event}} $\ast$}]{event }\end{DoxyParamCaption})}
+=======
+\doxysubsection{Detailed Description}
+The primary driver of all applications extending this engine. 
+
+The engine implements the application runner as an individual platform independent application instance that manages the lifecycle of the core and lower level components of the engine. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classengine_1_1Application_a093e14152fc1eda1b5eba682a2b4afd9}\label{classengine_1_1Application_a093e14152fc1eda1b5eba682a2b4afd9}} 
+\index{engine::Application@{engine::Application}!OnEvent@{OnEvent}}
+\index{OnEvent@{OnEvent}!engine::Application@{engine::Application}}
+\doxysubsubsection{\texorpdfstring{OnEvent()}{OnEvent()}}
+{\footnotesize\ttfamily void engine\+::\+Application\+::\+On\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classengine_1_1events_1_1Event}{events\+::\+Event}} $\ast$}]{event }\end{DoxyParamCaption})}
+>>>>>>> yeet
 
 
 
@@ -40,11 +82,19 @@ This function only specifically listens for when the window is requested to clos
 {\em event} & An event pointer generated to be handled by the application. \\
 \hline
 \end{DoxyParams}
+<<<<<<< HEAD
 \mbox{\Hypertarget{classengine_1_1Application_ab86d19bb802be8381da4dd5d67322ea0}\label{classengine_1_1Application_ab86d19bb802be8381da4dd5d67322ea0}} 
 \index{engine::Application@{engine::Application}!PushLayer@{PushLayer}}
 \index{PushLayer@{PushLayer}!engine::Application@{engine::Application}}
 \doxysubsubsection{\texorpdfstring{PushLayer()}{PushLayer()}}
 {\footnotesize\ttfamily Application\+::\+Push\+Layer (\begin{DoxyParamCaption}\item[{memory\+::\+Shared$<$ \mbox{\hyperlink{classengine_1_1Layer}{Layer}} $>$}]{layer }\end{DoxyParamCaption})}
+=======
+\mbox{\Hypertarget{classengine_1_1Application_a3d924eb9d0310d40d6cd913d400d4069}\label{classengine_1_1Application_a3d924eb9d0310d40d6cd913d400d4069}} 
+\index{engine::Application@{engine::Application}!PushLayer@{PushLayer}}
+\index{PushLayer@{PushLayer}!engine::Application@{engine::Application}}
+\doxysubsubsection{\texorpdfstring{PushLayer()}{PushLayer()}}
+{\footnotesize\ttfamily void engine\+::\+Application\+::\+Push\+Layer (\begin{DoxyParamCaption}\item[{memory\+::\+Shared$<$ \mbox{\hyperlink{classengine_1_1Layer}{Layer}} $>$}]{layer }\end{DoxyParamCaption})}
+>>>>>>> yeet
 
 
 
@@ -55,6 +105,7 @@ Attaches a layer to the application instance.
 {\em layer} & This allows the application instance to propage events, rendering, and any desired pieces of data into the layer. \\
 \hline
 \end{DoxyParams}
+<<<<<<< HEAD
 \mbox{\Hypertarget{classengine_1_1Application_ac1fe0365f5fa2e5b3fcba0b7edc31fe7}\label{classengine_1_1Application_ac1fe0365f5fa2e5b3fcba0b7edc31fe7}} 
 \index{engine::Application@{engine::Application}!PushOverlay@{PushOverlay}}
 \index{PushOverlay@{PushOverlay}!engine::Application@{engine::Application}}
@@ -74,8 +125,9 @@ This allows the application instance to propage events, renderine, and any desir
 
 
 Controls the applications lifecycle and all lower level functionality like input, events, rendering, networking, etc. 
+=======
+>>>>>>> yeet
 
-This currently does a lot of custom rendering when in reality it should be implemented by a child project that is running the game. This will change in the future, but at the moment implements a lot of specific rendering tests that are for ensuring that the renderer currently works. 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

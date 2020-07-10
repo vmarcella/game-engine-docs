@@ -1,3 +1,7 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<<<<<<< HEAD
 <area shape="rect" id="node1" href="$classengine_1_1Window.html" title="The generic window implementation that allows platform specific window APIs to expose generic window ..." alt="" coords="5,5,132,32"/>
+=======
+<area shape="rect" id="node1" href="$structengine_1_1WindowProperties.html" title="Generic Window properties used to create platform specific windows." alt="" coords="5,5,197,32"/>
+>>>>>>> yeet
 </map>

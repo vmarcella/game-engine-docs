@@ -1,3 +1,7 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<<<<<<< HEAD
 <area shape="rect" id="node1" href="$classengine_1_1LayerStack.html" title="A stack based data structure for the storage of layers to be managed by the engine." alt="" coords="5,5,152,32"/>
+=======
+<area shape="rect" id="node1" href="$classengine_1_1logging_1_1Log.html" title="The container class for managing static instances of the engine and client loggers." alt="" coords="5,5,159,32"/>
+>>>>>>> yeet
 </map>

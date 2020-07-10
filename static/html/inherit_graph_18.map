@@ -1,4 +1,8 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<<<<<<< HEAD
 <area shape="rect" id="node1" href="$classengine_1_1renderer_1_1VertexBuffer.html" title="The base VertexBuffer class to be used for creating vertex buffers." alt="" coords="5,5,185,47"/>
 <area shape="rect" id="node2" href="$classengine_1_1platform_1_1opengl_1_1OpenGLVertexBuffer.html" title=" " alt="" coords="233,5,416,47"/>
+=======
+<area shape="rect" id="node1" href="$classengine_1_1util_1_1Reverse.html" title="Provides a clean interface for iterating through any container that implements rbegin and rend." alt="" coords="5,5,161,47"/>
+>>>>>>> yeet
 </map>

@@ -1,4 +1,7 @@
-<map id="engine/src/core/Assert.h" name="engine/src/core/Assert.h">
-<area shape="rect" id="node2" href="$Core_8h.html" title="Core macros to be used all throughout the engine for development and production purposes. " alt="" coords="5,155,96,181"/>
-<area shape="rect" id="node3" href="$Log_8h.html" title="The engines logging utility. " alt="" coords="107,80,189,107"/>
+<map id="engine/src/core/util/Assert.h" name="engine/src/core/util/Assert.h">
+<area shape="rect" id="node1" title="This is a utility file that is primarily used for debugging the internals of the engine when incorrec..." alt="" coords="35,5,181,47"/>
+<area shape="rect" id="node2" href="$Core_8h.html" title="Core macros to be used all throughout the engine for development and production purposes." alt="" coords="5,169,101,196"/>
+<area shape="rect" id="node3" href="$Log_8h.html" title="The engines logging utility." alt="" coords="103,95,217,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="125,169,203,196"/>
+<area shape="rect" id="node5" title=" " alt="" coords="227,169,351,196"/>
 </map>

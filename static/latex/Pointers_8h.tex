@@ -1,0 +1,47 @@
+\hypertarget{Pointers_8h}{}\doxysection{engine/src/core/memory/\+Pointers.h File Reference}
+\label{Pointers_8h}\index{engine/src/core/memory/Pointers.h@{engine/src/core/memory/Pointers.h}}
+
+
+Abstraction for handling pointers within the engine. Currently just aliases for unique and shared pointers provided by c++11.  
+
+
+{\ttfamily \#include $<$memory$>$}\newline
+Include dependency graph for Pointers.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{Pointers_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Pointers_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{Pointers_8h_adce2c2ae2481bdcb9b10283028e4a138}\label{Pointers_8h_adce2c2ae2481bdcb9b10283028e4a138}} 
+{\footnotesize template$<$typename T $>$ }\\using {\bfseries engine\+::memory\+::\+Unique} = std\+::unique\+\_\+ptr$<$ T $>$
+\item 
+\mbox{\Hypertarget{Pointers_8h_ac7a23a18ff827712ca43e4356bcdb453}\label{Pointers_8h_ac7a23a18ff827712ca43e4356bcdb453}} 
+{\footnotesize template$<$typename T $>$ }\\using {\bfseries engine\+::memory\+::\+Shared} = std\+::shared\+\_\+ptr$<$ T $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{Pointers_8h_a2e9601e500bd996a077f69cb35bb34cf}\label{Pointers_8h_a2e9601e500bd996a077f69cb35bb34cf}} 
+{\footnotesize template$<$typename T , class... Args$>$ }\\Unique$<$ T $>$ {\bfseries engine\+::memory\+::\+Create\+Unique} (Args \&\&... args)
+\item 
+\mbox{\Hypertarget{Pointers_8h_a0d3f103839d87137132ca928111e552e}\label{Pointers_8h_a0d3f103839d87137132ca928111e552e}} 
+{\footnotesize template$<$typename T , class... Args$>$ }\\Shared$<$ T $>$ {\bfseries engine\+::memory\+::\+Create\+Shared} (Args \&\&... args)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstraction for handling pointers within the engine. Currently just aliases for unique and shared pointers provided by c++11. 
+

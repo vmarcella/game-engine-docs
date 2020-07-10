@@ -1,0 +1,62 @@
+\hypertarget{classengine_1_1platform_1_1opengl_1_1OpenGLShader}{}\doxysection{engine\+::platform\+::opengl\+::Open\+G\+L\+Shader Class Reference}
+\label{classengine_1_1platform_1_1opengl_1_1OpenGLShader}\index{engine::platform::opengl::OpenGLShader@{engine::platform::opengl::OpenGLShader}}
+
+
+Inheritance diagram for engine\+::platform\+::opengl\+::Open\+G\+L\+Shader\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{classengine_1_1platform_1_1opengl_1_1OpenGLShader__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for engine\+::platform\+::opengl\+::Open\+G\+L\+Shader\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{classengine_1_1platform_1_1opengl_1_1OpenGLShader__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classengine_1_1platform_1_1opengl_1_1OpenGLShader_ab138429c2224afe9adaa4bb46e005845}\label{classengine_1_1platform_1_1opengl_1_1OpenGLShader_ab138429c2224afe9adaa4bb46e005845}} 
+\mbox{\hyperlink{classengine_1_1platform_1_1opengl_1_1OpenGLShader_ab138429c2224afe9adaa4bb46e005845}{Open\+G\+L\+Shader}} (const std\+::string \&vertex\+\_\+source, const std\+::string \&fragment\+\_\+source)
+\begin{DoxyCompactList}\small\item\em Instantiates an Open\+GL \mbox{\hyperlink{classShader}{Shader}} with vertex and fragment source strings. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classengine_1_1platform_1_1opengl_1_1OpenGLShader_a5fff7961b995b0820be0c2be77712beb}\label{classengine_1_1platform_1_1opengl_1_1OpenGLShader_a5fff7961b995b0820be0c2be77712beb}} 
+void \mbox{\hyperlink{classengine_1_1platform_1_1opengl_1_1OpenGLShader_a5fff7961b995b0820be0c2be77712beb}{Bind}} () const
+\begin{DoxyCompactList}\small\item\em Binds the shader to the current graphics context. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classengine_1_1platform_1_1opengl_1_1OpenGLShader_afc60ca83361992ee6c62de2729f8cebd}\label{classengine_1_1platform_1_1opengl_1_1OpenGLShader_afc60ca83361992ee6c62de2729f8cebd}} 
+void \mbox{\hyperlink{classengine_1_1platform_1_1opengl_1_1OpenGLShader_afc60ca83361992ee6c62de2729f8cebd}{Unbind}} () const
+\begin{DoxyCompactList}\small\item\em Unbinds the shader from the current graphics context. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classengine_1_1platform_1_1opengl_1_1OpenGLShader_a136183b5ee6a6cea7fd6e1454209e318}\label{classengine_1_1platform_1_1opengl_1_1OpenGLShader_a136183b5ee6a6cea7fd6e1454209e318}} 
+void \mbox{\hyperlink{classengine_1_1platform_1_1opengl_1_1OpenGLShader_a136183b5ee6a6cea7fd6e1454209e318}{Upload\+Uniform\+Int}} (const std\+::string \&name, const int \&value)
+\begin{DoxyCompactList}\small\item\em Upload an integer into the shader. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classengine_1_1platform_1_1opengl_1_1OpenGLShader_a4cc63de721548c0b47949d92db9d3549}\label{classengine_1_1platform_1_1opengl_1_1OpenGLShader_a4cc63de721548c0b47949d92db9d3549}} 
+void \mbox{\hyperlink{classengine_1_1platform_1_1opengl_1_1OpenGLShader_a4cc63de721548c0b47949d92db9d3549}{Upload\+Uniform\+Float}} (const std\+::string \&name, const float \&value)
+\begin{DoxyCompactList}\small\item\em Upload a float into the shader. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classengine_1_1platform_1_1opengl_1_1OpenGLShader_af13800bd77c37443034de81ef95a6330}\label{classengine_1_1platform_1_1opengl_1_1OpenGLShader_af13800bd77c37443034de81ef95a6330}} 
+void \mbox{\hyperlink{classengine_1_1platform_1_1opengl_1_1OpenGLShader_af13800bd77c37443034de81ef95a6330}{Upload\+Uniform\+Float2}} (const std\+::string \&name, const glm\+::vec2 \&values)
+\begin{DoxyCompactList}\small\item\em Upload a uniform of 2 floats into the shader. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classengine_1_1platform_1_1opengl_1_1OpenGLShader_ac6a68812ec1a89fd0a8d12f7bb794b38}\label{classengine_1_1platform_1_1opengl_1_1OpenGLShader_ac6a68812ec1a89fd0a8d12f7bb794b38}} 
+void \mbox{\hyperlink{classengine_1_1platform_1_1opengl_1_1OpenGLShader_ac6a68812ec1a89fd0a8d12f7bb794b38}{Upload\+Uniform\+Float3}} (const std\+::string \&name, const glm\+::vec3 \&values)
+\begin{DoxyCompactList}\small\item\em Upload a uniform of 3 floats into the shader. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classengine_1_1platform_1_1opengl_1_1OpenGLShader_a3a26f2f0854f9b17a5487878c209fb22}\label{classengine_1_1platform_1_1opengl_1_1OpenGLShader_a3a26f2f0854f9b17a5487878c209fb22}} 
+void \mbox{\hyperlink{classengine_1_1platform_1_1opengl_1_1OpenGLShader_a3a26f2f0854f9b17a5487878c209fb22}{Upload\+Uniform\+Float4}} (const std\+::string \&name, const glm\+::vec4 \&matrix)
+\begin{DoxyCompactList}\small\item\em Allows the uploading of uniform float 4s into the shader. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classengine_1_1platform_1_1opengl_1_1OpenGLShader_a95fcb238212150d02c0eccb1ada2e2b8}\label{classengine_1_1platform_1_1opengl_1_1OpenGLShader_a95fcb238212150d02c0eccb1ada2e2b8}} 
+void \mbox{\hyperlink{classengine_1_1platform_1_1opengl_1_1OpenGLShader_a95fcb238212150d02c0eccb1ada2e2b8}{Upload\+Uniform\+Mat3}} (const std\+::string \&name, const glm\+::mat3 \&matrix)
+\begin{DoxyCompactList}\small\item\em Upload a uniform of Matrix 3s into the shader. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classengine_1_1platform_1_1opengl_1_1OpenGLShader_ab11a20a8136a93a842a62d36843b39cd}\label{classengine_1_1platform_1_1opengl_1_1OpenGLShader_ab11a20a8136a93a842a62d36843b39cd}} 
+void \mbox{\hyperlink{classengine_1_1platform_1_1opengl_1_1OpenGLShader_ab11a20a8136a93a842a62d36843b39cd}{Upload\+Uniform\+Mat4}} (const std\+::string \&name, const glm\+::mat4 \&matrix)
+\begin{DoxyCompactList}\small\item\em Upload a uniform of Matrix 4s into the shader. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+engine/src/platform/opengl/Open\+G\+L\+Shader.\+h\item 
+engine/src/platform/opengl/Open\+G\+L\+Shader.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,50 @@
+\hypertarget{Reverse_8h}{}\doxysection{engine/src/core/util/\+Reverse.h File Reference}
+\label{Reverse_8h}\index{engine/src/core/util/Reverse.h@{engine/src/core/util/Reverse.h}}
+
+
+A lightweight utility for Reversing S\+TL based containers.  
+
+
+{\ttfamily \#include $<$ranges$>$}\newline
+Include dependency graph for Reverse.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{Reverse_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{Reverse_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classengine_1_1util_1_1Reverse}{engine\+::util\+::\+Reverse$<$ Container $>$}}
+\begin{DoxyCompactList}\small\item\em Provides a clean interface for iterating through any container that implements rbegin and rend. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Container $>$ }\\concept \mbox{\hyperlink{Reverse_8h_afa5358c4dca9b2da167751ee46a35021}{engine\+::util\+::internal\+::\+Iterable}} = std\+::ranges\+::bidirectional\+\_\+range$<$Container$>$
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A lightweight utility for Reversing S\+TL based containers. 
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{Reverse_8h_afa5358c4dca9b2da167751ee46a35021}\label{Reverse_8h_afa5358c4dca9b2da167751ee46a35021}} 
+\index{Reverse.h@{Reverse.h}!Iterable@{Iterable}}
+\index{Iterable@{Iterable}!Reverse.h@{Reverse.h}}
+\doxysubsubsection{\texorpdfstring{Iterable}{Iterable}}
+{\footnotesize\ttfamily template$<$class Container $>$ \\
+concept engine\+::util\+::internal\+::\+Iterable = std\+::ranges\+::bidirectional\+\_\+range$<$Container$>$}
+
+C++20 constraint to require template types to be iterable. 

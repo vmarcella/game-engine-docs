@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classengine_1_1renderer_1_1Shader.html" title="The Shader API. " alt="" coords="5,5,169,32"/>
+<area shape="rect" id="node1" href="$classengine_1_1renderer_1_1Shader.html" title="The abstract Shader API." alt="" coords="5,13,188,39"/>
+<area shape="rect" id="node2" href="$classengine_1_1platform_1_1opengl_1_1OpenGLShader.html" title=" " alt="" coords="236,5,419,47"/>
 </map>

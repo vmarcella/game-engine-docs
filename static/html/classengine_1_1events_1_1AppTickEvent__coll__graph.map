@@ -1,3 +1,4 @@
 <map id="engine::events::AppTickEvent" name="engine::events::AppTickEvent">
-<area shape="rect" id="node2" href="$classengine_1_1events_1_1Event.html" title="The abstract Event class. " alt="" coords="29,5,179,32"/>
+<area shape="rect" id="node1" title="Generated whenever the app ticks." alt="" coords="5,80,220,107"/>
+<area shape="rect" id="node2" href="$classengine_1_1events_1_1Event.html" title="The abstract Event class." alt="" coords="31,5,194,32"/>
 </map>

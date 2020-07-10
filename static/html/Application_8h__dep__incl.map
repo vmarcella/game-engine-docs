@@ -1,4 +1,5 @@
 <map id="engine/src/core/Application.h" name="engine/src/core/Application.h">
-<area shape="rect" id="node2" href="$Entrypoint_8h.html" title="The entrypoint into the engine. " alt="" coords="5,80,191,107"/>
-<area shape="rect" id="node3" href="$Engine_8h.html" title="The entrypoint into the game engine source code. " alt="" coords="95,155,232,181"/>
+<area shape="rect" id="node1" title="Contains the Application class definitions." alt="" coords="71,5,282,32"/>
+<area shape="rect" id="node2" href="$Entrypoint_8h.html" title="The entrypoint into the engine." alt="" coords="5,80,209,107"/>
+<area shape="rect" id="node3" href="$Engine_8h.html" title="The entrypoint into the game engine source code." alt="" coords="102,155,251,181"/>
 </map>

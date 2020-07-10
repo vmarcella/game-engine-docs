@@ -1,3 +1,5 @@
 <map id="engine/src/core/Input.h" name="engine/src/core/Input.h">
-<area shape="rect" id="node3" href="$Core_8h.html" title="Core macros to be used all throughout the engine for development and production purposes. " alt="" coords="85,80,176,107"/>
+<area shape="rect" id="node1" title="The input abstraction class that handles input across." alt="" coords="5,5,176,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="10,80,70,107"/>
+<area shape="rect" id="node3" href="$Core_8h.html" title="Core macros to be used all throughout the engine for development and production purposes." alt="" coords="95,80,191,107"/>
 </map>

@@ -1,10 +1,9 @@
 <map id="engine/src/core/renderer/VertexArray.h" name="engine/src/core/renderer/VertexArray.h">
-<area shape="rect" id="node2" href="$Application_8h.html" title="Contains the Application class definitions. " alt="" coords="51,102,241,129"/>
-<area shape="rect" id="node4" href="$Engine_8h.html" title="The entrypoint into the game engine source code. " alt="" coords="211,273,348,300"/>
-<area shape="rect" id="node5" href="$RendererAPI_8h_source.html" title="engine/src/core/renderer\l/RendererAPI.h" alt="" coords="410,95,573,136"/>
-<area shape="rect" id="node8" href="$OpenGLRendererAPI_8h.html" title="The OpenGL rendering implementation. " alt="" coords="690,184,893,225"/>
-<area shape="rect" id="node9" href="$OpenGLVertexArray_8h_source.html" title="engine/src/platform\l/opengl/OpenGLVertexArray.h" alt="" coords="648,95,844,136"/>
-<area shape="rect" id="node3" href="$Entrypoint_8h.html" title="The entrypoint into the engine. " alt="" coords="5,191,191,218"/>
-<area shape="rect" id="node6" href="$RenderCommand_8h.html" title="The declaration file for the RenderCommand Wrapper. " alt="" coords="317,184,479,225"/>
-<area shape="rect" id="node7" href="$Renderer_8h.html" title="The rendering API. " alt="" coords="503,184,666,225"/>
+<area shape="rect" id="node1" title="The Generic VertexArray API." alt="" coords="541,5,721,47"/>
+<area shape="rect" id="node2" href="$RendererAPI_8h_source.html" title=" " alt="" coords="293,95,473,136"/>
+<area shape="rect" id="node4" href="$Engine_8h.html" title="The entrypoint into the game engine source code." alt="" coords="225,273,374,300"/>
+<area shape="rect" id="node6" href="$OpenGLRendererAPI_8h.html" title="The OpenGL rendering implementation." alt="" coords="413,184,631,225"/>
+<area shape="rect" id="node7" href="$OpenGLVertexArray_8h_source.html" title=" " alt="" coords="705,95,917,136"/>
+<area shape="rect" id="node3" href="$RenderCommand_8h.html" title="The declaration file for the RenderCommand Wrapper." alt="" coords="5,184,185,225"/>
+<area shape="rect" id="node5" href="$Renderer_8h.html" title="The rendering API." alt="" coords="209,184,389,225"/>
 </map>

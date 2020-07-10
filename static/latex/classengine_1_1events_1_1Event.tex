@@ -1,8 +1,8 @@
-\hypertarget{classengine_1_1events_1_1Event}{}\section{engine\+:\+:events\+:\+:Event Class Reference}
-\label{classengine_1_1events_1_1Event}\index{engine\+::events\+::\+Event@{engine\+::events\+::\+Event}}
+\hypertarget{classengine_1_1events_1_1Event}{}\doxysection{engine\+::events\+::Event Class Reference}
+\label{classengine_1_1events_1_1Event}\index{engine::events::Event@{engine::events::Event}}
 
 
-The abstract \hyperlink{classengine_1_1events_1_1Event}{Event} class.  
+The abstract \mbox{\hyperlink{classengine_1_1events_1_1Event}{Event}} class.  
 
 
 
@@ -11,18 +11,19 @@ The abstract \hyperlink{classengine_1_1events_1_1Event}{Event} class.
 
 
 
-Inheritance diagram for engine\+:\+:events\+:\+:Event\+:\nopagebreak
+Inheritance diagram for engine\+::events\+::Event\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{classengine_1_1events_1_1Event__inherit__graph}
 \end{center}
 \end{figure}
-\subsection*{Public Member Functions}
+\doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classengine_1_1events_1_1Event_a99604df0759386f2cea0071efa52d6e9}\label{classengine_1_1events_1_1Event_a99604df0759386f2cea0071efa52d6e9}} 
-virtual \hyperlink{Event_8h_a10b3e1cfc8aaa02ff37fd47f0fae2b8a}{Event\+Type} {\bfseries Get\+Event\+Type} () const =0
+virtual \mbox{\hyperlink{Event_8h_a10b3e1cfc8aaa02ff37fd47f0fae2b8a}{Event\+Type}} {\bfseries Get\+Event\+Type} () const =0
 \item 
 \mbox{\Hypertarget{classengine_1_1events_1_1Event_a11bf339abb972f3c06f1cf20a0ff894b}\label{classengine_1_1events_1_1Event_a11bf339abb972f3c06f1cf20a0ff894b}} 
 virtual const char $\ast$ {\bfseries Get\+Name} () const =0
@@ -33,26 +34,26 @@ virtual int {\bfseries Get\+Category\+Flags} () const =0
 \mbox{\Hypertarget{classengine_1_1events_1_1Event_afad3baa55387283c7cfe692292edc269}\label{classengine_1_1events_1_1Event_afad3baa55387283c7cfe692292edc269}} 
 virtual std\+::string {\bfseries To\+String} () const
 \item 
-bool \hyperlink{classengine_1_1events_1_1Event_abf217454944fb4cceb6dee40d886a0c4}{Is\+In\+Category} (\hyperlink{Event_8h_a1e3bf91397b8a47069494aede2669474}{Event\+Category} category)
+bool \mbox{\hyperlink{classengine_1_1events_1_1Event_abf217454944fb4cceb6dee40d886a0c4}{Is\+In\+Category}} (\mbox{\hyperlink{Event_8h_a1e3bf91397b8a47069494aede2669474}{Event\+Category}} category)
 \begin{DoxyCompactList}\small\item\em Check if an event belongs to an Event\+Category. \end{DoxyCompactList}\item 
-bool \hyperlink{classengine_1_1events_1_1Event_a8d8413f3ea8c3d00b3f43a757a92f623}{Has\+Been\+Handled} ()
+bool \mbox{\hyperlink{classengine_1_1events_1_1Event_a8d8413f3ea8c3d00b3f43a757a92f623}{Has\+Been\+Handled}} ()
 \begin{DoxyCompactList}\small\item\em Check if an event has already been handled. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classengine_1_1events_1_1Event_aa3b39b29ab7c13070bc033bc88be4152}\label{classengine_1_1events_1_1Event_aa3b39b29ab7c13070bc033bc88be4152}} 
-std\+::ostream \& \hyperlink{classengine_1_1events_1_1Event_aa3b39b29ab7c13070bc033bc88be4152}{operator$<$$<$} (std\+::ostream \&os)
+std\+::ostream \& \mbox{\hyperlink{classengine_1_1events_1_1Event_aa3b39b29ab7c13070bc033bc88be4152}{operator$<$$<$}} (std\+::ostream \&os)
 \begin{DoxyCompactList}\small\item\em Make events compatible with ostream. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Protected Member Functions}
+\doxysubsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classengine_1_1events_1_1Event_aa85c36143880a3312b1c63166463ef5d}\label{classengine_1_1events_1_1Event_aa85c36143880a3312b1c63166463ef5d}} 
 void {\bfseries Set\+Handled} (const bool success)
 \end{DoxyCompactItemize}
-\subsection*{Protected Attributes}
+\doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classengine_1_1events_1_1Event_ad8e1eb6634225e11963228d6a69c166b}\label{classengine_1_1events_1_1Event_ad8e1eb6634225e11963228d6a69c166b}} 
 bool {\bfseries has\+\_\+been\+\_\+handled\+\_\+} = false
 \end{DoxyCompactItemize}
-\subsection*{Friends}
+\doxysubsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classengine_1_1events_1_1Event_aad5f38ccd490ea17008460423f52325a}\label{classengine_1_1events_1_1Event_aad5f38ccd490ea17008460423f52325a}} 
@@ -60,27 +61,27 @@ class {\bfseries Event\+Dispatcher}
 \end{DoxyCompactItemize}
 
 
-\subsection{Detailed Description}
-The abstract \hyperlink{classengine_1_1events_1_1Event}{Event} class. 
+\doxysubsection{Detailed Description}
+The abstract \mbox{\hyperlink{classengine_1_1events_1_1Event}{Event}} class. 
 
-The base \hyperlink{classengine_1_1events_1_1Event}{Event} implementation that is the parent class for any \hyperlink{classengine_1_1events_1_1Event}{Event} that would like to be passed into and handled by the \hyperlink{classengine_1_1events_1_1EventDispatcher}{Event\+Dispatcher} system. All Children class must override the functions provided by this class in order to be able to be propagated through the \hyperlink{classengine_1_1events_1_1EventDispatcher}{Event\+Dispatcher}. There are macros provided in {\ttfamily \hyperlink{Event_8h}{core/events/\+Event.\+h}} that are documented and make the process of creating child classes of \hyperlink{classengine_1_1events_1_1Event}{Event} magnitudes easier. 
+The base \mbox{\hyperlink{classengine_1_1events_1_1Event}{Event}} implementation that is the parent class for any \mbox{\hyperlink{classengine_1_1events_1_1Event}{Event}} that would like to be passed into and handled by the \mbox{\hyperlink{classengine_1_1events_1_1EventDispatcher}{Event\+Dispatcher}} system. All Children class must override the functions provided by this class in order to be able to be propagated through the \mbox{\hyperlink{classengine_1_1events_1_1EventDispatcher}{Event\+Dispatcher}}. There are macros provided in {\ttfamily \mbox{\hyperlink{Event_8h}{core/events/\+Event.\+h}}} that are documented and make the process of creating child classes of \mbox{\hyperlink{classengine_1_1events_1_1Event}{Event}} magnitudes easier. 
 
-\subsection{Member Function Documentation}
+\doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classengine_1_1events_1_1Event_a8d8413f3ea8c3d00b3f43a757a92f623}\label{classengine_1_1events_1_1Event_a8d8413f3ea8c3d00b3f43a757a92f623}} 
-\index{engine\+::events\+::\+Event@{engine\+::events\+::\+Event}!Has\+Been\+Handled@{Has\+Been\+Handled}}
-\index{Has\+Been\+Handled@{Has\+Been\+Handled}!engine\+::events\+::\+Event@{engine\+::events\+::\+Event}}
-\subsubsection{\texorpdfstring{Has\+Been\+Handled()}{HasBeenHandled()}}
+\index{engine::events::Event@{engine::events::Event}!HasBeenHandled@{HasBeenHandled}}
+\index{HasBeenHandled@{HasBeenHandled}!engine::events::Event@{engine::events::Event}}
+\doxysubsubsection{\texorpdfstring{HasBeenHandled()}{HasBeenHandled()}}
 {\footnotesize\ttfamily engine\+::events\+::\+Event\+::\+Has\+Been\+Handled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
 Check if an event has already been handled. 
 
-Only the \hyperlink{classengine_1_1events_1_1EventDispatcher}{Event\+Dispatcher} is capable of setting an event as being handled. \mbox{\Hypertarget{classengine_1_1events_1_1Event_abf217454944fb4cceb6dee40d886a0c4}\label{classengine_1_1events_1_1Event_abf217454944fb4cceb6dee40d886a0c4}} 
-\index{engine\+::events\+::\+Event@{engine\+::events\+::\+Event}!Is\+In\+Category@{Is\+In\+Category}}
-\index{Is\+In\+Category@{Is\+In\+Category}!engine\+::events\+::\+Event@{engine\+::events\+::\+Event}}
-\subsubsection{\texorpdfstring{Is\+In\+Category()}{IsInCategory()}}
-{\footnotesize\ttfamily engine\+::events\+::\+Event\+::\+Is\+In\+Category (\begin{DoxyParamCaption}\item[{\hyperlink{Event_8h_a1e3bf91397b8a47069494aede2669474}{Event\+Category}}]{category }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+Only the \mbox{\hyperlink{classengine_1_1events_1_1EventDispatcher}{Event\+Dispatcher}} is capable of setting an event as being handled. \mbox{\Hypertarget{classengine_1_1events_1_1Event_abf217454944fb4cceb6dee40d886a0c4}\label{classengine_1_1events_1_1Event_abf217454944fb4cceb6dee40d886a0c4}} 
+\index{engine::events::Event@{engine::events::Event}!IsInCategory@{IsInCategory}}
+\index{IsInCategory@{IsInCategory}!engine::events::Event@{engine::events::Event}}
+\doxysubsubsection{\texorpdfstring{IsInCategory()}{IsInCategory()}}
+{\footnotesize\ttfamily engine\+::events\+::\+Event\+::\+Is\+In\+Category (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Event_8h_a1e3bf91397b8a47069494aede2669474}{Event\+Category}}}]{category }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -95,4 +96,4 @@ Check if an event belongs to an Event\+Category.
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-engine/src/core/events/\hyperlink{Event_8h}{Event.\+h}\end{DoxyCompactItemize}
+engine/src/core/events/\mbox{\hyperlink{Event_8h}{Event.\+h}}\end{DoxyCompactItemize}

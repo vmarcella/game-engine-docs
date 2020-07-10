@@ -1,3 +1,4 @@
 <map id="engine/src/core/KeyCodes.h" name="engine/src/core/KeyCodes.h">
-<area shape="rect" id="node2" href="$Engine_8h.html" title="The entrypoint into the game engine source code. " alt="" coords="30,80,167,107"/>
+<area shape="rect" id="node1" title="Keycodes provided by the engine for capturing input." alt="" coords="5,5,207,32"/>
+<area shape="rect" id="node2" href="$Engine_8h.html" title="The entrypoint into the game engine source code." alt="" coords="31,80,181,107"/>
 </map>

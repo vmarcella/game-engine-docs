@@ -1,8 +1,8 @@
-\hypertarget{classengine_1_1renderer_1_1IndexBuffer}{}\section{engine\+:\+:renderer\+:\+:Index\+Buffer Class Reference}
-\label{classengine_1_1renderer_1_1IndexBuffer}\index{engine\+::renderer\+::\+Index\+Buffer@{engine\+::renderer\+::\+Index\+Buffer}}
+\hypertarget{classengine_1_1renderer_1_1IndexBuffer}{}\doxysection{engine\+::renderer\+::Index\+Buffer Class Reference}
+\label{classengine_1_1renderer_1_1IndexBuffer}\index{engine::renderer::IndexBuffer@{engine::renderer::IndexBuffer}}
 
 
-The base \hyperlink{classengine_1_1renderer_1_1IndexBuffer}{Index\+Buffer} class to be used for creating index buffers.  
+The base \mbox{\hyperlink{classengine_1_1renderer_1_1IndexBuffer}{Index\+Buffer}} class to be used for creating index buffers.  
 
 
 
@@ -11,46 +11,47 @@ The base \hyperlink{classengine_1_1renderer_1_1IndexBuffer}{Index\+Buffer} class
 
 
 
-Inheritance diagram for engine\+:\+:renderer\+:\+:Index\+Buffer\+:\nopagebreak
+Inheritance diagram for engine\+::renderer\+::Index\+Buffer\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=223pt]{classengine_1_1renderer_1_1IndexBuffer__inherit__graph}
+\includegraphics[width=240pt]{classengine_1_1renderer_1_1IndexBuffer__inherit__graph}
 \end{center}
 \end{figure}
-\subsection*{Public Member Functions}
+\doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classengine_1_1renderer_1_1IndexBuffer_a050664f22cc88b809bc386c1e4dba359}\label{classengine_1_1renderer_1_1IndexBuffer_a050664f22cc88b809bc386c1e4dba359}} 
-virtual void \hyperlink{classengine_1_1renderer_1_1IndexBuffer_a050664f22cc88b809bc386c1e4dba359}{Bind} () const =0
-\begin{DoxyCompactList}\small\item\em Bind the current \hyperlink{classengine_1_1renderer_1_1IndexBuffer}{Index\+Buffer} to the current rendering context. \end{DoxyCompactList}\item 
-virtual void \hyperlink{classengine_1_1renderer_1_1IndexBuffer_a8fd1ab43d3963533370c4d8e2e2282f4}{Unbind} () const =0
-\begin{DoxyCompactList}\small\item\em Unbind the current \hyperlink{classengine_1_1renderer_1_1IndexBuffer}{Index\+Buffer} from the current rendering context. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classengine_1_1renderer_1_1IndexBuffer_a050664f22cc88b809bc386c1e4dba359}{Bind}} () const =0
+\begin{DoxyCompactList}\small\item\em Bind the current \mbox{\hyperlink{classengine_1_1renderer_1_1IndexBuffer}{Index\+Buffer}} to the current rendering context. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classengine_1_1renderer_1_1IndexBuffer_a8fd1ab43d3963533370c4d8e2e2282f4}{Unbind}} () const =0
+\begin{DoxyCompactList}\small\item\em Unbind the current \mbox{\hyperlink{classengine_1_1renderer_1_1IndexBuffer}{Index\+Buffer}} from the current rendering context. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classengine_1_1renderer_1_1IndexBuffer_a42571fcc830427648852258124e92844}\label{classengine_1_1renderer_1_1IndexBuffer_a42571fcc830427648852258124e92844}} 
-virtual uint32\+\_\+t \hyperlink{classengine_1_1renderer_1_1IndexBuffer_a42571fcc830427648852258124e92844}{Get\+Count} () const =0
-\begin{DoxyCompactList}\small\item\em Get the count of indices within the current \hyperlink{classengine_1_1renderer_1_1IndexBuffer}{Index\+Buffer}. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Static Public Member Functions}
+virtual uint32\+\_\+t \mbox{\hyperlink{classengine_1_1renderer_1_1IndexBuffer_a42571fcc830427648852258124e92844}{Get\+Count}} () const =0
+\begin{DoxyCompactList}\small\item\em Get the count of indices within the current \mbox{\hyperlink{classengine_1_1renderer_1_1IndexBuffer}{Index\+Buffer}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static \hyperlink{classengine_1_1renderer_1_1IndexBuffer}{Index\+Buffer} $\ast$ \hyperlink{classengine_1_1renderer_1_1IndexBuffer_a2a4773cdd0dab8101ca9662ff6c0a460}{Create} (uint32\+\_\+t $\ast$indices, uint32\+\_\+t count)
-\begin{DoxyCompactList}\small\item\em Creates a \hyperlink{classengine_1_1renderer_1_1IndexBuffer}{Index\+Buffer} through the Graphics A\+PI that is being used at compile time. \end{DoxyCompactList}\end{DoxyCompactItemize}
+static memory\+::\+Shared$<$ \mbox{\hyperlink{classengine_1_1renderer_1_1IndexBuffer}{Index\+Buffer}} $>$ \mbox{\hyperlink{classengine_1_1renderer_1_1IndexBuffer_a2a4773cdd0dab8101ca9662ff6c0a460}{Create}} (uint32\+\_\+t $\ast$indices, uint32\+\_\+t count)
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classengine_1_1renderer_1_1IndexBuffer}{Index\+Buffer}} through the Graphics A\+PI that is being used at compile time. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\subsection{Detailed Description}
-The base \hyperlink{classengine_1_1renderer_1_1IndexBuffer}{Index\+Buffer} class to be used for creating index buffers. 
+\doxysubsection{Detailed Description}
+The base \mbox{\hyperlink{classengine_1_1renderer_1_1IndexBuffer}{Index\+Buffer}} class to be used for creating index buffers. 
 
 Platform specific graphics A\+PI should extend this class in order to be supported by the the rendering A\+PI. 
 
-\subsection{Member Function Documentation}
+\doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classengine_1_1renderer_1_1IndexBuffer_a2a4773cdd0dab8101ca9662ff6c0a460}\label{classengine_1_1renderer_1_1IndexBuffer_a2a4773cdd0dab8101ca9662ff6c0a460}} 
-\index{engine\+::renderer\+::\+Index\+Buffer@{engine\+::renderer\+::\+Index\+Buffer}!Create@{Create}}
-\index{Create@{Create}!engine\+::renderer\+::\+Index\+Buffer@{engine\+::renderer\+::\+Index\+Buffer}}
-\subsubsection{\texorpdfstring{Create()}{Create()}}
+\index{engine::renderer::IndexBuffer@{engine::renderer::IndexBuffer}!Create@{Create}}
+\index{Create@{Create}!engine::renderer::IndexBuffer@{engine::renderer::IndexBuffer}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}}
 {\footnotesize\ttfamily engine\+::renderer\+::\+Index\+Buffer\+::\+Create (\begin{DoxyParamCaption}\item[{uint32\+\_\+t $\ast$}]{indices,  }\item[{uint32\+\_\+t}]{count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
-Creates a \hyperlink{classengine_1_1renderer_1_1IndexBuffer}{Index\+Buffer} through the Graphics A\+PI that is being used at compile time. 
+Creates a \mbox{\hyperlink{classengine_1_1renderer_1_1IndexBuffer}{Index\+Buffer}} through the Graphics A\+PI that is being used at compile time. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -60,22 +61,22 @@ Creates a \hyperlink{classengine_1_1renderer_1_1IndexBuffer}{Index\+Buffer} thro
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classengine_1_1renderer_1_1IndexBuffer_a8fd1ab43d3963533370c4d8e2e2282f4}\label{classengine_1_1renderer_1_1IndexBuffer_a8fd1ab43d3963533370c4d8e2e2282f4}} 
-\index{engine\+::renderer\+::\+Index\+Buffer@{engine\+::renderer\+::\+Index\+Buffer}!Unbind@{Unbind}}
-\index{Unbind@{Unbind}!engine\+::renderer\+::\+Index\+Buffer@{engine\+::renderer\+::\+Index\+Buffer}}
-\subsubsection{\texorpdfstring{Unbind()}{Unbind()}}
+\index{engine::renderer::IndexBuffer@{engine::renderer::IndexBuffer}!Unbind@{Unbind}}
+\index{Unbind@{Unbind}!engine::renderer::IndexBuffer@{engine::renderer::IndexBuffer}}
+\doxysubsubsection{\texorpdfstring{Unbind()}{Unbind()}}
 {\footnotesize\ttfamily engine\+::renderer\+::\+Index\+Buffer\+::\+Unbind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
-Unbind the current \hyperlink{classengine_1_1renderer_1_1IndexBuffer}{Index\+Buffer} from the current rendering context. 
+Unbind the current \mbox{\hyperlink{classengine_1_1renderer_1_1IndexBuffer}{Index\+Buffer}} from the current rendering context. 
 
 Any vertex buffer that relies on this buffer will not be able to access the contents of it once unbound from the graphics context. 
 
-Implemented in \hyperlink{classengine_1_1platform_1_1opengl_1_1OpenGLIndexBuffer_a9fc400e4c464a2dbf7df76eba359639e}{engine\+::platform\+::opengl\+::\+Open\+G\+L\+Index\+Buffer}.
+Implemented in \mbox{\hyperlink{classengine_1_1platform_1_1opengl_1_1OpenGLIndexBuffer_a9fc400e4c464a2dbf7df76eba359639e}{engine\+::platform\+::opengl\+::\+Open\+G\+L\+Index\+Buffer}}.
 
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-engine/src/core/renderer/\hyperlink{Buffer_8h}{Buffer.\+h}\item 
+engine/src/core/renderer/\mbox{\hyperlink{Buffer_8h}{Buffer.\+h}}\item 
 engine/src/core/renderer/Buffer.\+cpp\end{DoxyCompactItemize}

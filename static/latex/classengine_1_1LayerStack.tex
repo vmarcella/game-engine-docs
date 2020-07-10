@@ -1,5 +1,5 @@
-\hypertarget{classengine_1_1LayerStack}{}\section{engine\+:\+:Layer\+Stack Class Reference}
-\label{classengine_1_1LayerStack}\index{engine\+::\+Layer\+Stack@{engine\+::\+Layer\+Stack}}
+\hypertarget{classengine_1_1LayerStack}{}\doxysection{engine\+::Layer\+Stack Class Reference}
+\label{classengine_1_1LayerStack}\index{engine::LayerStack@{engine::LayerStack}}
 
 
 A stack based data structure for the storage of layers to be managed by the engine.  
@@ -9,35 +9,41 @@ A stack based data structure for the storage of layers to be managed by the engi
 
 {\ttfamily \#include $<$Layer\+Stack.\+h$>$}
 
-\subsection*{Public Member Functions}
+\doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classengine_1_1LayerStack_a0af3e9ae8559e5321312834061d45ff2}\label{classengine_1_1LayerStack_a0af3e9ae8559e5321312834061d45ff2}} 
-void \hyperlink{classengine_1_1LayerStack_a0af3e9ae8559e5321312834061d45ff2}{Push\+Layer} (\hyperlink{classengine_1_1Layer}{Layer} $\ast$layer)
-\begin{DoxyCompactList}\small\item\em Push a layer on to the \hyperlink{classengine_1_1Layer}{Layer} stack. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classengine_1_1LayerStack_a5afd12a6e1912070f4256b43558c2ebd}\label{classengine_1_1LayerStack_a5afd12a6e1912070f4256b43558c2ebd}} 
-void \hyperlink{classengine_1_1LayerStack_a5afd12a6e1912070f4256b43558c2ebd}{Push\+Overlay} (\hyperlink{classengine_1_1Layer}{Layer} $\ast$overlay)
+\mbox{\Hypertarget{classengine_1_1LayerStack_a0fb7d4ec02321587eeab65dcd03b1992}\label{classengine_1_1LayerStack_a0fb7d4ec02321587eeab65dcd03b1992}} 
+void \mbox{\hyperlink{classengine_1_1LayerStack_a0fb7d4ec02321587eeab65dcd03b1992}{Push\+Layer}} (memory\+::\+Shared$<$ \mbox{\hyperlink{classengine_1_1Layer}{Layer}} $>$ layer)
+\begin{DoxyCompactList}\small\item\em Push a layer on to the \mbox{\hyperlink{classengine_1_1Layer}{Layer}} stack. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classengine_1_1LayerStack_a8e4ed817a688ae00d41aa8a8835a397d}\label{classengine_1_1LayerStack_a8e4ed817a688ae00d41aa8a8835a397d}} 
+void \mbox{\hyperlink{classengine_1_1LayerStack_a8e4ed817a688ae00d41aa8a8835a397d}{Push\+Overlay}} (memory\+::\+Shared$<$ \mbox{\hyperlink{classengine_1_1Layer}{Layer}} $>$ overlay)
 \begin{DoxyCompactList}\small\item\em Pushes an overlay on to the back of the stack. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classengine_1_1LayerStack_a1308d64db567b107f4e17a274792ee8e}\label{classengine_1_1LayerStack_a1308d64db567b107f4e17a274792ee8e}} 
-void \hyperlink{classengine_1_1LayerStack_a1308d64db567b107f4e17a274792ee8e}{Pop\+Layer} (\hyperlink{classengine_1_1Layer}{Layer} $\ast$layer)
+\mbox{\Hypertarget{classengine_1_1LayerStack_a77f9b048496c193d0ea6c3993e2c4b94}\label{classengine_1_1LayerStack_a77f9b048496c193d0ea6c3993e2c4b94}} 
+void \mbox{\hyperlink{classengine_1_1LayerStack_a77f9b048496c193d0ea6c3993e2c4b94}{Pop\+Layer}} (memory\+::\+Shared$<$ \mbox{\hyperlink{classengine_1_1Layer}{Layer}} $>$ layer)
 \begin{DoxyCompactList}\small\item\em Pops a layer off the layer stack. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classengine_1_1LayerStack_a9fe9370bb2a2b65561ea5ef998213510}\label{classengine_1_1LayerStack_a9fe9370bb2a2b65561ea5ef998213510}} 
-void \hyperlink{classengine_1_1LayerStack_a9fe9370bb2a2b65561ea5ef998213510}{Pop\+Overlay} (\hyperlink{classengine_1_1Layer}{Layer} $\ast$layer)
+\mbox{\Hypertarget{classengine_1_1LayerStack_abe19b901e0143134100680f243107f06}\label{classengine_1_1LayerStack_abe19b901e0143134100680f243107f06}} 
+void \mbox{\hyperlink{classengine_1_1LayerStack_abe19b901e0143134100680f243107f06}{Pop\+Overlay}} (memory\+::\+Shared$<$ \mbox{\hyperlink{classengine_1_1Layer}{Layer}} $>$ layer)
 \begin{DoxyCompactList}\small\item\em Pops an overlay off the layer stack. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classengine_1_1LayerStack_a341bf522aa1af78ba06e3fdf510df271}\label{classengine_1_1LayerStack_a341bf522aa1af78ba06e3fdf510df271}} 
-std\+::vector$<$ \hyperlink{classengine_1_1Layer}{Layer} $\ast$ $>$\+::iterator {\bfseries begin} ()
+\mbox{\Hypertarget{classengine_1_1LayerStack_a74cceb100b595297fc274ec1342ff22b}\label{classengine_1_1LayerStack_a74cceb100b595297fc274ec1342ff22b}} 
+std\+::vector$<$ memory\+::\+Shared$<$ \mbox{\hyperlink{classengine_1_1Layer}{Layer}} $>$ $>$\+::iterator {\bfseries begin} ()
 \item 
-\mbox{\Hypertarget{classengine_1_1LayerStack_ad05cf0f1deec9dd7f7d8ead15febf657}\label{classengine_1_1LayerStack_ad05cf0f1deec9dd7f7d8ead15febf657}} 
-std\+::vector$<$ \hyperlink{classengine_1_1Layer}{Layer} $\ast$ $>$\+::iterator {\bfseries end} ()
+\mbox{\Hypertarget{classengine_1_1LayerStack_a1a845d14b6f1d198d58d54644457aa19}\label{classengine_1_1LayerStack_a1a845d14b6f1d198d58d54644457aa19}} 
+std\+::vector$<$ memory\+::\+Shared$<$ \mbox{\hyperlink{classengine_1_1Layer}{Layer}} $>$ $>$\+::iterator {\bfseries end} ()
+\item 
+\mbox{\Hypertarget{classengine_1_1LayerStack_acf01a6efa6f929cca2ae9a43af9b47b0}\label{classengine_1_1LayerStack_acf01a6efa6f929cca2ae9a43af9b47b0}} 
+std\+::vector$<$ memory\+::\+Shared$<$ \mbox{\hyperlink{classengine_1_1Layer}{Layer}} $>$ $>$\+::reverse\+\_\+iterator {\bfseries rbegin} ()
+\item 
+\mbox{\Hypertarget{classengine_1_1LayerStack_ab0cb2e01a53933a9561ce474589fcc77}\label{classengine_1_1LayerStack_ab0cb2e01a53933a9561ce474589fcc77}} 
+std\+::vector$<$ memory\+::\+Shared$<$ \mbox{\hyperlink{classengine_1_1Layer}{Layer}} $>$ $>$\+::reverse\+\_\+iterator {\bfseries rend} ()
 \end{DoxyCompactItemize}
 
 
-\subsection{Detailed Description}
+\doxysubsection{Detailed Description}
 A stack based data structure for the storage of layers to be managed by the engine. 
 
 The layer stack is completely managed by the engine. However, the engine does expose functionality to safely interact with the one that is being used for any given application being powered by the engine. 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-engine/src/core/\hyperlink{LayerStack_8h}{Layer\+Stack.\+h}\item 
+engine/src/core/\mbox{\hyperlink{LayerStack_8h}{Layer\+Stack.\+h}}\item 
 engine/src/core/Layer\+Stack.\+cpp\end{DoxyCompactItemize}

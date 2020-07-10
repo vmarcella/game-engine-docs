@@ -1,4 +1,10 @@
 <map id="engine/src/core/events/KeyEvent.h" name="engine/src/core/events/KeyEvent.h">
-<area shape="rect" id="node3" href="$Event_8h.html" title="The Event class and dispatcher core implementations. " alt="" coords="161,95,299,121"/>
-<area shape="rect" id="node8" href="$Core_8h.html" title="Core macros to be used all throughout the engine for development and production purposes. " alt="" coords="426,169,517,196"/>
+<area shape="rect" id="node1" title="Events that specifically deal with key input." alt="" coords="92,5,261,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="71,95,146,121"/>
+<area shape="rect" id="node3" href="$Event_8h.html" title="The Event class and dispatcher core implementations." alt="" coords="171,95,321,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,169,92,196"/>
+<area shape="rect" id="node5" title=" " alt="" coords="116,169,192,196"/>
+<area shape="rect" id="node6" title=" " alt="" coords="217,169,275,196"/>
+<area shape="rect" id="node7" title=" " alt="" coords="299,169,433,196"/>
+<area shape="rect" id="node8" href="$Core_8h.html" title="Core macros to be used all throughout the engine for development and production purposes." alt="" coords="457,169,553,196"/>
 </map>

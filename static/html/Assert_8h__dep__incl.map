@@ -1,13 +1,12 @@
-<map id="engine/src/core/Assert.h" name="engine/src/core/Assert.h">
-<area shape="rect" id="node2" href="$Buffer_8h.html" title="Buffer abstractions that allow the ease of implementing Buffers for any graphics API. " alt="" coords="276,80,438,121"/>
-<area shape="rect" id="node3" href="$Application_8h.html" title="Contains the Application class definitions. " alt="" coords="70,266,260,293"/>
-<area shape="rect" id="node5" href="$Engine_8h.html" title="The entrypoint into the game engine source code. " alt="" coords="204,437,342,464"/>
-<area shape="rect" id="node6" href="$VertexArray_8h.html" title="The Generic VertexArray API. " alt="" coords="276,169,438,211"/>
-<area shape="rect" id="node11" href="$OpenGLVertexArray_8h_source.html" title="engine/src/platform\l/opengl/OpenGLVertexArray.h" alt="" coords="574,259,770,300"/>
-<area shape="rect" id="node12" href="$OpenGLBuffer_8h_source.html" title="engine/src/platform\l/opengl/OpenGLBuffer.h" alt="" coords="513,169,676,211"/>
-<area shape="rect" id="node4" href="$Entrypoint_8h.html" title="The entrypoint into the engine. " alt="" coords="24,355,210,382"/>
-<area shape="rect" id="node7" href="$RendererAPI_8h_source.html" title="engine/src/core/renderer\l/RendererAPI.h" alt="" coords="336,259,498,300"/>
-<area shape="rect" id="node10" href="$OpenGLRendererAPI_8h.html" title="The OpenGL rendering implementation. " alt="" coords="709,348,912,389"/>
-<area shape="rect" id="node8" href="$RenderCommand_8h.html" title="The declaration file for the RenderCommand Wrapper. " alt="" coords="522,348,685,389"/>
-<area shape="rect" id="node9" href="$Renderer_8h.html" title="The rendering API. " alt="" coords="336,348,498,389"/>
+<map id="engine/src/core/util/Assert.h" name="engine/src/core/util/Assert.h">
+<area shape="rect" id="node1" title="This is a utility file that is primarily used for debugging the internals of the engine when incorrec..." alt="" coords="983,5,1130,47"/>
+<area shape="rect" id="node2" href="$Buffer_8h.html" title="Buffer abstractions that allow the ease of implementing Buffers for any graphics API." alt="" coords="840,95,1020,136"/>
+<area shape="rect" id="node6" href="$Engine_8h.html" title="The entrypoint into the game engine source code." alt="" coords="594,452,743,479"/>
+<area shape="rect" id="node3" href="$VertexArray_8h.html" title="The Generic VertexArray API." alt="" coords="555,184,735,225"/>
+<area shape="rect" id="node9" href="$OpenGLVertexArray_8h_source.html" title=" " alt="" coords="681,273,893,315"/>
+<area shape="rect" id="node10" href="$OpenGLBuffer_8h_source.html" title=" " alt="" coords="968,184,1145,225"/>
+<area shape="rect" id="node4" href="$RendererAPI_8h_source.html" title=" " alt="" coords="281,273,461,315"/>
+<area shape="rect" id="node8" href="$OpenGLRendererAPI_8h.html" title="The OpenGL rendering implementation." alt="" coords="413,363,631,404"/>
+<area shape="rect" id="node5" href="$RenderCommand_8h.html" title="The declaration file for the RenderCommand Wrapper." alt="" coords="5,363,185,404"/>
+<area shape="rect" id="node7" href="$Renderer_8h.html" title="The rendering API." alt="" coords="209,363,389,404"/>
 </map>

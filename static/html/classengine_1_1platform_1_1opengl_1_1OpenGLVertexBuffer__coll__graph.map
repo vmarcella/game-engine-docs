@@ -1,3 +1,4 @@
 <map id="engine::platform::opengl::OpenGLVertexBuffer" name="engine::platform::opengl::OpenGLVertexBuffer">
-<area shape="rect" id="node2" href="$classengine_1_1renderer_1_1VertexBuffer.html" title="The base VertexBuffer class to be used for creating vertex buffers. " alt="" coords="5,5,167,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,95,188,136"/>
+<area shape="rect" id="node2" href="$classengine_1_1renderer_1_1VertexBuffer.html" title="The base VertexBuffer class to be used for creating vertex buffers." alt="" coords="7,5,187,47"/>
 </map>

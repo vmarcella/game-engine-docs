@@ -1,0 +1,60 @@
+\hypertarget{Time_8h}{}\doxysection{engine/src/core/util/\+Time.h File Reference}
+\label{Time_8h}\index{engine/src/core/util/Time.h@{engine/src/core/util/Time.h}}
+
+
+Timing.  
+
+
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include $<$concepts$>$}\newline
+{\ttfamily \#include $<$ratio$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+Include dependency graph for Time.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{Time_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Time_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classengine_1_1util_1_1Time}{engine\+::util\+::\+Time}}
+\begin{DoxyCompactList}\small\item\em A wrapper for working with \mbox{\hyperlink{classengine_1_1util_1_1Time}{Time}} within the game engine. Uses std\+::steady\+\_\+clock for a platform independent Monotonic clock. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classengine_1_1util_1_1TimeStep}{engine\+::util\+::\+Time\+Step}}
+\begin{DoxyCompactList}\small\item\em The timestep between two time intervals. Primarily used for layers to consistently update the engine. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{Time_8h_a20210f89946708fe564a64eb1cb6ca7f}\label{Time_8h_a20210f89946708fe564a64eb1cb6ca7f}} 
+using {\bfseries engine\+::util\+::\+Clock} = std\+::chrono\+::steady\+\_\+clock
+\item 
+\mbox{\Hypertarget{Time_8h_aaa499cfb3b96d351c3ec8172c6f70ffb}\label{Time_8h_aaa499cfb3b96d351c3ec8172c6f70ffb}} 
+using {\bfseries engine\+::util\+::\+Time\+Point} = std\+::chrono\+::time\+\_\+point$<$ Clock $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{Time_8h_a5aa3ad9448f9797199cf6ab40fca3316}\label{Time_8h_a5aa3ad9448f9797199cf6ab40fca3316}} 
+{\footnotesize template$<$Float\+Type T, typename Ratio $>$ }\\const T {\bfseries engine\+::util\+::\+Duration\+To} (Time start, Time stop)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{Time_8h_a8ef991fdc6513af16e871e6b1f9a2ab1}\label{Time_8h_a8ef991fdc6513af16e871e6b1f9a2ab1}} 
+{\footnotesize template$<$class T $>$ }\\concept {\bfseries engine\+::util\+::\+Float\+Type} = std\+::floating\+\_\+point$<$T$>$
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Timing. 
+

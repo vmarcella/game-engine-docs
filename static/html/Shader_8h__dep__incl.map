@@ -1,6 +1,5 @@
 <map id="engine/src/core/renderer/Shader.h" name="engine/src/core/renderer/Shader.h">
-<area shape="rect" id="node1" title="Shader API to be used with the renderer." alt="" coords="133,5,313,47"/>
+<area shape="rect" id="node1" title="Shader API to be used with the renderer." alt="" coords="108,5,288,47"/>
 <area shape="rect" id="node2" href="$Renderer_8h.html" title="The rendering API." alt="" coords="5,95,185,136"/>
-<area shape="rect" id="node3" href="$Engine_8h.html" title="The entrypoint into the game engine source code." alt="" coords="85,184,234,211"/>
-<area shape="rect" id="node4" href="$OpenGLShader_8h_source.html" title=" " alt="" coords="261,95,444,136"/>
+<area shape="rect" id="node3" href="$OpenGLShader_8h_source.html" title=" " alt="" coords="209,95,392,136"/>
 </map>

@@ -1,5 +1,4 @@
 <map id="engine/src/core/renderer/OrthographicCamera.h" name="engine/src/core/renderer/OrthographicCamera.h">
-<area shape="rect" id="node1" title="A 2D orthographic camera implementation that is compatible with the renderer." alt="" coords="69,5,249,47"/>
+<area shape="rect" id="node1" title="A 2D orthographic camera implementation that is compatible with the renderer." alt="" coords="5,5,185,47"/>
 <area shape="rect" id="node2" href="$Renderer_8h.html" title="The rendering API." alt="" coords="5,95,185,136"/>
-<area shape="rect" id="node3" href="$Engine_8h.html" title="The entrypoint into the game engine source code." alt="" coords="85,184,234,211"/>
 </map>

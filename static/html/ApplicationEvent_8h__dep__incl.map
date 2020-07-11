@@ -1,7 +1,7 @@
 <map id="engine/src/core/events/ApplicationEvent.h" name="engine/src/core/events/ApplicationEvent.h">
-<area shape="rect" id="node1" title="Events that are to be specifically handled at the application level." alt="" coords="129,5,299,47"/>
-<area shape="rect" id="node2" href="$Application_8h.html" title="Contains the Application class definitions." alt="" coords="50,184,261,211"/>
-<area shape="rect" id="node5" href="$ImGuiLayer_8h.html" title="The ImGuiLayer implementation for dev tool creation." alt="" coords="193,95,355,136"/>
+<area shape="rect" id="node1" title="Events that are to be specifically handled at the application level." alt="" coords="123,5,292,47"/>
+<area shape="rect" id="node2" href="$Application_8h.html" title="Contains the Application class definitions." alt="" coords="102,184,313,211"/>
+<area shape="rect" id="node5" href="$ImGuiLayer_8h.html" title="The ImGuiLayer implementation for dev tool creation." alt="" coords="186,95,349,136"/>
 <area shape="rect" id="node3" href="$Entrypoint_8h.html" title="The entrypoint into the engine." alt="" coords="5,259,209,285"/>
-<area shape="rect" id="node4" href="$Engine_8h.html" title="The entrypoint into the game engine source code." alt="" coords="173,333,322,360"/>
+<area shape="rect" id="node4" href="$Engine_8h.html" title="The entrypoint into the game engine source code." alt="" coords="234,259,383,285"/>
 </map>

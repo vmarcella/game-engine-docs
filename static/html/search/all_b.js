@@ -12,7 +12,6 @@ var searchData=
   ['openglshader_111',['OpenGLShader',['../classengine_1_1platform_1_1opengl_1_1OpenGLShader.html',1,'engine::platform::opengl::OpenGLShader'],['../classengine_1_1platform_1_1opengl_1_1OpenGLShader.html#ab138429c2224afe9adaa4bb46e005845',1,'engine::platform::opengl::OpenGLShader::OpenGLShader()']]],
   ['openglvertexarray_112',['OpenGLVertexArray',['../classengine_1_1platform_1_1opengl_1_1OpenGLVertexArray.html',1,'engine::platform::opengl']]],
   ['openglvertexbuffer_113',['OpenGLVertexBuffer',['../classengine_1_1platform_1_1opengl_1_1OpenGLVertexBuffer.html',1,'engine::platform::opengl']]],
-  ['operator_3c_3c_114',['operator&lt;&lt;',['../classengine_1_1events_1_1Event.html#aa3b39b29ab7c13070bc033bc88be4152',1,'engine::events::Event']]],
-  ['orthographiccamera_115',['OrthographicCamera',['../classengine_1_1renderer_1_1OrthographicCamera.html',1,'engine::renderer']]],
-  ['orthographiccamera_2eh_116',['OrthographicCamera.h',['../OrthographicCamera_8h.html',1,'']]]
+  ['orthographiccamera_114',['OrthographicCamera',['../classengine_1_1renderer_1_1OrthographicCamera.html',1,'engine::renderer']]],
+  ['orthographiccamera_2eh_115',['OrthographicCamera.h',['../OrthographicCamera_8h.html',1,'']]]
 ];

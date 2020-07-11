@@ -1,7 +1,7 @@
 <map id="engine/src/core/events/MouseEvent.h" name="engine/src/core/events/MouseEvent.h">
-<area shape="rect" id="node1" title="All events related mouse input." alt="" coords="112,5,281,47"/>
-<area shape="rect" id="node2" title=" " alt="" coords="111,95,186,121"/>
-<area shape="rect" id="node3" href="$Event_8h.html" title="The Event class and dispatcher core implementations." alt="" coords="211,95,281,121"/>
+<area shape="rect" id="node1" title="All events related mouse input." alt="" coords="92,5,261,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="71,95,146,121"/>
+<area shape="rect" id="node3" href="$Event_8h.html" title="The Event class and dispatcher core implementations." alt="" coords="171,95,321,121"/>
 <area shape="rect" id="node4" title=" " alt="" coords="5,169,92,196"/>
 <area shape="rect" id="node5" title=" " alt="" coords="116,169,192,196"/>
 <area shape="rect" id="node6" title=" " alt="" coords="217,169,275,196"/>

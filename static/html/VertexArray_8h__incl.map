@@ -3,8 +3,8 @@
 <area shape="rect" id="node2" title=" " alt="" coords="72,319,149,345"/>
 <area shape="rect" id="node3" href="$Buffer_8h.html" title="Buffer abstractions that allow the ease of implementing Buffers for any graphics API." alt="" coords="277,95,442,121"/>
 <area shape="rect" id="node4" title=" " alt="" coords="371,169,508,196"/>
-<area shape="rect" id="node5" title=" " alt="" coords="533,169,592,196"/>
-<area shape="rect" id="node6" title=" " alt="" coords="616,169,692,196"/>
+<area shape="rect" id="node5" title=" " alt="" coords="532,169,608,196"/>
+<area shape="rect" id="node6" title=" " alt="" coords="633,169,692,196"/>
 <area shape="rect" id="node7" title=" " alt="" coords="716,169,779,196"/>
 <area shape="rect" id="node8" href="$Pointers_8h.html" title="Abstraction for handling pointers within the engine. Currently just aliases for unique and shared poi..." alt="" coords="21,244,200,271"/>
 <area shape="rect" id="node9" href="$Assert_8h.html" title="This is a utility file that is primarily used for debugging the internals of the engine when incorrec..." alt="" coords="215,169,347,196"/>

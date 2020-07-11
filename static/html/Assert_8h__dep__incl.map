@@ -4,7 +4,7 @@
 <area shape="rect" id="node3" href="$VertexArray_8h.html" title="The Generic VertexArray API." alt="" coords="415,184,595,225"/>
 <area shape="rect" id="node8" href="$OpenGLVertexArray_8h_source.html" title=" " alt="" coords="535,273,747,315"/>
 <area shape="rect" id="node9" href="$OpenGLBuffer_8h_source.html" title=" " alt="" coords="675,184,852,225"/>
-<area shape="rect" id="node4" href="$RendererAPI_8h_source.html" title=" " alt="" coords="256,273,436,315"/>
+<area shape="rect" id="node4" href="$RendererAPI_8h.html" title="the rendering API that handles all draw calls." alt="" coords="256,273,436,315"/>
 <area shape="rect" id="node7" href="$OpenGLRendererAPI_8h.html" title="The OpenGL rendering implementation." alt="" coords="413,363,631,404"/>
 <area shape="rect" id="node5" href="$RenderCommand_8h.html" title="The declaration file for the RenderCommand Wrapper." alt="" coords="5,363,185,404"/>
 <area shape="rect" id="node6" href="$Renderer_8h.html" title="The rendering API." alt="" coords="209,363,389,404"/>

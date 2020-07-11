@@ -1,0 +1,6 @@
+<map id="engine/src/core/renderer/RendererAPI.h" name="engine/src/core/renderer/RendererAPI.h">
+<area shape="rect" id="node1" title="the rendering API that handles all draw calls." alt="" coords="209,5,389,47"/>
+<area shape="rect" id="node2" href="$RenderCommand_8h.html" title="The declaration file for the RenderCommand Wrapper." alt="" coords="5,95,185,136"/>
+<area shape="rect" id="node3" href="$Renderer_8h.html" title="The rendering API." alt="" coords="209,95,389,136"/>
+<area shape="rect" id="node4" href="$OpenGLRendererAPI_8h.html" title="The OpenGL rendering implementation." alt="" coords="413,95,631,136"/>
+</map>

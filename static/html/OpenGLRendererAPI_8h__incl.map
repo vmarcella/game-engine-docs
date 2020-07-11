@@ -1,13 +1,13 @@
 <map id="engine/src/platform/opengl/OpenGLRendererAPI.h" name="engine/src/platform/opengl/OpenGLRendererAPI.h">
 <area shape="rect" id="node1" title="The OpenGL rendering implementation." alt="" coords="74,5,291,47"/>
-<area shape="rect" id="node2" href="$RendererAPI_8h_source.html" title=" " alt="" coords="11,95,216,121"/>
+<area shape="rect" id="node2" href="$RendererAPI_8h.html" title="the rendering API that handles all draw calls." alt="" coords="11,95,216,121"/>
 <area shape="rect" id="node5" href="$VertexArray_8h.html" title="The Generic VertexArray API." alt="" coords="171,169,373,196"/>
 <area shape="rect" id="node3" title=" " alt="" coords="81,468,159,495"/>
 <area shape="rect" id="node4" title=" " alt="" coords="43,169,147,196"/>
 <area shape="rect" id="node6" href="$Buffer_8h.html" title="Buffer abstractions that allow the ease of implementing Buffers for any graphics API." alt="" coords="349,244,515,271"/>
 <area shape="rect" id="node7" title=" " alt="" coords="443,319,581,345"/>
-<area shape="rect" id="node8" title=" " alt="" coords="605,319,664,345"/>
-<area shape="rect" id="node9" title=" " alt="" coords="689,319,765,345"/>
+<area shape="rect" id="node8" title=" " alt="" coords="605,319,681,345"/>
+<area shape="rect" id="node9" title=" " alt="" coords="705,319,764,345"/>
 <area shape="rect" id="node10" title=" " alt="" coords="789,319,851,345"/>
 <area shape="rect" id="node11" href="$Pointers_8h.html" title="Abstraction for handling pointers within the engine. Currently just aliases for unique and shared poi..." alt="" coords="93,393,272,420"/>
 <area shape="rect" id="node12" href="$Assert_8h.html" title="This is a utility file that is primarily used for debugging the internals of the engine when incorrec..." alt="" coords="287,319,419,345"/>

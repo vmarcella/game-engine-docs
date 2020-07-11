@@ -73,40 +73,42 @@ $(function() {
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef ENGINE_SRC_CORE_RENDERER_RENDERCOMMAND_H_</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define ENGINE_SRC_CORE_RENDERER_RENDERCOMMAND_H_</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;core/renderer/RendererAPI.h&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="RendererAPI_8h.html">core/renderer/RendererAPI.h</a>&quot;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Pointers_8h.html">core/memory/Pointers.h</a>&quot;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>engine {</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span>renderer {</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classengine_1_1renderer_1_1RenderCommand.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="classengine_1_1renderer_1_1RenderCommand.html">RenderCommand</a> {</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classengine_1_1renderer_1_1RenderCommand.html#a75d9aa5aa62fe99c104ab7ca6308a540">   24</a></span>&#160;  <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classengine_1_1renderer_1_1RenderCommand.html#a75d9aa5aa62fe99c104ab7ca6308a540">SetClearColor</a>(<span class="keyword">const</span> glm::vec4&amp; color) {</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    renderer_API_-&gt;SetClearColor(color);</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classengine_1_1renderer_1_1RenderCommand.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="classengine_1_1renderer_1_1RenderCommand.html">RenderCommand</a> {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classengine_1_1renderer_1_1RenderCommand.html#a75d9aa5aa62fe99c104ab7ca6308a540">   16</a></span>&#160;  <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classengine_1_1renderer_1_1RenderCommand.html#a75d9aa5aa62fe99c104ab7ca6308a540">SetClearColor</a>(<span class="keyword">const</span> glm::vec4&amp; color) {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    renderer_API_-&gt;SetClearColor(color);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  }</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classengine_1_1renderer_1_1RenderCommand.html#a256a904ae55dc4d942ca360d79f51319">   20</a></span>&#160;  <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classengine_1_1renderer_1_1RenderCommand.html#a256a904ae55dc4d942ca360d79f51319">Clear</a>() {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    renderer_API_-&gt;Clear();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  }</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classengine_1_1renderer_1_1RenderCommand.html#a59b9421fe3e5a3d7d54e1b9b8426be63">   24</a></span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classengine_1_1renderer_1_1RenderCommand.html#a59b9421fe3e5a3d7d54e1b9b8426be63">DrawIndexed</a>(<span class="keyword">const</span> memory::Shared&lt;VertexArray&gt;&amp; vertex_array) {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    renderer_API_-&gt;DrawIndexed(vertex_array);</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  }</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classengine_1_1renderer_1_1RenderCommand.html#a256a904ae55dc4d942ca360d79f51319">   32</a></span>&#160;  <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classengine_1_1renderer_1_1RenderCommand.html#a256a904ae55dc4d942ca360d79f51319">Clear</a>() {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    renderer_API_-&gt;Clear();</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  }</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classengine_1_1renderer_1_1RenderCommand.html#a59b9421fe3e5a3d7d54e1b9b8426be63">   40</a></span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classengine_1_1renderer_1_1RenderCommand.html#a59b9421fe3e5a3d7d54e1b9b8426be63">DrawIndexed</a>(<span class="keyword">const</span> memory::Shared&lt;VertexArray&gt;&amp; vertex_array) {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    renderer_API_-&gt;DrawIndexed(vertex_array);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  }</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keyword">static</span> memory::Unique&lt;RendererAPI&gt; renderer_API_;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;};</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}  <span class="comment">// namespace renderer</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}  <span class="comment">// namespace engine</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif  // ENGINE_SRC_CORE_RENDERER_RENDERCOMMAND_H_</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">static</span> memory::Unique&lt;RendererAPI&gt; renderer_API_;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}  <span class="comment">// namespace renderer</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}  <span class="comment">// namespace engine</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#endif  // ENGINE_SRC_CORE_RENDERER_RENDERCOMMAND_H_</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassengine_1_1renderer_1_1RenderCommand_html_a75d9aa5aa62fe99c104ab7ca6308a540"><div class="ttname"><a href="classengine_1_1renderer_1_1RenderCommand.html#a75d9aa5aa62fe99c104ab7ca6308a540">engine::renderer::RenderCommand::SetClearColor</a></div><div class="ttdeci">static void SetClearColor(const glm::vec4 &amp;color)</div><div class="ttdoc">Sets the color to be used for clearing the screen.</div><div class="ttdef"><b>Definition:</b> RenderCommand.h:24</div></div>
-<div class="ttc" id="aclassengine_1_1renderer_1_1RenderCommand_html_a59b9421fe3e5a3d7d54e1b9b8426be63"><div class="ttname"><a href="classengine_1_1renderer_1_1RenderCommand.html#a59b9421fe3e5a3d7d54e1b9b8426be63">engine::renderer::RenderCommand::DrawIndexed</a></div><div class="ttdeci">static void DrawIndexed(const memory::Shared&lt; VertexArray &gt; &amp;vertex_array)</div><div class="ttdoc">Issues a platform specific graphics API to draw a vertex array.</div><div class="ttdef"><b>Definition:</b> RenderCommand.h:40</div></div>
+<div class="ttc" id="aclassengine_1_1renderer_1_1RenderCommand_html_a75d9aa5aa62fe99c104ab7ca6308a540"><div class="ttname"><a href="classengine_1_1renderer_1_1RenderCommand.html#a75d9aa5aa62fe99c104ab7ca6308a540">engine::renderer::RenderCommand::SetClearColor</a></div><div class="ttdeci">static void SetClearColor(const glm::vec4 &amp;color)</div><div class="ttdoc">Sets the color to be used for clearing the screen.</div><div class="ttdef"><b>Definition:</b> RenderCommand.h:16</div></div>
+<div class="ttc" id="aclassengine_1_1renderer_1_1RenderCommand_html_a59b9421fe3e5a3d7d54e1b9b8426be63"><div class="ttname"><a href="classengine_1_1renderer_1_1RenderCommand.html#a59b9421fe3e5a3d7d54e1b9b8426be63">engine::renderer::RenderCommand::DrawIndexed</a></div><div class="ttdeci">static void DrawIndexed(const memory::Shared&lt; VertexArray &gt; &amp;vertex_array)</div><div class="ttdoc">Issues a platform specific graphics API to draw a vertex array.</div><div class="ttdef"><b>Definition:</b> RenderCommand.h:24</div></div>
 <div class="ttc" id="aPointers_8h_html"><div class="ttname"><a href="Pointers_8h.html">Pointers.h</a></div><div class="ttdoc">Abstraction for handling pointers within the engine. Currently just aliases for unique and shared poi...</div></div>
-<div class="ttc" id="aclassengine_1_1renderer_1_1RenderCommand_html"><div class="ttname"><a href="classengine_1_1renderer_1_1RenderCommand.html">engine::renderer::RenderCommand</a></div><div class="ttdoc">A static wrapper class to send commands to the Renderer.</div><div class="ttdef"><b>Definition:</b> RenderCommand.h:18</div></div>
-<div class="ttc" id="aclassengine_1_1renderer_1_1RenderCommand_html_a256a904ae55dc4d942ca360d79f51319"><div class="ttname"><a href="classengine_1_1renderer_1_1RenderCommand.html#a256a904ae55dc4d942ca360d79f51319">engine::renderer::RenderCommand::Clear</a></div><div class="ttdeci">static void Clear()</div><div class="ttdoc">Clear the screen.</div><div class="ttdef"><b>Definition:</b> RenderCommand.h:32</div></div>
+<div class="ttc" id="aRendererAPI_8h_html"><div class="ttname"><a href="RendererAPI_8h.html">RendererAPI.h</a></div><div class="ttdoc">the rendering API that handles all draw calls.</div></div>
+<div class="ttc" id="aclassengine_1_1renderer_1_1RenderCommand_html"><div class="ttname"><a href="classengine_1_1renderer_1_1RenderCommand.html">engine::renderer::RenderCommand</a></div><div class="ttdoc">A static wrapper class to send commands to the Renderer.</div><div class="ttdef"><b>Definition:</b> RenderCommand.h:14</div></div>
+<div class="ttc" id="aclassengine_1_1renderer_1_1RenderCommand_html_a256a904ae55dc4d942ca360d79f51319"><div class="ttname"><a href="classengine_1_1renderer_1_1RenderCommand.html#a256a904ae55dc4d942ca360d79f51319">engine::renderer::RenderCommand::Clear</a></div><div class="ttdeci">static void Clear()</div><div class="ttdoc">Clear the screen.</div><div class="ttdef"><b>Definition:</b> RenderCommand.h:20</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

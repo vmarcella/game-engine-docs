@@ -1,14 +1,14 @@
 <map id="engine/src/core/renderer/RenderCommand.h" name="engine/src/core/renderer/RenderCommand.h">
 <area shape="rect" id="node1" title="The declaration file for the RenderCommand Wrapper." alt="" coords="188,5,368,47"/>
-<area shape="rect" id="node2" href="$RendererAPI_8h_source.html" title=" " alt="" coords="106,95,311,121"/>
+<area shape="rect" id="node2" href="$RendererAPI_8h.html" title="the rendering API that handles all draw calls." alt="" coords="106,95,311,121"/>
 <area shape="rect" id="node11" href="$Pointers_8h.html" title="Abstraction for handling pointers within the engine. Currently just aliases for unique and shared poi..." alt="" coords="150,319,329,345"/>
 <area shape="rect" id="node3" title=" " alt="" coords="123,468,201,495"/>
 <area shape="rect" id="node4" title=" " alt="" coords="270,169,374,196"/>
 <area shape="rect" id="node5" href="$VertexArray_8h.html" title="The Generic VertexArray API." alt="" coords="44,169,245,196"/>
 <area shape="rect" id="node6" href="$Buffer_8h.html" title="Buffer abstractions that allow the ease of implementing Buffers for any graphics API." alt="" coords="513,244,678,271"/>
 <area shape="rect" id="node7" title=" " alt="" coords="560,319,697,345"/>
-<area shape="rect" id="node8" title=" " alt="" coords="722,319,781,345"/>
-<area shape="rect" id="node9" title=" " alt="" coords="805,319,881,345"/>
+<area shape="rect" id="node8" title=" " alt="" coords="721,319,797,345"/>
+<area shape="rect" id="node9" title=" " alt="" coords="822,319,881,345"/>
 <area shape="rect" id="node10" title=" " alt="" coords="905,319,968,345"/>
 <area shape="rect" id="node12" href="$Assert_8h.html" title="This is a utility file that is primarily used for debugging the internals of the engine when incorrec..." alt="" coords="404,319,536,345"/>
 <area shape="rect" id="node14" href="$Log_8h.html" title="The engines util utility." alt="" coords="309,393,423,420"/>

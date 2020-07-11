@@ -1,8 +1,8 @@
 <map id="engine/src/core/renderer/Buffer.h" name="engine/src/core/renderer/Buffer.h">
 <area shape="rect" id="node1" title="Buffer abstractions that allow the ease of implementing Buffers for any graphics API." alt="" coords="292,5,472,47"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,95,143,121"/>
-<area shape="rect" id="node3" title=" " alt="" coords="167,95,226,121"/>
-<area shape="rect" id="node4" title=" " alt="" coords="251,95,327,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="167,95,243,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="267,95,326,121"/>
 <area shape="rect" id="node5" title=" " alt="" coords="351,95,413,121"/>
 <area shape="rect" id="node6" href="$Pointers_8h.html" title="Abstraction for handling pointers within the engine. Currently just aliases for unique and shared poi..." alt="" coords="298,169,477,196"/>
 <area shape="rect" id="node8" href="$Assert_8h.html" title="This is a utility file that is primarily used for debugging the internals of the engine when incorrec..." alt="" coords="540,95,672,121"/>

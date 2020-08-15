@@ -1,6 +1,23 @@
 var searchData=
 [
-  ['hasbeenhandled_67',['HasBeenHandled',['../classengine_1_1events_1_1Event.html#a8d8413f3ea8c3d00b3f43a757a92f623',1,'engine::events::Event']]],
-  ['haselements_68',['HasElements',['../classengine_1_1renderer_1_1BufferLayout.html#ae7abc90b970e0b028a9924fcb5bcf786',1,'engine::renderer::BufferLayout']]],
-  ['hasverticalsync_69',['HasVerticalSync',['../classengine_1_1Window.html#a3c1d2e008a8b83a83be692ca864beec1',1,'engine::Window']]]
+  ['getapi_40',['GetAPI',['../classlambda_1_1core_1_1renderer_1_1RendererAPI.html#a2473c88e916fd045dda80c53a5a7dee8',1,'lambda::core::renderer::RendererAPI']]],
+  ['getapplication_41',['GetApplication',['../classlambda_1_1core_1_1Application.html#af5bcfded12b42e321fd913edaf839932',1,'lambda::core::Application']]],
+  ['getcount_42',['GetCount',['../classlambda_1_1core_1_1renderer_1_1IndexBuffer.html#a4ba24a9674f027777802d401617315cd',1,'lambda::core::renderer::IndexBuffer::GetCount()'],['../classlambda_1_1platform_1_1opengl_1_1OpenGLIndexBuffer.html#a8af6f87fba8eee11c77f67d9ae04c42d',1,'lambda::platform::opengl::OpenGLIndexBuffer::GetCount()']]],
+  ['getelements_43',['GetElements',['../classlambda_1_1core_1_1renderer_1_1BufferLayout.html#a8beebcd05084371223585a9d07ecffe4',1,'lambda::core::renderer::BufferLayout']]],
+  ['getheight_44',['GetHeight',['../classlambda_1_1core_1_1events_1_1WindowResizeEvent.html#a7d9ddd555dbeda584be92a3730213be7',1,'lambda::core::events::WindowResizeEvent::GetHeight()'],['../classlambda_1_1core_1_1Window.html#a56d099943cae3158aed636d464414156',1,'lambda::core::Window::GetHeight()']]],
+  ['getindexbuffer_45',['GetIndexBuffer',['../classlambda_1_1platform_1_1opengl_1_1OpenGLVertexArray.html#a98552072e21ca639407ee43c80c69ddb',1,'lambda::platform::opengl::OpenGLVertexArray']]],
+  ['getlayout_46',['GetLayout',['../classlambda_1_1core_1_1renderer_1_1VertexBuffer.html#a0473c3631c8d64b005725e886185e8d2',1,'lambda::core::renderer::VertexBuffer::GetLayout()'],['../classlambda_1_1platform_1_1opengl_1_1OpenGLVertexBuffer.html#a00319eaf11e10764a675d60d7e7280bf',1,'lambda::platform::opengl::OpenGLVertexBuffer::GetLayout()']]],
+  ['getmouseposition_47',['GetMousePosition',['../classlambda_1_1core_1_1input_1_1Input.html#ae029fff05cf0c62eebfb2fbb8586631d',1,'lambda::core::input::Input']]],
+  ['getmousex_48',['GetMouseX',['../classlambda_1_1core_1_1input_1_1Input.html#ad2d90f599eda92f2560940fa8218e72b',1,'lambda::core::input::Input']]],
+  ['getmousey_49',['GetMouseY',['../classlambda_1_1core_1_1input_1_1Input.html#a3e0f111604462ee5e64cc382cec9187d',1,'lambda::core::input::Input']]],
+  ['getname_50',['GetName',['../classlambda_1_1core_1_1io_1_1AsyncTask.html#af4ab7986341028c7baf593675ad9f353',1,'lambda::core::io::AsyncTask::GetName()'],['../classlambda_1_1core_1_1layers_1_1Layer.html#a06837f9efeae19a3c8ab4e0fc237185e',1,'lambda::core::layers::Layer::GetName()']]],
+  ['getnativewindow_51',['GetNativeWindow',['../classlambda_1_1core_1_1Window.html#a6c25e56cafd3cb8b8e517fb7205b5016',1,'lambda::core::Window']]],
+  ['getposition_52',['GetPosition',['../classlambda_1_1core_1_1renderer_1_1OrthographicCamera.html#aeacff067d97f4059d85d2dc90ba83015',1,'lambda::core::renderer::OrthographicCamera']]],
+  ['getstatus_53',['GetStatus',['../classlambda_1_1core_1_1io_1_1AsyncTask.html#a94d57f9f33f5e2af5c65ffe5362cff49',1,'lambda::core::io::AsyncTask']]],
+  ['getstride_54',['GetStride',['../classlambda_1_1core_1_1renderer_1_1BufferLayout.html#a3319387032adbcca35f3f49e8d071190',1,'lambda::core::renderer::BufferLayout']]],
+  ['getvertexbuffers_55',['GetVertexBuffers',['../classlambda_1_1platform_1_1opengl_1_1OpenGLVertexArray.html#a81e94f1ada6cf6f312602fcf586eb64f',1,'lambda::platform::opengl::OpenGLVertexArray']]],
+  ['getwidth_56',['GetWidth',['../classlambda_1_1core_1_1events_1_1WindowResizeEvent.html#a8990a75663a3916963ac35c442fd6399',1,'lambda::core::events::WindowResizeEvent::GetWidth()'],['../classlambda_1_1core_1_1Window.html#a2932cd1d52b93453b3127cad51cdc704',1,'lambda::core::Window::GetWidth()']]],
+  ['getwindow_57',['GetWindow',['../classlambda_1_1core_1_1Application.html#a0e0222a6aa42041f914c9c310697fca4',1,'lambda::core::Application']]],
+  ['graphicscontext_58',['GraphicsContext',['../classlambda_1_1core_1_1renderer_1_1GraphicsContext.html',1,'lambda::core::renderer::GraphicsContext'],['../classGraphicsContext.html',1,'GraphicsContext']]],
+  ['graphicscontext_2eh_59',['GraphicsContext.h',['../GraphicsContext_8h.html',1,'']]]
 ];

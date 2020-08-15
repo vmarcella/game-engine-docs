@@ -1,5 +1,8 @@
-<map id="engine/src/core/renderer/Shader.h" name="engine/src/core/renderer/Shader.h">
-<area shape="rect" id="node1" title="Shader API to be used with the renderer." alt="" coords="5,5,185,47"/>
-<area shape="rect" id="node2" title=" " alt="" coords="14,95,73,121"/>
-<area shape="rect" id="node3" title=" " alt="" coords="97,95,201,121"/>
+<map id="lambda/src/core/renderer/Shader.h" name="lambda/src/core/renderer/Shader.h">
+<area shape="rect" id="node1" title="Shader API to be used with the renderer." alt="" coords="127,5,313,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,95,64,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="89,95,213,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="237,95,341,121"/>
+<area shape="rect" id="node5" href="$Pointers_8h.html" title="Abstraction for handling pointers within the engine. Currently just aliases for unique and shared poi..." alt="" coords="365,95,544,121"/>
+<area shape="rect" id="node6" title=" " alt="" coords="416,169,493,196"/>
 </map>

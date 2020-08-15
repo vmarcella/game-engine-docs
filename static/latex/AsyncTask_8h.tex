@@ -1,0 +1,75 @@
+\hypertarget{AsyncTask_8h}{}\doxysection{lambda/src/core/io/\+Async\+Task.h File Reference}
+\label{AsyncTask_8h}\index{lambda/src/core/io/AsyncTask.h@{lambda/src/core/io/AsyncTask.h}}
+
+
+A convenient wrapper for callback functions being dispatched into the event loop.  
+
+
+{\ttfamily \#include $<$bits/stdint-\/uintn.\+h$>$}\newline
+{\ttfamily \#include $<$functional$>$}\newline
+{\ttfamily \#include \char`\"{}core/memory/\+Pointers.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}core/util/\+Time.\+h\char`\"{}}\newline
+Include dependency graph for Async\+Task.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{AsyncTask_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{AsyncTask_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classlambda_1_1core_1_1io_1_1AsyncTask}{lambda\+::core\+::io\+::\+Async\+Task}}
+\begin{DoxyCompactList}\small\item\em A wrapper for callbacks that are supposed to be executed asynchronously. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{AsyncTask_8h_a1ba81e859e8ee4d5bc6d9c3e31104e4d}\label{AsyncTask_8h_a1ba81e859e8ee4d5bc6d9c3e31104e4d}} 
+typedef std\+::function$<$ bool()$>$ {\bfseries lambda\+::core\+::io\+::\+Async\+Callback}
+\item 
+\mbox{\Hypertarget{AsyncTask_8h_a3aed4cdab6f3fc0cb11506e0ba6efe0e}\label{AsyncTask_8h_a3aed4cdab6f3fc0cb11506e0ba6efe0e}} 
+typedef memory\+::\+Unique$<$ Async\+Task $>$ {\bfseries lambda\+::core\+::io\+::\+Unique\+Async\+Task}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{AsyncTask_8h_a2d90cf950b7684121524861768bb22e9}{lambda\+::core\+::io\+::\+Async\+Status}} \{ {\bfseries None} = 0, 
+{\bfseries Deferred}, 
+{\bfseries Ready}, 
+{\bfseries Expired}
+ \}
+\begin{DoxyCompactList}\small\item\em The execution status of the async function. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{AsyncTask_8h_a4c52fba07895ac0bdb6d3bbcc2a31018}\label{AsyncTask_8h_a4c52fba07895ac0bdb6d3bbcc2a31018}} 
+enum \mbox{\hyperlink{AsyncTask_8h_a4c52fba07895ac0bdb6d3bbcc2a31018}{lambda\+::core\+::io\+::\+Async\+Result}} \{ {\bfseries None} = 0, 
+{\bfseries Failure}, 
+{\bfseries Success}
+ \}
+\begin{DoxyCompactList}\small\item\em The result of calling the async function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A convenient wrapper for callback functions being dispatched into the event loop. 
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{AsyncTask_8h_a2d90cf950b7684121524861768bb22e9}\label{AsyncTask_8h_a2d90cf950b7684121524861768bb22e9}} 
+\index{AsyncTask.h@{AsyncTask.h}!AsyncStatus@{AsyncStatus}}
+\index{AsyncStatus@{AsyncStatus}!AsyncTask.h@{AsyncTask.h}}
+\doxysubsubsection{\texorpdfstring{AsyncStatus}{AsyncStatus}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{AsyncTask_8h_a2d90cf950b7684121524861768bb22e9}{lambda\+::core\+::io\+::\+Async\+Status}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+The execution status of the async function. 
+
+Must be ready in order to execute. 

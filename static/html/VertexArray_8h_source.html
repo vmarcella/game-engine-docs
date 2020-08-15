@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>game-engine: engine/src/core/renderer/VertexArray.h Source File</title>
+<title>lambda: lambda/src/core/renderer/VertexArray.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">game-engine
+   <div id="projectname">lambda
    </div>
   </td>
  </tr>
@@ -61,7 +61,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_996f45160da62e1a3d7f6046fad68f51.html">engine</a></li><li class="navelem"><a class="el" href="dir_3d9126aa00c041bc0b8f859d1965a0f4.html">src</a></li><li class="navelem"><a class="el" href="dir_5e835386694ce392648cfcf102577fe3.html">core</a></li><li class="navelem"><a class="el" href="dir_ce4abf2d955932dc9caa6b4c1952fc3a.html">renderer</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_4b73342a493c3ec8f518edda193e909f.html">lambda</a></li><li class="navelem"><a class="el" href="dir_896901b14b6321ed9cf375daac6fb468.html">src</a></li><li class="navelem"><a class="el" href="dir_120072a10eb7d4fbc043fc091b8cce0e.html">core</a></li><li class="navelem"><a class="el" href="dir_7450cf7b83d623f255804473698129f8.html">renderer</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -70,51 +70,55 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <a href="VertexArray_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef ENGINE_SRC_CORE_RENDERER_VERTEXARRAY_H_</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define ENGINE_SRC_CORE_RENDERER_VERTEXARRAY_H_</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef LAMBDA_SRC_CORE_RENDERER_VERTEXARRAY_H_</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define LAMBDA_SRC_CORE_RENDERER_VERTEXARRAY_H_</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Buffer_8h.html">core/renderer/Buffer.h</a>&quot;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span>engine {</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span>renderer {</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classengine_1_1renderer_1_1VertexArray.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="classengine_1_1renderer_1_1VertexArray.html">VertexArray</a> {</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classengine_1_1renderer_1_1VertexArray.html">VertexArray</a>() {}</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classengine_1_1renderer_1_1VertexArray.html#ab60053c2018237aa12b76d2ebe1077ef">   22</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classengine_1_1renderer_1_1VertexArray.html#ab60053c2018237aa12b76d2ebe1077ef">Bind</a>() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classengine_1_1renderer_1_1VertexArray.html#aec996c39722893593ad02f72a1f8eab0">   23</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classengine_1_1renderer_1_1VertexArray.html#aec996c39722893593ad02f72a1f8eab0">Unbind</a>() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classengine_1_1renderer_1_1VertexArray.html#a13355d9a1eb63677fe19b911ac5a5fe0">   25</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classengine_1_1renderer_1_1VertexArray.html#a13355d9a1eb63677fe19b911ac5a5fe0">AddVertexBuffer</a>(</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      <span class="keyword">const</span> std::shared_ptr&lt;VertexBuffer&gt;&amp; vertex_buffer) = 0;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classengine_1_1renderer_1_1VertexArray.html#a0eb0b7ee1d2c1946283c71f8d2ff72f2">   28</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classengine_1_1renderer_1_1VertexArray.html#a0eb0b7ee1d2c1946283c71f8d2ff72f2">SetIndexBuffer</a>(</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;      <span class="keyword">const</span> std::shared_ptr&lt;IndexBuffer&gt;&amp; index_buffer) = 0;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keyword">virtual</span> <span class="keyword">const</span> std::shared_ptr&lt;IndexBuffer&gt;&amp;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      GetIndexBuffer() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keyword">virtual</span> <span class="keyword">const</span> std::vector&lt;std::shared_ptr&lt;VertexBuffer&gt;&gt;&amp;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      GetVertexBuffers() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keyword">static</span> <a class="code" href="classengine_1_1renderer_1_1VertexArray.html">VertexArray</a>* <a class="code" href="classengine_1_1renderer_1_1VertexArray.html#a2d704ca4eedd99430dc6ec6ae59d7559">Create</a>();</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}  <span class="comment">// namespace renderer</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}  <span class="comment">// namespace lambda</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif  // ENGINE_SRC_CORE_RENDERER_VERTEXARRAY_H_</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Pointers_8h.html">core/memory/Pointers.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Buffer_8h.html">core/renderer/Buffer.h</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span>lambda {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span>core {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span>renderer {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1renderer_1_1VertexArray.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="classlambda_1_1core_1_1renderer_1_1VertexArray.html">VertexArray</a> {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classlambda_1_1core_1_1renderer_1_1VertexArray.html">VertexArray</a>() {}</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1renderer_1_1VertexArray.html#ab60053c2018237aa12b76d2ebe1077ef">   24</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlambda_1_1core_1_1renderer_1_1VertexArray.html#ab60053c2018237aa12b76d2ebe1077ef">Bind</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1renderer_1_1VertexArray.html#aec996c39722893593ad02f72a1f8eab0">   25</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlambda_1_1core_1_1renderer_1_1VertexArray.html#aec996c39722893593ad02f72a1f8eab0">Unbind</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1renderer_1_1VertexArray.html#a3c83bd0133f89a669e5c9396d8408f18">   27</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlambda_1_1core_1_1renderer_1_1VertexArray.html#a3c83bd0133f89a669e5c9396d8408f18">AddVertexBuffer</a>(</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;      <span class="keyword">const</span> memory::Shared&lt;VertexBuffer&gt;&amp; vertex_buffer) = 0;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1renderer_1_1VertexArray.html#a817b18bb9f99b87987bfafdddc26e0e0">   30</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlambda_1_1core_1_1renderer_1_1VertexArray.html#a817b18bb9f99b87987bfafdddc26e0e0">SetIndexBuffer</a>(</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      <span class="keyword">const</span> memory::Shared&lt;IndexBuffer&gt;&amp; index_buffer) = 0;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keyword">virtual</span> <span class="keyword">const</span> memory::Shared&lt;IndexBuffer&gt;&amp;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      GetIndexBuffer() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keyword">virtual</span> <span class="keyword">const</span> std::vector&lt;memory::Shared&lt;VertexBuffer&gt;&gt;&amp;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      GetVertexBuffers() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keyword">static</span> memory::Shared&lt;VertexArray&gt; <a class="code" href="classlambda_1_1core_1_1renderer_1_1VertexArray.html#a2d704ca4eedd99430dc6ec6ae59d7559">Create</a>();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}  <span class="comment">// namespace renderer</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}  <span class="comment">// namespace core</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}  <span class="comment">// namespace lambda</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#endif  // LAMBDA_SRC_CORE_RENDERER_VERTEXARRAY_H_</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassengine_1_1renderer_1_1VertexArray_html"><div class="ttname"><a href="classengine_1_1renderer_1_1VertexArray.html">engine::renderer::VertexArray</a></div><div class="ttdoc">The abstraction for representing Vertex arrays and their sub components.</div><div class="ttdef"><b>Definition:</b> VertexArray.h:18</div></div>
-<div class="ttc" id="aclassengine_1_1renderer_1_1VertexArray_html_ab60053c2018237aa12b76d2ebe1077ef"><div class="ttname"><a href="classengine_1_1renderer_1_1VertexArray.html#ab60053c2018237aa12b76d2ebe1077ef">engine::renderer::VertexArray::Bind</a></div><div class="ttdeci">virtual void Bind() const =0</div><div class="ttdoc">Bind the Vertex array and it's components to the rendering API and GPU.</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1VertexArray_html_a817b18bb9f99b87987bfafdddc26e0e0"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1VertexArray.html#a817b18bb9f99b87987bfafdddc26e0e0">lambda::core::renderer::VertexArray::SetIndexBuffer</a></div><div class="ttdeci">virtual void SetIndexBuffer(const memory::Shared&lt; IndexBuffer &gt; &amp;index_buffer)=0</div><div class="ttdoc">Set the index buffer of the vertex array.</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1VertexArray_html_ab60053c2018237aa12b76d2ebe1077ef"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1VertexArray.html#ab60053c2018237aa12b76d2ebe1077ef">lambda::core::renderer::VertexArray::Bind</a></div><div class="ttdeci">virtual void Bind() const =0</div><div class="ttdoc">Bind the Vertex array and it's components to the rendering API and GPU.</div></div>
+<div class="ttc" id="aPointers_8h_html"><div class="ttname"><a href="Pointers_8h.html">Pointers.h</a></div><div class="ttdoc">Abstraction for handling pointers within the engine. Currently just aliases for unique and shared poi...</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1VertexArray_html"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1VertexArray.html">lambda::core::renderer::VertexArray</a></div><div class="ttdef"><b>Definition:</b> VertexArray.h:20</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1VertexArray_html_aec996c39722893593ad02f72a1f8eab0"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1VertexArray.html#aec996c39722893593ad02f72a1f8eab0">lambda::core::renderer::VertexArray::Unbind</a></div><div class="ttdeci">virtual void Unbind() const =0</div><div class="ttdoc">Unbind the vertex array and it's components from the rendering API and memory.</div></div>
 <div class="ttc" id="aBuffer_8h_html"><div class="ttname"><a href="Buffer_8h.html">Buffer.h</a></div><div class="ttdoc">Buffer abstractions that allow the ease of implementing Buffers for any graphics API.</div></div>
-<div class="ttc" id="aclassengine_1_1renderer_1_1VertexArray_html_a2d704ca4eedd99430dc6ec6ae59d7559"><div class="ttname"><a href="classengine_1_1renderer_1_1VertexArray.html#a2d704ca4eedd99430dc6ec6ae59d7559">engine::renderer::VertexArray::Create</a></div><div class="ttdeci">static VertexArray * Create()</div><div class="ttdoc">Creates a vertex array through the platform specific API that is being used at runtime.</div><div class="ttdef"><b>Definition:</b> VertexArray.cpp:14</div></div>
-<div class="ttc" id="aclassengine_1_1renderer_1_1VertexArray_html_a0eb0b7ee1d2c1946283c71f8d2ff72f2"><div class="ttname"><a href="classengine_1_1renderer_1_1VertexArray.html#a0eb0b7ee1d2c1946283c71f8d2ff72f2">engine::renderer::VertexArray::SetIndexBuffer</a></div><div class="ttdeci">virtual void SetIndexBuffer(const std::shared_ptr&lt; IndexBuffer &gt; &amp;index_buffer)=0</div><div class="ttdoc">Set the index buffer of the vertex array.</div></div>
-<div class="ttc" id="aclassengine_1_1renderer_1_1VertexArray_html_a13355d9a1eb63677fe19b911ac5a5fe0"><div class="ttname"><a href="classengine_1_1renderer_1_1VertexArray.html#a13355d9a1eb63677fe19b911ac5a5fe0">engine::renderer::VertexArray::AddVertexBuffer</a></div><div class="ttdeci">virtual void AddVertexBuffer(const std::shared_ptr&lt; VertexBuffer &gt; &amp;vertex_buffer)=0</div><div class="ttdoc">Add a vertex buffer to the vertex array.</div></div>
-<div class="ttc" id="aclassengine_1_1renderer_1_1VertexArray_html_aec996c39722893593ad02f72a1f8eab0"><div class="ttname"><a href="classengine_1_1renderer_1_1VertexArray.html#aec996c39722893593ad02f72a1f8eab0">engine::renderer::VertexArray::Unbind</a></div><div class="ttdeci">virtual void Unbind() const =0</div><div class="ttdoc">Unbind the vertex array and it's components from the rendering API and memory.</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1VertexArray_html_a2d704ca4eedd99430dc6ec6ae59d7559"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1VertexArray.html#a2d704ca4eedd99430dc6ec6ae59d7559">lambda::core::renderer::VertexArray::Create</a></div><div class="ttdeci">static memory::Shared&lt; VertexArray &gt; Create()</div><div class="ttdoc">Creates a vertex array through the platform specific API that is being used at runtime.</div><div class="ttdef"><b>Definition:</b> VertexArray.cpp:16</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1VertexArray_html_a3c83bd0133f89a669e5c9396d8408f18"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1VertexArray.html#a3c83bd0133f89a669e5c9396d8408f18">lambda::core::renderer::VertexArray::AddVertexBuffer</a></div><div class="ttdeci">virtual void AddVertexBuffer(const memory::Shared&lt; VertexBuffer &gt; &amp;vertex_buffer)=0</div><div class="ttdoc">Add a vertex buffer to the vertex array.</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

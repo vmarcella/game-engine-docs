@@ -1,0 +1,5 @@
+<map id="lambda::core::events::MouseButtonReleasedEvent" name="lambda::core::events::MouseButtonReleasedEvent">
+<area shape="rect" id="node1" title="An event generated whenever a Mouse button is released within an application that is running lambda." alt="" coords="5,184,219,225"/>
+<area shape="rect" id="node2" href="$classlambda_1_1core_1_1events_1_1MouseButtonEvent.html" title="The base event class for all events mouse button related." alt="" coords="33,95,191,136"/>
+<area shape="rect" id="node3" href="$classlambda_1_1core_1_1events_1_1Event.html" title="The base Event class for events that are propagated throughout lambda." alt="" coords="33,5,191,47"/>
+</map>

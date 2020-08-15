@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>game-engine: engine/src/core/imgui/ImGuiLayer.h Source File</title>
+<title>lambda: lambda/src/core/imgui/ImGuiLayer.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">game-engine
+   <div id="projectname">lambda
    </div>
   </td>
  </tr>
@@ -61,7 +61,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_996f45160da62e1a3d7f6046fad68f51.html">engine</a></li><li class="navelem"><a class="el" href="dir_3d9126aa00c041bc0b8f859d1965a0f4.html">src</a></li><li class="navelem"><a class="el" href="dir_5e835386694ce392648cfcf102577fe3.html">core</a></li><li class="navelem"><a class="el" href="dir_1438e66ad7b21001bf0d9145976eef62.html">imgui</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_4b73342a493c3ec8f518edda193e909f.html">lambda</a></li><li class="navelem"><a class="el" href="dir_896901b14b6321ed9cf375daac6fb468.html">src</a></li><li class="navelem"><a class="el" href="dir_120072a10eb7d4fbc043fc091b8cce0e.html">core</a></li><li class="navelem"><a class="el" href="dir_7cb9266797d39063047d0f9ccbe852fc.html">imgui</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -69,56 +69,56 @@ $(function() {
 <div class="title">ImGuiLayer.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="ImGuiLayer_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef ENGINE_SRC_CORE_IMGUI_IMGUILAYER_H_</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define ENGINE_SRC_CORE_IMGUI_IMGUILAYER_H_</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Core_8h.html">core/Core.h</a>&quot;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Layer_8h.html">core/Layer.h</a>&quot;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ApplicationEvent_8h.html">core/events/ApplicationEvent.h</a>&quot;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Event_8h.html">core/events/Event.h</a>&quot;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="KeyEvent_8h.html">core/events/KeyEvent.h</a>&quot;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="MouseEvent_8h.html">core/events/MouseEvent.h</a>&quot;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">namespace </span>engine {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span>imgui {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classengine_1_1imgui_1_1ImGuiLayer.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="classengine_1_1imgui_1_1ImGuiLayer.html">ImGuiLayer</a> : <span class="keyword">public</span> <a class="code" href="classengine_1_1Layer.html">Layer</a> {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <a class="code" href="classengine_1_1imgui_1_1ImGuiLayer.html">ImGuiLayer</a>();</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  ~<a class="code" href="classengine_1_1imgui_1_1ImGuiLayer.html">ImGuiLayer</a>();</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classengine_1_1imgui_1_1ImGuiLayer.html#a8580bd31942d4bc33f268053d2adec31">OnAttach</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classengine_1_1imgui_1_1ImGuiLayer.html#ad443a984abe93f4101fdbadcea01bf9b">OnDetach</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classengine_1_1imgui_1_1ImGuiLayer.html#aeacc4aecfc119192fbe98e961b88813e">OnImGuiRender</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classengine_1_1imgui_1_1ImGuiLayer.html#aaecbd780bfe93ea0b85c9b31c3a931de">Begin</a>();</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classengine_1_1imgui_1_1ImGuiLayer.html#aca4c57dc3361ed5c4c75a9c43b8dc1e6">End</a>();</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordtype">float</span> time_ = 0.0f;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> show_demo_window_;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}  <span class="comment">// namespace imgui</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}  <span class="comment">// namespace lambda</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif  // ENGINE_SRC_CORE_IMGUI_IMGUILAYER_H_</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<a href="ImGuiLayer_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef LAMBDA_SRC_CORE_IMGUI_IMGUILAYER_H_</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define LAMBDA_SRC_CORE_IMGUI_IMGUILAYER_H_</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Core_8h.html">core/Core.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ApplicationEvent_8h.html">core/events/ApplicationEvent.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Event_8h.html">core/events/Event.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="KeyEvent_8h.html">core/events/KeyEvent.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="MouseEvent_8h.html">core/events/MouseEvent.h</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Layer_8h.html">core/layers/Layer.h</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span>lambda {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span>core {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">namespace </span>imgui {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1imgui_1_1ImGuiLayer.html">   23</a></span>&#160;<span class="keyword">class </span><a class="code" href="classlambda_1_1core_1_1imgui_1_1ImGuiLayer.html">ImGuiLayer</a> : <span class="keyword">public</span> <a class="code" href="classlambda_1_1core_1_1layers_1_1Layer.html">layers::Layer</a> {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <a class="code" href="classlambda_1_1core_1_1imgui_1_1ImGuiLayer.html">ImGuiLayer</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  ~<a class="code" href="classlambda_1_1core_1_1imgui_1_1ImGuiLayer.html">ImGuiLayer</a>();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlambda_1_1core_1_1imgui_1_1ImGuiLayer.html#a8958db2cb91ecf18c2e951f2741a3cee">OnAttach</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlambda_1_1core_1_1imgui_1_1ImGuiLayer.html#a512b4e83b3ce6e7f7e9ddd1f88452615">OnDetach</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlambda_1_1core_1_1imgui_1_1ImGuiLayer.html#a5c1b9d7bb70b1519a5d2e45cafc635af">OnImGuiRender</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlambda_1_1core_1_1imgui_1_1ImGuiLayer.html#a3ef0c5606e9ebdf8c94d124accbca872">Begin</a>();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlambda_1_1core_1_1imgui_1_1ImGuiLayer.html#a705f22d88a4fa80b8ed3090824a5bd4f">End</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">float</span> time_ = 0.0f;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> show_demo_window_;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;};</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}  <span class="comment">// namespace imgui</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}  <span class="comment">// namespace core</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}  <span class="comment">// namespace lambda</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif  // LAMBDA_SRC_CORE_IMGUI_IMGUILAYER_H_</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassengine_1_1imgui_1_1ImGuiLayer_html_aeacc4aecfc119192fbe98e961b88813e"><div class="ttname"><a href="classengine_1_1imgui_1_1ImGuiLayer.html#aeacc4aecfc119192fbe98e961b88813e">engine::imgui::ImGuiLayer::OnImGuiRender</a></div><div class="ttdeci">void OnImGuiRender() override</div><div class="ttdoc">Handles an ImGuiRender Call by the engine.</div><div class="ttdef"><b>Definition:</b> ImGuiLayer.cpp:80</div></div>
-<div class="ttc" id="aclassengine_1_1imgui_1_1ImGuiLayer_html_aca4c57dc3361ed5c4c75a9c43b8dc1e6"><div class="ttname"><a href="classengine_1_1imgui_1_1ImGuiLayer.html#aca4c57dc3361ed5c4c75a9c43b8dc1e6">engine::imgui::ImGuiLayer::End</a></div><div class="ttdeci">void End()</div><div class="ttdoc">Closes and cleans up the context for the Imgui layer.</div><div class="ttdef"><b>Definition:</b> ImGuiLayer.cpp:63</div></div>
-<div class="ttc" id="aclassengine_1_1imgui_1_1ImGuiLayer_html_ad443a984abe93f4101fdbadcea01bf9b"><div class="ttname"><a href="classengine_1_1imgui_1_1ImGuiLayer.html#ad443a984abe93f4101fdbadcea01bf9b">engine::imgui::ImGuiLayer::OnDetach</a></div><div class="ttdeci">void OnDetach() override</div><div class="ttdoc">Handles an ImGuiLayers detachment to the engine.</div><div class="ttdef"><b>Definition:</b> ImGuiLayer.cpp:51</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1layers_1_1Layer_html"><div class="ttname"><a href="classlambda_1_1core_1_1layers_1_1Layer.html">lambda::core::layers::Layer</a></div><div class="ttdoc">The lambda Layer abstraction. Primarily used for direct access into lambdas tick and event system.</div><div class="ttdef"><b>Definition:</b> Layer.h:21</div></div>
 <div class="ttc" id="aLayer_8h_html"><div class="ttname"><a href="Layer_8h.html">Layer.h</a></div><div class="ttdoc">The Layer implementation that allows application to specify layers to be attached to the game.</div></div>
 <div class="ttc" id="aKeyEvent_8h_html"><div class="ttname"><a href="KeyEvent_8h.html">KeyEvent.h</a></div><div class="ttdoc">Events that specifically deal with key input.</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1imgui_1_1ImGuiLayer_html_a705f22d88a4fa80b8ed3090824a5bd4f"><div class="ttname"><a href="classlambda_1_1core_1_1imgui_1_1ImGuiLayer.html#a705f22d88a4fa80b8ed3090824a5bd4f">lambda::core::imgui::ImGuiLayer::End</a></div><div class="ttdeci">void End()</div><div class="ttdoc">End an ImGui rendering context.</div><div class="ttdef"><b>Definition:</b> ImGuiLayer.cpp:63</div></div>
 <div class="ttc" id="aEvent_8h_html"><div class="ttname"><a href="Event_8h.html">Event.h</a></div><div class="ttdoc">The Event class and dispatcher core implementations.</div></div>
-<div class="ttc" id="aclassengine_1_1imgui_1_1ImGuiLayer_html_aaecbd780bfe93ea0b85c9b31c3a931de"><div class="ttname"><a href="classengine_1_1imgui_1_1ImGuiLayer.html#aaecbd780bfe93ea0b85c9b31c3a931de">engine::imgui::ImGuiLayer::Begin</a></div><div class="ttdeci">void Begin()</div><div class="ttdoc">Instantiates the context for the Imgui layer.</div><div class="ttdef"><b>Definition:</b> ImGuiLayer.cpp:57</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1imgui_1_1ImGuiLayer_html_a5c1b9d7bb70b1519a5d2e45cafc635af"><div class="ttname"><a href="classlambda_1_1core_1_1imgui_1_1ImGuiLayer.html#a5c1b9d7bb70b1519a5d2e45cafc635af">lambda::core::imgui::ImGuiLayer::OnImGuiRender</a></div><div class="ttdeci">void OnImGuiRender() override</div><div class="ttdoc">What to do when ImGui requests to render.</div><div class="ttdef"><b>Definition:</b> ImGuiLayer.cpp:81</div></div>
 <div class="ttc" id="aMouseEvent_8h_html"><div class="ttname"><a href="MouseEvent_8h.html">MouseEvent.h</a></div><div class="ttdoc">All events related mouse input.</div></div>
-<div class="ttc" id="aclassengine_1_1Layer_html"><div class="ttname"><a href="classengine_1_1Layer.html">engine::Layer</a></div><div class="ttdoc">An abstract data structure that represents a &quot;layer&quot; within the engine.</div><div class="ttdef"><b>Definition:</b> Layer.h:15</div></div>
-<div class="ttc" id="aclassengine_1_1imgui_1_1ImGuiLayer_html"><div class="ttname"><a href="classengine_1_1imgui_1_1ImGuiLayer.html">engine::imgui::ImGuiLayer</a></div><div class="ttdoc">An abstract Imgui layer implementation.</div><div class="ttdef"><b>Definition:</b> ImGuiLayer.h:22</div></div>
-<div class="ttc" id="aclassengine_1_1imgui_1_1ImGuiLayer_html_a8580bd31942d4bc33f268053d2adec31"><div class="ttname"><a href="classengine_1_1imgui_1_1ImGuiLayer.html#a8580bd31942d4bc33f268053d2adec31">engine::imgui::ImGuiLayer::OnAttach</a></div><div class="ttdeci">void OnAttach() override</div><div class="ttdoc">Handles an ImGuiLayers attachment to the engine.</div><div class="ttdef"><b>Definition:</b> ImGuiLayer.cpp:23</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1imgui_1_1ImGuiLayer_html_a3ef0c5606e9ebdf8c94d124accbca872"><div class="ttname"><a href="classlambda_1_1core_1_1imgui_1_1ImGuiLayer.html#a3ef0c5606e9ebdf8c94d124accbca872">lambda::core::imgui::ImGuiLayer::Begin</a></div><div class="ttdeci">void Begin()</div><div class="ttdoc">Begin an ImGui rendering context.</div><div class="ttdef"><b>Definition:</b> ImGuiLayer.cpp:56</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1imgui_1_1ImGuiLayer_html_a8958db2cb91ecf18c2e951f2741a3cee"><div class="ttname"><a href="classlambda_1_1core_1_1imgui_1_1ImGuiLayer.html#a8958db2cb91ecf18c2e951f2741a3cee">lambda::core::imgui::ImGuiLayer::OnAttach</a></div><div class="ttdeci">void OnAttach() override</div><div class="ttdoc">What to do when attached to lambda.</div><div class="ttdef"><b>Definition:</b> ImGuiLayer.cpp:22</div></div>
 <div class="ttc" id="aApplicationEvent_8h_html"><div class="ttname"><a href="ApplicationEvent_8h.html">ApplicationEvent.h</a></div><div class="ttdoc">Events that are to be specifically handled at the application level.</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1imgui_1_1ImGuiLayer_html"><div class="ttname"><a href="classlambda_1_1core_1_1imgui_1_1ImGuiLayer.html">lambda::core::imgui::ImGuiLayer</a></div><div class="ttdoc">The base ImGui layer used for rendering all other ImGui components.</div><div class="ttdef"><b>Definition:</b> ImGuiLayer.h:23</div></div>
 <div class="ttc" id="aCore_8h_html"><div class="ttname"><a href="Core_8h.html">Core.h</a></div><div class="ttdoc">Core macros to be used all throughout the engine for development and production purposes.</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1imgui_1_1ImGuiLayer_html_a512b4e83b3ce6e7f7e9ddd1f88452615"><div class="ttname"><a href="classlambda_1_1core_1_1imgui_1_1ImGuiLayer.html#a512b4e83b3ce6e7f7e9ddd1f88452615">lambda::core::imgui::ImGuiLayer::OnDetach</a></div><div class="ttdeci">void OnDetach() override</div><div class="ttdoc">What to do when detached from lambda.</div><div class="ttdef"><b>Definition:</b> ImGuiLayer.cpp:48</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

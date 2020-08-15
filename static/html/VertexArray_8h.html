@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>game-engine: engine/src/core/renderer/VertexArray.h File Reference</title>
+<title>lambda: lambda/src/core/renderer/VertexArray.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">game-engine
+   <div id="projectname">lambda
    </div>
   </td>
  </tr>
@@ -61,7 +61,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_996f45160da62e1a3d7f6046fad68f51.html">engine</a></li><li class="navelem"><a class="el" href="dir_3d9126aa00c041bc0b8f859d1965a0f4.html">src</a></li><li class="navelem"><a class="el" href="dir_5e835386694ce392648cfcf102577fe3.html">core</a></li><li class="navelem"><a class="el" href="dir_ce4abf2d955932dc9caa6b4c1952fc3a.html">renderer</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_4b73342a493c3ec8f518edda193e909f.html">lambda</a></li><li class="navelem"><a class="el" href="dir_896901b14b6321ed9cf375daac6fb468.html">src</a></li><li class="navelem"><a class="el" href="dir_120072a10eb7d4fbc043fc091b8cce0e.html">core</a></li><li class="navelem"><a class="el" href="dir_7450cf7b83d623f255804473698129f8.html">renderer</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -72,40 +72,42 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>The Generic <a class="el" href="classVertexArray.html" title="The abstraction for representing Vertex arrays and their sub components.">VertexArray</a> API.  
+<p>The Generic VertexArray API.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;memory&gt;</code><br />
+<code>#include &quot;<a class="el" href="Pointers_8h_source.html">core/memory/Pointers.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Buffer_8h_source.html">core/renderer/Buffer.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for VertexArray.h:</div>
 <div class="dyncontent">
-<div class="center"><img src="VertexArray_8h__incl.png" border="0" usemap="#engine_2src_2core_2renderer_2VertexArray_8h" alt=""/></div>
-<map name="engine_2src_2core_2renderer_2VertexArray_8h" id="engine_2src_2core_2renderer_2VertexArray_8h">
-<area shape="rect" title="The Generic VertexArray API." alt="" coords="42,5,222,47"/>
-<area shape="rect" title=" " alt="" coords="72,319,149,345"/>
-<area shape="rect" href="Buffer_8h.html" title="Buffer abstractions that allow the ease of implementing Buffers for any graphics API." alt="" coords="277,95,442,121"/>
-<area shape="rect" title=" " alt="" coords="371,169,508,196"/>
-<area shape="rect" title=" " alt="" coords="532,169,608,196"/>
-<area shape="rect" title=" " alt="" coords="633,169,692,196"/>
-<area shape="rect" title=" " alt="" coords="716,169,779,196"/>
-<area shape="rect" href="Pointers_8h.html" title="Abstraction for handling pointers within the engine. Currently just aliases for unique and shared poi..." alt="" coords="21,244,200,271"/>
-<area shape="rect" href="Assert_8h.html" title="This is a utility file that is primarily used for debugging the internals of the engine when incorrec..." alt="" coords="215,169,347,196"/>
-<area shape="rect" href="Log_8h.html" title="The engines util utility." alt="" coords="224,244,338,271"/>
-<area shape="rect" href="Core_8h.html" title="Core macros to be used all throughout the engine for development and production purposes." alt="" coords="328,319,424,345"/>
-<area shape="rect" title=" " alt="" coords="179,319,303,345"/>
+<div class="center"><img src="VertexArray_8h__incl.png" border="0" usemap="#lambda_2src_2core_2renderer_2VertexArray_8h" alt=""/></div>
+<map name="lambda_2src_2core_2renderer_2VertexArray_8h" id="lambda_2src_2core_2renderer_2VertexArray_8h">
+<area shape="rect" title="The Generic VertexArray API." alt="" coords="18,5,203,47"/>
+<area shape="rect" title=" " alt="" coords="53,319,131,345"/>
+<area shape="rect" href="Pointers_8h.html" title="Abstraction for handling pointers within the engine. Currently just aliases for unique and shared poi..." alt="" coords="21,169,200,196"/>
+<area shape="rect" href="Buffer_8h.html" title="Buffer abstractions that allow the ease of implementing Buffers for any graphics API." alt="" coords="337,95,503,121"/>
+<area shape="rect" title=" " alt="" coords="431,169,569,196"/>
+<area shape="rect" title=" " alt="" coords="593,169,669,196"/>
+<area shape="rect" title=" " alt="" coords="693,169,752,196"/>
+<area shape="rect" title=" " alt="" coords="777,169,839,196"/>
+<area shape="rect" href="Assert_8h.html" title="This is a utility file that is primarily used for debugging the internals of the engine when incorrec..." alt="" coords="275,169,407,196"/>
+<area shape="rect" href="Log_8h.html" title="The engines util utility." alt="" coords="180,244,295,271"/>
+<area shape="rect" href="Core_8h.html" title="Core macros to be used all throughout the engine for development and production purposes." alt="" coords="304,319,400,345"/>
+<area shape="rect" title=" " alt="" coords="155,319,279,345"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><img src="VertexArray_8h__dep__incl.png" border="0" usemap="#engine_2src_2core_2renderer_2VertexArray_8hdep" alt=""/></div>
-<map name="engine_2src_2core_2renderer_2VertexArray_8hdep" id="engine_2src_2core_2renderer_2VertexArray_8hdep">
-<area shape="rect" title="The Generic VertexArray API." alt="" coords="408,5,588,47"/>
-<area shape="rect" href="RendererAPI_8h.html" title="the rendering API that handles all draw calls." alt="" coords="256,95,436,136"/>
-<area shape="rect" href="OpenGLRendererAPI_8h.html" title="The OpenGL rendering implementation." alt="" coords="413,184,631,225"/>
-<area shape="rect" href="OpenGLVertexArray_8h_source.html" title=" " alt="" coords="535,95,747,136"/>
-<area shape="rect" href="RenderCommand_8h.html" title="The declaration file for the RenderCommand Wrapper." alt="" coords="5,184,185,225"/>
-<area shape="rect" href="Renderer_8h.html" title="The rendering API." alt="" coords="209,184,389,225"/>
+<div class="center"><img src="VertexArray_8h__dep__incl.png" border="0" usemap="#lambda_2src_2core_2renderer_2VertexArray_8hdep" alt=""/></div>
+<map name="lambda_2src_2core_2renderer_2VertexArray_8hdep" id="lambda_2src_2core_2renderer_2VertexArray_8hdep">
+<area shape="rect" title="The Generic VertexArray API." alt="" coords="549,5,735,47"/>
+<area shape="rect" href="RendererAPI_8h.html" title="the rendering API that handles all draw calls." alt="" coords="299,95,484,136"/>
+<area shape="rect" href="Lambda_8h_source.html" title=" " alt="" coords="226,273,389,300"/>
+<area shape="rect" href="OpenGLRendererAPI_8h_source.html" title=" " alt="" coords="424,184,641,225"/>
+<area shape="rect" href="OpenGLVertexArray_8h_source.html" title=" " alt="" coords="716,95,928,136"/>
+<area shape="rect" href="RenderCommand_8h.html" title="The declaration file for the RenderCommand Wrapper." alt="" coords="5,184,191,225"/>
+<area shape="rect" href="Renderer_8h.html" title="The rendering API." alt="" coords="215,184,400,225"/>
 </map>
 </div>
 </div>
@@ -113,12 +115,11 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1renderer_1_1VertexArray.html">engine::renderer::VertexArray</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The abstraction for representing Vertex arrays and their sub components.  <a href="classengine_1_1renderer_1_1VertexArray.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1renderer_1_1VertexArray.html">lambda::core::renderer::VertexArray</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The Generic <a class="el" href="classVertexArray.html" title="The abstraction for representing Vertex arrays and their sub components.">VertexArray</a> API. </p>
+<div class="textblock"><p>The Generic VertexArray API. </p>
 <p>Contains the generic API implementation for creating Vertex arrays that are compatible with the engines rendering API. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->

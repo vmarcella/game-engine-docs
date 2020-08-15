@@ -1,5 +1,5 @@
-\hypertarget{Layer_8h}{}\doxysection{engine/src/core/\+Layer.h File Reference}
-\label{Layer_8h}\index{engine/src/core/Layer.h@{engine/src/core/Layer.h}}
+\hypertarget{Layer_8h}{}\doxysection{lambda/src/core/layers/\+Layer.h File Reference}
+\label{Layer_8h}\index{lambda/src/core/layers/Layer.h@{lambda/src/core/layers/Layer.h}}
 
 
 The Layer implementation that allows application to specify layers to be attached to the game.  
@@ -7,15 +7,18 @@ The Layer implementation that allows application to specify layers to be attache
 
 {\ttfamily \#include \char`\"{}core/\+Core.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}core/events/\+Event.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}core/memory/\+Pointers.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}core/util/\+Time.\+h\char`\"{}}\newline
-Include dependency graph for Layer.\+h\+:\nopagebreak
+Include dependency graph for Layer.\+h\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{Layer_8h__incl}
 \end{center}
 \end{figure}
-This graph shows which files directly or indirectly include this file\+:\nopagebreak
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -25,8 +28,8 @@ This graph shows which files directly or indirectly include this file\+:\nopageb
 \doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
-class \mbox{\hyperlink{classengine_1_1Layer}{engine\+::\+Layer}}
-\begin{DoxyCompactList}\small\item\em An abstract data structure that represents a \char`\"{}layer\char`\"{} within the engine. \end{DoxyCompactList}\end{DoxyCompactItemize}
+class \mbox{\hyperlink{classlambda_1_1core_1_1layers_1_1Layer}{lambda\+::core\+::layers\+::\+Layer}}
+\begin{DoxyCompactList}\small\item\em The lambda \mbox{\hyperlink{classlambda_1_1core_1_1layers_1_1Layer}{Layer}} abstraction. Primarily used for direct access into lambdas tick and event system. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}

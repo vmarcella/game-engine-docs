@@ -1,6 +1,6 @@
-<map id="engine/src/core/Window.h" name="engine/src/core/Window.h">
-<area shape="rect" id="node1" title="The Abstract Window definition." alt="" coords="113,5,301,32"/>
-<area shape="rect" id="node2" href="$Application_8h.html" title="Contains the Application class definitions." alt="" coords="102,80,313,107"/>
-<area shape="rect" id="node3" href="$Entrypoint_8h.html" title="The entrypoint into the engine." alt="" coords="5,155,209,181"/>
-<area shape="rect" id="node4" href="$Engine_8h.html" title="The entrypoint into the game engine source code." alt="" coords="234,155,383,181"/>
+<map id="lambda/src/core/Window.h" name="lambda/src/core/Window.h">
+<area shape="rect" id="node1" title="The Abstract Window definition." alt="" coords="84,5,277,32"/>
+<area shape="rect" id="node2" href="$Application_8h.html" title="Contains the Application class definitions." alt="" coords="73,80,288,107"/>
+<area shape="rect" id="node3" href="$Entrypoint_8h.html" title="The entrypoint into the engine." alt="" coords="5,155,215,181"/>
+<area shape="rect" id="node4" href="$Lambda_8h_source.html" title=" " alt="" coords="99,229,262,256"/>
 </map>

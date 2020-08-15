@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>game-engine: engine/src/core/util/Time.h Source File</title>
+<title>lambda: lambda/src/core/util/Time.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">game-engine
+   <div id="projectname">lambda
    </div>
   </td>
  </tr>
@@ -61,7 +61,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_996f45160da62e1a3d7f6046fad68f51.html">engine</a></li><li class="navelem"><a class="el" href="dir_3d9126aa00c041bc0b8f859d1965a0f4.html">src</a></li><li class="navelem"><a class="el" href="dir_5e835386694ce392648cfcf102577fe3.html">core</a></li><li class="navelem"><a class="el" href="dir_c7a3b5ee209719b28f9110bbc3ad3b04.html">util</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_4b73342a493c3ec8f518edda193e909f.html">lambda</a></li><li class="navelem"><a class="el" href="dir_896901b14b6321ed9cf375daac6fb468.html">src</a></li><li class="navelem"><a class="el" href="dir_120072a10eb7d4fbc043fc091b8cce0e.html">core</a></li><li class="navelem"><a class="el" href="dir_729e07418af1ec59eb1a4306ab25519d.html">util</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -70,87 +70,150 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <a href="Time_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef ENGINE_SRC_CORE_UTIL_TIME_H_</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define ENGINE_SRC_CORE_UTIL_TIME_H_</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef LAMBDA_SRC_CORE_UTIL_TIME_H_</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define LAMBDA_SRC_CORE_UTIL_TIME_H_</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;chrono&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;concepts&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;ratio&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span>engine {</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span>util {</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;concept FloatType = std::floating_point&lt;T&gt;;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Assert_8h.html">core/util/Assert.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span>lambda {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span>core {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span>util {</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">using</span> Clock = std::chrono::steady_clock;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">using</span> TimePoint = std::chrono::time_point&lt;Clock&gt;;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;concept FloatType = std::floating_point&lt;T&gt;;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classengine_1_1util_1_1Time.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="classengine_1_1util_1_1Time.html">Time</a> {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <a class="code" href="classengine_1_1util_1_1Time.html">Time</a>() noexcept : time_(Clock::now()) {}</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">// Clock &amp; Time typedefs</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">typedef</span> std::chrono::steady_clock Clock;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">typedef</span> std::chrono::time_point&lt;Clock&gt; TimePoint;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classengine_1_1util_1_1Time.html#ab9c50e6c55fdd3022928e66ba5595bc3">   25</a></span>&#160;  <span class="keyword">const</span> TimePoint <a class="code" href="classengine_1_1util_1_1Time.html#ab9c50e6c55fdd3022928e66ba5595bc3">InSeconds</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">return</span> std::chrono::time_point_cast&lt;std::chrono::seconds&gt;(time_); }</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classengine_1_1util_1_1Time.html#a4ea785db69501e989b1ea4e29c547968">   28</a></span>&#160;  <span class="keyword">const</span> TimePoint <a class="code" href="classengine_1_1util_1_1Time.html#a4ea785db69501e989b1ea4e29c547968">InMilliSeconds</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">return</span> std::chrono::time_point_cast&lt;std::chrono::milliseconds&gt;(time_); }</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">// Duration typedefs</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">typedef</span> std::chrono::duration&lt;int64_t, std::nano&gt; Nanoseconds;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">typedef</span> std::chrono::duration&lt;int64_t, std::micro&gt; Microseconds;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">typedef</span> std::chrono::duration&lt;int64_t, std::milli&gt; Milliseconds;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">typedef</span> std::chrono::duration&lt;int64_t, std::deci&gt; Seconds;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classengine_1_1util_1_1Time.html#a207c4fb750b54d370234fa5e9ec8cd5a">   31</a></span>&#160;  <span class="keyword">const</span> TimePoint <a class="code" href="classengine_1_1util_1_1Time.html#a207c4fb750b54d370234fa5e9ec8cd5a">InMicroSeconds</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">return</span> std::chrono::time_point_cast&lt;std::chrono::microseconds&gt;(time_); }</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keyword">const</span> TimePoint GetTime()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> time_; }</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  TimePoint time_;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classengine_1_1util_1_1TimeStep.html">   40</a></span>&#160;<span class="keyword">class </span><a class="code" href="classengine_1_1util_1_1TimeStep.html">TimeStep</a> {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="classengine_1_1util_1_1TimeStep.html">TimeStep</a>(<a class="code" href="classengine_1_1util_1_1Time.html">Time</a> start, <a class="code" href="classengine_1_1util_1_1Time.html">Time</a> stop) : start_(start), stop_(stop) {}</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keyword">template</span>&lt;FloatType T&gt;</div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classengine_1_1util_1_1TimeStep.html#a60f2f9029a98b35c5d23367e07ab4b1a">   45</a></span>&#160;  <span class="keyword">const</span> T <a class="code" href="classengine_1_1util_1_1TimeStep.html#a60f2f9029a98b35c5d23367e07ab4b1a">InSeconds</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">return</span> DurationTo&lt;T, std::deci&gt;(start_, stop_); }</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">template</span>&lt;FloatType T&gt;</div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classengine_1_1util_1_1TimeStep.html#aa1934e9a167de7539e02b1e3e5598f6d">   49</a></span>&#160;  <span class="keyword">const</span> T <a class="code" href="classengine_1_1util_1_1TimeStep.html#aa1934e9a167de7539e02b1e3e5598f6d">InMilliSeconds</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">return</span> DurationTo&lt;T, std::milli&gt;(start_, stop_); }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">// Forward declarations of both Time and DurationTo.</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">class </span><a class="code" href="classlambda_1_1util_1_1Time.html">Time</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">template</span>&lt;FloatType T, <span class="keyword">typename</span> Ratio&gt;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">const</span> T DurationTo(<span class="keyword">const</span> <a class="code" href="classlambda_1_1util_1_1Time.html">Time</a>&amp; start, <span class="keyword">const</span> <a class="code" href="classlambda_1_1util_1_1Time.html">Time</a>&amp; end);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1util_1_1Time.html">   38</a></span>&#160;<span class="keyword">class </span><a class="code" href="classlambda_1_1core_1_1util_1_1Time.html">Time</a> {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <a class="code" href="classlambda_1_1core_1_1util_1_1Time.html">Time</a>() noexcept : time_(Clock::now()) {}</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classlambda_1_1core_1_1util_1_1Time.html">Time</a>(<span class="keyword">const</span> TimePoint&amp; t) : time_(t) {}</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1util_1_1Time.html#a4d23cade98580ff143738718654ad75b">   43</a></span>&#160;  <span class="keyword">const</span> TimePoint <a class="code" href="classlambda_1_1core_1_1util_1_1Time.html#a4d23cade98580ff143738718654ad75b">InSeconds</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">return</span> std::chrono::time_point_cast&lt;std::chrono::seconds&gt;(time_); }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1util_1_1Time.html#a2950427d99ad286235b19094861cbbd4">   46</a></span>&#160;  <span class="keyword">const</span> TimePoint <a class="code" href="classlambda_1_1core_1_1util_1_1Time.html#a2950427d99ad286235b19094861cbbd4">InMilliSeconds</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">return</span> std::chrono::time_point_cast&lt;std::chrono::milliseconds&gt;(time_); }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1util_1_1Time.html#a21472ab567a34e1b115a3bfdb320c3d9">   49</a></span>&#160;  <span class="keyword">const</span> TimePoint <a class="code" href="classlambda_1_1core_1_1util_1_1Time.html#a21472ab567a34e1b115a3bfdb320c3d9">InMicroSeconds</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">return</span> std::chrono::time_point_cast&lt;std::chrono::microseconds&gt;(time_); }</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">template</span>&lt;FloatType T&gt;</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classengine_1_1util_1_1TimeStep.html#a8bfd12537c04a8508a24e57548d091e4">   53</a></span>&#160;  <span class="keyword">const</span> T <a class="code" href="classengine_1_1util_1_1TimeStep.html#a8bfd12537c04a8508a24e57548d091e4">InMicroSeconds</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">return</span> DurationTo&lt;T, std::micro&gt;(start_, stop_); }</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keyword">template</span>&lt;FloatType T&gt;</div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classengine_1_1util_1_1TimeStep.html#a1218829ea47afa889e8d68bcf3c1ceed">   57</a></span>&#160;  <span class="keyword">const</span> T <a class="code" href="classengine_1_1util_1_1TimeStep.html#a1218829ea47afa889e8d68bcf3c1ceed">InNanoSeconds</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">return</span> DurationTo&lt;T, std::nano&gt;(start_, stop_); }</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <a class="code" href="classengine_1_1util_1_1Time.html">Time</a> start_;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <a class="code" href="classengine_1_1util_1_1Time.html">Time</a> stop_;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">template</span>&lt;FloatType T, <span class="keyword">typename</span> Ratio&gt;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">const</span> T DurationTo(Time start, Time stop) {</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  std::chrono::duration&lt;T, Ratio&gt; d(stop.GetTime() - start.GetTime());</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordflow">return</span> d.count();</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">const</span> TimePoint GetTime()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> time_; }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keyword">inline</span> <a class="code" href="classlambda_1_1util_1_1Time.html">Time</a> AddMilliseconds(int64_t milliseconds) {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classlambda_1_1util_1_1Time.html">Time</a>(time_ + Milliseconds(milliseconds));</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <a class="code" href="classlambda_1_1util_1_1Time.html">Time</a> AddSeconds(int64_t seconds) {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classlambda_1_1util_1_1Time.html">Time</a>(time_ + Seconds(seconds));</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordtype">bool</span> IsAfter(<span class="keyword">const</span> <a class="code" href="classlambda_1_1util_1_1Time.html">Time</a>&amp; t) {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">return</span> DurationTo&lt;float, std::milli&gt;(t, *<span class="keyword">this</span>) &lt; 0;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">bool</span> IsBefore(<span class="keyword">const</span> <a class="code" href="classlambda_1_1util_1_1Time.html">Time</a>&amp; t) {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">return</span> DurationTo&lt;float, std::milli&gt;(t, *<span class="keyword">this</span>) &gt; 0;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  }</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}  <span class="comment">// namespace util</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}  <span class="comment">// namespace lambda</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#endif  // ENGINE_SRC_CORE_UTIL_TIME_H_</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">bool</span> HasPassed() {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">return</span> DurationTo&lt;float, std::milli&gt;(<a class="code" href="classlambda_1_1util_1_1Time.html">Time</a>(), *<span class="keyword">this</span>) &lt; 0;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="comment">// Effectively an alias for getting the current time.</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keyword">inline</span> <span class="keyword">static</span> <a class="code" href="classlambda_1_1util_1_1Time.html">Time</a> Now() { <span class="keywordflow">return</span> <a class="code" href="classlambda_1_1util_1_1Time.html">Time</a>(); }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keyword">inline</span> <span class="keyword">static</span> <a class="code" href="classlambda_1_1util_1_1Time.html">Time</a> NanosecondsFromNow(int64_t nanoseconds) {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classlambda_1_1util_1_1Time.html">Time</a>().AddMilliseconds(nanoseconds);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keyword">inline</span> <span class="keyword">static</span> <a class="code" href="classlambda_1_1util_1_1Time.html">Time</a> MicrosecondsFromNow(int64_t microseconds) {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classlambda_1_1util_1_1Time.html">Time</a>().AddMilliseconds(microseconds);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keyword">inline</span> <span class="keyword">static</span> <a class="code" href="classlambda_1_1util_1_1Time.html">Time</a> MillisecondsFromNow(int64_t milliseconds) {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classlambda_1_1util_1_1Time.html">Time</a>().AddMilliseconds(milliseconds);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keyword">inline</span> <span class="keyword">static</span> <a class="code" href="classlambda_1_1util_1_1Time.html">Time</a> SecondsFromNow(int64_t seconds) {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classlambda_1_1util_1_1Time.html">Time</a>().AddSeconds(seconds);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  TimePoint time_;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;};</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1util_1_1TimeStep.html">   98</a></span>&#160;<span class="keyword">class </span><a class="code" href="classlambda_1_1core_1_1util_1_1TimeStep.html">TimeStep</a> {</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <a class="code" href="classlambda_1_1core_1_1util_1_1TimeStep.html">TimeStep</a>(<a class="code" href="classlambda_1_1core_1_1util_1_1Time.html">Time</a> start, <a class="code" href="classlambda_1_1core_1_1util_1_1Time.html">Time</a> stop) : start_(start), stop_(stop) {}</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keyword">template</span>&lt;FloatType T&gt;</div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1util_1_1TimeStep.html#a4e6675c9cdb3b5656a2dd21dc40eb86e">  103</a></span>&#160;  <span class="keyword">const</span> T <a class="code" href="classlambda_1_1core_1_1util_1_1TimeStep.html#a4e6675c9cdb3b5656a2dd21dc40eb86e">InSeconds</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordflow">return</span> DurationTo&lt;T, std::deci&gt;(start_, stop_); }</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="keyword">template</span>&lt;FloatType T&gt;</div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1util_1_1TimeStep.html#a85f15c4cbdef5f42772984876d5578ed">  107</a></span>&#160;  <span class="keyword">const</span> T <a class="code" href="classlambda_1_1core_1_1util_1_1TimeStep.html#a85f15c4cbdef5f42772984876d5578ed">InMilliSeconds</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">return</span> DurationTo&lt;T, std::milli&gt;(start_, stop_); }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="keyword">template</span>&lt;FloatType T&gt;</div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1util_1_1TimeStep.html#a23aca78bfa474f597e44f22d60393959">  111</a></span>&#160;  <span class="keyword">const</span> T <a class="code" href="classlambda_1_1core_1_1util_1_1TimeStep.html#a23aca78bfa474f597e44f22d60393959">InMicroSeconds</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordflow">return</span> DurationTo&lt;T, std::micro&gt;(start_, stop_); }</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <span class="keyword">template</span>&lt;FloatType T&gt;</div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1util_1_1TimeStep.html#a5dee4dc3b14c9447e305bab287e06852">  115</a></span>&#160;  <span class="keyword">const</span> T <a class="code" href="classlambda_1_1core_1_1util_1_1TimeStep.html#a5dee4dc3b14c9447e305bab287e06852">InNanoSeconds</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordflow">return</span> DurationTo&lt;T, std::nano&gt;(start_, stop_); }</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <a class="code" href="classlambda_1_1core_1_1util_1_1Time.html">Time</a> start_;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <a class="code" href="classlambda_1_1core_1_1util_1_1Time.html">Time</a> stop_;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;};</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="keyword">template</span>&lt;FloatType T, <span class="keyword">typename</span> Ratio&gt;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="keyword">const</span> T DurationTo(<span class="keyword">const</span> <a class="code" href="classlambda_1_1util_1_1Time.html">Time</a>&amp; start, <span class="keyword">const</span> <a class="code" href="classlambda_1_1util_1_1Time.html">Time</a>&amp; stop) {</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  std::chrono::duration&lt;T, Ratio&gt; d(stop.GetTime() - start.GetTime());</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <span class="keywordflow">return</span> d.count();</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;}</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;}  <span class="comment">// namespace util</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;}  <span class="comment">// namespace core</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;}  <span class="comment">// namespace lambda</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor">#endif  // LAMBDA_SRC_CORE_UTIL_TIME_H_</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassengine_1_1util_1_1Time_html_a4ea785db69501e989b1ea4e29c547968"><div class="ttname"><a href="classengine_1_1util_1_1Time.html#a4ea785db69501e989b1ea4e29c547968">engine::util::Time::InMilliSeconds</a></div><div class="ttdeci">const TimePoint InMilliSeconds() const</div><div class="ttdoc">Get the current system time in milliseconds.</div><div class="ttdef"><b>Definition:</b> Time.h:28</div></div>
-<div class="ttc" id="aclassengine_1_1util_1_1TimeStep_html_a8bfd12537c04a8508a24e57548d091e4"><div class="ttname"><a href="classengine_1_1util_1_1TimeStep.html#a8bfd12537c04a8508a24e57548d091e4">engine::util::TimeStep::InMicroSeconds</a></div><div class="ttdeci">const T InMicroSeconds() const</div><div class="ttdoc">Get the interval between two Time objects in microseconds.</div><div class="ttdef"><b>Definition:</b> Time.h:53</div></div>
-<div class="ttc" id="aclassengine_1_1util_1_1TimeStep_html_aa1934e9a167de7539e02b1e3e5598f6d"><div class="ttname"><a href="classengine_1_1util_1_1TimeStep.html#aa1934e9a167de7539e02b1e3e5598f6d">engine::util::TimeStep::InMilliSeconds</a></div><div class="ttdeci">const T InMilliSeconds() const</div><div class="ttdoc">Get the interval between two Time objects in milliseconds.</div><div class="ttdef"><b>Definition:</b> Time.h:49</div></div>
-<div class="ttc" id="aclassengine_1_1util_1_1TimeStep_html_a60f2f9029a98b35c5d23367e07ab4b1a"><div class="ttname"><a href="classengine_1_1util_1_1TimeStep.html#a60f2f9029a98b35c5d23367e07ab4b1a">engine::util::TimeStep::InSeconds</a></div><div class="ttdeci">const T InSeconds() const</div><div class="ttdoc">Get the interval between two Time objects in seconds.</div><div class="ttdef"><b>Definition:</b> Time.h:45</div></div>
-<div class="ttc" id="aclassengine_1_1util_1_1Time_html"><div class="ttname"><a href="classengine_1_1util_1_1Time.html">engine::util::Time</a></div><div class="ttdoc">A wrapper for working with Time within the game engine. Uses std::steady_clock for a platform indepen...</div><div class="ttdef"><b>Definition:</b> Time.h:21</div></div>
-<div class="ttc" id="aclassengine_1_1util_1_1TimeStep_html_a1218829ea47afa889e8d68bcf3c1ceed"><div class="ttname"><a href="classengine_1_1util_1_1TimeStep.html#a1218829ea47afa889e8d68bcf3c1ceed">engine::util::TimeStep::InNanoSeconds</a></div><div class="ttdeci">const T InNanoSeconds() const</div><div class="ttdoc">Get the interval between two Time objects in nanoseconds.</div><div class="ttdef"><b>Definition:</b> Time.h:57</div></div>
-<div class="ttc" id="aclassengine_1_1util_1_1Time_html_a207c4fb750b54d370234fa5e9ec8cd5a"><div class="ttname"><a href="classengine_1_1util_1_1Time.html#a207c4fb750b54d370234fa5e9ec8cd5a">engine::util::Time::InMicroSeconds</a></div><div class="ttdeci">const TimePoint InMicroSeconds() const</div><div class="ttdoc">Get the current system time in microseconds.</div><div class="ttdef"><b>Definition:</b> Time.h:31</div></div>
-<div class="ttc" id="aclassengine_1_1util_1_1TimeStep_html"><div class="ttname"><a href="classengine_1_1util_1_1TimeStep.html">engine::util::TimeStep</a></div><div class="ttdoc">The timestep between two time intervals. Primarily used for layers to consistently update the engine.</div><div class="ttdef"><b>Definition:</b> Time.h:40</div></div>
-<div class="ttc" id="aclassengine_1_1util_1_1Time_html_ab9c50e6c55fdd3022928e66ba5595bc3"><div class="ttname"><a href="classengine_1_1util_1_1Time.html#ab9c50e6c55fdd3022928e66ba5595bc3">engine::util::Time::InSeconds</a></div><div class="ttdeci">const TimePoint InSeconds() const</div><div class="ttdoc">Get the current system time in seconds.</div><div class="ttdef"><b>Definition:</b> Time.h:25</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1util_1_1TimeStep_html_a5dee4dc3b14c9447e305bab287e06852"><div class="ttname"><a href="classlambda_1_1core_1_1util_1_1TimeStep.html#a5dee4dc3b14c9447e305bab287e06852">lambda::core::util::TimeStep::InNanoSeconds</a></div><div class="ttdeci">const T InNanoSeconds() const</div><div class="ttdoc">Get the interval between two Time objects in nanoseconds.</div><div class="ttdef"><b>Definition:</b> Time.h:115</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1util_1_1Time_html"><div class="ttname"><a href="classlambda_1_1core_1_1util_1_1Time.html">lambda::core::util::Time</a></div><div class="ttdef"><b>Definition:</b> Time.h:38</div></div>
+<div class="ttc" id="aclasslambda_1_1util_1_1Time_html"><div class="ttname"><a href="classlambda_1_1util_1_1Time.html">Time</a></div><div class="ttdoc">A wrapper for working with Time within the game engine. Uses std::steady_clock for a platform indepen...</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1util_1_1Time_html_a4d23cade98580ff143738718654ad75b"><div class="ttname"><a href="classlambda_1_1core_1_1util_1_1Time.html#a4d23cade98580ff143738718654ad75b">lambda::core::util::Time::InSeconds</a></div><div class="ttdeci">const TimePoint InSeconds() const</div><div class="ttdoc">Get the current system time in seconds.</div><div class="ttdef"><b>Definition:</b> Time.h:43</div></div>
+<div class="ttc" id="aAssert_8h_html"><div class="ttname"><a href="Assert_8h.html">Assert.h</a></div><div class="ttdoc">This is a utility file that is primarily used for debugging the internals of the engine when incorrec...</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1util_1_1TimeStep_html"><div class="ttname"><a href="classlambda_1_1core_1_1util_1_1TimeStep.html">lambda::core::util::TimeStep</a></div><div class="ttdef"><b>Definition:</b> Time.h:98</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1util_1_1TimeStep_html_a4e6675c9cdb3b5656a2dd21dc40eb86e"><div class="ttname"><a href="classlambda_1_1core_1_1util_1_1TimeStep.html#a4e6675c9cdb3b5656a2dd21dc40eb86e">lambda::core::util::TimeStep::InSeconds</a></div><div class="ttdeci">const T InSeconds() const</div><div class="ttdoc">Get the interval between two Time objects in seconds.</div><div class="ttdef"><b>Definition:</b> Time.h:103</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1util_1_1Time_html_a21472ab567a34e1b115a3bfdb320c3d9"><div class="ttname"><a href="classlambda_1_1core_1_1util_1_1Time.html#a21472ab567a34e1b115a3bfdb320c3d9">lambda::core::util::Time::InMicroSeconds</a></div><div class="ttdeci">const TimePoint InMicroSeconds() const</div><div class="ttdoc">Get the current system time in microseconds.</div><div class="ttdef"><b>Definition:</b> Time.h:49</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1util_1_1TimeStep_html_a23aca78bfa474f597e44f22d60393959"><div class="ttname"><a href="classlambda_1_1core_1_1util_1_1TimeStep.html#a23aca78bfa474f597e44f22d60393959">lambda::core::util::TimeStep::InMicroSeconds</a></div><div class="ttdeci">const T InMicroSeconds() const</div><div class="ttdoc">Get the interval between two Time objects in microseconds.</div><div class="ttdef"><b>Definition:</b> Time.h:111</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1util_1_1TimeStep_html_a85f15c4cbdef5f42772984876d5578ed"><div class="ttname"><a href="classlambda_1_1core_1_1util_1_1TimeStep.html#a85f15c4cbdef5f42772984876d5578ed">lambda::core::util::TimeStep::InMilliSeconds</a></div><div class="ttdeci">const T InMilliSeconds() const</div><div class="ttdoc">Get the interval between two Time objects in milliseconds.</div><div class="ttdef"><b>Definition:</b> Time.h:107</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1util_1_1Time_html_a2950427d99ad286235b19094861cbbd4"><div class="ttname"><a href="classlambda_1_1core_1_1util_1_1Time.html#a2950427d99ad286235b19094861cbbd4">lambda::core::util::Time::InMilliSeconds</a></div><div class="ttdeci">const TimePoint InMilliSeconds() const</div><div class="ttdoc">Get the current system time in milliseconds.</div><div class="ttdef"><b>Definition:</b> Time.h:46</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

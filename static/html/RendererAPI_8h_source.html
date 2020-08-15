@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>game-engine: engine/src/core/renderer/RendererAPI.h Source File</title>
+<title>lambda: lambda/src/core/renderer/RendererAPI.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">game-engine
+   <div id="projectname">lambda
    </div>
   </td>
  </tr>
@@ -61,7 +61,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_996f45160da62e1a3d7f6046fad68f51.html">engine</a></li><li class="navelem"><a class="el" href="dir_3d9126aa00c041bc0b8f859d1965a0f4.html">src</a></li><li class="navelem"><a class="el" href="dir_5e835386694ce392648cfcf102577fe3.html">core</a></li><li class="navelem"><a class="el" href="dir_ce4abf2d955932dc9caa6b4c1952fc3a.html">renderer</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_4b73342a493c3ec8f518edda193e909f.html">lambda</a></li><li class="navelem"><a class="el" href="dir_896901b14b6321ed9cf375daac6fb468.html">src</a></li><li class="navelem"><a class="el" href="dir_120072a10eb7d4fbc043fc091b8cce0e.html">core</a></li><li class="navelem"><a class="el" href="dir_7450cf7b83d623f255804473698129f8.html">renderer</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -70,8 +70,8 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <a href="RendererAPI_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef ENGINE_SRC_CORE_RENDERER_RENDERERAPI_H_</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define ENGINE_SRC_CORE_RENDERER_RENDERERAPI_H_</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef LAMBDA_SRC_CORE_RENDERER_RENDERERAPI_H_</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define LAMBDA_SRC_CORE_RENDERER_RENDERERAPI_H_</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
@@ -79,40 +79,44 @@ $(function() {
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="VertexArray_8h.html">core/renderer/VertexArray.h</a>&quot;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span>engine {</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span>renderer {</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classengine_1_1renderer_1_1RendererAPI.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="classengine_1_1renderer_1_1RendererAPI.html">RendererAPI</a> {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classengine_1_1renderer_1_1RendererAPI.html#a624c2793dc8b315466c36332bbc82ef0">   19</a></span>&#160;  <span class="keyword">enum class</span> <a class="code" href="classengine_1_1renderer_1_1RendererAPI.html#a624c2793dc8b315466c36332bbc82ef0">API</a> {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    None = 0,</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    OpenGL = 1</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  };</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classengine_1_1renderer_1_1RendererAPI.html#aafd69df2fdce94fbde4142d392a04b37">   24</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classengine_1_1renderer_1_1RendererAPI.html#aafd69df2fdce94fbde4142d392a04b37">SetClearColor</a>(<span class="keyword">const</span> glm::vec4&amp; color) = 0;</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classengine_1_1renderer_1_1RendererAPI.html#ac4d98acc58992af16ffff59e659e3c60">   25</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classengine_1_1renderer_1_1RendererAPI.html#ac4d98acc58992af16ffff59e659e3c60">Clear</a>() = 0;</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classengine_1_1renderer_1_1RendererAPI.html#ab818163e2f93e9d0a508ac29a65a30af">   26</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classengine_1_1renderer_1_1RendererAPI.html#ab818163e2f93e9d0a508ac29a65a30af">DrawIndexed</a>(<span class="keyword">const</span> std::shared_ptr&lt;VertexArray&gt;&amp; vertex_array)</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      = 0;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classengine_1_1renderer_1_1RendererAPI.html#a5e72b9d9f135fe4689f712cf7f5b9a3d">   29</a></span>&#160;  <span class="keyword">static</span> <a class="code" href="classengine_1_1renderer_1_1RendererAPI.html#a624c2793dc8b315466c36332bbc82ef0">API</a> <a class="code" href="classengine_1_1renderer_1_1RendererAPI.html#a5e72b9d9f135fe4689f712cf7f5b9a3d">GetAPI</a>() { <span class="keywordflow">return</span> API::OpenGL; }</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keyword">static</span> <a class="code" href="classengine_1_1renderer_1_1RendererAPI.html#a624c2793dc8b315466c36332bbc82ef0">API</a> kAPI_;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;};</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span>lambda {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span>core {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span>renderer {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1renderer_1_1RendererAPI.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="classlambda_1_1core_1_1renderer_1_1RendererAPI.html">RendererAPI</a> {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keyword">enum class</span> API {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    None = 0,</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    OpenGL = 1</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  };</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> Init() = 0;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1renderer_1_1RendererAPI.html#a3d07c01be80b3e690dd9b2e227307b1a">   26</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlambda_1_1core_1_1renderer_1_1RendererAPI.html#a3d07c01be80b3e690dd9b2e227307b1a">SetClearColor</a>(<span class="keyword">const</span> glm::vec4&amp; color) = 0;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> SetViewport(</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;      uint32_t x, uint32_t y, uint32_t width, uint32_t height) = 0;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1renderer_1_1RendererAPI.html#aa077a3c204bc66b30a55a653ab9d4d83">   29</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlambda_1_1core_1_1renderer_1_1RendererAPI.html#aa077a3c204bc66b30a55a653ab9d4d83">Clear</a>() = 0;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1renderer_1_1RendererAPI.html#a493f62e5fc0d918148142dc282ddcf1d">   30</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlambda_1_1core_1_1renderer_1_1RendererAPI.html#a493f62e5fc0d918148142dc282ddcf1d">DrawIndexed</a>(<span class="keyword">const</span> std::shared_ptr&lt;VertexArray&gt;&amp; vertex_array)</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      = 0;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1renderer_1_1RendererAPI.html#a2473c88e916fd045dda80c53a5a7dee8">   33</a></span>&#160;  <span class="keyword">static</span> API <a class="code" href="classlambda_1_1core_1_1renderer_1_1RendererAPI.html#a2473c88e916fd045dda80c53a5a7dee8">GetAPI</a>() { <span class="keywordflow">return</span> API::OpenGL; }</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}  <span class="comment">// namespace renderer</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}  <span class="comment">// namespace lambda</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#endif  // ENGINE_SRC_CORE_RENDERER_RENDERERAPI_H_</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keyword">static</span> API kAPI_;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}  <span class="comment">// namespace renderer</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}  <span class="comment">// namespace core</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}  <span class="comment">// namespace lambda</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif  // LAMBDA_SRC_CORE_RENDERER_RENDERERAPI_H_</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassengine_1_1renderer_1_1RendererAPI_html_a5e72b9d9f135fe4689f712cf7f5b9a3d"><div class="ttname"><a href="classengine_1_1renderer_1_1RendererAPI.html#a5e72b9d9f135fe4689f712cf7f5b9a3d">engine::renderer::RendererAPI::GetAPI</a></div><div class="ttdeci">static API GetAPI()</div><div class="ttdoc">Return the API being used within the engine.</div><div class="ttdef"><b>Definition:</b> RendererAPI.h:29</div></div>
-<div class="ttc" id="aclassengine_1_1renderer_1_1RendererAPI_html_ab818163e2f93e9d0a508ac29a65a30af"><div class="ttname"><a href="classengine_1_1renderer_1_1RendererAPI.html#ab818163e2f93e9d0a508ac29a65a30af">engine::renderer::RendererAPI::DrawIndexed</a></div><div class="ttdeci">virtual void DrawIndexed(const std::shared_ptr&lt; VertexArray &gt; &amp;vertex_array)=0</div><div class="ttdoc">Render a vertex array.</div></div>
-<div class="ttc" id="aclassengine_1_1renderer_1_1RendererAPI_html"><div class="ttname"><a href="classengine_1_1renderer_1_1RendererAPI.html">engine::renderer::RendererAPI</a></div><div class="ttdoc">The Rendering API for displaying graphics through the engine api!</div><div class="ttdef"><b>Definition:</b> RendererAPI.h:17</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1RendererAPI_html_aa077a3c204bc66b30a55a653ab9d4d83"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1RendererAPI.html#aa077a3c204bc66b30a55a653ab9d4d83">lambda::core::renderer::RendererAPI::Clear</a></div><div class="ttdeci">virtual void Clear()=0</div><div class="ttdoc">Clear the screen.</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1RendererAPI_html_a493f62e5fc0d918148142dc282ddcf1d"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1RendererAPI.html#a493f62e5fc0d918148142dc282ddcf1d">lambda::core::renderer::RendererAPI::DrawIndexed</a></div><div class="ttdeci">virtual void DrawIndexed(const std::shared_ptr&lt; VertexArray &gt; &amp;vertex_array)=0</div><div class="ttdoc">Render a vertex array.</div></div>
 <div class="ttc" id="aVertexArray_8h_html"><div class="ttname"><a href="VertexArray_8h.html">VertexArray.h</a></div><div class="ttdoc">The Generic VertexArray API.</div></div>
-<div class="ttc" id="aclassengine_1_1renderer_1_1RendererAPI_html_ac4d98acc58992af16ffff59e659e3c60"><div class="ttname"><a href="classengine_1_1renderer_1_1RendererAPI.html#ac4d98acc58992af16ffff59e659e3c60">engine::renderer::RendererAPI::Clear</a></div><div class="ttdeci">virtual void Clear()=0</div><div class="ttdoc">Clear the screen.</div></div>
-<div class="ttc" id="aclassengine_1_1renderer_1_1RendererAPI_html_a624c2793dc8b315466c36332bbc82ef0"><div class="ttname"><a href="classengine_1_1renderer_1_1RendererAPI.html#a624c2793dc8b315466c36332bbc82ef0">engine::renderer::RendererAPI::API</a></div><div class="ttdeci">API</div><div class="ttdoc">The APIs provided by the engine.</div><div class="ttdef"><b>Definition:</b> RendererAPI.h:19</div></div>
-<div class="ttc" id="aclassengine_1_1renderer_1_1RendererAPI_html_aafd69df2fdce94fbde4142d392a04b37"><div class="ttname"><a href="classengine_1_1renderer_1_1RendererAPI.html#aafd69df2fdce94fbde4142d392a04b37">engine::renderer::RendererAPI::SetClearColor</a></div><div class="ttdeci">virtual void SetClearColor(const glm::vec4 &amp;color)=0</div><div class="ttdoc">Set the clear color to be used for the renderer.</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1RendererAPI_html_a3d07c01be80b3e690dd9b2e227307b1a"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1RendererAPI.html#a3d07c01be80b3e690dd9b2e227307b1a">lambda::core::renderer::RendererAPI::SetClearColor</a></div><div class="ttdeci">virtual void SetClearColor(const glm::vec4 &amp;color)=0</div><div class="ttdoc">Set the clear color to be used for the renderer.</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1RendererAPI_html_a2473c88e916fd045dda80c53a5a7dee8"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1RendererAPI.html#a2473c88e916fd045dda80c53a5a7dee8">lambda::core::renderer::RendererAPI::GetAPI</a></div><div class="ttdeci">static API GetAPI()</div><div class="ttdoc">Return the API being used within the engine.</div><div class="ttdef"><b>Definition:</b> RendererAPI.h:33</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1RendererAPI_html"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1RendererAPI.html">lambda::core::renderer::RendererAPI</a></div><div class="ttdef"><b>Definition:</b> RendererAPI.h:18</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>game-engine: engine/src/core/Application.h Source File</title>
+<title>lambda: lambda/src/core/Application.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">game-engine
+   <div id="projectname">lambda
    </div>
   </td>
  </tr>
@@ -61,7 +61,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_996f45160da62e1a3d7f6046fad68f51.html">engine</a></li><li class="navelem"><a class="el" href="dir_3d9126aa00c041bc0b8f859d1965a0f4.html">src</a></li><li class="navelem"><a class="el" href="dir_5e835386694ce392648cfcf102577fe3.html">core</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_4b73342a493c3ec8f518edda193e909f.html">lambda</a></li><li class="navelem"><a class="el" href="dir_896901b14b6321ed9cf375daac6fb468.html">src</a></li><li class="navelem"><a class="el" href="dir_120072a10eb7d4fbc043fc091b8cce0e.html">core</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -69,75 +69,88 @@ $(function() {
 <div class="title">Application.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="Application_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifndef ENGINE_SRC_CORE_APPLICATION_H_</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#define ENGINE_SRC_CORE_APPLICATION_H_</span></div>
+<a href="Application_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef LAMBDA_SRC_CORE_APPLICATION_H_</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define LAMBDA_SRC_CORE_APPLICATION_H_</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Core_8h.html">core/Core.h</a>&quot;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Layer_8h.html">core/Layer.h</a>&quot;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="LayerStack_8h.html">core/LayerStack.h</a>&quot;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="core_2Window_8h.html">core/Window.h</a>&quot;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ApplicationEvent_8h.html">core/events/ApplicationEvent.h</a>&quot;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Event_8h.html">core/events/Event.h</a>&quot;</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ImGuiLayer_8h.html">core/imgui/ImGuiLayer.h</a>&quot;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Pointers_8h.html">core/memory/Pointers.h</a>&quot;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Time_8h.html">core/util/Time.h</a>&quot;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">namespace </span>engine {</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classengine_1_1Application.html">   27</a></span>&#160;<span class="keyword">class </span><a class="code" href="classengine_1_1Application.html">Application</a> {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <a class="code" href="classengine_1_1Application.html">Application</a>();</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classengine_1_1Application.html">Application</a>();</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classengine_1_1Application.html#af1b298b608e939d0753c8e25df338bad">OnEvent</a>(<a class="code" href="classengine_1_1events_1_1Event.html">events::Event</a>* event);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classengine_1_1Application.html#afd15a469c0169bd54072efda67e85158">PushLayer</a>(memory::Shared&lt;Layer&gt; layer);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classengine_1_1Application.html#af72abb37b12af9e8341252835a6b924c">PushOverlay</a>(memory::Shared&lt;Layer&gt; layer);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classengine_1_1Application.html#aafd060e31bb34e38d474f383f5187aea">Run</a>();</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keyword">inline</span> <span class="keyword">const</span> <a class="code" href="classengine_1_1Window.html">Window</a>&amp; GetWindow()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> *window_; }</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">inline</span> <span class="keyword">static</span> <a class="code" href="classengine_1_1Application.html">Application</a>&amp; GetApplication() {<span class="keywordflow">return</span> *kApplication_; }</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <a class="code" href="classengine_1_1LayerStack.html">LayerStack</a> layer_stack_;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">bool</span> running_ = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  memory::Shared&lt;Window&gt; window_;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  memory::Shared&lt;imgui::ImGuiLayer&gt; imgui_layer_;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keyword">static</span> memory::Unique&lt;Application&gt; kApplication_;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <a class="code" href="classengine_1_1util_1_1Time.html">util::Time</a> last_frame_time_;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">bool</span> OnWindowClosed(<span class="keyword">const</span> <a class="code" href="classengine_1_1events_1_1WindowCloseEvent.html">events::WindowCloseEvent</a>&amp; event);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="Application_8h.html#a5d7e915e28c539f2783e020465048d96">   51</a></span>&#160;<a class="code" href="classengine_1_1Application.html">Application</a>* <a class="code" href="Application_8h.html#a5d7e915e28c539f2783e020465048d96">CreateApplication</a>();</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Core_8h.html">core/Core.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="core_2Window_8h.html">core/Window.h</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ApplicationEvent_8h.html">core/events/ApplicationEvent.h</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Event_8h.html">core/events/Event.h</a>&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ImGuiLayer_8h.html">core/imgui/ImGuiLayer.h</a>&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Layer_8h.html">core/layers/Layer.h</a>&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="LayerStack_8h.html">core/layers/LayerStack.h</a>&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Pointers_8h.html">core/memory/Pointers.h</a>&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Time_8h.html">core/util/Time.h</a>&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span>lambda {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">namespace </span>core {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1Application.html">   28</a></span>&#160;<span class="keyword">class </span><a class="code" href="classlambda_1_1core_1_1Application.html">Application</a> {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <a class="code" href="classlambda_1_1core_1_1Application.html#a1e8d4b6b2b9d77f833b72d35e42b58b3">Application</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classlambda_1_1core_1_1Application.html#a13d196a0a1802de3b3c92cd56dbe9be9">~Application</a>();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlambda_1_1core_1_1Application.html#afd590eaa535e74132ee35ac85b657754">OnEvent</a>(memory::Shared&lt;events::Event&gt; event);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlambda_1_1core_1_1Application.html#aac4c7d3d20bb5643af0ce843f2a2f587">PushLayer</a>(memory::Shared&lt;layers::Layer&gt; layer);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlambda_1_1core_1_1Application.html#ac6b1a643b95cab6ade5b1923b8a1fe91">PushOverlay</a>(memory::Shared&lt;layers::Layer&gt; layer);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlambda_1_1core_1_1Application.html#ad4803010e961dc9eb89b74c74b265c4e">Run</a>();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1Application.html#a0e0222a6aa42041f914c9c310697fca4">   51</a></span>&#160;  <span class="keyword">const</span> <a class="code" href="classlambda_1_1core_1_1Window.html">Window</a>&amp; <a class="code" href="classlambda_1_1core_1_1Application.html#a0e0222a6aa42041f914c9c310697fca4">GetWindow</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> *window_.get(); }</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}  <span class="comment">// namespace lambda</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif  // ENGINE_SRC_CORE_APPLICATION_H_</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1Application.html#af5bcfded12b42e321fd913edaf839932">   55</a></span>&#160;  <span class="keyword">static</span> <a class="code" href="classlambda_1_1core_1_1Application.html">Application</a>&amp; <a class="code" href="classlambda_1_1core_1_1Application.html#af5bcfded12b42e321fd913edaf839932">GetApplication</a>() { <span class="keywordflow">return</span> *kApplication_; }</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordtype">bool</span> running_ = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">bool</span> minimized_ = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <a class="code" href="classlambda_1_1core_1_1layers_1_1LayerStack.html">layers::LayerStack</a> layer_stack_;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  memory::Shared&lt;Window&gt; window_;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  memory::Shared&lt;imgui::ImGuiLayer&gt; imgui_layer_;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <a class="code" href="classlambda_1_1core_1_1util_1_1Time.html">util::Time</a> last_frame_time_;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keyword">static</span> memory::Unique&lt;Application&gt; kApplication_;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="comment">// Event handlers.</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordtype">bool</span> OnWindowResize(<span class="keyword">const</span> <a class="code" href="classlambda_1_1core_1_1events_1_1WindowResizeEvent.html">events::WindowResizeEvent</a>&amp; event);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">bool</span> OnWindowClosed(<span class="keyword">const</span> <a class="code" href="classlambda_1_1core_1_1events_1_1WindowCloseEvent.html">events::WindowCloseEvent</a>&amp; event);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;};</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="Application_8h.html#a4b9bcf9ac4926a28f984f9e2429de625">   74</a></span>&#160;memory::Unique&lt;Application&gt; <a class="code" href="Application_8h.html#a4b9bcf9ac4926a28f984f9e2429de625">CreateApplication</a>();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}  <span class="comment">// namespace core</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}  <span class="comment">// namespace lambda</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#endif  // LAMBDA_SRC_CORE_APPLICATION_H_</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassengine_1_1events_1_1WindowCloseEvent_html"><div class="ttname"><a href="classengine_1_1events_1_1WindowCloseEvent.html">engine::events::WindowCloseEvent</a></div><div class="ttdoc">Generated whenever a window is closed.</div><div class="ttdef"><b>Definition:</b> ApplicationEvent.h:40</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1Application_html_ac6b1a643b95cab6ade5b1923b8a1fe91"><div class="ttname"><a href="classlambda_1_1core_1_1Application.html#ac6b1a643b95cab6ade5b1923b8a1fe91">lambda::core::Application::PushOverlay</a></div><div class="ttdeci">void PushOverlay(memory::Shared&lt; layers::Layer &gt; layer)</div><div class="ttdoc">Push an overlay into the application. This gives it higher precedence over other layers and overlays ...</div><div class="ttdef"><b>Definition:</b> Application.cpp:84</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1Window_html"><div class="ttname"><a href="classlambda_1_1core_1_1Window.html">lambda::core::Window</a></div><div class="ttdef"><b>Definition:</b> Window.h:30</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1Application_html_aac4c7d3d20bb5643af0ce843f2a2f587"><div class="ttname"><a href="classlambda_1_1core_1_1Application.html#aac4c7d3d20bb5643af0ce843f2a2f587">lambda::core::Application::PushLayer</a></div><div class="ttdeci">void PushLayer(memory::Shared&lt; layers::Layer &gt; layer)</div><div class="ttdoc">Push a layer into the application.</div><div class="ttdef"><b>Definition:</b> Application.cpp:79</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1Application_html_ad4803010e961dc9eb89b74c74b265c4e"><div class="ttname"><a href="classlambda_1_1core_1_1Application.html#ad4803010e961dc9eb89b74c74b265c4e">lambda::core::Application::Run</a></div><div class="ttdeci">void Run()</div><div class="ttdoc">The main application loop. Manages the applications lifecycle, memory, updating, and pretty much anyt...</div><div class="ttdef"><b>Definition:</b> Application.cpp:41</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1util_1_1Time_html"><div class="ttname"><a href="classlambda_1_1core_1_1util_1_1Time.html">lambda::core::util::Time</a></div><div class="ttdef"><b>Definition:</b> Time.h:38</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1Application_html"><div class="ttname"><a href="classlambda_1_1core_1_1Application.html">lambda::core::Application</a></div><div class="ttdoc">The mind, body, and soul of Lambda. The Application class is the interface into lambda that brings yo...</div><div class="ttdef"><b>Definition:</b> Application.h:28</div></div>
 <div class="ttc" id="acore_2Window_8h_html"><div class="ttname"><a href="core_2Window_8h.html">Window.h</a></div><div class="ttdoc">The Abstract Window definition.</div></div>
-<div class="ttc" id="aclassengine_1_1events_1_1Event_html"><div class="ttname"><a href="classengine_1_1events_1_1Event.html">engine::events::Event</a></div><div class="ttdoc">The abstract Event class.</div><div class="ttdef"><b>Definition:</b> Event.h:57</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1events_1_1WindowCloseEvent_html"><div class="ttname"><a href="classlambda_1_1core_1_1events_1_1WindowCloseEvent.html">lambda::core::events::WindowCloseEvent</a></div><div class="ttdoc">An Event generated when the Window has closed.</div><div class="ttdef"><b>Definition:</b> ApplicationEvent.h:45</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1layers_1_1LayerStack_html"><div class="ttname"><a href="classlambda_1_1core_1_1layers_1_1LayerStack.html">lambda::core::layers::LayerStack</a></div><div class="ttdoc">A Stack based structure for lambda to manage layers in.</div><div class="ttdef"><b>Definition:</b> LayerStack.h:22</div></div>
 <div class="ttc" id="aLayer_8h_html"><div class="ttname"><a href="Layer_8h.html">Layer.h</a></div><div class="ttdoc">The Layer implementation that allows application to specify layers to be attached to the game.</div></div>
-<div class="ttc" id="aclassengine_1_1LayerStack_html"><div class="ttname"><a href="classengine_1_1LayerStack.html">engine::LayerStack</a></div><div class="ttdoc">A stack based data structure for the storage of layers to be managed by the engine.</div><div class="ttdef"><b>Definition:</b> LayerStack.h:27</div></div>
-<div class="ttc" id="aclassengine_1_1Application_html_afd15a469c0169bd54072efda67e85158"><div class="ttname"><a href="classengine_1_1Application.html#afd15a469c0169bd54072efda67e85158">engine::Application::PushLayer</a></div><div class="ttdeci">void PushLayer(memory::Shared&lt; Layer &gt; layer)</div><div class="ttdoc">Attaches a layer to the application instance.</div><div class="ttdef"><b>Definition:</b> Application.cpp:66</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1Application_html_af5bcfded12b42e321fd913edaf839932"><div class="ttname"><a href="classlambda_1_1core_1_1Application.html#af5bcfded12b42e321fd913edaf839932">lambda::core::Application::GetApplication</a></div><div class="ttdeci">static Application &amp; GetApplication()</div><div class="ttdoc">Get a reference to the singleton application. (There will always be ONE application per lambda engine...</div><div class="ttdef"><b>Definition:</b> Application.h:55</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1Application_html_afd590eaa535e74132ee35ac85b657754"><div class="ttname"><a href="classlambda_1_1core_1_1Application.html#afd590eaa535e74132ee35ac85b657754">lambda::core::Application::OnEvent</a></div><div class="ttdeci">void OnEvent(memory::Shared&lt; events::Event &gt; event)</div><div class="ttdoc">The primary responder to Event.</div><div class="ttdef"><b>Definition:</b> Application.cpp:63</div></div>
 <div class="ttc" id="aPointers_8h_html"><div class="ttname"><a href="Pointers_8h.html">Pointers.h</a></div><div class="ttdoc">Abstraction for handling pointers within the engine. Currently just aliases for unique and shared poi...</div></div>
-<div class="ttc" id="aclassengine_1_1util_1_1Time_html"><div class="ttname"><a href="classengine_1_1util_1_1Time.html">engine::util::Time</a></div><div class="ttdoc">A wrapper for working with Time within the game engine. Uses std::steady_clock for a platform indepen...</div><div class="ttdef"><b>Definition:</b> Time.h:21</div></div>
-<div class="ttc" id="aclassengine_1_1Application_html_af1b298b608e939d0753c8e25df338bad"><div class="ttname"><a href="classengine_1_1Application.html#af1b298b608e939d0753c8e25df338bad">engine::Application::OnEvent</a></div><div class="ttdeci">void OnEvent(events::Event *event)</div><div class="ttdoc">Passes events to all the layers.</div><div class="ttdef"><b>Definition:</b> Application.cpp:53</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1Application_html_a13d196a0a1802de3b3c92cd56dbe9be9"><div class="ttname"><a href="classlambda_1_1core_1_1Application.html#a13d196a0a1802de3b3c92cd56dbe9be9">lambda::core::Application::~Application</a></div><div class="ttdeci">virtual ~Application()</div><div class="ttdef"><b>Definition:</b> Application.cpp:37</div></div>
+<div class="ttc" id="aApplication_8h_html_a4b9bcf9ac4926a28f984f9e2429de625"><div class="ttname"><a href="Application_8h.html#a4b9bcf9ac4926a28f984f9e2429de625">lambda::core::CreateApplication</a></div><div class="ttdeci">memory::Unique&lt; Application &gt; CreateApplication()</div><div class="ttdoc">Used for creating an instance of the game engine.</div></div>
 <div class="ttc" id="aEvent_8h_html"><div class="ttname"><a href="Event_8h.html">Event.h</a></div><div class="ttdoc">The Event class and dispatcher core implementations.</div></div>
 <div class="ttc" id="aTime_8h_html"><div class="ttname"><a href="Time_8h.html">Time.h</a></div><div class="ttdoc">Cross platform timing utility for the game engine.</div></div>
-<div class="ttc" id="aclassengine_1_1Application_html_aafd060e31bb34e38d474f383f5187aea"><div class="ttname"><a href="classengine_1_1Application.html#aafd060e31bb34e38d474f383f5187aea">engine::Application::Run</a></div><div class="ttdeci">void Run()</div><div class="ttdoc">Controls the applications lifecycle and all lower level functionality like input, events,...</div><div class="ttdef"><b>Definition:</b> Application.cpp:33</div></div>
-<div class="ttc" id="aApplication_8h_html_a5d7e915e28c539f2783e020465048d96"><div class="ttname"><a href="Application_8h.html#a5d7e915e28c539f2783e020465048d96">engine::CreateApplication</a></div><div class="ttdeci">Application * CreateApplication()</div><div class="ttdoc">An external function that is to be defined inside of the client.</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1Application_html_a0e0222a6aa42041f914c9c310697fca4"><div class="ttname"><a href="classlambda_1_1core_1_1Application.html#a0e0222a6aa42041f914c9c310697fca4">lambda::core::Application::GetWindow</a></div><div class="ttdeci">const Window &amp; GetWindow() const</div><div class="ttdoc">Get the window.</div><div class="ttdef"><b>Definition:</b> Application.h:51</div></div>
 <div class="ttc" id="aLayerStack_8h_html"><div class="ttname"><a href="LayerStack_8h.html">LayerStack.h</a></div><div class="ttdoc">The LayerStack Definition for handling multiple layers.</div></div>
 <div class="ttc" id="aImGuiLayer_8h_html"><div class="ttname"><a href="ImGuiLayer_8h.html">ImGuiLayer.h</a></div><div class="ttdoc">The ImGuiLayer implementation for dev tool creation.</div></div>
-<div class="ttc" id="aclassengine_1_1Window_html"><div class="ttname"><a href="classengine_1_1Window.html">engine::Window</a></div><div class="ttdoc">The generic window implementation that allows platform specific window APIs to expose generic window ...</div><div class="ttdef"><b>Definition:</b> Window.h:28</div></div>
-<div class="ttc" id="aclassengine_1_1Application_html"><div class="ttname"><a href="classengine_1_1Application.html">engine::Application</a></div><div class="ttdoc">The primary driver of all applications extending this engine.</div><div class="ttdef"><b>Definition:</b> Application.h:27</div></div>
 <div class="ttc" id="aApplicationEvent_8h_html"><div class="ttname"><a href="ApplicationEvent_8h.html">ApplicationEvent.h</a></div><div class="ttdoc">Events that are to be specifically handled at the application level.</div></div>
-<div class="ttc" id="aclassengine_1_1Application_html_af72abb37b12af9e8341252835a6b924c"><div class="ttname"><a href="classengine_1_1Application.html#af72abb37b12af9e8341252835a6b924c">engine::Application::PushOverlay</a></div><div class="ttdeci">void PushOverlay(memory::Shared&lt; Layer &gt; layer)</div><div class="ttdoc">Attaches an overlay to the application instance.</div><div class="ttdef"><b>Definition:</b> Application.cpp:71</div></div>
 <div class="ttc" id="aCore_8h_html"><div class="ttname"><a href="Core_8h.html">Core.h</a></div><div class="ttdoc">Core macros to be used all throughout the engine for development and production purposes.</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1events_1_1WindowResizeEvent_html"><div class="ttname"><a href="classlambda_1_1core_1_1events_1_1WindowResizeEvent.html">lambda::core::events::WindowResizeEvent</a></div><div class="ttdoc">An Event generated when the Window has resized.</div><div class="ttdef"><b>Definition:</b> ApplicationEvent.h:19</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1Application_html_a1e8d4b6b2b9d77f833b72d35e42b58b3"><div class="ttname"><a href="classlambda_1_1core_1_1Application.html#a1e8d4b6b2b9d77f833b72d35e42b58b3">lambda::core::Application::Application</a></div><div class="ttdeci">Application()</div><div class="ttdef"><b>Definition:</b> Application.cpp:24</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

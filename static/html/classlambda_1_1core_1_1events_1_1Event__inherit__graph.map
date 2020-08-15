@@ -1,0 +1,17 @@
+<map id="lambda::core::events::Event" name="lambda::core::events::Event">
+<area shape="rect" id="node1" title="The base Event class for events that are propagated throughout lambda." alt="" coords="5,267,164,308"/>
+<area shape="rect" id="node2" href="$classlambda_1_1core_1_1events_1_1AppRenderEvent.html" title="An event generated when the app has rendered." alt="" coords="214,5,373,47"/>
+<area shape="rect" id="node3" href="$classlambda_1_1core_1_1events_1_1AppTickEvent.html" title="An Event generated when the app has ticked." alt="" coords="214,71,373,112"/>
+<area shape="rect" id="node4" href="$classlambda_1_1core_1_1events_1_1AppUpdateEvent.html" title="An event generated when the app has updated." alt="" coords="214,136,373,177"/>
+<area shape="rect" id="node5" href="$classlambda_1_1core_1_1events_1_1KeyEvent.html" title="The Base Key Event used for other Key Events." alt="" coords="214,201,373,243"/>
+<area shape="rect" id="node9" href="$classlambda_1_1core_1_1events_1_1MouseButtonEvent.html" title="The base event class for all events mouse button related." alt="" coords="214,267,373,308"/>
+<area shape="rect" id="node12" href="$classlambda_1_1core_1_1events_1_1MouseMovedEvent.html" title="An event generated whenever a mouse is moved within an application that is running lambda." alt="" coords="214,332,373,373"/>
+<area shape="rect" id="node13" href="$classlambda_1_1core_1_1events_1_1MouseScrolledEvent.html" title="An event generated whenever a mouse is scrolled within an application that is running lambda." alt="" coords="212,397,375,439"/>
+<area shape="rect" id="node14" href="$classlambda_1_1core_1_1events_1_1WindowCloseEvent.html" title="An Event generated when the Window has closed." alt="" coords="214,463,373,504"/>
+<area shape="rect" id="node15" href="$classlambda_1_1core_1_1events_1_1WindowResizeEvent.html" title="An Event generated when the Window has resized." alt="" coords="212,528,375,569"/>
+<area shape="rect" id="node6" href="$classlambda_1_1core_1_1events_1_1KeyPressedEvent.html" title="An Event generated whenever a key is pressed within an application that is running lambda." alt="" coords="450,71,609,112"/>
+<area shape="rect" id="node7" href="$classlambda_1_1core_1_1events_1_1KeyReleasedEvent.html" title="An Event generated whenever a key is released within an application that is running lambda." alt="" coords="450,136,609,177"/>
+<area shape="rect" id="node8" href="$classlambda_1_1core_1_1events_1_1KeyTypedEvent.html" title="An Event generated whenever a key is typed within an application that is running lambda...." alt="" coords="450,201,609,243"/>
+<area shape="rect" id="node10" href="$classlambda_1_1core_1_1events_1_1MouseButtonPressedEvent.html" title="An event generated whenever a Mouse button is pressed within an application that is running lambda." alt="" coords="427,267,631,308"/>
+<area shape="rect" id="node11" href="$classlambda_1_1core_1_1events_1_1MouseButtonReleasedEvent.html" title="An event generated whenever a Mouse button is released within an application that is running lambda." alt="" coords="423,332,636,373"/>
+</map>

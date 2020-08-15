@@ -1,0 +1,88 @@
+\hypertarget{classlambda_1_1core_1_1io_1_1AsyncTask}{}\doxysection{lambda\+::core\+::io\+::Async\+Task Class Reference}
+\label{classlambda_1_1core_1_1io_1_1AsyncTask}\index{lambda::core::io::AsyncTask@{lambda::core::io::AsyncTask}}
+
+
+A wrapper for callbacks that are supposed to be executed asynchronously.  
+
+
+
+
+{\ttfamily \#include $<$Async\+Task.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1io_1_1AsyncTask_a7308545ca1ab6d01d460121639c7dba4}\label{classlambda_1_1core_1_1io_1_1AsyncTask_a7308545ca1ab6d01d460121639c7dba4}} 
+\mbox{\hyperlink{classlambda_1_1core_1_1io_1_1AsyncTask_a7308545ca1ab6d01d460121639c7dba4}{Async\+Task}} (Async\+Callback callback, \mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time}{util\+::\+Time}} execute\+\_\+at=\mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time}{util\+::\+Time}}(), \mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time}{util\+::\+Time}} expires\+\_\+at=\mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time}{util\+::\+Time}}().Add\+Seconds(5))
+\begin{DoxyCompactList}\small\item\em Construct a task that should execute as soon as possible. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1io_1_1AsyncTask_a9fde810139d3a3565d829f5fe420f6e3}\label{classlambda_1_1core_1_1io_1_1AsyncTask_a9fde810139d3a3565d829f5fe420f6e3}} 
+\mbox{\hyperlink{classlambda_1_1core_1_1io_1_1AsyncTask_a9fde810139d3a3565d829f5fe420f6e3}{Async\+Task}} (Async\+Callback callback, uint32\+\_\+t interval\+\_\+in\+\_\+ms, bool should\+\_\+repeat)
+\begin{DoxyCompactList}\small\item\em Construct a task that should execute from a certain period from the current time. (And potentially in an interval) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{AsyncTask_8h_a4c52fba07895ac0bdb6d3bbcc2a31018}{Async\+Result}} \mbox{\hyperlink{classlambda_1_1core_1_1io_1_1AsyncTask_a58b4bf38c628a3686ce0e0a02b6fee88}{Execute}} ()
+\begin{DoxyCompactList}\small\item\em Executes the Async\+Callback and returns back the result. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{AsyncTask_8h_a2d90cf950b7684121524861768bb22e9}{Async\+Status}} \mbox{\hyperlink{classlambda_1_1core_1_1io_1_1AsyncTask_a94d57f9f33f5e2af5c65ffe5362cff49}{Get\+Status}} ()
+\begin{DoxyCompactList}\small\item\em Gets the execution status of the callback. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classlambda_1_1core_1_1io_1_1AsyncTask_aa2c40f6b9649f496895121879b870e94}{Reschedule\+Task}} (\mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time}{core\+::util\+::\+Time}} new\+\_\+execution\+\_\+time, \mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time}{core\+::util\+::\+Time}} new\+\_\+expiration\+\_\+time)
+\begin{DoxyCompactList}\small\item\em Allows a task to be rescheduled with new times. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1io_1_1AsyncTask_af4ab7986341028c7baf593675ad9f353}\label{classlambda_1_1core_1_1io_1_1AsyncTask_af4ab7986341028c7baf593675ad9f353}} 
+const std\+::string \& \mbox{\hyperlink{classlambda_1_1core_1_1io_1_1AsyncTask_af4ab7986341028c7baf593675ad9f353}{Get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Get the name of the task (Currently not implemented.) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1io_1_1AsyncTask_a4001b4c7eff555ed22a964a5b48d07b5}\label{classlambda_1_1core_1_1io_1_1AsyncTask_a4001b4c7eff555ed22a964a5b48d07b5}} 
+const uint32\+\_\+t {\bfseries Get\+Interval\+In\+Milliseconds} () const
+\item 
+bool \mbox{\hyperlink{classlambda_1_1core_1_1io_1_1AsyncTask_a864d9eda55e0c389e4c565b64b268e44}{Should\+Repeat}} ()
+\begin{DoxyCompactList}\small\item\em Allow the ability to see if the task is setup to repeat. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A wrapper for callbacks that are supposed to be executed asynchronously. 
+
+There is no need to use this class externally, as the \mbox{\hyperlink{classlambda_1_1core_1_1io_1_1EventLoop}{Event\+Loop}} will create these upon passing it a Async\+Callback. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classlambda_1_1core_1_1io_1_1AsyncTask_a58b4bf38c628a3686ce0e0a02b6fee88}\label{classlambda_1_1core_1_1io_1_1AsyncTask_a58b4bf38c628a3686ce0e0a02b6fee88}} 
+\index{lambda::core::io::AsyncTask@{lambda::core::io::AsyncTask}!Execute@{Execute}}
+\index{Execute@{Execute}!lambda::core::io::AsyncTask@{lambda::core::io::AsyncTask}}
+\doxysubsubsection{\texorpdfstring{Execute()}{Execute()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{AsyncTask_8h_a4c52fba07895ac0bdb6d3bbcc2a31018}{Async\+Result}} lambda\+::core\+::io\+::\+Async\+Task\+::\+Execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Executes the Async\+Callback and returns back the result. 
+
+Executes the task if and returns a success if the callback succeeds. \mbox{\Hypertarget{classlambda_1_1core_1_1io_1_1AsyncTask_a94d57f9f33f5e2af5c65ffe5362cff49}\label{classlambda_1_1core_1_1io_1_1AsyncTask_a94d57f9f33f5e2af5c65ffe5362cff49}} 
+\index{lambda::core::io::AsyncTask@{lambda::core::io::AsyncTask}!GetStatus@{GetStatus}}
+\index{GetStatus@{GetStatus}!lambda::core::io::AsyncTask@{lambda::core::io::AsyncTask}}
+\doxysubsubsection{\texorpdfstring{GetStatus()}{GetStatus()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{AsyncTask_8h_a2d90cf950b7684121524861768bb22e9}{Async\+Status}} lambda\+::core\+::io\+::\+Async\+Task\+::\+Get\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the execution status of the callback. 
+
+The status refers to whether or not the task has executed. \mbox{\Hypertarget{classlambda_1_1core_1_1io_1_1AsyncTask_aa2c40f6b9649f496895121879b870e94}\label{classlambda_1_1core_1_1io_1_1AsyncTask_aa2c40f6b9649f496895121879b870e94}} 
+\index{lambda::core::io::AsyncTask@{lambda::core::io::AsyncTask}!RescheduleTask@{RescheduleTask}}
+\index{RescheduleTask@{RescheduleTask}!lambda::core::io::AsyncTask@{lambda::core::io::AsyncTask}}
+\doxysubsubsection{\texorpdfstring{RescheduleTask()}{RescheduleTask()}}
+{\footnotesize\ttfamily void lambda\+::core\+::io\+::\+Async\+Task\+::\+Reschedule\+Task (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time}{core\+::util\+::\+Time}}}]{new\+\_\+execution\+\_\+time,  }\item[{\mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time}{core\+::util\+::\+Time}}}]{new\+\_\+expiration\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Allows a task to be rescheduled with new times. 
+
+Resets the task to execute at a future time. Usually done through the event loop. \mbox{\Hypertarget{classlambda_1_1core_1_1io_1_1AsyncTask_a864d9eda55e0c389e4c565b64b268e44}\label{classlambda_1_1core_1_1io_1_1AsyncTask_a864d9eda55e0c389e4c565b64b268e44}} 
+\index{lambda::core::io::AsyncTask@{lambda::core::io::AsyncTask}!ShouldRepeat@{ShouldRepeat}}
+\index{ShouldRepeat@{ShouldRepeat}!lambda::core::io::AsyncTask@{lambda::core::io::AsyncTask}}
+\doxysubsubsection{\texorpdfstring{ShouldRepeat()}{ShouldRepeat()}}
+{\footnotesize\ttfamily bool lambda\+::core\+::io\+::\+Async\+Task\+::\+Should\+Repeat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Allow the ability to see if the task is setup to repeat. 
+
+It is by default set to false. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+lambda/src/core/io/\mbox{\hyperlink{AsyncTask_8h}{Async\+Task.\+h}}\item 
+lambda/src/core/io/Async\+Task.\+cpp\end{DoxyCompactItemize}

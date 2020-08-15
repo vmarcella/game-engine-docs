@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>game-engine: engine/src/core/renderer/Buffer.h Source File</title>
+<title>lambda: lambda/src/core/renderer/Buffer.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">game-engine
+   <div id="projectname">lambda
    </div>
   </td>
  </tr>
@@ -61,7 +61,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_996f45160da62e1a3d7f6046fad68f51.html">engine</a></li><li class="navelem"><a class="el" href="dir_3d9126aa00c041bc0b8f859d1965a0f4.html">src</a></li><li class="navelem"><a class="el" href="dir_5e835386694ce392648cfcf102577fe3.html">core</a></li><li class="navelem"><a class="el" href="dir_ce4abf2d955932dc9caa6b4c1952fc3a.html">renderer</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_4b73342a493c3ec8f518edda193e909f.html">lambda</a></li><li class="navelem"><a class="el" href="dir_896901b14b6321ed9cf375daac6fb468.html">src</a></li><li class="navelem"><a class="el" href="dir_120072a10eb7d4fbc043fc091b8cce0e.html">core</a></li><li class="navelem"><a class="el" href="dir_7450cf7b83d623f255804473698129f8.html">renderer</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -70,8 +70,8 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <a href="Buffer_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef ENGINE_SRC_CORE_RENDERER_BUFFER_H_</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define ENGINE_SRC_CORE_RENDERER_BUFFER_H_</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef LAMBDA_SRC_CORE_RENDERER_BUFFER_H_</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define LAMBDA_SRC_CORE_RENDERER_BUFFER_H_</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;bits/stdint-uintn.h&gt;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;ostream&gt;</span></div>
@@ -82,181 +82,185 @@ $(function() {
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Assert_8h.html">core/util/Assert.h</a>&quot;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Log_8h.html">core/util/Log.h</a>&quot;</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span>engine {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">namespace </span>renderer {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span>lambda {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">namespace </span>core {</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="Buffer_8h.html#a8d90f87a6e9335927edd305c1e1345c1">   26</a></span>&#160;<span class="keyword">enum class</span> <a class="code" href="Buffer_8h.html#a8d90f87a6e9335927edd305c1e1345c1">ShaderDataType</a> {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  None = 0,</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  Bool,</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  Float,</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  Float2,</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  Float3,</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  Float4,</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  Int,</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  Int2,</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  Int3,</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  Int4,</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  Mat3,</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  Mat4,</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;};</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">static</span> uint32_t ShaderDataTypeSize(ShaderDataType type) {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordflow">switch</span> (type) {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">case</span> ShaderDataType::Bool:  <span class="keywordflow">return</span> 1;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">case</span> ShaderDataType::Float: <span class="keywordflow">return</span> 4;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">case</span> ShaderDataType::Float2: <span class="keywordflow">return</span> 4 * 2;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">case</span> ShaderDataType::Float3: <span class="keywordflow">return</span> 4 * 3;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">case</span> ShaderDataType::Float4: <span class="keywordflow">return</span> 4 * 4;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">case</span> ShaderDataType::Int: <span class="keywordflow">return</span> 4;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">case</span> ShaderDataType::Int2: <span class="keywordflow">return</span> 4 * 2;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">case</span> ShaderDataType::Int3: <span class="keywordflow">return</span> 4 * 3;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">case</span> ShaderDataType::Int4: <span class="keywordflow">return</span> 4 * 4;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">case</span> ShaderDataType::Mat3: <span class="keywordflow">return</span> 4 * 3 * 3;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">case</span> ShaderDataType::Mat4: <span class="keywordflow">return</span> 4 * 4 * 4;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">default</span>: <a class="code" href="Assert_8h.html#a575be40a8622dad4acb71b9723d49cf4">ENGINE_CORE_ASSERT</a>(<span class="keyword">false</span>, <span class="stringliteral">&quot;Not a provided Shader type&quot;</span>); <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">static</span> uint32_t ShaderDataTypeComponentCount(ShaderDataType type) {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordflow">switch</span> (type) {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">case</span> ShaderDataType::Bool:  <span class="keywordflow">return</span> 1;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">case</span> ShaderDataType::Float: <span class="keywordflow">return</span> 1;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">case</span> ShaderDataType::Float2: <span class="keywordflow">return</span> 2;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">case</span> ShaderDataType::Float3: <span class="keywordflow">return</span> 3;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">case</span> ShaderDataType::Float4: <span class="keywordflow">return</span> 4;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">case</span> ShaderDataType::Int: <span class="keywordflow">return</span> 1;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">case</span> ShaderDataType::Int2: <span class="keywordflow">return</span> 2;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">case</span> ShaderDataType::Int3: <span class="keywordflow">return</span> 3;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">case</span> ShaderDataType::Int4: <span class="keywordflow">return</span> 4;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">case</span> ShaderDataType::Mat3: <span class="keywordflow">return</span> 3 * 3;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">case</span> ShaderDataType::Mat4: <span class="keywordflow">return</span> 4 * 4;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">default</span>: <a class="code" href="Assert_8h.html#a575be40a8622dad4acb71b9723d49cf4">ENGINE_CORE_ASSERT</a>(<span class="keyword">false</span>, <span class="stringliteral">&quot;Not a provided Shader type&quot;</span>); <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  }</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="structengine_1_1renderer_1_1BufferElement.html">   75</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structengine_1_1renderer_1_1BufferElement.html">BufferElement</a> {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <a class="code" href="Buffer_8h.html#a8d90f87a6e9335927edd305c1e1345c1">ShaderDataType</a> Type;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  std::string Name;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  uint32_t Size;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  uint32_t Offset;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  uint32_t Components;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordtype">bool</span> Normalized;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="structengine_1_1renderer_1_1BufferElement.html#a76049a787d70b0adf984e65a9994bc1d">   83</a></span>&#160;  <a class="code" href="structengine_1_1renderer_1_1BufferElement.html#a76049a787d70b0adf984e65a9994bc1d">BufferElement</a>(</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      <a class="code" href="Buffer_8h.html#a8d90f87a6e9335927edd305c1e1345c1">ShaderDataType</a> type, <span class="keyword">const</span> std::string&amp; name, <span class="keywordtype">bool</span> normalized = <span class="keyword">false</span>) :</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;          Type(type),</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;          Name(name),</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;          Size(ShaderDataTypeSize(type)),</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;          Offset(0),</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;          Components(ShaderDataTypeComponentCount(type)),</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;          Normalized(normalized) { <a class="code" href="Log_8h.html#af5a23626565ced5d88975f395e9bb90f">ENGINE_CORE_TRACE</a>(ToString()); }</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  std::string ToString()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">return</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        std::string(<span class="stringliteral">&quot;[Buffer Element] &quot;</span>)</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        + <span class="stringliteral">&quot;Name: &quot;</span> + Name</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        + <span class="stringliteral">&quot;, Offset: &quot;</span> + std::to_string(Offset)</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        + <span class="stringliteral">&quot;,  Size: &quot;</span> + std::to_string(Size)</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        + <span class="stringliteral">&quot;,  Components: &quot;</span> + std::to_string(Components)</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        + <span class="stringliteral">&quot;,  Normalized: &quot;</span> + std::to_string(Normalized);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  }</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keyword">inline</span> std::ostream&amp; operator&lt;&lt;(std::ostream&amp; os) { <span class="keywordflow">return</span> os &lt;&lt; ToString(); }</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;};</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="classengine_1_1renderer_1_1BufferLayout.html">  105</a></span>&#160;<span class="keyword">class </span><a class="code" href="classengine_1_1renderer_1_1BufferLayout.html">BufferLayout</a> {</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <a class="code" href="classengine_1_1renderer_1_1BufferLayout.html#ae2a3753096d6a8171179d6e9c86facb8">BufferLayout</a>(<span class="keyword">const</span> std::initializer_list&lt;BufferElement&gt;&amp; elements)</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    : elements_(elements) { CalculateOffsetAndStride(); }</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
-<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="classengine_1_1renderer_1_1BufferLayout.html#ae2a3753096d6a8171179d6e9c86facb8">  110</a></span>&#160;  <a class="code" href="classengine_1_1renderer_1_1BufferLayout.html#ae2a3753096d6a8171179d6e9c86facb8">BufferLayout</a>() {}</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">namespace </span>renderer {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="Buffer_8h.html#ae5cf5dd2a2d7fca2f1c00bc9eaf9446f">   28</a></span>&#160;<span class="keyword">enum class</span> <a class="code" href="Buffer_8h.html#ae5cf5dd2a2d7fca2f1c00bc9eaf9446f">ShaderDataType</a> {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  None = 0,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  Bool,</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  Float,</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  Float2,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  Float3,</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  Float4,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  Int,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  Int2,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  Int3,</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  Int4,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  Mat3,</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  Mat4,</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;};</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">static</span> uint32_t ShaderDataTypeSize(ShaderDataType type) {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordflow">switch</span> (type) {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">case</span> ShaderDataType::Bool:  <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">case</span> ShaderDataType::Float: <span class="keywordflow">return</span> 4;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">case</span> ShaderDataType::Float2: <span class="keywordflow">return</span> 4 * 2;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">case</span> ShaderDataType::Float3: <span class="keywordflow">return</span> 4 * 3;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">case</span> ShaderDataType::Float4: <span class="keywordflow">return</span> 4 * 4;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">case</span> ShaderDataType::Int: <span class="keywordflow">return</span> 4;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">case</span> ShaderDataType::Int2: <span class="keywordflow">return</span> 4 * 2;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">case</span> ShaderDataType::Int3: <span class="keywordflow">return</span> 4 * 3;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">case</span> ShaderDataType::Int4: <span class="keywordflow">return</span> 4 * 4;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">case</span> ShaderDataType::Mat3: <span class="keywordflow">return</span> 4 * 3 * 3;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">case</span> ShaderDataType::Mat4: <span class="keywordflow">return</span> 4 * 4 * 4;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">default</span>: <a class="code" href="Assert_8h.html#a75745a8226fcf51e2c9fab32062864fc">LAMBDA_CORE_ASSERT</a>(<span class="keyword">false</span>, <span class="stringliteral">&quot;Not a provided Shader type&quot;</span>); <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">static</span> uint32_t ShaderDataTypeComponentCount(ShaderDataType type) {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordflow">switch</span> (type) {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">case</span> ShaderDataType::Bool:  <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">case</span> ShaderDataType::Float: <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">case</span> ShaderDataType::Float2: <span class="keywordflow">return</span> 2;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">case</span> ShaderDataType::Float3: <span class="keywordflow">return</span> 3;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">case</span> ShaderDataType::Float4: <span class="keywordflow">return</span> 4;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">case</span> ShaderDataType::Int: <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">case</span> ShaderDataType::Int2: <span class="keywordflow">return</span> 2;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">case</span> ShaderDataType::Int3: <span class="keywordflow">return</span> 3;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">case</span> ShaderDataType::Int4: <span class="keywordflow">return</span> 4;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">case</span> ShaderDataType::Mat3: <span class="keywordflow">return</span> 3 * 3;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">case</span> ShaderDataType::Mat4: <span class="keywordflow">return</span> 4 * 4;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">default</span>: <a class="code" href="Assert_8h.html#a75745a8226fcf51e2c9fab32062864fc">LAMBDA_CORE_ASSERT</a>(<span class="keyword">false</span>, <span class="stringliteral">&quot;Not a provided Shader type&quot;</span>); <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="structlambda_1_1core_1_1renderer_1_1BufferElement.html">   77</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structlambda_1_1core_1_1renderer_1_1BufferElement.html">BufferElement</a> {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <a class="code" href="Buffer_8h.html#ae5cf5dd2a2d7fca2f1c00bc9eaf9446f">ShaderDataType</a> Type;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  std::string Name;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  uint32_t Size;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  uint32_t Offset;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  uint32_t Components;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordtype">bool</span> Normalized;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="structlambda_1_1core_1_1renderer_1_1BufferElement.html#a4fa82d6db4166c55f8b00e8f4031b060">   85</a></span>&#160;  <a class="code" href="structlambda_1_1core_1_1renderer_1_1BufferElement.html#a4fa82d6db4166c55f8b00e8f4031b060">BufferElement</a>(</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      <a class="code" href="Buffer_8h.html#ae5cf5dd2a2d7fca2f1c00bc9eaf9446f">ShaderDataType</a> type, <span class="keyword">const</span> std::string&amp; name, <span class="keywordtype">bool</span> normalized = <span class="keyword">false</span>) :</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;          Type(type),</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;          Name(name),</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;          Size(ShaderDataTypeSize(type)),</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;          Offset(0),</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;          Components(ShaderDataTypeComponentCount(type)),</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;          Normalized(normalized) { <a class="code" href="Log_8h.html#a4645443c6bdf15c6ce5ce845e4e9387b">LAMBDA_CORE_TRACE</a>(ToString()); }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  std::string ToString()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">return</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        std::string(<span class="stringliteral">&quot;[Buffer Element] &quot;</span>)</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        + <span class="stringliteral">&quot;Name: &quot;</span> + Name</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        + <span class="stringliteral">&quot;, Offset: &quot;</span> + std::to_string(Offset)</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        + <span class="stringliteral">&quot;,  Size: &quot;</span> + std::to_string(Size)</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        + <span class="stringliteral">&quot;,  Components: &quot;</span> + std::to_string(Components)</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        + <span class="stringliteral">&quot;,  Normalized: &quot;</span> + std::to_string(Normalized);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keyword">inline</span> std::ostream&amp; operator&lt;&lt;(std::ostream&amp; os) { <span class="keywordflow">return</span> os &lt;&lt; ToString(); }</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;};</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1renderer_1_1BufferLayout.html">  107</a></span>&#160;<span class="keyword">class </span><a class="code" href="classlambda_1_1core_1_1renderer_1_1BufferLayout.html">BufferLayout</a> {</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <a class="code" href="classlambda_1_1core_1_1renderer_1_1BufferLayout.html">BufferLayout</a>(<span class="keyword">const</span> std::initializer_list&lt;BufferElement&gt;&amp; elements)</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    : elements_(elements) { CalculateOffsetAndStride(); }</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="classengine_1_1renderer_1_1BufferLayout.html#abf525eed067da7cfa637c9fe795767b5">  112</a></span>&#160;  <span class="keyword">inline</span> uint32_t <a class="code" href="classengine_1_1renderer_1_1BufferLayout.html#abf525eed067da7cfa637c9fe795767b5">GetStride</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> stride_; }</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <a class="code" href="classlambda_1_1core_1_1renderer_1_1BufferLayout.html">BufferLayout</a>() {}</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
-<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="classengine_1_1renderer_1_1BufferLayout.html#abdb110b3851f860c2d602d1b12a8568a">  114</a></span>&#160;  <span class="keyword">inline</span> <span class="keyword">const</span> std::vector&lt;BufferElement&gt;&amp; <a class="code" href="classengine_1_1renderer_1_1BufferLayout.html#abdb110b3851f860c2d602d1b12a8568a">GetElements</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;      <span class="keywordflow">return</span> elements_; }</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
-<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="classengine_1_1renderer_1_1BufferLayout.html#ae7abc90b970e0b028a9924fcb5bcf786">  117</a></span>&#160;  <span class="keyword">inline</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code" href="classengine_1_1renderer_1_1BufferLayout.html#ae7abc90b970e0b028a9924fcb5bcf786">HasElements</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> elements_.size() &gt; 0; }</div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1renderer_1_1BufferLayout.html#a3319387032adbcca35f3f49e8d071190">  114</a></span>&#160;  <span class="keyword">inline</span> uint32_t <a class="code" href="classlambda_1_1core_1_1renderer_1_1BufferLayout.html#a3319387032adbcca35f3f49e8d071190">GetStride</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> stride_; }</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1renderer_1_1BufferLayout.html#a8beebcd05084371223585a9d07ecffe4">  116</a></span>&#160;  <span class="keyword">inline</span> <span class="keyword">const</span> std::vector&lt;BufferElement&gt;&amp; <a class="code" href="classlambda_1_1core_1_1renderer_1_1BufferLayout.html#a8beebcd05084371223585a9d07ecffe4">GetElements</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;      <span class="keywordflow">return</span> elements_; }</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  std::vector&lt;BufferElement&gt;::iterator begin() { <span class="keywordflow">return</span> elements_.begin(); }</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  std::vector&lt;BufferElement&gt;::iterator end() { <span class="keywordflow">return</span> elements_.end(); }</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  std::vector&lt;BufferElement&gt;::const_iterator begin()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;      <span class="keywordflow">return</span> elements_.begin(); }</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  std::vector&lt;BufferElement&gt;::const_iterator end()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;      <span class="keywordflow">return</span> elements_.end(); }</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  std::vector&lt;BufferElement&gt; elements_;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  uint32_t stride_;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <span class="keywordtype">void</span> CalculateOffsetAndStride() {</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    uint32_t offset = 0;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    stride_ = 0;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordflow">for</span> (BufferElement&amp; element : elements_) {</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;      element.Offset = offset;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;      offset += element.Size;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;      stride_ += element.Size;</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    }</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  }</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;};</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
-<div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="classengine_1_1renderer_1_1VertexBuffer.html">  144</a></span>&#160;<span class="keyword">class </span><a class="code" href="classengine_1_1renderer_1_1VertexBuffer.html">VertexBuffer</a> {</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classengine_1_1renderer_1_1VertexBuffer.html">VertexBuffer</a>() {}</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
-<div class="line"><a name="l00148"></a><span class="lineno"><a class="line" href="classengine_1_1renderer_1_1VertexBuffer.html#a62c7bd816aa10b69d1e903918ecc4414">  148</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classengine_1_1renderer_1_1VertexBuffer.html#a62c7bd816aa10b69d1e903918ecc4414">Bind</a>() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00149"></a><span class="lineno"><a class="line" href="classengine_1_1renderer_1_1VertexBuffer.html#a06b240b93506dfd383b3a3f8947eb26f">  149</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classengine_1_1renderer_1_1VertexBuffer.html#a06b240b93506dfd383b3a3f8947eb26f">Unbind</a>() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
-<div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="classengine_1_1renderer_1_1VertexBuffer.html#a3186b40aa8c8c471fe80c29645859aa5">  151</a></span>&#160;  <span class="keyword">virtual</span> <span class="keyword">const</span> <a class="code" href="classengine_1_1renderer_1_1BufferLayout.html">BufferLayout</a>&amp; <a class="code" href="classengine_1_1renderer_1_1VertexBuffer.html#a3186b40aa8c8c471fe80c29645859aa5">GetLayout</a>() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00152"></a><span class="lineno"><a class="line" href="classengine_1_1renderer_1_1VertexBuffer.html#afad191b22fec9bc2519e43d543e5c75e">  152</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classengine_1_1renderer_1_1VertexBuffer.html#afad191b22fec9bc2519e43d543e5c75e">SetLayout</a>(<span class="keyword">const</span> <a class="code" href="classengine_1_1renderer_1_1BufferLayout.html">BufferLayout</a>&amp;) = 0;</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  <span class="keyword">static</span> memory::Shared&lt;VertexBuffer&gt; <a class="code" href="classengine_1_1renderer_1_1VertexBuffer.html#a4c337f1549556946735a47708a55ab9c">Create</a>(<span class="keywordtype">float</span>* vertices, uint32_t size);</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;};</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
-<div class="line"><a name="l00157"></a><span class="lineno"><a class="line" href="classengine_1_1renderer_1_1IndexBuffer.html">  157</a></span>&#160;<span class="keyword">class </span><a class="code" href="classengine_1_1renderer_1_1IndexBuffer.html">IndexBuffer</a> {</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classengine_1_1renderer_1_1IndexBuffer.html">IndexBuffer</a>() {}</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
-<div class="line"><a name="l00161"></a><span class="lineno"><a class="line" href="classengine_1_1renderer_1_1IndexBuffer.html#a050664f22cc88b809bc386c1e4dba359">  161</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classengine_1_1renderer_1_1IndexBuffer.html#a050664f22cc88b809bc386c1e4dba359">Bind</a>() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00162"></a><span class="lineno"><a class="line" href="classengine_1_1renderer_1_1IndexBuffer.html#a8fd1ab43d3963533370c4d8e2e2282f4">  162</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classengine_1_1renderer_1_1IndexBuffer.html#a8fd1ab43d3963533370c4d8e2e2282f4">Unbind</a>() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00163"></a><span class="lineno"><a class="line" href="classengine_1_1renderer_1_1IndexBuffer.html#a42571fcc830427648852258124e92844">  163</a></span>&#160;  <span class="keyword">virtual</span> uint32_t <a class="code" href="classengine_1_1renderer_1_1IndexBuffer.html#a42571fcc830427648852258124e92844">GetCount</a>() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  <span class="keyword">static</span> memory::Shared&lt;IndexBuffer&gt; <a class="code" href="classengine_1_1renderer_1_1IndexBuffer.html#a2a4773cdd0dab8101ca9662ff6c0a460">Create</a>(uint32_t* indices, uint32_t count);</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;};</div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1renderer_1_1BufferLayout.html#adc98cce1a53db39682dcd05a6538c360">  119</a></span>&#160;  <span class="keyword">inline</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code" href="classlambda_1_1core_1_1renderer_1_1BufferLayout.html#adc98cce1a53db39682dcd05a6538c360">HasElements</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> elements_.size() &gt; 0; }</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  std::vector&lt;BufferElement&gt;::iterator begin() { <span class="keywordflow">return</span> elements_.begin(); }</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  std::vector&lt;BufferElement&gt;::iterator end() { <span class="keywordflow">return</span> elements_.end(); }</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  std::vector&lt;BufferElement&gt;::const_iterator begin()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;      <span class="keywordflow">return</span> elements_.begin(); }</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  std::vector&lt;BufferElement&gt;::const_iterator end()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;      <span class="keywordflow">return</span> elements_.end(); }</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  std::vector&lt;BufferElement&gt; elements_;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  uint32_t stride_;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  <span class="keywordtype">void</span> CalculateOffsetAndStride() {</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    uint32_t offset = 0;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    stride_ = 0;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keywordflow">for</span> (<a class="code" href="structlambda_1_1renderer_1_1BufferElement.html">BufferElement</a>&amp; element : elements_) {</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;      element.Offset = offset;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;      offset += element.Size;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;      stride_ += element.Size;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    }</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  }</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;};</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
+<div class="line"><a name="l00146"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html">  146</a></span>&#160;<span class="keyword">class </span><a class="code" href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html">VertexBuffer</a> {</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html">VertexBuffer</a>() {}</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
+<div class="line"><a name="l00150"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html#af5bbf1ffa2bc786f4f5f13ca7edba80f">  150</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html#af5bbf1ffa2bc786f4f5f13ca7edba80f">Bind</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html#a25fa0ac770d6ef22a3695d2979878a02">  151</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html#a25fa0ac770d6ef22a3695d2979878a02">Unbind</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160; </div>
+<div class="line"><a name="l00153"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html#a0473c3631c8d64b005725e886185e8d2">  153</a></span>&#160;  <span class="keyword">virtual</span> <span class="keyword">const</span> <a class="code" href="classlambda_1_1core_1_1renderer_1_1BufferLayout.html">BufferLayout</a>&amp; <a class="code" href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html#a0473c3631c8d64b005725e886185e8d2">GetLayout</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html#acdb20afa541169e8a7b9b21c99e1e219">  154</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html#acdb20afa541169e8a7b9b21c99e1e219">SetLayout</a>(<span class="keyword">const</span> <a class="code" href="classlambda_1_1core_1_1renderer_1_1BufferLayout.html">BufferLayout</a>&amp;) = 0;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  <span class="keyword">static</span> memory::Shared&lt;VertexBuffer&gt; <a class="code" href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html#a461601fdd3b858c65803f49ef5fbd02b">Create</a>(<span class="keywordtype">float</span>* vertices, uint32_t size);</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;};</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
+<div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1renderer_1_1IndexBuffer.html">  159</a></span>&#160;<span class="keyword">class </span><a class="code" href="classlambda_1_1core_1_1renderer_1_1IndexBuffer.html">IndexBuffer</a> {</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classlambda_1_1core_1_1renderer_1_1IndexBuffer.html">IndexBuffer</a>() {}</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
+<div class="line"><a name="l00163"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1renderer_1_1IndexBuffer.html#a5ccc497940929c2134f183f7e99c82bc">  163</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlambda_1_1core_1_1renderer_1_1IndexBuffer.html#a5ccc497940929c2134f183f7e99c82bc">Bind</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00164"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1renderer_1_1IndexBuffer.html#aafdf0e96111229c95427f1057a57c8b3">  164</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlambda_1_1core_1_1renderer_1_1IndexBuffer.html#aafdf0e96111229c95427f1057a57c8b3">Unbind</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
+<div class="line"><a name="l00166"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1renderer_1_1IndexBuffer.html#a4ba24a9674f027777802d401617315cd">  166</a></span>&#160;  <span class="keyword">virtual</span> uint32_t <a class="code" href="classlambda_1_1core_1_1renderer_1_1IndexBuffer.html#a4ba24a9674f027777802d401617315cd">GetCount</a>() <span class="keyword">const</span> = 0;</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;}  <span class="comment">// namespace renderer</span></div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;}  <span class="comment">// namespace lambda</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  <span class="keyword">static</span> memory::Shared&lt;IndexBuffer&gt; <a class="code" href="classlambda_1_1core_1_1renderer_1_1IndexBuffer.html#ac529c45258bff570a933e2c0a3664411">Create</a>(uint32_t* indices, uint32_t count);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;};</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="preprocessor">#endif  // ENGINE_SRC_CORE_RENDERER_BUFFER_H_</span></div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;}  <span class="comment">// namespace renderer</span></div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;}  <span class="comment">// namespace core</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;}  <span class="comment">// namespace lambda</span></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="preprocessor">#endif  // LAMBDA_SRC_CORE_RENDERER_BUFFER_H_</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassengine_1_1renderer_1_1BufferLayout_html_abdb110b3851f860c2d602d1b12a8568a"><div class="ttname"><a href="classengine_1_1renderer_1_1BufferLayout.html#abdb110b3851f860c2d602d1b12a8568a">engine::renderer::BufferLayout::GetElements</a></div><div class="ttdeci">const std::vector&lt; BufferElement &gt; &amp; GetElements() const</div><div class="ttdoc">Get a const reference to the elements associated with this layout.</div><div class="ttdef"><b>Definition:</b> Buffer.h:114</div></div>
-<div class="ttc" id="aclassengine_1_1renderer_1_1BufferLayout_html"><div class="ttname"><a href="classengine_1_1renderer_1_1BufferLayout.html">engine::renderer::BufferLayout</a></div><div class="ttdoc">A layout that specifies the elements to be associated with a vertex buffer.</div><div class="ttdef"><b>Definition:</b> Buffer.h:105</div></div>
-<div class="ttc" id="aclassengine_1_1renderer_1_1BufferLayout_html_ae2a3753096d6a8171179d6e9c86facb8"><div class="ttname"><a href="classengine_1_1renderer_1_1BufferLayout.html#ae2a3753096d6a8171179d6e9c86facb8">engine::renderer::BufferLayout::BufferLayout</a></div><div class="ttdeci">BufferLayout()</div><div class="ttdoc">Instantiate a BufferLayout with an initializer list of BufferElements.</div><div class="ttdef"><b>Definition:</b> Buffer.h:110</div></div>
-<div class="ttc" id="aLog_8h_html_af5a23626565ced5d88975f395e9bb90f"><div class="ttname"><a href="Log_8h.html#af5a23626565ced5d88975f395e9bb90f">ENGINE_CORE_TRACE</a></div><div class="ttdeci">#define ENGINE_CORE_TRACE(...)</div><div class="ttdoc">Engine core trace output.</div></div>
-<div class="ttc" id="astructengine_1_1renderer_1_1BufferElement_html_a76049a787d70b0adf984e65a9994bc1d"><div class="ttname"><a href="structengine_1_1renderer_1_1BufferElement.html#a76049a787d70b0adf984e65a9994bc1d">engine::renderer::BufferElement::BufferElement</a></div><div class="ttdeci">BufferElement(ShaderDataType type, const std::string &amp;name, bool normalized=false)</div><div class="ttdef"><b>Definition:</b> Buffer.h:83</div></div>
-<div class="ttc" id="aclassengine_1_1renderer_1_1BufferLayout_html_abf525eed067da7cfa637c9fe795767b5"><div class="ttname"><a href="classengine_1_1renderer_1_1BufferLayout.html#abf525eed067da7cfa637c9fe795767b5">engine::renderer::BufferLayout::GetStride</a></div><div class="ttdeci">uint32_t GetStride() const</div><div class="ttdoc">Get the overall stride of the current buffer layout.</div><div class="ttdef"><b>Definition:</b> Buffer.h:112</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1IndexBuffer_html_ac529c45258bff570a933e2c0a3664411"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1IndexBuffer.html#ac529c45258bff570a933e2c0a3664411">lambda::core::renderer::IndexBuffer::Create</a></div><div class="ttdeci">static memory::Shared&lt; IndexBuffer &gt; Create(uint32_t *indices, uint32_t count)</div><div class="ttdoc">Creates a IndexBuffer through the Graphics API that is being used at compile time.</div><div class="ttdef"><b>Definition:</b> Buffer.cpp:31</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1BufferLayout_html_adc98cce1a53db39682dcd05a6538c360"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1BufferLayout.html#adc98cce1a53db39682dcd05a6538c360">lambda::core::renderer::BufferLayout::HasElements</a></div><div class="ttdeci">const bool HasElements() const</div><div class="ttdoc">Checks to see if the current buffer layout has elements.</div><div class="ttdef"><b>Definition:</b> Buffer.h:119</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1IndexBuffer_html_aafdf0e96111229c95427f1057a57c8b3"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1IndexBuffer.html#aafdf0e96111229c95427f1057a57c8b3">lambda::core::renderer::IndexBuffer::Unbind</a></div><div class="ttdeci">virtual void Unbind() const =0</div><div class="ttdoc">Unbind the current IndexBuffer from the current rendering context.</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1BufferLayout_html_a3319387032adbcca35f3f49e8d071190"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1BufferLayout.html#a3319387032adbcca35f3f49e8d071190">lambda::core::renderer::BufferLayout::GetStride</a></div><div class="ttdeci">uint32_t GetStride() const</div><div class="ttdoc">Get the overall stride of the current buffer layout.</div><div class="ttdef"><b>Definition:</b> Buffer.h:114</div></div>
 <div class="ttc" id="aAssert_8h_html"><div class="ttname"><a href="Assert_8h.html">Assert.h</a></div><div class="ttdoc">This is a utility file that is primarily used for debugging the internals of the engine when incorrec...</div></div>
-<div class="ttc" id="aclassengine_1_1renderer_1_1VertexBuffer_html_a4c337f1549556946735a47708a55ab9c"><div class="ttname"><a href="classengine_1_1renderer_1_1VertexBuffer.html#a4c337f1549556946735a47708a55ab9c">engine::renderer::VertexBuffer::Create</a></div><div class="ttdeci">static memory::Shared&lt; VertexBuffer &gt; Create(float *vertices, uint32_t size)</div><div class="ttdoc">Creates a VertexBuffer through the Graphics API that is being used at compile time.</div><div class="ttdef"><b>Definition:</b> Buffer.cpp:12</div></div>
-<div class="ttc" id="aclassengine_1_1renderer_1_1VertexBuffer_html_afad191b22fec9bc2519e43d543e5c75e"><div class="ttname"><a href="classengine_1_1renderer_1_1VertexBuffer.html#afad191b22fec9bc2519e43d543e5c75e">engine::renderer::VertexBuffer::SetLayout</a></div><div class="ttdeci">virtual void SetLayout(const BufferLayout &amp;)=0</div><div class="ttdoc">Set the BufferLayout for the current VertexBuffer.</div></div>
-<div class="ttc" id="aclassengine_1_1renderer_1_1VertexBuffer_html_a06b240b93506dfd383b3a3f8947eb26f"><div class="ttname"><a href="classengine_1_1renderer_1_1VertexBuffer.html#a06b240b93506dfd383b3a3f8947eb26f">engine::renderer::VertexBuffer::Unbind</a></div><div class="ttdeci">virtual void Unbind() const =0</div><div class="ttdoc">Unbind the vertex buffer to the current rendering context.</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1IndexBuffer_html_a5ccc497940929c2134f183f7e99c82bc"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1IndexBuffer.html#a5ccc497940929c2134f183f7e99c82bc">lambda::core::renderer::IndexBuffer::Bind</a></div><div class="ttdeci">virtual void Bind() const =0</div><div class="ttdoc">Bind the current IndexBuffer to the current rendering context.</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1VertexBuffer_html"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html">lambda::core::renderer::VertexBuffer</a></div><div class="ttdef"><b>Definition:</b> Buffer.h:146</div></div>
 <div class="ttc" id="aLog_8h_html"><div class="ttname"><a href="Log_8h.html">Log.h</a></div><div class="ttdoc">The engines util utility.</div></div>
 <div class="ttc" id="aPointers_8h_html"><div class="ttname"><a href="Pointers_8h.html">Pointers.h</a></div><div class="ttdoc">Abstraction for handling pointers within the engine. Currently just aliases for unique and shared poi...</div></div>
-<div class="ttc" id="aAssert_8h_html_a575be40a8622dad4acb71b9723d49cf4"><div class="ttname"><a href="Assert_8h.html#a575be40a8622dad4acb71b9723d49cf4">ENGINE_CORE_ASSERT</a></div><div class="ttdeci">#define ENGINE_CORE_ASSERT(x,...)</div><div class="ttdoc">When assertions are enabled, the engine is allowed to use asserts in its core to halt the application...</div></div>
-<div class="ttc" id="aclassengine_1_1renderer_1_1IndexBuffer_html_a8fd1ab43d3963533370c4d8e2e2282f4"><div class="ttname"><a href="classengine_1_1renderer_1_1IndexBuffer.html#a8fd1ab43d3963533370c4d8e2e2282f4">engine::renderer::IndexBuffer::Unbind</a></div><div class="ttdeci">virtual void Unbind() const =0</div><div class="ttdoc">Unbind the current IndexBuffer from the current rendering context.</div></div>
-<div class="ttc" id="aclassengine_1_1renderer_1_1IndexBuffer_html_a42571fcc830427648852258124e92844"><div class="ttname"><a href="classengine_1_1renderer_1_1IndexBuffer.html#a42571fcc830427648852258124e92844">engine::renderer::IndexBuffer::GetCount</a></div><div class="ttdeci">virtual uint32_t GetCount() const =0</div><div class="ttdoc">Get the count of indices within the current IndexBuffer.</div></div>
-<div class="ttc" id="astructengine_1_1renderer_1_1BufferElement_html"><div class="ttname"><a href="structengine_1_1renderer_1_1BufferElement.html">engine::renderer::BufferElement</a></div><div class="ttdoc">A generic buffer element representation to be used in conjuction with BufferLayouts.</div><div class="ttdef"><b>Definition:</b> Buffer.h:75</div></div>
-<div class="ttc" id="aBuffer_8h_html_a8d90f87a6e9335927edd305c1e1345c1"><div class="ttname"><a href="Buffer_8h.html#a8d90f87a6e9335927edd305c1e1345c1">engine::renderer::ShaderDataType</a></div><div class="ttdeci">ShaderDataType</div><div class="ttdoc">Data types that are compatible with shaders supported by the engine.</div><div class="ttdef"><b>Definition:</b> Buffer.h:26</div></div>
-<div class="ttc" id="aclassengine_1_1renderer_1_1VertexBuffer_html_a3186b40aa8c8c471fe80c29645859aa5"><div class="ttname"><a href="classengine_1_1renderer_1_1VertexBuffer.html#a3186b40aa8c8c471fe80c29645859aa5">engine::renderer::VertexBuffer::GetLayout</a></div><div class="ttdeci">virtual const BufferLayout &amp; GetLayout() const =0</div><div class="ttdoc">Get the BufferLayout tied to the current VertexBuffer.</div></div>
-<div class="ttc" id="aclassengine_1_1renderer_1_1IndexBuffer_html_a2a4773cdd0dab8101ca9662ff6c0a460"><div class="ttname"><a href="classengine_1_1renderer_1_1IndexBuffer.html#a2a4773cdd0dab8101ca9662ff6c0a460">engine::renderer::IndexBuffer::Create</a></div><div class="ttdeci">static memory::Shared&lt; IndexBuffer &gt; Create(uint32_t *indices, uint32_t count)</div><div class="ttdoc">Creates a IndexBuffer through the Graphics API that is being used at compile time.</div><div class="ttdef"><b>Definition:</b> Buffer.cpp:30</div></div>
-<div class="ttc" id="aclassengine_1_1renderer_1_1IndexBuffer_html_a050664f22cc88b809bc386c1e4dba359"><div class="ttname"><a href="classengine_1_1renderer_1_1IndexBuffer.html#a050664f22cc88b809bc386c1e4dba359">engine::renderer::IndexBuffer::Bind</a></div><div class="ttdeci">virtual void Bind() const =0</div><div class="ttdoc">Bind the current IndexBuffer to the current rendering context.</div></div>
-<div class="ttc" id="aclassengine_1_1renderer_1_1VertexBuffer_html"><div class="ttname"><a href="classengine_1_1renderer_1_1VertexBuffer.html">engine::renderer::VertexBuffer</a></div><div class="ttdoc">The base VertexBuffer class to be used for creating vertex buffers.</div><div class="ttdef"><b>Definition:</b> Buffer.h:144</div></div>
-<div class="ttc" id="aclassengine_1_1renderer_1_1VertexBuffer_html_a62c7bd816aa10b69d1e903918ecc4414"><div class="ttname"><a href="classengine_1_1renderer_1_1VertexBuffer.html#a62c7bd816aa10b69d1e903918ecc4414">engine::renderer::VertexBuffer::Bind</a></div><div class="ttdeci">virtual void Bind() const =0</div><div class="ttdoc">Bind the vertex buffer to the current rendering context.</div></div>
-<div class="ttc" id="aclassengine_1_1renderer_1_1IndexBuffer_html"><div class="ttname"><a href="classengine_1_1renderer_1_1IndexBuffer.html">engine::renderer::IndexBuffer</a></div><div class="ttdoc">The base IndexBuffer class to be used for creating index buffers.</div><div class="ttdef"><b>Definition:</b> Buffer.h:157</div></div>
-<div class="ttc" id="aclassengine_1_1renderer_1_1BufferLayout_html_ae7abc90b970e0b028a9924fcb5bcf786"><div class="ttname"><a href="classengine_1_1renderer_1_1BufferLayout.html#ae7abc90b970e0b028a9924fcb5bcf786">engine::renderer::BufferLayout::HasElements</a></div><div class="ttdeci">const bool HasElements() const</div><div class="ttdoc">Checks to see if the current buffer layout has elements.</div><div class="ttdef"><b>Definition:</b> Buffer.h:117</div></div>
+<div class="ttc" id="astructlambda_1_1core_1_1renderer_1_1BufferElement_html_a4fa82d6db4166c55f8b00e8f4031b060"><div class="ttname"><a href="structlambda_1_1core_1_1renderer_1_1BufferElement.html#a4fa82d6db4166c55f8b00e8f4031b060">lambda::core::renderer::BufferElement::BufferElement</a></div><div class="ttdeci">BufferElement(ShaderDataType type, const std::string &amp;name, bool normalized=false)</div><div class="ttdef"><b>Definition:</b> Buffer.h:85</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1BufferLayout_html_a8beebcd05084371223585a9d07ecffe4"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1BufferLayout.html#a8beebcd05084371223585a9d07ecffe4">lambda::core::renderer::BufferLayout::GetElements</a></div><div class="ttdeci">const std::vector&lt; BufferElement &gt; &amp; GetElements() const</div><div class="ttdoc">Get a const reference to the elements associated with this layout.</div><div class="ttdef"><b>Definition:</b> Buffer.h:116</div></div>
+<div class="ttc" id="astructlambda_1_1renderer_1_1BufferElement_html"><div class="ttname"><a href="structlambda_1_1renderer_1_1BufferElement.html">BufferElement</a></div><div class="ttdoc">A generic buffer element representation to be used in conjuction with BufferLayouts.</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1IndexBuffer_html_a4ba24a9674f027777802d401617315cd"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1IndexBuffer.html#a4ba24a9674f027777802d401617315cd">lambda::core::renderer::IndexBuffer::GetCount</a></div><div class="ttdeci">virtual uint32_t GetCount() const =0</div><div class="ttdoc">Get the count of indices within the current IndexBuffer.</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1VertexBuffer_html_a25fa0ac770d6ef22a3695d2979878a02"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html#a25fa0ac770d6ef22a3695d2979878a02">lambda::core::renderer::VertexBuffer::Unbind</a></div><div class="ttdeci">virtual void Unbind() const =0</div><div class="ttdoc">Unbind the vertex buffer to the current rendering context.</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1VertexBuffer_html_acdb20afa541169e8a7b9b21c99e1e219"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html#acdb20afa541169e8a7b9b21c99e1e219">lambda::core::renderer::VertexBuffer::SetLayout</a></div><div class="ttdeci">virtual void SetLayout(const BufferLayout &amp;)=0</div><div class="ttdoc">Set the BufferLayout for the current VertexBuffer.</div></div>
+<div class="ttc" id="aLog_8h_html_a4645443c6bdf15c6ce5ce845e4e9387b"><div class="ttname"><a href="Log_8h.html#a4645443c6bdf15c6ce5ce845e4e9387b">LAMBDA_CORE_TRACE</a></div><div class="ttdeci">#define LAMBDA_CORE_TRACE(...)</div><div class="ttdoc">Engine core trace output.</div></div>
+<div class="ttc" id="aAssert_8h_html_a75745a8226fcf51e2c9fab32062864fc"><div class="ttname"><a href="Assert_8h.html#a75745a8226fcf51e2c9fab32062864fc">LAMBDA_CORE_ASSERT</a></div><div class="ttdeci">#define LAMBDA_CORE_ASSERT(x,...)</div><div class="ttdoc">When assertions are enabled, the engine is allowed to use asserts in its core to halt the application...</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1VertexBuffer_html_a461601fdd3b858c65803f49ef5fbd02b"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html#a461601fdd3b858c65803f49ef5fbd02b">lambda::core::renderer::VertexBuffer::Create</a></div><div class="ttdeci">static memory::Shared&lt; VertexBuffer &gt; Create(float *vertices, uint32_t size)</div><div class="ttdoc">Creates a VertexBuffer through the Graphics API that is being used at compile time.</div><div class="ttdef"><b>Definition:</b> Buffer.cpp:13</div></div>
+<div class="ttc" id="aBuffer_8h_html_ae5cf5dd2a2d7fca2f1c00bc9eaf9446f"><div class="ttname"><a href="Buffer_8h.html#ae5cf5dd2a2d7fca2f1c00bc9eaf9446f">lambda::core::renderer::ShaderDataType</a></div><div class="ttdeci">ShaderDataType</div><div class="ttdoc">Data types that are compatible with shaders supported by the engine.</div><div class="ttdef"><b>Definition:</b> Buffer.h:28</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1VertexBuffer_html_af5bbf1ffa2bc786f4f5f13ca7edba80f"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html#af5bbf1ffa2bc786f4f5f13ca7edba80f">lambda::core::renderer::VertexBuffer::Bind</a></div><div class="ttdeci">virtual void Bind() const =0</div><div class="ttdoc">Bind the vertex buffer to the current rendering context.</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1VertexBuffer_html_a0473c3631c8d64b005725e886185e8d2"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html#a0473c3631c8d64b005725e886185e8d2">lambda::core::renderer::VertexBuffer::GetLayout</a></div><div class="ttdeci">virtual const BufferLayout &amp; GetLayout() const =0</div><div class="ttdoc">Get the BufferLayout tied to the current VertexBuffer.</div></div>
+<div class="ttc" id="astructlambda_1_1core_1_1renderer_1_1BufferElement_html"><div class="ttname"><a href="structlambda_1_1core_1_1renderer_1_1BufferElement.html">lambda::core::renderer::BufferElement</a></div><div class="ttdef"><b>Definition:</b> Buffer.h:77</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1BufferLayout_html"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1BufferLayout.html">lambda::core::renderer::BufferLayout</a></div><div class="ttdef"><b>Definition:</b> Buffer.h:107</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1IndexBuffer_html"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1IndexBuffer.html">lambda::core::renderer::IndexBuffer</a></div><div class="ttdef"><b>Definition:</b> Buffer.h:159</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

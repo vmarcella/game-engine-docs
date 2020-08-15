@@ -1,0 +1,75 @@
+\hypertarget{classlambda_1_1core_1_1Application}{}\doxysection{lambda\+::core\+::Application Class Reference}
+\label{classlambda_1_1core_1_1Application}\index{lambda::core::Application@{lambda::core::Application}}
+
+
+The mind, body, and soul of Lambda. The \mbox{\hyperlink{classlambda_1_1core_1_1Application}{Application}} class is the interface into lambda that brings your application to life.  
+
+
+
+
+{\ttfamily \#include $<$Application.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classlambda_1_1core_1_1Application_a1e8d4b6b2b9d77f833b72d35e42b58b3}{Application}} ()
+\item 
+virtual \mbox{\hyperlink{classlambda_1_1core_1_1Application_a13d196a0a1802de3b3c92cd56dbe9be9}{$\sim$\+Application}} ()
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1Application_afd590eaa535e74132ee35ac85b657754}\label{classlambda_1_1core_1_1Application_afd590eaa535e74132ee35ac85b657754}} 
+void \mbox{\hyperlink{classlambda_1_1core_1_1Application_afd590eaa535e74132ee35ac85b657754}{On\+Event}} (memory\+::\+Shared$<$ \mbox{\hyperlink{classlambda_1_1core_1_1events_1_1Event}{events\+::\+Event}} $>$ event)
+\begin{DoxyCompactList}\small\item\em The primary responder to Event. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classlambda_1_1core_1_1Application_aac4c7d3d20bb5643af0ce843f2a2f587}{Push\+Layer}} (memory\+::\+Shared$<$ \mbox{\hyperlink{classlambda_1_1core_1_1layers_1_1Layer}{layers\+::\+Layer}} $>$ layer)
+\begin{DoxyCompactList}\small\item\em Push a layer into the application. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1Application_ac6b1a643b95cab6ade5b1923b8a1fe91}\label{classlambda_1_1core_1_1Application_ac6b1a643b95cab6ade5b1923b8a1fe91}} 
+void \mbox{\hyperlink{classlambda_1_1core_1_1Application_ac6b1a643b95cab6ade5b1923b8a1fe91}{Push\+Overlay}} (memory\+::\+Shared$<$ \mbox{\hyperlink{classlambda_1_1core_1_1layers_1_1Layer}{layers\+::\+Layer}} $>$ layer)
+\begin{DoxyCompactList}\small\item\em Push an overlay into the application. This gives it higher precedence over other layers and overlays in the stack. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1Application_ad4803010e961dc9eb89b74c74b265c4e}\label{classlambda_1_1core_1_1Application_ad4803010e961dc9eb89b74c74b265c4e}} 
+void \mbox{\hyperlink{classlambda_1_1core_1_1Application_ad4803010e961dc9eb89b74c74b265c4e}{Run}} ()
+\begin{DoxyCompactList}\small\item\em The main application loop. Manages the applications lifecycle, memory, updating, and pretty much anything else needed for an application to be run. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1Application_a0e0222a6aa42041f914c9c310697fca4}\label{classlambda_1_1core_1_1Application_a0e0222a6aa42041f914c9c310697fca4}} 
+const \mbox{\hyperlink{classlambda_1_1core_1_1Window}{Window}} \& \mbox{\hyperlink{classlambda_1_1core_1_1Application_a0e0222a6aa42041f914c9c310697fca4}{Get\+Window}} () const
+\begin{DoxyCompactList}\small\item\em Get the window. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1Application_af5bcfded12b42e321fd913edaf839932}\label{classlambda_1_1core_1_1Application_af5bcfded12b42e321fd913edaf839932}} 
+static \mbox{\hyperlink{classlambda_1_1core_1_1Application}{Application}} \& \mbox{\hyperlink{classlambda_1_1core_1_1Application_af5bcfded12b42e321fd913edaf839932}{Get\+Application}} ()
+\begin{DoxyCompactList}\small\item\em Get a reference to the singleton application. (There will always be O\+NE application per lambda engine instance.) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The mind, body, and soul of Lambda. The \mbox{\hyperlink{classlambda_1_1core_1_1Application}{Application}} class is the interface into lambda that brings your application to life. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classlambda_1_1core_1_1Application_a1e8d4b6b2b9d77f833b72d35e42b58b3}\label{classlambda_1_1core_1_1Application_a1e8d4b6b2b9d77f833b72d35e42b58b3}} 
+\index{lambda::core::Application@{lambda::core::Application}!Application@{Application}}
+\index{Application@{Application}!lambda::core::Application@{lambda::core::Application}}
+\doxysubsubsection{\texorpdfstring{Application()}{Application()}}
+{\footnotesize\ttfamily lambda\+::core\+::\+Application\+::\+Application (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Will only be instantiated so long as assertions are enabled and there isn\textquotesingle{}t another application instance already running. \mbox{\Hypertarget{classlambda_1_1core_1_1Application_a13d196a0a1802de3b3c92cd56dbe9be9}\label{classlambda_1_1core_1_1Application_a13d196a0a1802de3b3c92cd56dbe9be9}} 
+\index{lambda::core::Application@{lambda::core::Application}!````~Application@{$\sim$Application}}
+\index{````~Application@{$\sim$Application}!lambda::core::Application@{lambda::core::Application}}
+\doxysubsubsection{\texorpdfstring{$\sim$Application()}{~Application()}}
+{\footnotesize\ttfamily lambda\+::core\+::\+Application\+::$\sim$\+Application (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+The application must tell the single to release itself once it\textquotesingle{}s being destroyed, so that it\textquotesingle{}s destructor is not called again. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classlambda_1_1core_1_1Application_aac4c7d3d20bb5643af0ce843f2a2f587}\label{classlambda_1_1core_1_1Application_aac4c7d3d20bb5643af0ce843f2a2f587}} 
+\index{lambda::core::Application@{lambda::core::Application}!PushLayer@{PushLayer}}
+\index{PushLayer@{PushLayer}!lambda::core::Application@{lambda::core::Application}}
+\doxysubsubsection{\texorpdfstring{PushLayer()}{PushLayer()}}
+{\footnotesize\ttfamily void lambda\+::core\+::\+Application\+::\+Push\+Layer (\begin{DoxyParamCaption}\item[{memory\+::\+Shared$<$ \mbox{\hyperlink{classlambda_1_1core_1_1layers_1_1Layer}{layers\+::\+Layer}} $>$}]{layer }\end{DoxyParamCaption})}
+
+
+
+Push a layer into the application. 
+
+This and Push\+Overlay take ownership of the layers afterwards. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+lambda/src/core/\mbox{\hyperlink{Application_8h}{Application.\+h}}\item 
+lambda/src/core/Application.\+cpp\end{DoxyCompactItemize}

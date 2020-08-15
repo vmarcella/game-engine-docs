@@ -1,0 +1,4 @@
+<map id="lambda::core::imgui::ImGuiLayer" name="lambda::core::imgui::ImGuiLayer">
+<area shape="rect" id="node1" title="The base ImGui layer used for rendering all other ImGui components." alt="" coords="7,95,159,136"/>
+<area shape="rect" id="node2" href="$classlambda_1_1core_1_1layers_1_1Layer.html" title="The lambda Layer abstraction. Primarily used for direct access into lambdas tick and event system." alt="" coords="5,5,160,47"/>
+</map>

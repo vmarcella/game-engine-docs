@@ -1,4 +1,3 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classengine_1_1renderer_1_1RendererAPI.html" title="The Rendering API for displaying graphics through the engine api!" alt="" coords="5,13,223,39"/>
-<area shape="rect" id="node2" href="$classengine_1_1platform_1_1opengl_1_1OpenGLRendererAPI.html" title="The Rendering implementation for OpenGL." alt="" coords="271,5,453,47"/>
+<area shape="rect" id="node1" href="$structlambda_1_1core_1_1renderer_1_1BufferElement.html" title=" " alt="" coords="5,5,176,47"/>
 </map>

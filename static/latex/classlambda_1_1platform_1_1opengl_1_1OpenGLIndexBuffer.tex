@@ -1,0 +1,68 @@
+\hypertarget{classlambda_1_1platform_1_1opengl_1_1OpenGLIndexBuffer}{}\doxysection{lambda\+::platform\+::opengl\+::Open\+G\+L\+Index\+Buffer Class Reference}
+\label{classlambda_1_1platform_1_1opengl_1_1OpenGLIndexBuffer}\index{lambda::platform::opengl::OpenGLIndexBuffer@{lambda::platform::opengl::OpenGLIndexBuffer}}
+
+
+Inheritance diagram for lambda\+::platform\+::opengl\+::Open\+G\+L\+Index\+Buffer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{classlambda_1_1platform_1_1opengl_1_1OpenGLIndexBuffer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for lambda\+::platform\+::opengl\+::Open\+G\+L\+Index\+Buffer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{classlambda_1_1platform_1_1opengl_1_1OpenGLIndexBuffer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classlambda_1_1platform_1_1opengl_1_1OpenGLIndexBuffer_a634e2efc7638b43970f39a04f8c2a35c}{Open\+G\+L\+Index\+Buffer}} (uint32\+\_\+t $\ast$indices, uint32\+\_\+t count)
+\item 
+\mbox{\Hypertarget{classlambda_1_1platform_1_1opengl_1_1OpenGLIndexBuffer_a3a8c35d98b0a91a5838c3a6b33290649}\label{classlambda_1_1platform_1_1opengl_1_1OpenGLIndexBuffer_a3a8c35d98b0a91a5838c3a6b33290649}} 
+void \mbox{\hyperlink{classlambda_1_1platform_1_1opengl_1_1OpenGLIndexBuffer_a3a8c35d98b0a91a5838c3a6b33290649}{Bind}} () const override
+\begin{DoxyCompactList}\small\item\em Bind the current Index\+Buffer to the current rendering context. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classlambda_1_1platform_1_1opengl_1_1OpenGLIndexBuffer_ab8869419aef195f933ea63bfbe2a8a6c}{Unbind}} () const override
+\begin{DoxyCompactList}\small\item\em Unbind the current Index\+Buffer from the current rendering context. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1platform_1_1opengl_1_1OpenGLIndexBuffer_a8af6f87fba8eee11c77f67d9ae04c42d}\label{classlambda_1_1platform_1_1opengl_1_1OpenGLIndexBuffer_a8af6f87fba8eee11c77f67d9ae04c42d}} 
+uint32\+\_\+t \mbox{\hyperlink{classlambda_1_1platform_1_1opengl_1_1OpenGLIndexBuffer_a8af6f87fba8eee11c77f67d9ae04c42d}{Get\+Count}} () const override
+\begin{DoxyCompactList}\small\item\em Get the count of indices within the current Index\+Buffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classlambda_1_1platform_1_1opengl_1_1OpenGLIndexBuffer_a634e2efc7638b43970f39a04f8c2a35c}\label{classlambda_1_1platform_1_1opengl_1_1OpenGLIndexBuffer_a634e2efc7638b43970f39a04f8c2a35c}} 
+\index{lambda::platform::opengl::OpenGLIndexBuffer@{lambda::platform::opengl::OpenGLIndexBuffer}!OpenGLIndexBuffer@{OpenGLIndexBuffer}}
+\index{OpenGLIndexBuffer@{OpenGLIndexBuffer}!lambda::platform::opengl::OpenGLIndexBuffer@{lambda::platform::opengl::OpenGLIndexBuffer}}
+\doxysubsubsection{\texorpdfstring{OpenGLIndexBuffer()}{OpenGLIndexBuffer()}}
+{\footnotesize\ttfamily lambda\+::platform\+::opengl\+::\+Open\+G\+L\+Index\+Buffer\+::\+Open\+G\+L\+Index\+Buffer (\begin{DoxyParamCaption}\item[{uint32\+\_\+t $\ast$}]{indices,  }\item[{uint32\+\_\+t}]{count }\end{DoxyParamCaption})}
+
+Constructs an Index buffer given an array of indices and total count. The instantiation of the index buffer will cause the engine to to assert an error if the count is $>$ 0. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classlambda_1_1platform_1_1opengl_1_1OpenGLIndexBuffer_ab8869419aef195f933ea63bfbe2a8a6c}\label{classlambda_1_1platform_1_1opengl_1_1OpenGLIndexBuffer_ab8869419aef195f933ea63bfbe2a8a6c}} 
+\index{lambda::platform::opengl::OpenGLIndexBuffer@{lambda::platform::opengl::OpenGLIndexBuffer}!Unbind@{Unbind}}
+\index{Unbind@{Unbind}!lambda::platform::opengl::OpenGLIndexBuffer@{lambda::platform::opengl::OpenGLIndexBuffer}}
+\doxysubsubsection{\texorpdfstring{Unbind()}{Unbind()}}
+{\footnotesize\ttfamily void lambda\+::platform\+::opengl\+::\+Open\+G\+L\+Index\+Buffer\+::\+Unbind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Unbind the current Index\+Buffer from the current rendering context. 
+
+Any vertex buffer that relies on this buffer will not be able to access the contents of it once unbound from the graphics context. 
+
+Implements \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1IndexBuffer_aafdf0e96111229c95427f1057a57c8b3}{lambda\+::core\+::renderer\+::\+Index\+Buffer}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+lambda/src/platform/opengl/Open\+G\+L\+Buffer.\+h\item 
+lambda/src/platform/opengl/Open\+G\+L\+Buffer.\+cpp\end{DoxyCompactItemize}

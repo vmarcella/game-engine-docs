@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>game-engine: engine/src/core/Layer.h File Reference</title>
+<title>lambda: lambda/src/core/layers/Layer.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">game-engine
+   <div id="projectname">lambda
    </div>
   </td>
  </tr>
@@ -61,7 +61,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_996f45160da62e1a3d7f6046fad68f51.html">engine</a></li><li class="navelem"><a class="el" href="dir_3d9126aa00c041bc0b8f859d1965a0f4.html">src</a></li><li class="navelem"><a class="el" href="dir_5e835386694ce392648cfcf102577fe3.html">core</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_4b73342a493c3ec8f518edda193e909f.html">lambda</a></li><li class="navelem"><a class="el" href="dir_896901b14b6321ed9cf375daac6fb468.html">src</a></li><li class="navelem"><a class="el" href="dir_120072a10eb7d4fbc043fc091b8cce0e.html">core</a></li><li class="navelem"><a class="el" href="dir_38445b08e35dbca89363ee51de15bf72.html">layers</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -76,36 +76,42 @@ $(function() {
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="Core_8h_source.html">core/Core.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Event_8h_source.html">core/events/Event.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Pointers_8h_source.html">core/memory/Pointers.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Time_8h_source.html">core/util/Time.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Layer.h:</div>
 <div class="dyncontent">
-<div class="center"><img src="Layer_8h__incl.png" border="0" usemap="#engine_2src_2core_2Layer_8h" alt=""/></div>
-<map name="engine_2src_2core_2Layer_8h" id="engine_2src_2core_2Layer_8h">
-<area shape="rect" title="The Layer implementation that allows application to specify layers to be attached to the game." alt="" coords="188,5,361,32"/>
-<area shape="rect" href="Core_8h.html" title="Core macros to be used all throughout the engine for development and production purposes." alt="" coords="5,155,101,181"/>
-<area shape="rect" href="Event_8h.html" title="The Event class and dispatcher core implementations." alt="" coords="199,80,350,107"/>
-<area shape="rect" href="Time_8h.html" title="Cross platform timing utility for the game engine." alt="" coords="597,80,720,107"/>
-<area shape="rect" title=" " alt="" coords="126,155,213,181"/>
-<area shape="rect" title=" " alt="" coords="237,155,313,181"/>
-<area shape="rect" title=" " alt="" coords="337,155,396,181"/>
-<area shape="rect" title=" " alt="" coords="420,155,553,181"/>
-<area shape="rect" title=" " alt="" coords="577,155,644,181"/>
-<area shape="rect" title=" " alt="" coords="668,155,748,181"/>
-<area shape="rect" title=" " alt="" coords="773,155,825,181"/>
+<div class="center"><img src="Layer_8h__incl.png" border="0" usemap="#lambda_2src_2core_2layers_2Layer_8h" alt=""/></div>
+<map name="lambda_2src_2core_2layers_2Layer_8h" id="lambda_2src_2core_2layers_2Layer_8h">
+<area shape="rect" title="The Layer implementation that allows application to specify layers to be attached to the game." alt="" coords="411,5,581,47"/>
+<area shape="rect" href="Core_8h.html" title="Core macros to be used all throughout the engine for development and production purposes." alt="" coords="353,319,449,345"/>
+<area shape="rect" href="Event_8h.html" title="The Event class and dispatcher core implementations." alt="" coords="293,95,443,121"/>
+<area shape="rect" href="Pointers_8h.html" title="Abstraction for handling pointers within the engine. Currently just aliases for unique and shared poi..." alt="" coords="536,169,715,196"/>
+<area shape="rect" href="Time_8h.html" title="Cross platform timing utility for the game engine." alt="" coords="868,95,991,121"/>
+<area shape="rect" title=" " alt="" coords="325,169,411,196"/>
+<area shape="rect" title=" " alt="" coords="435,169,511,196"/>
+<area shape="rect" title=" " alt="" coords="33,169,92,196"/>
+<area shape="rect" title=" " alt="" coords="116,169,249,196"/>
+<area shape="rect" title=" " alt="" coords="597,319,675,345"/>
+<area shape="rect" title=" " alt="" coords="896,169,963,196"/>
+<area shape="rect" title=" " alt="" coords="987,169,1067,196"/>
+<area shape="rect" title=" " alt="" coords="1091,169,1143,196"/>
+<area shape="rect" href="Assert_8h.html" title="This is a utility file that is primarily used for debugging the internals of the engine when incorrec..." alt="" coords="739,169,871,196"/>
+<area shape="rect" href="Log_8h.html" title="The engines util utility." alt="" coords="713,244,828,271"/>
+<area shape="rect" title=" " alt="" coords="709,319,833,345"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><img src="Layer_8h__dep__incl.png" border="0" usemap="#engine_2src_2core_2Layer_8hdep" alt=""/></div>
-<map name="engine_2src_2core_2Layer_8hdep" id="engine_2src_2core_2Layer_8hdep">
-<area shape="rect" title="The Layer implementation that allows application to specify layers to be attached to the game." alt="" coords="125,5,299,32"/>
-<area shape="rect" href="Application_8h.html" title="Contains the Application class definitions." alt="" coords="77,169,288,196"/>
-<area shape="rect" href="Engine_8h.html" title="The entrypoint into the game engine source code." alt="" coords="348,244,497,271"/>
-<area shape="rect" href="ImGuiLayer_8h.html" title="The ImGuiLayer implementation for dev tool creation." alt="" coords="25,80,188,121"/>
-<area shape="rect" href="LayerStack_8h.html" title="The LayerStack Definition for handling multiple layers." alt="" coords="213,87,422,114"/>
-<area shape="rect" href="Entrypoint_8h.html" title="The entrypoint into the engine." alt="" coords="81,244,285,271"/>
+<div class="center"><img src="Layer_8h__dep__incl.png" border="0" usemap="#lambda_2src_2core_2layers_2Layer_8hdep" alt=""/></div>
+<map name="lambda_2src_2core_2layers_2Layer_8hdep" id="lambda_2src_2core_2layers_2Layer_8hdep">
+<area shape="rect" title="The Layer implementation that allows application to specify layers to be attached to the game." alt="" coords="123,5,294,47"/>
+<area shape="rect" href="Application_8h.html" title="Contains the Application class definitions." alt="" coords="5,184,220,211"/>
+<area shape="rect" href="Lambda_8h_source.html" title=" " alt="" coords="199,333,362,360"/>
+<area shape="rect" href="ImGuiLayer_8h.html" title="The ImGuiLayer implementation for dev tool creation." alt="" coords="223,95,389,136"/>
+<area shape="rect" href="LayerStack_8h.html" title="The LayerStack Definition for handling multiple layers." alt="" coords="27,95,198,136"/>
+<area shape="rect" href="Entrypoint_8h.html" title="The entrypoint into the engine." alt="" coords="8,259,217,285"/>
 </map>
 </div>
 </div>
@@ -113,8 +119,8 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1Layer.html">engine::Layer</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An abstract data structure that represents a "layer" within the engine.  <a href="classengine_1_1Layer.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1layers_1_1Layer.html">lambda::core::layers::Layer</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The lambda <a class="el" href="classlambda_1_1core_1_1layers_1_1Layer.html" title="The lambda Layer abstraction. Primarily used for direct access into lambdas tick and event system.">Layer</a> abstraction. Primarily used for direct access into lambdas tick and event system.  <a href="classlambda_1_1core_1_1layers_1_1Layer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>

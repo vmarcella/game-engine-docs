@@ -1,0 +1,55 @@
+\hypertarget{classlambda_1_1core_1_1input_1_1Input}{}\doxysection{lambda\+::core\+::input\+::Input Class Reference}
+\label{classlambda_1_1core_1_1input_1_1Input}\index{lambda::core::input::Input@{lambda::core::input::Input}}
+
+
+The generic input system for getting input data from applications built on lambda.  
+
+
+
+
+{\ttfamily \#include $<$Input.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1input_1_1Input_a68a834f8a5198f90b2d9e611be24e68a}\label{classlambda_1_1core_1_1input_1_1Input_a68a834f8a5198f90b2d9e611be24e68a}} 
+static bool \mbox{\hyperlink{classlambda_1_1core_1_1input_1_1Input_a68a834f8a5198f90b2d9e611be24e68a}{Is\+Key\+Pressed}} (int key\+\_\+code)
+\begin{DoxyCompactList}\small\item\em Check if a lambda key code was pressed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1input_1_1Input_ad2d90f599eda92f2560940fa8218e72b}\label{classlambda_1_1core_1_1input_1_1Input_ad2d90f599eda92f2560940fa8218e72b}} 
+static float \mbox{\hyperlink{classlambda_1_1core_1_1input_1_1Input_ad2d90f599eda92f2560940fa8218e72b}{Get\+MouseX}} ()
+\begin{DoxyCompactList}\small\item\em Get the current Mouse X Coordinate. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1input_1_1Input_a3e0f111604462ee5e64cc382cec9187d}\label{classlambda_1_1core_1_1input_1_1Input_a3e0f111604462ee5e64cc382cec9187d}} 
+static float \mbox{\hyperlink{classlambda_1_1core_1_1input_1_1Input_a3e0f111604462ee5e64cc382cec9187d}{Get\+MouseY}} ()
+\begin{DoxyCompactList}\small\item\em Get the current Mouse Y Coordinate. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1input_1_1Input_ae029fff05cf0c62eebfb2fbb8586631d}\label{classlambda_1_1core_1_1input_1_1Input_ae029fff05cf0c62eebfb2fbb8586631d}} 
+static std\+::pair$<$ float, float $>$ \mbox{\hyperlink{classlambda_1_1core_1_1input_1_1Input_ae029fff05cf0c62eebfb2fbb8586631d}{Get\+Mouse\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Get the current mouse position (X, Y) as a pair. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1input_1_1Input_a7055618bbc391db8059cce6051fc3b52}\label{classlambda_1_1core_1_1input_1_1Input_a7055618bbc391db8059cce6051fc3b52}} 
+static bool \mbox{\hyperlink{classlambda_1_1core_1_1input_1_1Input_a7055618bbc391db8059cce6051fc3b52}{Is\+Mouse\+Button\+Pressed}} (int button)
+\begin{DoxyCompactList}\small\item\em Check to see if a mouse button is being pressed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1input_1_1Input_a80195cccacf0364338291bb0b8fac2d2}\label{classlambda_1_1core_1_1input_1_1Input_a80195cccacf0364338291bb0b8fac2d2}} 
+virtual bool {\bfseries Is\+Key\+Pressed\+Impl} (int key\+\_\+code)=0
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1input_1_1Input_a9b22b6b9cfed2416f5abf3c922a7555d}\label{classlambda_1_1core_1_1input_1_1Input_a9b22b6b9cfed2416f5abf3c922a7555d}} 
+virtual float {\bfseries Get\+Mouse\+X\+Impl} ()=0
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1input_1_1Input_af63a75e232e94693ac604192da56fd2a}\label{classlambda_1_1core_1_1input_1_1Input_af63a75e232e94693ac604192da56fd2a}} 
+virtual float {\bfseries Get\+Mouse\+Y\+Impl} ()=0
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1input_1_1Input_ab4ca391bc01837c80c8858ae8e8f5186}\label{classlambda_1_1core_1_1input_1_1Input_ab4ca391bc01837c80c8858ae8e8f5186}} 
+virtual std\+::pair$<$ float, float $>$ {\bfseries Get\+Mouse\+Position\+Impl} ()=0
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1input_1_1Input_aa4651ac44b9754ecad5097e93cb5cc61}\label{classlambda_1_1core_1_1input_1_1Input_aa4651ac44b9754ecad5097e93cb5cc61}} 
+virtual bool {\bfseries Is\+Mouse\+Button\+Pressed\+Impl} (int button)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The generic input system for getting input data from applications built on lambda. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lambda/src/core/input/\mbox{\hyperlink{core_2input_2Input_8h}{Input.\+h}}\end{DoxyCompactItemize}

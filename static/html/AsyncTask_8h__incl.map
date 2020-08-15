@@ -1,0 +1,15 @@
+<map id="lambda/src/core/io/AsyncTask.h" name="lambda/src/core/io/AsyncTask.h">
+<area shape="rect" id="node1" title="A convenient wrapper for callback functions being dispatched into the event loop." alt="" coords="179,5,321,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,95,143,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="167,95,253,121"/>
+<area shape="rect" id="node4" href="$Pointers_8h.html" title="Abstraction for handling pointers within the engine. Currently just aliases for unique and shared poi..." alt="" coords="207,244,386,271"/>
+<area shape="rect" id="node6" href="$Time_8h.html" title="Cross platform timing utility for the game engine." alt="" coords="398,95,521,121"/>
+<area shape="rect" id="node5" title=" " alt="" coords="267,319,345,345"/>
+<area shape="rect" id="node7" title=" " alt="" coords="666,169,733,196"/>
+<area shape="rect" id="node8" title=" " alt="" coords="329,169,409,196"/>
+<area shape="rect" id="node9" title=" " alt="" coords="433,169,485,196"/>
+<area shape="rect" id="node10" href="$Assert_8h.html" title="This is a utility file that is primarily used for debugging the internals of the engine when incorrec..." alt="" coords="509,169,641,196"/>
+<area shape="rect" id="node11" href="$Core_8h.html" title="Core macros to be used all throughout the engine for development and production purposes." alt="" coords="527,319,623,345"/>
+<area shape="rect" id="node12" href="$Log_8h.html" title="The engines util utility." alt="" coords="419,244,534,271"/>
+<area shape="rect" id="node13" title=" " alt="" coords="379,319,503,345"/>
+</map>

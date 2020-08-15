@@ -1,0 +1,41 @@
+\hypertarget{classlambda_1_1core_1_1renderer_1_1Renderer}{}\doxysection{lambda\+::core\+::renderer\+::Renderer Class Reference}
+\label{classlambda_1_1core_1_1renderer_1_1Renderer}\index{lambda::core::renderer::Renderer@{lambda::core::renderer::Renderer}}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1Renderer_a838bb9cbe62950e8a02e0cef0109d83e}\label{classlambda_1_1core_1_1renderer_1_1Renderer_a838bb9cbe62950e8a02e0cef0109d83e}} 
+static void {\bfseries Init} ()
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1Renderer_ab13b50d4857062346e95ad0708b9a5de}\label{classlambda_1_1core_1_1renderer_1_1Renderer_ab13b50d4857062346e95ad0708b9a5de}} 
+static void \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1Renderer_ab13b50d4857062346e95ad0708b9a5de}{Begin\+Scene}} (const \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1OrthographicCamera}{Orthographic\+Camera}} \&camera)
+\begin{DoxyCompactList}\small\item\em Begin rendering a scene. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1Renderer_a3f7bd059dd86d3483dc0edd0205acf7f}\label{classlambda_1_1core_1_1renderer_1_1Renderer_a3f7bd059dd86d3483dc0edd0205acf7f}} 
+static void \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1Renderer_a3f7bd059dd86d3483dc0edd0205acf7f}{End\+Scene}} ()
+\begin{DoxyCompactList}\small\item\em Stop rendering a scene. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1Renderer_ae7aad616489bf9513d7397732797eb70}\label{classlambda_1_1core_1_1renderer_1_1Renderer_ae7aad616489bf9513d7397732797eb70}} 
+static void {\bfseries On\+Window\+Resize} (uint32\+\_\+t width, uint32\+\_\+t height)
+\item 
+static void \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1Renderer_a18beed7f7e5f5ea06aeac09321360069}{Submit}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1VertexArray}{Vertex\+Array}} $>$ \&vertex\+\_\+array, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1Shader}{Shader}} $>$ \&shader, const glm\+::mat4 \&transform=glm\+::mat4(1.\+0f))
+\begin{DoxyCompactList}\small\item\em Submit a scene data to the engine. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1Renderer_ac356289e63d05fc0c527e4b2e6bc157c}\label{classlambda_1_1core_1_1renderer_1_1Renderer_ac356289e63d05fc0c527e4b2e6bc157c}} 
+static Renderer\+A\+P\+I\+::\+A\+PI {\bfseries Get\+A\+PI} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1Renderer_a18beed7f7e5f5ea06aeac09321360069}\label{classlambda_1_1core_1_1renderer_1_1Renderer_a18beed7f7e5f5ea06aeac09321360069}} 
+\index{lambda::core::renderer::Renderer@{lambda::core::renderer::Renderer}!Submit@{Submit}}
+\index{Submit@{Submit}!lambda::core::renderer::Renderer@{lambda::core::renderer::Renderer}}
+\doxysubsubsection{\texorpdfstring{Submit()}{Submit()}}
+{\footnotesize\ttfamily Renderer\+::\+Submit (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1VertexArray}{Vertex\+Array}} $>$ \&}]{vertex\+\_\+array,  }\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1Shader}{Shader}} $>$ \&}]{shader,  }\item[{const glm\+::mat4 \&}]{transform = {\ttfamily glm\+:\+:mat4(1.0f)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Submit a scene data to the engine. 
+
+Binds both the shader and vertex array before issuing a draw call. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+lambda/src/core/renderer/\mbox{\hyperlink{Renderer_8h}{Renderer.\+h}}\item 
+lambda/src/core/renderer/Renderer.\+cpp\end{DoxyCompactItemize}

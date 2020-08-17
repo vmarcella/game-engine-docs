@@ -1,4 +1,9 @@
 <map id="lambda::core::renderer::Texture2D" name="lambda::core::renderer::Texture2D">
+<<<<<<< HEAD
 <area shape="rect" id="node1" title=" " alt="" coords="5,95,176,136"/>
 <area shape="rect" id="node2" href="$classlambda_1_1core_1_1renderer_1_1Texture.html" title=" " alt="" coords="5,5,176,47"/>
+=======
+<area shape="rect" id="node1" title="The 2D Texture API." alt="" coords="5,95,176,136"/>
+<area shape="rect" id="node2" href="$classlambda_1_1core_1_1renderer_1_1Texture.html" title="The abstract texture API." alt="" coords="5,5,176,47"/>
+>>>>>>> bfed1ea
 </map>

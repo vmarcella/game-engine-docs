@@ -1,4 +1,8 @@
 <map id="lambda::platform::opengl::OpenGLContext" name="lambda::platform::opengl::OpenGLContext">
 <area shape="rect" id="node1" title=" " alt="" coords="5,95,192,136"/>
+<<<<<<< HEAD
 <area shape="rect" id="node2" href="$classlambda_1_1core_1_1renderer_1_1GraphicsContext.html" title=" " alt="" coords="13,5,184,47"/>
+=======
+<area shape="rect" id="node2" href="$classlambda_1_1core_1_1renderer_1_1GraphicsContext.html" title="The Graphics context abstraction." alt="" coords="13,5,184,47"/>
+>>>>>>> bfed1ea
 </map>

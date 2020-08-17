@@ -1,11 +1,24 @@
 \hypertarget{classlambda_1_1core_1_1renderer_1_1BufferLayout}{}\doxysection{lambda\+::core\+::renderer\+::Buffer\+Layout Class Reference}
 \label{classlambda_1_1core_1_1renderer_1_1BufferLayout}\index{lambda::core::renderer::BufferLayout@{lambda::core::renderer::BufferLayout}}
+<<<<<<< HEAD
+=======
+
+
+The layout of a vertex buffer. Should always be instantiated with buffer elements for it to work properly.  
+
+
+
+
+{\ttfamily \#include $<$Buffer.\+h$>$}
+
+>>>>>>> bfed1ea
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1BufferLayout_a87e34665dd64b42c7d188a6bfa6c85ef}\label{classlambda_1_1core_1_1renderer_1_1BufferLayout_a87e34665dd64b42c7d188a6bfa6c85ef}} 
 {\bfseries Buffer\+Layout} (const std\+::initializer\+\_\+list$<$ \mbox{\hyperlink{structlambda_1_1core_1_1renderer_1_1BufferElement}{Buffer\+Element}} $>$ \&elements)
 \item 
+<<<<<<< HEAD
 uint32\+\_\+t \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1BufferLayout_a3319387032adbcca35f3f49e8d071190}{Get\+Stride}} () const
 \begin{DoxyCompactList}\small\item\em Get the overall stride of the current buffer layout. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1BufferLayout_a8beebcd05084371223585a9d07ecffe4}\label{classlambda_1_1core_1_1renderer_1_1BufferLayout_a8beebcd05084371223585a9d07ecffe4}} 
@@ -14,6 +27,17 @@ const std\+::vector$<$ \mbox{\hyperlink{structlambda_1_1core_1_1renderer_1_1Buff
 \mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1BufferLayout_adc98cce1a53db39682dcd05a6538c360}\label{classlambda_1_1core_1_1renderer_1_1BufferLayout_adc98cce1a53db39682dcd05a6538c360}} 
 const bool \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1BufferLayout_adc98cce1a53db39682dcd05a6538c360}{Has\+Elements}} () const
 \begin{DoxyCompactList}\small\item\em Checks to see if the current buffer layout has elements. \end{DoxyCompactList}\item 
+=======
+\mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1BufferLayout_a3354400c115311157b6ec27f99485772}\label{classlambda_1_1core_1_1renderer_1_1BufferLayout_a3354400c115311157b6ec27f99485772}} 
+uint32\+\_\+t \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1BufferLayout_a3354400c115311157b6ec27f99485772}{Get\+Stride}} () const
+\begin{DoxyCompactList}\small\item\em Get the stride. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1BufferLayout_a77910ec309c2a01e9d0429d9cad3fb80}\label{classlambda_1_1core_1_1renderer_1_1BufferLayout_a77910ec309c2a01e9d0429d9cad3fb80}} 
+const std\+::vector$<$ \mbox{\hyperlink{structlambda_1_1core_1_1renderer_1_1BufferElement}{Buffer\+Element}} $>$ \& \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1BufferLayout_a77910ec309c2a01e9d0429d9cad3fb80}{Get\+Elements}} () const
+\begin{DoxyCompactList}\small\item\em Get a reference to the list of the elements associated with the Buffer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1BufferLayout_a650023f08bbefb19debbbdc0a4ff87fd}\label{classlambda_1_1core_1_1renderer_1_1BufferLayout_a650023f08bbefb19debbbdc0a4ff87fd}} 
+const bool \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1BufferLayout_a650023f08bbefb19debbbdc0a4ff87fd}{Has\+Elements}} () const
+\begin{DoxyCompactList}\small\item\em Checks to see if the \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1BufferLayout}{Buffer\+Layout}} has any elements associated with. \end{DoxyCompactList}\item 
+>>>>>>> bfed1ea
 \mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1BufferLayout_aa6d615fd5ad8ef87bea8088103676f99}\label{classlambda_1_1core_1_1renderer_1_1BufferLayout_aa6d615fd5ad8ef87bea8088103676f99}} 
 std\+::vector$<$ \mbox{\hyperlink{structlambda_1_1core_1_1renderer_1_1BufferElement}{Buffer\+Element}} $>$\+::iterator {\bfseries begin} ()
 \item 
@@ -28,6 +52,7 @@ std\+::vector$<$ \mbox{\hyperlink{structlambda_1_1core_1_1renderer_1_1BufferElem
 \end{DoxyCompactItemize}
 
 
+<<<<<<< HEAD
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1BufferLayout_a3319387032adbcca35f3f49e8d071190}\label{classlambda_1_1core_1_1renderer_1_1BufferLayout_a3319387032adbcca35f3f49e8d071190}} 
 \index{lambda::core::renderer::BufferLayout@{lambda::core::renderer::BufferLayout}!GetStride@{GetStride}}
@@ -40,6 +65,10 @@ std\+::vector$<$ \mbox{\hyperlink{structlambda_1_1core_1_1renderer_1_1BufferElem
 Get the overall stride of the current buffer layout. 
 
 The stride is essentially the total size of the Buffer layout elements. 
+=======
+\doxysubsection{Detailed Description}
+The layout of a vertex buffer. Should always be instantiated with buffer elements for it to work properly. 
+>>>>>>> bfed1ea
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

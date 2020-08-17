@@ -69,6 +69,7 @@ $(function() {
 <div class="title">RenderCommand.h</div>  </div>
 </div><!--header-->
 <div class="contents">
+<<<<<<< HEAD
 <a href="RenderCommand_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef LAMBDA_SRC_CORE_RENDERER_RENDERCOMMAND_H_</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define LAMBDA_SRC_CORE_RENDERER_RENDERCOMMAND_H_</span></div>
@@ -114,10 +115,62 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1RenderCommand_html_a4bfb99e4da4d55a46fe34c41a1fdbdc1"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1RenderCommand.html#a4bfb99e4da4d55a46fe34c41a1fdbdc1">lambda::core::renderer::RenderCommand::SetClearColor</a></div><div class="ttdeci">static void SetClearColor(const glm::vec4 &amp;color)</div><div class="ttdoc">Sets the color to be used for clearing the screen.</div><div class="ttdef"><b>Definition:</b> RenderCommand.h:19</div></div>
 <div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1RenderCommand_html"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1RenderCommand.html">lambda::core::renderer::RenderCommand</a></div><div class="ttdef"><b>Definition:</b> RenderCommand.h:15</div></div>
+=======
+<a href="RenderCommand_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef LAMBDA_SRC_CORE_RENDERER_RENDERCOMMAND_H_</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define LAMBDA_SRC_CORE_RENDERER_RENDERCOMMAND_H_</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Pointers_8h.html">core/memory/Pointers.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="RendererAPI_8h.html">core/renderer/RendererAPI.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>lambda {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span>core {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>renderer {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1renderer_1_1RenderCommand.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="classlambda_1_1core_1_1renderer_1_1RenderCommand.html">RenderCommand</a> {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1renderer_1_1RenderCommand.html#a9e8811405f1c863edc7680d84a359460">   18</a></span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classlambda_1_1core_1_1renderer_1_1RenderCommand.html#a9e8811405f1c863edc7680d84a359460">Init</a>() { renderer_API_-&gt;Init(); }</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1renderer_1_1RenderCommand.html#a7f1063514ed86a82d35c481dd70e1797">   21</a></span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classlambda_1_1core_1_1renderer_1_1RenderCommand.html#a7f1063514ed86a82d35c481dd70e1797">SetClearColor</a>(<span class="keyword">const</span> glm::vec4&amp; color) {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    renderer_API_-&gt;SetClearColor(color);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  }</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1renderer_1_1RenderCommand.html#a5af57322126b2465cd696517c4cb59e6">   26</a></span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classlambda_1_1core_1_1renderer_1_1RenderCommand.html#a5af57322126b2465cd696517c4cb59e6">SetViewport</a>(</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      uint32_t x, uint32_t y, uint32_t width, uint32_t height) {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    renderer_API_-&gt;SetViewport(x, y, width, height);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  }</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1renderer_1_1RenderCommand.html#af449e883752de4d08e8f544708a4607d">   32</a></span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classlambda_1_1core_1_1renderer_1_1RenderCommand.html#af449e883752de4d08e8f544708a4607d">Clear</a>() {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    renderer_API_-&gt;Clear();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  }</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1renderer_1_1RenderCommand.html#a9eb193eadfa81e28579d7aa1923ed227">   37</a></span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classlambda_1_1core_1_1renderer_1_1RenderCommand.html#a9eb193eadfa81e28579d7aa1923ed227">DrawIndexed</a>(<span class="keyword">const</span> memory::Shared&lt;VertexArray&gt;&amp; vertex_array) {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    renderer_API_-&gt;DrawIndexed(vertex_array);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">static</span> memory::Unique&lt;RendererAPI&gt; renderer_API_;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;};</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}  <span class="comment">// namespace renderer</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}  <span class="comment">// namespace core</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}  <span class="comment">// namespace lambda</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif  // LAMBDA_SRC_CORE_RENDERER_RENDERCOMMAND_H_</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1RenderCommand_html"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1RenderCommand.html">lambda::core::renderer::RenderCommand</a></div><div class="ttdoc">An interface for issuing commands to the current rendering API that is being used with lambda.</div><div class="ttdef"><b>Definition:</b> RenderCommand.h:15</div></div>
+>>>>>>> bfed1ea
 <div class="ttc" id="aPointers_8h_html"><div class="ttname"><a href="Pointers_8h.html">Pointers.h</a></div><div class="ttdoc">Abstraction for handling pointers within the engine. Currently just aliases for unique and shared poi...</div></div>
 <div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1RenderCommand_html_a5d8f53f494cd739607d602a956cb8f9f"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1RenderCommand.html#a5d8f53f494cd739607d602a956cb8f9f">lambda::core::renderer::RenderCommand::DrawIndexed</a></div><div class="ttdeci">static void DrawIndexed(const memory::Shared&lt; VertexArray &gt; &amp;vertex_array)</div><div class="ttdoc">Issues a platform specific graphics API to draw a vertex array.</div><div class="ttdef"><b>Definition:</b> RenderCommand.h:32</div></div>
 <div class="ttc" id="aRendererAPI_8h_html"><div class="ttname"><a href="RendererAPI_8h.html">RendererAPI.h</a></div><div class="ttdoc">the rendering API that handles all draw calls.</div></div>
+<<<<<<< HEAD
 <div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1RenderCommand_html_a3d34cb02655114f32d6b409f45c43c2f"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1RenderCommand.html#a3d34cb02655114f32d6b409f45c43c2f">lambda::core::renderer::RenderCommand::Clear</a></div><div class="ttdeci">static void Clear()</div><div class="ttdoc">Clear the screen.</div><div class="ttdef"><b>Definition:</b> RenderCommand.h:28</div></div>
+=======
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1RenderCommand_html_a9e8811405f1c863edc7680d84a359460"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1RenderCommand.html#a9e8811405f1c863edc7680d84a359460">lambda::core::renderer::RenderCommand::Init</a></div><div class="ttdeci">static void Init()</div><div class="ttdoc">Initialize the Rendering API.</div><div class="ttdef"><b>Definition:</b> RenderCommand.h:18</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1RenderCommand_html_af449e883752de4d08e8f544708a4607d"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1RenderCommand.html#af449e883752de4d08e8f544708a4607d">lambda::core::renderer::RenderCommand::Clear</a></div><div class="ttdeci">static void Clear()</div><div class="ttdoc">Clear the screen of anything that was previously rendered.</div><div class="ttdef"><b>Definition:</b> RenderCommand.h:32</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1RenderCommand_html_a7f1063514ed86a82d35c481dd70e1797"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1RenderCommand.html#a7f1063514ed86a82d35c481dd70e1797">lambda::core::renderer::RenderCommand::SetClearColor</a></div><div class="ttdeci">static void SetClearColor(const glm::vec4 &amp;color)</div><div class="ttdoc">Set the color to clear the screen with.</div><div class="ttdef"><b>Definition:</b> RenderCommand.h:21</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1RenderCommand_html_a9eb193eadfa81e28579d7aa1923ed227"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1RenderCommand.html#a9eb193eadfa81e28579d7aa1923ed227">lambda::core::renderer::RenderCommand::DrawIndexed</a></div><div class="ttdeci">static void DrawIndexed(const memory::Shared&lt; VertexArray &gt; &amp;vertex_array)</div><div class="ttdoc">Issues a draw call to the rendering API.</div><div class="ttdef"><b>Definition:</b> RenderCommand.h:37</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1RenderCommand_html_a5af57322126b2465cd696517c4cb59e6"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1RenderCommand.html#a5af57322126b2465cd696517c4cb59e6">lambda::core::renderer::RenderCommand::SetViewport</a></div><div class="ttdeci">static void SetViewport(uint32_t x, uint32_t y, uint32_t width, uint32_t height)</div><div class="ttdoc">Set the viewport.</div><div class="ttdef"><b>Definition:</b> RenderCommand.h:26</div></div>
+>>>>>>> bfed1ea
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

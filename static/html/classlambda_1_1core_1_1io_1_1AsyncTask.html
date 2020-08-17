@@ -72,15 +72,19 @@ $(function() {
 <div class="title">lambda::core::io::AsyncTask Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<<<<<<< HEAD
 
 <p>A wrapper for callbacks that are supposed to be executed asynchronously.  
  <a href="classlambda_1_1core_1_1io_1_1AsyncTask.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="AsyncTask_8h_source.html">AsyncTask.h</a>&gt;</code></p>
+=======
+>>>>>>> bfed1ea
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a7308545ca1ab6d01d460121639c7dba4"><td class="memItemLeft" align="right" valign="top"><a id="a7308545ca1ab6d01d460121639c7dba4"></a>
+<<<<<<< HEAD
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1io_1_1AsyncTask.html#a7308545ca1ab6d01d460121639c7dba4">AsyncTask</a> (AsyncCallback callback, <a class="el" href="classlambda_1_1core_1_1util_1_1Time.html">util::Time</a> execute_at=<a class="el" href="classlambda_1_1core_1_1util_1_1Time.html">util::Time</a>(), <a class="el" href="classlambda_1_1core_1_1util_1_1Time.html">util::Time</a> expires_at=<a class="el" href="classlambda_1_1core_1_1util_1_1Time.html">util::Time</a>().AddSeconds(5))</td></tr>
 <tr class="memdesc:a7308545ca1ab6d01d460121639c7dba4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a task that should execute as soon as possible. <br /></td></tr>
 <tr class="separator:a7308545ca1ab6d01d460121639c7dba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -100,10 +104,32 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af4ab7986341028c7baf593675ad9f353"><td class="memItemLeft" align="right" valign="top"><a id="af4ab7986341028c7baf593675ad9f353"></a>
 const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1io_1_1AsyncTask.html#af4ab7986341028c7baf593675ad9f353">GetName</a> () const</td></tr>
 <tr class="memdesc:af4ab7986341028c7baf593675ad9f353"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of the task (Currently not implemented.) <br /></td></tr>
+=======
+&#160;</td><td class="memItemRight" valign="bottom"><b>AsyncTask</b> (AsyncCallback callback, <a class="el" href="classlambda_1_1core_1_1util_1_1Time.html">util::Time</a> execute_at=<a class="el" href="classlambda_1_1core_1_1util_1_1Time.html">util::Time</a>(), <a class="el" href="classlambda_1_1core_1_1util_1_1Time.html">util::Time</a> expires_at=<a class="el" href="classlambda_1_1core_1_1util_1_1Time.html">util::Time</a>().AddSeconds(5))</td></tr>
+<tr class="separator:a7308545ca1ab6d01d460121639c7dba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fde810139d3a3565d829f5fe420f6e3"><td class="memItemLeft" align="right" valign="top"><a id="a9fde810139d3a3565d829f5fe420f6e3"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AsyncTask</b> (AsyncCallback callback, uint32_t interval_in_ms, bool should_repeat)</td></tr>
+<tr class="separator:a9fde810139d3a3565d829f5fe420f6e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a864d9eda55e0c389e4c565b64b268e44"><td class="memItemLeft" align="right" valign="top"><a id="a864d9eda55e0c389e4c565b64b268e44"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>ShouldRepeat</b> ()</td></tr>
+<tr class="separator:a864d9eda55e0c389e4c565b64b268e44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58b4bf38c628a3686ce0e0a02b6fee88"><td class="memItemLeft" align="right" valign="top"><a id="a58b4bf38c628a3686ce0e0a02b6fee88"></a>
+AsyncResult&#160;</td><td class="memItemRight" valign="bottom"><b>Execute</b> ()</td></tr>
+<tr class="separator:a58b4bf38c628a3686ce0e0a02b6fee88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94d57f9f33f5e2af5c65ffe5362cff49"><td class="memItemLeft" align="right" valign="top"><a id="a94d57f9f33f5e2af5c65ffe5362cff49"></a>
+AsyncStatus&#160;</td><td class="memItemRight" valign="bottom"><b>GetStatus</b> ()</td></tr>
+<tr class="separator:a94d57f9f33f5e2af5c65ffe5362cff49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f91910c8fa3ce2de26bdfc137cb948b"><td class="memItemLeft" align="right" valign="top"><a id="a3f91910c8fa3ce2de26bdfc137cb948b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RescheduleTask</b> (<a class="el" href="classlambda_1_1core_1_1util_1_1Time.html">util::Time</a> new_execution_time, <a class="el" href="classlambda_1_1core_1_1util_1_1Time.html">util::Time</a> new_expiration_time)</td></tr>
+<tr class="separator:a3f91910c8fa3ce2de26bdfc137cb948b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4ab7986341028c7baf593675ad9f353"><td class="memItemLeft" align="right" valign="top"><a id="af4ab7986341028c7baf593675ad9f353"></a>
+const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetName</b> () const</td></tr>
+>>>>>>> bfed1ea
 <tr class="separator:af4ab7986341028c7baf593675ad9f353"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4001b4c7eff555ed22a964a5b48d07b5"><td class="memItemLeft" align="right" valign="top"><a id="a4001b4c7eff555ed22a964a5b48d07b5"></a>
 const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetIntervalInMilliseconds</b> () const</td></tr>
 <tr class="separator:a4001b4c7eff555ed22a964a5b48d07b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<<<<<<< HEAD
 <tr class="memitem:a864d9eda55e0c389e4c565b64b268e44"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1io_1_1AsyncTask.html#a864d9eda55e0c389e4c565b64b268e44">ShouldRepeat</a> ()</td></tr>
 <tr class="memdesc:a864d9eda55e0c389e4c565b64b268e44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow the ability to see if the task is setup to repeat.  <a href="classlambda_1_1core_1_1io_1_1AsyncTask.html#a864d9eda55e0c389e4c565b64b268e44">More...</a><br /></td></tr>
 <tr class="separator:a864d9eda55e0c389e4c565b64b268e44"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -211,6 +237,9 @@ const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetInterval
 
 </div>
 </div>
+=======
+</table>
+>>>>>>> bfed1ea
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>lambda/src/core/io/<a class="el" href="AsyncTask_8h_source.html">AsyncTask.h</a></li>
 <li>lambda/src/core/io/AsyncTask.cpp</li>

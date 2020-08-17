@@ -72,11 +72,14 @@ $(function() {
 <div class="title">lambda::core::io::EventLoop Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<<<<<<< HEAD
 
 <p>Asynchronous Event Loop that allows the execution of code to happen in another thread. This is not recommended for production as of yet.  
  <a href="classlambda_1_1core_1_1io_1_1EventLoop.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="EventLoop_8h_source.html">EventLoop.h</a>&gt;</code></p>
+=======
+>>>>>>> bfed1ea
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -84,6 +87,7 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>EventLoop</b> (uint32_t size=256)</td></tr>
 <tr class="separator:ac5561172490b5e9005523b0b23530bbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00fd46aae12da78a44086ab1247d5629"><td class="memItemLeft" align="right" valign="top"><a id="a00fd46aae12da78a44086ab1247d5629"></a>
+<<<<<<< HEAD
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1io_1_1EventLoop.html#a00fd46aae12da78a44086ab1247d5629">Run</a> ()</td></tr>
 <tr class="memdesc:a00fd46aae12da78a44086ab1247d5629"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs the event loop. This will block any thread it's running in and should not be used in the main thread. <br /></td></tr>
 <tr class="separator:a00fd46aae12da78a44086ab1247d5629"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -104,6 +108,21 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <div class="textblock"><p>Asynchronous Event Loop that allows the execution of code to happen in another thread. This is not recommended for production as of yet. </p>
 <p>This currently depends on everything passed into the queue being atomic or protected by locks to ensure that data isn't corrupted. The easy way to remedy this is to copy data into your callback as opposed to using instances of it, as that has the potential for major issues. </p>
 </div><hr/>The documentation for this class was generated from the following files:<ul>
+=======
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Run</b> ()</td></tr>
+<tr class="separator:a00fd46aae12da78a44086ab1247d5629"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae25afc87ce8a84c9f97b02c435abaf66"><td class="memItemLeft" align="right" valign="top"><a id="ae25afc87ce8a84c9f97b02c435abaf66"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>SetTimeout</b> (AsyncCallback callback, uint32_t milliseconds)</td></tr>
+<tr class="separator:ae25afc87ce8a84c9f97b02c435abaf66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30c7323eb1cef7459f67383a8a4c767d"><td class="memItemLeft" align="right" valign="top"><a id="a30c7323eb1cef7459f67383a8a4c767d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>SetInterval</b> (AsyncCallback callback, uint32_t milliseconds)</td></tr>
+<tr class="separator:a30c7323eb1cef7459f67383a8a4c767d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cc7ef22a95fe1f2195788eef453a17f"><td class="memItemLeft" align="right" valign="top"><a id="a8cc7ef22a95fe1f2195788eef453a17f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>Dispatch</b> (AsyncCallback callback, <a class="el" href="classlambda_1_1core_1_1util_1_1Time.html">util::Time</a> execute_at=<a class="el" href="classlambda_1_1core_1_1util_1_1Time.html">util::Time</a>(), <a class="el" href="classlambda_1_1core_1_1util_1_1Time.html">util::Time</a> expire_at=<a class="el" href="classlambda_1_1core_1_1util_1_1Time.html">util::Time</a>().AddSeconds(5))</td></tr>
+<tr class="separator:a8cc7ef22a95fe1f2195788eef453a17f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>The documentation for this class was generated from the following files:<ul>
+>>>>>>> bfed1ea
 <li>lambda/src/core/io/<a class="el" href="EventLoop_8h_source.html">EventLoop.h</a></li>
 <li>lambda/src/core/io/EventLoop.cpp</li>
 </ul>

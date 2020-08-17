@@ -3,7 +3,11 @@ var indexSectionsWithContent =
   0: "abcdefghiklmoprstuvw~",
   1: "abefgiklmorstvw",
   2: "abcegiklmoprstvw",
+<<<<<<< HEAD
   3: "abcdeghioprstu~",
+=======
+  3: "abcdeghiloprstu~",
+>>>>>>> bfed1ea
   4: "e",
   5: "aes",
   6: "bel"

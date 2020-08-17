@@ -73,10 +73,19 @@ $(function() {
 <div class="title">lambda::core::renderer::Renderer Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<<<<<<< HEAD
+=======
+
+<p>The primary interface used for managing.  
+ <a href="classlambda_1_1core_1_1renderer_1_1Renderer.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Renderer_8h_source.html">Renderer.h</a>&gt;</code></p>
+>>>>>>> bfed1ea
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a838bb9cbe62950e8a02e0cef0109d83e"><td class="memItemLeft" align="right" valign="top"><a id="a838bb9cbe62950e8a02e0cef0109d83e"></a>
+<<<<<<< HEAD
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>Init</b> ()</td></tr>
 <tr class="separator:a838bb9cbe62950e8a02e0cef0109d83e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab13b50d4857062346e95ad0708b9a5de"><td class="memItemLeft" align="right" valign="top"><a id="ab13b50d4857062346e95ad0708b9a5de"></a>
@@ -100,6 +109,34 @@ static RendererAPI::API&#160;</td><td class="memItemRight" valign="bottom"><b>Ge
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a18beed7f7e5f5ea06aeac09321360069"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a18beed7f7e5f5ea06aeac09321360069">&#9670;&nbsp;</a></span>Submit()</h2>
+=======
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1renderer_1_1Renderer.html#a838bb9cbe62950e8a02e0cef0109d83e">Init</a> ()</td></tr>
+<tr class="memdesc:a838bb9cbe62950e8a02e0cef0109d83e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the <a class="el" href="classlambda_1_1core_1_1renderer_1_1Renderer.html" title="The primary interface used for managing.">Renderer</a>. <br /></td></tr>
+<tr class="separator:a838bb9cbe62950e8a02e0cef0109d83e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7d617c807256d28879e6a5fea8f1d88"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1renderer_1_1Renderer.html#ac7d617c807256d28879e6a5fea8f1d88">BeginScene</a> (const <a class="el" href="classlambda_1_1core_1_1renderer_1_1OrthographicCamera.html">OrthographicCamera</a> &amp;camera)</td></tr>
+<tr class="memdesc:ac7d617c807256d28879e6a5fea8f1d88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begin a scene to be renderer.  <a href="classlambda_1_1core_1_1renderer_1_1Renderer.html#ac7d617c807256d28879e6a5fea8f1d88">More...</a><br /></td></tr>
+<tr class="separator:ac7d617c807256d28879e6a5fea8f1d88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60cf073794dd4b259b0793ebf873daaa"><td class="memItemLeft" align="right" valign="top"><a id="a60cf073794dd4b259b0793ebf873daaa"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1renderer_1_1Renderer.html#a60cf073794dd4b259b0793ebf873daaa">EndScene</a> ()</td></tr>
+<tr class="memdesc:a60cf073794dd4b259b0793ebf873daaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">@begin Ends the rendering scene <br /></td></tr>
+<tr class="separator:a60cf073794dd4b259b0793ebf873daaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7aad616489bf9513d7397732797eb70"><td class="memItemLeft" align="right" valign="top"><a id="ae7aad616489bf9513d7397732797eb70"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1renderer_1_1Renderer.html#ae7aad616489bf9513d7397732797eb70">OnWindowResize</a> (uint32_t width, uint32_t height)</td></tr>
+<tr class="memdesc:ae7aad616489bf9513d7397732797eb70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the renderer with the new screen width and height. <br /></td></tr>
+<tr class="separator:ae7aad616489bf9513d7397732797eb70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e2d23281bebf6e2cc0da143ea9f6c11"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1renderer_1_1Renderer.html#a2e2d23281bebf6e2cc0da143ea9f6c11">Submit</a> (const std::shared_ptr&lt; <a class="el" href="classlambda_1_1core_1_1renderer_1_1VertexArray.html">VertexArray</a> &gt; &amp;vertex_array, const std::shared_ptr&lt; <a class="el" href="classlambda_1_1core_1_1renderer_1_1Shader.html">Shader</a> &gt; &amp;shader, const glm::mat4 &amp;transform=glm::mat4(1.0f))</td></tr>
+<tr class="memdesc:a2e2d23281bebf6e2cc0da143ea9f6c11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a vertex array, shader, and transform matrix for rendering.  <a href="classlambda_1_1core_1_1renderer_1_1Renderer.html#a2e2d23281bebf6e2cc0da143ea9f6c11">More...</a><br /></td></tr>
+<tr class="separator:a2e2d23281bebf6e2cc0da143ea9f6c11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac356289e63d05fc0c527e4b2e6bc157c"><td class="memItemLeft" align="right" valign="top"><a id="ac356289e63d05fc0c527e4b2e6bc157c"></a>
+static <a class="el" href="classlambda_1_1core_1_1renderer_1_1RendererAPI.html#a6456ab2804367fa5627c576dcf485483">RendererAPI::API</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1renderer_1_1Renderer.html#ac356289e63d05fc0c527e4b2e6bc157c">GetAPI</a> ()</td></tr>
+<tr class="memdesc:ac356289e63d05fc0c527e4b2e6bc157c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the API being used by the current renderer. <br /></td></tr>
+<tr class="separator:ac356289e63d05fc0c527e4b2e6bc157c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The primary interface used for managing. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac7d617c807256d28879e6a5fea8f1d88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7d617c807256d28879e6a5fea8f1d88">&#9670;&nbsp;</a></span>BeginScene()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -108,7 +145,41 @@ static RendererAPI::API&#160;</td><td class="memItemRight" valign="bottom"><b>Ge
   <td class="mlabels-left">
       <table class="memname">
         <tr>
+          <td class="memname">void lambda::core::renderer::Renderer::BeginScene </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlambda_1_1core_1_1renderer_1_1OrthographicCamera.html">OrthographicCamera</a> &amp;&#160;</td>
+          <td class="paramname"><em>camera</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Begin a scene to be renderer. </p>
+<p>Uses a single orthograhpic camera to determine where things should be renderered on screen. </p>
+
+</div>
+</div>
+<a id="a2e2d23281bebf6e2cc0da143ea9f6c11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e2d23281bebf6e2cc0da143ea9f6c11">&#9670;&nbsp;</a></span>Submit()</h2>
+>>>>>>> bfed1ea
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+<<<<<<< HEAD
           <td class="memname">Renderer::Submit </td>
+=======
+          <td class="memname">void lambda::core::renderer::Renderer::Submit </td>
+>>>>>>> bfed1ea
           <td>(</td>
           <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="classlambda_1_1core_1_1renderer_1_1VertexArray.html">VertexArray</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>vertex_array</em>, </td>
@@ -138,7 +209,12 @@ static RendererAPI::API&#160;</td><td class="memItemRight" valign="bottom"><b>Ge
 </table>
 </div><div class="memdoc">
 
+<<<<<<< HEAD
 <p>Submit a scene data to the engine. </p>
+=======
+<p>Submit a vertex array, shader, and transform matrix for rendering. </p>
+<p>Must be associated with a specific scene. (used in between BeginScene and EndScene calls)</p>
+>>>>>>> bfed1ea
 <p>Binds both the shader and vertex array before issuing a draw call. </p>
 
 </div>

@@ -1,3 +1,7 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<<<<<<< HEAD
 <area shape="rect" id="node1" href="$classlambda_1_1core_1_1io_1_1EventLoop.html" title="Asynchronous Event Loop that allows the execution of code to happen in another thread...." alt="" coords="5,5,208,32"/>
+=======
+<area shape="rect" id="node1" href="$structlambda_1_1core_1_1renderer_1_1BufferElement.html" title="A generic buffer element used for describing the layout of a buffer." alt="" coords="5,5,176,47"/>
+>>>>>>> bfed1ea
 </map>

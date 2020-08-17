@@ -1,3 +1,7 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<<<<<<< HEAD
 <area shape="rect" id="node1" href="$classlambda_1_1core_1_1Window.html" title=" " alt="" coords="5,5,172,32"/>
+=======
+<area shape="rect" id="node1" href="$classlambda_1_1util_1_1Time.html" title="A wrapper for working with Time within the game engine. Uses std::steady_clock for a platform indepen..." alt="" coords="5,5,60,32"/>
+>>>>>>> bfed1ea
 </map>

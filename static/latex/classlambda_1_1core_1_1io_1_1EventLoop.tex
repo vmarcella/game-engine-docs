@@ -1,5 +1,6 @@
 \hypertarget{classlambda_1_1core_1_1io_1_1EventLoop}{}\doxysection{lambda\+::core\+::io\+::Event\+Loop Class Reference}
 \label{classlambda_1_1core_1_1io_1_1EventLoop}\index{lambda::core::io::EventLoop@{lambda::core::io::EventLoop}}
+<<<<<<< HEAD
 
 
 Asynchronous Event Loop that allows the execution of code to happen in another thread. This is not recommended for production as of yet.  
@@ -9,6 +10,8 @@ Asynchronous Event Loop that allows the execution of code to happen in another t
 
 {\ttfamily \#include $<$Event\+Loop.\+h$>$}
 
+=======
+>>>>>>> bfed1ea
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -16,6 +19,7 @@ Asynchronous Event Loop that allows the execution of code to happen in another t
 {\bfseries Event\+Loop} (uint32\+\_\+t size=256)
 \item 
 \mbox{\Hypertarget{classlambda_1_1core_1_1io_1_1EventLoop_a00fd46aae12da78a44086ab1247d5629}\label{classlambda_1_1core_1_1io_1_1EventLoop_a00fd46aae12da78a44086ab1247d5629}} 
+<<<<<<< HEAD
 void \mbox{\hyperlink{classlambda_1_1core_1_1io_1_1EventLoop_a00fd46aae12da78a44086ab1247d5629}{Run}} ()
 \begin{DoxyCompactList}\small\item\em Runs the event loop. This will block any thread it\textquotesingle{}s running in and should not be used in the main thread. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classlambda_1_1core_1_1io_1_1EventLoop_ae25afc87ce8a84c9f97b02c435abaf66}\label{classlambda_1_1core_1_1io_1_1EventLoop_ae25afc87ce8a84c9f97b02c435abaf66}} 
@@ -33,6 +37,20 @@ bool \mbox{\hyperlink{classlambda_1_1core_1_1io_1_1EventLoop_a09782a10470df40e22
 Asynchronous Event Loop that allows the execution of code to happen in another thread. This is not recommended for production as of yet. 
 
 This currently depends on everything passed into the queue being atomic or protected by locks to ensure that data isn\textquotesingle{}t corrupted. The easy way to remedy this is to copy data into your callback as opposed to using instances of it, as that has the potential for major issues. 
+=======
+void {\bfseries Run} ()
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1io_1_1EventLoop_ae25afc87ce8a84c9f97b02c435abaf66}\label{classlambda_1_1core_1_1io_1_1EventLoop_ae25afc87ce8a84c9f97b02c435abaf66}} 
+bool {\bfseries Set\+Timeout} (Async\+Callback callback, uint32\+\_\+t milliseconds)
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1io_1_1EventLoop_a30c7323eb1cef7459f67383a8a4c767d}\label{classlambda_1_1core_1_1io_1_1EventLoop_a30c7323eb1cef7459f67383a8a4c767d}} 
+bool {\bfseries Set\+Interval} (Async\+Callback callback, uint32\+\_\+t milliseconds)
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1io_1_1EventLoop_a8cc7ef22a95fe1f2195788eef453a17f}\label{classlambda_1_1core_1_1io_1_1EventLoop_a8cc7ef22a95fe1f2195788eef453a17f}} 
+bool {\bfseries Dispatch} (Async\+Callback callback, \mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time}{util\+::\+Time}} execute\+\_\+at=\mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time}{util\+::\+Time}}(), \mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time}{util\+::\+Time}} expire\+\_\+at=\mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time}{util\+::\+Time}}().Add\+Seconds(5))
+\end{DoxyCompactItemize}
+
+>>>>>>> bfed1ea
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

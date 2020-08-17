@@ -1,4 +1,8 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<<<<<<< HEAD
 <area shape="rect" id="node1" href="$classlambda_1_1core_1_1layers_1_1Layer.html" title="The lambda Layer abstraction. Primarily used for direct access into lambdas tick and event system." alt="" coords="5,5,160,47"/>
 <area shape="rect" id="node2" href="$classlambda_1_1core_1_1imgui_1_1ImGuiLayer.html" title="The base ImGui layer used for rendering all other ImGui components." alt="" coords="208,5,360,47"/>
+=======
+<area shape="rect" id="node1" href="$classlambda_1_1core_1_1renderer_1_1BufferLayout.html" title="The layout of a vertex buffer. Should always be instantiated with buffer elements for it to work prop..." alt="" coords="5,5,176,47"/>
+>>>>>>> bfed1ea
 </map>

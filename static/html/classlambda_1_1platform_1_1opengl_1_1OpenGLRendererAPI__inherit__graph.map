@@ -1,4 +1,8 @@
 <map id="lambda::platform::opengl::OpenGLRendererAPI" name="lambda::platform::opengl::OpenGLRendererAPI">
 <area shape="rect" id="node1" title="The Rendering implementation for OpenGL." alt="" coords="5,95,192,136"/>
+<<<<<<< HEAD
 <area shape="rect" id="node2" href="$classlambda_1_1core_1_1renderer_1_1RendererAPI.html" title=" " alt="" coords="13,5,184,47"/>
+=======
+<area shape="rect" id="node2" href="$classlambda_1_1core_1_1renderer_1_1RendererAPI.html" title="The abstract representation of rendering features and functions supported by Lambda." alt="" coords="13,5,184,47"/>
+>>>>>>> bfed1ea
 </map>

@@ -1,3 +1,8 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<<<<<<< HEAD
 <area shape="rect" id="node1" href="$classlambda_1_1core_1_1OrthographicCameraController.html" title=" " alt="" coords="5,5,204,47"/>
+=======
+<area shape="rect" id="node1" href="$classlambda_1_1core_1_1renderer_1_1IndexBuffer.html" title="A general abstraction of an Index Buffer." alt="" coords="5,5,176,47"/>
+<area shape="rect" id="node2" href="$classlambda_1_1platform_1_1opengl_1_1OpenGLIndexBuffer.html" title=" " alt="" coords="224,5,411,47"/>
+>>>>>>> bfed1ea
 </map>

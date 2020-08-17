@@ -1,0 +1,60 @@
+\hypertarget{classlambda_1_1core_1_1renderer_1_1Shader}{}\doxysection{lambda\+::core\+::renderer\+::Shader Class Reference}
+\label{classlambda_1_1core_1_1renderer_1_1Shader}\index{lambda::core::renderer::Shader@{lambda::core::renderer::Shader}}
+
+
+A generic \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1Shader}{Shader}} A\+PI.  
+
+
+
+
+{\ttfamily \#include $<$Shader.\+h$>$}
+
+
+
+Inheritance diagram for lambda\+::core\+::renderer\+::Shader\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{classlambda_1_1core_1_1renderer_1_1Shader__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1Shader_a403513da5c44ce0d85f07cb72ed5d355}\label{classlambda_1_1core_1_1renderer_1_1Shader_a403513da5c44ce0d85f07cb72ed5d355}} 
+virtual void \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1Shader_a403513da5c44ce0d85f07cb72ed5d355}{Bind}} () const =0
+\begin{DoxyCompactList}\small\item\em Binds the shader to the G\+PU. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1Shader_ada4f8d7177e5da1f68903d5a5716d6e9}\label{classlambda_1_1core_1_1renderer_1_1Shader_ada4f8d7177e5da1f68903d5a5716d6e9}} 
+virtual void \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1Shader_ada4f8d7177e5da1f68903d5a5716d6e9}{Unbind}} () const =0
+\begin{DoxyCompactList}\small\item\em Unbinds the shader from the G\+PU. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1Shader_a2dc1f7f1419bc6a4fb3b665e10375eca}\label{classlambda_1_1core_1_1renderer_1_1Shader_a2dc1f7f1419bc6a4fb3b665e10375eca}} 
+const std\+::string \& \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1Shader_a2dc1f7f1419bc6a4fb3b665e10375eca}{Get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Get the name of the shader. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1Shader_a63977df3fa56708876ee994f0342dc42}\label{classlambda_1_1core_1_1renderer_1_1Shader_a63977df3fa56708876ee994f0342dc42}} 
+static memory\+::\+Shared$<$ \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1Shader}{Shader}} $>$ \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1Shader_a63977df3fa56708876ee994f0342dc42}{Create}} (const std\+::string \&path)
+\begin{DoxyCompactList}\small\item\em Create a shader given the path to the shader. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1Shader_a3bcf75c546822095a654f322acee25c9}\label{classlambda_1_1core_1_1renderer_1_1Shader_a3bcf75c546822095a654f322acee25c9}} 
+static memory\+::\+Shared$<$ \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1Shader}{Shader}} $>$ \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1Shader_a3bcf75c546822095a654f322acee25c9}{Create}} (const std\+::string \&name, const std\+::string \&vertex\+\_\+source, const std\+::string \&fragment\+\_\+source)
+\begin{DoxyCompactList}\small\item\em Create a shader given a shader name, vertex source, and fragment source all as strings. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1Shader_abeb555a3d01cd34a88e9f08f30529353}\label{classlambda_1_1core_1_1renderer_1_1Shader_abeb555a3d01cd34a88e9f08f30529353}} 
+uint32\+\_\+t {\bfseries renderer\+\_\+\+I\+D\+\_\+}
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1Shader_aef5bb6c4061c5e27a0ae4780ccb1eee8}\label{classlambda_1_1core_1_1renderer_1_1Shader_aef5bb6c4061c5e27a0ae4780ccb1eee8}} 
+std\+::string {\bfseries name\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A generic \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1Shader}{Shader}} A\+PI. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+lambda/src/core/renderer/\mbox{\hyperlink{Shader_8h}{Shader.\+h}}\item 
+lambda/src/core/renderer/Shader.\+cpp\end{DoxyCompactItemize}

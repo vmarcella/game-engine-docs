@@ -1,0 +1,61 @@
+\hypertarget{classlambda_1_1core_1_1layers_1_1LayerStack}{}\doxysection{lambda\+::core\+::layers\+::Layer\+Stack Class Reference}
+\label{classlambda_1_1core_1_1layers_1_1LayerStack}\index{lambda::core::layers::LayerStack@{lambda::core::layers::LayerStack}}
+
+
+A Stack based structure for lambda to manage layers in.  
+
+
+
+
+{\ttfamily \#include $<$Layer\+Stack.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1layers_1_1LayerStack_a3b83c760662a2bacdf03f33466b92fb7}\label{classlambda_1_1core_1_1layers_1_1LayerStack_a3b83c760662a2bacdf03f33466b92fb7}} 
+void \mbox{\hyperlink{classlambda_1_1core_1_1layers_1_1LayerStack_a3b83c760662a2bacdf03f33466b92fb7}{Push\+Layer}} (memory\+::\+Shared$<$ \mbox{\hyperlink{classlambda_1_1core_1_1layers_1_1Layer}{Layer}} $>$ layer)
+\begin{DoxyCompactList}\small\item\em Push a layer into the layer stack. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1layers_1_1LayerStack_aed45680946af1d9e7a64ca13ca56126f}\label{classlambda_1_1core_1_1layers_1_1LayerStack_aed45680946af1d9e7a64ca13ca56126f}} 
+void \mbox{\hyperlink{classlambda_1_1core_1_1layers_1_1LayerStack_aed45680946af1d9e7a64ca13ca56126f}{Push\+Overlay}} (memory\+::\+Shared$<$ \mbox{\hyperlink{classlambda_1_1core_1_1layers_1_1Layer}{Layer}} $>$ overlay)
+\begin{DoxyCompactList}\small\item\em Push an overlay into the layer stack. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classlambda_1_1core_1_1layers_1_1LayerStack_aab5e51c05b8a733936f4d1cf49e70e0e}{Pop\+Layer}} (memory\+::\+Shared$<$ \mbox{\hyperlink{classlambda_1_1core_1_1layers_1_1Layer}{Layer}} $>$ layer)
+\begin{DoxyCompactList}\small\item\em Pop a layer out of the layer stack. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1layers_1_1LayerStack_aef661e743a9d6d5adcc9fe162d3ad778}\label{classlambda_1_1core_1_1layers_1_1LayerStack_aef661e743a9d6d5adcc9fe162d3ad778}} 
+void \mbox{\hyperlink{classlambda_1_1core_1_1layers_1_1LayerStack_aef661e743a9d6d5adcc9fe162d3ad778}{Pop\+Overlay}} (memory\+::\+Shared$<$ \mbox{\hyperlink{classlambda_1_1core_1_1layers_1_1Layer}{Layer}} $>$ layer)
+\begin{DoxyCompactList}\small\item\em Pop an overlay out of the layer stack. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1layers_1_1LayerStack_afa7875187bfaecf706fdd7597d2e259e}\label{classlambda_1_1core_1_1layers_1_1LayerStack_afa7875187bfaecf706fdd7597d2e259e}} 
+std\+::vector$<$ memory\+::\+Shared$<$ \mbox{\hyperlink{classlambda_1_1core_1_1layers_1_1Layer}{Layer}} $>$ $>$\+::iterator {\bfseries begin} ()
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1layers_1_1LayerStack_aec26bd482e80ad335e30d65512fbcb00}\label{classlambda_1_1core_1_1layers_1_1LayerStack_aec26bd482e80ad335e30d65512fbcb00}} 
+std\+::vector$<$ memory\+::\+Shared$<$ \mbox{\hyperlink{classlambda_1_1core_1_1layers_1_1Layer}{Layer}} $>$ $>$\+::iterator {\bfseries end} ()
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1layers_1_1LayerStack_ad9c9e76eaba7f94b07dd97044926a28a}\label{classlambda_1_1core_1_1layers_1_1LayerStack_ad9c9e76eaba7f94b07dd97044926a28a}} 
+std\+::vector$<$ memory\+::\+Shared$<$ \mbox{\hyperlink{classlambda_1_1core_1_1layers_1_1Layer}{Layer}} $>$ $>$\+::reverse\+\_\+iterator {\bfseries rbegin} ()
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1layers_1_1LayerStack_aa776ee55fb7f7e97cf73334b60e71633}\label{classlambda_1_1core_1_1layers_1_1LayerStack_aa776ee55fb7f7e97cf73334b60e71633}} 
+std\+::vector$<$ memory\+::\+Shared$<$ \mbox{\hyperlink{classlambda_1_1core_1_1layers_1_1Layer}{Layer}} $>$ $>$\+::reverse\+\_\+iterator {\bfseries rend} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A Stack based structure for lambda to manage layers in. 
+
+\mbox{\hyperlink{classlambda_1_1core_1_1Application}{Application}} primarily uses this internally to allow developers to use lambda as the manager for any layers that they create. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classlambda_1_1core_1_1layers_1_1LayerStack_aab5e51c05b8a733936f4d1cf49e70e0e}\label{classlambda_1_1core_1_1layers_1_1LayerStack_aab5e51c05b8a733936f4d1cf49e70e0e}} 
+\index{lambda::core::layers::LayerStack@{lambda::core::layers::LayerStack}!PopLayer@{PopLayer}}
+\index{PopLayer@{PopLayer}!lambda::core::layers::LayerStack@{lambda::core::layers::LayerStack}}
+\doxysubsubsection{\texorpdfstring{PopLayer()}{PopLayer()}}
+{\footnotesize\ttfamily void lambda\+::core\+::layers\+::\+Layer\+Stack\+::\+Pop\+Layer (\begin{DoxyParamCaption}\item[{memory\+::\+Shared$<$ \mbox{\hyperlink{classlambda_1_1core_1_1layers_1_1Layer}{Layer}} $>$}]{layer }\end{DoxyParamCaption})}
+
+
+
+Pop a layer out of the layer stack. 
+
+Pop a layer off of the layer stack. Compares layers via Shared resources. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+lambda/src/core/layers/\mbox{\hyperlink{LayerStack_8h}{Layer\+Stack.\+h}}\item 
+lambda/src/core/layers/Layer\+Stack.\+cpp\end{DoxyCompactItemize}

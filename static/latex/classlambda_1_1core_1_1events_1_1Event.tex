@@ -1,0 +1,71 @@
+\hypertarget{classlambda_1_1core_1_1events_1_1Event}{}\doxysection{lambda\+::core\+::events\+::Event Class Reference}
+\label{classlambda_1_1core_1_1events_1_1Event}\index{lambda::core::events::Event@{lambda::core::events::Event}}
+
+
+The base \mbox{\hyperlink{classlambda_1_1core_1_1events_1_1Event}{Event}} class for events that are propagated throughout lambda.  
+
+
+
+
+{\ttfamily \#include $<$Event.\+h$>$}
+
+
+
+Inheritance diagram for lambda\+::core\+::events\+::Event\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlambda_1_1core_1_1events_1_1Event__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1events_1_1Event_abd333b43a6321562bfd104536a188589}\label{classlambda_1_1core_1_1events_1_1Event_abd333b43a6321562bfd104536a188589}} 
+virtual \mbox{\hyperlink{Event_8h_a47a452c6c2c875fbcda15dc5864eb8a7}{Event\+Type}} {\bfseries Get\+Event\+Type} () const =0
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1events_1_1Event_a6ede3f1c2886587c4ded1904aba5f8e5}\label{classlambda_1_1core_1_1events_1_1Event_a6ede3f1c2886587c4ded1904aba5f8e5}} 
+virtual const char $\ast$ {\bfseries Get\+Name} () const =0
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1events_1_1Event_a371210d2ceb951a9aed52c7da84a9e69}\label{classlambda_1_1core_1_1events_1_1Event_a371210d2ceb951a9aed52c7da84a9e69}} 
+virtual int {\bfseries Get\+Category\+Flags} () const =0
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1events_1_1Event_ac85a35e5a43fa9b82f0a121d7d42beea}\label{classlambda_1_1core_1_1events_1_1Event_ac85a35e5a43fa9b82f0a121d7d42beea}} 
+virtual std\+::string {\bfseries To\+String} () const
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1events_1_1Event_a47c09b740159d37f5375db3ab33813b7}\label{classlambda_1_1core_1_1events_1_1Event_a47c09b740159d37f5375db3ab33813b7}} 
+bool \mbox{\hyperlink{classlambda_1_1core_1_1events_1_1Event_a47c09b740159d37f5375db3ab33813b7}{Has\+Been\+Handled}} ()
+\begin{DoxyCompactList}\small\item\em Checks if the \mbox{\hyperlink{classlambda_1_1core_1_1events_1_1Event}{Event}} has been handled. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1events_1_1Event_a5422b3b9759b623f62c4531209fe7c70}\label{classlambda_1_1core_1_1events_1_1Event_a5422b3b9759b623f62c4531209fe7c70}} 
+bool \mbox{\hyperlink{classlambda_1_1core_1_1events_1_1Event_a5422b3b9759b623f62c4531209fe7c70}{Is\+In\+Category}} (\mbox{\hyperlink{Event_8h_a081c19c46b849ecf8f1dd30082fcabae}{Event\+Category}} category)
+\begin{DoxyCompactList}\small\item\em Checks if the \mbox{\hyperlink{classlambda_1_1core_1_1events_1_1Event}{Event}} belongs to a specific category. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1events_1_1Event_a80dbbc6500cb366f75c383c1da26c78e}\label{classlambda_1_1core_1_1events_1_1Event_a80dbbc6500cb366f75c383c1da26c78e}} 
+std\+::ostream \& \mbox{\hyperlink{classlambda_1_1core_1_1events_1_1Event_a80dbbc6500cb366f75c383c1da26c78e}{operator$<$$<$}} (std\+::ostream \&os)
+\begin{DoxyCompactList}\small\item\em Support the use of $<$$<$ with Events. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1events_1_1Event_a2fd99ddd57bceaace0b8d48ed5249c0c}\label{classlambda_1_1core_1_1events_1_1Event_a2fd99ddd57bceaace0b8d48ed5249c0c}} 
+void {\bfseries Set\+Handled} (const bool success)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1events_1_1Event_ab82578432fdb71fcd6729018169f9c3a}\label{classlambda_1_1core_1_1events_1_1Event_ab82578432fdb71fcd6729018169f9c3a}} 
+bool {\bfseries has\+\_\+been\+\_\+handled\+\_\+} = false
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1events_1_1Event_aad5f38ccd490ea17008460423f52325a}\label{classlambda_1_1core_1_1events_1_1Event_aad5f38ccd490ea17008460423f52325a}} 
+class {\bfseries Event\+Dispatcher}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The base \mbox{\hyperlink{classlambda_1_1core_1_1events_1_1Event}{Event}} class for events that are propagated throughout lambda. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lambda/src/core/events/\mbox{\hyperlink{Event_8h}{Event.\+h}}\end{DoxyCompactItemize}

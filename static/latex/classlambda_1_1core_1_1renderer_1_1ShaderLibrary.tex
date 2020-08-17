@@ -1,0 +1,38 @@
+\hypertarget{classlambda_1_1core_1_1renderer_1_1ShaderLibrary}{}\doxysection{lambda\+::core\+::renderer\+::Shader\+Library Class Reference}
+\label{classlambda_1_1core_1_1renderer_1_1ShaderLibrary}\index{lambda::core::renderer::ShaderLibrary@{lambda::core::renderer::ShaderLibrary}}
+
+
+A library for managing many different shaders.  
+
+
+
+
+{\ttfamily \#include $<$Shader.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1ShaderLibrary_a0444cfab80a78f417f46e19f51e81b94}\label{classlambda_1_1core_1_1renderer_1_1ShaderLibrary_a0444cfab80a78f417f46e19f51e81b94}} 
+void \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1ShaderLibrary_a0444cfab80a78f417f46e19f51e81b94}{Add}} (const memory\+::\+Shared$<$ \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1Shader}{Shader}} $>$ \&shader)
+\begin{DoxyCompactList}\small\item\em Add a shader that has already been created into the library. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1ShaderLibrary_a614d838e38a6dba2c132a54e82489646}\label{classlambda_1_1core_1_1renderer_1_1ShaderLibrary_a614d838e38a6dba2c132a54e82489646}} 
+void \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1ShaderLibrary_a614d838e38a6dba2c132a54e82489646}{Add}} (const std\+::string \&name, const memory\+::\+Shared$<$ \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1Shader}{Shader}} $>$ \&shader)
+\begin{DoxyCompactList}\small\item\em Add a shader that has already been created into the library. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1ShaderLibrary_a0d50042c2c1ba267794ee3bd618214c0}\label{classlambda_1_1core_1_1renderer_1_1ShaderLibrary_a0d50042c2c1ba267794ee3bd618214c0}} 
+memory\+::\+Shared$<$ \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1Shader}{Shader}} $>$ \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1ShaderLibrary_a0d50042c2c1ba267794ee3bd618214c0}{Get}} (const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Get a shader from the library given the name of the shader. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1ShaderLibrary_a6caf666ba6a3152fa33411138d0cdc4d}\label{classlambda_1_1core_1_1renderer_1_1ShaderLibrary_a6caf666ba6a3152fa33411138d0cdc4d}} 
+memory\+::\+Shared$<$ \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1Shader}{Shader}} $>$ \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1ShaderLibrary_a6caf666ba6a3152fa33411138d0cdc4d}{Load}} (const std\+::string \&path)
+\begin{DoxyCompactList}\small\item\em Load a shader into lambda through the path of the shader. (uses the name of the shader for naming.) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1ShaderLibrary_ae9cac63965944654b1a09fbd6ea47908}\label{classlambda_1_1core_1_1renderer_1_1ShaderLibrary_ae9cac63965944654b1a09fbd6ea47908}} 
+memory\+::\+Shared$<$ \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1Shader}{Shader}} $>$ \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1ShaderLibrary_ae9cac63965944654b1a09fbd6ea47908}{Load}} (const std\+::string \&name, const std\+::string \&path)
+\begin{DoxyCompactList}\small\item\em Load a shader into lambda with a path to the shader and name to be used within the shader library. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A library for managing many different shaders. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+lambda/src/core/renderer/\mbox{\hyperlink{Shader_8h}{Shader.\+h}}\item 
+lambda/src/core/renderer/Shader.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,62 @@
+\hypertarget{classlambda_1_1platform_1_1opengl_1_1OpenGLVertexArray}{}\doxysection{lambda\+::platform\+::opengl\+::Open\+G\+L\+Vertex\+Array Class Reference}
+\label{classlambda_1_1platform_1_1opengl_1_1OpenGLVertexArray}\index{lambda::platform::opengl::OpenGLVertexArray@{lambda::platform::opengl::OpenGLVertexArray}}
+
+
+The abstraction for representing Vertex arrays and their sub components.  
+
+
+
+
+{\ttfamily \#include $<$Open\+G\+L\+Vertex\+Array.\+h$>$}
+
+
+
+Inheritance diagram for lambda\+::platform\+::opengl\+::Open\+G\+L\+Vertex\+Array\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{classlambda_1_1platform_1_1opengl_1_1OpenGLVertexArray__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for lambda\+::platform\+::opengl\+::Open\+G\+L\+Vertex\+Array\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{classlambda_1_1platform_1_1opengl_1_1OpenGLVertexArray__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classlambda_1_1platform_1_1opengl_1_1OpenGLVertexArray_a57727fdc5dcee495691ccf47d5240ca6}\label{classlambda_1_1platform_1_1opengl_1_1OpenGLVertexArray_a57727fdc5dcee495691ccf47d5240ca6}} 
+void \mbox{\hyperlink{classlambda_1_1platform_1_1opengl_1_1OpenGLVertexArray_a57727fdc5dcee495691ccf47d5240ca6}{Bind}} () const override
+\begin{DoxyCompactList}\small\item\em Bind the Vertex array and it\textquotesingle{}s components to the rendering A\+PI and G\+PU. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1platform_1_1opengl_1_1OpenGLVertexArray_a5e4b2b2d92a6f5b736af001b5b00f93f}\label{classlambda_1_1platform_1_1opengl_1_1OpenGLVertexArray_a5e4b2b2d92a6f5b736af001b5b00f93f}} 
+void \mbox{\hyperlink{classlambda_1_1platform_1_1opengl_1_1OpenGLVertexArray_a5e4b2b2d92a6f5b736af001b5b00f93f}{Unbind}} () const override
+\begin{DoxyCompactList}\small\item\em Unbind the vertex array and it\textquotesingle{}s components from the rendering A\+PI and memory. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1platform_1_1opengl_1_1OpenGLVertexArray_a49e1653ffc1cc2fb4c6fbf3aa8254336}\label{classlambda_1_1platform_1_1opengl_1_1OpenGLVertexArray_a49e1653ffc1cc2fb4c6fbf3aa8254336}} 
+void \mbox{\hyperlink{classlambda_1_1platform_1_1opengl_1_1OpenGLVertexArray_a49e1653ffc1cc2fb4c6fbf3aa8254336}{Add\+Vertex\+Buffer}} (const core\+::memory\+::\+Shared$<$ \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1VertexBuffer}{core\+::renderer\+::\+Vertex\+Buffer}} $>$ \&vertex\+\_\+buffer) override
+\begin{DoxyCompactList}\small\item\em Add a vertex buffer to the current Vertex Array. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1platform_1_1opengl_1_1OpenGLVertexArray_acd800248671bac15174336aa5dcf6709}\label{classlambda_1_1platform_1_1opengl_1_1OpenGLVertexArray_acd800248671bac15174336aa5dcf6709}} 
+void \mbox{\hyperlink{classlambda_1_1platform_1_1opengl_1_1OpenGLVertexArray_acd800248671bac15174336aa5dcf6709}{Set\+Index\+Buffer}} (const core\+::memory\+::\+Shared$<$ \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1IndexBuffer}{core\+::renderer\+::\+Index\+Buffer}} $>$ \&index\+\_\+buffer) override
+\begin{DoxyCompactList}\small\item\em Set the index buffer for rendering all vertex arrays. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1platform_1_1opengl_1_1OpenGLVertexArray_a98552072e21ca639407ee43c80c69ddb}\label{classlambda_1_1platform_1_1opengl_1_1OpenGLVertexArray_a98552072e21ca639407ee43c80c69ddb}} 
+const core\+::memory\+::\+Shared$<$ \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1IndexBuffer}{core\+::renderer\+::\+Index\+Buffer}} $>$ \& \mbox{\hyperlink{classlambda_1_1platform_1_1opengl_1_1OpenGLVertexArray_a98552072e21ca639407ee43c80c69ddb}{Get\+Index\+Buffer}} () const override
+\begin{DoxyCompactList}\small\item\em Get the index buffer associated with this Vertex Array. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1platform_1_1opengl_1_1OpenGLVertexArray_a81e94f1ada6cf6f312602fcf586eb64f}\label{classlambda_1_1platform_1_1opengl_1_1OpenGLVertexArray_a81e94f1ada6cf6f312602fcf586eb64f}} 
+const std\+::vector$<$ core\+::memory\+::\+Shared$<$ \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1VertexBuffer}{core\+::renderer\+::\+Vertex\+Buffer}} $>$ $>$ \& \mbox{\hyperlink{classlambda_1_1platform_1_1opengl_1_1OpenGLVertexArray_a81e94f1ada6cf6f312602fcf586eb64f}{Get\+Vertex\+Buffers}} () const override
+\begin{DoxyCompactList}\small\item\em Get the Vertex Buffers that are associated with this Vertex Array. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The abstraction for representing Vertex arrays and their sub components. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+lambda/src/platform/opengl/Open\+G\+L\+Vertex\+Array.\+h\item 
+lambda/src/platform/opengl/Open\+G\+L\+Vertex\+Array.\+cpp\end{DoxyCompactItemize}

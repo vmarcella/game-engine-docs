@@ -1,16 +1,17 @@
-\hypertarget{Pointers_8h}{}\doxysection{engine/src/core/memory/\+Pointers.h File Reference}
-\label{Pointers_8h}\index{engine/src/core/memory/Pointers.h@{engine/src/core/memory/Pointers.h}}
+\hypertarget{Pointers_8h}{}\doxysection{lambda/src/core/memory/\+Pointers.h File Reference}
+\label{Pointers_8h}\index{lambda/src/core/memory/Pointers.h@{lambda/src/core/memory/Pointers.h}}
 
 
 Abstraction for handling pointers within the engine. Currently just aliases for unique and shared pointers provided by c++11.  
 
 
 {\ttfamily \#include $<$memory$>$}\newline
-Include dependency graph for Pointers.\+h\+:\nopagebreak
+Include dependency graph for Pointers.\+h\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=215pt]{Pointers_8h__incl}
+\includegraphics[width=219pt]{Pointers_8h__incl}
 \end{center}
 \end{figure}
 This graph shows which files directly or indirectly include this file\+:
@@ -24,20 +25,20 @@ This graph shows which files directly or indirectly include this file\+:
 \doxysubsection*{Typedefs}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{Pointers_8h_adce2c2ae2481bdcb9b10283028e4a138}\label{Pointers_8h_adce2c2ae2481bdcb9b10283028e4a138}} 
-{\footnotesize template$<$typename T $>$ }\\using {\bfseries engine\+::memory\+::\+Unique} = std\+::unique\+\_\+ptr$<$ T $>$
+\mbox{\Hypertarget{Pointers_8h_adc62217dad8897b4f0a150993a0e59cb}\label{Pointers_8h_adc62217dad8897b4f0a150993a0e59cb}} 
+{\footnotesize template$<$typename T $>$ }\\using {\bfseries lambda\+::core\+::memory\+::\+Unique} = std\+::unique\+\_\+ptr$<$ T $>$
 \item 
-\mbox{\Hypertarget{Pointers_8h_ac7a23a18ff827712ca43e4356bcdb453}\label{Pointers_8h_ac7a23a18ff827712ca43e4356bcdb453}} 
-{\footnotesize template$<$typename T $>$ }\\using {\bfseries engine\+::memory\+::\+Shared} = std\+::shared\+\_\+ptr$<$ T $>$
+\mbox{\Hypertarget{Pointers_8h_a1abdfc9779a10a5591299118322d5211}\label{Pointers_8h_a1abdfc9779a10a5591299118322d5211}} 
+{\footnotesize template$<$typename T $>$ }\\using {\bfseries lambda\+::core\+::memory\+::\+Shared} = std\+::shared\+\_\+ptr$<$ T $>$
 \end{DoxyCompactItemize}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{Pointers_8h_a2e9601e500bd996a077f69cb35bb34cf}\label{Pointers_8h_a2e9601e500bd996a077f69cb35bb34cf}} 
-{\footnotesize template$<$typename T , class... Args$>$ }\\Unique$<$ T $>$ {\bfseries engine\+::memory\+::\+Create\+Unique} (Args \&\&... args)
+\mbox{\Hypertarget{Pointers_8h_a343558b562d4e47e4d0a293fa15a6619}\label{Pointers_8h_a343558b562d4e47e4d0a293fa15a6619}} 
+{\footnotesize template$<$typename T , class... Args$>$ }\\Unique$<$ T $>$ {\bfseries lambda\+::core\+::memory\+::\+Create\+Unique} (Args \&\&... args)
 \item 
-\mbox{\Hypertarget{Pointers_8h_a0d3f103839d87137132ca928111e552e}\label{Pointers_8h_a0d3f103839d87137132ca928111e552e}} 
-{\footnotesize template$<$typename T , class... Args$>$ }\\Shared$<$ T $>$ {\bfseries engine\+::memory\+::\+Create\+Shared} (Args \&\&... args)
+\mbox{\Hypertarget{Pointers_8h_aa87fcfcd6700369a409acb3cc62b6612}\label{Pointers_8h_aa87fcfcd6700369a409acb3cc62b6612}} 
+{\footnotesize template$<$typename T , class... Args$>$ }\\Shared$<$ T $>$ {\bfseries lambda\+::core\+::memory\+::\+Create\+Shared} (Args \&\&... args)
 \end{DoxyCompactItemize}
 
 

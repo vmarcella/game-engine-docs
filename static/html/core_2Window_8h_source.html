@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>game-engine: engine/src/core/Window.h Source File</title>
+<title>lambda: lambda/src/core/Window.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">game-engine
+   <div id="projectname">lambda
    </div>
   </td>
  </tr>
@@ -61,7 +61,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_996f45160da62e1a3d7f6046fad68f51.html">engine</a></li><li class="navelem"><a class="el" href="dir_3d9126aa00c041bc0b8f859d1965a0f4.html">src</a></li><li class="navelem"><a class="el" href="dir_5e835386694ce392648cfcf102577fe3.html">core</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_4b73342a493c3ec8f518edda193e909f.html">lambda</a></li><li class="navelem"><a class="el" href="dir_896901b14b6321ed9cf375daac6fb468.html">src</a></li><li class="navelem"><a class="el" href="dir_120072a10eb7d4fbc043fc091b8cce0e.html">core</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -70,68 +70,73 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <a href="core_2Window_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef ENGINE_SRC_CORE_WINDOW_H_</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define ENGINE_SRC_CORE_WINDOW_H_</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef LAMBDA_SRC_CORE_WINDOW_H_</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define LAMBDA_SRC_CORE_WINDOW_H_</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Core_8h.html">core/Core.h</a>&quot;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Event_8h.html">core/events/Event.h</a>&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Pointers_8h.html">core/memory/Pointers.h</a>&quot;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span>engine {</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="structengine_1_1WindowProperties.html">   16</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structengine_1_1WindowProperties.html">WindowProperties</a> {</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  std::string Title;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Width;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Height;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <a class="code" href="structengine_1_1WindowProperties.html">WindowProperties</a>(</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      <span class="keyword">const</span> std::string&amp; title = <span class="stringliteral">&quot;Game Engine&quot;</span>,</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;      <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> width = 1280,</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;      <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> height = 720)</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;          : Title(title), Width(width), Height(height) {}</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;};</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classengine_1_1Window.html">   28</a></span>&#160;<span class="keyword">class </span><a class="code" href="classengine_1_1Window.html">Window</a> {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classengine_1_1Window.html#a011d2563cc695bbc6a9fe2e64a29bd2f">   30</a></span>&#160;  <span class="keyword">typedef</span> std::function&lt;void(<a class="code" href="classengine_1_1events_1_1Event.html">events::Event</a>*)&gt; <a class="code" href="classengine_1_1Window.html#a011d2563cc695bbc6a9fe2e64a29bd2f">EventCallbackFunction</a>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classengine_1_1Window.html">Window</a>() {}</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classengine_1_1Window.html#a4ded827d5389fe158daf76df45884bf2">   33</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classengine_1_1Window.html#a4ded827d5389fe158daf76df45884bf2">OnUpdate</a>() = 0;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classengine_1_1Window.html#a5969984ab8a150119367a43ab8d0ffd1">   35</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classengine_1_1Window.html#a5969984ab8a150119367a43ab8d0ffd1">GetWidth</a>() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classengine_1_1Window.html#a19464c47ee28b320979a3255a92ccf3f">   36</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classengine_1_1Window.html#a19464c47ee28b320979a3255a92ccf3f">GetHeight</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ApplicationEvent_8h.html">core/events/ApplicationEvent.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Event_8h.html">core/events/Event.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Pointers_8h.html">core/memory/Pointers.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span>lambda {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span>core {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="structlambda_1_1core_1_1WindowProperties.html">   18</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structlambda_1_1core_1_1WindowProperties.html">WindowProperties</a> {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  std::string Title;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Width;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Height;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <a class="code" href="structlambda_1_1core_1_1WindowProperties.html">WindowProperties</a>(</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;      <span class="keyword">const</span> std::string&amp; title = <span class="stringliteral">&quot;Game Engine&quot;</span>,</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;      <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> width = 1280,</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> height = 720) :</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;          Title(title), Width(width), Height(height) {}</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1Window.html">   30</a></span>&#160;<span class="keyword">class </span><a class="code" href="classlambda_1_1core_1_1Window.html">Window</a> {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keyword">typedef</span> std::function&lt;void(memory::Shared&lt;events::Event&gt;)&gt;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1Window.html#a9a0c2beeed780f70aae075ac68d39779">   33</a></span>&#160;      <a class="code" href="classlambda_1_1core_1_1Window.html#a9a0c2beeed780f70aae075ac68d39779">EventCallbackFunction</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classlambda_1_1core_1_1Window.html">Window</a>() {}</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1Window.html#a4beeb72800bf47ad295459eae173705f">   36</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlambda_1_1core_1_1Window.html#a4beeb72800bf47ad295459eae173705f">OnUpdate</a>() = 0;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classengine_1_1Window.html#afca9bd918d022b0e91d8b274648b1324">   38</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classengine_1_1Window.html#afca9bd918d022b0e91d8b274648b1324">SetEventCallback</a>(<span class="keyword">const</span> <a class="code" href="classengine_1_1Window.html#a011d2563cc695bbc6a9fe2e64a29bd2f">EventCallbackFunction</a>&amp; callback) = 0;</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classengine_1_1Window.html#a17dd0ec2fd18f4ee6a56ebbed211f45d">   39</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classengine_1_1Window.html#a17dd0ec2fd18f4ee6a56ebbed211f45d">SetVerticalSync</a>(<span class="keywordtype">bool</span> enabled) = 0;</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classengine_1_1Window.html#a3c1d2e008a8b83a83be692ca864beec1">   40</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classengine_1_1Window.html#a3c1d2e008a8b83a83be692ca864beec1">HasVerticalSync</a>() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classengine_1_1Window.html#a075f0ad97b7d7d3730a710385abde3d6">   41</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span>* <a class="code" href="classengine_1_1Window.html#a075f0ad97b7d7d3730a710385abde3d6">GetNativeWindow</a>() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classengine_1_1Window.html#ac835a4aa07cfb1d589f777e54da39932">   43</a></span>&#160;  <span class="keyword">static</span> memory::Shared&lt;Window&gt; <a class="code" href="classengine_1_1Window.html#ac835a4aa07cfb1d589f777e54da39932">Create</a>(</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      <span class="keyword">const</span> <a class="code" href="structengine_1_1WindowProperties.html">WindowProperties</a>&amp; properties = <a class="code" href="structengine_1_1WindowProperties.html">WindowProperties</a>());</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1Window.html#a2932cd1d52b93453b3127cad51cdc704">   38</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classlambda_1_1core_1_1Window.html#a2932cd1d52b93453b3127cad51cdc704">GetWidth</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1Window.html#a56d099943cae3158aed636d464414156">   39</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classlambda_1_1core_1_1Window.html#a56d099943cae3158aed636d464414156">GetHeight</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1Window.html#a104e6e2608f3ed7c75fdec681a7ea23f">   41</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlambda_1_1core_1_1Window.html#a104e6e2608f3ed7c75fdec681a7ea23f">SetEventCallback</a>(<span class="keyword">const</span> <a class="code" href="classlambda_1_1core_1_1Window.html#a9a0c2beeed780f70aae075ac68d39779">EventCallbackFunction</a>&amp; callback) = 0;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1Window.html#a4ad5d1be55169fee4ef88d87875fc265">   42</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlambda_1_1core_1_1Window.html#a4ad5d1be55169fee4ef88d87875fc265">SetVerticalSync</a>(<span class="keywordtype">bool</span> enabled) = 0;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1Window.html#aca27bd0e4de3e7a592eb304a02cd8ebe">   43</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classlambda_1_1core_1_1Window.html#aca27bd0e4de3e7a592eb304a02cd8ebe">HasVerticalSync</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1Window.html#a6c25e56cafd3cb8b8e517fb7205b5016">   44</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span>* <a class="code" href="classlambda_1_1core_1_1Window.html#a6c25e56cafd3cb8b8e517fb7205b5016">GetNativeWindow</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}  <span class="comment">// namespace engine</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif  // ENGINE_SRC_CORE_WINDOW_H_</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1Window.html#a16506ae84e7b014b0d9a97a44aa0ade1">   47</a></span>&#160;  <span class="keyword">static</span> memory::Shared&lt;Window&gt; <a class="code" href="classlambda_1_1core_1_1Window.html#a16506ae84e7b014b0d9a97a44aa0ade1">Create</a>(</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      <span class="keyword">const</span> <a class="code" href="structlambda_1_1core_1_1WindowProperties.html">WindowProperties</a>&amp; properties = <a class="code" href="structlambda_1_1core_1_1WindowProperties.html">WindowProperties</a>());</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}  <span class="comment">// namespace core</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}  <span class="comment">// namespace lambda</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif  // LAMBDA_SRC_CORE_WINDOW_H_</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassengine_1_1events_1_1Event_html"><div class="ttname"><a href="classengine_1_1events_1_1Event.html">engine::events::Event</a></div><div class="ttdoc">The abstract Event class.</div><div class="ttdef"><b>Definition:</b> Event.h:57</div></div>
-<div class="ttc" id="aclassengine_1_1Window_html_a075f0ad97b7d7d3730a710385abde3d6"><div class="ttname"><a href="classengine_1_1Window.html#a075f0ad97b7d7d3730a710385abde3d6">engine::Window::GetNativeWindow</a></div><div class="ttdeci">virtual void * GetNativeWindow() const =0</div><div class="ttdoc">Get the native window implementation. Needs to be casted into it's real type.</div></div>
-<div class="ttc" id="aclassengine_1_1Window_html_ac835a4aa07cfb1d589f777e54da39932"><div class="ttname"><a href="classengine_1_1Window.html#ac835a4aa07cfb1d589f777e54da39932">engine::Window::Create</a></div><div class="ttdeci">static memory::Shared&lt; Window &gt; Create(const WindowProperties &amp;properties=WindowProperties())</div><div class="ttdoc">Create a platform specific window. (Needs to be specified with compiler flags.)</div></div>
-<div class="ttc" id="aclassengine_1_1Window_html_a19464c47ee28b320979a3255a92ccf3f"><div class="ttname"><a href="classengine_1_1Window.html#a19464c47ee28b320979a3255a92ccf3f">engine::Window::GetHeight</a></div><div class="ttdeci">virtual unsigned int GetHeight() const =0</div><div class="ttdoc">Get the height of the window.</div></div>
-<div class="ttc" id="aclassengine_1_1Window_html_a4ded827d5389fe158daf76df45884bf2"><div class="ttname"><a href="classengine_1_1Window.html#a4ded827d5389fe158daf76df45884bf2">engine::Window::OnUpdate</a></div><div class="ttdeci">virtual void OnUpdate()=0</div><div class="ttdoc">Handles what the window should do when the engine updates.</div></div>
-<div class="ttc" id="aclassengine_1_1Window_html_a3c1d2e008a8b83a83be692ca864beec1"><div class="ttname"><a href="classengine_1_1Window.html#a3c1d2e008a8b83a83be692ca864beec1">engine::Window::HasVerticalSync</a></div><div class="ttdeci">virtual bool HasVerticalSync() const =0</div><div class="ttdoc">Checks if the window has vertical sync enabled.</div></div>
-<div class="ttc" id="aclassengine_1_1Window_html_a011d2563cc695bbc6a9fe2e64a29bd2f"><div class="ttname"><a href="classengine_1_1Window.html#a011d2563cc695bbc6a9fe2e64a29bd2f">engine::Window::EventCallbackFunction</a></div><div class="ttdeci">std::function&lt; void(events::Event *)&gt; EventCallbackFunction</div><div class="ttdoc">The function to be used for handling events generated by user input in the window.</div><div class="ttdef"><b>Definition:</b> Window.h:30</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1Window_html"><div class="ttname"><a href="classlambda_1_1core_1_1Window.html">lambda::core::Window</a></div><div class="ttdef"><b>Definition:</b> Window.h:30</div></div>
+<div class="ttc" id="astructlambda_1_1core_1_1WindowProperties_html"><div class="ttname"><a href="structlambda_1_1core_1_1WindowProperties.html">lambda::core::WindowProperties</a></div><div class="ttdef"><b>Definition:</b> Window.h:18</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1Window_html_a2932cd1d52b93453b3127cad51cdc704"><div class="ttname"><a href="classlambda_1_1core_1_1Window.html#a2932cd1d52b93453b3127cad51cdc704">lambda::core::Window::GetWidth</a></div><div class="ttdeci">virtual unsigned int GetWidth() const =0</div><div class="ttdoc">Get the width of the window.</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1Window_html_aca27bd0e4de3e7a592eb304a02cd8ebe"><div class="ttname"><a href="classlambda_1_1core_1_1Window.html#aca27bd0e4de3e7a592eb304a02cd8ebe">lambda::core::Window::HasVerticalSync</a></div><div class="ttdeci">virtual bool HasVerticalSync() const =0</div><div class="ttdoc">Checks if the window has vertical sync enabled.</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1Window_html_a6c25e56cafd3cb8b8e517fb7205b5016"><div class="ttname"><a href="classlambda_1_1core_1_1Window.html#a6c25e56cafd3cb8b8e517fb7205b5016">lambda::core::Window::GetNativeWindow</a></div><div class="ttdeci">virtual void * GetNativeWindow() const =0</div><div class="ttdoc">Get the native window implementation. Needs to be casted into it's real type.</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1Window_html_a16506ae84e7b014b0d9a97a44aa0ade1"><div class="ttname"><a href="classlambda_1_1core_1_1Window.html#a16506ae84e7b014b0d9a97a44aa0ade1">lambda::core::Window::Create</a></div><div class="ttdeci">static memory::Shared&lt; Window &gt; Create(const WindowProperties &amp;properties=WindowProperties())</div><div class="ttdoc">Create a platform specific window. (Needs to be specified with compiler flags.)</div></div>
 <div class="ttc" id="aPointers_8h_html"><div class="ttname"><a href="Pointers_8h.html">Pointers.h</a></div><div class="ttdoc">Abstraction for handling pointers within the engine. Currently just aliases for unique and shared poi...</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1Window_html_a104e6e2608f3ed7c75fdec681a7ea23f"><div class="ttname"><a href="classlambda_1_1core_1_1Window.html#a104e6e2608f3ed7c75fdec681a7ea23f">lambda::core::Window::SetEventCallback</a></div><div class="ttdeci">virtual void SetEventCallback(const EventCallbackFunction &amp;callback)=0</div><div class="ttdoc">Set the callback for the window when an event is generated.</div></div>
 <div class="ttc" id="aEvent_8h_html"><div class="ttname"><a href="Event_8h.html">Event.h</a></div><div class="ttdoc">The Event class and dispatcher core implementations.</div></div>
-<div class="ttc" id="aclassengine_1_1Window_html_a17dd0ec2fd18f4ee6a56ebbed211f45d"><div class="ttname"><a href="classengine_1_1Window.html#a17dd0ec2fd18f4ee6a56ebbed211f45d">engine::Window::SetVerticalSync</a></div><div class="ttdeci">virtual void SetVerticalSync(bool enabled)=0</div><div class="ttdoc">Set the vertical sync on the window.</div></div>
-<div class="ttc" id="aclassengine_1_1Window_html_afca9bd918d022b0e91d8b274648b1324"><div class="ttname"><a href="classengine_1_1Window.html#afca9bd918d022b0e91d8b274648b1324">engine::Window::SetEventCallback</a></div><div class="ttdeci">virtual void SetEventCallback(const EventCallbackFunction &amp;callback)=0</div><div class="ttdoc">Set the callback for the window when an event is generated.</div></div>
-<div class="ttc" id="aclassengine_1_1Window_html_a5969984ab8a150119367a43ab8d0ffd1"><div class="ttname"><a href="classengine_1_1Window.html#a5969984ab8a150119367a43ab8d0ffd1">engine::Window::GetWidth</a></div><div class="ttdeci">virtual unsigned int GetWidth() const =0</div><div class="ttdoc">Get the width of the window.</div></div>
-<div class="ttc" id="aclassengine_1_1Window_html"><div class="ttname"><a href="classengine_1_1Window.html">engine::Window</a></div><div class="ttdoc">The generic window implementation that allows platform specific window APIs to expose generic window ...</div><div class="ttdef"><b>Definition:</b> Window.h:28</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1Window_html_a4ad5d1be55169fee4ef88d87875fc265"><div class="ttname"><a href="classlambda_1_1core_1_1Window.html#a4ad5d1be55169fee4ef88d87875fc265">lambda::core::Window::SetVerticalSync</a></div><div class="ttdeci">virtual void SetVerticalSync(bool enabled)=0</div><div class="ttdoc">Set the vertical sync on the window.</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1Window_html_a4beeb72800bf47ad295459eae173705f"><div class="ttname"><a href="classlambda_1_1core_1_1Window.html#a4beeb72800bf47ad295459eae173705f">lambda::core::Window::OnUpdate</a></div><div class="ttdeci">virtual void OnUpdate()=0</div><div class="ttdoc">Handles what the window should do when the engine updates.</div></div>
+<div class="ttc" id="aApplicationEvent_8h_html"><div class="ttname"><a href="ApplicationEvent_8h.html">ApplicationEvent.h</a></div><div class="ttdoc">Events that are to be specifically handled at the application level.</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1Window_html_a9a0c2beeed780f70aae075ac68d39779"><div class="ttname"><a href="classlambda_1_1core_1_1Window.html#a9a0c2beeed780f70aae075ac68d39779">lambda::core::Window::EventCallbackFunction</a></div><div class="ttdeci">std::function&lt; void(memory::Shared&lt; events::Event &gt;)&gt; EventCallbackFunction</div><div class="ttdoc">The function to be used for handling events generated by user input in the window.</div><div class="ttdef"><b>Definition:</b> Window.h:33</div></div>
 <div class="ttc" id="aCore_8h_html"><div class="ttname"><a href="Core_8h.html">Core.h</a></div><div class="ttdoc">Core macros to be used all throughout the engine for development and production purposes.</div></div>
-<div class="ttc" id="astructengine_1_1WindowProperties_html"><div class="ttname"><a href="structengine_1_1WindowProperties.html">engine::WindowProperties</a></div><div class="ttdoc">Generic Window properties used to create platform specific windows.</div><div class="ttdef"><b>Definition:</b> Window.h:16</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1Window_html_a56d099943cae3158aed636d464414156"><div class="ttname"><a href="classlambda_1_1core_1_1Window.html#a56d099943cae3158aed636d464414156">lambda::core::Window::GetHeight</a></div><div class="ttdeci">virtual unsigned int GetHeight() const =0</div><div class="ttdoc">Get the height of the window.</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

@@ -1,0 +1,119 @@
+\hypertarget{classlambda_1_1core_1_1imgui_1_1ImGuiLayer}{}\doxysection{lambda\+::core\+::imgui\+::Im\+Gui\+Layer Class Reference}
+\label{classlambda_1_1core_1_1imgui_1_1ImGuiLayer}\index{lambda::core::imgui::ImGuiLayer@{lambda::core::imgui::ImGuiLayer}}
+
+
+The base Im\+Gui layer used for rendering all other Im\+Gui components.  
+
+
+
+
+{\ttfamily \#include $<$Im\+Gui\+Layer.\+h$>$}
+
+
+
+Inheritance diagram for lambda\+::core\+::imgui\+::Im\+Gui\+Layer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classlambda_1_1core_1_1imgui_1_1ImGuiLayer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for lambda\+::core\+::imgui\+::Im\+Gui\+Layer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classlambda_1_1core_1_1imgui_1_1ImGuiLayer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classlambda_1_1core_1_1imgui_1_1ImGuiLayer_a8958db2cb91ecf18c2e951f2741a3cee}{On\+Attach}} () override
+\begin{DoxyCompactList}\small\item\em What to do when attached to lambda. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classlambda_1_1core_1_1imgui_1_1ImGuiLayer_a512b4e83b3ce6e7f7e9ddd1f88452615}{On\+Detach}} () override
+\begin{DoxyCompactList}\small\item\em What to do when detached from lambda. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classlambda_1_1core_1_1imgui_1_1ImGuiLayer_a5c1b9d7bb70b1519a5d2e45cafc635af}{On\+Im\+Gui\+Render}} () override
+\begin{DoxyCompactList}\small\item\em What to do when Im\+Gui requests to render. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classlambda_1_1core_1_1imgui_1_1ImGuiLayer_a3ef0c5606e9ebdf8c94d124accbca872}{Begin}} ()
+\begin{DoxyCompactList}\small\item\em Begin an Im\+Gui rendering context. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classlambda_1_1core_1_1imgui_1_1ImGuiLayer_a705f22d88a4fa80b8ed3090824a5bd4f}{End}} ()
+\begin{DoxyCompactList}\small\item\em End an Im\+Gui rendering context. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The base Im\+Gui layer used for rendering all other Im\+Gui components. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classlambda_1_1core_1_1imgui_1_1ImGuiLayer_a3ef0c5606e9ebdf8c94d124accbca872}\label{classlambda_1_1core_1_1imgui_1_1ImGuiLayer_a3ef0c5606e9ebdf8c94d124accbca872}} 
+\index{lambda::core::imgui::ImGuiLayer@{lambda::core::imgui::ImGuiLayer}!Begin@{Begin}}
+\index{Begin@{Begin}!lambda::core::imgui::ImGuiLayer@{lambda::core::imgui::ImGuiLayer}}
+\doxysubsubsection{\texorpdfstring{Begin()}{Begin()}}
+{\footnotesize\ttfamily void lambda\+::core\+::imgui\+::\+Im\+Gui\+Layer\+::\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Begin an Im\+Gui rendering context. 
+
+Begins an Open\+GL frame at the moment and should probably be abstracted a bit (Or done platform independent.) \mbox{\Hypertarget{classlambda_1_1core_1_1imgui_1_1ImGuiLayer_a705f22d88a4fa80b8ed3090824a5bd4f}\label{classlambda_1_1core_1_1imgui_1_1ImGuiLayer_a705f22d88a4fa80b8ed3090824a5bd4f}} 
+\index{lambda::core::imgui::ImGuiLayer@{lambda::core::imgui::ImGuiLayer}!End@{End}}
+\index{End@{End}!lambda::core::imgui::ImGuiLayer@{lambda::core::imgui::ImGuiLayer}}
+\doxysubsubsection{\texorpdfstring{End()}{End()}}
+{\footnotesize\ttfamily void lambda\+::core\+::imgui\+::\+Im\+Gui\+Layer\+::\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+End an Im\+Gui rendering context. 
+
+Ends an opengl frame. \mbox{\Hypertarget{classlambda_1_1core_1_1imgui_1_1ImGuiLayer_a8958db2cb91ecf18c2e951f2741a3cee}\label{classlambda_1_1core_1_1imgui_1_1ImGuiLayer_a8958db2cb91ecf18c2e951f2741a3cee}} 
+\index{lambda::core::imgui::ImGuiLayer@{lambda::core::imgui::ImGuiLayer}!OnAttach@{OnAttach}}
+\index{OnAttach@{OnAttach}!lambda::core::imgui::ImGuiLayer@{lambda::core::imgui::ImGuiLayer}}
+\doxysubsubsection{\texorpdfstring{OnAttach()}{OnAttach()}}
+{\footnotesize\ttfamily void lambda\+::core\+::imgui\+::\+Im\+Gui\+Layer\+::\+On\+Attach (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+What to do when attached to lambda. 
+
+The default On\+Attach creates a context, activates dark mode, and register inputs with G\+L\+FW keys. This implementation currently only supports Open\+GL and will be modified in the future to use engine specified key codes. 
+
+Reimplemented from \mbox{\hyperlink{classlambda_1_1core_1_1layers_1_1Layer_ab80b635204ee97ccd5ba227c594fa45d}{lambda\+::core\+::layers\+::\+Layer}}.
+
+\mbox{\Hypertarget{classlambda_1_1core_1_1imgui_1_1ImGuiLayer_a512b4e83b3ce6e7f7e9ddd1f88452615}\label{classlambda_1_1core_1_1imgui_1_1ImGuiLayer_a512b4e83b3ce6e7f7e9ddd1f88452615}} 
+\index{lambda::core::imgui::ImGuiLayer@{lambda::core::imgui::ImGuiLayer}!OnDetach@{OnDetach}}
+\index{OnDetach@{OnDetach}!lambda::core::imgui::ImGuiLayer@{lambda::core::imgui::ImGuiLayer}}
+\doxysubsubsection{\texorpdfstring{OnDetach()}{OnDetach()}}
+{\footnotesize\ttfamily void lambda\+::core\+::imgui\+::\+Im\+Gui\+Layer\+::\+On\+Detach (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+What to do when detached from lambda. 
+
+Currently also only supports Open\+GL. 
+
+Reimplemented from \mbox{\hyperlink{classlambda_1_1core_1_1layers_1_1Layer_ae1b08b6884f4c44aeda583df41bef850}{lambda\+::core\+::layers\+::\+Layer}}.
+
+\mbox{\Hypertarget{classlambda_1_1core_1_1imgui_1_1ImGuiLayer_a5c1b9d7bb70b1519a5d2e45cafc635af}\label{classlambda_1_1core_1_1imgui_1_1ImGuiLayer_a5c1b9d7bb70b1519a5d2e45cafc635af}} 
+\index{lambda::core::imgui::ImGuiLayer@{lambda::core::imgui::ImGuiLayer}!OnImGuiRender@{OnImGuiRender}}
+\index{OnImGuiRender@{OnImGuiRender}!lambda::core::imgui::ImGuiLayer@{lambda::core::imgui::ImGuiLayer}}
+\doxysubsubsection{\texorpdfstring{OnImGuiRender()}{OnImGuiRender()}}
+{\footnotesize\ttfamily void lambda\+::core\+::imgui\+::\+Im\+Gui\+Layer\+::\+On\+Im\+Gui\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+What to do when Im\+Gui requests to render. 
+
+The default thing to do on render. 
+
+Reimplemented from \mbox{\hyperlink{classlambda_1_1core_1_1layers_1_1Layer_a8dcfa36226390cc0582eb6c44ab30409}{lambda\+::core\+::layers\+::\+Layer}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+lambda/src/core/imgui/\mbox{\hyperlink{ImGuiLayer_8h}{Im\+Gui\+Layer.\+h}}\item 
+lambda/src/core/imgui/Im\+Gui\+Layer.\+cpp\end{DoxyCompactItemize}

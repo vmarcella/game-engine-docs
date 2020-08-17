@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classengine_1_1util_1_1TimeStep.html" title="The timestep between two time intervals. Primarily used for layers to consistently update the engine." alt="" coords="5,5,169,32"/>
+<area shape="rect" id="node1" href="$classlambda_1_1core_1_1renderer_1_1VertexArray.html" title="The abstract VertexArray API." alt="" coords="5,5,176,47"/>
+<area shape="rect" id="node2" href="$classlambda_1_1platform_1_1opengl_1_1OpenGLVertexArray.html" title="The abstraction for representing Vertex arrays and their sub components." alt="" coords="224,5,411,47"/>
 </map>

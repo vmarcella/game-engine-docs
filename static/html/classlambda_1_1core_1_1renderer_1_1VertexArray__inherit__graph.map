@@ -1,0 +1,4 @@
+<map id="lambda::core::renderer::VertexArray" name="lambda::core::renderer::VertexArray">
+<area shape="rect" id="node1" title="The abstract VertexArray API." alt="" coords="13,5,184,47"/>
+<area shape="rect" id="node2" href="$classlambda_1_1platform_1_1opengl_1_1OpenGLVertexArray.html" title="The abstraction for representing Vertex arrays and their sub components." alt="" coords="5,95,192,136"/>
+</map>

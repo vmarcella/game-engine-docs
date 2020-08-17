@@ -1,5 +1,5 @@
-\hypertarget{KeyEvent_8h}{}\doxysection{engine/src/core/events/\+Key\+Event.h File Reference}
-\label{KeyEvent_8h}\index{engine/src/core/events/KeyEvent.h@{engine/src/core/events/KeyEvent.h}}
+\hypertarget{KeyEvent_8h}{}\doxysection{lambda/src/core/events/\+Key\+Event.h File Reference}
+\label{KeyEvent_8h}\index{lambda/src/core/events/KeyEvent.h@{lambda/src/core/events/KeyEvent.h}}
 
 
 Events that specifically deal with key input.  
@@ -7,31 +7,33 @@ Events that specifically deal with key input.
 
 {\ttfamily \#include $<$sstream$>$}\newline
 {\ttfamily \#include \char`\"{}core/events/\+Event.\+h\char`\"{}}\newline
-Include dependency graph for Key\+Event.\+h\+:\nopagebreak
+Include dependency graph for Key\+Event.\+h\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{KeyEvent_8h__incl}
 \end{center}
 \end{figure}
-This graph shows which files directly or indirectly include this file\+:\nopagebreak
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{KeyEvent_8h__dep__incl}
+\includegraphics[width=327pt]{KeyEvent_8h__dep__incl}
 \end{center}
 \end{figure}
 \doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
-class \mbox{\hyperlink{classengine_1_1events_1_1KeyEvent}{engine\+::events\+::\+Key\+Event}}
-\begin{DoxyCompactList}\small\item\em The base event for all other Key input events. \end{DoxyCompactList}\item 
-class \mbox{\hyperlink{classengine_1_1events_1_1KeyPressedEvent}{engine\+::events\+::\+Key\+Pressed\+Event}}
-\begin{DoxyCompactList}\small\item\em Generated when a key is pressed by the user in the application. \end{DoxyCompactList}\item 
-class \mbox{\hyperlink{classengine_1_1events_1_1KeyReleasedEvent}{engine\+::events\+::\+Key\+Released\+Event}}
-\begin{DoxyCompactList}\small\item\em Generated when a key is released by the user in the application. \end{DoxyCompactList}\item 
-class \mbox{\hyperlink{classengine_1_1events_1_1KeyTypedEvent}{engine\+::events\+::\+Key\+Typed\+Event}}
-\begin{DoxyCompactList}\small\item\em Generated when a key is typed by the user in the application. \end{DoxyCompactList}\end{DoxyCompactItemize}
+class \mbox{\hyperlink{classlambda_1_1core_1_1events_1_1KeyEvent}{lambda\+::core\+::events\+::\+Key\+Event}}
+\begin{DoxyCompactList}\small\item\em The Base Key \mbox{\hyperlink{classlambda_1_1core_1_1events_1_1Event}{Event}} used for other Key Events. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classlambda_1_1core_1_1events_1_1KeyPressedEvent}{lambda\+::core\+::events\+::\+Key\+Pressed\+Event}}
+\begin{DoxyCompactList}\small\item\em An \mbox{\hyperlink{classlambda_1_1core_1_1events_1_1Event}{Event}} generated whenever a key is pressed within an application that is running lambda. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classlambda_1_1core_1_1events_1_1KeyReleasedEvent}{lambda\+::core\+::events\+::\+Key\+Released\+Event}}
+\begin{DoxyCompactList}\small\item\em An \mbox{\hyperlink{classlambda_1_1core_1_1events_1_1Event}{Event}} generated whenever a key is released within an application that is running lambda. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classlambda_1_1core_1_1events_1_1KeyTypedEvent}{lambda\+::core\+::events\+::\+Key\+Typed\+Event}}
+\begin{DoxyCompactList}\small\item\em An \mbox{\hyperlink{classlambda_1_1core_1_1events_1_1Event}{Event}} generated whenever a key is typed within an application that is running lambda. (Keys typed do not track any repeat counts.) \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}

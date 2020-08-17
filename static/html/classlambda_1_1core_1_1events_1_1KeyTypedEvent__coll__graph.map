@@ -1,0 +1,5 @@
+<map id="lambda::core::events::KeyTypedEvent" name="lambda::core::events::KeyTypedEvent">
+<area shape="rect" id="node1" title="An Event generated whenever a key is typed within an application that is running lambda...." alt="" coords="5,184,164,225"/>
+<area shape="rect" id="node2" href="$classlambda_1_1core_1_1events_1_1KeyEvent.html" title="The Base Key Event used for other Key Events." alt="" coords="5,95,164,136"/>
+<area shape="rect" id="node3" href="$classlambda_1_1core_1_1events_1_1Event.html" title="The base Event class for events that are propagated throughout lambda." alt="" coords="5,5,164,47"/>
+</map>

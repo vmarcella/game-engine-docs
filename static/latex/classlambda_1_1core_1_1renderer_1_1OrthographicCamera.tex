@@ -1,0 +1,62 @@
+\hypertarget{classlambda_1_1core_1_1renderer_1_1OrthographicCamera}{}\doxysection{lambda\+::core\+::renderer\+::Orthographic\+Camera Class Reference}
+\label{classlambda_1_1core_1_1renderer_1_1OrthographicCamera}\index{lambda::core::renderer::OrthographicCamera@{lambda::core::renderer::OrthographicCamera}}
+
+
+An orthographic camera implementation for the 2D engine.  
+
+
+
+
+{\ttfamily \#include $<$Orthographic\+Camera.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1OrthographicCamera_a4b0042923c8a11eb6fb348801c706bef}\label{classlambda_1_1core_1_1renderer_1_1OrthographicCamera_a4b0042923c8a11eb6fb348801c706bef}} 
+\mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1OrthographicCamera_a4b0042923c8a11eb6fb348801c706bef}{Orthographic\+Camera}} (float left, float right, float bottom, float top)
+\begin{DoxyCompactList}\small\item\em Create a camera with it\textquotesingle{}s left, right, bottom, and top positions initially defined. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1OrthographicCamera_a79ad040305ccf538a9ca815a7415d1bd}\label{classlambda_1_1core_1_1renderer_1_1OrthographicCamera_a79ad040305ccf538a9ca815a7415d1bd}} 
+const float \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1OrthographicCamera_a79ad040305ccf538a9ca815a7415d1bd}{Get\+Rotation}} () const
+\begin{DoxyCompactList}\small\item\em Get the cameras current rotation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1OrthographicCamera_acc3dff32799993571f0ee993a922c5b8}\label{classlambda_1_1core_1_1renderer_1_1OrthographicCamera_acc3dff32799993571f0ee993a922c5b8}} 
+void \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1OrthographicCamera_acc3dff32799993571f0ee993a922c5b8}{Set\+Rotation}} (float rotation)
+\begin{DoxyCompactList}\small\item\em Set the cameras rotation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1OrthographicCamera_adecd6cf3f41783c8a30f4be71b754e6a}\label{classlambda_1_1core_1_1renderer_1_1OrthographicCamera_adecd6cf3f41783c8a30f4be71b754e6a}} 
+const glm\+::vec3 \& \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1OrthographicCamera_adecd6cf3f41783c8a30f4be71b754e6a}{Get\+Position}} () const
+\begin{DoxyCompactList}\small\item\em Get the cameras current position. (Stored as a vec3) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1OrthographicCamera_a4b90d21cbddd4c11b9fcd1b0cfb8e534}\label{classlambda_1_1core_1_1renderer_1_1OrthographicCamera_a4b90d21cbddd4c11b9fcd1b0cfb8e534}} 
+void \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1OrthographicCamera_a4b90d21cbddd4c11b9fcd1b0cfb8e534}{Set\+Position}} (const glm\+::vec3 \&position)
+\begin{DoxyCompactList}\small\item\em Set the position of the current camera. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1OrthographicCamera_ac680dd64a16e763eae71e406dafc803d}\label{classlambda_1_1core_1_1renderer_1_1OrthographicCamera_ac680dd64a16e763eae71e406dafc803d}} 
+const glm\+::mat4 \& \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1OrthographicCamera_ac680dd64a16e763eae71e406dafc803d}{Get\+Projection\+Matrix}} () const
+\begin{DoxyCompactList}\small\item\em Get the cameras current projection matrix. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1OrthographicCamera_a870c0d2eec05c161f2f31578f370891b}{Set\+Projection\+Matrix}} (float left, float right, float bottom, float top)
+\begin{DoxyCompactList}\small\item\em Set the projection matrix of the camera by giving the camera new left, right, bottom, and top positions. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1OrthographicCamera_ad01c18ca4b0db819f692118d78045da8}\label{classlambda_1_1core_1_1renderer_1_1OrthographicCamera_ad01c18ca4b0db819f692118d78045da8}} 
+const glm\+::mat4 \& \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1OrthographicCamera_ad01c18ca4b0db819f692118d78045da8}{Get\+View\+Matrix}} () const
+\begin{DoxyCompactList}\small\item\em Get the current view matrix. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1OrthographicCamera_aed906d1d54b79e38403077ec8e1c5740}\label{classlambda_1_1core_1_1renderer_1_1OrthographicCamera_aed906d1d54b79e38403077ec8e1c5740}} 
+const glm\+::mat4 \& \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1OrthographicCamera_aed906d1d54b79e38403077ec8e1c5740}{Get\+View\+Projection\+Matrix}} () const
+\begin{DoxyCompactList}\small\item\em Get the view projection matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An orthographic camera implementation for the 2D engine. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1OrthographicCamera_a870c0d2eec05c161f2f31578f370891b}\label{classlambda_1_1core_1_1renderer_1_1OrthographicCamera_a870c0d2eec05c161f2f31578f370891b}} 
+\index{lambda::core::renderer::OrthographicCamera@{lambda::core::renderer::OrthographicCamera}!SetProjectionMatrix@{SetProjectionMatrix}}
+\index{SetProjectionMatrix@{SetProjectionMatrix}!lambda::core::renderer::OrthographicCamera@{lambda::core::renderer::OrthographicCamera}}
+\doxysubsubsection{\texorpdfstring{SetProjectionMatrix()}{SetProjectionMatrix()}}
+{\footnotesize\ttfamily void lambda\+::core\+::renderer\+::\+Orthographic\+Camera\+::\+Set\+Projection\+Matrix (\begin{DoxyParamCaption}\item[{float}]{left,  }\item[{float}]{right,  }\item[{float}]{bottom,  }\item[{float}]{top }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the projection matrix of the camera by giving the camera new left, right, bottom, and top positions. 
+
+Recalculates the view matrix. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+lambda/src/core/renderer/\mbox{\hyperlink{OrthographicCamera_8h}{Orthographic\+Camera.\+h}}\item 
+lambda/src/core/renderer/Orthographic\+Camera.\+cpp\end{DoxyCompactItemize}

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['drawindexed_21',['DrawIndexed',['../classengine_1_1renderer_1_1RenderCommand.html#a59b9421fe3e5a3d7d54e1b9b8426be63',1,'engine::renderer::RenderCommand::DrawIndexed()'],['../classengine_1_1renderer_1_1RendererAPI.html#ab818163e2f93e9d0a508ac29a65a30af',1,'engine::renderer::RendererAPI::DrawIndexed()']]]
+  ['dispatch_23',['Dispatch',['../classlambda_1_1core_1_1events_1_1EventDispatcher.html#a61d54049ea7ce2872337cc460e4ac340',1,'lambda::core::events::EventDispatcher']]],
+  ['drawindexed_24',['DrawIndexed',['../classlambda_1_1core_1_1renderer_1_1RenderCommand.html#a9eb193eadfa81e28579d7aa1923ed227',1,'lambda::core::renderer::RenderCommand::DrawIndexed()'],['../classlambda_1_1core_1_1renderer_1_1RendererAPI.html#a23e15c9085dae7e0753d31a815326600',1,'lambda::core::renderer::RendererAPI::DrawIndexed()']]]
 ];

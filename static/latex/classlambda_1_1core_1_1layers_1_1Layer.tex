@@ -1,0 +1,62 @@
+\hypertarget{classlambda_1_1core_1_1layers_1_1Layer}{}\doxysection{lambda\+::core\+::layers\+::Layer Class Reference}
+\label{classlambda_1_1core_1_1layers_1_1Layer}\index{lambda::core::layers::Layer@{lambda::core::layers::Layer}}
+
+
+The lambda \mbox{\hyperlink{classlambda_1_1core_1_1layers_1_1Layer}{Layer}} abstraction. Primarily used for direct access into lambdas tick and event system.  
+
+
+
+
+{\ttfamily \#include $<$Layer.\+h$>$}
+
+
+
+Inheritance diagram for lambda\+::core\+::layers\+::Layer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classlambda_1_1core_1_1layers_1_1Layer__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1layers_1_1Layer_a7d139d53a2aed11209fbb6a28986cff2}\label{classlambda_1_1core_1_1layers_1_1Layer_a7d139d53a2aed11209fbb6a28986cff2}} 
+{\bfseries Layer} (const std\+::string \&name=\char`\"{}Layer\char`\"{})
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1layers_1_1Layer_ab80b635204ee97ccd5ba227c594fa45d}\label{classlambda_1_1core_1_1layers_1_1Layer_ab80b635204ee97ccd5ba227c594fa45d}} 
+virtual void \mbox{\hyperlink{classlambda_1_1core_1_1layers_1_1Layer_ab80b635204ee97ccd5ba227c594fa45d}{On\+Attach}} ()
+\begin{DoxyCompactList}\small\item\em What to do when a layer is attached to lambda. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1layers_1_1Layer_ae1b08b6884f4c44aeda583df41bef850}\label{classlambda_1_1core_1_1layers_1_1Layer_ae1b08b6884f4c44aeda583df41bef850}} 
+virtual void \mbox{\hyperlink{classlambda_1_1core_1_1layers_1_1Layer_ae1b08b6884f4c44aeda583df41bef850}{On\+Detach}} ()
+\begin{DoxyCompactList}\small\item\em What to do when a layer is detached from lambda. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1layers_1_1Layer_aaef07b70f557d028c7f3254ef0251f36}\label{classlambda_1_1core_1_1layers_1_1Layer_aaef07b70f557d028c7f3254ef0251f36}} 
+virtual void \mbox{\hyperlink{classlambda_1_1core_1_1layers_1_1Layer_aaef07b70f557d028c7f3254ef0251f36}{On\+Update}} (\mbox{\hyperlink{classlambda_1_1core_1_1util_1_1TimeStep}{util\+::\+Time\+Step}} time\+\_\+step)
+\begin{DoxyCompactList}\small\item\em What to do when lambda has an update for the layer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1layers_1_1Layer_a13ccb1f4b949e9f7d5c77f4bdc4fe86c}\label{classlambda_1_1core_1_1layers_1_1Layer_a13ccb1f4b949e9f7d5c77f4bdc4fe86c}} 
+virtual void \mbox{\hyperlink{classlambda_1_1core_1_1layers_1_1Layer_a13ccb1f4b949e9f7d5c77f4bdc4fe86c}{On\+Event}} (memory\+::\+Shared$<$ \mbox{\hyperlink{classlambda_1_1core_1_1events_1_1Event}{events\+::\+Event}} $>$ event)
+\begin{DoxyCompactList}\small\item\em What to do when lambda has an event for the layer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1layers_1_1Layer_a8dcfa36226390cc0582eb6c44ab30409}\label{classlambda_1_1core_1_1layers_1_1Layer_a8dcfa36226390cc0582eb6c44ab30409}} 
+virtual void \mbox{\hyperlink{classlambda_1_1core_1_1layers_1_1Layer_a8dcfa36226390cc0582eb6c44ab30409}{On\+Im\+Gui\+Render}} ()
+\begin{DoxyCompactList}\small\item\em What to do when lambda is rendering with Im\+Gui. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1layers_1_1Layer_a06837f9efeae19a3c8ab4e0fc237185e}\label{classlambda_1_1core_1_1layers_1_1Layer_a06837f9efeae19a3c8ab4e0fc237185e}} 
+const std\+::string \& \mbox{\hyperlink{classlambda_1_1core_1_1layers_1_1Layer_a06837f9efeae19a3c8ab4e0fc237185e}{Get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Get the debug name of the layer. Might not be in production builds. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1layers_1_1Layer_a1837bb806f9859bd3b183368bad9e5a2}\label{classlambda_1_1core_1_1layers_1_1Layer_a1837bb806f9859bd3b183368bad9e5a2}} 
+std\+::string {\bfseries debug\+\_\+name\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The lambda \mbox{\hyperlink{classlambda_1_1core_1_1layers_1_1Layer}{Layer}} abstraction. Primarily used for direct access into lambdas tick and event system. 
+
+Anyone implementing lambda as a library in their project will at some point need to create a layer in order to receive updates and events from lambda. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+lambda/src/core/layers/\mbox{\hyperlink{Layer_8h}{Layer.\+h}}\item 
+lambda/src/core/layers/Layer.\+cpp\end{DoxyCompactItemize}

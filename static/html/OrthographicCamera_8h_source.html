@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>game-engine: engine/src/core/renderer/OrthographicCamera.h Source File</title>
+<title>lambda: lambda/src/core/renderer/OrthographicCamera.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">game-engine
+   <div id="projectname">lambda
    </div>
   </td>
  </tr>
@@ -61,7 +61,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_996f45160da62e1a3d7f6046fad68f51.html">engine</a></li><li class="navelem"><a class="el" href="dir_3d9126aa00c041bc0b8f859d1965a0f4.html">src</a></li><li class="navelem"><a class="el" href="dir_5e835386694ce392648cfcf102577fe3.html">core</a></li><li class="navelem"><a class="el" href="dir_ce4abf2d955932dc9caa6b4c1952fc3a.html">renderer</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_4b73342a493c3ec8f518edda193e909f.html">lambda</a></li><li class="navelem"><a class="el" href="dir_896901b14b6321ed9cf375daac6fb468.html">src</a></li><li class="navelem"><a class="el" href="dir_120072a10eb7d4fbc043fc091b8cce0e.html">core</a></li><li class="navelem"><a class="el" href="dir_7450cf7b83d623f255804473698129f8.html">renderer</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -69,50 +69,68 @@ $(function() {
 <div class="title">OrthographicCamera.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="OrthographicCamera_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef ENGINE_SRC_CORE_RENDERER_ORTHOGRAPHICCAMERA_H_</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define ENGINE_SRC_CORE_RENDERER_ORTHOGRAPHICCAMERA_H_</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;glm/glm.hpp&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>engine {</div>
+<a href="OrthographicCamera_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef LAMBDA_SRC_CORE_RENDERER_ORTHOGRAPHICCAMERA_H_</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#define LAMBDA_SRC_CORE_RENDERER_ORTHOGRAPHICCAMERA_H_</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;glm/glm.hpp&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;glm/gtc/matrix_transform.hpp&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span>lambda {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>core {</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span>renderer {</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classengine_1_1renderer_1_1OrthographicCamera.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="classengine_1_1renderer_1_1OrthographicCamera.html">OrthographicCamera</a> {</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <a class="code" href="classengine_1_1renderer_1_1OrthographicCamera.html">OrthographicCamera</a>(<span class="keywordtype">float</span> left, <span class="keywordtype">float</span> right, <span class="keywordtype">float</span> bottom, <span class="keywordtype">float</span> top);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keyword">inline</span> <span class="keyword">const</span> <span class="keywordtype">float</span> GetRotation()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> rotation_; }</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keywordtype">void</span> SetRotation(<span class="keywordtype">float</span> rotation);</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1renderer_1_1OrthographicCamera.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="classlambda_1_1core_1_1renderer_1_1OrthographicCamera.html">OrthographicCamera</a> {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <a class="code" href="classlambda_1_1core_1_1renderer_1_1OrthographicCamera.html#a4b0042923c8a11eb6fb348801c706bef">OrthographicCamera</a>(<span class="keywordtype">float</span> left, <span class="keywordtype">float</span> right, <span class="keywordtype">float</span> bottom, <span class="keywordtype">float</span> top);</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classengine_1_1renderer_1_1OrthographicCamera.html#a89c74cc6487f626475fa5735c153fb16">   21</a></span>&#160;  <span class="keyword">inline</span> <span class="keyword">const</span> glm::vec3&amp; <a class="code" href="classengine_1_1renderer_1_1OrthographicCamera.html#a89c74cc6487f626475fa5735c153fb16">GetPosition</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> position_; }</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keywordtype">void</span> SetPosition(<span class="keyword">const</span> glm::vec3&amp; position);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">inline</span> <span class="keyword">const</span> glm::mat4&amp; GetProjectionMatrix()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;      <span class="keywordflow">return</span> projection_matrix_; }</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keyword">inline</span> <span class="keyword">const</span> glm::mat4&amp; GetViewMatrix()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> view_matrix_; }</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keyword">inline</span> <span class="keyword">const</span> glm::mat4&amp; GetViewProjectionMatrix()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;      <span class="keywordflow">return</span> view_projection_matrix_; }</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  glm::mat4 projection_matrix_;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  glm::mat4 view_matrix_;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  glm::mat4 view_projection_matrix_;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1renderer_1_1OrthographicCamera.html#a79ad040305ccf538a9ca815a7415d1bd">   22</a></span>&#160;  <span class="keyword">const</span> <span class="keywordtype">float</span> <a class="code" href="classlambda_1_1core_1_1renderer_1_1OrthographicCamera.html#a79ad040305ccf538a9ca815a7415d1bd">GetRotation</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> rotation_; }</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlambda_1_1core_1_1renderer_1_1OrthographicCamera.html#acc3dff32799993571f0ee993a922c5b8">SetRotation</a>(<span class="keywordtype">float</span> rotation);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1renderer_1_1OrthographicCamera.html#adecd6cf3f41783c8a30f4be71b754e6a">   27</a></span>&#160;  <span class="keyword">const</span> glm::vec3&amp; <a class="code" href="classlambda_1_1core_1_1renderer_1_1OrthographicCamera.html#adecd6cf3f41783c8a30f4be71b754e6a">GetPosition</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> position_; }</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlambda_1_1core_1_1renderer_1_1OrthographicCamera.html#a4b90d21cbddd4c11b9fcd1b0cfb8e534">SetPosition</a>(<span class="keyword">const</span> glm::vec3&amp; position);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1renderer_1_1OrthographicCamera.html#ac680dd64a16e763eae71e406dafc803d">   32</a></span>&#160;  <span class="keyword">const</span> glm::mat4&amp; <a class="code" href="classlambda_1_1core_1_1renderer_1_1OrthographicCamera.html#ac680dd64a16e763eae71e406dafc803d">GetProjectionMatrix</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      <span class="keywordflow">return</span> projection_matrix_; }</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  glm::vec3 position_ = {0.0f, 0.0f, 0.0f};</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordtype">float</span> rotation_ = 0.0f;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordtype">void</span> RecalculateViewMatrix();</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;};</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}  <span class="comment">// namespace renderer</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}  <span class="comment">// namespace engine</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1renderer_1_1OrthographicCamera.html#a870c0d2eec05c161f2f31578f370891b">   39</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlambda_1_1core_1_1renderer_1_1OrthographicCamera.html#a870c0d2eec05c161f2f31578f370891b">SetProjectionMatrix</a>(<span class="keywordtype">float</span> left, <span class="keywordtype">float</span> right, <span class="keywordtype">float</span> bottom, <span class="keywordtype">float</span> top) {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    projection_matrix_ = glm::ortho(left, right, bottom, top, -1.0f, 1.0f);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    RecalculateViewMatrix();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  }</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif  // ENGINE_SRC_CORE_RENDERER_ORTHOGRAPHICCAMERA_H_</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1renderer_1_1OrthographicCamera.html#ad01c18ca4b0db819f692118d78045da8">   45</a></span>&#160;  <span class="keyword">const</span> glm::mat4&amp; <a class="code" href="classlambda_1_1core_1_1renderer_1_1OrthographicCamera.html#ad01c18ca4b0db819f692118d78045da8">GetViewMatrix</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> view_matrix_; }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="comment">// TODO(C3NZ): Implement this to be platform independent. (Need it&#39;s own math</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="comment">// library?)</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1renderer_1_1OrthographicCamera.html#aed906d1d54b79e38403077ec8e1c5740">   50</a></span>&#160;  <span class="keyword">const</span> glm::mat4&amp; <a class="code" href="classlambda_1_1core_1_1renderer_1_1OrthographicCamera.html#aed906d1d54b79e38403077ec8e1c5740">GetViewProjectionMatrix</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      <span class="keywordflow">return</span> view_projection_matrix_; }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  glm::mat4 projection_matrix_;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  glm::mat4 view_matrix_;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  glm::mat4 view_projection_matrix_;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  glm::vec3 position_ = {0.0f, 0.0f, 0.0f};</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">float</span> rotation_ = 0.0f;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordtype">void</span> RecalculateViewMatrix();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}  <span class="comment">// namespace renderer</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}  <span class="comment">// namespace core</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}  <span class="comment">// namespace lambda</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif  // LAMBDA_SRC_CORE_RENDERER_ORTHOGRAPHICCAMERA_H_</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassengine_1_1renderer_1_1OrthographicCamera_html"><div class="ttname"><a href="classengine_1_1renderer_1_1OrthographicCamera.html">engine::renderer::OrthographicCamera</a></div><div class="ttdoc">A 2D orthographic camera implementation that is compatible with the engine.</div><div class="ttdef"><b>Definition:</b> OrthographicCamera.h:14</div></div>
-<div class="ttc" id="aclassengine_1_1renderer_1_1OrthographicCamera_html_a89c74cc6487f626475fa5735c153fb16"><div class="ttname"><a href="classengine_1_1renderer_1_1OrthographicCamera.html#a89c74cc6487f626475fa5735c153fb16">engine::renderer::OrthographicCamera::GetPosition</a></div><div class="ttdeci">const glm::vec3 &amp; GetPosition() const</div><div class="ttdoc">Get the cameras position from origin.</div><div class="ttdef"><b>Definition:</b> OrthographicCamera.h:21</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1OrthographicCamera_html_a79ad040305ccf538a9ca815a7415d1bd"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1OrthographicCamera.html#a79ad040305ccf538a9ca815a7415d1bd">lambda::core::renderer::OrthographicCamera::GetRotation</a></div><div class="ttdeci">const float GetRotation() const</div><div class="ttdoc">Get the cameras current rotation.</div><div class="ttdef"><b>Definition:</b> OrthographicCamera.h:22</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1OrthographicCamera_html_a4b90d21cbddd4c11b9fcd1b0cfb8e534"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1OrthographicCamera.html#a4b90d21cbddd4c11b9fcd1b0cfb8e534">lambda::core::renderer::OrthographicCamera::SetPosition</a></div><div class="ttdeci">void SetPosition(const glm::vec3 &amp;position)</div><div class="ttdoc">Set the position of the current camera.</div><div class="ttdef"><b>Definition:</b> OrthographicCamera.cpp:18</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1OrthographicCamera_html_aed906d1d54b79e38403077ec8e1c5740"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1OrthographicCamera.html#aed906d1d54b79e38403077ec8e1c5740">lambda::core::renderer::OrthographicCamera::GetViewProjectionMatrix</a></div><div class="ttdeci">const glm::mat4 &amp; GetViewProjectionMatrix() const</div><div class="ttdoc">Get the view projection matrix.</div><div class="ttdef"><b>Definition:</b> OrthographicCamera.h:50</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1OrthographicCamera_html_a870c0d2eec05c161f2f31578f370891b"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1OrthographicCamera.html#a870c0d2eec05c161f2f31578f370891b">lambda::core::renderer::OrthographicCamera::SetProjectionMatrix</a></div><div class="ttdeci">void SetProjectionMatrix(float left, float right, float bottom, float top)</div><div class="ttdoc">Set the projection matrix of the camera by giving the camera new left, right, bottom,...</div><div class="ttdef"><b>Definition:</b> OrthographicCamera.h:39</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1OrthographicCamera_html_a4b0042923c8a11eb6fb348801c706bef"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1OrthographicCamera.html#a4b0042923c8a11eb6fb348801c706bef">lambda::core::renderer::OrthographicCamera::OrthographicCamera</a></div><div class="ttdeci">OrthographicCamera(float left, float right, float bottom, float top)</div><div class="ttdoc">Create a camera with it's left, right, bottom, and top positions initially defined.</div><div class="ttdef"><b>Definition:</b> OrthographicCamera.cpp:11</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1OrthographicCamera_html_ad01c18ca4b0db819f692118d78045da8"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1OrthographicCamera.html#ad01c18ca4b0db819f692118d78045da8">lambda::core::renderer::OrthographicCamera::GetViewMatrix</a></div><div class="ttdeci">const glm::mat4 &amp; GetViewMatrix() const</div><div class="ttdoc">Get the current view matrix.</div><div class="ttdef"><b>Definition:</b> OrthographicCamera.h:45</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1OrthographicCamera_html"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1OrthographicCamera.html">lambda::core::renderer::OrthographicCamera</a></div><div class="ttdoc">An orthographic camera implementation for the 2D engine.</div><div class="ttdef"><b>Definition:</b> OrthographicCamera.h:15</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1OrthographicCamera_html_adecd6cf3f41783c8a30f4be71b754e6a"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1OrthographicCamera.html#adecd6cf3f41783c8a30f4be71b754e6a">lambda::core::renderer::OrthographicCamera::GetPosition</a></div><div class="ttdeci">const glm::vec3 &amp; GetPosition() const</div><div class="ttdoc">Get the cameras current position. (Stored as a vec3)</div><div class="ttdef"><b>Definition:</b> OrthographicCamera.h:27</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1OrthographicCamera_html_acc3dff32799993571f0ee993a922c5b8"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1OrthographicCamera.html#acc3dff32799993571f0ee993a922c5b8">lambda::core::renderer::OrthographicCamera::SetRotation</a></div><div class="ttdeci">void SetRotation(float rotation)</div><div class="ttdoc">Set the cameras rotation.</div><div class="ttdef"><b>Definition:</b> OrthographicCamera.cpp:23</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1OrthographicCamera_html_ac680dd64a16e763eae71e406dafc803d"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1OrthographicCamera.html#ac680dd64a16e763eae71e406dafc803d">lambda::core::renderer::OrthographicCamera::GetProjectionMatrix</a></div><div class="ttdeci">const glm::mat4 &amp; GetProjectionMatrix() const</div><div class="ttdoc">Get the cameras current projection matrix.</div><div class="ttdef"><b>Definition:</b> OrthographicCamera.h:32</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

@@ -1,5 +1,5 @@
-\hypertarget{Application_8h}{}\doxysection{engine/src/core/\+Application.h File Reference}
-\label{Application_8h}\index{engine/src/core/Application.h@{engine/src/core/Application.h}}
+\hypertarget{Application_8h}{}\doxysection{lambda/src/core/\+Application.h File Reference}
+\label{Application_8h}\index{lambda/src/core/Application.h@{lambda/src/core/Application.h}}
 
 
 Contains the Application class definitions.  
@@ -7,54 +7,44 @@ Contains the Application class definitions.
 
 {\ttfamily \#include $<$memory$>$}\newline
 {\ttfamily \#include \char`\"{}core/\+Core.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}core/\+Layer.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}core/\+Layer\+Stack.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}core/\+Window.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}core/events/\+Application\+Event.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}core/events/\+Event.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}core/imgui/\+Im\+Gui\+Layer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}core/layers/\+Layer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}core/layers/\+Layer\+Stack.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}core/memory/\+Pointers.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}core/util/\+Time.\+h\char`\"{}}\newline
-Include dependency graph for Application.\+h\+:\nopagebreak
+Include dependency graph for Application.\+h\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{Application_8h__incl}
 \end{center}
 \end{figure}
-This graph shows which files directly or indirectly include this file\+:\nopagebreak
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{Application_8h__dep__incl}
+\includegraphics[width=292pt]{Application_8h__dep__incl}
 \end{center}
 \end{figure}
 \doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
-class \mbox{\hyperlink{classengine_1_1Application}{engine\+::\+Application}}
-\begin{DoxyCompactList}\small\item\em The primary driver of all applications extending this engine. \end{DoxyCompactList}\end{DoxyCompactItemize}
+class \mbox{\hyperlink{classlambda_1_1core_1_1Application}{lambda\+::core\+::\+Application}}
+\begin{DoxyCompactList}\small\item\em The mind, body, and soul of Lambda. The \mbox{\hyperlink{classlambda_1_1core_1_1Application}{Application}} class is the interface into lambda that brings your application to life. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-Application $\ast$ \mbox{\hyperlink{Application_8h_a5d7e915e28c539f2783e020465048d96}{engine\+::\+Create\+Application}} ()
-\begin{DoxyCompactList}\small\item\em An external function that is to be defined inside of the client. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\mbox{\Hypertarget{Application_8h_a4b9bcf9ac4926a28f984f9e2429de625}\label{Application_8h_a4b9bcf9ac4926a28f984f9e2429de625}} 
+memory\+::\+Unique$<$ Application $>$ \mbox{\hyperlink{Application_8h_a4b9bcf9ac4926a28f984f9e2429de625}{lambda\+::core\+::\+Create\+Application}} ()
+\begin{DoxyCompactList}\small\item\em Used for creating an instance of the game engine. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 Contains the Application class definitions. 
 
 The Application class is the primary driver of all applications being run by the engine. It is designed to handle everything from events to rendering without having to expose itself to applications that are being created with it. 
-
-\doxysubsection{Function Documentation}
-\mbox{\Hypertarget{Application_8h_a5d7e915e28c539f2783e020465048d96}\label{Application_8h_a5d7e915e28c539f2783e020465048d96}} 
-\index{Application.h@{Application.h}!CreateApplication@{CreateApplication}}
-\index{CreateApplication@{CreateApplication}!Application.h@{Application.h}}
-\doxysubsubsection{\texorpdfstring{CreateApplication()}{CreateApplication()}}
-{\footnotesize\ttfamily engine\+::\+Create\+Application (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-
-
-An external function that is to be defined inside of the client. 
-
-It allows the game developers to simply write a \mbox{\hyperlink{Application_8h_a5d7e915e28c539f2783e020465048d96}{Create\+Application()}} method that initializes their game specific code inside of the engine. 

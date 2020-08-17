@@ -1,0 +1,103 @@
+\hypertarget{classlambda_1_1core_1_1util_1_1File}{}\doxysection{lambda\+::core\+::util\+::File Class Reference}
+\label{classlambda_1_1core_1_1util_1_1File}\index{lambda::core::util::File@{lambda::core::util::File}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1util_1_1File_a0b6c688df12ddbe36dcc7a113208e8f8}\label{classlambda_1_1core_1_1util_1_1File_a0b6c688df12ddbe36dcc7a113208e8f8}} 
+virtual void {\bfseries Close} ()=0
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1util_1_1File_a0829de72ecb86df684b31d6f08c112c0}\label{classlambda_1_1core_1_1util_1_1File_a0829de72ecb86df684b31d6f08c112c0}} 
+virtual const bool {\bfseries Can\+Read} () const =0
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1util_1_1File_a7521aeeb2c6a5f752d923fe8db93bd39}\label{classlambda_1_1core_1_1util_1_1File_a7521aeeb2c6a5f752d923fe8db93bd39}} 
+virtual const bool {\bfseries Can\+Write} () const =0
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1util_1_1File_a800fcc21b85f6baa16206c5a204bfc13}\label{classlambda_1_1core_1_1util_1_1File_a800fcc21b85f6baa16206c5a204bfc13}} 
+virtual const bool {\bfseries Can\+Append} () const =0
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1util_1_1File_a010251b080839d93b692f95d996e7d8f}\label{classlambda_1_1core_1_1util_1_1File_a010251b080839d93b692f95d996e7d8f}} 
+virtual const bool {\bfseries Is\+Binary} () const =0
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1util_1_1File_ad1cddfa5c5f4d0af4b96bc2391dbda00}\label{classlambda_1_1core_1_1util_1_1File_ad1cddfa5c5f4d0af4b96bc2391dbda00}} 
+virtual const bool {\bfseries Is\+Closed} () const =0
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1util_1_1File_ae5304b099a1c6a18f37b4c2efc0d7fab}\label{classlambda_1_1core_1_1util_1_1File_ae5304b099a1c6a18f37b4c2efc0d7fab}} 
+virtual const bool {\bfseries Is\+Temp} () const =0
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1util_1_1File_aecd598273e2f6de109389accecfd4f56}\label{classlambda_1_1core_1_1util_1_1File_aecd598273e2f6de109389accecfd4f56}} 
+virtual const bool {\bfseries Exists} () const =0
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1util_1_1File_a39acf33bf28c04c7a6bf8d145fcb5422}\label{classlambda_1_1core_1_1util_1_1File_a39acf33bf28c04c7a6bf8d145fcb5422}} 
+virtual const uintmax\+\_\+t {\bfseries Get\+Size} () const =0
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1util_1_1File_aebc8564d6c21f582dcedc0758068b726}\label{classlambda_1_1core_1_1util_1_1File_aebc8564d6c21f582dcedc0758068b726}} 
+virtual uintmax\+\_\+t {\bfseries Get\+Current\+Position} ()=0
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1util_1_1File_a2a60f86609b25ca8d68dcf4904c8475e}\label{classlambda_1_1core_1_1util_1_1File_a2a60f86609b25ca8d68dcf4904c8475e}} 
+virtual void {\bfseries Seek\+From\+Beginning} (uintmax\+\_\+t bytes)=0
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1util_1_1File_a48805671a87dd4edea336f9151cd2010}\label{classlambda_1_1core_1_1util_1_1File_a48805671a87dd4edea336f9151cd2010}} 
+virtual void {\bfseries Seek\+From\+Current} (uintmax\+\_\+t bytes)=0
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1util_1_1File_aa8c10a6a54e2332e68c710b0e71c20ff}\label{classlambda_1_1core_1_1util_1_1File_aa8c10a6a54e2332e68c710b0e71c20ff}} 
+virtual void {\bfseries Seek\+From\+End} (uintmax\+\_\+t bytes)=0
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1util_1_1File_ab8fd16531fed183124662bbe0317f37c}\label{classlambda_1_1core_1_1util_1_1File_ab8fd16531fed183124662bbe0317f37c}} 
+virtual std\+::string {\bfseries Read} (uint32\+\_\+t bytes, File\+Position pos=File\+Position\+::\+Current)=0
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1util_1_1File_a11272a4b4baa56f81949efd03a145ed6}\label{classlambda_1_1core_1_1util_1_1File_a11272a4b4baa56f81949efd03a145ed6}} 
+virtual void {\bfseries Read} (char $\ast$buffer, uint32\+\_\+t buffer\+\_\+size, File\+Position pos=File\+Position\+::\+Current)=0
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1util_1_1File_a298d560244579a9aec71297951d6c5c0}\label{classlambda_1_1core_1_1util_1_1File_a298d560244579a9aec71297951d6c5c0}} 
+virtual std\+::string {\bfseries Read\+All} ()=0
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1util_1_1File_a2cca3cf48eac6eb7ac1d6fa043761654}\label{classlambda_1_1core_1_1util_1_1File_a2cca3cf48eac6eb7ac1d6fa043761654}} 
+virtual void {\bfseries Read\+All} (char $\ast$buffer, uint32\+\_\+t buffer\+\_\+size)=0
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1util_1_1File_adda6c7c792c67cb7c46ff89f638548ce}\label{classlambda_1_1core_1_1util_1_1File_adda6c7c792c67cb7c46ff89f638548ce}} 
+virtual std\+::string {\bfseries Read\+Line} (File\+Position position=File\+Position\+::\+Current)=0
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1util_1_1File_a8ccad40946bf4ec43037c65873b86e6b}\label{classlambda_1_1core_1_1util_1_1File_a8ccad40946bf4ec43037c65873b86e6b}} 
+virtual std\+::vector$<$ std\+::string $>$ {\bfseries Read\+Lines} (uint32\+\_\+t lines, File\+Position position=File\+Position\+::\+Beginning)=0
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1util_1_1File_ababd3dc1b5c78ece855f58ae85bab45b}\label{classlambda_1_1core_1_1util_1_1File_ababd3dc1b5c78ece855f58ae85bab45b}} 
+virtual void {\bfseries Write} (const std\+::string \&content, File\+Position position=File\+Position\+::\+Current)=0
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1util_1_1File_a1ade3d380f7eea1f5763683c8800aa43}\label{classlambda_1_1core_1_1util_1_1File_a1ade3d380f7eea1f5763683c8800aa43}} 
+virtual void {\bfseries Write\+Line} (const std\+::string \&line, File\+Position position=File\+Position\+::\+Current)=0
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1util_1_1File_aae402cddb49374196fa508306a4472ad}\label{classlambda_1_1core_1_1util_1_1File_aae402cddb49374196fa508306a4472ad}} 
+virtual void {\bfseries Write\+Lines} (const std\+::vector$<$ std\+::string $>$ \&lines, File\+Position position=File\+Position\+::\+Current)
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1util_1_1File_a52f32d1f8d954574d91e60f1729a3dbf}\label{classlambda_1_1core_1_1util_1_1File_a52f32d1f8d954574d91e60f1729a3dbf}} 
+virtual void {\bfseries Save} ()=0
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1util_1_1File_abf84bc2464769098cc4b1d4b388e2ef0}\label{classlambda_1_1core_1_1util_1_1File_abf84bc2464769098cc4b1d4b388e2ef0}} 
+virtual void {\bfseries Save\+And\+Close} ()=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1util_1_1File_a020b5b5a3c313b57cfd6f238f2cddb8d}\label{classlambda_1_1core_1_1util_1_1File_a020b5b5a3c313b57cfd6f238f2cddb8d}} 
+static memory\+::\+Shared$<$ \mbox{\hyperlink{classlambda_1_1core_1_1util_1_1File}{File}} $>$ {\bfseries Create} (const std\+::string path, File\+Mode mode)
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1util_1_1File_aa876a795555e4b15dd5f0a4cbae29fbf}\label{classlambda_1_1core_1_1util_1_1File_aa876a795555e4b15dd5f0a4cbae29fbf}} 
+static memory\+::\+Shared$<$ \mbox{\hyperlink{classlambda_1_1core_1_1util_1_1File}{File}} $>$ {\bfseries Create\+Temp} (const std\+::string \&path, File\+Mode mode)
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1util_1_1File_ac4ba55f0a493712dcb6545e0876818ec}\label{classlambda_1_1core_1_1util_1_1File_ac4ba55f0a493712dcb6545e0876818ec}} 
+static memory\+::\+Shared$<$ \mbox{\hyperlink{classlambda_1_1core_1_1util_1_1File}{File}} $>$ {\bfseries Open} (const std\+::string \&path, File\+Mode mode)
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1util_1_1File_a21b499399361a73f018f313ddd7cdf13}\label{classlambda_1_1core_1_1util_1_1File_a21b499399361a73f018f313ddd7cdf13}} 
+static void {\bfseries Delete} (const std\+::string \&path)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1util_1_1File_a24d93bb9ee5c9a5740a4c3d3616c7534}\label{classlambda_1_1core_1_1util_1_1File_a24d93bb9ee5c9a5740a4c3d3616c7534}} 
+std\+::mutex {\bfseries lock}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lambda/src/core/util/File.\+h\end{DoxyCompactItemize}

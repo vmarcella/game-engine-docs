@@ -1,0 +1,38 @@
+\hypertarget{classlambda_1_1core_1_1renderer_1_1RenderCommand}{}\doxysection{lambda\+::core\+::renderer\+::Render\+Command Class Reference}
+\label{classlambda_1_1core_1_1renderer_1_1RenderCommand}\index{lambda::core::renderer::RenderCommand@{lambda::core::renderer::RenderCommand}}
+
+
+An interface for issuing commands to the current rendering A\+PI that is being used with lambda.  
+
+
+
+
+{\ttfamily \#include $<$Render\+Command.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1RenderCommand_a9e8811405f1c863edc7680d84a359460}\label{classlambda_1_1core_1_1renderer_1_1RenderCommand_a9e8811405f1c863edc7680d84a359460}} 
+static void \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1RenderCommand_a9e8811405f1c863edc7680d84a359460}{Init}} ()
+\begin{DoxyCompactList}\small\item\em Initialize the Rendering A\+PI. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1RenderCommand_a7f1063514ed86a82d35c481dd70e1797}\label{classlambda_1_1core_1_1renderer_1_1RenderCommand_a7f1063514ed86a82d35c481dd70e1797}} 
+static void \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1RenderCommand_a7f1063514ed86a82d35c481dd70e1797}{Set\+Clear\+Color}} (const glm\+::vec4 \&color)
+\begin{DoxyCompactList}\small\item\em Set the color to clear the screen with. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1RenderCommand_a5af57322126b2465cd696517c4cb59e6}\label{classlambda_1_1core_1_1renderer_1_1RenderCommand_a5af57322126b2465cd696517c4cb59e6}} 
+static void \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1RenderCommand_a5af57322126b2465cd696517c4cb59e6}{Set\+Viewport}} (uint32\+\_\+t x, uint32\+\_\+t y, uint32\+\_\+t width, uint32\+\_\+t height)
+\begin{DoxyCompactList}\small\item\em Set the viewport. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1RenderCommand_af449e883752de4d08e8f544708a4607d}\label{classlambda_1_1core_1_1renderer_1_1RenderCommand_af449e883752de4d08e8f544708a4607d}} 
+static void \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1RenderCommand_af449e883752de4d08e8f544708a4607d}{Clear}} ()
+\begin{DoxyCompactList}\small\item\em Clear the screen of anything that was previously rendered. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1RenderCommand_a9eb193eadfa81e28579d7aa1923ed227}\label{classlambda_1_1core_1_1renderer_1_1RenderCommand_a9eb193eadfa81e28579d7aa1923ed227}} 
+static void \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1RenderCommand_a9eb193eadfa81e28579d7aa1923ed227}{Draw\+Indexed}} (const memory\+::\+Shared$<$ \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1VertexArray}{Vertex\+Array}} $>$ \&vertex\+\_\+array)
+\begin{DoxyCompactList}\small\item\em Issues a draw call to the rendering A\+PI. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An interface for issuing commands to the current rendering A\+PI that is being used with lambda. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+lambda/src/core/renderer/\mbox{\hyperlink{RenderCommand_8h}{Render\+Command.\+h}}\item 
+lambda/src/core/renderer/Render\+Command.\+cpp\end{DoxyCompactItemize}

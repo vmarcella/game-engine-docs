@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>game-engine: Class Hierarchy</title>
+<title>lambda: Class Hierarchy</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">game-engine
+   <div id="projectname">lambda
    </div>
   </td>
  </tr>
@@ -68,155 +68,202 @@ $(function() {
 <div class="textblock">
 <p><a href="hierarchy.html">Go to the textual class hierarchy</a></p>
 </div><table border="0" cellspacing="10" cellpadding="0">
-<tr><td><img src="inherit_graph_0.png" border="0" usemap="#engine_1_1Application" alt=""/>
-<map name="engine_1_1Application" id="engine_1_1Application">
-<area shape="rect" href="classengine_1_1Application.html" title="The primary driver of all applications extending this engine." alt="" coords="5,5,152,32"/>
+<tr><td><img src="inherit_graph_0.png" border="0" usemap="#lambda_1_1core_1_1Application" alt=""/>
+<map name="lambda_1_1core_1_1Application" id="lambda_1_1core_1_1Application">
+<area shape="rect" href="classlambda_1_1core_1_1Application.html" title="The mind, body, and soul of Lambda. The Application class is the interface into lambda that brings yo..." alt="" coords="5,5,193,32"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_1.png" border="0" usemap="#engine_1_1events_1_1Event" alt=""/>
-<map name="engine_1_1events_1_1Event" id="engine_1_1events_1_1Event">
-<area shape="rect" href="classengine_1_1events_1_1Event.html" title="The abstract Event class." alt="" coords="5,247,168,274"/>
-<area shape="rect" href="classengine_1_1events_1_1AppRenderEvent.html" title="Generated whenever the app renders." alt="" coords="228,5,425,47"/>
-<area shape="rect" href="classengine_1_1events_1_1AppTickEvent.html" title="Generated whenever the app ticks." alt="" coords="219,71,434,98"/>
-<area shape="rect" href="classengine_1_1events_1_1AppUpdateEvent.html" title="Generated whenever the app updates." alt="" coords="227,123,426,164"/>
-<area shape="rect" href="classengine_1_1events_1_1KeyEvent.html" title="The base event for all other Key input events." alt="" coords="233,189,420,215"/>
-<area shape="rect" href="classengine_1_1events_1_1MouseButtonEvent.html" title="The generic Mouse button event." alt="" coords="221,240,433,281"/>
-<area shape="rect" href="classengine_1_1events_1_1MouseMovedEvent.html" title="Generated whenever the user moves their mouse within the application." alt="" coords="220,305,433,347"/>
-<area shape="rect" href="classengine_1_1events_1_1MouseScrolledEvent.html" title="Generated whenever the user scrolls their mouse wheel within the application." alt="" coords="216,371,437,412"/>
-<area shape="rect" href="classengine_1_1events_1_1WindowCloseEvent.html" title="Generated whenever a window is closed." alt="" coords="219,436,434,477"/>
-<area shape="rect" href="classengine_1_1events_1_1WindowResizeEvent.html" title="Generated whenever a window is resized." alt="" coords="216,501,437,543"/>
-<area shape="rect" href="classengine_1_1events_1_1KeyPressedEvent.html" title="Generated when a key is pressed by the user in the application." alt="" coords="491,51,692,92"/>
-<area shape="rect" href="classengine_1_1events_1_1KeyReleasedEvent.html" title="Generated when a key is released by the user in the application." alt="" coords="486,116,697,157"/>
-<area shape="rect" href="classengine_1_1events_1_1KeyTypedEvent.html" title="Generated when a key is typed by the user in the application." alt="" coords="497,181,685,223"/>
-<area shape="rect" href="classengine_1_1events_1_1MouseButtonPressedEvent.html" title="Generated whenever the user presses a mouse button within the application." alt="" coords="485,247,697,288"/>
-<area shape="rect" href="classengine_1_1events_1_1MouseButtonReleasedEvent.html" title="Generated whenever the user releases a mouse button within an application." alt="" coords="485,312,697,353"/>
+<tr><td><img src="inherit_graph_1.png" border="0" usemap="#lambda_1_1core_1_1events_1_1Event" alt=""/>
+<map name="lambda_1_1core_1_1events_1_1Event" id="lambda_1_1core_1_1events_1_1Event">
+<area shape="rect" href="classlambda_1_1core_1_1events_1_1Event.html" title="The base Event class for events that are propagated throughout lambda." alt="" coords="5,267,164,308"/>
+<area shape="rect" href="classlambda_1_1core_1_1events_1_1AppRenderEvent.html" title="An event generated when the app has rendered." alt="" coords="214,5,373,47"/>
+<area shape="rect" href="classlambda_1_1core_1_1events_1_1AppTickEvent.html" title="An Event generated when the app has ticked." alt="" coords="214,71,373,112"/>
+<area shape="rect" href="classlambda_1_1core_1_1events_1_1AppUpdateEvent.html" title="An event generated when the app has updated." alt="" coords="214,136,373,177"/>
+<area shape="rect" href="classlambda_1_1core_1_1events_1_1KeyEvent.html" title="The Base Key Event used for other Key Events." alt="" coords="214,201,373,243"/>
+<area shape="rect" href="classlambda_1_1core_1_1events_1_1MouseButtonEvent.html" title="The base event class for all events mouse button related." alt="" coords="214,267,373,308"/>
+<area shape="rect" href="classlambda_1_1core_1_1events_1_1MouseMovedEvent.html" title="An event generated whenever a mouse is moved within an application that is running lambda." alt="" coords="214,332,373,373"/>
+<area shape="rect" href="classlambda_1_1core_1_1events_1_1MouseScrolledEvent.html" title="An event generated whenever a mouse is scrolled within an application that is running lambda." alt="" coords="212,397,375,439"/>
+<area shape="rect" href="classlambda_1_1core_1_1events_1_1WindowCloseEvent.html" title="An Event generated when the Window has closed." alt="" coords="214,463,373,504"/>
+<area shape="rect" href="classlambda_1_1core_1_1events_1_1WindowResizeEvent.html" title="An Event generated when the Window has resized." alt="" coords="212,528,375,569"/>
+<area shape="rect" href="classlambda_1_1core_1_1events_1_1KeyPressedEvent.html" title="An Event generated whenever a key is pressed within an application that is running lambda." alt="" coords="450,71,609,112"/>
+<area shape="rect" href="classlambda_1_1core_1_1events_1_1KeyReleasedEvent.html" title="An Event generated whenever a key is released within an application that is running lambda." alt="" coords="450,136,609,177"/>
+<area shape="rect" href="classlambda_1_1core_1_1events_1_1KeyTypedEvent.html" title="An Event generated whenever a key is typed within an application that is running lambda...." alt="" coords="450,201,609,243"/>
+<area shape="rect" href="classlambda_1_1core_1_1events_1_1MouseButtonPressedEvent.html" title="An event generated whenever a Mouse button is pressed within an application that is running lambda." alt="" coords="427,267,631,308"/>
+<area shape="rect" href="classlambda_1_1core_1_1events_1_1MouseButtonReleasedEvent.html" title="An event generated whenever a Mouse button is released within an application that is running lambda." alt="" coords="423,332,636,373"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_2.png" border="0" usemap="#engine_1_1events_1_1EventDispatcher" alt=""/>
-<map name="engine_1_1events_1_1EventDispatcher" id="engine_1_1events_1_1EventDispatcher">
-<area shape="rect" href="classengine_1_1events_1_1EventDispatcher.html" title="The event handling system." alt="" coords="5,5,239,32"/>
+<tr><td><img src="inherit_graph_2.png" border="0" usemap="#lambda_1_1core_1_1events_1_1EventDispatcher" alt=""/>
+<map name="lambda_1_1core_1_1events_1_1EventDispatcher" id="lambda_1_1core_1_1events_1_1EventDispatcher">
+<area shape="rect" href="classlambda_1_1core_1_1events_1_1EventDispatcher.html" title="The primary way of allowing the application and layers in lambda the capability of handling events pr..." alt="" coords="5,5,164,47"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_3.png" border="0" usemap="#engine_1_1Input" alt=""/>
-<map name="engine_1_1Input" id="engine_1_1Input">
-<area shape="rect" href="classengine_1_1Input.html" title="The generalized Input class for all input systems." alt="" coords="5,5,112,32"/>
+<tr><td><img src="inherit_graph_3.png" border="0" usemap="#lambda_1_1core_1_1input_1_1Input" alt=""/>
+<map name="lambda_1_1core_1_1input_1_1Input" id="lambda_1_1core_1_1input_1_1Input">
+<area shape="rect" href="classlambda_1_1core_1_1input_1_1Input.html" title="The generic input system for getting input data from applications built on lambda." alt="" coords="5,5,153,47"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_4.png" border="0" usemap="#engine_1_1Layer" alt=""/>
-<map name="engine_1_1Layer" id="engine_1_1Layer">
-<area shape="rect" href="classengine_1_1Layer.html" title="An abstract data structure that represents a &quot;layer&quot; within the engine." alt="" coords="5,5,116,32"/>
-<area shape="rect" href="classengine_1_1imgui_1_1ImGuiLayer.html" title="An abstract Imgui layer implementation." alt="" coords="164,5,359,32"/>
+<tr><td><img src="inherit_graph_4.png" border="0" usemap="#lambda_1_1core_1_1io_1_1AsyncTask" alt=""/>
+<map name="lambda_1_1core_1_1io_1_1AsyncTask" id="lambda_1_1core_1_1io_1_1AsyncTask">
+<area shape="rect" href="classlambda_1_1core_1_1io_1_1AsyncTask.html" title=" " alt="" coords="5,5,208,32"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_5.png" border="0" usemap="#engine_1_1LayerStack" alt=""/>
-<map name="engine_1_1LayerStack" id="engine_1_1LayerStack">
-<area shape="rect" href="classengine_1_1LayerStack.html" title="A stack based data structure for the storage of layers to be managed by the engine." alt="" coords="5,5,152,32"/>
+<tr><td><img src="inherit_graph_5.png" border="0" usemap="#lambda_1_1core_1_1io_1_1EventLoop" alt=""/>
+<map name="lambda_1_1core_1_1io_1_1EventLoop" id="lambda_1_1core_1_1io_1_1EventLoop">
+<area shape="rect" href="classlambda_1_1core_1_1io_1_1EventLoop.html" title=" " alt="" coords="5,5,208,32"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_6.png" border="0" usemap="#engine_1_1renderer_1_1BufferElement" alt=""/>
-<map name="engine_1_1renderer_1_1BufferElement" id="engine_1_1renderer_1_1BufferElement">
-<area shape="rect" href="structengine_1_1renderer_1_1BufferElement.html" title="A generic buffer element representation to be used in conjuction with BufferLayouts." alt="" coords="5,5,183,47"/>
+<tr><td><img src="inherit_graph_6.png" border="0" usemap="#lambda_1_1core_1_1layers_1_1Layer" alt=""/>
+<map name="lambda_1_1core_1_1layers_1_1Layer" id="lambda_1_1core_1_1layers_1_1Layer">
+<area shape="rect" href="classlambda_1_1core_1_1layers_1_1Layer.html" title="The lambda Layer abstraction. Primarily used for direct access into lambdas tick and event system." alt="" coords="5,5,160,47"/>
+<area shape="rect" href="classlambda_1_1core_1_1imgui_1_1ImGuiLayer.html" title="The base ImGui layer used for rendering all other ImGui components." alt="" coords="208,5,360,47"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_7.png" border="0" usemap="#engine_1_1renderer_1_1BufferLayout" alt=""/>
-<map name="engine_1_1renderer_1_1BufferLayout" id="engine_1_1renderer_1_1BufferLayout">
-<area shape="rect" href="classengine_1_1renderer_1_1BufferLayout.html" title="A layout that specifies the elements to be associated with a vertex buffer." alt="" coords="5,5,183,47"/>
+<tr><td><img src="inherit_graph_7.png" border="0" usemap="#lambda_1_1core_1_1layers_1_1LayerStack" alt=""/>
+<map name="lambda_1_1core_1_1layers_1_1LayerStack" id="lambda_1_1core_1_1layers_1_1LayerStack">
+<area shape="rect" href="classlambda_1_1core_1_1layers_1_1LayerStack.html" title="A Stack based structure for lambda to manage layers in." alt="" coords="5,5,160,47"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_8.png" border="0" usemap="#engine_1_1renderer_1_1GraphicsContext" alt=""/>
-<map name="engine_1_1renderer_1_1GraphicsContext" id="engine_1_1renderer_1_1GraphicsContext">
-<area shape="rect" href="classengine_1_1renderer_1_1GraphicsContext.html" title=" " alt="" coords="5,5,200,47"/>
-<area shape="rect" href="classengine_1_1platform_1_1opengl_1_1OpenGLContext.html" title=" " alt="" coords="248,5,431,47"/>
+<tr><td><img src="inherit_graph_8.png" border="0" usemap="#lambda_1_1core_1_1OrthographicCameraController" alt=""/>
+<map name="lambda_1_1core_1_1OrthographicCameraController" id="lambda_1_1core_1_1OrthographicCameraController">
+<area shape="rect" href="classlambda_1_1core_1_1OrthographicCameraController.html" title=" " alt="" coords="5,5,204,47"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_9.png" border="0" usemap="#engine_1_1renderer_1_1IndexBuffer" alt=""/>
-<map name="engine_1_1renderer_1_1IndexBuffer" id="engine_1_1renderer_1_1IndexBuffer">
-<area shape="rect" href="classengine_1_1renderer_1_1IndexBuffer.html" title="The base IndexBuffer class to be used for creating index buffers." alt="" coords="5,13,219,39"/>
-<area shape="rect" href="classengine_1_1platform_1_1opengl_1_1OpenGLIndexBuffer.html" title=" " alt="" coords="267,5,449,47"/>
+<tr><td><img src="inherit_graph_9.png" border="0" usemap="#lambda_1_1core_1_1renderer_1_1BufferElement" alt=""/>
+<map name="lambda_1_1core_1_1renderer_1_1BufferElement" id="lambda_1_1core_1_1renderer_1_1BufferElement">
+<area shape="rect" href="structlambda_1_1core_1_1renderer_1_1BufferElement.html" title="A generic buffer element used for describing the layout of a buffer." alt="" coords="5,5,176,47"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_10.png" border="0" usemap="#engine_1_1renderer_1_1OrthographicCamera" alt=""/>
-<map name="engine_1_1renderer_1_1OrthographicCamera" id="engine_1_1renderer_1_1OrthographicCamera">
-<area shape="rect" href="classengine_1_1renderer_1_1OrthographicCamera.html" title="A 2D orthographic camera implementation that is compatible with the engine." alt="" coords="5,5,227,47"/>
+<tr><td><img src="inherit_graph_10.png" border="0" usemap="#lambda_1_1core_1_1renderer_1_1BufferLayout" alt=""/>
+<map name="lambda_1_1core_1_1renderer_1_1BufferLayout" id="lambda_1_1core_1_1renderer_1_1BufferLayout">
+<area shape="rect" href="classlambda_1_1core_1_1renderer_1_1BufferLayout.html" title="The layout of a vertex buffer. Should always be instantiated with buffer elements for it to work prop..." alt="" coords="5,5,176,47"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_11.png" border="0" usemap="#engine_1_1renderer_1_1RenderCommand" alt=""/>
-<map name="engine_1_1renderer_1_1RenderCommand" id="engine_1_1renderer_1_1RenderCommand">
-<area shape="rect" href="classengine_1_1renderer_1_1RenderCommand.html" title="A static wrapper class to send commands to the Renderer." alt="" coords="5,5,188,47"/>
+<tr><td><img src="inherit_graph_11.png" border="0" usemap="#lambda_1_1core_1_1renderer_1_1GraphicsContext" alt=""/>
+<map name="lambda_1_1core_1_1renderer_1_1GraphicsContext" id="lambda_1_1core_1_1renderer_1_1GraphicsContext">
+<area shape="rect" href="classlambda_1_1core_1_1renderer_1_1GraphicsContext.html" title="The Graphics context abstraction." alt="" coords="5,5,176,47"/>
+<area shape="rect" href="classlambda_1_1platform_1_1opengl_1_1OpenGLContext.html" title=" " alt="" coords="224,5,411,47"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_12.png" border="0" usemap="#engine_1_1renderer_1_1Renderer" alt=""/>
-<map name="engine_1_1renderer_1_1Renderer" id="engine_1_1renderer_1_1Renderer">
-<area shape="rect" href="classengine_1_1renderer_1_1Renderer.html" title="A lightweight rendering API implementation. Allows generalized calls to be written for users." alt="" coords="5,5,201,32"/>
+<tr><td><img src="inherit_graph_12.png" border="0" usemap="#lambda_1_1core_1_1renderer_1_1IndexBuffer" alt=""/>
+<map name="lambda_1_1core_1_1renderer_1_1IndexBuffer" id="lambda_1_1core_1_1renderer_1_1IndexBuffer">
+<area shape="rect" href="classlambda_1_1core_1_1renderer_1_1IndexBuffer.html" title="A general abstraction of an Index Buffer." alt="" coords="5,5,176,47"/>
+<area shape="rect" href="classlambda_1_1platform_1_1opengl_1_1OpenGLIndexBuffer.html" title=" " alt="" coords="224,5,411,47"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_13.png" border="0" usemap="#engine_1_1renderer_1_1RendererAPI" alt=""/>
-<map name="engine_1_1renderer_1_1RendererAPI" id="engine_1_1renderer_1_1RendererAPI">
-<area shape="rect" href="classengine_1_1renderer_1_1RendererAPI.html" title="The Rendering API for displaying graphics through the engine api!" alt="" coords="5,13,223,39"/>
-<area shape="rect" href="classengine_1_1platform_1_1opengl_1_1OpenGLRendererAPI.html" title="The Rendering implementation for OpenGL." alt="" coords="271,5,453,47"/>
+<tr><td><img src="inherit_graph_13.png" border="0" usemap="#lambda_1_1core_1_1renderer_1_1OrthographicCamera" alt=""/>
+<map name="lambda_1_1core_1_1renderer_1_1OrthographicCamera" id="lambda_1_1core_1_1renderer_1_1OrthographicCamera">
+<area shape="rect" href="classlambda_1_1core_1_1renderer_1_1OrthographicCamera.html" title="An orthographic camera implementation for the 2D engine." alt="" coords="5,5,176,47"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_14.png" border="0" usemap="#engine_1_1renderer_1_1Shader" alt=""/>
-<map name="engine_1_1renderer_1_1Shader" id="engine_1_1renderer_1_1Shader">
-<area shape="rect" href="classengine_1_1renderer_1_1Shader.html" title="The abstract Shader API." alt="" coords="5,13,188,39"/>
-<area shape="rect" href="classengine_1_1platform_1_1opengl_1_1OpenGLShader.html" title=" " alt="" coords="236,5,419,47"/>
+<tr><td><img src="inherit_graph_14.png" border="0" usemap="#lambda_1_1core_1_1renderer_1_1RenderCommand" alt=""/>
+<map name="lambda_1_1core_1_1renderer_1_1RenderCommand" id="lambda_1_1core_1_1renderer_1_1RenderCommand">
+<area shape="rect" href="classlambda_1_1core_1_1renderer_1_1RenderCommand.html" title="An interface for issuing commands to the current rendering API that is being used with lambda." alt="" coords="5,5,176,47"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_15.png" border="0" usemap="#engine_1_1renderer_1_1VertexArray" alt=""/>
-<map name="engine_1_1renderer_1_1VertexArray" id="engine_1_1renderer_1_1VertexArray">
-<area shape="rect" href="classengine_1_1renderer_1_1VertexArray.html" title="The abstraction for representing Vertex arrays and their sub components." alt="" coords="5,5,185,47"/>
-<area shape="rect" href="classengine_1_1platform_1_1opengl_1_1OpenGLVertexArray.html" title=" " alt="" coords="233,5,416,47"/>
+<tr><td><img src="inherit_graph_15.png" border="0" usemap="#lambda_1_1core_1_1renderer_1_1Renderer" alt=""/>
+<map name="lambda_1_1core_1_1renderer_1_1Renderer" id="lambda_1_1core_1_1renderer_1_1Renderer">
+<area shape="rect" href="classlambda_1_1core_1_1renderer_1_1Renderer.html" title="The primary interface used for managing." alt="" coords="5,5,176,47"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_16.png" border="0" usemap="#engine_1_1renderer_1_1VertexBuffer" alt=""/>
-<map name="engine_1_1renderer_1_1VertexBuffer" id="engine_1_1renderer_1_1VertexBuffer">
-<area shape="rect" href="classengine_1_1renderer_1_1VertexBuffer.html" title="The base VertexBuffer class to be used for creating vertex buffers." alt="" coords="5,5,185,47"/>
-<area shape="rect" href="classengine_1_1platform_1_1opengl_1_1OpenGLVertexBuffer.html" title=" " alt="" coords="233,5,416,47"/>
+<tr><td><img src="inherit_graph_16.png" border="0" usemap="#lambda_1_1core_1_1renderer_1_1RendererAPI" alt=""/>
+<map name="lambda_1_1core_1_1renderer_1_1RendererAPI" id="lambda_1_1core_1_1renderer_1_1RendererAPI">
+<area shape="rect" href="classlambda_1_1core_1_1renderer_1_1RendererAPI.html" title="The abstract representation of rendering features and functions supported by Lambda." alt="" coords="5,5,176,47"/>
+<area shape="rect" href="classlambda_1_1platform_1_1opengl_1_1OpenGLRendererAPI.html" title="The Rendering implementation for OpenGL." alt="" coords="224,5,411,47"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_17.png" border="0" usemap="#engine_1_1util_1_1Log" alt=""/>
-<map name="engine_1_1util_1_1Log" id="engine_1_1util_1_1Log">
-<area shape="rect" href="classengine_1_1util_1_1Log.html" title="The container class for managing static instances of the engine and client loggers." alt="" coords="5,5,132,32"/>
+<tr><td><img src="inherit_graph_17.png" border="0" usemap="#lambda_1_1core_1_1renderer_1_1Shader" alt=""/>
+<map name="lambda_1_1core_1_1renderer_1_1Shader" id="lambda_1_1core_1_1renderer_1_1Shader">
+<area shape="rect" href="classlambda_1_1core_1_1renderer_1_1Shader.html" title="A generic Shader API." alt="" coords="5,5,176,47"/>
+<area shape="rect" href="classlambda_1_1platform_1_1opengl_1_1OpenGLShader.html" title=" " alt="" coords="224,5,411,47"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_18.png" border="0" usemap="#engine_1_1util_1_1Reverse_3_01Container_01_4" alt=""/>
-<map name="engine_1_1util_1_1Reverse_3_01Container_01_4" id="engine_1_1util_1_1Reverse_3_01Container_01_4">
-<area shape="rect" href="classengine_1_1util_1_1Reverse.html" title="Provides a clean interface for iterating through any container that implements rbegin and rend." alt="" coords="5,5,161,47"/>
+<tr><td><img src="inherit_graph_18.png" border="0" usemap="#lambda_1_1core_1_1renderer_1_1ShaderLibrary" alt=""/>
+<map name="lambda_1_1core_1_1renderer_1_1ShaderLibrary" id="lambda_1_1core_1_1renderer_1_1ShaderLibrary">
+<area shape="rect" href="classlambda_1_1core_1_1renderer_1_1ShaderLibrary.html" title="A library for managing many different shaders." alt="" coords="5,5,176,47"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_19.png" border="0" usemap="#engine_1_1util_1_1Time" alt=""/>
-<map name="engine_1_1util_1_1Time" id="engine_1_1util_1_1Time">
-<area shape="rect" href="classengine_1_1util_1_1Time.html" title="A wrapper for working with Time within the game engine. Uses std::steady_clock for a platform indepen..." alt="" coords="5,5,140,32"/>
+<tr><td><img src="inherit_graph_19.png" border="0" usemap="#lambda_1_1core_1_1renderer_1_1Texture" alt=""/>
+<map name="lambda_1_1core_1_1renderer_1_1Texture" id="lambda_1_1core_1_1renderer_1_1Texture">
+<area shape="rect" href="classlambda_1_1core_1_1renderer_1_1Texture.html" title="The abstract texture API." alt="" coords="5,5,176,47"/>
+<area shape="rect" href="classlambda_1_1core_1_1renderer_1_1Texture2D.html" title="The 2D Texture API." alt="" coords="224,5,395,47"/>
+<area shape="rect" href="classlambda_1_1platform_1_1opengl_1_1OpenGLTexture2D.html" title="The opengl 2D texture implementation." alt="" coords="443,5,629,47"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_20.png" border="0" usemap="#engine_1_1util_1_1TimeStep" alt=""/>
-<map name="engine_1_1util_1_1TimeStep" id="engine_1_1util_1_1TimeStep">
-<area shape="rect" href="classengine_1_1util_1_1TimeStep.html" title="The timestep between two time intervals. Primarily used for layers to consistently update the engine." alt="" coords="5,5,169,32"/>
+<tr><td><img src="inherit_graph_20.png" border="0" usemap="#lambda_1_1core_1_1renderer_1_1VertexArray" alt=""/>
+<map name="lambda_1_1core_1_1renderer_1_1VertexArray" id="lambda_1_1core_1_1renderer_1_1VertexArray">
+<area shape="rect" href="classlambda_1_1core_1_1renderer_1_1VertexArray.html" title="The abstract VertexArray API." alt="" coords="5,5,176,47"/>
+<area shape="rect" href="classlambda_1_1platform_1_1opengl_1_1OpenGLVertexArray.html" title="The abstraction for representing Vertex arrays and their sub components." alt="" coords="224,5,411,47"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_21.png" border="0" usemap="#engine_1_1Window" alt=""/>
-<map name="engine_1_1Window" id="engine_1_1Window">
-<area shape="rect" href="classengine_1_1Window.html" title="The generic window implementation that allows platform specific window APIs to expose generic window ..." alt="" coords="5,5,132,32"/>
+<tr><td><img src="inherit_graph_21.png" border="0" usemap="#lambda_1_1core_1_1renderer_1_1VertexBuffer" alt=""/>
+<map name="lambda_1_1core_1_1renderer_1_1VertexBuffer" id="lambda_1_1core_1_1renderer_1_1VertexBuffer">
+<area shape="rect" href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html" title="A general abstraction of Vertex Buffer." alt="" coords="5,5,176,47"/>
+<area shape="rect" href="classlambda_1_1platform_1_1opengl_1_1OpenGLVertexBuffer.html" title=" " alt="" coords="224,5,411,47"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_22.png" border="0" usemap="#engine_1_1WindowProperties" alt=""/>
-<map name="engine_1_1WindowProperties" id="engine_1_1WindowProperties">
-<area shape="rect" href="structengine_1_1WindowProperties.html" title="Generic Window properties used to create platform specific windows." alt="" coords="5,5,197,32"/>
+<tr><td><img src="inherit_graph_22.png" border="0" usemap="#lambda_1_1core_1_1util_1_1File" alt=""/>
+<map name="lambda_1_1core_1_1util_1_1File" id="lambda_1_1core_1_1util_1_1File">
+<area shape="rect" href="classlambda_1_1core_1_1util_1_1File.html" title=" " alt="" coords="5,5,141,47"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_23.png" border="0" usemap="#GraphicsContext" alt=""/>
-<map name="GraphicsContext" id="GraphicsContext">
-<area shape="rect" href="classGraphicsContext.html" title="The GrahpicsContext base class implementation." alt="" coords="5,5,136,32"/>
+<tr><td><img src="inherit_graph_23.png" border="0" usemap="#lambda_1_1core_1_1util_1_1Log" alt=""/>
+<map name="lambda_1_1core_1_1util_1_1Log" id="lambda_1_1core_1_1util_1_1Log">
+<area shape="rect" href="classlambda_1_1core_1_1util_1_1Log.html" title="The container class for managing static instances of the engine and client loggers." alt="" coords="5,5,172,32"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_24.png" border="0" usemap="#Shader" alt=""/>
+<tr><td><img src="inherit_graph_24.png" border="0" usemap="#lambda_1_1core_1_1util_1_1Reverse_3_01Container_01_4" alt=""/>
+<map name="lambda_1_1core_1_1util_1_1Reverse_3_01Container_01_4" id="lambda_1_1core_1_1util_1_1Reverse_3_01Container_01_4">
+<area shape="rect" href="classlambda_1_1core_1_1util_1_1Reverse.html" title=" " alt="" coords="5,5,181,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_25.png" border="0" usemap="#lambda_1_1core_1_1util_1_1Time" alt=""/>
+<map name="lambda_1_1core_1_1util_1_1Time" id="lambda_1_1core_1_1util_1_1Time">
+<area shape="rect" href="classlambda_1_1core_1_1util_1_1Time.html" title=" " alt="" coords="5,5,141,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_26.png" border="0" usemap="#lambda_1_1core_1_1util_1_1TimeStep" alt=""/>
+<map name="lambda_1_1core_1_1util_1_1TimeStep" id="lambda_1_1core_1_1util_1_1TimeStep">
+<area shape="rect" href="classlambda_1_1core_1_1util_1_1TimeStep.html" title=" " alt="" coords="5,5,141,47"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_27.png" border="0" usemap="#lambda_1_1core_1_1Window" alt=""/>
+<map name="lambda_1_1core_1_1Window" id="lambda_1_1core_1_1Window">
+<area shape="rect" href="classlambda_1_1core_1_1Window.html" title=" " alt="" coords="5,5,172,32"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_28.png" border="0" usemap="#lambda_1_1core_1_1WindowProperties" alt=""/>
+<map name="lambda_1_1core_1_1WindowProperties" id="lambda_1_1core_1_1WindowProperties">
+<area shape="rect" href="structlambda_1_1core_1_1WindowProperties.html" title=" " alt="" coords="5,5,239,32"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_29.png" border="0" usemap="#Reverse" alt=""/>
+<map name="Reverse" id="Reverse">
+<area shape="rect" href="classlambda_1_1util_1_1Reverse.html" title="Provides a clean interface for iterating through any container that implements rbegin and rend." alt="" coords="5,5,80,32"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_30.png" border="0" usemap="#Shader" alt=""/>
 <map name="Shader" id="Shader">
 <area shape="rect" href="classShader.html" title="The Shader API." alt="" coords="5,5,72,32"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_25.png" border="0" usemap="#VertexArray" alt=""/>
-<map name="VertexArray" id="VertexArray">
-<area shape="rect" href="classVertexArray.html" title="The abstraction for representing Vertex arrays and their sub components." alt="" coords="5,5,105,32"/>
+<tr><td><img src="inherit_graph_31.png" border="0" usemap="#Time" alt=""/>
+<map name="Time" id="Time">
+<area shape="rect" href="classlambda_1_1util_1_1Time.html" title="A wrapper for working with Time within the game engine. Uses std::steady_clock for a platform indepen..." alt="" coords="5,5,60,32"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_32.png" border="0" usemap="#TimeStep" alt=""/>
+<map name="TimeStep" id="TimeStep">
+<area shape="rect" href="classlambda_1_1util_1_1TimeStep.html" title="The timestep between two time intervals. Primarily used for layers to consistently update the engine." alt="" coords="5,5,88,32"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_33.png" border="0" usemap="#Window" alt=""/>
+<map name="Window" id="Window">
+<area shape="rect" href="classlambda_1_1Window.html" title="The generic window implementation that allows platform specific window APIs to expose generic window ..." alt="" coords="5,5,80,32"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_34.png" border="0" usemap="#WindowProperties" alt=""/>
+<map name="WindowProperties" id="WindowProperties">
+<area shape="rect" href="structlambda_1_1WindowProperties.html" title="Generic Window properties used to create platform specific windows." alt="" coords="5,5,145,32"/>
 </map>
 </td></tr>
 </table>

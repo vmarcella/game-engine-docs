@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>game-engine: engine/src/core/util/Time.h File Reference</title>
+<title>lambda: lambda/src/core/util/Time.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">game-engine
+   <div id="projectname">lambda
    </div>
   </td>
  </tr>
@@ -61,7 +61,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_996f45160da62e1a3d7f6046fad68f51.html">engine</a></li><li class="navelem"><a class="el" href="dir_3d9126aa00c041bc0b8f859d1965a0f4.html">src</a></li><li class="navelem"><a class="el" href="dir_5e835386694ce392648cfcf102577fe3.html">core</a></li><li class="navelem"><a class="el" href="dir_c7a3b5ee209719b28f9110bbc3ad3b04.html">util</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_4b73342a493c3ec8f518edda193e909f.html">lambda</a></li><li class="navelem"><a class="el" href="dir_896901b14b6321ed9cf375daac6fb468.html">src</a></li><li class="navelem"><a class="el" href="dir_120072a10eb7d4fbc043fc091b8cce0e.html">core</a></li><li class="navelem"><a class="el" href="dir_729e07418af1ec59eb1a4306ab25519d.html">util</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -80,29 +80,38 @@ $(function() {
 <div class="textblock"><code>#include &lt;chrono&gt;</code><br />
 <code>#include &lt;concepts&gt;</code><br />
 <code>#include &lt;ratio&gt;</code><br />
+<code>#include &quot;<a class="el" href="Assert_8h_source.html">core/util/Assert.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Time.h:</div>
 <div class="dyncontent">
-<div class="center"><img src="Time_8h__incl.png" border="0" usemap="#engine_2src_2core_2util_2Time_8h" alt=""/></div>
-<map name="engine_2src_2core_2util_2Time_8h" id="engine_2src_2core_2util_2Time_8h">
-<area shape="rect" title="Cross platform timing utility for the game engine." alt="" coords="63,5,209,47"/>
+<div class="center"><img src="Time_8h__incl.png" border="0" usemap="#lambda_2src_2core_2util_2Time_8h" alt=""/></div>
+<map name="lambda_2src_2core_2util_2Time_8h" id="lambda_2src_2core_2util_2Time_8h">
+<area shape="rect" title="Cross platform timing utility for the game engine." alt="" coords="106,5,257,47"/>
 <area shape="rect" title=" " alt="" coords="5,95,72,121"/>
 <area shape="rect" title=" " alt="" coords="96,95,176,121"/>
 <area shape="rect" title=" " alt="" coords="201,95,253,121"/>
+<area shape="rect" href="Assert_8h.html" title="This is a utility file that is primarily used for debugging the internals of the engine when incorrec..." alt="" coords="277,95,409,121"/>
+<area shape="rect" href="Core_8h.html" title="Core macros to be used all throughout the engine for development and production purposes." alt="" coords="237,244,333,271"/>
+<area shape="rect" href="Log_8h.html" title="The engines util utility." alt="" coords="335,169,449,196"/>
+<area shape="rect" title=" " alt="" coords="357,244,435,271"/>
+<area shape="rect" title=" " alt="" coords="459,244,583,271"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><img src="Time_8h__dep__incl.png" border="0" usemap="#engine_2src_2core_2util_2Time_8hdep" alt=""/></div>
-<map name="engine_2src_2core_2util_2Time_8hdep" id="engine_2src_2core_2util_2Time_8hdep">
-<area shape="rect" title="Cross platform timing utility for the game engine." alt="" coords="5,5,152,47"/>
-<area shape="rect" href="Application_8h.html" title="Contains the Application class definitions." alt="" coords="59,259,269,285"/>
-<area shape="rect" href="Layer_8h.html" title="The Layer implementation that allows application to specify layers to be attached to the game." alt="" coords="77,95,251,121"/>
-<area shape="rect" href="Entrypoint_8h.html" title="The entrypoint into the engine." alt="" coords="62,333,266,360"/>
-<area shape="rect" href="Engine_8h.html" title="The entrypoint into the game engine source code." alt="" coords="367,333,516,360"/>
-<area shape="rect" href="ImGuiLayer_8h.html" title="The ImGuiLayer implementation for dev tool creation." alt="" coords="83,169,245,211"/>
-<area shape="rect" href="LayerStack_8h.html" title="The LayerStack Definition for handling multiple layers." alt="" coords="270,177,479,203"/>
+<div class="center"><img src="Time_8h__dep__incl.png" border="0" usemap="#lambda_2src_2core_2util_2Time_8hdep" alt=""/></div>
+<map name="lambda_2src_2core_2util_2Time_8hdep" id="lambda_2src_2core_2util_2Time_8hdep">
+<area shape="rect" title="Cross platform timing utility for the game engine." alt="" coords="429,5,579,47"/>
+<area shape="rect" href="Application_8h.html" title="Contains the Application class definitions." alt="" coords="147,281,362,307"/>
+<area shape="rect" href="Lambda_8h_source.html" title=" " alt="" coords="437,437,600,464"/>
+<area shape="rect" href="AsyncTask_8h_source.html" title=" " alt="" coords="523,95,666,136"/>
+<area shape="rect" href="EventLoop_8h_source.html" title=" " alt="" coords="633,184,775,225"/>
+<area shape="rect" href="Layer_8h.html" title="The Layer implementation that allows application to specify layers to be attached to the game." alt="" coords="328,95,499,136"/>
+<area shape="rect" href="OrthographicCameraController_8h_source.html" title=" " alt="" coords="699,273,914,315"/>
+<area shape="rect" href="Entrypoint_8h.html" title="The entrypoint into the engine." alt="" coords="246,363,455,389"/>
+<area shape="rect" href="ImGuiLayer_8h.html" title="The ImGuiLayer implementation for dev tool creation." alt="" coords="339,184,506,225"/>
+<area shape="rect" href="LayerStack_8h.html" title="The LayerStack Definition for handling multiple layers." alt="" coords="93,184,264,225"/>
 </map>
 </div>
 </div>
@@ -110,35 +119,45 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1util_1_1Time.html">engine::util::Time</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A wrapper for working with <a class="el" href="classengine_1_1util_1_1Time.html" title="A wrapper for working with Time within the game engine. Uses std::steady_clock for a platform indepen...">Time</a> within the game engine. Uses std::steady_clock for a platform independent Monotonic clock.  <a href="classengine_1_1util_1_1Time.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1util_1_1Time.html">lambda::core::util::Time</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1util_1_1TimeStep.html">engine::util::TimeStep</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The timestep between two time intervals. Primarily used for layers to consistently update the engine.  <a href="classengine_1_1util_1_1TimeStep.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1util_1_1TimeStep.html">lambda::core::util::TimeStep</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a20210f89946708fe564a64eb1cb6ca7f"><td class="memItemLeft" align="right" valign="top"><a id="a20210f89946708fe564a64eb1cb6ca7f"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>engine::util::Clock</b> = std::chrono::steady_clock</td></tr>
-<tr class="separator:a20210f89946708fe564a64eb1cb6ca7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa499cfb3b96d351c3ec8172c6f70ffb"><td class="memItemLeft" align="right" valign="top"><a id="aaa499cfb3b96d351c3ec8172c6f70ffb"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>engine::util::TimePoint</b> = std::chrono::time_point&lt; Clock &gt;</td></tr>
-<tr class="separator:aaa499cfb3b96d351c3ec8172c6f70ffb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb43235ac62136bb258bbbfb32030359"><td class="memItemLeft" align="right" valign="top"><a id="adb43235ac62136bb258bbbfb32030359"></a>
+typedef std::chrono::steady_clock&#160;</td><td class="memItemRight" valign="bottom"><b>lambda::core::util::Clock</b></td></tr>
+<tr class="separator:adb43235ac62136bb258bbbfb32030359"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e9ab81b21cf4c22e1d93eac82091b78"><td class="memItemLeft" align="right" valign="top"><a id="a0e9ab81b21cf4c22e1d93eac82091b78"></a>
+typedef std::chrono::time_point&lt; Clock &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>lambda::core::util::TimePoint</b></td></tr>
+<tr class="separator:a0e9ab81b21cf4c22e1d93eac82091b78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a537e54322bfe1afcaec052fd278f9e69"><td class="memItemLeft" align="right" valign="top"><a id="a537e54322bfe1afcaec052fd278f9e69"></a>
+typedef std::chrono::duration&lt; int64_t, std::nano &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>lambda::core::util::Nanoseconds</b></td></tr>
+<tr class="separator:a537e54322bfe1afcaec052fd278f9e69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6424143d43ef9cd4db345f369e3c2e55"><td class="memItemLeft" align="right" valign="top"><a id="a6424143d43ef9cd4db345f369e3c2e55"></a>
+typedef std::chrono::duration&lt; int64_t, std::micro &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>lambda::core::util::Microseconds</b></td></tr>
+<tr class="separator:a6424143d43ef9cd4db345f369e3c2e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0c0726da6a49a5693510da5ba5432e3"><td class="memItemLeft" align="right" valign="top"><a id="ad0c0726da6a49a5693510da5ba5432e3"></a>
+typedef std::chrono::duration&lt; int64_t, std::milli &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>lambda::core::util::Milliseconds</b></td></tr>
+<tr class="separator:ad0c0726da6a49a5693510da5ba5432e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a005b7b5bd70fbaf0fd21713a9b628e26"><td class="memItemLeft" align="right" valign="top"><a id="a005b7b5bd70fbaf0fd21713a9b628e26"></a>
+typedef std::chrono::duration&lt; int64_t, std::deci &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>lambda::core::util::Seconds</b></td></tr>
+<tr class="separator:a005b7b5bd70fbaf0fd21713a9b628e26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a5aa3ad9448f9797199cf6ab40fca3316"><td class="memTemplParams" colspan="2"><a id="a5aa3ad9448f9797199cf6ab40fca3316"></a>
+<tr class="memitem:a7fc5e5520345e2744bd36a3d2f21c31d"><td class="memTemplParams" colspan="2"><a id="a7fc5e5520345e2744bd36a3d2f21c31d"></a>
 template&lt;FloatType T, typename Ratio &gt; </td></tr>
-<tr class="memitem:a5aa3ad9448f9797199cf6ab40fca3316"><td class="memTemplItemLeft" align="right" valign="top">const T&#160;</td><td class="memTemplItemRight" valign="bottom"><b>engine::util::DurationTo</b> (Time start, Time stop)</td></tr>
-<tr class="separator:a5aa3ad9448f9797199cf6ab40fca3316"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fc5e5520345e2744bd36a3d2f21c31d"><td class="memTemplItemLeft" align="right" valign="top">const T&#160;</td><td class="memTemplItemRight" valign="bottom"><b>lambda::core::util::DurationTo</b> (const <a class="el" href="classlambda_1_1util_1_1Time.html">Time</a> &amp;start, const <a class="el" href="classlambda_1_1util_1_1Time.html">Time</a> &amp;end)</td></tr>
+<tr class="separator:a7fc5e5520345e2744bd36a3d2f21c31d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a8ef991fdc6513af16e871e6b1f9a2ab1"><td class="memTemplParams" colspan="2"><a id="a8ef991fdc6513af16e871e6b1f9a2ab1"></a>
+<tr class="memitem:a94ab5106c0c54f4218a6028489171393"><td class="memTemplParams" colspan="2"><a id="a94ab5106c0c54f4218a6028489171393"></a>
 template&lt;class T &gt; </td></tr>
-<tr class="memitem:a8ef991fdc6513af16e871e6b1f9a2ab1"><td class="memTemplItemLeft" align="right" valign="top">concept&#160;</td><td class="memTemplItemRight" valign="bottom"><b>engine::util::FloatType</b> = std::floating_point&lt;T&gt;</td></tr>
-<tr class="separator:a8ef991fdc6513af16e871e6b1f9a2ab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94ab5106c0c54f4218a6028489171393"><td class="memTemplItemLeft" align="right" valign="top">concept&#160;</td><td class="memTemplItemRight" valign="bottom"><b>lambda::core::util::FloatType</b> = std::floating_point&lt;T&gt;</td></tr>
+<tr class="separator:a94ab5106c0c54f4218a6028489171393"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Cross platform timing utility for the game engine. </p>

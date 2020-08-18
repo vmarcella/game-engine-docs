@@ -2,6 +2,15 @@
 \label{classlambda_1_1core_1_1renderer_1_1IndexBuffer}\index{lambda::core::renderer::IndexBuffer@{lambda::core::renderer::IndexBuffer}}
 
 
+A general abstraction of an Index Buffer.  
+
+
+
+
+{\ttfamily \#include $<$Buffer.\+h$>$}
+
+
+
 Inheritance diagram for lambda\+::core\+::renderer\+::Index\+Buffer\+:
 \nopagebreak
 \begin{figure}[H]
@@ -13,54 +22,37 @@ Inheritance diagram for lambda\+::core\+::renderer\+::Index\+Buffer\+:
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1IndexBuffer_a5ccc497940929c2134f183f7e99c82bc}\label{classlambda_1_1core_1_1renderer_1_1IndexBuffer_a5ccc497940929c2134f183f7e99c82bc}} 
-virtual void \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1IndexBuffer_a5ccc497940929c2134f183f7e99c82bc}{Bind}} () const =0
-\begin{DoxyCompactList}\small\item\em Bind the current \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1IndexBuffer}{Index\+Buffer}} to the current rendering context. \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1IndexBuffer_aafdf0e96111229c95427f1057a57c8b3}{Unbind}} () const =0
-\begin{DoxyCompactList}\small\item\em Unbind the current \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1IndexBuffer}{Index\+Buffer}} from the current rendering context. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1IndexBuffer_a4ba24a9674f027777802d401617315cd}\label{classlambda_1_1core_1_1renderer_1_1IndexBuffer_a4ba24a9674f027777802d401617315cd}} 
-virtual uint32\+\_\+t \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1IndexBuffer_a4ba24a9674f027777802d401617315cd}{Get\+Count}} () const =0
-\begin{DoxyCompactList}\small\item\em Get the count of indices within the current \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1IndexBuffer}{Index\+Buffer}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1IndexBuffer_a7beaa6d1d8c736e96da6332138102c00}\label{classlambda_1_1core_1_1renderer_1_1IndexBuffer_a7beaa6d1d8c736e96da6332138102c00}} 
+virtual void \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1IndexBuffer_a7beaa6d1d8c736e96da6332138102c00}{Bind}} () const =0
+\begin{DoxyCompactList}\small\item\em Binds the \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1IndexBuffer}{Index\+Buffer}} to the G\+PU. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1IndexBuffer_a5bdadf57cef19a008b39f94e70bd85e7}\label{classlambda_1_1core_1_1renderer_1_1IndexBuffer_a5bdadf57cef19a008b39f94e70bd85e7}} 
+virtual void \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1IndexBuffer_a5bdadf57cef19a008b39f94e70bd85e7}{Unbind}} () const =0
+\begin{DoxyCompactList}\small\item\em Unbinds the \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1IndexBuffer}{Index\+Buffer}} to the G\+PU. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1IndexBuffer_a05430ac42cefe9b4eb11053e1d9dbea0}\label{classlambda_1_1core_1_1renderer_1_1IndexBuffer_a05430ac42cefe9b4eb11053e1d9dbea0}} 
+virtual uint32\+\_\+t \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1IndexBuffer_a05430ac42cefe9b4eb11053e1d9dbea0}{Get\+Count}} () const =0
+\begin{DoxyCompactList}\small\item\em Get the count. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static memory\+::\+Shared$<$ \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1IndexBuffer}{Index\+Buffer}} $>$ \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1IndexBuffer_ac529c45258bff570a933e2c0a3664411}{Create}} (uint32\+\_\+t $\ast$indices, uint32\+\_\+t count)
-\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1IndexBuffer}{Index\+Buffer}} through the Graphics A\+PI that is being used at compile time. \end{DoxyCompactList}\end{DoxyCompactItemize}
+static memory\+::\+Shared$<$ \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1IndexBuffer}{Index\+Buffer}} $>$ \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1IndexBuffer_a1bc8489d066f30ca98d8fd9e108939e1}{Create}} (uint32\+\_\+t $\ast$indices, uint32\+\_\+t count)
+\begin{DoxyCompactList}\small\item\em Create an \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1IndexBuffer}{Index\+Buffer}} given a pointer to an array of indices and the count of indices in the array. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+A general abstraction of an Index Buffer. 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1IndexBuffer_ac529c45258bff570a933e2c0a3664411}\label{classlambda_1_1core_1_1renderer_1_1IndexBuffer_ac529c45258bff570a933e2c0a3664411}} 
+\mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1IndexBuffer_a1bc8489d066f30ca98d8fd9e108939e1}\label{classlambda_1_1core_1_1renderer_1_1IndexBuffer_a1bc8489d066f30ca98d8fd9e108939e1}} 
 \index{lambda::core::renderer::IndexBuffer@{lambda::core::renderer::IndexBuffer}!Create@{Create}}
 \index{Create@{Create}!lambda::core::renderer::IndexBuffer@{lambda::core::renderer::IndexBuffer}}
 \doxysubsubsection{\texorpdfstring{Create()}{Create()}}
-{\footnotesize\ttfamily Index\+Buffer\+::\+Create (\begin{DoxyParamCaption}\item[{uint32\+\_\+t $\ast$}]{indices,  }\item[{uint32\+\_\+t}]{count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily memory\+::\+Shared$<$ \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1IndexBuffer}{Index\+Buffer}} $>$ lambda\+::core\+::renderer\+::\+Index\+Buffer\+::\+Create (\begin{DoxyParamCaption}\item[{uint32\+\_\+t $\ast$}]{indices,  }\item[{uint32\+\_\+t}]{count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
-Creates a \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1IndexBuffer}{Index\+Buffer}} through the Graphics A\+PI that is being used at compile time. 
+Create an \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1IndexBuffer}{Index\+Buffer}} given a pointer to an array of indices and the count of indices in the array. 
 
-
-\begin{DoxyParams}{Parameters}
-{\em indices} & -\/ a pointer to an array of indices to be registered. \\
-\hline
-{\em size} & -\/ The size of the vertices in bytes. This is the primary method of creating platform independent index buffers and what should be used by users to create Vertex Buffers that are compatible with the rendering A\+PI. \\
-\hline
-\end{DoxyParams}
-\mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1IndexBuffer_aafdf0e96111229c95427f1057a57c8b3}\label{classlambda_1_1core_1_1renderer_1_1IndexBuffer_aafdf0e96111229c95427f1057a57c8b3}} 
-\index{lambda::core::renderer::IndexBuffer@{lambda::core::renderer::IndexBuffer}!Unbind@{Unbind}}
-\index{Unbind@{Unbind}!lambda::core::renderer::IndexBuffer@{lambda::core::renderer::IndexBuffer}}
-\doxysubsubsection{\texorpdfstring{Unbind()}{Unbind()}}
-{\footnotesize\ttfamily Index\+Buffer\+::\+Unbind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Unbind the current \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1IndexBuffer}{Index\+Buffer}} from the current rendering context. 
-
-Any vertex buffer that relies on this buffer will not be able to access the contents of it once unbound from the graphics context. 
-
-Implemented in \mbox{\hyperlink{classlambda_1_1platform_1_1opengl_1_1OpenGLIndexBuffer_ab8869419aef195f933ea63bfbe2a8a6c}{lambda\+::platform\+::opengl\+::\+Open\+G\+L\+Index\+Buffer}}.
-
-
+While this returns a platform independent \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1IndexBuffer}{Index\+Buffer}}, the \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1IndexBuffer}{Index\+Buffer}} is still platform specific. 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

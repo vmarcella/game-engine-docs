@@ -80,7 +80,7 @@ Inheritance diagram for lambda::platform::opengl::OpenGLVertexBuffer:</div>
 <div class="center"><img src="classlambda_1_1platform_1_1opengl_1_1OpenGLVertexBuffer__inherit__graph.png" border="0" usemap="#lambda_1_1platform_1_1opengl_1_1OpenGLVertexBuffer_inherit__map" alt="Inheritance graph"/></div>
 <map name="lambda_1_1platform_1_1opengl_1_1OpenGLVertexBuffer_inherit__map" id="lambda_1_1platform_1_1opengl_1_1OpenGLVertexBuffer_inherit__map">
 <area shape="rect" title=" " alt="" coords="5,95,192,136"/>
-<area shape="rect" href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html" title=" " alt="" coords="13,5,184,47"/>
+<area shape="rect" href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html" title="A general abstraction of Vertex Buffer." alt="" coords="13,5,184,47"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
@@ -89,7 +89,7 @@ Collaboration diagram for lambda::platform::opengl::OpenGLVertexBuffer:</div>
 <div class="center"><img src="classlambda_1_1platform_1_1opengl_1_1OpenGLVertexBuffer__coll__graph.png" border="0" usemap="#lambda_1_1platform_1_1opengl_1_1OpenGLVertexBuffer_coll__map" alt="Collaboration graph"/></div>
 <map name="lambda_1_1platform_1_1opengl_1_1OpenGLVertexBuffer_coll__map" id="lambda_1_1platform_1_1opengl_1_1OpenGLVertexBuffer_coll__map">
 <area shape="rect" title=" " alt="" coords="5,95,192,136"/>
-<area shape="rect" href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html" title=" " alt="" coords="13,5,184,47"/>
+<area shape="rect" href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html" title="A general abstraction of Vertex Buffer." alt="" coords="13,5,184,47"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -110,9 +110,9 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_static_methods_classlambda_1_1core_1_1renderer_1_1VertexBuffer"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classlambda_1_1core_1_1renderer_1_1VertexBuffer')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html">lambda::core::renderer::VertexBuffer</a></td></tr>
-<tr class="memitem:a461601fdd3b858c65803f49ef5fbd02b inherit pub_static_methods_classlambda_1_1core_1_1renderer_1_1VertexBuffer"><td class="memItemLeft" align="right" valign="top">static memory::Shared&lt; <a class="el" href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html">VertexBuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html#a461601fdd3b858c65803f49ef5fbd02b">Create</a> (float *vertices, uint32_t size)</td></tr>
-<tr class="memdesc:a461601fdd3b858c65803f49ef5fbd02b inherit pub_static_methods_classlambda_1_1core_1_1renderer_1_1VertexBuffer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html">VertexBuffer</a> through the Graphics API that is being used at compile time.  <a href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html#a461601fdd3b858c65803f49ef5fbd02b">More...</a><br /></td></tr>
-<tr class="separator:a461601fdd3b858c65803f49ef5fbd02b inherit pub_static_methods_classlambda_1_1core_1_1renderer_1_1VertexBuffer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4adc71fd6e204ba2f919c12e8b5b1cf inherit pub_static_methods_classlambda_1_1core_1_1renderer_1_1VertexBuffer"><td class="memItemLeft" align="right" valign="top">static memory::Shared&lt; <a class="el" href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html">VertexBuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html#ac4adc71fd6e204ba2f919c12e8b5b1cf">Create</a> (float *vertices, uint32_t size)</td></tr>
+<tr class="memdesc:ac4adc71fd6e204ba2f919c12e8b5b1cf inherit pub_static_methods_classlambda_1_1core_1_1renderer_1_1VertexBuffer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a Vertex buffer given a pointer to an array of vertices and the size of the buffer to be stored.  <a href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html#ac4adc71fd6e204ba2f919c12e8b5b1cf">More...</a><br /></td></tr>
+<tr class="separator:ac4adc71fd6e204ba2f919c12e8b5b1cf inherit pub_static_methods_classlambda_1_1core_1_1renderer_1_1VertexBuffer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The OpenGL VertexBuffer implementation based off the generic VertexBuffer base class provided by the engines renderer. </p>
@@ -141,7 +141,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Create and bind the vertex buffer on the GPU. Will set the renderer_ID_. </p>
 
-<p>Implements <a class="el" href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html#af5bbf1ffa2bc786f4f5f13ca7edba80f">lambda::core::renderer::VertexBuffer</a>.</p>
+<p>Implements <a class="el" href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html#a7cb9910a7add221bb6fea19eb909f082">lambda::core::renderer::VertexBuffer</a>.</p>
 
 </div>
 </div>
@@ -169,7 +169,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Get the BufferLayout associated with the current VertexBuffer. </p>
 
-<p>Implements <a class="el" href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html#a0473c3631c8d64b005725e886185e8d2">lambda::core::renderer::VertexBuffer</a>.</p>
+<p>Implements <a class="el" href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html#a52e20d6552be920a766fd4e4b4680f0c">lambda::core::renderer::VertexBuffer</a>.</p>
 
 </div>
 </div>
@@ -198,7 +198,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Set the BufferLayout associated with the current VertexBuffer. </p>
 
-<p>Implements <a class="el" href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html#acdb20afa541169e8a7b9b21c99e1e219">lambda::core::renderer::VertexBuffer</a>.</p>
+<p>Implements <a class="el" href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html#ab2f7ee26ef90717908ddd6e13e80fc8e">lambda::core::renderer::VertexBuffer</a>.</p>
 
 </div>
 </div>
@@ -226,7 +226,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Unbind and delete the vertex buffer on GPU using the renderer_ID_ associated with it. </p>
 
-<p>Implements <a class="el" href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html#a25fa0ac770d6ef22a3695d2979878a02">lambda::core::renderer::VertexBuffer</a>.</p>
+<p>Implements <a class="el" href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html#aaeefcd747478fa93ff79dd2a3ff0ee7a">lambda::core::renderer::VertexBuffer</a>.</p>
 
 </div>
 </div>

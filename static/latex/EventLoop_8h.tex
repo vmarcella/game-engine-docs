@@ -1,0 +1,38 @@
+\hypertarget{EventLoop_8h}{}\doxysection{lambda/src/core/io/\+Event\+Loop.h File Reference}
+\label{EventLoop_8h}\index{lambda/src/core/io/EventLoop.h@{lambda/src/core/io/EventLoop.h}}
+
+
+An Attempt to make an Asynchronous dispatcher to run in another thread.  
+
+
+{\ttfamily \#include $<$concurrentqueue.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}core/io/\+Async\+Task.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}core/memory/\+Pointers.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}core/util/\+Time.\+h\char`\"{}}\newline
+Include dependency graph for Event\+Loop.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{EventLoop_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{EventLoop_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classlambda_1_1core_1_1io_1_1EventLoop}{lambda\+::core\+::io\+::\+Event\+Loop}}
+\begin{DoxyCompactList}\small\item\em Asynchronous Event Loop that allows the execution of code to happen in another thread. This is not recommended for production as of yet. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An Attempt to make an Asynchronous dispatcher to run in another thread. 
+
+Hopefully, the interface included in here will enable applications consuming lambda to offload i/o intensive work to another thread. 

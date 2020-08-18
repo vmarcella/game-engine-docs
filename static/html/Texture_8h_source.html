@@ -69,43 +69,46 @@ $(function() {
 <div class="title">Texture.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="Texture_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef LAMBDA_SRC_CORE_RENDERER_TEXTURE_H_</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define LAMBDA_SRC_CORE_RENDERER_TEXTURE_H_</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;bits/stdint-uintn.h&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<a href="Texture_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef LAMBDA_SRC_CORE_RENDERER_TEXTURE_H_</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define LAMBDA_SRC_CORE_RENDERER_TEXTURE_H_</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;bits/stdint-uintn.h&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Pointers_8h.html">core/memory/Pointers.h</a>&quot;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Pointers_8h.html">core/memory/Pointers.h</a>&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span>lambda {</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span>core {</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span>renderer {</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1renderer_1_1Texture.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="classlambda_1_1core_1_1renderer_1_1Texture.html">Texture</a> {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classlambda_1_1core_1_1renderer_1_1Texture.html">Texture</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keyword">virtual</span> uint32_t GetWidth() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keyword">virtual</span> uint32_t GetHeight() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> Bind(uint32_t slot = 0) <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;};</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>lambda {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span>core {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span>renderer {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1renderer_1_1Texture.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="classlambda_1_1core_1_1renderer_1_1Texture.html">Texture</a> {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classlambda_1_1core_1_1renderer_1_1Texture.html">Texture</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1renderer_1_1Texture.html#a6fded64108b2827286a03f34918c58a7">   23</a></span>&#160;  <span class="keyword">virtual</span> uint32_t <a class="code" href="classlambda_1_1core_1_1renderer_1_1Texture.html#a6fded64108b2827286a03f34918c58a7">GetWidth</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1renderer_1_1Texture.html#a400cf81016893cdf2245c65aba532fc0">   25</a></span>&#160;  <span class="keyword">virtual</span> uint32_t <a class="code" href="classlambda_1_1core_1_1renderer_1_1Texture.html#a400cf81016893cdf2245c65aba532fc0">GetHeight</a>() <span class="keyword">const</span> = 0;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1renderer_1_1Texture2D.html">   27</a></span>&#160;<span class="keyword">class </span><a class="code" href="classlambda_1_1core_1_1renderer_1_1Texture2D.html">Texture2D</a> : <span class="keyword">public</span> <a class="code" href="classlambda_1_1core_1_1renderer_1_1Texture.html">Texture</a> {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">static</span> memory::Shared&lt;Texture2D&gt; Create(<span class="keyword">const</span> std::string&amp; path);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}  <span class="comment">// namespace renderer</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}  <span class="comment">// namespace core</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}  <span class="comment">// namespace lambda</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#endif  // LAMBDA_SRC_CORE_RENDERER_TEXTURE_H_</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1renderer_1_1Texture.html#a0a0742bd91fc6da2967750ae1400e5eb">   28</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlambda_1_1core_1_1renderer_1_1Texture.html#a0a0742bd91fc6da2967750ae1400e5eb">Bind</a>(uint32_t slot = 0) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1renderer_1_1Texture2D.html">   34</a></span>&#160;<span class="keyword">class </span><a class="code" href="classlambda_1_1core_1_1renderer_1_1Texture2D.html">Texture2D</a> : <span class="keyword">public</span> <a class="code" href="classlambda_1_1core_1_1renderer_1_1Texture.html">Texture</a> {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keyword">static</span> memory::Shared&lt;Texture2D&gt; <a class="code" href="classlambda_1_1core_1_1renderer_1_1Texture2D.html#a8a022c1454b64102e17c2bca57614520">Create</a>(<span class="keyword">const</span> std::string&amp; path);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}  <span class="comment">// namespace renderer</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}  <span class="comment">// namespace core</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}  <span class="comment">// namespace lambda</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif  // LAMBDA_SRC_CORE_RENDERER_TEXTURE_H_</span></div>
 </div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1Texture_html_a400cf81016893cdf2245c65aba532fc0"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1Texture.html#a400cf81016893cdf2245c65aba532fc0">lambda::core::renderer::Texture::GetHeight</a></div><div class="ttdeci">virtual uint32_t GetHeight() const =0</div><div class="ttdoc">Get the height of the texture.</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1Texture2D_html_a8a022c1454b64102e17c2bca57614520"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1Texture2D.html#a8a022c1454b64102e17c2bca57614520">lambda::core::renderer::Texture2D::Create</a></div><div class="ttdeci">static memory::Shared&lt; Texture2D &gt; Create(const std::string &amp;path)</div><div class="ttdoc">Create a 2D Texture given the path to a texture asset.</div><div class="ttdef"><b>Definition:</b> Texture.cpp:13</div></div>
 <div class="ttc" id="aPointers_8h_html"><div class="ttname"><a href="Pointers_8h.html">Pointers.h</a></div><div class="ttdoc">Abstraction for handling pointers within the engine. Currently just aliases for unique and shared poi...</div></div>
-<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1Texture2D_html"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1Texture2D.html">lambda::core::renderer::Texture2D</a></div><div class="ttdef"><b>Definition:</b> Texture.h:27</div></div>
-<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1Texture_html"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1Texture.html">lambda::core::renderer::Texture</a></div><div class="ttdef"><b>Definition:</b> Texture.h:17</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1Texture_html_a6fded64108b2827286a03f34918c58a7"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1Texture.html#a6fded64108b2827286a03f34918c58a7">lambda::core::renderer::Texture::GetWidth</a></div><div class="ttdeci">virtual uint32_t GetWidth() const =0</div><div class="ttdoc">Get the width of the texture.</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1Texture_html_a0a0742bd91fc6da2967750ae1400e5eb"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1Texture.html#a0a0742bd91fc6da2967750ae1400e5eb">lambda::core::renderer::Texture::Bind</a></div><div class="ttdeci">virtual void Bind(uint32_t slot=0) const =0</div><div class="ttdoc">Bind the texture to the GPU.</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1Texture2D_html"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1Texture2D.html">lambda::core::renderer::Texture2D</a></div><div class="ttdoc">The 2D Texture API.</div><div class="ttdef"><b>Definition:</b> Texture.h:34</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1Texture_html"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1Texture.html">lambda::core::renderer::Texture</a></div><div class="ttdoc">The abstract texture API.</div><div class="ttdef"><b>Definition:</b> Texture.h:18</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

@@ -73,42 +73,52 @@ $(function() {
 <div class="title">lambda::core::renderer::VertexBuffer Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>A general abstraction of Vertex Buffer.  
+ <a href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Buffer_8h_source.html">Buffer.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for lambda::core::renderer::VertexBuffer:</div>
 <div class="dyncontent">
 <div class="center"><img src="classlambda_1_1core_1_1renderer_1_1VertexBuffer__inherit__graph.png" border="0" usemap="#lambda_1_1core_1_1renderer_1_1VertexBuffer_inherit__map" alt="Inheritance graph"/></div>
 <map name="lambda_1_1core_1_1renderer_1_1VertexBuffer_inherit__map" id="lambda_1_1core_1_1renderer_1_1VertexBuffer_inherit__map">
-<area shape="rect" title=" " alt="" coords="13,5,184,47"/>
+<area shape="rect" title="A general abstraction of Vertex Buffer." alt="" coords="13,5,184,47"/>
 <area shape="rect" href="classlambda_1_1platform_1_1opengl_1_1OpenGLVertexBuffer.html" title=" " alt="" coords="5,95,192,136"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af5bbf1ffa2bc786f4f5f13ca7edba80f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html#af5bbf1ffa2bc786f4f5f13ca7edba80f">Bind</a> () const =0</td></tr>
-<tr class="memdesc:af5bbf1ffa2bc786f4f5f13ca7edba80f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind the vertex buffer to the current rendering context.  <a href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html#af5bbf1ffa2bc786f4f5f13ca7edba80f">More...</a><br /></td></tr>
-<tr class="separator:af5bbf1ffa2bc786f4f5f13ca7edba80f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25fa0ac770d6ef22a3695d2979878a02"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html#a25fa0ac770d6ef22a3695d2979878a02">Unbind</a> () const =0</td></tr>
-<tr class="memdesc:a25fa0ac770d6ef22a3695d2979878a02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unbind the vertex buffer to the current rendering context.  <a href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html#a25fa0ac770d6ef22a3695d2979878a02">More...</a><br /></td></tr>
-<tr class="separator:a25fa0ac770d6ef22a3695d2979878a02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0473c3631c8d64b005725e886185e8d2"><td class="memItemLeft" align="right" valign="top"><a id="a0473c3631c8d64b005725e886185e8d2"></a>
-virtual const <a class="el" href="classlambda_1_1core_1_1renderer_1_1BufferLayout.html">BufferLayout</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html#a0473c3631c8d64b005725e886185e8d2">GetLayout</a> () const =0</td></tr>
-<tr class="memdesc:a0473c3631c8d64b005725e886185e8d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the <a class="el" href="classlambda_1_1core_1_1renderer_1_1BufferLayout.html">BufferLayout</a> tied to the current <a class="el" href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html">VertexBuffer</a>. <br /></td></tr>
-<tr class="separator:a0473c3631c8d64b005725e886185e8d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdb20afa541169e8a7b9b21c99e1e219"><td class="memItemLeft" align="right" valign="top"><a id="acdb20afa541169e8a7b9b21c99e1e219"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html#acdb20afa541169e8a7b9b21c99e1e219">SetLayout</a> (const <a class="el" href="classlambda_1_1core_1_1renderer_1_1BufferLayout.html">BufferLayout</a> &amp;)=0</td></tr>
-<tr class="memdesc:acdb20afa541169e8a7b9b21c99e1e219"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the <a class="el" href="classlambda_1_1core_1_1renderer_1_1BufferLayout.html">BufferLayout</a> for the current <a class="el" href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html">VertexBuffer</a>. <br /></td></tr>
-<tr class="separator:acdb20afa541169e8a7b9b21c99e1e219"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cb9910a7add221bb6fea19eb909f082"><td class="memItemLeft" align="right" valign="top"><a id="a7cb9910a7add221bb6fea19eb909f082"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html#a7cb9910a7add221bb6fea19eb909f082">Bind</a> () const =0</td></tr>
+<tr class="memdesc:a7cb9910a7add221bb6fea19eb909f082"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a vertex buffer to the GPU. <br /></td></tr>
+<tr class="separator:a7cb9910a7add221bb6fea19eb909f082"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaeefcd747478fa93ff79dd2a3ff0ee7a"><td class="memItemLeft" align="right" valign="top"><a id="aaeefcd747478fa93ff79dd2a3ff0ee7a"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html#aaeefcd747478fa93ff79dd2a3ff0ee7a">Unbind</a> () const =0</td></tr>
+<tr class="memdesc:aaeefcd747478fa93ff79dd2a3ff0ee7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unbinds a vertex buffer from the GPU. (Rarely needs to be used.) <br /></td></tr>
+<tr class="separator:aaeefcd747478fa93ff79dd2a3ff0ee7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52e20d6552be920a766fd4e4b4680f0c"><td class="memItemLeft" align="right" valign="top"><a id="a52e20d6552be920a766fd4e4b4680f0c"></a>
+virtual const <a class="el" href="classlambda_1_1core_1_1renderer_1_1BufferLayout.html">BufferLayout</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html#a52e20d6552be920a766fd4e4b4680f0c">GetLayout</a> () const =0</td></tr>
+<tr class="memdesc:a52e20d6552be920a766fd4e4b4680f0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the layout associated. <br /></td></tr>
+<tr class="separator:a52e20d6552be920a766fd4e4b4680f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2f7ee26ef90717908ddd6e13e80fc8e"><td class="memItemLeft" align="right" valign="top"><a id="ab2f7ee26ef90717908ddd6e13e80fc8e"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html#ab2f7ee26ef90717908ddd6e13e80fc8e">SetLayout</a> (const <a class="el" href="classlambda_1_1core_1_1renderer_1_1BufferLayout.html">BufferLayout</a> &amp;)=0</td></tr>
+<tr class="memdesc:ab2f7ee26ef90717908ddd6e13e80fc8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the layout associated with the <a class="el" href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html" title="A general abstraction of Vertex Buffer.">VertexBuffer</a>. <br /></td></tr>
+<tr class="separator:ab2f7ee26ef90717908ddd6e13e80fc8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a461601fdd3b858c65803f49ef5fbd02b"><td class="memItemLeft" align="right" valign="top">static memory::Shared&lt; <a class="el" href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html">VertexBuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html#a461601fdd3b858c65803f49ef5fbd02b">Create</a> (float *vertices, uint32_t size)</td></tr>
-<tr class="memdesc:a461601fdd3b858c65803f49ef5fbd02b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html">VertexBuffer</a> through the Graphics API that is being used at compile time.  <a href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html#a461601fdd3b858c65803f49ef5fbd02b">More...</a><br /></td></tr>
-<tr class="separator:a461601fdd3b858c65803f49ef5fbd02b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4adc71fd6e204ba2f919c12e8b5b1cf"><td class="memItemLeft" align="right" valign="top">static memory::Shared&lt; <a class="el" href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html">VertexBuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html#ac4adc71fd6e204ba2f919c12e8b5b1cf">Create</a> (float *vertices, uint32_t size)</td></tr>
+<tr class="memdesc:ac4adc71fd6e204ba2f919c12e8b5b1cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a Vertex buffer given a pointer to an array of vertices and the size of the buffer to be stored.  <a href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html#ac4adc71fd6e204ba2f919c12e8b5b1cf">More...</a><br /></td></tr>
+<tr class="separator:ac4adc71fd6e204ba2f919c12e8b5b1cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="af5bbf1ffa2bc786f4f5f13ca7edba80f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5bbf1ffa2bc786f4f5f13ca7edba80f">&#9670;&nbsp;</a></span>Bind()</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A general abstraction of Vertex Buffer. </p>
+<p>This should be constructed </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac4adc71fd6e204ba2f919c12e8b5b1cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4adc71fd6e204ba2f919c12e8b5b1cf">&#9670;&nbsp;</a></span>Create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -117,37 +127,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">VertexBuffer::Bind </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Bind the vertex buffer to the current rendering context. </p>
-<p>The binding process is entirely dependent upon the grahpics API. However, it should be noted that this function needs to be called by the user whenever they're trying to bind the buffer to the render API. </p>
-
-<p>Implemented in <a class="el" href="classlambda_1_1platform_1_1opengl_1_1OpenGLVertexBuffer.html#a2ebb10a0bfcc9a21f37df02a1b0edd1d">lambda::platform::opengl::OpenGLVertexBuffer</a>.</p>
-
-</div>
-</div>
-<a id="a461601fdd3b858c65803f49ef5fbd02b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a461601fdd3b858c65803f49ef5fbd02b">&#9670;&nbsp;</a></span>Create()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">VertexBuffer::Create </td>
+          <td class="memname">memory::Shared&lt; <a class="el" href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html">VertexBuffer</a> &gt; lambda::core::renderer::VertexBuffer::Create </td>
           <td>(</td>
           <td class="paramtype">float *&#160;</td>
           <td class="paramname"><em>vertices</em>, </td>
@@ -171,44 +151,8 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Creates a <a class="el" href="classlambda_1_1core_1_1renderer_1_1VertexBuffer.html">VertexBuffer</a> through the Graphics API that is being used at compile time. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">vertices</td><td>- a pointer to an array of vertices to be registered. </td></tr>
-    <tr><td class="paramname">size</td><td>- The size of the vertices in bytes. This is the primary method of creating platform independent vertex buffers and what should be used by users to create Vertex Buffers that are compatible with the rendering API. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a25fa0ac770d6ef22a3695d2979878a02"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a25fa0ac770d6ef22a3695d2979878a02">&#9670;&nbsp;</a></span>Unbind()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">VertexBuffer::Unbind </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Unbind the vertex buffer to the current rendering context. </p>
-<p>The unbinding process is entirely dependent upon the grahpics API. However, it should be noted that this function needs to be called by the user whenever they're trying to unbind the buffer from the render API. (For cleaning up anything still in memory.) </p>
-
-<p>Implemented in <a class="el" href="classlambda_1_1platform_1_1opengl_1_1OpenGLVertexBuffer.html#a0cc6f0080481c97c31640f28b2c004ea">lambda::platform::opengl::OpenGLVertexBuffer</a>.</p>
+<p>Create a Vertex buffer given a pointer to an array of vertices and the size of the buffer to be stored. </p>
+<p>While this returns a platform independent vertex buffer, it is still bound to a platform specific implementation under the hood. </p>
 
 </div>
 </div>

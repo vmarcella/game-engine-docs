@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classlambda_1_1core_1_1layers_1_1LayerStack.html" title="A Stack based structure for lambda to manage layers in." alt="" coords="5,5,160,47"/>
+<area shape="rect" id="node1" href="$classlambda_1_1core_1_1renderer_1_1GraphicsContext.html" title="The Graphics context abstraction." alt="" coords="5,5,176,47"/>
+<area shape="rect" id="node2" href="$classlambda_1_1platform_1_1opengl_1_1OpenGLContext.html" title=" " alt="" coords="224,5,411,47"/>
 </map>

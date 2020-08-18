@@ -72,26 +72,38 @@ $(function() {
 <div class="title">lambda::core::renderer::ShaderLibrary Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>A library for managing many different shaders.  
+ <a href="classlambda_1_1core_1_1renderer_1_1ShaderLibrary.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Shader_8h_source.html">Shader.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a0444cfab80a78f417f46e19f51e81b94"><td class="memItemLeft" align="right" valign="top"><a id="a0444cfab80a78f417f46e19f51e81b94"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Add</b> (const memory::Shared&lt; <a class="el" href="classlambda_1_1core_1_1renderer_1_1Shader.html">Shader</a> &gt; &amp;shader)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1renderer_1_1ShaderLibrary.html#a0444cfab80a78f417f46e19f51e81b94">Add</a> (const memory::Shared&lt; <a class="el" href="classlambda_1_1core_1_1renderer_1_1Shader.html">Shader</a> &gt; &amp;shader)</td></tr>
+<tr class="memdesc:a0444cfab80a78f417f46e19f51e81b94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a shader that has already been created into the library. <br /></td></tr>
 <tr class="separator:a0444cfab80a78f417f46e19f51e81b94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a614d838e38a6dba2c132a54e82489646"><td class="memItemLeft" align="right" valign="top"><a id="a614d838e38a6dba2c132a54e82489646"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Add</b> (const std::string &amp;name, const memory::Shared&lt; <a class="el" href="classlambda_1_1core_1_1renderer_1_1Shader.html">Shader</a> &gt; &amp;shader)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1renderer_1_1ShaderLibrary.html#a614d838e38a6dba2c132a54e82489646">Add</a> (const std::string &amp;name, const memory::Shared&lt; <a class="el" href="classlambda_1_1core_1_1renderer_1_1Shader.html">Shader</a> &gt; &amp;shader)</td></tr>
+<tr class="memdesc:a614d838e38a6dba2c132a54e82489646"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a shader that has already been created into the library. <br /></td></tr>
 <tr class="separator:a614d838e38a6dba2c132a54e82489646"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d50042c2c1ba267794ee3bd618214c0"><td class="memItemLeft" align="right" valign="top"><a id="a0d50042c2c1ba267794ee3bd618214c0"></a>
-memory::Shared&lt; <a class="el" href="classlambda_1_1core_1_1renderer_1_1Shader.html">Shader</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Get</b> (const std::string &amp;name)</td></tr>
+memory::Shared&lt; <a class="el" href="classlambda_1_1core_1_1renderer_1_1Shader.html">Shader</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1renderer_1_1ShaderLibrary.html#a0d50042c2c1ba267794ee3bd618214c0">Get</a> (const std::string &amp;name)</td></tr>
+<tr class="memdesc:a0d50042c2c1ba267794ee3bd618214c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a shader from the library given the name of the shader. <br /></td></tr>
 <tr class="separator:a0d50042c2c1ba267794ee3bd618214c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6caf666ba6a3152fa33411138d0cdc4d"><td class="memItemLeft" align="right" valign="top"><a id="a6caf666ba6a3152fa33411138d0cdc4d"></a>
-memory::Shared&lt; <a class="el" href="classlambda_1_1core_1_1renderer_1_1Shader.html">Shader</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Load</b> (const std::string &amp;path)</td></tr>
+memory::Shared&lt; <a class="el" href="classlambda_1_1core_1_1renderer_1_1Shader.html">Shader</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1renderer_1_1ShaderLibrary.html#a6caf666ba6a3152fa33411138d0cdc4d">Load</a> (const std::string &amp;path)</td></tr>
+<tr class="memdesc:a6caf666ba6a3152fa33411138d0cdc4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a shader into lambda through the path of the shader. (uses the name of the shader for naming.) <br /></td></tr>
 <tr class="separator:a6caf666ba6a3152fa33411138d0cdc4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9cac63965944654b1a09fbd6ea47908"><td class="memItemLeft" align="right" valign="top"><a id="ae9cac63965944654b1a09fbd6ea47908"></a>
-memory::Shared&lt; <a class="el" href="classlambda_1_1core_1_1renderer_1_1Shader.html">Shader</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Load</b> (const std::string &amp;name, const std::string &amp;path)</td></tr>
+memory::Shared&lt; <a class="el" href="classlambda_1_1core_1_1renderer_1_1Shader.html">Shader</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1renderer_1_1ShaderLibrary.html#ae9cac63965944654b1a09fbd6ea47908">Load</a> (const std::string &amp;name, const std::string &amp;path)</td></tr>
+<tr class="memdesc:ae9cac63965944654b1a09fbd6ea47908"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a shader into lambda with a path to the shader and name to be used within the shader library. <br /></td></tr>
 <tr class="separator:ae9cac63965944654b1a09fbd6ea47908"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following files:<ul>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A library for managing many different shaders. </p>
+</div><hr/>The documentation for this class was generated from the following files:<ul>
 <li>lambda/src/core/renderer/<a class="el" href="Shader_8h_source.html">Shader.h</a></li>
 <li>lambda/src/core/renderer/Shader.cpp</li>
 </ul>

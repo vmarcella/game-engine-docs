@@ -2,6 +2,15 @@
 \label{classlambda_1_1core_1_1renderer_1_1RendererAPI}\index{lambda::core::renderer::RendererAPI@{lambda::core::renderer::RendererAPI}}
 
 
+The abstract representation of rendering features and functions supported by Lambda.  
+
+
+
+
+{\ttfamily \#include $<$Renderer\+A\+P\+I.\+h$>$}
+
+
+
 Inheritance diagram for lambda\+::core\+::renderer\+::Renderer\+A\+PI\+:
 \nopagebreak
 \begin{figure}[H]
@@ -14,35 +23,40 @@ Inheritance diagram for lambda\+::core\+::renderer\+::Renderer\+A\+PI\+:
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1RendererAPI_a6456ab2804367fa5627c576dcf485483}\label{classlambda_1_1core_1_1renderer_1_1RendererAPI_a6456ab2804367fa5627c576dcf485483}} 
-enum {\bfseries A\+PI} \{ {\bfseries None} = 0, 
+enum \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1RendererAPI_a6456ab2804367fa5627c576dcf485483}{A\+PI}} \{ {\bfseries None} = 0, 
 {\bfseries Open\+GL} = 1
  \}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em A\+P\+Is supported by the engine. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1RendererAPI_ae8b0c2b243e849a25f893ef308c47068}\label{classlambda_1_1core_1_1renderer_1_1RendererAPI_ae8b0c2b243e849a25f893ef308c47068}} 
-virtual void {\bfseries Init} ()=0
-\item 
-\mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1RendererAPI_a3d07c01be80b3e690dd9b2e227307b1a}\label{classlambda_1_1core_1_1renderer_1_1RendererAPI_a3d07c01be80b3e690dd9b2e227307b1a}} 
-virtual void \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1RendererAPI_a3d07c01be80b3e690dd9b2e227307b1a}{Set\+Clear\+Color}} (const glm\+::vec4 \&color)=0
-\begin{DoxyCompactList}\small\item\em Set the clear color to be used for the renderer. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1RendererAPI_ae8b0c2b243e849a25f893ef308c47068}{Init}} ()=0
+\begin{DoxyCompactList}\small\item\em Setup the A\+PI for rendering. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1RendererAPI_a64bc2ed5a3b0a7b207acd28493e67380}\label{classlambda_1_1core_1_1renderer_1_1RendererAPI_a64bc2ed5a3b0a7b207acd28493e67380}} 
+virtual void \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1RendererAPI_a64bc2ed5a3b0a7b207acd28493e67380}{Set\+Clear\+Color}} (const glm\+::vec4 \&color)=0
+\begin{DoxyCompactList}\small\item\em Setup the A\+P\+Is screen clear color. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1RendererAPI_ae2850087e4f3177bcfcb33304f1a94b3}\label{classlambda_1_1core_1_1renderer_1_1RendererAPI_ae2850087e4f3177bcfcb33304f1a94b3}} 
-virtual void {\bfseries Set\+Viewport} (uint32\+\_\+t x, uint32\+\_\+t y, uint32\+\_\+t width, uint32\+\_\+t height)=0
-\item 
-\mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1RendererAPI_aa077a3c204bc66b30a55a653ab9d4d83}\label{classlambda_1_1core_1_1renderer_1_1RendererAPI_aa077a3c204bc66b30a55a653ab9d4d83}} 
-virtual void \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1RendererAPI_aa077a3c204bc66b30a55a653ab9d4d83}{Clear}} ()=0
-\begin{DoxyCompactList}\small\item\em Clear the screen. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1RendererAPI_a493f62e5fc0d918148142dc282ddcf1d}\label{classlambda_1_1core_1_1renderer_1_1RendererAPI_a493f62e5fc0d918148142dc282ddcf1d}} 
-virtual void \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1RendererAPI_a493f62e5fc0d918148142dc282ddcf1d}{Draw\+Indexed}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1VertexArray}{Vertex\+Array}} $>$ \&vertex\+\_\+array)=0
-\begin{DoxyCompactList}\small\item\em Render a vertex array. \end{DoxyCompactList}\end{DoxyCompactItemize}
+virtual void \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1RendererAPI_ae2850087e4f3177bcfcb33304f1a94b3}{Set\+Viewport}} (uint32\+\_\+t x, uint32\+\_\+t y, uint32\+\_\+t width, uint32\+\_\+t height)=0
+\begin{DoxyCompactList}\small\item\em Handle setting the viewport. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1RendererAPI_a5ffc1c8877807cf63ff6b10f43a751d5}\label{classlambda_1_1core_1_1renderer_1_1RendererAPI_a5ffc1c8877807cf63ff6b10f43a751d5}} 
+virtual void \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1RendererAPI_a5ffc1c8877807cf63ff6b10f43a751d5}{Clear}} ()=0
+\begin{DoxyCompactList}\small\item\em Handle clearing the screen. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1RendererAPI_a23e15c9085dae7e0753d31a815326600}\label{classlambda_1_1core_1_1renderer_1_1RendererAPI_a23e15c9085dae7e0753d31a815326600}} 
+virtual void \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1RendererAPI_a23e15c9085dae7e0753d31a815326600}{Draw\+Indexed}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1VertexArray}{Vertex\+Array}} $>$ \&vertex\+\_\+array)=0
+\begin{DoxyCompactList}\small\item\em Handle drawing a vertex array. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1RendererAPI_a2473c88e916fd045dda80c53a5a7dee8}\label{classlambda_1_1core_1_1renderer_1_1RendererAPI_a2473c88e916fd045dda80c53a5a7dee8}} 
-static A\+PI \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1RendererAPI_a2473c88e916fd045dda80c53a5a7dee8}{Get\+A\+PI}} ()
-\begin{DoxyCompactList}\small\item\em Return the A\+PI being used within the engine. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1RendererAPI_afd8a8022342835cca4dd524baf9f3470}\label{classlambda_1_1core_1_1renderer_1_1RendererAPI_afd8a8022342835cca4dd524baf9f3470}} 
+static \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1RendererAPI_a6456ab2804367fa5627c576dcf485483}{A\+PI}} \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1RendererAPI_afd8a8022342835cca4dd524baf9f3470}{Get\+A\+PI}} ()
+\begin{DoxyCompactList}\small\item\em Return the A\+PI that is being used. (Currently only supports opengl) \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+The abstract representation of rendering features and functions supported by Lambda. 
+
+Platform specific A\+P\+Is implement most to all of these functions. 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

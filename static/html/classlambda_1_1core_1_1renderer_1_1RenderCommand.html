@@ -72,29 +72,38 @@ $(function() {
 <div class="title">lambda::core::renderer::RenderCommand Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>An interface for issuing commands to the current rendering API that is being used with lambda.  
+ <a href="classlambda_1_1core_1_1renderer_1_1RenderCommand.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="RenderCommand_8h_source.html">RenderCommand.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a9e8811405f1c863edc7680d84a359460"><td class="memItemLeft" align="right" valign="top"><a id="a9e8811405f1c863edc7680d84a359460"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>Init</b> ()</td></tr>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1renderer_1_1RenderCommand.html#a9e8811405f1c863edc7680d84a359460">Init</a> ()</td></tr>
+<tr class="memdesc:a9e8811405f1c863edc7680d84a359460"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the Rendering API. <br /></td></tr>
 <tr class="separator:a9e8811405f1c863edc7680d84a359460"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4bfb99e4da4d55a46fe34c41a1fdbdc1"><td class="memItemLeft" align="right" valign="top"><a id="a4bfb99e4da4d55a46fe34c41a1fdbdc1"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1renderer_1_1RenderCommand.html#a4bfb99e4da4d55a46fe34c41a1fdbdc1">SetClearColor</a> (const glm::vec4 &amp;color)</td></tr>
-<tr class="memdesc:a4bfb99e4da4d55a46fe34c41a1fdbdc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the color to be used for clearing the screen. <br /></td></tr>
-<tr class="separator:a4bfb99e4da4d55a46fe34c41a1fdbdc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f1063514ed86a82d35c481dd70e1797"><td class="memItemLeft" align="right" valign="top"><a id="a7f1063514ed86a82d35c481dd70e1797"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1renderer_1_1RenderCommand.html#a7f1063514ed86a82d35c481dd70e1797">SetClearColor</a> (const glm::vec4 &amp;color)</td></tr>
+<tr class="memdesc:a7f1063514ed86a82d35c481dd70e1797"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the color to clear the screen with. <br /></td></tr>
+<tr class="separator:a7f1063514ed86a82d35c481dd70e1797"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5af57322126b2465cd696517c4cb59e6"><td class="memItemLeft" align="right" valign="top"><a id="a5af57322126b2465cd696517c4cb59e6"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>SetViewport</b> (uint32_t x, uint32_t y, uint32_t width, uint32_t height)</td></tr>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1renderer_1_1RenderCommand.html#a5af57322126b2465cd696517c4cb59e6">SetViewport</a> (uint32_t x, uint32_t y, uint32_t width, uint32_t height)</td></tr>
+<tr class="memdesc:a5af57322126b2465cd696517c4cb59e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the viewport. <br /></td></tr>
 <tr class="separator:a5af57322126b2465cd696517c4cb59e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d34cb02655114f32d6b409f45c43c2f"><td class="memItemLeft" align="right" valign="top"><a id="a3d34cb02655114f32d6b409f45c43c2f"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1renderer_1_1RenderCommand.html#a3d34cb02655114f32d6b409f45c43c2f">Clear</a> ()</td></tr>
-<tr class="memdesc:a3d34cb02655114f32d6b409f45c43c2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the screen. <br /></td></tr>
-<tr class="separator:a3d34cb02655114f32d6b409f45c43c2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d8f53f494cd739607d602a956cb8f9f"><td class="memItemLeft" align="right" valign="top"><a id="a5d8f53f494cd739607d602a956cb8f9f"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1renderer_1_1RenderCommand.html#a5d8f53f494cd739607d602a956cb8f9f">DrawIndexed</a> (const memory::Shared&lt; <a class="el" href="classlambda_1_1core_1_1renderer_1_1VertexArray.html">VertexArray</a> &gt; &amp;vertex_array)</td></tr>
-<tr class="memdesc:a5d8f53f494cd739607d602a956cb8f9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Issues a platform specific graphics API to draw a vertex array. <br /></td></tr>
-<tr class="separator:a5d8f53f494cd739607d602a956cb8f9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af449e883752de4d08e8f544708a4607d"><td class="memItemLeft" align="right" valign="top"><a id="af449e883752de4d08e8f544708a4607d"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1renderer_1_1RenderCommand.html#af449e883752de4d08e8f544708a4607d">Clear</a> ()</td></tr>
+<tr class="memdesc:af449e883752de4d08e8f544708a4607d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the screen of anything that was previously rendered. <br /></td></tr>
+<tr class="separator:af449e883752de4d08e8f544708a4607d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9eb193eadfa81e28579d7aa1923ed227"><td class="memItemLeft" align="right" valign="top"><a id="a9eb193eadfa81e28579d7aa1923ed227"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1renderer_1_1RenderCommand.html#a9eb193eadfa81e28579d7aa1923ed227">DrawIndexed</a> (const memory::Shared&lt; <a class="el" href="classlambda_1_1core_1_1renderer_1_1VertexArray.html">VertexArray</a> &gt; &amp;vertex_array)</td></tr>
+<tr class="memdesc:a9eb193eadfa81e28579d7aa1923ed227"><td class="mdescLeft">&#160;</td><td class="mdescRight">Issues a draw call to the rendering API. <br /></td></tr>
+<tr class="separator:a9eb193eadfa81e28579d7aa1923ed227"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following files:<ul>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>An interface for issuing commands to the current rendering API that is being used with lambda. </p>
+</div><hr/>The documentation for this class was generated from the following files:<ul>
 <li>lambda/src/core/renderer/<a class="el" href="RenderCommand_8h_source.html">RenderCommand.h</a></li>
 <li>lambda/src/core/renderer/RenderCommand.cpp</li>
 </ul>

@@ -70,6 +70,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <a href="Shader_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef LAMBDA_SRC_CORE_RENDERER_SHADER_H_</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define LAMBDA_SRC_CORE_RENDERER_SHADER_H_</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
@@ -84,48 +85,59 @@ $(function() {
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span>core {</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span>renderer {</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1renderer_1_1Shader.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="classlambda_1_1core_1_1renderer_1_1Shader.html">Shader</a> {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classlambda_1_1core_1_1renderer_1_1Shader.html">Shader</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> Bind() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> Unbind() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keyword">inline</span> <span class="keyword">const</span> std::string&amp; GetName() { <span class="keywordflow">return</span> name_; }</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keyword">static</span> memory::Shared&lt;Shader&gt; Create(<span class="keyword">const</span> std::string&amp; path);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">static</span> memory::Shared&lt;Shader&gt; Create(</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      <span class="keyword">const</span> std::string&amp; name,</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      <span class="keyword">const</span> std::string&amp; vertex_source,</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      <span class="keyword">const</span> std::string&amp; fragment_source);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  uint32_t renderer_ID_;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  std::string name_;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1renderer_1_1ShaderLibrary.html">   39</a></span>&#160;<span class="keyword">class </span><a class="code" href="classlambda_1_1core_1_1renderer_1_1ShaderLibrary.html">ShaderLibrary</a> {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">void</span> Add(<span class="keyword">const</span> memory::Shared&lt;Shader&gt;&amp; shader);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">void</span> Add(<span class="keyword">const</span> std::string&amp; name, <span class="keyword">const</span> memory::Shared&lt;Shader&gt;&amp; shader);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  memory::Shared&lt;Shader&gt; Get(<span class="keyword">const</span> std::string&amp; name);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  memory::Shared&lt;Shader&gt; Load(<span class="keyword">const</span> std::string&amp; path);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  memory::Shared&lt;Shader&gt; Load(<span class="keyword">const</span> std::string&amp; name, <span class="keyword">const</span> std::string&amp; path);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  std::unordered_map&lt;std::string, memory::Shared&lt;Shader&gt;&gt; shader_mapping_;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}  <span class="comment">// namespace renderer</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}  <span class="comment">// namespace core</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}  <span class="comment">// namespace lambda</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif  // LAMBDA_SRC_CORE_RENDERER_SHADER_H_</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1renderer_1_1Shader.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="classlambda_1_1core_1_1renderer_1_1Shader.html">Shader</a> {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classlambda_1_1core_1_1renderer_1_1Shader.html">Shader</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1renderer_1_1Shader.html#a403513da5c44ce0d85f07cb72ed5d355">   25</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlambda_1_1core_1_1renderer_1_1Shader.html#a403513da5c44ce0d85f07cb72ed5d355">Bind</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1renderer_1_1Shader.html#ada4f8d7177e5da1f68903d5a5716d6e9">   28</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classlambda_1_1core_1_1renderer_1_1Shader.html#ada4f8d7177e5da1f68903d5a5716d6e9">Unbind</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1renderer_1_1Shader.html#a2dc1f7f1419bc6a4fb3b665e10375eca">   31</a></span>&#160;  <span class="keyword">const</span> std::string&amp; <a class="code" href="classlambda_1_1core_1_1renderer_1_1Shader.html#a2dc1f7f1419bc6a4fb3b665e10375eca">GetName</a>() { <span class="keywordflow">return</span> name_; }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keyword">static</span> memory::Shared&lt;Shader&gt; <a class="code" href="classlambda_1_1core_1_1renderer_1_1Shader.html#a63977df3fa56708876ee994f0342dc42">Create</a>(<span class="keyword">const</span> std::string&amp; path);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">static</span> memory::Shared&lt;Shader&gt; <a class="code" href="classlambda_1_1core_1_1renderer_1_1Shader.html#a63977df3fa56708876ee994f0342dc42">Create</a>(</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <span class="keyword">const</span> std::string&amp; name,</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      <span class="keyword">const</span> std::string&amp; vertex_source,</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      <span class="keyword">const</span> std::string&amp; fragment_source);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  uint32_t renderer_ID_;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  std::string name_;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;};</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1renderer_1_1ShaderLibrary.html">   49</a></span>&#160;<span class="keyword">class </span><a class="code" href="classlambda_1_1core_1_1renderer_1_1ShaderLibrary.html">ShaderLibrary</a> {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlambda_1_1core_1_1renderer_1_1ShaderLibrary.html#a0444cfab80a78f417f46e19f51e81b94">Add</a>(<span class="keyword">const</span> memory::Shared&lt;Shader&gt;&amp; shader);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlambda_1_1core_1_1renderer_1_1ShaderLibrary.html#a0444cfab80a78f417f46e19f51e81b94">Add</a>(<span class="keyword">const</span> std::string&amp; name, <span class="keyword">const</span> memory::Shared&lt;Shader&gt;&amp; shader);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  memory::Shared&lt;Shader&gt; <a class="code" href="classlambda_1_1core_1_1renderer_1_1ShaderLibrary.html#a0d50042c2c1ba267794ee3bd618214c0">Get</a>(<span class="keyword">const</span> std::string&amp; name);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  memory::Shared&lt;Shader&gt; <a class="code" href="classlambda_1_1core_1_1renderer_1_1ShaderLibrary.html#a6caf666ba6a3152fa33411138d0cdc4d">Load</a>(<span class="keyword">const</span> std::string&amp; path);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  memory::Shared&lt;Shader&gt; <a class="code" href="classlambda_1_1core_1_1renderer_1_1ShaderLibrary.html#a6caf666ba6a3152fa33411138d0cdc4d">Load</a>(<span class="keyword">const</span> std::string&amp; name, <span class="keyword">const</span> std::string&amp; path);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  std::unordered_map&lt;std::string, memory::Shared&lt;Shader&gt;&gt; shader_mapping_;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;};</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}  <span class="comment">// namespace renderer</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}  <span class="comment">// namespace core</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}  <span class="comment">// namespace lambda</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif  // LAMBDA_SRC_CORE_RENDERER_SHADER_H_</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1Shader_html"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1Shader.html">lambda::core::renderer::Shader</a></div><div class="ttdef"><b>Definition:</b> Shader.h:19</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1Shader_html"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1Shader.html">lambda::core::renderer::Shader</a></div><div class="ttdoc">A generic Shader API.</div><div class="ttdef"><b>Definition:</b> Shader.h:20</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1Shader_html_a2dc1f7f1419bc6a4fb3b665e10375eca"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1Shader.html#a2dc1f7f1419bc6a4fb3b665e10375eca">lambda::core::renderer::Shader::GetName</a></div><div class="ttdeci">const std::string &amp; GetName()</div><div class="ttdoc">Get the name of the shader.</div><div class="ttdef"><b>Definition:</b> Shader.h:31</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1ShaderLibrary_html_a0d50042c2c1ba267794ee3bd618214c0"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1ShaderLibrary.html#a0d50042c2c1ba267794ee3bd618214c0">lambda::core::renderer::ShaderLibrary::Get</a></div><div class="ttdeci">memory::Shared&lt; Shader &gt; Get(const std::string &amp;name)</div><div class="ttdoc">Get a shader from the library given the name of the shader.</div><div class="ttdef"><b>Definition:</b> Shader.cpp:90</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1Shader_html_a403513da5c44ce0d85f07cb72ed5d355"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1Shader.html#a403513da5c44ce0d85f07cb72ed5d355">lambda::core::renderer::Shader::Bind</a></div><div class="ttdeci">virtual void Bind() const =0</div><div class="ttdoc">Binds the shader to the GPU.</div></div>
 <div class="ttc" id="aPointers_8h_html"><div class="ttname"><a href="Pointers_8h.html">Pointers.h</a></div><div class="ttdoc">Abstraction for handling pointers within the engine. Currently just aliases for unique and shared poi...</div></div>
-<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1ShaderLibrary_html"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1ShaderLibrary.html">lambda::core::renderer::ShaderLibrary</a></div><div class="ttdef"><b>Definition:</b> Shader.h:39</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1Shader_html_ada4f8d7177e5da1f68903d5a5716d6e9"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1Shader.html#ada4f8d7177e5da1f68903d5a5716d6e9">lambda::core::renderer::Shader::Unbind</a></div><div class="ttdeci">virtual void Unbind() const =0</div><div class="ttdoc">Unbinds the shader from the GPU.</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1Shader_html_a63977df3fa56708876ee994f0342dc42"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1Shader.html#a63977df3fa56708876ee994f0342dc42">lambda::core::renderer::Shader::Create</a></div><div class="ttdeci">static memory::Shared&lt; Shader &gt; Create(const std::string &amp;path)</div><div class="ttdoc">Create a shader given the path to the shader.</div><div class="ttdef"><b>Definition:</b> Shader.cpp:20</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1ShaderLibrary_html_a6caf666ba6a3152fa33411138d0cdc4d"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1ShaderLibrary.html#a6caf666ba6a3152fa33411138d0cdc4d">lambda::core::renderer::ShaderLibrary::Load</a></div><div class="ttdeci">memory::Shared&lt; Shader &gt; Load(const std::string &amp;path)</div><div class="ttdoc">Load a shader into lambda through the path of the shader. (uses the name of the shader for naming....</div><div class="ttdef"><b>Definition:</b> Shader.cpp:76</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1ShaderLibrary_html_a0444cfab80a78f417f46e19f51e81b94"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1ShaderLibrary.html#a0444cfab80a78f417f46e19f51e81b94">lambda::core::renderer::ShaderLibrary::Add</a></div><div class="ttdeci">void Add(const memory::Shared&lt; Shader &gt; &amp;shader)</div><div class="ttdoc">Add a shader that has already been created into the library.</div><div class="ttdef"><b>Definition:</b> Shader.cpp:56</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1ShaderLibrary_html"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1ShaderLibrary.html">lambda::core::renderer::ShaderLibrary</a></div><div class="ttdoc">A library for managing many different shaders.</div><div class="ttdef"><b>Definition:</b> Shader.h:49</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

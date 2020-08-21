@@ -25,6 +25,7 @@
 var NAVTREE =
 [
   [ "lambda", "index.html", [
+    [ "README", "index.html", null ],
     [ "Todo List", "todo.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],

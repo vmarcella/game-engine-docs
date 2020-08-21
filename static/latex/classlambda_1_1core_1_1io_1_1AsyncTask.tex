@@ -26,7 +26,7 @@ void \mbox{\hyperlink{classlambda_1_1core_1_1io_1_1AsyncTask_aa2c40f6b9649f49689
 \begin{DoxyCompactList}\small\item\em Allows a task to be rescheduled with new times. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classlambda_1_1core_1_1io_1_1AsyncTask_af4ab7986341028c7baf593675ad9f353}\label{classlambda_1_1core_1_1io_1_1AsyncTask_af4ab7986341028c7baf593675ad9f353}} 
 const std\+::string \& \mbox{\hyperlink{classlambda_1_1core_1_1io_1_1AsyncTask_af4ab7986341028c7baf593675ad9f353}{Get\+Name}} () const
-\begin{DoxyCompactList}\small\item\em Get the name of the task (Currently not implemented.) \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Get the name of the task (Currently not implemented.) T\+O\+D\+O(\+C3\+N\+Z)\+: There should be overloads in the \mbox{\hyperlink{classlambda_1_1core_1_1io_1_1EventLoop}{Event\+Loop}} that allow callback. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classlambda_1_1core_1_1io_1_1AsyncTask_a4001b4c7eff555ed22a964a5b48d07b5}\label{classlambda_1_1core_1_1io_1_1AsyncTask_a4001b4c7eff555ed22a964a5b48d07b5}} 
 const uint32\+\_\+t {\bfseries Get\+Interval\+In\+Milliseconds} () const
 \item 
@@ -49,6 +49,8 @@ There is no need to use this class externally, as the \mbox{\hyperlink{classlamb
 
 
 Executes the Async\+Callback and returns back the result. 
+
+T\+O\+D\+O(\+C3\+N\+Z)\+: Callbacks should be made more generic. Is it possible to allow.
 
 Executes the task if and returns a success if the callback succeeds. \mbox{\Hypertarget{classlambda_1_1core_1_1io_1_1AsyncTask_a94d57f9f33f5e2af5c65ffe5362cff49}\label{classlambda_1_1core_1_1io_1_1AsyncTask_a94d57f9f33f5e2af5c65ffe5362cff49}} 
 \index{lambda::core::io::AsyncTask@{lambda::core::io::AsyncTask}!GetStatus@{GetStatus}}

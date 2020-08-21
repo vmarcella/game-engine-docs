@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -45,6 +49,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classlambda_1_1core_1_1io_1_1EventLoop.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -59,11 +80,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><b>lambda</b></li><li class="navelem"><b>core</b></li><li class="navelem"><b>io</b></li><li class="navelem"><a class="el" href="classlambda_1_1core_1_1io_1_1EventLoop.html">EventLoop</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -83,9 +99,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac5561172490b5e9005523b0b23530bbf"><td class="memItemLeft" align="right" valign="top"><a id="ac5561172490b5e9005523b0b23530bbf"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>EventLoop</b> (uint32_t size=256)</td></tr>
 <tr class="separator:ac5561172490b5e9005523b0b23530bbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00fd46aae12da78a44086ab1247d5629"><td class="memItemLeft" align="right" valign="top"><a id="a00fd46aae12da78a44086ab1247d5629"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1io_1_1EventLoop.html#a00fd46aae12da78a44086ab1247d5629">Run</a> ()</td></tr>
-<tr class="memdesc:a00fd46aae12da78a44086ab1247d5629"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs the event loop. This will block any thread it's running in and should not be used in the main thread. <br /></td></tr>
+<tr class="memitem:a00fd46aae12da78a44086ab1247d5629"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1io_1_1EventLoop.html#a00fd46aae12da78a44086ab1247d5629">Run</a> ()</td></tr>
+<tr class="memdesc:a00fd46aae12da78a44086ab1247d5629"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs the event loop. This will block any thread it's running in and should not be used in the main thread.  <a href="classlambda_1_1core_1_1io_1_1EventLoop.html#a00fd46aae12da78a44086ab1247d5629">More...</a><br /></td></tr>
 <tr class="separator:a00fd46aae12da78a44086ab1247d5629"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae25afc87ce8a84c9f97b02c435abaf66"><td class="memItemLeft" align="right" valign="top"><a id="ae25afc87ce8a84c9f97b02c435abaf66"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1io_1_1EventLoop.html#ae25afc87ce8a84c9f97b02c435abaf66">SetTimeout</a> (AsyncCallback callback, uint32_t milliseconds)</td></tr>
@@ -103,16 +118,41 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Asynchronous Event Loop that allows the execution of code to happen in another thread. This is not recommended for production as of yet. </p>
 <p>This currently depends on everything passed into the queue being atomic or protected by locks to ensure that data isn't corrupted. The easy way to remedy this is to copy data into your callback as opposed to using instances of it, as that has the potential for major issues. </p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a00fd46aae12da78a44086ab1247d5629"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00fd46aae12da78a44086ab1247d5629">&#9670;&nbsp;</a></span>Run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lambda::core::io::EventLoop::Run </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Runs the event loop. This will block any thread it's running in and should not be used in the main thread. </p>
+<p>TODO(C3NZ): Investigate into the amount of time needed to sleep by the thread that this loop is running in. TODO(C3NZ): Is this as performant as it can possibly be? TODO(C3NZ): There is no way to currently turn this off when there should be. Especially if this is running in another thread. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>lambda/src/core/io/<a class="el" href="EventLoop_8h_source.html">EventLoop.h</a></li>
 <li>lambda/src/core/io/EventLoop.cpp</li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.18
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>lambda</b></li><li class="navelem"><b>core</b></li><li class="navelem"><b>io</b></li><li class="navelem"><a class="el" href="classlambda_1_1core_1_1io_1_1EventLoop.html">EventLoop</a></li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
+  </ul>
+</div>
 </body>
 </html>

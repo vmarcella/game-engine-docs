@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -45,6 +49,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('EventLoop_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -59,18 +80,12 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_4b73342a493c3ec8f518edda193e909f.html">lambda</a></li><li class="navelem"><a class="el" href="dir_896901b14b6321ed9cf375daac6fb468.html">src</a></li><li class="navelem"><a class="el" href="dir_120072a10eb7d4fbc043fc091b8cce0e.html">core</a></li><li class="navelem"><a class="el" href="dir_98a4df44a45d3674aba0b8a8f358af77.html">io</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">EventLoop.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="EventLoop_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// TODO(C3NZ): Add documentation for this file.</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef LAMBDA_SRC_CORE_IO_EVENTLOOP_H_</span></div>
+<a href="EventLoop_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef LAMBDA_SRC_CORE_IO_EVENTLOOP_H_</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define LAMBDA_SRC_CORE_IO_EVENTLOOP_H_</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;concurrentqueue.h&gt;</span></div>
@@ -103,7 +118,6 @@ $(function() {
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classlambda_1_1core_1_1io_1_1EventLoop.html#aef8b254fccd9bcd46b10185391614234">Dispatch</a>(UniqueAsyncTask task);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">bool</span> running_;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="comment">// TODO(C3NZ): Investigate into the performance of std::atomic</span></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="comment">// vs using a mutex.</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  moodycamel::ConcurrentQueue&lt;UniqueAsyncTask&gt; event_queue_;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;};</div>
@@ -114,9 +128,10 @@ $(function() {
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif  // LAMBDA_SRC_CORE_IO_EVENTLOOP_H_</span></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <div class="ttc" id="aclasslambda_1_1core_1_1util_1_1Time_html"><div class="ttname"><a href="classlambda_1_1core_1_1util_1_1Time.html">lambda::core::util::Time</a></div><div class="ttdef"><b>Definition:</b> Time.h:38</div></div>
 <div class="ttc" id="aclasslambda_1_1core_1_1io_1_1EventLoop_html_ae25afc87ce8a84c9f97b02c435abaf66"><div class="ttname"><a href="classlambda_1_1core_1_1io_1_1EventLoop.html#ae25afc87ce8a84c9f97b02c435abaf66">lambda::core::io::EventLoop::SetTimeout</a></div><div class="ttdeci">bool SetTimeout(AsyncCallback callback, uint32_t milliseconds)</div><div class="ttdoc">Set a callback function to execute in a certain amount of milliseconds.</div><div class="ttdef"><b>Definition:</b> EventLoop.cpp:67</div></div>
-<div class="ttc" id="aAsyncTask_8h_html"><div class="ttname"><a href="AsyncTask_8h.html">AsyncTask.h</a></div><div class="ttdoc">A convenient wrapper for callback functions being dispatched into the event loop.</div></div>
+<div class="ttc" id="aAsyncTask_8h_html"><div class="ttname"><a href="AsyncTask_8h.html">AsyncTask.h</a></div><div class="ttdoc">A convenient wrapper for callback functions being dispatched into the event loop TODO(C3NZ): Add docu...</div></div>
 <div class="ttc" id="aPointers_8h_html"><div class="ttname"><a href="Pointers_8h.html">Pointers.h</a></div><div class="ttdoc">Abstraction for handling pointers within the engine. Currently just aliases for unique and shared poi...</div></div>
 <div class="ttc" id="aclasslambda_1_1core_1_1io_1_1EventLoop_html"><div class="ttname"><a href="classlambda_1_1core_1_1io_1_1EventLoop.html">lambda::core::io::EventLoop</a></div><div class="ttdoc">Asynchronous Event Loop that allows the execution of code to happen in another thread....</div><div class="ttdef"><b>Definition:</b> EventLoop.h:28</div></div>
 <div class="ttc" id="aTime_8h_html"><div class="ttname"><a href="Time_8h.html">Time.h</a></div><div class="ttdoc">Cross platform timing utility for the game engine.</div></div>
@@ -124,10 +139,13 @@ $(function() {
 <div class="ttc" id="aclasslambda_1_1core_1_1io_1_1EventLoop_html_aef8b254fccd9bcd46b10185391614234"><div class="ttname"><a href="classlambda_1_1core_1_1io_1_1EventLoop.html#aef8b254fccd9bcd46b10185391614234">lambda::core::io::EventLoop::Dispatch</a></div><div class="ttdeci">bool Dispatch(AsyncCallback callback, core::util::Time execute_at=core::util::Time(), core::util::Time expire_at=core::util::Time().AddSeconds(6))</div><div class="ttdoc">Dispatch a callback to run immediately. (naturally expires after 5 seconds of not being run....</div><div class="ttdef"><b>Definition:</b> EventLoop.cpp:79</div></div>
 <div class="ttc" id="aclasslambda_1_1core_1_1io_1_1EventLoop_html_a00fd46aae12da78a44086ab1247d5629"><div class="ttname"><a href="classlambda_1_1core_1_1io_1_1EventLoop.html#a00fd46aae12da78a44086ab1247d5629">lambda::core::io::EventLoop::Run</a></div><div class="ttdeci">void Run()</div><div class="ttdoc">Runs the event loop. This will block any thread it's running in and should not be used in the main th...</div><div class="ttdef"><b>Definition:</b> EventLoop.cpp:12</div></div>
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.18
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4b73342a493c3ec8f518edda193e909f.html">lambda</a></li><li class="navelem"><a class="el" href="dir_896901b14b6321ed9cf375daac6fb468.html">src</a></li><li class="navelem"><a class="el" href="dir_120072a10eb7d4fbc043fc091b8cce0e.html">core</a></li><li class="navelem"><a class="el" href="dir_98a4df44a45d3674aba0b8a8f358af77.html">io</a></li><li class="navelem"><a class="el" href="EventLoop_8h.html">EventLoop.h</a></li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
+  </ul>
+</div>
 </body>
 </html>

@@ -20,7 +20,6 @@ void \mbox{\hyperlink{classlambda_1_1core_1_1layers_1_1LayerStack_aed45680946af1
 \begin{DoxyCompactList}\small\item\em Push an overlay into the layer stack. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classlambda_1_1core_1_1layers_1_1LayerStack_aab5e51c05b8a733936f4d1cf49e70e0e}{Pop\+Layer}} (memory\+::\+Shared$<$ \mbox{\hyperlink{classlambda_1_1core_1_1layers_1_1Layer}{Layer}} $>$ layer)
 \begin{DoxyCompactList}\small\item\em Pop a layer out of the layer stack. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classlambda_1_1core_1_1layers_1_1LayerStack_aef661e743a9d6d5adcc9fe162d3ad778}\label{classlambda_1_1core_1_1layers_1_1LayerStack_aef661e743a9d6d5adcc9fe162d3ad778}} 
 void \mbox{\hyperlink{classlambda_1_1core_1_1layers_1_1LayerStack_aef661e743a9d6d5adcc9fe162d3ad778}{Pop\+Overlay}} (memory\+::\+Shared$<$ \mbox{\hyperlink{classlambda_1_1core_1_1layers_1_1Layer}{Layer}} $>$ layer)
 \begin{DoxyCompactList}\small\item\em Pop an overlay out of the layer stack. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classlambda_1_1core_1_1layers_1_1LayerStack_afa7875187bfaecf706fdd7597d2e259e}\label{classlambda_1_1core_1_1layers_1_1LayerStack_afa7875187bfaecf706fdd7597d2e259e}} 
@@ -53,7 +52,17 @@ A Stack based structure for lambda to manage layers in.
 
 Pop a layer out of the layer stack. 
 
-Pop a layer off of the layer stack. Compares layers via Shared resources. 
+Pop a layer off of the layer stack. Compares layers via Shared resources. T\+O\+D\+O(\+C3\+N\+Z)\+: Is this problematic since it\textquotesingle{}s using a shared pointer? \mbox{\Hypertarget{classlambda_1_1core_1_1layers_1_1LayerStack_aef661e743a9d6d5adcc9fe162d3ad778}\label{classlambda_1_1core_1_1layers_1_1LayerStack_aef661e743a9d6d5adcc9fe162d3ad778}} 
+\index{lambda::core::layers::LayerStack@{lambda::core::layers::LayerStack}!PopOverlay@{PopOverlay}}
+\index{PopOverlay@{PopOverlay}!lambda::core::layers::LayerStack@{lambda::core::layers::LayerStack}}
+\doxysubsubsection{\texorpdfstring{PopOverlay()}{PopOverlay()}}
+{\footnotesize\ttfamily void lambda\+::core\+::layers\+::\+Layer\+Stack\+::\+Pop\+Overlay (\begin{DoxyParamCaption}\item[{memory\+::\+Shared$<$ \mbox{\hyperlink{classlambda_1_1core_1_1layers_1_1Layer}{Layer}} $>$}]{layer }\end{DoxyParamCaption})}
+
+
+
+Pop an overlay out of the layer stack. 
+
+T\+O\+D\+O(\+C3\+N\+Z)\+: Is this problematic since it\textquotesingle{}s using a shared pointer? 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

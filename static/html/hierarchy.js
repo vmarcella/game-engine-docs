@@ -45,19 +45,18 @@ var hierarchy =
       [ "lambda::platform::opengl::OpenGLRendererAPI", "classlambda_1_1platform_1_1opengl_1_1OpenGLRendererAPI.html", null ]
     ] ],
     [ "lambda::core::util::Reverse< Container >", "classlambda_1_1core_1_1util_1_1Reverse.html", null ],
-    [ "Reverse", "classlambda_1_1util_1_1Reverse.html", null ],
-    [ "Shader", "classShader.html", null ],
     [ "lambda::core::renderer::Shader", "classlambda_1_1core_1_1renderer_1_1Shader.html", [
       [ "lambda::platform::opengl::OpenGLShader", "classlambda_1_1platform_1_1opengl_1_1OpenGLShader.html", null ]
     ] ],
+    [ "Shader", "classShader.html", null ],
     [ "lambda::core::renderer::ShaderLibrary", "classlambda_1_1core_1_1renderer_1_1ShaderLibrary.html", null ],
     [ "lambda::core::renderer::Texture", "classlambda_1_1core_1_1renderer_1_1Texture.html", [
       [ "lambda::core::renderer::Texture2D", "classlambda_1_1core_1_1renderer_1_1Texture2D.html", [
         [ "lambda::platform::opengl::OpenGLTexture2D", "classlambda_1_1platform_1_1opengl_1_1OpenGLTexture2D.html", null ]
       ] ]
     ] ],
-    [ "Time", "classlambda_1_1util_1_1Time.html", null ],
     [ "lambda::core::util::Time", "classlambda_1_1core_1_1util_1_1Time.html", null ],
+    [ "Time", "classlambda_1_1util_1_1Time.html", null ],
     [ "lambda::core::util::TimeStep", "classlambda_1_1core_1_1util_1_1TimeStep.html", null ],
     [ "TimeStep", "classlambda_1_1util_1_1TimeStep.html", null ],
     [ "lambda::core::renderer::VertexArray", "classlambda_1_1core_1_1renderer_1_1VertexArray.html", [
@@ -66,8 +65,8 @@ var hierarchy =
     [ "lambda::core::renderer::VertexBuffer", "classlambda_1_1core_1_1renderer_1_1VertexBuffer.html", [
       [ "lambda::platform::opengl::OpenGLVertexBuffer", "classlambda_1_1platform_1_1opengl_1_1OpenGLVertexBuffer.html", null ]
     ] ],
-    [ "Window", "classlambda_1_1Window.html", null ],
     [ "lambda::core::Window", "classlambda_1_1core_1_1Window.html", null ],
-    [ "WindowProperties", "structlambda_1_1WindowProperties.html", null ],
-    [ "lambda::core::WindowProperties", "structlambda_1_1core_1_1WindowProperties.html", null ]
+    [ "Window", "classlambda_1_1Window.html", null ],
+    [ "lambda::core::WindowProperties", "structlambda_1_1core_1_1WindowProperties.html", null ],
+    [ "WindowProperties", "structlambda_1_1WindowProperties.html", null ]
 ];

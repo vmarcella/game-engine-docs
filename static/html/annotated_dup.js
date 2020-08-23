@@ -74,7 +74,6 @@ var annotated_dup =
         ] ]
       ] ]
     ] ],
-    [ "Reverse", "classlambda_1_1util_1_1Reverse.html", null ],
     [ "Shader", "classShader.html", null ],
     [ "Time", "classlambda_1_1util_1_1Time.html", null ],
     [ "TimeStep", "classlambda_1_1util_1_1TimeStep.html", null ],

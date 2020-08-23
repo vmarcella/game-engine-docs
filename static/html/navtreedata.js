@@ -25,7 +25,7 @@
 var NAVTREE =
 [
   [ "lambda", "index.html", [
-    [ "README", "index.html", null ],
+    [ "README", "md_lambda_src_README.html", null ],
     [ "Todo List", "todo.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
@@ -52,7 +52,7 @@ var NAVTREEINDEX =
 [
 ".html",
 "classlambda_1_1core_1_1events_1_1MouseScrolledEvent.html",
-"dir_807eba80300b28ee007ad426fdb3bd1b.html"
+"dir_896901b14b6321ed9cf375daac6fb468.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

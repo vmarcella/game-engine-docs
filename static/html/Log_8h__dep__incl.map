@@ -1,22 +1,23 @@
-<map id="lambda/src/core/util/Log.h" name="lambda/src/core/util/Log.h">
-<area shape="rect" id="node1" title="The engines util utility." alt="" coords="526,5,677,47"/>
-<area shape="rect" id="node2" href="$Entrypoint_8h.html" title="The entrypoint into the engine." alt="" coords="840,549,1049,575"/>
-<area shape="rect" id="node3" href="$Lambda_8h_source.html" title=" " alt="" coords="1031,631,1194,657"/>
-<area shape="rect" id="node4" href="$Buffer_8h.html" title="Buffer abstractions that allow the ease of implementing Buffers for any graphics API." alt="" coords="224,273,409,315"/>
-<area shape="rect" id="node12" href="$Assert_8h.html" title="This is a utility file that is primarily used for debugging the internals of the engine when incorrec..." alt="" coords="470,95,621,136"/>
-<area shape="rect" id="node5" href="$VertexArray_8h.html" title="The Generic VertexArray API." alt="" coords="184,363,369,404"/>
-<area shape="rect" id="node10" href="$OpenGLVertexArray_8h_source.html" title=" " alt="" coords="28,452,240,493"/>
-<area shape="rect" id="node11" href="$OpenGLBuffer_8h_source.html" title=" " alt="" coords="393,363,570,404"/>
-<area shape="rect" id="node6" href="$RendererAPI_8h.html" title="the rendering API that handles all draw calls." alt="" coords="320,452,505,493"/>
-<area shape="rect" id="node9" href="$OpenGLRendererAPI_8h_source.html" title=" " alt="" coords="546,541,764,583"/>
-<area shape="rect" id="node7" href="$RenderCommand_8h.html" title="The declaration file for the RenderCommand Wrapper." alt="" coords="337,541,522,583"/>
-<area shape="rect" id="node8" href="$Renderer_8h.html" title="The rendering API." alt="" coords="128,541,313,583"/>
-<area shape="rect" id="node13" href="$Time_8h.html" title="Cross platform timing utility for the game engine." alt="" coords="961,184,1112,225"/>
-<area shape="rect" id="node14" href="$Application_8h.html" title="Contains the Application class definitions." alt="" coords="936,459,1150,486"/>
-<area shape="rect" id="node15" href="$AsyncTask_8h.html" title="A convenient wrapper for callback functions being dispatched into the event loop TODO(C3NZ): Add docu..." alt="" coords="1286,273,1429,315"/>
-<area shape="rect" id="node16" href="$EventLoop_8h.html" title="An Attempt to make an Asynchronous dispatcher to run in another thread." alt="" coords="1286,363,1429,404"/>
-<area shape="rect" id="node17" href="$Layer_8h.html" title="The Layer implementation that allows application to specify layers to be attached to the game." alt="" coords="951,273,1122,315"/>
-<area shape="rect" id="node20" href="$OrthographicCameraController_8h_source.html" title=" " alt="" coords="697,452,912,493"/>
-<area shape="rect" id="node18" href="$ImGuiLayer_8h.html" title="The ImGuiLayer implementation for dev tool creation." alt="" coords="1044,363,1210,404"/>
-<area shape="rect" id="node19" href="$LayerStack_8h.html" title="The LayerStack Definition for handling multiple layers." alt="" coords="798,363,968,404"/>
+<map id="lambda/src/Lambda/core/util/Log.h" name="lambda/src/Lambda/core/util/Log.h">
+<area shape="rect" id="node1" title="The engines util utility." alt="" coords="172,5,354,47"/>
+<area shape="rect" id="node2" href="$Entrypoint_8h.html" title="The entrypoint into the engine." alt="" coords="285,541,468,583"/>
+<area shape="rect" id="node3" href="$Buffer_8h.html" title="Buffer abstractions that allow the ease of implementing Buffers for any graphics API." alt="" coords="172,184,354,225"/>
+<area shape="rect" id="node7" href="$Lambda_2Lambda_8h_source.html" title=" " alt="" coords="1735,549,1954,575"/>
+<area shape="rect" id="node8" href="$Lambda_8h_source.html" title=" " alt="" coords="911,549,1074,575"/>
+<area shape="rect" id="node13" href="$Assert_8h.html" title="This is a utility file that is primarily used for debugging the internals of the engine when incorrec..." alt="" coords="301,95,484,136"/>
+<area shape="rect" id="node4" href="$VertexArray_8h.html" title="The Generic VertexArray API." alt="" coords="564,273,746,315"/>
+<area shape="rect" id="node11" href="$OpenGLVertexArray_8h_source.html" title=" " alt="" coords="372,363,584,404"/>
+<area shape="rect" id="node12" href="$OpenGLBuffer_8h_source.html" title=" " alt="" coords="144,273,355,315"/>
+<area shape="rect" id="node5" href="$RendererAPI_8h.html" title="the rendering API that handles all draw calls." alt="" coords="709,363,892,404"/>
+<area shape="rect" id="node10" href="$OpenGLRendererAPI_8h_source.html" title=" " alt="" coords="424,452,641,493"/>
+<area shape="rect" id="node6" href="$RenderCommand_8h.html" title="The declaration file for the RenderCommand Wrapper." alt="" coords="666,452,876,493"/>
+<area shape="rect" id="node9" href="$Renderer_8h.html" title="The rendering API." alt="" coords="901,452,1084,493"/>
+<area shape="rect" id="node14" href="$Time_8h.html" title="Cross platform timing utility for the game engine." alt="" coords="1610,184,1793,225"/>
+<area shape="rect" id="node15" href="$Application_8h.html" title="Contains the Application class definitions." alt="" coords="1160,452,1342,493"/>
+<area shape="rect" id="node16" href="$AsyncTask_8h.html" title="A convenient wrapper for callback functions being dispatched into the event loop TODO(C3NZ): Add docu..." alt="" coords="1984,363,2166,404"/>
+<area shape="rect" id="node17" href="$EventLoop_8h.html" title="An Attempt to make an Asynchronous dispatcher to run in another thread." alt="" coords="1933,452,2116,493"/>
+<area shape="rect" id="node18" href="$Layer_8h.html" title="The Layer implementation that allows application to specify layers to be attached to the game." alt="" coords="1404,273,1586,315"/>
+<area shape="rect" id="node21" href="$OrthographicCameraController_8h_source.html" title=" " alt="" coords="1570,452,1807,493"/>
+<area shape="rect" id="node19" href="$ImGuiLayer_8h.html" title="The ImGuiLayer implementation for dev tool creation." alt="" coords="1469,363,1652,404"/>
+<area shape="rect" id="node20" href="$LayerStack_8h.html" title="The LayerStack Definition for handling multiple layers." alt="" coords="1160,363,1342,404"/>
 </map>

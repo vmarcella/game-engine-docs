@@ -1,8 +1,8 @@
-<map id="lambda/src/platform/opengl/OpenGLTexture.h" name="lambda/src/platform/opengl/OpenGLTexture.h">
-<area shape="rect" id="node1" title="The OpenGL Texture API." alt="" coords="165,5,349,47"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,169,143,196"/>
-<area shape="rect" id="node3" title=" " alt="" coords="370,169,429,196"/>
-<area shape="rect" id="node4" href="$Texture_8h.html" title="The Abstract Texture implementation." alt="" coords="170,95,343,121"/>
-<area shape="rect" id="node5" href="$Pointers_8h.html" title="Abstraction for handling pointers within the engine. Currently just aliases for unique and shared poi..." alt="" coords="167,169,346,196"/>
-<area shape="rect" id="node6" title=" " alt="" coords="218,244,295,271"/>
+<map id="lambda/src/Lambda/platform/opengl/OpenGLTexture.h" name="lambda/src/Lambda/platform/opengl/OpenGLTexture.h">
+<area shape="rect" id="node1" title="The OpenGL Texture API." alt="" coords="145,5,355,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,191,143,218"/>
+<area shape="rect" id="node3" title=" " alt="" coords="357,191,415,218"/>
+<area shape="rect" id="node4" href="$Texture_8h.html" title="The Abstract Texture implementation." alt="" coords="167,95,333,136"/>
+<area shape="rect" id="node5" href="$Pointers_8h.html" title="Abstraction for handling pointers within the engine. Currently just aliases for unique and shared poi..." alt="" coords="167,184,333,225"/>
+<area shape="rect" id="node6" title=" " alt="" coords="211,273,289,300"/>
 </map>

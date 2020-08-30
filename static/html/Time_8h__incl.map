@@ -1,11 +1,11 @@
-<map id="lambda/src/core/util/Time.h" name="lambda/src/core/util/Time.h">
-<area shape="rect" id="node1" title="Cross platform timing utility for the game engine." alt="" coords="106,5,257,47"/>
+<map id="lambda/src/Lambda/core/util/Time.h" name="lambda/src/Lambda/core/util/Time.h">
+<area shape="rect" id="node1" title="Cross platform timing utility for the game engine." alt="" coords="90,5,273,47"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,95,72,121"/>
 <area shape="rect" id="node3" title=" " alt="" coords="96,95,176,121"/>
 <area shape="rect" id="node4" title=" " alt="" coords="201,95,253,121"/>
-<area shape="rect" id="node5" href="$Assert_8h.html" title="This is a utility file that is primarily used for debugging the internals of the engine when incorrec..." alt="" coords="277,95,409,121"/>
-<area shape="rect" id="node6" href="$Core_8h.html" title="Core macros to be used all throughout the engine for development and production purposes." alt="" coords="237,244,333,271"/>
-<area shape="rect" id="node7" href="$Log_8h.html" title="The engines util utility." alt="" coords="335,169,449,196"/>
-<area shape="rect" id="node8" title=" " alt="" coords="357,244,435,271"/>
-<area shape="rect" id="node9" title=" " alt="" coords="459,244,583,271"/>
+<area shape="rect" id="node5" href="$Assert_8h.html" title="This is a utility file that is primarily used for debugging the internals of the engine when incorrec..." alt="" coords="277,95,465,121"/>
+<area shape="rect" id="node6" href="$Core_8h.html" title="Core macros to be used all throughout the engine for development and production purposes." alt="" coords="224,244,376,271"/>
+<area shape="rect" id="node7" href="$Log_8h.html" title="The engines util utility." alt="" coords="349,169,520,196"/>
+<area shape="rect" id="node8" title=" " alt="" coords="400,244,477,271"/>
+<area shape="rect" id="node9" title=" " alt="" coords="502,244,626,271"/>
 </map>

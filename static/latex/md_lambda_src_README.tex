@@ -30,17 +30,123 @@ In order to change the build, you can utilize\+:
 \end{DoxyCode}
 
 
-It is to note that all scripts can be run from anywhere so long as the place you\textquotesingle{}re executing the command is within the repo.
+To learn more about what scripts offer, try passing --help into them like so\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{./scripts/compile\_and\_run.sh -\/-\/help}
+\end{DoxyCode}
+
 
 \doxysubsection*{Documentation}
 
-All documentation can be found at \href{https://engine-docs.cenz.io}{\texttt{ engine-\/docs}}. Documentation is being written as the engine progresses, so it may currently lack behind what the engine is capable of.
+All documentation can be found at \href{https://engine-docs.cenz.io}{\texttt{ lambda-\/docs}}. Documentation is being written as the engine progresses, so it may currently lack behind what the engine is capable of.
 
-The documentation is currently going an overhaul and has not been updated as of being renamed to lambda.
+All documentation is generated using doxygen. Feel free to contribute to areas of the codebase that currently don\textquotesingle{}t have documentation or dont use the majority style.
 
-\doxysubsection*{Live deployments}
+\doxysubsection*{Directory structure}
 
-This project may or may not be used in games, but will definitely be used to create my own unique rendering engine in the future.
+{\ttfamily lambda} -- The source code, dependencies, and assets for the lambda engine.
+
+{\ttfamily docs} -- the documentation server and static content for lambda. Primarily used internally.
+
+{\ttfamily tools} -- C++ tools that are made from the engine for testing it and experimenting with it\textquotesingle{}s potential.
+
+{\ttfamily scripts} -- bash scripts used for automating tedious tasks. (Like compiling and running tools)
+
+\doxysubsection*{Getting started}
+
+\doxysubsubsection*{Support}
+
+Currently only linux is being supported and hasn\textquotesingle{}t been tested on other platforms. A very useful type of contribution to this project would be to verify and potentially extend the current A\+PI to support as many platforms and graphics A\+P\+Is as possible, but getting lambda to work, be highly efficient, and be well thought out is the current plan to avoid as much technical debt as possible in the future.
+
+\doxysubsubsection*{Building}
+
+Currently, lambda is built using cmake. In order to add this to your own project that also was using cmake, you could use these commands\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\# In your CMakeLists.txt file...}
+\DoxyCodeLine{}
+\DoxyCodeLine{add\_subdirectory(dependency\_dir/lambda)}
+\DoxyCodeLine{target\_link\_libraries(your\_app lambda)}
+\end{DoxyCode}
+
+
+In the above example, {\ttfamily dependency\+\_\+dir} is where your dependencies and most likely lambda will be setting. This should be relative and below the cmake file (Like how lambda structures it\textquotesingle{}s dependencies.) {\ttfamily your\+\_\+app} should be the name of the executable that you\textquotesingle{}re trying to build.
+
+Once that\textquotesingle{}s done, you should now be able to include $<$Lambda.\+h$>$ into your code and now should have access to the {\ttfamily lambda} namespace.
+
+\doxysubsubsection*{Your first application}
+
+There are two components that are required to know with hooking into Lambda.
+
+
+\begin{DoxyEnumerate}
+\item Application
+\item Layers
+\end{DoxyEnumerate}
+
+The {\ttfamily Application} class within {\ttfamily \mbox{\hyperlink{classlambda_1_1core_1_1Application}{lambda\+::core\+::\+Application}}} is what allows you to hook lambda in order for it to power all of your applications. By creating a a class that extends from {\ttfamily Application}, you\textquotesingle{}re provided with a set of functionality that allows you to automatically add {\ttfamily Layers} of code to the engine that do exactly what you need to do via {\ttfamily Push\+Layer(new Layer())}. Let\textquotesingle{}s look at a simple program that hooks into lambda and does exactly that\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ \{c++\}}
+\DoxyCodeLine{\#include <Lambda.h>}
+\DoxyCodeLine{\#include "Lambda/core/Entrypoint.h"}
+\DoxyCodeLine{}
+\DoxyCodeLine{// Gives us access to CreateShared<Class T>(...);}
+\DoxyCodeLine{// The engine rarely does work with raw pointers and unless you have good reason}
+\DoxyCodeLine{// for doing so, neither should you!}
+\DoxyCodeLine{using lambda::core::memory::CreateShared;}
+\DoxyCodeLine{}
+\DoxyCodeLine{// Gives us access to Unique<Class T>, which is just a smart pointer at the}
+\DoxyCodeLine{// moment (Will be changed in the future but should be used right now.)}
+\DoxyCodeLine{using lambda::core::memory::Unique}
+\DoxyCodeLine{}
+\DoxyCodeLine{// Gives us access to Shared<Class T>, which is just a smart pointer at the}
+\DoxyCodeLine{// moment (Will be changed in the future but should be used right now.)}
+\DoxyCodeLine{using lambda::core::memory::Shared;}
+\DoxyCodeLine{}
+\DoxyCodeLine{// Gives us access to the Application API}
+\DoxyCodeLine{using lambda::core::Application;}
+\DoxyCodeLine{}
+\DoxyCodeLine{// Gives us access to the generic layer API}
+\DoxyCodeLine{using lambda::core::layers::Layer;}
+\DoxyCodeLine{}
+\DoxyCodeLine{using lambda::core::util::TimeStep;}
+\DoxyCodeLine{}
+\DoxyCodeLine{// Our Layer to receive events and hook into the update loop within lambda. You}
+\DoxyCodeLine{// can make as many layers as you like!}
+\DoxyCodeLine{class HelloLayer : Layer \{}
+\DoxyCodeLine{  public:}
+\DoxyCodeLine{    // Hook into Lambdas update loop!}
+\DoxyCodeLine{    void OnUpdate(TimeStep delta) override \{}
+\DoxyCodeLine{      LAMBDA\_CLIENT\_LOG(}
+\DoxyCodeLine{          "\{\} seconds since last update." delta<double>.InSeconds());}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    // Hook into Lambda's event system!}
+\DoxyCodeLine{    void OnEvent(Shared<Event> event) override \{}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{\};}
+\DoxyCodeLine{}
+\DoxyCodeLine{// Our Application instance. We can only ever instantiate one of these at a}
+\DoxyCodeLine{// time! (Will fail if LAMBDA\_ASSERT\_ENABLES is true.)}
+\DoxyCodeLine{class HelloLambda : public Application \{}
+\DoxyCodeLine{  public:}
+\DoxyCodeLine{    // Push the HelloLayer into the Application. The layer and your logic now}
+\DoxyCodeLine{    // have access to events and the update loop!}
+\DoxyCodeLine{    HelloLambda() \{}
+\DoxyCodeLine{      PushLayer(CreateShared<HelloLayer>());}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{\};}
+\DoxyCodeLine{}
+\DoxyCodeLine{// Once you've created an application and a layer, you now have the ability to}
+\DoxyCodeLine{// spin up your application with:}
+\DoxyCodeLine{Unique<Application> lambda::core::CreateApplication() \{}
+\DoxyCodeLine{  return CreateUnique<HelloLambda>(); \}}
+\end{DoxyCode}
+
+
+And boom, this starter pack will get you on your feet and running! While this tutorial doesn\textquotesingle{}t cover the majority of the library, there will be more tutorials like this. Please refer to the documentation if need to figure out how to use the A\+PI. It is regularly updated.
 
 \doxysubsection*{How to contribute}
 

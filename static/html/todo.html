@@ -89,8 +89,16 @@ $(document).ready(function(){initNavTree('todo.html',''); initResizable(); });
 <dt>Member <a class="el" href="classlambda_1_1core_1_1io_1_1EventLoop.html#a00fd46aae12da78a44086ab1247d5629">lambda::core::io::EventLoop::Run</a>  ()</dt>
 <dd><p class="startdd"><a class="anchor" id="_todo000001"></a>(C3NZ): Investigate into the amount of time needed to sleep by the thread that this loop is running in. </p>
 <p class="interdd">(C3NZ): Is this as performant as it can possibly be? </p>
-<p class="enddd">(C3NZ): There is no way to currently turn this off when there should be. Especially if this is running in another thread. </p>
+<p class="enddd">(C3NZ): There is no way to currently turn this off when there should be. Especially if this is running in another thread.  </p>
 </dd>
+<dt>Member <a class="el" href="classlambda_1_1core_1_1renderer_1_1Renderer.html#aebe538ed30fd76b4b918b8ca03c0765c">lambda::core::renderer::Renderer::Submit</a>  (core::memory::Shared&lt; VertexArray &gt; vertex_array, core::memory::Shared&lt; Shader &gt; shader, const glm::mat4 &amp;transform=glm::mat4(1.0f))</dt>
+<dd><a class="anchor" id="_todo000002"></a>(C3NZ): This is a temporary cast to an opengl specific shader and should be replaced when the rendering api becomes more mature.  </dd>
+<dt>Member <a class="el" href="classlambda_1_1core_1_1renderer_1_1Renderer2D.html#add05f542bc7bd929ada2b74118a54762">lambda::core::renderer::Renderer2D::Init</a>  ()</dt>
+<dd><a class="anchor" id="_todo000003"></a>(C3NZ): This is currently dependent on opengl but implemented within the engines abstraction layer.  </dd>
+<dt>Member <a class="el" href="classlambda_1_1core_1_1renderer_1_1Renderer2D.html#a3010ab7bc0ee09cccc62a1cfe9c5b86d">lambda::core::renderer::Renderer2D::BeginScene</a>  (const <a class="el" href="classlambda_1_1core_1_1renderer_1_1OrthographicCamera.html" title="An orthographic camera implementation for the 2D engine.">OrthographicCamera</a> &amp;camera)</dt>
+<dd><a class="anchor" id="_todo000004"></a>(C3NZ): This needs to be altered to not be dependent on OpenGL code and instead be implemented within the platform API.  </dd>
+<dt>Member <a class="el" href="classlambda_1_1core_1_1renderer_1_1Shader.html#a3e47a2a0d9fd7210d491663df083c623">lambda::core::renderer::Shader::SetMat4</a>  (const std::string &amp;name, const glm::mat4 &amp;matrix)=0</dt>
+<dd><a class="anchor" id="_todo000005"></a>This shouldn't rely on glm. </dd>
 </dl>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->

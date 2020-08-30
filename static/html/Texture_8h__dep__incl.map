@@ -1,5 +1,6 @@
-<map id="lambda/src/core/renderer/Texture.h" name="lambda/src/core/renderer/Texture.h">
-<area shape="rect" id="node1" title="The Abstract Texture implementation." alt="" coords="93,5,278,47"/>
-<area shape="rect" id="node2" href="$Lambda_8h_source.html" title=" " alt="" coords="5,102,168,129"/>
-<area shape="rect" id="node3" href="$OpenGLTexture_8h.html" title="The OpenGL Texture API." alt="" coords="192,95,376,136"/>
+<map id="lambda/src/Lambda/core/renderer/Texture.h" name="lambda/src/Lambda/core/renderer/Texture.h">
+<area shape="rect" id="node1" title="The Abstract Texture implementation." alt="" coords="262,5,445,47"/>
+<area shape="rect" id="node2" href="$Lambda_2Lambda_8h_source.html" title=" " alt="" coords="5,102,224,129"/>
+<area shape="rect" id="node3" href="$OpenGLTexture_8h.html" title="The OpenGL Texture API." alt="" coords="248,95,459,136"/>
+<area shape="rect" id="node4" href="$Lambda_8h_source.html" title=" " alt="" coords="483,102,645,129"/>
 </map>

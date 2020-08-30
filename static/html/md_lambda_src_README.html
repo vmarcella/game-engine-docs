@@ -95,12 +95,89 @@ $(document).ready(function(){initNavTree('md_lambda_src_README.html',''); initRe
 </div><!-- fragment --><p>This will initialize pre commit checks for development and also initialize all git submodules.</p>
 <p>In order to build and run a release version of the sandbox that comes with the engine, you can simply run: </p><div class="fragment"><div class="line">./scripts/compile_and_run.sh</div>
 </div><!-- fragment --><p>In order to change the build, you can utilize: </p><div class="fragment"><div class="line">./scripts/compile_and_run.sh --build Debug</div>
-</div><!-- fragment --><p>It is to note that all scripts can be run from anywhere so long as the place you're executing the command is within the repo.</p>
-<h2>Documentation</h2>
-<p>All documentation can be found at <a href="https://engine-docs.cenz.io">engine-docs</a>. Documentation is being written as the engine progresses, so it may currently lack behind what the engine is capable of.</p>
-<p>The documentation is currently going an overhaul and has not been updated as of being renamed to lambda.</p>
-<h2>Live deployments</h2>
-<p>This project may or may not be used in games, but will definitely be used to create my own unique rendering engine in the future.</p>
+</div><!-- fragment --><p>To learn more about what scripts offer, try passing &ndash;help into them like so: </p><div class="fragment"><div class="line">./scripts/compile_and_run.sh --help</div>
+</div><!-- fragment --><h2>Documentation</h2>
+<p>All documentation can be found at <a href="https://engine-docs.cenz.io">lambda-docs</a>. Documentation is being written as the engine progresses, so it may currently lack behind what the engine is capable of.</p>
+<p>All documentation is generated using doxygen. Feel free to contribute to areas of the codebase that currently don't have documentation or dont use the majority style.</p>
+<h2>Directory structure</h2>
+<p><code>lambda</code> &ndash; The source code, dependencies, and assets for the lambda engine.</p>
+<p><code>docs</code> &ndash; the documentation server and static content for lambda. Primarily used internally.</p>
+<p><code>tools</code> &ndash; C++ tools that are made from the engine for testing it and experimenting with it's potential.</p>
+<p><code>scripts</code> &ndash; bash scripts used for automating tedious tasks. (Like compiling and running tools)</p>
+<h2>Getting started</h2>
+<h3>Support</h3>
+<p>Currently only linux is being supported and hasn't been tested on other platforms. A very useful type of contribution to this project would be to verify and potentially extend the current API to support as many platforms and graphics APIs as possible, but getting lambda to work, be highly efficient, and be well thought out is the current plan to avoid as much technical debt as possible in the future.</p>
+<h3>Building</h3>
+<p>Currently, lambda is built using cmake. In order to add this to your own project that also was using cmake, you could use these commands: </p><div class="fragment"><div class="line"># In your CMakeLists.txt file...</div>
+<div class="line"> </div>
+<div class="line">add_subdirectory(dependency_dir/lambda)</div>
+<div class="line">target_link_libraries(your_app lambda)</div>
+</div><!-- fragment --><p>In the above example, <code>dependency_dir</code> is where your dependencies and most likely lambda will be setting. This should be relative and below the cmake file (Like how lambda structures it's dependencies.) <code>your_app</code> should be the name of the executable that you're trying to build.</p>
+<p>Once that's done, you should now be able to include &lt;Lambda.h&gt; into your code and now should have access to the <code>lambda</code> namespace.</p>
+<h3>Your first application</h3>
+<p>There are two components that are required to know with hooking into Lambda.</p>
+<ol type="1">
+<li>Application</li>
+<li>Layers</li>
+</ol>
+<p>The <code>Application</code> class within <code><a class="el" href="classlambda_1_1core_1_1Application.html" title="The mind, body, and soul of Lambda. The Application class is the.">lambda::core::Application</a></code> is what allows you to hook lambda in order for it to power all of your applications. By creating a a class that extends from <code>Application</code>, you're provided with a set of functionality that allows you to automatically add <code>Layers</code> of code to the engine that do exactly what you need to do via <code>PushLayer(new Layer())</code>. Let's look at a simple program that hooks into lambda and does exactly that:</p>
+<div class="fragment"><div class="line"> {c++}</div>
+<div class="line">#include &lt;Lambda.h&gt;</div>
+<div class="line">#include &quot;Lambda/core/Entrypoint.h&quot;</div>
+<div class="line"> </div>
+<div class="line">// Gives us access to CreateShared&lt;Class T&gt;(...);</div>
+<div class="line">// The engine rarely does work with raw pointers and unless you have good reason</div>
+<div class="line">// for doing so, neither should you!</div>
+<div class="line">using lambda::core::memory::CreateShared;</div>
+<div class="line"> </div>
+<div class="line">// Gives us access to Unique&lt;Class T&gt;, which is just a smart pointer at the</div>
+<div class="line">// moment (Will be changed in the future but should be used right now.)</div>
+<div class="line">using lambda::core::memory::Unique</div>
+<div class="line"> </div>
+<div class="line">// Gives us access to Shared&lt;Class T&gt;, which is just a smart pointer at the</div>
+<div class="line">// moment (Will be changed in the future but should be used right now.)</div>
+<div class="line">using lambda::core::memory::Shared;</div>
+<div class="line"> </div>
+<div class="line">// Gives us access to the Application API</div>
+<div class="line">using lambda::core::Application;</div>
+<div class="line"> </div>
+<div class="line">// Gives us access to the generic layer API</div>
+<div class="line">using lambda::core::layers::Layer;</div>
+<div class="line"> </div>
+<div class="line">using lambda::core::util::TimeStep;</div>
+<div class="line"> </div>
+<div class="line">// Our Layer to receive events and hook into the update loop within lambda. You</div>
+<div class="line">// can make as many layers as you like!</div>
+<div class="line">class HelloLayer : Layer {</div>
+<div class="line">  public:</div>
+<div class="line">    // Hook into Lambdas update loop!</div>
+<div class="line">    void OnUpdate(TimeStep delta) override {</div>
+<div class="line">      LAMBDA_CLIENT_LOG(</div>
+<div class="line">          &quot;{} seconds since last update.&quot; delta&lt;double&gt;.InSeconds());</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    // Hook into Lambda&#39;s event system!</div>
+<div class="line">    void OnEvent(Shared&lt;Event&gt; event) override {</div>
+<div class="line"> </div>
+<div class="line">    }</div>
+<div class="line">};</div>
+<div class="line"> </div>
+<div class="line">// Our Application instance. We can only ever instantiate one of these at a</div>
+<div class="line">// time! (Will fail if LAMBDA_ASSERT_ENABLES is true.)</div>
+<div class="line">class HelloLambda : public Application {</div>
+<div class="line">  public:</div>
+<div class="line">    // Push the HelloLayer into the Application. The layer and your logic now</div>
+<div class="line">    // have access to events and the update loop!</div>
+<div class="line">    HelloLambda() {</div>
+<div class="line">      PushLayer(CreateShared&lt;HelloLayer&gt;());</div>
+<div class="line">    }</div>
+<div class="line">};</div>
+<div class="line"> </div>
+<div class="line">// Once you&#39;ve created an application and a layer, you now have the ability to</div>
+<div class="line">// spin up your application with:</div>
+<div class="line">Unique&lt;Application&gt; lambda::core::CreateApplication() {</div>
+<div class="line">  return CreateUnique&lt;HelloLambda&gt;(); }</div>
+</div><!-- fragment --><p>And boom, this starter pack will get you on your feet and running! While this tutorial doesn't cover the majority of the library, there will be more tutorials like this. Please refer to the documentation if need to figure out how to use the API. It is regularly updated.</p>
 <h2>How to contribute</h2>
 <p>Fork the current repository and then make the changes that you'd like to said fork. Upon adding features, fixing bugs, or whatever modifications you've made to the project, issue a pull request to this repository containing the changes that you've made and I will evaluate them before taking further action. This process may take anywhere from 3-7 days depending on the scope of the changes made, my schedule, and any other variable factors.</p>
 <h2>Resources</h2>

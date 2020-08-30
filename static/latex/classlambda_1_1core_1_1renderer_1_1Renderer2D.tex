@@ -1,0 +1,86 @@
+\hypertarget{classlambda_1_1core_1_1renderer_1_1Renderer2D}{}\doxysection{lambda\+::core\+::renderer\+::Renderer2D Class Reference}
+\label{classlambda_1_1core_1_1renderer_1_1Renderer2D}\index{lambda::core::renderer::Renderer2D@{lambda::core::renderer::Renderer2D}}
+
+
+The 2D rendering A\+PI.  
+
+
+
+
+{\ttfamily \#include $<$Renderer2\+D.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1Renderer2D_add05f542bc7bd929ada2b74118a54762}{Init}} ()
+\begin{DoxyCompactList}\small\item\em Initialize the 2D rendering system. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1Renderer2D_ab36ce377363193eb7ec8c5637cdc03e3}{Shutdown}} ()
+\begin{DoxyCompactList}\small\item\em Shutdown the 2D rendering system. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1Renderer2D_a3010ab7bc0ee09cccc62a1cfe9c5b86d}{Begin\+Scene}} (const \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1OrthographicCamera}{Orthographic\+Camera}} \&camera)
+\begin{DoxyCompactList}\small\item\em Render a scene for a given camera. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1Renderer2D_a8e4bc97f9b154970815a1b5d54c67e77}\label{classlambda_1_1core_1_1renderer_1_1Renderer2D_a8e4bc97f9b154970815a1b5d54c67e77}} 
+static void \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1Renderer2D_a8e4bc97f9b154970815a1b5d54c67e77}{End\+Scene}} ()
+\begin{DoxyCompactList}\small\item\em End the scene. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1Renderer2D_ab351ab605fe5d38ba406967e27a4f746}{Draw\+Quad}} (const glm\+::vec2 \&position, const glm\+::vec2 \&size, const glm\+::vec4 \&color)
+\begin{DoxyCompactList}\small\item\em Draw a quad given it\textquotesingle{}s position, size, and color. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1Renderer2D_a278ed0977dea0e2fdf1e4f22cf38450e}\label{classlambda_1_1core_1_1renderer_1_1Renderer2D_a278ed0977dea0e2fdf1e4f22cf38450e}} 
+static void \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1Renderer2D_a278ed0977dea0e2fdf1e4f22cf38450e}{Draw\+Quad}} (const glm\+::vec3 \&position, const glm\+::vec2 \&size, const glm\+::vec4 \&color)
+\begin{DoxyCompactList}\small\item\em Draw a quad given it\textquotesingle{}s position, size, and color. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The 2D rendering A\+PI. 
+
+The entire 2D Rendering A\+PI is exposed entirely via static function calls. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1Renderer2D_a3010ab7bc0ee09cccc62a1cfe9c5b86d}\label{classlambda_1_1core_1_1renderer_1_1Renderer2D_a3010ab7bc0ee09cccc62a1cfe9c5b86d}} 
+\index{lambda::core::renderer::Renderer2D@{lambda::core::renderer::Renderer2D}!BeginScene@{BeginScene}}
+\index{BeginScene@{BeginScene}!lambda::core::renderer::Renderer2D@{lambda::core::renderer::Renderer2D}}
+\doxysubsubsection{\texorpdfstring{BeginScene()}{BeginScene()}}
+{\footnotesize\ttfamily void lambda\+::core\+::renderer\+::\+Renderer2\+D\+::\+Begin\+Scene (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1OrthographicCamera}{Orthographic\+Camera}} \&}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Render a scene for a given camera. 
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000004}{Todo}}](C3\+NZ)\+: This needs to be altered to not be dependent on Open\+GL code and instead be implemented within the platform A\+PI. \end{DoxyRefDesc}
+\mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1Renderer2D_ab351ab605fe5d38ba406967e27a4f746}\label{classlambda_1_1core_1_1renderer_1_1Renderer2D_ab351ab605fe5d38ba406967e27a4f746}} 
+\index{lambda::core::renderer::Renderer2D@{lambda::core::renderer::Renderer2D}!DrawQuad@{DrawQuad}}
+\index{DrawQuad@{DrawQuad}!lambda::core::renderer::Renderer2D@{lambda::core::renderer::Renderer2D}}
+\doxysubsubsection{\texorpdfstring{DrawQuad()}{DrawQuad()}}
+{\footnotesize\ttfamily void lambda\+::core\+::renderer\+::\+Renderer2\+D\+::\+Draw\+Quad (\begin{DoxyParamCaption}\item[{const glm\+::vec2 \&}]{position,  }\item[{const glm\+::vec2 \&}]{size,  }\item[{const glm\+::vec4 \&}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Draw a quad given it\textquotesingle{}s position, size, and color. 
+
+Used for drawing quads that are on the surface of the screen. Automatically forwards your arguments into the other Draw\+Quad overload with position being modified to be a vec3 with a z of 0. \mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1Renderer2D_add05f542bc7bd929ada2b74118a54762}\label{classlambda_1_1core_1_1renderer_1_1Renderer2D_add05f542bc7bd929ada2b74118a54762}} 
+\index{lambda::core::renderer::Renderer2D@{lambda::core::renderer::Renderer2D}!Init@{Init}}
+\index{Init@{Init}!lambda::core::renderer::Renderer2D@{lambda::core::renderer::Renderer2D}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void lambda\+::core\+::renderer\+::\+Renderer2\+D\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Initialize the 2D rendering system. 
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000003}{Todo}}](C3\+NZ)\+: This is currently dependent on opengl but implemented within the engines abstraction layer. \end{DoxyRefDesc}
+\mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1Renderer2D_ab36ce377363193eb7ec8c5637cdc03e3}\label{classlambda_1_1core_1_1renderer_1_1Renderer2D_ab36ce377363193eb7ec8c5637cdc03e3}} 
+\index{lambda::core::renderer::Renderer2D@{lambda::core::renderer::Renderer2D}!Shutdown@{Shutdown}}
+\index{Shutdown@{Shutdown}!lambda::core::renderer::Renderer2D@{lambda::core::renderer::Renderer2D}}
+\doxysubsubsection{\texorpdfstring{Shutdown()}{Shutdown()}}
+{\footnotesize\ttfamily void lambda\+::core\+::renderer\+::\+Renderer2\+D\+::\+Shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Shutdown the 2D rendering system. 
+
+This will completely reset all of the memory owned by the the renderers storage system. In the future, this should be handled by our memory allocator system. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+lambda/src/\+Lambda/core/renderer/\mbox{\hyperlink{Renderer2D_8h}{Renderer2\+D.\+h}}\item 
+lambda/src/\+Lambda/core/renderer/Renderer2\+D.\+cpp\end{DoxyCompactItemize}

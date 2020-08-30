@@ -42,6 +42,7 @@ var annotated_dup =
           [ "OrthographicCamera", "classlambda_1_1core_1_1renderer_1_1OrthographicCamera.html", "classlambda_1_1core_1_1renderer_1_1OrthographicCamera" ],
           [ "RenderCommand", "classlambda_1_1core_1_1renderer_1_1RenderCommand.html", null ],
           [ "Renderer", "classlambda_1_1core_1_1renderer_1_1Renderer.html", null ],
+          [ "Renderer2D", "classlambda_1_1core_1_1renderer_1_1Renderer2D.html", null ],
           [ "RendererAPI", "classlambda_1_1core_1_1renderer_1_1RendererAPI.html", "classlambda_1_1core_1_1renderer_1_1RendererAPI" ],
           [ "Shader", "classlambda_1_1core_1_1renderer_1_1Shader.html", "classlambda_1_1core_1_1renderer_1_1Shader" ],
           [ "ShaderLibrary", "classlambda_1_1core_1_1renderer_1_1ShaderLibrary.html", "classlambda_1_1core_1_1renderer_1_1ShaderLibrary" ],
@@ -74,9 +75,6 @@ var annotated_dup =
         ] ]
       ] ]
     ] ],
-    [ "Shader", "classShader.html", null ],
-    [ "Time", "classlambda_1_1util_1_1Time.html", null ],
-    [ "TimeStep", "classlambda_1_1util_1_1TimeStep.html", null ],
     [ "Window", "classlambda_1_1Window.html", null ],
     [ "WindowProperties", "structlambda_1_1WindowProperties.html", null ]
 ];

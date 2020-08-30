@@ -1,5 +1,6 @@
-<map id="lambda/src/core/io/AsyncTask.h" name="lambda/src/core/io/AsyncTask.h">
-<area shape="rect" id="node1" title="A convenient wrapper for callback functions being dispatched into the event loop TODO(C3NZ): Add docu..." alt="" coords="60,5,203,47"/>
-<area shape="rect" id="node2" href="$EventLoop_8h.html" title="An Attempt to make an Asynchronous dispatcher to run in another thread." alt="" coords="5,95,148,136"/>
-<area shape="rect" id="node3" href="$Lambda_8h_source.html" title=" " alt="" coords="50,184,213,211"/>
+<map id="lambda/src/Lambda/core/io/AsyncTask.h" name="lambda/src/Lambda/core/io/AsyncTask.h">
+<area shape="rect" id="node1" title="A convenient wrapper for callback functions being dispatched into the event loop TODO(C3NZ): Add docu..." alt="" coords="131,5,314,47"/>
+<area shape="rect" id="node2" href="$EventLoop_8h.html" title="An Attempt to make an Asynchronous dispatcher to run in another thread." alt="" coords="131,95,314,136"/>
+<area shape="rect" id="node3" href="$Lambda_2Lambda_8h_source.html" title=" " alt="" coords="5,184,224,211"/>
+<area shape="rect" id="node4" href="$Lambda_8h_source.html" title=" " alt="" coords="259,184,421,211"/>
 </map>

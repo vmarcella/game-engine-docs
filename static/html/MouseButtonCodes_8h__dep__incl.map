@@ -1,4 +1,5 @@
-<map id="lambda/src/core/input/MouseButtonCodes.h" name="lambda/src/core/input/MouseButtonCodes.h">
-<area shape="rect" id="node1" title="Mouse button codes supported by the engine." alt="" coords="5,5,169,47"/>
-<area shape="rect" id="node2" href="$Lambda_8h_source.html" title=" " alt="" coords="6,95,169,121"/>
+<map id="lambda/src/Lambda/core/input/MouseButtonCodes.h" name="lambda/src/Lambda/core/input/MouseButtonCodes.h">
+<area shape="rect" id="node1" title="Mouse button codes supported by the engine." alt="" coords="121,5,322,47"/>
+<area shape="rect" id="node2" href="$Lambda_2Lambda_8h_source.html" title=" " alt="" coords="5,95,224,121"/>
+<area shape="rect" id="node3" href="$Lambda_8h_source.html" title=" " alt="" coords="248,95,411,121"/>
 </map>

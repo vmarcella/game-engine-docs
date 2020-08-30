@@ -23,7 +23,7 @@ static void \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1Renderer_a60cf07
 \mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1Renderer_ae7aad616489bf9513d7397732797eb70}\label{classlambda_1_1core_1_1renderer_1_1Renderer_ae7aad616489bf9513d7397732797eb70}} 
 static void \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1Renderer_ae7aad616489bf9513d7397732797eb70}{On\+Window\+Resize}} (uint32\+\_\+t width, uint32\+\_\+t height)
 \begin{DoxyCompactList}\small\item\em Updates the renderer with the new screen width and height. \end{DoxyCompactList}\item 
-static void \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1Renderer_a2e2d23281bebf6e2cc0da143ea9f6c11}{Submit}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1VertexArray}{Vertex\+Array}} $>$ \&vertex\+\_\+array, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1Shader}{Shader}} $>$ \&shader, const glm\+::mat4 \&transform=glm\+::mat4(1.\+0f))
+static void \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1Renderer_aebe538ed30fd76b4b918b8ca03c0765c}{Submit}} (core\+::memory\+::\+Shared$<$ \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1VertexArray}{Vertex\+Array}} $>$ vertex\+\_\+array, core\+::memory\+::\+Shared$<$ \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1Shader}{Shader}} $>$ shader, const glm\+::mat4 \&transform=glm\+::mat4(1.\+0f))
 \begin{DoxyCompactList}\small\item\em Submit a vertex array, shader, and transform matrix for rendering. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1Renderer_ac356289e63d05fc0c527e4b2e6bc157c}\label{classlambda_1_1core_1_1renderer_1_1Renderer_ac356289e63d05fc0c527e4b2e6bc157c}} 
 static \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1RendererAPI_a6456ab2804367fa5627c576dcf485483}{Renderer\+A\+P\+I\+::\+A\+PI}} \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1Renderer_ac356289e63d05fc0c527e4b2e6bc157c}{Get\+A\+PI}} ()
@@ -44,21 +44,23 @@ The primary interface used for managing.
 
 Begin a scene to be renderer. 
 
-Uses a single orthograhpic camera to determine where things should be renderered on screen. \mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1Renderer_a2e2d23281bebf6e2cc0da143ea9f6c11}\label{classlambda_1_1core_1_1renderer_1_1Renderer_a2e2d23281bebf6e2cc0da143ea9f6c11}} 
+Uses a single orthograhpic camera to determine where things should be renderered on screen. \mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1Renderer_aebe538ed30fd76b4b918b8ca03c0765c}\label{classlambda_1_1core_1_1renderer_1_1Renderer_aebe538ed30fd76b4b918b8ca03c0765c}} 
 \index{lambda::core::renderer::Renderer@{lambda::core::renderer::Renderer}!Submit@{Submit}}
 \index{Submit@{Submit}!lambda::core::renderer::Renderer@{lambda::core::renderer::Renderer}}
 \doxysubsubsection{\texorpdfstring{Submit()}{Submit()}}
-{\footnotesize\ttfamily void lambda\+::core\+::renderer\+::\+Renderer\+::\+Submit (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1VertexArray}{Vertex\+Array}} $>$ \&}]{vertex\+\_\+array,  }\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1Shader}{Shader}} $>$ \&}]{shader,  }\item[{const glm\+::mat4 \&}]{transform = {\ttfamily glm\+:\+:mat4(1.0f)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily void lambda\+::core\+::renderer\+::\+Renderer\+::\+Submit (\begin{DoxyParamCaption}\item[{core\+::memory\+::\+Shared$<$ \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1VertexArray}{Vertex\+Array}} $>$}]{vertex\+\_\+array,  }\item[{core\+::memory\+::\+Shared$<$ \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1Shader}{Shader}} $>$}]{shader,  }\item[{const glm\+::mat4 \&}]{transform = {\ttfamily glm\+:\+:mat4(1.0f)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
 Submit a vertex array, shader, and transform matrix for rendering. 
 
-Must be associated with a specific scene. (used in between Begin\+Scene and End\+Scene calls) T\+O\+D\+O(\+C3\+N\+Z)\+: update this to use engine memory allocators as opposed to
+Binds both the shader and vertex array before issuing a draw call.
 
-Binds both the shader and vertex array before issuing a draw call. T\+O\+D\+O(\+C3\+N\+Z)\+: This is a temporary cast to an opengl specific shader and
+Must be associated with a specific scene. (used in between Begin\+Scene and End\+Scene calls) \begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000002}{Todo}}](C3\+NZ)\+: This is a temporary cast to an opengl specific shader and should be replaced when the rendering api becomes more mature. \end{DoxyRefDesc}
+
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-lambda/src/core/renderer/\mbox{\hyperlink{Renderer_8h}{Renderer.\+h}}\item 
-lambda/src/core/renderer/Renderer.\+cpp\end{DoxyCompactItemize}
+lambda/src/\+Lambda/core/renderer/\mbox{\hyperlink{Renderer_8h}{Renderer.\+h}}\item 
+lambda/src/\+Lambda/core/renderer/Renderer.\+cpp\end{DoxyCompactItemize}

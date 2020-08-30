@@ -1,8 +1,9 @@
-<map id="lambda/src/core/events/MouseEvent.h" name="lambda/src/core/events/MouseEvent.h">
-<area shape="rect" id="node1" title="All events related mouse input." alt="" coords="276,5,451,47"/>
-<area shape="rect" id="node2" href="$ImGuiLayer_8h.html" title="The ImGuiLayer implementation for dev tool creation." alt="" coords="220,95,387,136"/>
-<area shape="rect" id="node6" href="$OrthographicCameraController_8h_source.html" title=" " alt="" coords="341,184,556,225"/>
-<area shape="rect" id="node3" href="$Application_8h.html" title="Contains the Application class definitions." alt="" coords="51,191,265,218"/>
-<area shape="rect" id="node5" href="$Lambda_8h_source.html" title=" " alt="" coords="197,348,359,375"/>
-<area shape="rect" id="node4" href="$Entrypoint_8h.html" title="The entrypoint into the engine." alt="" coords="5,273,215,300"/>
+<map id="lambda/src/Lambda/core/events/MouseEvent.h" name="lambda/src/Lambda/core/events/MouseEvent.h">
+<area shape="rect" id="node1" title="All events related mouse input." alt="" coords="135,5,318,47"/>
+<area shape="rect" id="node2" href="$ImGuiLayer_8h.html" title="The ImGuiLayer implementation for dev tool creation." alt="" coords="214,95,397,136"/>
+<area shape="rect" id="node7" href="$OrthographicCameraController_8h_source.html" title=" " alt="" coords="5,184,243,225"/>
+<area shape="rect" id="node3" href="$Application_8h.html" title="Contains the Application class definitions." alt="" coords="369,184,551,225"/>
+<area shape="rect" id="node5" href="$Lambda_2Lambda_8h_source.html" title=" " alt="" coords="15,281,233,307"/>
+<area shape="rect" id="node6" href="$Lambda_8h_source.html" title=" " alt="" coords="257,281,420,307"/>
+<area shape="rect" id="node4" href="$Entrypoint_8h.html" title="The entrypoint into the engine." alt="" coords="445,273,627,315"/>
 </map>

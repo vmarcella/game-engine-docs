@@ -8,6 +8,6 @@ var Time_8h =
     [ "Nanoseconds", "Time_8h.html#a537e54322bfe1afcaec052fd278f9e69", null ],
     [ "Seconds", "Time_8h.html#a005b7b5bd70fbaf0fd21713a9b628e26", null ],
     [ "TimePoint", "Time_8h.html#a0e9ab81b21cf4c22e1d93eac82091b78", null ],
-    [ "DurationTo", "Time_8h.html#a7fc5e5520345e2744bd36a3d2f21c31d", null ],
+    [ "DurationTo", "Time_8h.html#a38e887324504a83e2f5f0cc3b379fa82", null ],
     [ "FloatType", "Time_8h.html#a94ab5106c0c54f4218a6028489171393", null ]
 ];

@@ -6,5 +6,17 @@
 
 (C3\+NZ)\+: Is this as performant as it can possibly be? 
 
-(C3\+NZ)\+: There is no way to currently turn this off when there should be. Especially if this is running in another thread. 
+(C3\+NZ)\+: There is no way to currently turn this off when there should be. Especially if this is running in another thread.  
+\item[Member \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1Renderer_aebe538ed30fd76b4b918b8ca03c0765c}{lambda\+::core\+::renderer\+::Renderer\+::Submit}} (core\+::memory\+::\+Shared$<$ Vertex\+Array $>$ vertex\+\_\+array, core\+::memory\+::\+Shared$<$ Shader $>$ shader, const glm\+::mat4 \&transform=glm\+::mat4(1.\+0f))]\label{todo__todo000002}%
+\Hypertarget{todo__todo000002}%
+(C3\+NZ)\+: This is a temporary cast to an opengl specific shader and should be replaced when the rendering api becomes more mature.  
+\item[Member \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1Renderer2D_add05f542bc7bd929ada2b74118a54762}{lambda\+::core\+::renderer\+::Renderer2D\+::Init}} ()]\label{todo__todo000003}%
+\Hypertarget{todo__todo000003}%
+(C3\+NZ)\+: This is currently dependent on opengl but implemented within the engines abstraction layer.  
+\item[Member \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1Renderer2D_a3010ab7bc0ee09cccc62a1cfe9c5b86d}{lambda\+::core\+::renderer\+::Renderer2D\+::Begin\+Scene}} (const \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1OrthographicCamera}{Orthographic\+Camera}} \&camera)]\label{todo__todo000004}%
+\Hypertarget{todo__todo000004}%
+(C3\+NZ)\+: This needs to be altered to not be dependent on Open\+GL code and instead be implemented within the platform A\+PI.  
+\item[Member \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1Shader_a3e47a2a0d9fd7210d491663df083c623}{lambda\+::core\+::renderer\+::Shader\+::Set\+Mat4}} (const std\+::string \&name, const glm\+::mat4 \&matrix)=0]\label{todo__todo000005}%
+\Hypertarget{todo__todo000005}%
+This shouldn\textquotesingle{}t rely on glm. 
 \end{DoxyRefList}

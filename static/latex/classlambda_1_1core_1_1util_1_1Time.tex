@@ -1,58 +1,78 @@
 \hypertarget{classlambda_1_1core_1_1util_1_1Time}{}\doxysection{lambda\+::core\+::util\+::Time Class Reference}
 \label{classlambda_1_1core_1_1util_1_1Time}\index{lambda::core::util::Time@{lambda::core::util::Time}}
+
+
+A platform independent clock implementation that is monotonic and used.  
+
+
+
+
+{\ttfamily \#include $<$Time.\+h$>$}
+
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classlambda_1_1core_1_1util_1_1Time_ae75a9f6f40b0da39e12c83dd099661f5}\label{classlambda_1_1core_1_1util_1_1Time_ae75a9f6f40b0da39e12c83dd099661f5}} 
-{\bfseries Time} (const Time\+Point \&t)
-\item 
-\mbox{\Hypertarget{classlambda_1_1core_1_1util_1_1Time_a4d23cade98580ff143738718654ad75b}\label{classlambda_1_1core_1_1util_1_1Time_a4d23cade98580ff143738718654ad75b}} 
-const Time\+Point \mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time_a4d23cade98580ff143738718654ad75b}{In\+Seconds}} () const
-\begin{DoxyCompactList}\small\item\em Get the current system time in seconds. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classlambda_1_1core_1_1util_1_1Time_a2950427d99ad286235b19094861cbbd4}\label{classlambda_1_1core_1_1util_1_1Time_a2950427d99ad286235b19094861cbbd4}} 
-const Time\+Point \mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time_a2950427d99ad286235b19094861cbbd4}{In\+Milli\+Seconds}} () const
-\begin{DoxyCompactList}\small\item\em Get the current system time in milliseconds. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classlambda_1_1core_1_1util_1_1Time_a21472ab567a34e1b115a3bfdb320c3d9}\label{classlambda_1_1core_1_1util_1_1Time_a21472ab567a34e1b115a3bfdb320c3d9}} 
-const Time\+Point \mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time_a21472ab567a34e1b115a3bfdb320c3d9}{In\+Micro\+Seconds}} () const
-\begin{DoxyCompactList}\small\item\em Get the current system time in microseconds. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1util_1_1Time_a0d4a9c3bca22ee790c969a61343c1653}\label{classlambda_1_1core_1_1util_1_1Time_a0d4a9c3bca22ee790c969a61343c1653}} 
+\mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time_a0d4a9c3bca22ee790c969a61343c1653}{Time}} () noexcept
+\begin{DoxyCompactList}\small\item\em Create a new \mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time}{Time}} instance set to now. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1util_1_1Time_a59a5d742531331a1f0dd72ab67c99b3e}\label{classlambda_1_1core_1_1util_1_1Time_a59a5d742531331a1f0dd72ab67c99b3e}} 
+\mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time_a59a5d742531331a1f0dd72ab67c99b3e}{Time}} (\mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time}{Time}} \&t) noexcept
+\begin{DoxyCompactList}\small\item\em Create a new \mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time}{Time}} instance as a copy from another time instance. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1util_1_1Time_a8b96a52e674a8db9a298aa7698d7a1e0}\label{classlambda_1_1core_1_1util_1_1Time_a8b96a52e674a8db9a298aa7698d7a1e0}} 
+\mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time_a8b96a52e674a8db9a298aa7698d7a1e0}{Time}} (const Time\+Point \&t) noexcept
+\begin{DoxyCompactList}\small\item\em Create a time instance from another clocks time point. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1util_1_1Time_a782662d23088dfa09b6ba28eef159987}\label{classlambda_1_1core_1_1util_1_1Time_a782662d23088dfa09b6ba28eef159987}} 
+const Time\+Point \mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time_a782662d23088dfa09b6ba28eef159987}{In\+Seconds}} () const
+\begin{DoxyCompactList}\small\item\em Get the time in seconds. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1util_1_1Time_ae4a432ac134cca23192b7524438b3794}\label{classlambda_1_1core_1_1util_1_1Time_ae4a432ac134cca23192b7524438b3794}} 
+const Time\+Point \mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time_ae4a432ac134cca23192b7524438b3794}{In\+Milli\+Seconds}} () const
+\begin{DoxyCompactList}\small\item\em Get the time in Milliseconds. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1util_1_1Time_afe8abf00888942977fa3412322f37402}\label{classlambda_1_1core_1_1util_1_1Time_afe8abf00888942977fa3412322f37402}} 
+const Time\+Point \mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time_afe8abf00888942977fa3412322f37402}{In\+Micro\+Seconds}} () const
+\begin{DoxyCompactList}\small\item\em Get the time in Microseconds. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classlambda_1_1core_1_1util_1_1Time_ab1e9779c8393eaa0da21b4461758b81b}\label{classlambda_1_1core_1_1util_1_1Time_ab1e9779c8393eaa0da21b4461758b81b}} 
-const Time\+Point {\bfseries Get\+Time} () const
-\item 
+const Time\+Point \mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time_ab1e9779c8393eaa0da21b4461758b81b}{Get\+Time}} () const
+\begin{DoxyCompactList}\small\item\em Get the raw Timepoint of the wrapper. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classlambda_1_1core_1_1util_1_1Time_a564e36c0d7c0efb9d5027bf56b9f6056}\label{classlambda_1_1core_1_1util_1_1Time_a564e36c0d7c0efb9d5027bf56b9f6056}} 
-\mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time}{Time}} {\bfseries Add\+Milliseconds} (int64\+\_\+t milliseconds)
-\item 
+\mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time}{Time}} \mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time_a564e36c0d7c0efb9d5027bf56b9f6056}{Add\+Milliseconds}} (int64\+\_\+t milliseconds)
+\begin{DoxyCompactList}\small\item\em Add milliseconds to the current time and return a new \mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time}{Time}} instance. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classlambda_1_1core_1_1util_1_1Time_a305bb81e80eee19dbced9d5690dce9b0}\label{classlambda_1_1core_1_1util_1_1Time_a305bb81e80eee19dbced9d5690dce9b0}} 
-\mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time}{Time}} {\bfseries Add\+Seconds} (int64\+\_\+t seconds)
-\item 
+\mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time}{Time}} \mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time_a305bb81e80eee19dbced9d5690dce9b0}{Add\+Seconds}} (int64\+\_\+t seconds)
+\begin{DoxyCompactList}\small\item\em Add seconds to the current time and return a new instance. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classlambda_1_1core_1_1util_1_1Time_af2214cd5f2ec64aa65da1f8b80a74815}\label{classlambda_1_1core_1_1util_1_1Time_af2214cd5f2ec64aa65da1f8b80a74815}} 
-bool {\bfseries Is\+After} (const \mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time}{Time}} \&t)
-\item 
+bool \mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time_af2214cd5f2ec64aa65da1f8b80a74815}{Is\+After}} (const \mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time}{Time}} \&t)
+\begin{DoxyCompactList}\small\item\em Check if this time is after another time. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classlambda_1_1core_1_1util_1_1Time_a83e10a3305ee8c0dda7600dc6d610c05}\label{classlambda_1_1core_1_1util_1_1Time_a83e10a3305ee8c0dda7600dc6d610c05}} 
-bool {\bfseries Is\+Before} (const \mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time}{Time}} \&t)
-\item 
+bool \mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time_a83e10a3305ee8c0dda7600dc6d610c05}{Is\+Before}} (const \mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time}{Time}} \&t)
+\begin{DoxyCompactList}\small\item\em Check if the time is before another time. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classlambda_1_1core_1_1util_1_1Time_a9decb122ecd00f09646101acc8c62abc}\label{classlambda_1_1core_1_1util_1_1Time_a9decb122ecd00f09646101acc8c62abc}} 
-bool {\bfseries Has\+Passed} ()
-\end{DoxyCompactItemize}
+bool \mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time_a9decb122ecd00f09646101acc8c62abc}{Has\+Passed}} ()
+\begin{DoxyCompactList}\small\item\em Check if the time has passed the current time.. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classlambda_1_1core_1_1util_1_1Time_a27f051b3ce8268da02bfcf3f1babcdf7}\label{classlambda_1_1core_1_1util_1_1Time_a27f051b3ce8268da02bfcf3f1babcdf7}} 
-static \mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time}{Time}} {\bfseries Now} ()
-\item 
+static \mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time}{Time}} \mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time_a27f051b3ce8268da02bfcf3f1babcdf7}{Now}} ()
+\begin{DoxyCompactList}\small\item\em Effectively an alias for getting the current time. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classlambda_1_1core_1_1util_1_1Time_a1fa9b3ea5b8e1cc4d420fdde68528fb5}\label{classlambda_1_1core_1_1util_1_1Time_a1fa9b3ea5b8e1cc4d420fdde68528fb5}} 
-static \mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time}{Time}} {\bfseries Nanoseconds\+From\+Now} (int64\+\_\+t nanoseconds)
-\item 
+static \mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time}{Time}} \mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time_a1fa9b3ea5b8e1cc4d420fdde68528fb5}{Nanoseconds\+From\+Now}} (int64\+\_\+t nanoseconds)
+\begin{DoxyCompactList}\small\item\em Create an instance of \mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time}{Time}} that is a specified amount of nanoseconds into the future. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classlambda_1_1core_1_1util_1_1Time_ae455eb8b717e4baaaa7780ae5db24b3a}\label{classlambda_1_1core_1_1util_1_1Time_ae455eb8b717e4baaaa7780ae5db24b3a}} 
-static \mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time}{Time}} {\bfseries Microseconds\+From\+Now} (int64\+\_\+t microseconds)
-\item 
+static \mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time}{Time}} \mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time_ae455eb8b717e4baaaa7780ae5db24b3a}{Microseconds\+From\+Now}} (int64\+\_\+t microseconds)
+\begin{DoxyCompactList}\small\item\em Create an instance of \mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time}{Time}} that is a specified amount of Microseconds into the future. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classlambda_1_1core_1_1util_1_1Time_adc07d762b17577d7d4c70b07a3bb69a4}\label{classlambda_1_1core_1_1util_1_1Time_adc07d762b17577d7d4c70b07a3bb69a4}} 
-static \mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time}{Time}} {\bfseries Milliseconds\+From\+Now} (int64\+\_\+t milliseconds)
-\item 
+static \mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time}{Time}} \mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time_adc07d762b17577d7d4c70b07a3bb69a4}{Milliseconds\+From\+Now}} (int64\+\_\+t milliseconds)
+\begin{DoxyCompactList}\small\item\em Create an instance of \mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time}{Time}} that is a specified amount of Milliseconds into the future. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classlambda_1_1core_1_1util_1_1Time_a87e17c58077f994c111c783f08675fdc}\label{classlambda_1_1core_1_1util_1_1Time_a87e17c58077f994c111c783f08675fdc}} 
-static \mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time}{Time}} {\bfseries Seconds\+From\+Now} (int64\+\_\+t seconds)
-\end{DoxyCompactItemize}
+static \mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time}{Time}} \mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time_a87e17c58077f994c111c783f08675fdc}{Seconds\+From\+Now}} (int64\+\_\+t seconds)
+\begin{DoxyCompactList}\small\item\em Create an instance of \mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time}{Time}} that is a specified amount of Seconds into the future. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+A platform independent clock implementation that is monotonic and used. 
+
+Uses std\+::stead\+\_\+clock under the hood, but provides methods that are common for game development. 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-lambda/src/core/util/\mbox{\hyperlink{Time_8h}{Time.\+h}}\end{DoxyCompactItemize}
+lambda/src/\+Lambda/core/util/\mbox{\hyperlink{Time_8h}{Time.\+h}}\end{DoxyCompactItemize}

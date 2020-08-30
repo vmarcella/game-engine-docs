@@ -1,7 +1,7 @@
-<map id="lambda/src/core/util/Assert.h" name="lambda/src/core/util/Assert.h">
-<area shape="rect" id="node1" title="This is a utility file that is primarily used for debugging the internals of the engine when incorrec..." alt="" coords="33,5,183,47"/>
-<area shape="rect" id="node2" href="$Core_8h.html" title="Core macros to be used all throughout the engine for development and production purposes." alt="" coords="5,169,101,196"/>
-<area shape="rect" id="node3" href="$Log_8h.html" title="The engines util utility." alt="" coords="103,95,217,121"/>
-<area shape="rect" id="node4" title=" " alt="" coords="125,169,203,196"/>
-<area shape="rect" id="node5" title=" " alt="" coords="227,169,351,196"/>
+<map id="lambda/src/Lambda/core/util/Assert.h" name="lambda/src/Lambda/core/util/Assert.h">
+<area shape="rect" id="node1" title="This is a utility file that is primarily used for debugging the internals of the engine when incorrec..." alt="" coords="59,5,242,47"/>
+<area shape="rect" id="node2" href="$Core_8h.html" title="Core macros to be used all throughout the engine for development and production purposes." alt="" coords="5,169,157,196"/>
+<area shape="rect" id="node3" href="$Log_8h.html" title="The engines util utility." alt="" coords="131,95,301,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="181,169,259,196"/>
+<area shape="rect" id="node5" title=" " alt="" coords="283,169,407,196"/>
 </map>

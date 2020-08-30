@@ -1,5 +1,5 @@
-<map id="lambda/src/core/input/Input.h" name="lambda/src/core/input/Input.h">
-<area shape="rect" id="node1" title="The input abstraction class that handles input across." alt="" coords="5,5,168,47"/>
-<area shape="rect" id="node2" title=" " alt="" coords="6,95,66,121"/>
-<area shape="rect" id="node3" href="$Core_8h.html" title="Core macros to be used all throughout the engine for development and production purposes." alt="" coords="91,95,187,121"/>
+<map id="lambda/src/Lambda/core/input/Input.h" name="lambda/src/Lambda/core/input/Input.h">
+<area shape="rect" id="node1" title="The input abstraction class that handles input across." alt="" coords="9,5,192,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,95,65,121"/>
+<area shape="rect" id="node3" href="$Core_8h.html" title="Core macros to be used all throughout the engine for development and production purposes." alt="" coords="90,95,242,121"/>
 </map>

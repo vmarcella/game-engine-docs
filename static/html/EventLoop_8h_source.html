@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>lambda: lambda/src/core/io/EventLoop.h Source File</title>
+<title>lambda: lambda/src/Lambda/core/io/EventLoop.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -85,14 +85,14 @@ $(document).ready(function(){initNavTree('EventLoop_8h_source.html',''); initRes
 <div class="title">EventLoop.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="EventLoop_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef LAMBDA_SRC_CORE_IO_EVENTLOOP_H_</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define LAMBDA_SRC_CORE_IO_EVENTLOOP_H_</span></div>
+<a href="EventLoop_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef LAMBDA_SRC_LAMBDA_CORE_IO_EVENTLOOP_H_</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define LAMBDA_SRC_LAMBDA_CORE_IO_EVENTLOOP_H_</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;concurrentqueue.h&gt;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="AsyncTask_8h.html">core/io/AsyncTask.h</a>&quot;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Pointers_8h.html">core/memory/Pointers.h</a>&quot;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Time_8h.html">core/util/Time.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="AsyncTask_8h.html">Lambda/core/io/AsyncTask.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Pointers_8h.html">Lambda/core/memory/Pointers.h</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Time_8h.html">Lambda/core/util/Time.h</a>&quot;</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span>lambda {</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span>core {</div>
@@ -126,10 +126,10 @@ $(document).ready(function(){initNavTree('EventLoop_8h_source.html',''); initRes
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}  <span class="comment">// namespace core</span></div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}  <span class="comment">// namespace lambda</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif  // LAMBDA_SRC_CORE_IO_EVENTLOOP_H_</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif  // LAMBDA_SRC_LAMBDA_CORE_IO_EVENTLOOP_H_</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclasslambda_1_1core_1_1util_1_1Time_html"><div class="ttname"><a href="classlambda_1_1core_1_1util_1_1Time.html">lambda::core::util::Time</a></div><div class="ttdef"><b>Definition:</b> Time.h:38</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1util_1_1Time_html"><div class="ttname"><a href="classlambda_1_1core_1_1util_1_1Time.html">lambda::core::util::Time</a></div><div class="ttdoc">A platform independent clock implementation that is monotonic and used.</div><div class="ttdef"><b>Definition:</b> Time.h:43</div></div>
 <div class="ttc" id="aclasslambda_1_1core_1_1io_1_1EventLoop_html_ae25afc87ce8a84c9f97b02c435abaf66"><div class="ttname"><a href="classlambda_1_1core_1_1io_1_1EventLoop.html#ae25afc87ce8a84c9f97b02c435abaf66">lambda::core::io::EventLoop::SetTimeout</a></div><div class="ttdeci">bool SetTimeout(AsyncCallback callback, uint32_t milliseconds)</div><div class="ttdoc">Set a callback function to execute in a certain amount of milliseconds.</div><div class="ttdef"><b>Definition:</b> EventLoop.cpp:67</div></div>
 <div class="ttc" id="aAsyncTask_8h_html"><div class="ttname"><a href="AsyncTask_8h.html">AsyncTask.h</a></div><div class="ttdoc">A convenient wrapper for callback functions being dispatched into the event loop TODO(C3NZ): Add docu...</div></div>
 <div class="ttc" id="aPointers_8h_html"><div class="ttname"><a href="Pointers_8h.html">Pointers.h</a></div><div class="ttdoc">Abstraction for handling pointers within the engine. Currently just aliases for unique and shared poi...</div></div>
@@ -141,7 +141,7 @@ $(document).ready(function(){initNavTree('EventLoop_8h_source.html',''); initRes
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_4b73342a493c3ec8f518edda193e909f.html">lambda</a></li><li class="navelem"><a class="el" href="dir_896901b14b6321ed9cf375daac6fb468.html">src</a></li><li class="navelem"><a class="el" href="dir_120072a10eb7d4fbc043fc091b8cce0e.html">core</a></li><li class="navelem"><a class="el" href="dir_98a4df44a45d3674aba0b8a8f358af77.html">io</a></li><li class="navelem"><a class="el" href="EventLoop_8h.html">EventLoop.h</a></li>
+    <li class="navelem"><a class="el" href="dir_4b73342a493c3ec8f518edda193e909f.html">lambda</a></li><li class="navelem"><a class="el" href="dir_896901b14b6321ed9cf375daac6fb468.html">src</a></li><li class="navelem"><a class="el" href="dir_fd5cc04d1fe0e30c92de2516fe39b3d1.html">Lambda</a></li><li class="navelem"><a class="el" href="dir_142be93ac9cb5d36c0a8367e1772f950.html">core</a></li><li class="navelem"><a class="el" href="dir_848ec84a159d5cd43ba9db48a9529e53.html">io</a></li><li class="navelem"><a class="el" href="EventLoop_8h.html">EventLoop.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>

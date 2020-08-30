@@ -1,6 +1,6 @@
-<map id="lambda/src/core/util/Log.h" name="lambda/src/core/util/Log.h">
-<area shape="rect" id="node1" title="The engines util utility." alt="" coords="94,5,245,47"/>
+<map id="lambda/src/Lambda/core/util/Log.h" name="lambda/src/Lambda/core/util/Log.h">
+<area shape="rect" id="node1" title="The engines util utility." alt="" coords="78,5,261,47"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,95,83,121"/>
 <area shape="rect" id="node3" title=" " alt="" coords="107,95,231,121"/>
-<area shape="rect" id="node4" href="$Core_8h.html" title="Core macros to be used all throughout the engine for development and production purposes." alt="" coords="256,95,352,121"/>
+<area shape="rect" id="node4" href="$Core_8h.html" title="Core macros to be used all throughout the engine for development and production purposes." alt="" coords="256,95,408,121"/>
 </map>

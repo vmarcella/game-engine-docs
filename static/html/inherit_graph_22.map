@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classlambda_1_1core_1_1util_1_1File.html" title="TODO(C3NZ): Implement this for linux and (maybe) Windows system next." alt="" coords="5,5,141,47"/>
+<area shape="rect" id="node1" href="$classlambda_1_1core_1_1renderer_1_1VertexBuffer.html" title="A general abstraction of Vertex Buffer." alt="" coords="5,5,176,47"/>
+<area shape="rect" id="node2" href="$classlambda_1_1platform_1_1opengl_1_1OpenGLVertexBuffer.html" title="The OpenGL VertexBuffer implementation based off the generic VertexBuffer base class provided by the ..." alt="" coords="224,5,411,47"/>
 </map>

@@ -51,8 +51,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"classlambda_1_1core_1_1events_1_1MouseScrolledEvent.html",
-"dir_896901b14b6321ed9cf375daac6fb468.html"
+"classlambda_1_1core_1_1events_1_1MouseMovedEvent.html#a7b7672b5808fe3d344663fb32eea5918",
+"dir_4b73342a493c3ec8f518edda193e909f.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

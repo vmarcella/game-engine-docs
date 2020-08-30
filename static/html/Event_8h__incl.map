@@ -1,10 +1,10 @@
-<map id="lambda/src/core/events/Event.h" name="lambda/src/core/events/Event.h">
-<area shape="rect" id="node1" title="The Event class and dispatcher core implementations." alt="" coords="219,5,393,47"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,95,92,121"/>
-<area shape="rect" id="node3" title=" " alt="" coords="116,95,192,121"/>
-<area shape="rect" id="node4" title=" " alt="" coords="217,95,275,121"/>
-<area shape="rect" id="node5" title=" " alt="" coords="299,95,433,121"/>
-<area shape="rect" id="node6" href="$Core_8h.html" title="Core macros to be used all throughout the engine for development and production purposes." alt="" coords="457,95,553,121"/>
-<area shape="rect" id="node7" href="$Pointers_8h.html" title="Abstraction for handling pointers within the engine. Currently just aliases for unique and shared poi..." alt="" coords="577,95,755,121"/>
-<area shape="rect" id="node8" title=" " alt="" coords="627,169,705,196"/>
+<map id="lambda/src/Lambda/core/events/Event.h" name="lambda/src/Lambda/core/events/Event.h">
+<area shape="rect" id="node1" title="The Event class and dispatcher core implementations." alt="" coords="215,5,397,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,102,92,129"/>
+<area shape="rect" id="node3" title=" " alt="" coords="116,102,192,129"/>
+<area shape="rect" id="node4" title=" " alt="" coords="217,102,275,129"/>
+<area shape="rect" id="node5" title=" " alt="" coords="299,102,433,129"/>
+<area shape="rect" id="node6" href="$Core_8h.html" title="Core macros to be used all throughout the engine for development and production purposes." alt="" coords="457,102,609,129"/>
+<area shape="rect" id="node7" href="$Pointers_8h.html" title="Abstraction for handling pointers within the engine. Currently just aliases for unique and shared poi..." alt="" coords="633,95,798,136"/>
+<area shape="rect" id="node8" title=" " alt="" coords="677,184,754,211"/>
 </map>

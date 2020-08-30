@@ -89,63 +89,91 @@ $(document).ready(function(){initNavTree('classlambda_1_1core_1_1util_1_1Time.ht
 <div class="title">lambda::core::util::Time Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>A platform independent clock implementation that is monotonic and used.  
+ <a href="classlambda_1_1core_1_1util_1_1Time.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Time_8h_source.html">Time.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae75a9f6f40b0da39e12c83dd099661f5"><td class="memItemLeft" align="right" valign="top"><a id="ae75a9f6f40b0da39e12c83dd099661f5"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Time</b> (const TimePoint &amp;t)</td></tr>
-<tr class="separator:ae75a9f6f40b0da39e12c83dd099661f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d23cade98580ff143738718654ad75b"><td class="memItemLeft" align="right" valign="top"><a id="a4d23cade98580ff143738718654ad75b"></a>
-const TimePoint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1util_1_1Time.html#a4d23cade98580ff143738718654ad75b">InSeconds</a> () const</td></tr>
-<tr class="memdesc:a4d23cade98580ff143738718654ad75b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current system time in seconds. <br /></td></tr>
-<tr class="separator:a4d23cade98580ff143738718654ad75b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2950427d99ad286235b19094861cbbd4"><td class="memItemLeft" align="right" valign="top"><a id="a2950427d99ad286235b19094861cbbd4"></a>
-const TimePoint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1util_1_1Time.html#a2950427d99ad286235b19094861cbbd4">InMilliSeconds</a> () const</td></tr>
-<tr class="memdesc:a2950427d99ad286235b19094861cbbd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current system time in milliseconds. <br /></td></tr>
-<tr class="separator:a2950427d99ad286235b19094861cbbd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21472ab567a34e1b115a3bfdb320c3d9"><td class="memItemLeft" align="right" valign="top"><a id="a21472ab567a34e1b115a3bfdb320c3d9"></a>
-const TimePoint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1util_1_1Time.html#a21472ab567a34e1b115a3bfdb320c3d9">InMicroSeconds</a> () const</td></tr>
-<tr class="memdesc:a21472ab567a34e1b115a3bfdb320c3d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current system time in microseconds. <br /></td></tr>
-<tr class="separator:a21472ab567a34e1b115a3bfdb320c3d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d4a9c3bca22ee790c969a61343c1653"><td class="memItemLeft" align="right" valign="top"><a id="a0d4a9c3bca22ee790c969a61343c1653"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1util_1_1Time.html#a0d4a9c3bca22ee790c969a61343c1653">Time</a> () noexcept</td></tr>
+<tr class="memdesc:a0d4a9c3bca22ee790c969a61343c1653"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new <a class="el" href="classlambda_1_1core_1_1util_1_1Time.html" title="A platform independent clock implementation that is monotonic and used.">Time</a> instance set to now. <br /></td></tr>
+<tr class="separator:a0d4a9c3bca22ee790c969a61343c1653"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59a5d742531331a1f0dd72ab67c99b3e"><td class="memItemLeft" align="right" valign="top"><a id="a59a5d742531331a1f0dd72ab67c99b3e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1util_1_1Time.html#a59a5d742531331a1f0dd72ab67c99b3e">Time</a> (<a class="el" href="classlambda_1_1core_1_1util_1_1Time.html">Time</a> &amp;t) noexcept</td></tr>
+<tr class="memdesc:a59a5d742531331a1f0dd72ab67c99b3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new <a class="el" href="classlambda_1_1core_1_1util_1_1Time.html" title="A platform independent clock implementation that is monotonic and used.">Time</a> instance as a copy from another time instance. <br /></td></tr>
+<tr class="separator:a59a5d742531331a1f0dd72ab67c99b3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b96a52e674a8db9a298aa7698d7a1e0"><td class="memItemLeft" align="right" valign="top"><a id="a8b96a52e674a8db9a298aa7698d7a1e0"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1util_1_1Time.html#a8b96a52e674a8db9a298aa7698d7a1e0">Time</a> (const TimePoint &amp;t) noexcept</td></tr>
+<tr class="memdesc:a8b96a52e674a8db9a298aa7698d7a1e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a time instance from another clocks time point. <br /></td></tr>
+<tr class="separator:a8b96a52e674a8db9a298aa7698d7a1e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a782662d23088dfa09b6ba28eef159987"><td class="memItemLeft" align="right" valign="top"><a id="a782662d23088dfa09b6ba28eef159987"></a>
+const TimePoint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1util_1_1Time.html#a782662d23088dfa09b6ba28eef159987">InSeconds</a> () const</td></tr>
+<tr class="memdesc:a782662d23088dfa09b6ba28eef159987"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the time in seconds. <br /></td></tr>
+<tr class="separator:a782662d23088dfa09b6ba28eef159987"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4a432ac134cca23192b7524438b3794"><td class="memItemLeft" align="right" valign="top"><a id="ae4a432ac134cca23192b7524438b3794"></a>
+const TimePoint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1util_1_1Time.html#ae4a432ac134cca23192b7524438b3794">InMilliSeconds</a> () const</td></tr>
+<tr class="memdesc:ae4a432ac134cca23192b7524438b3794"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the time in Milliseconds. <br /></td></tr>
+<tr class="separator:ae4a432ac134cca23192b7524438b3794"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe8abf00888942977fa3412322f37402"><td class="memItemLeft" align="right" valign="top"><a id="afe8abf00888942977fa3412322f37402"></a>
+const TimePoint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1util_1_1Time.html#afe8abf00888942977fa3412322f37402">InMicroSeconds</a> () const</td></tr>
+<tr class="memdesc:afe8abf00888942977fa3412322f37402"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the time in Microseconds. <br /></td></tr>
+<tr class="separator:afe8abf00888942977fa3412322f37402"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1e9779c8393eaa0da21b4461758b81b"><td class="memItemLeft" align="right" valign="top"><a id="ab1e9779c8393eaa0da21b4461758b81b"></a>
-const TimePoint&#160;</td><td class="memItemRight" valign="bottom"><b>GetTime</b> () const</td></tr>
+const TimePoint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1util_1_1Time.html#ab1e9779c8393eaa0da21b4461758b81b">GetTime</a> () const</td></tr>
+<tr class="memdesc:ab1e9779c8393eaa0da21b4461758b81b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the raw Timepoint of the wrapper. <br /></td></tr>
 <tr class="separator:ab1e9779c8393eaa0da21b4461758b81b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a564e36c0d7c0efb9d5027bf56b9f6056"><td class="memItemLeft" align="right" valign="top"><a id="a564e36c0d7c0efb9d5027bf56b9f6056"></a>
-<a class="el" href="classlambda_1_1core_1_1util_1_1Time.html">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><b>AddMilliseconds</b> (int64_t milliseconds)</td></tr>
+<a class="el" href="classlambda_1_1core_1_1util_1_1Time.html">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1util_1_1Time.html#a564e36c0d7c0efb9d5027bf56b9f6056">AddMilliseconds</a> (int64_t milliseconds)</td></tr>
+<tr class="memdesc:a564e36c0d7c0efb9d5027bf56b9f6056"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add milliseconds to the current time and return a new <a class="el" href="classlambda_1_1core_1_1util_1_1Time.html" title="A platform independent clock implementation that is monotonic and used.">Time</a> instance. <br /></td></tr>
 <tr class="separator:a564e36c0d7c0efb9d5027bf56b9f6056"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a305bb81e80eee19dbced9d5690dce9b0"><td class="memItemLeft" align="right" valign="top"><a id="a305bb81e80eee19dbced9d5690dce9b0"></a>
-<a class="el" href="classlambda_1_1core_1_1util_1_1Time.html">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><b>AddSeconds</b> (int64_t seconds)</td></tr>
+<a class="el" href="classlambda_1_1core_1_1util_1_1Time.html">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1util_1_1Time.html#a305bb81e80eee19dbced9d5690dce9b0">AddSeconds</a> (int64_t seconds)</td></tr>
+<tr class="memdesc:a305bb81e80eee19dbced9d5690dce9b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add seconds to the current time and return a new instance. <br /></td></tr>
 <tr class="separator:a305bb81e80eee19dbced9d5690dce9b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2214cd5f2ec64aa65da1f8b80a74815"><td class="memItemLeft" align="right" valign="top"><a id="af2214cd5f2ec64aa65da1f8b80a74815"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsAfter</b> (const <a class="el" href="classlambda_1_1core_1_1util_1_1Time.html">Time</a> &amp;t)</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1util_1_1Time.html#af2214cd5f2ec64aa65da1f8b80a74815">IsAfter</a> (const <a class="el" href="classlambda_1_1core_1_1util_1_1Time.html">Time</a> &amp;t)</td></tr>
+<tr class="memdesc:af2214cd5f2ec64aa65da1f8b80a74815"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if this time is after another time. <br /></td></tr>
 <tr class="separator:af2214cd5f2ec64aa65da1f8b80a74815"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83e10a3305ee8c0dda7600dc6d610c05"><td class="memItemLeft" align="right" valign="top"><a id="a83e10a3305ee8c0dda7600dc6d610c05"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsBefore</b> (const <a class="el" href="classlambda_1_1core_1_1util_1_1Time.html">Time</a> &amp;t)</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1util_1_1Time.html#a83e10a3305ee8c0dda7600dc6d610c05">IsBefore</a> (const <a class="el" href="classlambda_1_1core_1_1util_1_1Time.html">Time</a> &amp;t)</td></tr>
+<tr class="memdesc:a83e10a3305ee8c0dda7600dc6d610c05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the time is before another time. <br /></td></tr>
 <tr class="separator:a83e10a3305ee8c0dda7600dc6d610c05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9decb122ecd00f09646101acc8c62abc"><td class="memItemLeft" align="right" valign="top"><a id="a9decb122ecd00f09646101acc8c62abc"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasPassed</b> ()</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1util_1_1Time.html#a9decb122ecd00f09646101acc8c62abc">HasPassed</a> ()</td></tr>
+<tr class="memdesc:a9decb122ecd00f09646101acc8c62abc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the time has passed the current time.. <br /></td></tr>
 <tr class="separator:a9decb122ecd00f09646101acc8c62abc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a27f051b3ce8268da02bfcf3f1babcdf7"><td class="memItemLeft" align="right" valign="top"><a id="a27f051b3ce8268da02bfcf3f1babcdf7"></a>
-static <a class="el" href="classlambda_1_1core_1_1util_1_1Time.html">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Now</b> ()</td></tr>
+static <a class="el" href="classlambda_1_1core_1_1util_1_1Time.html">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1util_1_1Time.html#a27f051b3ce8268da02bfcf3f1babcdf7">Now</a> ()</td></tr>
+<tr class="memdesc:a27f051b3ce8268da02bfcf3f1babcdf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Effectively an alias for getting the current time. <br /></td></tr>
 <tr class="separator:a27f051b3ce8268da02bfcf3f1babcdf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fa9b3ea5b8e1cc4d420fdde68528fb5"><td class="memItemLeft" align="right" valign="top"><a id="a1fa9b3ea5b8e1cc4d420fdde68528fb5"></a>
-static <a class="el" href="classlambda_1_1core_1_1util_1_1Time.html">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><b>NanosecondsFromNow</b> (int64_t nanoseconds)</td></tr>
+static <a class="el" href="classlambda_1_1core_1_1util_1_1Time.html">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1util_1_1Time.html#a1fa9b3ea5b8e1cc4d420fdde68528fb5">NanosecondsFromNow</a> (int64_t nanoseconds)</td></tr>
+<tr class="memdesc:a1fa9b3ea5b8e1cc4d420fdde68528fb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an instance of <a class="el" href="classlambda_1_1core_1_1util_1_1Time.html" title="A platform independent clock implementation that is monotonic and used.">Time</a> that is a specified amount of nanoseconds into the future. <br /></td></tr>
 <tr class="separator:a1fa9b3ea5b8e1cc4d420fdde68528fb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae455eb8b717e4baaaa7780ae5db24b3a"><td class="memItemLeft" align="right" valign="top"><a id="ae455eb8b717e4baaaa7780ae5db24b3a"></a>
-static <a class="el" href="classlambda_1_1core_1_1util_1_1Time.html">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><b>MicrosecondsFromNow</b> (int64_t microseconds)</td></tr>
+static <a class="el" href="classlambda_1_1core_1_1util_1_1Time.html">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1util_1_1Time.html#ae455eb8b717e4baaaa7780ae5db24b3a">MicrosecondsFromNow</a> (int64_t microseconds)</td></tr>
+<tr class="memdesc:ae455eb8b717e4baaaa7780ae5db24b3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an instance of <a class="el" href="classlambda_1_1core_1_1util_1_1Time.html" title="A platform independent clock implementation that is monotonic and used.">Time</a> that is a specified amount of Microseconds into the future. <br /></td></tr>
 <tr class="separator:ae455eb8b717e4baaaa7780ae5db24b3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc07d762b17577d7d4c70b07a3bb69a4"><td class="memItemLeft" align="right" valign="top"><a id="adc07d762b17577d7d4c70b07a3bb69a4"></a>
-static <a class="el" href="classlambda_1_1core_1_1util_1_1Time.html">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><b>MillisecondsFromNow</b> (int64_t milliseconds)</td></tr>
+static <a class="el" href="classlambda_1_1core_1_1util_1_1Time.html">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1util_1_1Time.html#adc07d762b17577d7d4c70b07a3bb69a4">MillisecondsFromNow</a> (int64_t milliseconds)</td></tr>
+<tr class="memdesc:adc07d762b17577d7d4c70b07a3bb69a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an instance of <a class="el" href="classlambda_1_1core_1_1util_1_1Time.html" title="A platform independent clock implementation that is monotonic and used.">Time</a> that is a specified amount of Milliseconds into the future. <br /></td></tr>
 <tr class="separator:adc07d762b17577d7d4c70b07a3bb69a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87e17c58077f994c111c783f08675fdc"><td class="memItemLeft" align="right" valign="top"><a id="a87e17c58077f994c111c783f08675fdc"></a>
-static <a class="el" href="classlambda_1_1core_1_1util_1_1Time.html">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SecondsFromNow</b> (int64_t seconds)</td></tr>
+static <a class="el" href="classlambda_1_1core_1_1util_1_1Time.html">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1util_1_1Time.html#a87e17c58077f994c111c783f08675fdc">SecondsFromNow</a> (int64_t seconds)</td></tr>
+<tr class="memdesc:a87e17c58077f994c111c783f08675fdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an instance of <a class="el" href="classlambda_1_1core_1_1util_1_1Time.html" title="A platform independent clock implementation that is monotonic and used.">Time</a> that is a specified amount of Seconds into the future. <br /></td></tr>
 <tr class="separator:a87e17c58077f994c111c783f08675fdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>lambda/src/core/util/<a class="el" href="Time_8h_source.html">Time.h</a></li>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A platform independent clock implementation that is monotonic and used. </p>
+<p>Uses std::stead_clock under the hood, but provides methods that are common for game development. </p>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
+<li>lambda/src/Lambda/core/util/<a class="el" href="Time_8h_source.html">Time.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

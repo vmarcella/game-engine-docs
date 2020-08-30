@@ -1,7 +1,7 @@
-<map id="lambda/src/core/renderer/Texture.h" name="lambda/src/core/renderer/Texture.h">
-<area shape="rect" id="node1" title="The Abstract Texture implementation." alt="" coords="104,5,289,47"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,95,143,121"/>
-<area shape="rect" id="node3" title=" " alt="" coords="167,95,226,121"/>
-<area shape="rect" id="node4" href="$Pointers_8h.html" title="Abstraction for handling pointers within the engine. Currently just aliases for unique and shared poi..." alt="" coords="250,95,429,121"/>
-<area shape="rect" id="node5" title=" " alt="" coords="301,169,378,196"/>
+<map id="lambda/src/Lambda/core/renderer/Texture.h" name="lambda/src/Lambda/core/renderer/Texture.h">
+<area shape="rect" id="node1" title="The Abstract Texture implementation." alt="" coords="105,5,288,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,102,143,129"/>
+<area shape="rect" id="node3" title=" " alt="" coords="167,102,226,129"/>
+<area shape="rect" id="node4" href="$Pointers_8h.html" title="Abstraction for handling pointers within the engine. Currently just aliases for unique and shared poi..." alt="" coords="250,95,415,136"/>
+<area shape="rect" id="node5" title=" " alt="" coords="294,184,371,211"/>
 </map>

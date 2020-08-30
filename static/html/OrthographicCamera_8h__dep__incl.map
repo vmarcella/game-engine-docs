@@ -1,6 +1,8 @@
-<map id="lambda/src/core/renderer/OrthographicCamera.h" name="lambda/src/core/renderer/OrthographicCamera.h">
-<area shape="rect" id="node1" title="A 2D orthographic camera implementation that is compatible with the renderer." alt="" coords="165,5,351,47"/>
-<area shape="rect" id="node2" href="$OrthographicCameraController_8h_source.html" title=" " alt="" coords="5,95,220,136"/>
-<area shape="rect" id="node3" href="$Lambda_8h_source.html" title=" " alt="" coords="177,184,339,211"/>
-<area shape="rect" id="node4" href="$Renderer_8h.html" title="The rendering API." alt="" coords="296,95,481,136"/>
+<map id="lambda/src/Lambda/core/renderer/OrthographicCamera.h" name="lambda/src/Lambda/core/renderer/OrthographicCamera.h">
+<area shape="rect" id="node1" title="A 2D orthographic camera implementation that is compatible with the renderer." alt="" coords="236,5,468,47"/>
+<area shape="rect" id="node2" href="$OrthographicCameraController_8h_source.html" title=" " alt="" coords="233,95,471,136"/>
+<area shape="rect" id="node3" href="$Lambda_2Lambda_8h_source.html" title=" " alt="" coords="8,184,227,211"/>
+<area shape="rect" id="node4" href="$Lambda_8h_source.html" title=" " alt="" coords="388,184,551,211"/>
+<area shape="rect" id="node5" href="$Renderer_8h.html" title="The rendering API." alt="" coords="26,95,209,136"/>
+<area shape="rect" id="node6" href="$Renderer2D_8h.html" title="The 2D rendering implementation." alt="" coords="495,95,678,136"/>
 </map>

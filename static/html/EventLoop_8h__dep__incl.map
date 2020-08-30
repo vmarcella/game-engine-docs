@@ -1,4 +1,5 @@
-<map id="lambda/src/core/io/EventLoop.h" name="lambda/src/core/io/EventLoop.h">
-<area shape="rect" id="node1" title="An Attempt to make an Asynchronous dispatcher to run in another thread." alt="" coords="15,5,158,47"/>
-<area shape="rect" id="node2" href="$Lambda_8h_source.html" title=" " alt="" coords="5,95,168,121"/>
+<map id="lambda/src/Lambda/core/io/EventLoop.h" name="lambda/src/Lambda/core/io/EventLoop.h">
+<area shape="rect" id="node1" title="An Attempt to make an Asynchronous dispatcher to run in another thread." alt="" coords="130,5,313,47"/>
+<area shape="rect" id="node2" href="$Lambda_2Lambda_8h_source.html" title=" " alt="" coords="5,95,224,121"/>
+<area shape="rect" id="node3" href="$Lambda_8h_source.html" title=" " alt="" coords="248,95,411,121"/>
 </map>

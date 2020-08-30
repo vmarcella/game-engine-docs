@@ -1,0 +1,28 @@
+\hypertarget{classlambda_1_1core_1_1events_1_1AppRenderEvent}{}\doxysection{lambda\+::core\+::events\+::App\+Render\+Event Class Reference}
+\label{classlambda_1_1core_1_1events_1_1AppRenderEvent}\index{lambda::core::events::AppRenderEvent@{lambda::core::events::AppRenderEvent}}
+
+
+An event generated when the app has rendered.  
+
+
+
+
+{\ttfamily \#include $<$Application\+Event.\+h$>$}
+
+
+
+Inheritance diagram for lambda\+::core\+::events\+::App\+Render\+Event\+:
+% FIG 0
+
+
+Collaboration diagram for lambda\+::core\+::events\+::App\+Render\+Event\+:
+% FIG 1
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+An event generated when the app has rendered. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lambda/src/\+Lambda/core/events/\mbox{\hyperlink{ApplicationEvent_8h}{Application\+Event.\+h}}\end{DoxyCompactItemize}

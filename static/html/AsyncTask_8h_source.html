@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>lambda: lambda/src/core/io/AsyncTask.h Source File</title>
+<title>lambda: lambda/src/Lambda/core/io/AsyncTask.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -85,14 +85,14 @@ $(document).ready(function(){initNavTree('AsyncTask_8h_source.html',''); initRes
 <div class="title">AsyncTask.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="AsyncTask_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef LAMBDA_SRC_CORE_IO_ASYNCTASK_H_</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define LAMBDA_SRC_CORE_IO_ASYNCTASK_H_</span></div>
+<a href="AsyncTask_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef LAMBDA_SRC_LAMBDA_CORE_IO_ASYNCTASK_H_</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define LAMBDA_SRC_LAMBDA_CORE_IO_ASYNCTASK_H_</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;bits/stdint-uintn.h&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;functional&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Pointers_8h.html">core/memory/Pointers.h</a>&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Time_8h.html">core/util/Time.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Pointers_8h.html">Lambda/core/memory/Pointers.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Time_8h.html">Lambda/core/util/Time.h</a>&quot;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span>lambda {</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span>core {</div>
@@ -123,7 +123,7 @@ $(document).ready(function(){initNavTree('AsyncTask_8h_source.html',''); initRes
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      <a class="code" href="classlambda_1_1core_1_1util_1_1Time.html">util::Time</a> execute_at = <a class="code" href="classlambda_1_1core_1_1util_1_1Time.html">util::Time</a>(),</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      <a class="code" href="classlambda_1_1core_1_1util_1_1Time.html">util::Time</a> expires_at = <a class="code" href="classlambda_1_1core_1_1util_1_1Time.html">util::Time</a>().AddSeconds(5)) :</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;          callback_(callback),</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;          scheduled_at_(util::<a class="code" href="classlambda_1_1util_1_1Time.html">Time</a>()),</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;          scheduled_at_(util::Time()),</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;          execute_at_(execute_at),</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;          expires_at_(expires_at) {}</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('AsyncTask_8h_source.html',''); initRes
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      uint32_t interval_in_ms,</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <span class="keywordtype">bool</span> should_repeat) :</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;          callback_(callback),</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;          scheduled_at_(core::util::<a class="code" href="classlambda_1_1util_1_1Time.html">Time</a>()),</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;          scheduled_at_(core::util::Time()),</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;          execute_at_(scheduled_at_.AddMilliseconds(interval_in_ms_)),</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;          expires_at_(execute_at_.AddSeconds(5)),</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;          should_repeat_(should_repeat),</div>
@@ -165,11 +165,10 @@ $(document).ready(function(){initNavTree('AsyncTask_8h_source.html',''); initRes
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;}  <span class="comment">// namespace core</span></div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}  <span class="comment">// namespace lambda</span></div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#endif  // LAMBDA_SRC_CORE_IO_ASYNCTASK_H_</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#endif  // LAMBDA_SRC_LAMBDA_CORE_IO_ASYNCTASK_H_</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclasslambda_1_1core_1_1util_1_1Time_html"><div class="ttname"><a href="classlambda_1_1core_1_1util_1_1Time.html">lambda::core::util::Time</a></div><div class="ttdef"><b>Definition:</b> Time.h:38</div></div>
-<div class="ttc" id="aclasslambda_1_1util_1_1Time_html"><div class="ttname"><a href="classlambda_1_1util_1_1Time.html">Time</a></div><div class="ttdoc">A wrapper for working with Time within the game engine. Uses std::steady_clock for a platform indepen...</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1util_1_1Time_html"><div class="ttname"><a href="classlambda_1_1core_1_1util_1_1Time.html">lambda::core::util::Time</a></div><div class="ttdoc">A platform independent clock implementation that is monotonic and used.</div><div class="ttdef"><b>Definition:</b> Time.h:43</div></div>
 <div class="ttc" id="aclasslambda_1_1core_1_1io_1_1AsyncTask_html_a864d9eda55e0c389e4c565b64b268e44"><div class="ttname"><a href="classlambda_1_1core_1_1io_1_1AsyncTask.html#a864d9eda55e0c389e4c565b64b268e44">lambda::core::io::AsyncTask::ShouldRepeat</a></div><div class="ttdeci">bool ShouldRepeat()</div><div class="ttdoc">Allow the ability to see if the task is setup to repeat.</div><div class="ttdef"><b>Definition:</b> AsyncTask.h:92</div></div>
 <div class="ttc" id="aclasslambda_1_1core_1_1io_1_1AsyncTask_html_af4ab7986341028c7baf593675ad9f353"><div class="ttname"><a href="classlambda_1_1core_1_1io_1_1AsyncTask.html#af4ab7986341028c7baf593675ad9f353">lambda::core::io::AsyncTask::GetName</a></div><div class="ttdeci">const std::string &amp; GetName() const</div><div class="ttdoc">Get the name of the task (Currently not implemented.) TODO(C3NZ): There should be overloads in the Ev...</div><div class="ttdef"><b>Definition:</b> AsyncTask.h:84</div></div>
 <div class="ttc" id="aclasslambda_1_1core_1_1io_1_1AsyncTask_html_a7308545ca1ab6d01d460121639c7dba4"><div class="ttname"><a href="classlambda_1_1core_1_1io_1_1AsyncTask.html#a7308545ca1ab6d01d460121639c7dba4">lambda::core::io::AsyncTask::AsyncTask</a></div><div class="ttdeci">AsyncTask(AsyncCallback callback, util::Time execute_at=util::Time(), util::Time expires_at=util::Time().AddSeconds(5))</div><div class="ttdoc">Construct a task that should execute as soon as possible.</div><div class="ttdef"><b>Definition:</b> AsyncTask.h:48</div></div>
@@ -185,7 +184,7 @@ $(document).ready(function(){initNavTree('AsyncTask_8h_source.html',''); initRes
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_4b73342a493c3ec8f518edda193e909f.html">lambda</a></li><li class="navelem"><a class="el" href="dir_896901b14b6321ed9cf375daac6fb468.html">src</a></li><li class="navelem"><a class="el" href="dir_120072a10eb7d4fbc043fc091b8cce0e.html">core</a></li><li class="navelem"><a class="el" href="dir_98a4df44a45d3674aba0b8a8f358af77.html">io</a></li><li class="navelem"><a class="el" href="AsyncTask_8h.html">AsyncTask.h</a></li>
+    <li class="navelem"><a class="el" href="dir_4b73342a493c3ec8f518edda193e909f.html">lambda</a></li><li class="navelem"><a class="el" href="dir_896901b14b6321ed9cf375daac6fb468.html">src</a></li><li class="navelem"><a class="el" href="dir_fd5cc04d1fe0e30c92de2516fe39b3d1.html">Lambda</a></li><li class="navelem"><a class="el" href="dir_142be93ac9cb5d36c0a8367e1772f950.html">core</a></li><li class="navelem"><a class="el" href="dir_848ec84a159d5cd43ba9db48a9529e53.html">io</a></li><li class="navelem"><a class="el" href="AsyncTask_8h.html">AsyncTask.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>

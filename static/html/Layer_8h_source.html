@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>lambda: lambda/src/core/layers/Layer.h Source File</title>
+<title>lambda: lambda/src/Lambda/core/layers/Layer.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -85,13 +85,13 @@ $(document).ready(function(){initNavTree('Layer_8h_source.html',''); initResizab
 <div class="title">Layer.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="Layer_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef LAMBDA_SRC_CORE_LAYERS_LAYER_H_</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#define LAMBDA_SRC_CORE_LAYERS_LAYER_H_</span></div>
+<a href="Layer_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef LAMBDA_SRC_LAMBDA_CORE_LAYERS_LAYER_H_</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#define LAMBDA_SRC_LAMBDA_CORE_LAYERS_LAYER_H_</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Core_8h.html">core/Core.h</a>&quot;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Event_8h.html">core/events/Event.h</a>&quot;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Pointers_8h.html">core/memory/Pointers.h</a>&quot;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Time_8h.html">core/util/Time.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Core_8h.html">Lambda/core/Core.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Event_8h.html">Lambda/core/events/Event.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Pointers_8h.html">Lambda/core/memory/Pointers.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Time_8h.html">Lambda/core/util/Time.h</a>&quot;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span>lambda {</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span>core {</div>
@@ -118,13 +118,13 @@ $(document).ready(function(){initNavTree('Layer_8h_source.html',''); initResizab
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}  <span class="comment">// namespace core</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}  <span class="comment">// namespace lambda</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif  // LAMBDA_SRC_CORE_LAYERS_LAYER_H_</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif  // LAMBDA_SRC_LAMBDA_CORE_LAYERS_LAYER_H_</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclasslambda_1_1core_1_1layers_1_1Layer_html"><div class="ttname"><a href="classlambda_1_1core_1_1layers_1_1Layer.html">lambda::core::layers::Layer</a></div><div class="ttdoc">The lambda Layer abstraction. Primarily used for direct access into lambdas tick and event system.</div><div class="ttdef"><b>Definition:</b> Layer.h:21</div></div>
 <div class="ttc" id="aclasslambda_1_1core_1_1layers_1_1Layer_html_aaef07b70f557d028c7f3254ef0251f36"><div class="ttname"><a href="classlambda_1_1core_1_1layers_1_1Layer.html#aaef07b70f557d028c7f3254ef0251f36">lambda::core::layers::Layer::OnUpdate</a></div><div class="ttdeci">virtual void OnUpdate(util::TimeStep time_step)</div><div class="ttdoc">What to do when lambda has an update for the layer.</div><div class="ttdef"><b>Definition:</b> Layer.h:31</div></div>
 <div class="ttc" id="aPointers_8h_html"><div class="ttname"><a href="Pointers_8h.html">Pointers.h</a></div><div class="ttdoc">Abstraction for handling pointers within the engine. Currently just aliases for unique and shared poi...</div></div>
-<div class="ttc" id="aclasslambda_1_1core_1_1util_1_1TimeStep_html"><div class="ttname"><a href="classlambda_1_1core_1_1util_1_1TimeStep.html">lambda::core::util::TimeStep</a></div><div class="ttdef"><b>Definition:</b> Time.h:98</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1util_1_1TimeStep_html"><div class="ttname"><a href="classlambda_1_1core_1_1util_1_1TimeStep.html">lambda::core::util::TimeStep</a></div><div class="ttdoc">Measuring the delta between two different times.</div><div class="ttdef"><b>Definition:</b> Time.h:127</div></div>
 <div class="ttc" id="aclasslambda_1_1core_1_1layers_1_1Layer_html_ab80b635204ee97ccd5ba227c594fa45d"><div class="ttname"><a href="classlambda_1_1core_1_1layers_1_1Layer.html#ab80b635204ee97ccd5ba227c594fa45d">lambda::core::layers::Layer::OnAttach</a></div><div class="ttdeci">virtual void OnAttach()</div><div class="ttdoc">What to do when a layer is attached to lambda.</div><div class="ttdef"><b>Definition:</b> Layer.h:27</div></div>
 <div class="ttc" id="aEvent_8h_html"><div class="ttname"><a href="Event_8h.html">Event.h</a></div><div class="ttdoc">The Event class and dispatcher core implementations.</div></div>
 <div class="ttc" id="aTime_8h_html"><div class="ttname"><a href="Time_8h.html">Time.h</a></div><div class="ttdoc">Cross platform timing utility for the game engine.</div></div>
@@ -136,7 +136,7 @@ $(document).ready(function(){initNavTree('Layer_8h_source.html',''); initResizab
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_4b73342a493c3ec8f518edda193e909f.html">lambda</a></li><li class="navelem"><a class="el" href="dir_896901b14b6321ed9cf375daac6fb468.html">src</a></li><li class="navelem"><a class="el" href="dir_120072a10eb7d4fbc043fc091b8cce0e.html">core</a></li><li class="navelem"><a class="el" href="dir_38445b08e35dbca89363ee51de15bf72.html">layers</a></li><li class="navelem"><a class="el" href="Layer_8h.html">Layer.h</a></li>
+    <li class="navelem"><a class="el" href="dir_4b73342a493c3ec8f518edda193e909f.html">lambda</a></li><li class="navelem"><a class="el" href="dir_896901b14b6321ed9cf375daac6fb468.html">src</a></li><li class="navelem"><a class="el" href="dir_fd5cc04d1fe0e30c92de2516fe39b3d1.html">Lambda</a></li><li class="navelem"><a class="el" href="dir_142be93ac9cb5d36c0a8367e1772f950.html">core</a></li><li class="navelem"><a class="el" href="dir_95004d8898cd2a5ae5b95ee25e4f1841.html">layers</a></li><li class="navelem"><a class="el" href="Layer_8h.html">Layer.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>

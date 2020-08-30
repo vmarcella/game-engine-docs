@@ -1,5 +1,5 @@
-\hypertarget{Log_8h}{}\doxysection{lambda/src/core/util/\+Log.h File Reference}
-\label{Log_8h}\index{lambda/src/core/util/Log.h@{lambda/src/core/util/Log.h}}
+\hypertarget{Log_8h}{}\doxysection{lambda/src/\+Lambda/core/util/\+Log.h File Reference}
+\label{Log_8h}\index{lambda/src/Lambda/core/util/Log.h@{lambda/src/Lambda/core/util/Log.h}}
 
 
 The engines util utility.  
@@ -7,10 +7,17 @@ The engines util utility.
 
 {\ttfamily \#include $<$memory$>$}\newline
 {\ttfamily \#include $<$spdlog/spdlog.\+h$>$}\newline
-{\ttfamily \#include \char`\"{}core/\+Core.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Lambda/core/\+Core.\+h\char`\"{}}\newline
 Include dependency graph for Log.\+h\+:
-% FIG 0
-This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Log_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -21,43 +28,55 @@ This graph shows which files directly or indirectly include this file\+:\nopageb
 \begin{DoxyCompactItemize}
 \item 
 class \mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Log}{lambda\+::core\+::util\+::\+Log}}
-\begin{DoxyCompactList}\small\item\em The container class for managing static instances of the engine and client loggers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em The engine wide logging A\+PI. Should primarily be used through the macros exposed at the bottom of the A\+PI. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{Log_8h_a4645443c6bdf15c6ce5ce845e4e9387b}\label{Log_8h_a4645443c6bdf15c6ce5ce845e4e9387b}} 
 \#define \mbox{\hyperlink{Log_8h_a4645443c6bdf15c6ce5ce845e4e9387b}{L\+A\+M\+B\+D\+A\+\_\+\+C\+O\+R\+E\+\_\+\+T\+R\+A\+CE}}(...)~\+::lambda\+::core\+::util\+::\+Log\+::\+Get\+Core\+Logger()-\/$>$trace(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)
-\begin{DoxyCompactList}\small\item\em Engine core trace output. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Log tracing information within the engine. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{Log_8h_ab350551e0bdde041ec250056213e25a6}\label{Log_8h_ab350551e0bdde041ec250056213e25a6}} 
 \#define \mbox{\hyperlink{Log_8h_ab350551e0bdde041ec250056213e25a6}{L\+A\+M\+B\+D\+A\+\_\+\+C\+O\+R\+E\+\_\+\+I\+N\+FO}}(...)~\+::lambda\+::core\+::util\+::\+Log\+::\+Get\+Core\+Logger()-\/$>$info(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)
-\begin{DoxyCompactList}\small\item\em Engine core info output. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Log informational information within the engine. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{Log_8h_a7fdc0f830c10c5e68aefee6192a2e9d1}\label{Log_8h_a7fdc0f830c10c5e68aefee6192a2e9d1}} 
 \#define \mbox{\hyperlink{Log_8h_a7fdc0f830c10c5e68aefee6192a2e9d1}{L\+A\+M\+B\+D\+A\+\_\+\+C\+O\+R\+E\+\_\+\+W\+A\+RN}}(...)~\+::lambda\+::core\+::util\+::\+Log\+::\+Get\+Core\+Logger()-\/$>$warn(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)
-\begin{DoxyCompactList}\small\item\em Engine core warning output. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{Log_8h_aed67b7a2d90134e256d18c22fbce4f16}\label{Log_8h_aed67b7a2d90134e256d18c22fbce4f16}} 
+\begin{DoxyCompactList}\small\item\em Log warning information within the engine. \end{DoxyCompactList}\item 
 \#define \mbox{\hyperlink{Log_8h_aed67b7a2d90134e256d18c22fbce4f16}{L\+A\+M\+B\+D\+A\+\_\+\+C\+O\+R\+E\+\_\+\+E\+R\+R\+OR}}(...)~\+::lambda\+::core\+::util\+::\+Log\+::\+Get\+Core\+Logger()-\/$>$error(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)
-\begin{DoxyCompactList}\small\item\em Engine core error output. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Log error information within the engine. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{Log_8h_af5b660a062ae0414be34cbbdaa00fdeb}\label{Log_8h_af5b660a062ae0414be34cbbdaa00fdeb}} 
-\#define \mbox{\hyperlink{Log_8h_af5b660a062ae0414be34cbbdaa00fdeb}{L\+A\+M\+B\+D\+A\+\_\+\+C\+O\+R\+E\+\_\+\+F\+A\+T\+AL}}(...)~\+::lambda\+::core\+::util\+::\+Log\+::\+Get\+Core\+Logger()-\/$>$fatal(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)
-\begin{DoxyCompactList}\small\item\em Engine core fatal output. Exits the application. \end{DoxyCompactList}\item 
+\#define {\bfseries L\+A\+M\+B\+D\+A\+\_\+\+C\+O\+R\+E\+\_\+\+F\+A\+T\+AL}(...)~\+::lambda\+::core\+::util\+::\+Log\+::\+Get\+Core\+Logger()-\/$>$fatal(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)
+\item 
 \mbox{\Hypertarget{Log_8h_af7dd270979f01739a9945ae4bb65bd98}\label{Log_8h_af7dd270979f01739a9945ae4bb65bd98}} 
 \#define \mbox{\hyperlink{Log_8h_af7dd270979f01739a9945ae4bb65bd98}{L\+A\+M\+B\+D\+A\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+T\+R\+A\+CE}}(...)~\+::lambda\+::core\+::util\+::\+Log\+::\+Get\+Client\+Logger()-\/$>$trace(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)
-\begin{DoxyCompactList}\small\item\em Engine client trace output. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Log tracing information within the application. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{Log_8h_a5e48dd618def0abe6995e89f33b1ae85}\label{Log_8h_a5e48dd618def0abe6995e89f33b1ae85}} 
 \#define \mbox{\hyperlink{Log_8h_a5e48dd618def0abe6995e89f33b1ae85}{L\+A\+M\+B\+D\+A\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+I\+N\+FO}}(...)~\+::lambda\+::core\+::util\+::\+Log\+::\+Get\+Client\+Logger()-\/$>$info(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)
-\begin{DoxyCompactList}\small\item\em Engine client info output. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Log informational information within the application. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{Log_8h_aefefce9598626949609abe71f5090f8f}\label{Log_8h_aefefce9598626949609abe71f5090f8f}} 
 \#define \mbox{\hyperlink{Log_8h_aefefce9598626949609abe71f5090f8f}{L\+A\+M\+B\+D\+A\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+W\+A\+RN}}(...)~\+::lambda\+::core\+::util\+::\+Log\+::\+Get\+Client\+Logger()-\/$>$warn(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)
-\begin{DoxyCompactList}\small\item\em Engine client warning output. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Log warning information within the application. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{Log_8h_ab358dd1138472e546b2e238a9e10b7f9}\label{Log_8h_ab358dd1138472e546b2e238a9e10b7f9}} 
 \#define \mbox{\hyperlink{Log_8h_ab358dd1138472e546b2e238a9e10b7f9}{L\+A\+M\+B\+D\+A\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+E\+R\+R\+OR}}(...)~\+::lambda\+::core\+::util\+::\+Log\+::\+Get\+Client\+Logger()-\/$>$error(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)
-\begin{DoxyCompactList}\small\item\em Engine client error output. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Log error information within the application. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{Log_8h_a52f1de866a56eaea50b5aa0b1f29e101}\label{Log_8h_a52f1de866a56eaea50b5aa0b1f29e101}} 
 \#define \mbox{\hyperlink{Log_8h_a52f1de866a56eaea50b5aa0b1f29e101}{L\+A\+M\+B\+D\+A\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+F\+A\+T\+AL}}(...)~\+::lambda\+::core\+::util\+::\+Log\+::\+Get\+Client\+Logger()-\/$>$fatal(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)
-\begin{DoxyCompactList}\small\item\em Engine client fatal output. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Log fatal information within the application. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 The engines util utility. 
 
 Can be used both in the engine and client application. 
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{Log_8h_aed67b7a2d90134e256d18c22fbce4f16}\label{Log_8h_aed67b7a2d90134e256d18c22fbce4f16}} 
+\index{Log.h@{Log.h}!LAMBDA\_CORE\_ERROR@{LAMBDA\_CORE\_ERROR}}
+\index{LAMBDA\_CORE\_ERROR@{LAMBDA\_CORE\_ERROR}!Log.h@{Log.h}}
+\doxysubsubsection{\texorpdfstring{LAMBDA\_CORE\_ERROR}{LAMBDA\_CORE\_ERROR}}
+{\footnotesize\ttfamily \#define L\+A\+M\+B\+D\+A\+\_\+\+C\+O\+R\+E\+\_\+\+E\+R\+R\+OR(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})~\+::lambda\+::core\+::util\+::\+Log\+::\+Get\+Core\+Logger()-\/$>$error(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)}
+
+
+
+Log error information within the engine. 
+
+Log fatal information within the engine. 

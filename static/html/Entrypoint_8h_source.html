@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>lambda: lambda/src/core/Entrypoint.h Source File</title>
+<title>lambda: lambda/src/Lambda/core/Entrypoint.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -86,11 +86,11 @@ $(document).ready(function(){initNavTree('Entrypoint_8h_source.html',''); initRe
 </div><!--header-->
 <div class="contents">
 <a href="Entrypoint_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef LAMBDA_SRC_CORE_ENTRYPOINT_H_</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define LAMBDA_SRC_CORE_ENTRYPOINT_H_</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef LAMBDA_SRC_LAMBDA_CORE_ENTRYPOINT_H_</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define LAMBDA_SRC_LAMBDA_CORE_ENTRYPOINT_H_</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Application_8h.html">core/Application.h</a>&quot;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Log_8h.html">core/util/Log.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Application_8h.html">Lambda/core/Application.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Log_8h.html">Lambda/core/util/Log.h</a>&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#ifdef LAMBDA_PLATFORM_LINUX</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
@@ -112,19 +112,19 @@ $(document).ready(function(){initNavTree('Entrypoint_8h_source.html',''); initRe
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#endif  // LAMBDA_PLATFORM_LINUX</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif  // LAMBDA_SRC_CORE_ENTRYPOINT_H_</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif  // LAMBDA_SRC_LAMBDA_CORE_ENTRYPOINT_H_</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclasslambda_1_1core_1_1Application_html"><div class="ttname"><a href="classlambda_1_1core_1_1Application.html">lambda::core::Application</a></div><div class="ttdoc">The mind, body, and soul of Lambda. The Application class is the.</div><div class="ttdef"><b>Definition:</b> Application.h:29</div></div>
 <div class="ttc" id="aLog_8h_html"><div class="ttname"><a href="Log_8h.html">Log.h</a></div><div class="ttdoc">The engines util utility.</div></div>
-<div class="ttc" id="aLog_8h_html_a7fdc0f830c10c5e68aefee6192a2e9d1"><div class="ttname"><a href="Log_8h.html#a7fdc0f830c10c5e68aefee6192a2e9d1">LAMBDA_CORE_WARN</a></div><div class="ttdeci">#define LAMBDA_CORE_WARN(...)</div><div class="ttdoc">Engine core warning output.</div></div>
+<div class="ttc" id="aLog_8h_html_a7fdc0f830c10c5e68aefee6192a2e9d1"><div class="ttname"><a href="Log_8h.html#a7fdc0f830c10c5e68aefee6192a2e9d1">LAMBDA_CORE_WARN</a></div><div class="ttdeci">#define LAMBDA_CORE_WARN(...)</div><div class="ttdoc">Log warning information within the engine.</div><div class="ttdef"><b>Definition:</b> Log.h:53</div></div>
 <div class="ttc" id="aApplication_8h_html_a4b9bcf9ac4926a28f984f9e2429de625"><div class="ttname"><a href="Application_8h.html#a4b9bcf9ac4926a28f984f9e2429de625">lambda::core::CreateApplication</a></div><div class="ttdeci">memory::Unique&lt; Application &gt; CreateApplication()</div><div class="ttdoc">Used for creating an instance of the game engine.</div></div>
-<div class="ttc" id="aLog_8h_html_a5e48dd618def0abe6995e89f33b1ae85"><div class="ttname"><a href="Log_8h.html#a5e48dd618def0abe6995e89f33b1ae85">LAMBDA_CLIENT_INFO</a></div><div class="ttdeci">#define LAMBDA_CLIENT_INFO(...)</div><div class="ttdoc">Engine client info output.</div></div>
+<div class="ttc" id="aLog_8h_html_a5e48dd618def0abe6995e89f33b1ae85"><div class="ttname"><a href="Log_8h.html#a5e48dd618def0abe6995e89f33b1ae85">LAMBDA_CLIENT_INFO</a></div><div class="ttdeci">#define LAMBDA_CLIENT_INFO(...)</div><div class="ttdoc">Log informational information within the application.</div><div class="ttdef"><b>Definition:</b> Log.h:73</div></div>
 <div class="ttc" id="aApplication_8h_html"><div class="ttname"><a href="Application_8h.html">Application.h</a></div><div class="ttdoc">Contains the Application class definitions.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_4b73342a493c3ec8f518edda193e909f.html">lambda</a></li><li class="navelem"><a class="el" href="dir_896901b14b6321ed9cf375daac6fb468.html">src</a></li><li class="navelem"><a class="el" href="dir_120072a10eb7d4fbc043fc091b8cce0e.html">core</a></li><li class="navelem"><a class="el" href="Entrypoint_8h.html">Entrypoint.h</a></li>
+    <li class="navelem"><a class="el" href="dir_4b73342a493c3ec8f518edda193e909f.html">lambda</a></li><li class="navelem"><a class="el" href="dir_896901b14b6321ed9cf375daac6fb468.html">src</a></li><li class="navelem"><a class="el" href="dir_fd5cc04d1fe0e30c92de2516fe39b3d1.html">Lambda</a></li><li class="navelem"><a class="el" href="dir_142be93ac9cb5d36c0a8367e1772f950.html">core</a></li><li class="navelem"><a class="el" href="Entrypoint_8h.html">Entrypoint.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>

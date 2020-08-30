@@ -1,5 +1,5 @@
-\hypertarget{Time_8h}{}\doxysection{lambda/src/core/util/\+Time.h File Reference}
-\label{Time_8h}\index{lambda/src/core/util/Time.h@{lambda/src/core/util/Time.h}}
+\hypertarget{Time_8h}{}\doxysection{lambda/src/\+Lambda/core/util/\+Time.h File Reference}
+\label{Time_8h}\index{lambda/src/Lambda/core/util/Time.h@{lambda/src/Lambda/core/util/Time.h}}
 
 
 Cross platform timing utility for the game engine.  
@@ -8,10 +8,17 @@ Cross platform timing utility for the game engine.
 {\ttfamily \#include $<$chrono$>$}\newline
 {\ttfamily \#include $<$concepts$>$}\newline
 {\ttfamily \#include $<$ratio$>$}\newline
-{\ttfamily \#include \char`\"{}core/util/\+Assert.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Lambda/core/util/\+Assert.\+h\char`\"{}}\newline
 Include dependency graph for Time.\+h\+:
-% FIG 0
-This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Time_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -22,9 +29,9 @@ This graph shows which files directly or indirectly include this file\+:\nopageb
 \begin{DoxyCompactItemize}
 \item 
 class \mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time}{lambda\+::core\+::util\+::\+Time}}
-\item 
+\begin{DoxyCompactList}\small\item\em A platform independent clock implementation that is monotonic and used. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classlambda_1_1core_1_1util_1_1TimeStep}{lambda\+::core\+::util\+::\+Time\+Step}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Measuring the delta between two different times. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Typedefs}
 \begin{DoxyCompactItemize}
 \item 
@@ -49,9 +56,8 @@ typedef std\+::chrono\+::duration$<$ int64\+\_\+t, std\+::deci $>$ {\bfseries la
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{Time_8h_a7fc5e5520345e2744bd36a3d2f21c31d}\label{Time_8h_a7fc5e5520345e2744bd36a3d2f21c31d}} 
-{\footnotesize template$<$Float\+Type T, typename Ratio $>$ }\\const T {\bfseries lambda\+::core\+::util\+::\+Duration\+To} (const \mbox{\hyperlink{classlambda_1_1util_1_1Time}{Time}} \&start, const \mbox{\hyperlink{classlambda_1_1util_1_1Time}{Time}} \&end)
-\end{DoxyCompactItemize}
+{\footnotesize template$<$Float\+Type T, typename Ratio $>$ }\\const T \mbox{\hyperlink{Time_8h_a38e887324504a83e2f5f0cc3b379fa82}{lambda\+::core\+::util\+::\+Duration\+To}} (const Time \&start, const Time \&stop)
+\begin{DoxyCompactList}\small\item\em Convert two \mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time}{Time}} instances into a duration of float type T. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
@@ -63,3 +69,18 @@ typedef std\+::chrono\+::duration$<$ int64\+\_\+t, std\+::deci $>$ {\bfseries la
 \doxysubsection{Detailed Description}
 Cross platform timing utility for the game engine. 
 
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{Time_8h_a38e887324504a83e2f5f0cc3b379fa82}\label{Time_8h_a38e887324504a83e2f5f0cc3b379fa82}} 
+\index{Time.h@{Time.h}!DurationTo@{DurationTo}}
+\index{DurationTo@{DurationTo}!Time.h@{Time.h}}
+\doxysubsubsection{\texorpdfstring{DurationTo()}{DurationTo()}}
+{\footnotesize\ttfamily template$<$Float\+Type T, typename Ratio $>$ \\
+const T lambda\+::core\+::util\+::\+Duration\+To (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time}{Time}} \&}]{start,  }\item[{const \mbox{\hyperlink{classlambda_1_1core_1_1util_1_1Time}{Time}} \&}]{stop }\end{DoxyParamCaption})}
+
+
+
+Convert two Time instances into a duration of float type T. 
+
+Float\+Type T is either a double or float. 

@@ -1,5 +1,10 @@
 var NAVTREEINDEX1 =
 {
+"classlambda_1_1core_1_1events_1_1MouseButtonReleasedEvent.html#a0f235b6f84eeee33d0ae564d2ab260cc":[2,0,0,0,0,11,0],
+"classlambda_1_1core_1_1events_1_1MouseButtonReleasedEvent.html#a4742c3719b0bffa3ca79018045b6562b":[2,0,0,0,0,11,1],
+"classlambda_1_1core_1_1events_1_1MouseMovedEvent.html":[2,0,0,0,0,12],
+"classlambda_1_1core_1_1events_1_1MouseMovedEvent.html#a3aa75a4e95f1ee226cab464d94c325e4":[2,0,0,0,0,12,1],
+"classlambda_1_1core_1_1events_1_1MouseMovedEvent.html#a64d05fef8299381971c1c962e3bcfd42":[2,0,0,0,0,12,0],
 "classlambda_1_1core_1_1events_1_1MouseMovedEvent.html#a7b7672b5808fe3d344663fb32eea5918":[2,0,0,0,0,12,3],
 "classlambda_1_1core_1_1events_1_1MouseMovedEvent.html#ada0451e833497b1e601368505abab437":[2,0,0,0,0,12,2],
 "classlambda_1_1core_1_1events_1_1MouseScrolledEvent.html":[2,0,0,0,0,13],
@@ -244,10 +249,5 @@ var NAVTREEINDEX1 =
 "classlambda_1_1platform_1_1opengl_1_1OpenGLVertexBuffer.html#a0cc6f0080481c97c31640f28b2c004ea":[2,0,0,1,0,6,5],
 "classlambda_1_1platform_1_1opengl_1_1OpenGLVertexBuffer.html#a2ebb10a0bfcc9a21f37df02a1b0edd1d":[2,0,0,1,0,6,2],
 "classlambda_1_1platform_1_1opengl_1_1OpenGLVertexBuffer.html#aad51cef93545ebaa5b015b9365919938":[2,0,0,1,0,6,1],
-"classlambda_1_1platform_1_1opengl_1_1OpenGLVertexBuffer.html#ae07cca8d7f5523436166d0031f1947ea":[2,0,0,1,0,6,0],
-"core_2Window_8h.html":[3,0,0,0,0,0,12],
-"core_2Window_8h_source.html":[3,0,0,0,0,0,12],
-"core_2input_2Input_8h.html":[3,0,0,0,0,0,2,0],
-"core_2input_2Input_8h_source.html":[3,0,0,0,0,0,2,0],
-"dir_142be93ac9cb5d36c0a8367e1772f950.html":[3,0,0,0,0,0]
+"classlambda_1_1platform_1_1opengl_1_1OpenGLVertexBuffer.html#ae07cca8d7f5523436166d0031f1947ea":[2,0,0,1,0,6,0]
 };

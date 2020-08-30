@@ -21,10 +21,10 @@
 <area shape="rect" id="node18" href="$Buffer_8h.html" title="Buffer abstractions that allow the ease of implementing Buffers for any graphics API." alt="" coords="2093,273,2275,315"/>
 <area shape="rect" id="node26" href="$Time_8h.html" title="Cross platform timing utility for the game engine." alt="" coords="1562,273,1745,315"/>
 <area shape="rect" id="node19" href="$VertexArray_8h.html" title="The Generic VertexArray API." alt="" coords="2325,363,2507,404"/>
-<area shape="rect" id="node24" href="$OpenGLVertexArray_8h_source.html" title=" " alt="" coords="2078,452,2290,493"/>
-<area shape="rect" id="node25" href="$OpenGLBuffer_8h_source.html" title=" " alt="" coords="2779,363,2989,404"/>
+<area shape="rect" id="node24" href="$OpenGLVertexArray_8h.html" title="OpenGL implementations of lambda vertex arrays." alt="" coords="2078,452,2290,493"/>
+<area shape="rect" id="node25" href="$OpenGLBuffer_8h.html" title="Contains all opengl buffer implementations." alt="" coords="2779,363,2989,404"/>
 <area shape="rect" id="node20" href="$RendererAPI_8h.html" title="the rendering API that handles all draw calls." alt="" coords="2414,452,2597,493"/>
-<area shape="rect" id="node23" href="$OpenGLRendererAPI_8h_source.html" title=" " alt="" coords="2670,541,2887,583"/>
+<area shape="rect" id="node23" href="$OpenGLRendererAPI_8h.html" title="The OpenGL rendering implementation." alt="" coords="2670,541,2887,583"/>
 <area shape="rect" id="node21" href="$RenderCommand_8h.html" title="The declaration file for the RenderCommand Wrapper." alt="" coords="2228,541,2439,583"/>
 <area shape="rect" id="node22" href="$Renderer_8h.html" title="The rendering API." alt="" coords="2463,541,2646,583"/>
 <area shape="rect" id="node27" href="$AsyncTask_8h.html" title="A convenient wrapper for callback functions being dispatched into the event loop TODO(C3NZ): Add docu..." alt="" coords="1770,452,1953,493"/>

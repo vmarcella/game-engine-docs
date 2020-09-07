@@ -88,48 +88,62 @@ $(document).ready(function(){initNavTree('Renderer2D_8h_source.html',''); initRe
 <a href="Renderer2D_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef LAMBDA_SRC_LAMBDA_CORE_RENDERER_RENDERER2D_H_</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define LAMBDA_SRC_LAMBDA_CORE_RENDERER_RENDERER2D_H_</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="OrthographicCamera_8h.html">Lambda/core/renderer/OrthographicCamera.h</a>&quot;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>lambda {</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>core {</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span>renderer {</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1renderer_1_1Renderer2D.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="classlambda_1_1core_1_1renderer_1_1Renderer2D.html">Renderer2D</a> {</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classlambda_1_1core_1_1renderer_1_1Renderer2D.html#add05f542bc7bd929ada2b74118a54762">Init</a>();</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classlambda_1_1core_1_1renderer_1_1Renderer2D.html#ab36ce377363193eb7ec8c5637cdc03e3">Shutdown</a>();</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classlambda_1_1core_1_1renderer_1_1Renderer2D.html#a3010ab7bc0ee09cccc62a1cfe9c5b86d">BeginScene</a>(<span class="keyword">const</span> <a class="code" href="classlambda_1_1core_1_1renderer_1_1OrthographicCamera.html">OrthographicCamera</a>&amp; camera);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classlambda_1_1core_1_1renderer_1_1Renderer2D.html#a8e4bc97f9b154970815a1b5d54c67e77">EndScene</a>();</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classlambda_1_1core_1_1renderer_1_1Renderer2D.html#ab351ab605fe5d38ba406967e27a4f746">DrawQuad</a>(</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      <span class="keyword">const</span> glm::vec2&amp; position,</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      <span class="keyword">const</span> glm::vec2&amp; size,</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      <span class="keyword">const</span> glm::vec4&amp; color);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classlambda_1_1core_1_1renderer_1_1Renderer2D.html#ab351ab605fe5d38ba406967e27a4f746">DrawQuad</a>(</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      <span class="keyword">const</span> glm::vec3&amp; position,</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      <span class="keyword">const</span> glm::vec2&amp; size,</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <span class="keyword">const</span> glm::vec4&amp; color);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}  <span class="comment">// namespace renderer</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}  <span class="comment">// namespace core</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}  <span class="comment">// namespace lambda</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#endif  // LAMBDA_SRC_LAMBDA_CORE_RENDERER_RENDERER2D_H_</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Pointers_8h.html">Lambda/core/memory/Pointers.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="OrthographicCamera_8h.html">Lambda/core/renderer/OrthographicCamera.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Texture_8h.html">Lambda/core/renderer/Texture.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span>lambda {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>core {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span>renderer {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classlambda_1_1core_1_1renderer_1_1Renderer2D.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="classlambda_1_1core_1_1renderer_1_1Renderer2D.html">Renderer2D</a> {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classlambda_1_1core_1_1renderer_1_1Renderer2D.html#add05f542bc7bd929ada2b74118a54762">Init</a>();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classlambda_1_1core_1_1renderer_1_1Renderer2D.html#ab36ce377363193eb7ec8c5637cdc03e3">Shutdown</a>();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classlambda_1_1core_1_1renderer_1_1Renderer2D.html#a3010ab7bc0ee09cccc62a1cfe9c5b86d">BeginScene</a>(<span class="keyword">const</span> <a class="code" href="classlambda_1_1core_1_1renderer_1_1OrthographicCamera.html">OrthographicCamera</a>&amp; camera);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classlambda_1_1core_1_1renderer_1_1Renderer2D.html#a8e4bc97f9b154970815a1b5d54c67e77">EndScene</a>();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classlambda_1_1core_1_1renderer_1_1Renderer2D.html#ab351ab605fe5d38ba406967e27a4f746">DrawQuad</a>(</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      <span class="keyword">const</span> glm::vec2&amp; position,</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      <span class="keyword">const</span> glm::vec2&amp; size,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      <span class="keyword">const</span> glm::vec4&amp; color);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classlambda_1_1core_1_1renderer_1_1Renderer2D.html#ab351ab605fe5d38ba406967e27a4f746">DrawQuad</a>(</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <span class="keyword">const</span> glm::vec3&amp; position,</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      <span class="keyword">const</span> glm::vec2&amp; size,</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      <span class="keyword">const</span> glm::vec4&amp; color);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classlambda_1_1core_1_1renderer_1_1Renderer2D.html#ab351ab605fe5d38ba406967e27a4f746">DrawQuad</a>(</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      <span class="keyword">const</span> glm::vec2&amp; position,</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      <span class="keyword">const</span> glm::vec2&amp; size,</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      core::memory::Shared&lt;Texture2D&gt; texture);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classlambda_1_1core_1_1renderer_1_1Renderer2D.html#ab351ab605fe5d38ba406967e27a4f746">DrawQuad</a>(</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      <span class="keyword">const</span> glm::vec3&amp; position,</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      <span class="keyword">const</span> glm::vec2&amp; size,</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      core::memory::Shared&lt;Texture2D&gt; texture);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;};</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}  <span class="comment">// namespace renderer</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}  <span class="comment">// namespace core</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}  <span class="comment">// namespace lambda</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif  // LAMBDA_SRC_LAMBDA_CORE_RENDERER_RENDERER2D_H_</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aTexture_8h_html"><div class="ttname"><a href="Texture_8h.html">Texture.h</a></div><div class="ttdoc">The Abstract Texture implementation.</div></div>
 <div class="ttc" id="aOrthographicCamera_8h_html"><div class="ttname"><a href="OrthographicCamera_8h.html">OrthographicCamera.h</a></div><div class="ttdoc">A 2D orthographic camera implementation that is compatible with the renderer.</div></div>
-<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1Renderer2D_html_ab36ce377363193eb7ec8c5637cdc03e3"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1Renderer2D.html#ab36ce377363193eb7ec8c5637cdc03e3">lambda::core::renderer::Renderer2D::Shutdown</a></div><div class="ttdeci">static void Shutdown()</div><div class="ttdoc">Shutdown the 2D rendering system.</div><div class="ttdef"><b>Definition:</b> Renderer2D.cpp:67</div></div>
-<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1Renderer2D_html_a8e4bc97f9b154970815a1b5d54c67e77"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1Renderer2D.html#a8e4bc97f9b154970815a1b5d54c67e77">lambda::core::renderer::Renderer2D::EndScene</a></div><div class="ttdeci">static void EndScene()</div><div class="ttdoc">End the scene.</div><div class="ttdef"><b>Definition:</b> Renderer2D.cpp:82</div></div>
-<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1Renderer2D_html_add05f542bc7bd929ada2b74118a54762"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1Renderer2D.html#add05f542bc7bd929ada2b74118a54762">lambda::core::renderer::Renderer2D::Init</a></div><div class="ttdeci">static void Init()</div><div class="ttdoc">Initialize the 2D rendering system.</div><div class="ttdef"><b>Definition:</b> Renderer2D.cpp:34</div></div>
-<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1Renderer2D_html_a3010ab7bc0ee09cccc62a1cfe9c5b86d"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1Renderer2D.html#a3010ab7bc0ee09cccc62a1cfe9c5b86d">lambda::core::renderer::Renderer2D::BeginScene</a></div><div class="ttdeci">static void BeginScene(const OrthographicCamera &amp;camera)</div><div class="ttdoc">Render a scene for a given camera.</div><div class="ttdef"><b>Definition:</b> Renderer2D.cpp:75</div></div>
-<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1Renderer2D_html"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1Renderer2D.html">lambda::core::renderer::Renderer2D</a></div><div class="ttdoc">The 2D rendering API.</div><div class="ttdef"><b>Definition:</b> Renderer2D.h:15</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1Renderer2D_html_ab36ce377363193eb7ec8c5637cdc03e3"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1Renderer2D.html#ab36ce377363193eb7ec8c5637cdc03e3">lambda::core::renderer::Renderer2D::Shutdown</a></div><div class="ttdeci">static void Shutdown()</div><div class="ttdoc">Shutdown the 2D rendering system.</div><div class="ttdef"><b>Definition:</b> Renderer2D.cpp:76</div></div>
+<div class="ttc" id="aPointers_8h_html"><div class="ttname"><a href="Pointers_8h.html">Pointers.h</a></div><div class="ttdoc">Abstraction for handling pointers within the engine. Currently just aliases for unique and shared poi...</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1Renderer2D_html_a8e4bc97f9b154970815a1b5d54c67e77"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1Renderer2D.html#a8e4bc97f9b154970815a1b5d54c67e77">lambda::core::renderer::Renderer2D::EndScene</a></div><div class="ttdeci">static void EndScene()</div><div class="ttdoc">End the scene.</div><div class="ttdef"><b>Definition:</b> Renderer2D.cpp:98</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1Renderer2D_html_add05f542bc7bd929ada2b74118a54762"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1Renderer2D.html#add05f542bc7bd929ada2b74118a54762">lambda::core::renderer::Renderer2D::Init</a></div><div class="ttdeci">static void Init()</div><div class="ttdoc">Initialize the 2D rendering system.</div><div class="ttdef"><b>Definition:</b> Renderer2D.cpp:35</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1Renderer2D_html_a3010ab7bc0ee09cccc62a1cfe9c5b86d"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1Renderer2D.html#a3010ab7bc0ee09cccc62a1cfe9c5b86d">lambda::core::renderer::Renderer2D::BeginScene</a></div><div class="ttdeci">static void BeginScene(const OrthographicCamera &amp;camera)</div><div class="ttdoc">Render a scene for a given camera.</div><div class="ttdef"><b>Definition:</b> Renderer2D.cpp:86</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1Renderer2D_html"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1Renderer2D.html">lambda::core::renderer::Renderer2D</a></div><div class="ttdoc">The 2D rendering API.</div><div class="ttdef"><b>Definition:</b> Renderer2D.h:17</div></div>
 <div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1OrthographicCamera_html"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1OrthographicCamera.html">lambda::core::renderer::OrthographicCamera</a></div><div class="ttdoc">An orthographic camera implementation for the 2D engine.</div><div class="ttdef"><b>Definition:</b> OrthographicCamera.h:15</div></div>
-<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1Renderer2D_html_ab351ab605fe5d38ba406967e27a4f746"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1Renderer2D.html#ab351ab605fe5d38ba406967e27a4f746">lambda::core::renderer::Renderer2D::DrawQuad</a></div><div class="ttdeci">static void DrawQuad(const glm::vec2 &amp;position, const glm::vec2 &amp;size, const glm::vec4 &amp;color)</div><div class="ttdoc">Draw a quad given it's position, size, and color.</div><div class="ttdef"><b>Definition:</b> Renderer2D.cpp:87</div></div>
+<div class="ttc" id="aclasslambda_1_1core_1_1renderer_1_1Renderer2D_html_ab351ab605fe5d38ba406967e27a4f746"><div class="ttname"><a href="classlambda_1_1core_1_1renderer_1_1Renderer2D.html#ab351ab605fe5d38ba406967e27a4f746">lambda::core::renderer::Renderer2D::DrawQuad</a></div><div class="ttdeci">static void DrawQuad(const glm::vec2 &amp;position, const glm::vec2 &amp;size, const glm::vec4 &amp;color)</div><div class="ttdoc">Draw a quad given it's position, size, and color.</div><div class="ttdef"><b>Definition:</b> Renderer2D.cpp:103</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

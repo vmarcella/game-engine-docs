@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['nanosecondsfromnow_366',['NanosecondsFromNow',['../classlambda_1_1core_1_1util_1_1Time.html#a1fa9b3ea5b8e1cc4d420fdde68528fb5',1,'lambda::core::util::Time']]],
-  ['now_367',['Now',['../classlambda_1_1core_1_1util_1_1Time.html#a27f051b3ce8268da02bfcf3f1babcdf7',1,'lambda::core::util::Time']]]
+  ['nanosecondsfromnow_378',['NanosecondsFromNow',['../classlambda_1_1core_1_1util_1_1Time.html#a1fa9b3ea5b8e1cc4d420fdde68528fb5',1,'lambda::core::util::Time']]],
+  ['now_379',['Now',['../classlambda_1_1core_1_1util_1_1Time.html#a27f051b3ce8268da02bfcf3f1babcdf7',1,'lambda::core::util::Time']]]
 ];

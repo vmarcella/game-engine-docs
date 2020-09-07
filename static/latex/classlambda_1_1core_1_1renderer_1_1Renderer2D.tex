@@ -25,7 +25,13 @@ static void \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1Renderer2D_ab351
 \begin{DoxyCompactList}\small\item\em Draw a quad given it\textquotesingle{}s position, size, and color. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1Renderer2D_a278ed0977dea0e2fdf1e4f22cf38450e}\label{classlambda_1_1core_1_1renderer_1_1Renderer2D_a278ed0977dea0e2fdf1e4f22cf38450e}} 
 static void \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1Renderer2D_a278ed0977dea0e2fdf1e4f22cf38450e}{Draw\+Quad}} (const glm\+::vec3 \&position, const glm\+::vec2 \&size, const glm\+::vec4 \&color)
-\begin{DoxyCompactList}\small\item\em Draw a quad given it\textquotesingle{}s position, size, and color. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Draw a quad given it\textquotesingle{}s position, size, and color. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1Renderer2D_a7b11fb4971681ab5addfc23fed479a91}\label{classlambda_1_1core_1_1renderer_1_1Renderer2D_a7b11fb4971681ab5addfc23fed479a91}} 
+static void \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1Renderer2D_a7b11fb4971681ab5addfc23fed479a91}{Draw\+Quad}} (const glm\+::vec2 \&position, const glm\+::vec2 \&size, core\+::memory\+::\+Shared$<$ \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1Texture2D}{Texture2D}} $>$ texture)
+\begin{DoxyCompactList}\small\item\em Draw a quad given it\textquotesingle{}s position, size, and \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1Texture}{Texture}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1core_1_1renderer_1_1Renderer2D_a602750d94a9eca9f2ecfa436de184d8c}\label{classlambda_1_1core_1_1renderer_1_1Renderer2D_a602750d94a9eca9f2ecfa436de184d8c}} 
+static void \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1Renderer2D_a602750d94a9eca9f2ecfa436de184d8c}{Draw\+Quad}} (const glm\+::vec3 \&position, const glm\+::vec2 \&size, core\+::memory\+::\+Shared$<$ \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1Texture2D}{Texture2D}} $>$ texture)
+\begin{DoxyCompactList}\small\item\em Draw a quad given it\textquotesingle{}s position, size, and \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1Texture}{Texture}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -78,7 +84,7 @@ Initialize the 2D rendering system.
 
 Shutdown the 2D rendering system. 
 
-This will completely reset all of the memory owned by the the renderers storage system. In the future, this should be handled by our memory allocator system. 
+This will completely reset all of the memory owned by the the renderers storage system. In the future, the memory allocator should ensure that resources are freed once the renderers storage has been released. 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

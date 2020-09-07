@@ -42,17 +42,42 @@ void \mbox{\hyperlink{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_ac7c13ee
 \mbox{\Hypertarget{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_ad0809dc07a1cf39fa12e7858f1410cd6}\label{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_ad0809dc07a1cf39fa12e7858f1410cd6}} 
 void \mbox{\hyperlink{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_ad0809dc07a1cf39fa12e7858f1410cd6}{Unbind}} () const override
 \begin{DoxyCompactList}\small\item\em Unbinds the shader from the G\+PU. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_a4173d0c7a88681a5b7cdc6a294fc7466}{Set\+Mat4}} (const std\+::string \&name, const glm\+::mat4 \&matrix) override
+\mbox{\Hypertarget{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_ab87a74ab27936c225acf06ef89010245}\label{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_ab87a74ab27936c225acf06ef89010245}} 
+void \mbox{\hyperlink{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_ab87a74ab27936c225acf06ef89010245}{Set\+Bool}} (const std\+::string \&name, const bool \&value) override
+\begin{DoxyCompactList}\small\item\em Set a boolean within the shader. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_a9f2c857dfcdb118b4ef96b9d9b35bcd6}\label{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_a9f2c857dfcdb118b4ef96b9d9b35bcd6}} 
+void \mbox{\hyperlink{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_a9f2c857dfcdb118b4ef96b9d9b35bcd6}{Set\+Float}} (const std\+::string \&name, const float \&value) override
+\begin{DoxyCompactList}\small\item\em Sets a float within the shader. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_af8709c29c20854e3510c2a78b0f824f7}\label{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_af8709c29c20854e3510c2a78b0f824f7}} 
+void \mbox{\hyperlink{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_af8709c29c20854e3510c2a78b0f824f7}{Set\+Float2}} (const std\+::string \&name, const glm\+::vec2 \&values) override
+\begin{DoxyCompactList}\small\item\em Sets a vector of 2 floats within the shader. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_ab9307162925906cca1a35a42a12311c0}\label{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_ab9307162925906cca1a35a42a12311c0}} 
+void \mbox{\hyperlink{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_ab9307162925906cca1a35a42a12311c0}{Set\+Float3}} (const std\+::string \&name, const glm\+::vec3 \&values) override
+\begin{DoxyCompactList}\small\item\em Sets a vector of 3 floats within the shader. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_a923984f97855f86b80b1d179e1f4975a}\label{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_a923984f97855f86b80b1d179e1f4975a}} 
+void \mbox{\hyperlink{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_a923984f97855f86b80b1d179e1f4975a}{Set\+Float4}} (const std\+::string \&name, const glm\+::vec4 \&values) override
+\begin{DoxyCompactList}\small\item\em Sets a vector of 3 floats within the shader. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_a802be85cd661a05cdc9f7a16c36d4ebf}\label{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_a802be85cd661a05cdc9f7a16c36d4ebf}} 
+void \mbox{\hyperlink{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_a802be85cd661a05cdc9f7a16c36d4ebf}{Set\+Int}} (const std\+::string \&name, const int \&value) override
+\begin{DoxyCompactList}\small\item\em Sets an integer within the shader. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_a4e93c7d465d6945df53177796e797dea}\label{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_a4e93c7d465d6945df53177796e797dea}} 
+void \mbox{\hyperlink{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_a4e93c7d465d6945df53177796e797dea}{Set\+Int2}} (const std\+::string \&name, const glm\+::vec2 \&values) override
+\begin{DoxyCompactList}\small\item\em Sets a vector of 2 Integers within the shader. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_a49f03d3443985152b78be55e0263df56}\label{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_a49f03d3443985152b78be55e0263df56}} 
+void \mbox{\hyperlink{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_a49f03d3443985152b78be55e0263df56}{Set\+Int3}} (const std\+::string \&name, const glm\+::vec3 \&values) override
+\begin{DoxyCompactList}\small\item\em Sets a vector of 3 Integers within the shader. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_a0f4c76de757bad27946c3bae68f9a97f}\label{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_a0f4c76de757bad27946c3bae68f9a97f}} 
+void \mbox{\hyperlink{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_a0f4c76de757bad27946c3bae68f9a97f}{Set\+Int4}} (const std\+::string \&name, const glm\+::vec4 \&values) override
+\begin{DoxyCompactList}\small\item\em Sets a vector of 4 Integers within the shader. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_a920c2bd629a0b5a44420945560caeaee}\label{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_a920c2bd629a0b5a44420945560caeaee}} 
+void \mbox{\hyperlink{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_a920c2bd629a0b5a44420945560caeaee}{Set\+Mat3}} (const std\+::string \&name, const glm\+::mat3 \&values) override
+\begin{DoxyCompactList}\small\item\em Sets a 3x3 matrix within the shader. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_ad4e4dc9f05b4934ca1a1004acbf74d1c}\label{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_ad4e4dc9f05b4934ca1a1004acbf74d1c}} 
+void \mbox{\hyperlink{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_ad4e4dc9f05b4934ca1a1004acbf74d1c}{Set\+Mat4}} (const std\+::string \&name, const glm\+::mat4 \&values) override
 \begin{DoxyCompactList}\small\item\em Sets a 4x4 matrix within the shader. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_af5d7afbb2075918cd1a1266b9b70cac1}\label{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_af5d7afbb2075918cd1a1266b9b70cac1}} 
-void \mbox{\hyperlink{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_af5d7afbb2075918cd1a1266b9b70cac1}{Set\+Float3}} (const std\+::string \&name, const glm\+::vec3 \&vector) override
-\begin{DoxyCompactList}\small\item\em Sets a vector of floats within the shader. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_ab668f8bc677aeadf275f6af05aa1ac3b}\label{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_ab668f8bc677aeadf275f6af05aa1ac3b}} 
-void \mbox{\hyperlink{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_ab668f8bc677aeadf275f6af05aa1ac3b}{Set\+Float4}} (const std\+::string \&name, const glm\+::vec4 \&vector) override
-\begin{DoxyCompactList}\small\item\em Sets a vector of floats within the shader. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_a32a7f06e93f38cea6310d19fe5fdc6eb}\label{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_a32a7f06e93f38cea6310d19fe5fdc6eb}} 
-void \mbox{\hyperlink{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_a32a7f06e93f38cea6310d19fe5fdc6eb}{Upload\+Uniform\+Int}} (const std\+::string \&name, const int \&value)
-\begin{DoxyCompactList}\small\item\em Upload an integer into the shader. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_a090856300e4e3ac7a29eb9c6ce5041f3}\label{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_a090856300e4e3ac7a29eb9c6ce5041f3}} 
+void \mbox{\hyperlink{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_a090856300e4e3ac7a29eb9c6ce5041f3}{Upload\+Uniform\+Bool}} (const std\+::string \&name, const bool \&value)
+\begin{DoxyCompactList}\small\item\em Upload a bool into the shader. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_a0854054baceebf98bf25e177eaa1169e}\label{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_a0854054baceebf98bf25e177eaa1169e}} 
 void \mbox{\hyperlink{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_a0854054baceebf98bf25e177eaa1169e}{Upload\+Uniform\+Float}} (const std\+::string \&name, const float \&value)
 \begin{DoxyCompactList}\small\item\em Upload a float into the shader. \end{DoxyCompactList}\item 
@@ -62,9 +87,21 @@ void \mbox{\hyperlink{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_a613c2da
 \mbox{\Hypertarget{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_ac9b0026d3f6369367aeb24fb88325078}\label{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_ac9b0026d3f6369367aeb24fb88325078}} 
 void \mbox{\hyperlink{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_ac9b0026d3f6369367aeb24fb88325078}{Upload\+Uniform\+Float3}} (const std\+::string \&name, const glm\+::vec3 \&values)
 \begin{DoxyCompactList}\small\item\em Upload a uniform of 3 floats into the shader. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_a89c3aa60c84093145ae6895700e6da93}\label{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_a89c3aa60c84093145ae6895700e6da93}} 
-void \mbox{\hyperlink{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_a89c3aa60c84093145ae6895700e6da93}{Upload\+Uniform\+Float4}} (const std\+::string \&name, const glm\+::vec4 \&matrix)
+\mbox{\Hypertarget{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_a1911ab22b2eb6598bb8f845b7de80384}\label{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_a1911ab22b2eb6598bb8f845b7de80384}} 
+void \mbox{\hyperlink{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_a1911ab22b2eb6598bb8f845b7de80384}{Upload\+Uniform\+Float4}} (const std\+::string \&name, const glm\+::vec4 \&values)
 \begin{DoxyCompactList}\small\item\em Allows the uploading of uniform float 4s into the shader. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_a32a7f06e93f38cea6310d19fe5fdc6eb}\label{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_a32a7f06e93f38cea6310d19fe5fdc6eb}} 
+void \mbox{\hyperlink{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_a32a7f06e93f38cea6310d19fe5fdc6eb}{Upload\+Uniform\+Int}} (const std\+::string \&name, const int \&value)
+\begin{DoxyCompactList}\small\item\em Upload an integer into the shader. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_a6069b4c136e31940acae8cc8b496545c}\label{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_a6069b4c136e31940acae8cc8b496545c}} 
+void \mbox{\hyperlink{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_a6069b4c136e31940acae8cc8b496545c}{Upload\+Uniform\+Int2}} (const std\+::string \&name, const glm\+::vec2 \&values)
+\begin{DoxyCompactList}\small\item\em Upload a uniform 2 integers into the shader. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_a9d48aa9819b8423de3d050868ec8aaaf}\label{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_a9d48aa9819b8423de3d050868ec8aaaf}} 
+void \mbox{\hyperlink{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_a9d48aa9819b8423de3d050868ec8aaaf}{Upload\+Uniform\+Int3}} (const std\+::string \&name, const glm\+::vec3 \&values)
+\begin{DoxyCompactList}\small\item\em Upload a uniform 3 integers into the shader. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_a2e669ff70ec66f2c074d591663d78019}\label{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_a2e669ff70ec66f2c074d591663d78019}} 
+void \mbox{\hyperlink{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_a2e669ff70ec66f2c074d591663d78019}{Upload\+Uniform\+Int4}} (const std\+::string \&name, const glm\+::vec4 \&values)
+\begin{DoxyCompactList}\small\item\em Upload a uniform 4 integers into the shader. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_a6b368d2b1b10117488be31ea9d34e376}\label{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_a6b368d2b1b10117488be31ea9d34e376}} 
 void \mbox{\hyperlink{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_a6b368d2b1b10117488be31ea9d34e376}{Upload\+Uniform\+Mat3}} (const std\+::string \&name, const glm\+::mat3 \&matrix)
 \begin{DoxyCompactList}\small\item\em Upload a uniform of Matrix 3s into the shader. \end{DoxyCompactList}\item 
@@ -78,25 +115,6 @@ void \mbox{\hyperlink{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_a78a5c3b
 The Shader A\+PI. 
 
 Expects sources to be strings that are designed for the shading language that is being used in the A\+PI. This can also load shaders stored within a glsl file and conforms to the way that the Shader A\+PI expects to read them. Look into the sandbox tool for working examples. 
-
-\doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_a4173d0c7a88681a5b7cdc6a294fc7466}\label{classlambda_1_1platform_1_1opengl_1_1OpenGLShader_a4173d0c7a88681a5b7cdc6a294fc7466}} 
-\index{lambda::platform::opengl::OpenGLShader@{lambda::platform::opengl::OpenGLShader}!SetMat4@{SetMat4}}
-\index{SetMat4@{SetMat4}!lambda::platform::opengl::OpenGLShader@{lambda::platform::opengl::OpenGLShader}}
-\doxysubsubsection{\texorpdfstring{SetMat4()}{SetMat4()}}
-{\footnotesize\ttfamily void lambda\+::platform\+::opengl\+::\+Open\+G\+L\+Shader\+::\+Set\+Mat4 (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const glm\+::mat4 \&}]{matrix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
-
-
-
-Sets a 4x4 matrix within the shader. 
-
-\begin{DoxyRefDesc}{Todo}
-\item[\mbox{\hyperlink{todo__todo000005}{Todo}}]This shouldn\textquotesingle{}t rely on glm. \end{DoxyRefDesc}
-
-
-Implements \mbox{\hyperlink{classlambda_1_1core_1_1renderer_1_1Shader_a3e47a2a0d9fd7210d491663df083c623}{lambda\+::core\+::renderer\+::\+Shader}}.
-
-
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

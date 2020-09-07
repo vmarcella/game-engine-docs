@@ -94,21 +94,27 @@ $(document).ready(function(){initNavTree('Assert_8h_source.html',''); initResiza
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#if LAMBDA_ENABLE_ASSERTS</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">  #define LAMBDA_CLIENT_ASSERT(x, ...) { \</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">      if (!(x)) { \</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">          LAMBDA_CLIENT_ERROR(&quot;Assertion Failed: {0},&quot;, __VA_ARGS__); \</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">          LAMBDA_DEBUG_BREAK(); }}</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">  #define LAMBDA_CORE_ASSERT(x, ...) { \</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">      if (!(x)) { \</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">          LAMBDA_CORE_ERROR(&quot;Assertion Failed: {0},&quot;, __VA_ARGS__); \</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">          LAMBDA_DEBUG_BREAK(); }}</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">  #define LAMBDA_CLIENT_ASSERT(x, ...)</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="Assert_8h.html#a277ec9463ba33cfe44ae030e576f67c4">   37</a></span>&#160;<span class="preprocessor">  #define LAMBDA_CORE_ASSERT(x, ...)</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="Assert_8h.html#a75745a8226fcf51e2c9fab32062864fc">   38</a></span>&#160;<span class="preprocessor">#endif  // LAMBDA_ENABLE_ASSERTS</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif  // LAMBDA_SRC_LAMBDA_CORE_UTIL_ASSERT_H_</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">  #define LAMBDA_CLIENT_ASSERT(assertion, message, ...) { \</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">      if (!(assertion)) { \</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">          LAMBDA_CLIENT_ERROR( \</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">              &quot;Assertion Failed for {}: &quot;#message, \</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">              #assertion, \</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">              ##__VA_ARGS__); \</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">          LAMBDA_DEBUG_BREAK(); }}</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">  #define LAMBDA_CORE_ASSERT(assertion, message, ...) { \</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">      if (!(assertion)) { \</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">          LAMBDA_CORE_ERROR( \</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">              &quot;Assertion failed for the condition [{}]: &quot;#message, \</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">              #assertion, \</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">              ##__VA_ARGS__); \</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">          LAMBDA_DEBUG_BREAK(); }}</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">  #define LAMBDA_CLIENT_ASSERT(assertion, message, ...)</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="Assert_8h.html#a9714587c6abdcd77635c6aad57c2b239">   43</a></span>&#160;<span class="preprocessor">  #define LAMBDA_CORE_ASSERT(assertion, message, ...)</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="Assert_8h.html#a3072f6317d8021b1480e1489c9a8f497">   44</a></span>&#160;<span class="preprocessor">#endif  // LAMBDA_ENABLE_ASSERTS</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#endif  // LAMBDA_SRC_LAMBDA_CORE_UTIL_ASSERT_H_</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aLog_8h_html"><div class="ttname"><a href="Log_8h.html">Log.h</a></div><div class="ttdoc">The engines util utility.</div></div>

@@ -32,7 +32,7 @@ var NAVTREE =
       [ "Class Index", "classes.html", null ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
-        [ "All", "functions.html", null ],
+        [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", null ],
         [ "Typedefs", "functions_type.html", null ],
         [ "Enumerations", "functions_enum.html", null ]
@@ -52,7 +52,7 @@ var NAVTREEINDEX =
 [
 ".html",
 "classlambda_1_1core_1_1events_1_1MouseButtonReleasedEvent.html#a0f235b6f84eeee33d0ae564d2ab260cc",
-"core_2Window_8h.html"
+"classlambda_1_1platform_1_1opengl_1_1OpenGLTexture2D.html#a1da9b80cfbe7f9abc2e20d39beff225e"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

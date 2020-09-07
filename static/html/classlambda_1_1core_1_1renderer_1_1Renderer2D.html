@@ -116,6 +116,14 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1renderer_1_1Renderer2D.html#a278ed0977dea0e2fdf1e4f22cf38450e">DrawQuad</a> (const glm::vec3 &amp;position, const glm::vec2 &amp;size, const glm::vec4 &amp;color)</td></tr>
 <tr class="memdesc:a278ed0977dea0e2fdf1e4f22cf38450e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a quad given it's position, size, and color. <br /></td></tr>
 <tr class="separator:a278ed0977dea0e2fdf1e4f22cf38450e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b11fb4971681ab5addfc23fed479a91"><td class="memItemLeft" align="right" valign="top"><a id="a7b11fb4971681ab5addfc23fed479a91"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1renderer_1_1Renderer2D.html#a7b11fb4971681ab5addfc23fed479a91">DrawQuad</a> (const glm::vec2 &amp;position, const glm::vec2 &amp;size, core::memory::Shared&lt; <a class="el" href="classlambda_1_1core_1_1renderer_1_1Texture2D.html">Texture2D</a> &gt; texture)</td></tr>
+<tr class="memdesc:a7b11fb4971681ab5addfc23fed479a91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a quad given it's position, size, and <a class="el" href="classlambda_1_1core_1_1renderer_1_1Texture.html" title="The abstract texture API.">Texture</a>. <br /></td></tr>
+<tr class="separator:a7b11fb4971681ab5addfc23fed479a91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a602750d94a9eca9f2ecfa436de184d8c"><td class="memItemLeft" align="right" valign="top"><a id="a602750d94a9eca9f2ecfa436de184d8c"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlambda_1_1core_1_1renderer_1_1Renderer2D.html#a602750d94a9eca9f2ecfa436de184d8c">DrawQuad</a> (const glm::vec3 &amp;position, const glm::vec2 &amp;size, core::memory::Shared&lt; <a class="el" href="classlambda_1_1core_1_1renderer_1_1Texture2D.html">Texture2D</a> &gt; texture)</td></tr>
+<tr class="memdesc:a602750d94a9eca9f2ecfa436de184d8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a quad given it's position, size, and <a class="el" href="classlambda_1_1core_1_1renderer_1_1Texture.html" title="The abstract texture API.">Texture</a>. <br /></td></tr>
+<tr class="separator:a602750d94a9eca9f2ecfa436de184d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The 2D rendering API. </p>
@@ -247,7 +255,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div><div class="memdoc">
 
 <p>Shutdown the 2D rendering system. </p>
-<p>This will completely reset all of the memory owned by the the renderers storage system. In the future, this should be handled by our memory allocator system. </p>
+<p>This will completely reset all of the memory owned by the the renderers storage system. In the future, the memory allocator should ensure that resources are freed once the renderers storage has been released. </p>
 
 </div>
 </div>

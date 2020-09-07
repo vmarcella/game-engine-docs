@@ -144,49 +144,152 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a4645443c6bdf15c6ce5ce845e4e9387b"><td class="memItemLeft" align="right" valign="top"><a id="a4645443c6bdf15c6ce5ce845e4e9387b"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Log_8h.html#a4645443c6bdf15c6ce5ce845e4e9387b">LAMBDA_CORE_TRACE</a>(...)&#160;&#160;&#160;::lambda::core::util::Log::GetCoreLogger()-&gt;trace(__VA_ARGS__)</td></tr>
-<tr class="memdesc:a4645443c6bdf15c6ce5ce845e4e9387b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log tracing information within the engine. <br /></td></tr>
+<tr class="memitem:a4645443c6bdf15c6ce5ce845e4e9387b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Log_8h.html#a4645443c6bdf15c6ce5ce845e4e9387b">LAMBDA_CORE_TRACE</a>(...)</td></tr>
+<tr class="memdesc:a4645443c6bdf15c6ce5ce845e4e9387b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log tracing information within the engine.  <a href="Log_8h.html#a4645443c6bdf15c6ce5ce845e4e9387b">More...</a><br /></td></tr>
 <tr class="separator:a4645443c6bdf15c6ce5ce845e4e9387b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab350551e0bdde041ec250056213e25a6"><td class="memItemLeft" align="right" valign="top"><a id="ab350551e0bdde041ec250056213e25a6"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Log_8h.html#ab350551e0bdde041ec250056213e25a6">LAMBDA_CORE_INFO</a>(...)&#160;&#160;&#160;::lambda::core::util::Log::GetCoreLogger()-&gt;info(__VA_ARGS__)</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Log_8h.html#ab350551e0bdde041ec250056213e25a6">LAMBDA_CORE_INFO</a>(...)&#160;&#160;&#160;SPDLOG_LOGGER_INFO(::lambda::core::util::Log::GetCoreLogger(), __VA_ARGS__);</td></tr>
 <tr class="memdesc:ab350551e0bdde041ec250056213e25a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log informational information within the engine. <br /></td></tr>
 <tr class="separator:ab350551e0bdde041ec250056213e25a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7fdc0f830c10c5e68aefee6192a2e9d1"><td class="memItemLeft" align="right" valign="top"><a id="a7fdc0f830c10c5e68aefee6192a2e9d1"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Log_8h.html#a7fdc0f830c10c5e68aefee6192a2e9d1">LAMBDA_CORE_WARN</a>(...)&#160;&#160;&#160;::lambda::core::util::Log::GetCoreLogger()-&gt;warn(__VA_ARGS__)</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Log_8h.html#a7fdc0f830c10c5e68aefee6192a2e9d1">LAMBDA_CORE_WARN</a>(...)&#160;&#160;&#160;SPDLOG_LOGGER_WARN(::lambda::core::util::Log::GetCoreLogger(), __VA_ARGS__);</td></tr>
 <tr class="memdesc:a7fdc0f830c10c5e68aefee6192a2e9d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log warning information within the engine. <br /></td></tr>
 <tr class="separator:a7fdc0f830c10c5e68aefee6192a2e9d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed67b7a2d90134e256d18c22fbce4f16"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Log_8h.html#aed67b7a2d90134e256d18c22fbce4f16">LAMBDA_CORE_ERROR</a>(...)&#160;&#160;&#160;::lambda::core::util::Log::GetCoreLogger()-&gt;error(__VA_ARGS__)</td></tr>
+<tr class="memitem:aed67b7a2d90134e256d18c22fbce4f16"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Log_8h.html#aed67b7a2d90134e256d18c22fbce4f16">LAMBDA_CORE_ERROR</a>(...)</td></tr>
 <tr class="memdesc:aed67b7a2d90134e256d18c22fbce4f16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log error information within the engine.  <a href="Log_8h.html#aed67b7a2d90134e256d18c22fbce4f16">More...</a><br /></td></tr>
 <tr class="separator:aed67b7a2d90134e256d18c22fbce4f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5b660a062ae0414be34cbbdaa00fdeb"><td class="memItemLeft" align="right" valign="top"><a id="af5b660a062ae0414be34cbbdaa00fdeb"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>LAMBDA_CORE_FATAL</b>(...)&#160;&#160;&#160;::lambda::core::util::Log::GetCoreLogger()-&gt;fatal(__VA_ARGS__)</td></tr>
+<tr class="memitem:af5b660a062ae0414be34cbbdaa00fdeb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>LAMBDA_CORE_FATAL</b>(...)</td></tr>
 <tr class="separator:af5b660a062ae0414be34cbbdaa00fdeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7dd270979f01739a9945ae4bb65bd98"><td class="memItemLeft" align="right" valign="top"><a id="af7dd270979f01739a9945ae4bb65bd98"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Log_8h.html#af7dd270979f01739a9945ae4bb65bd98">LAMBDA_CLIENT_TRACE</a>(...)&#160;&#160;&#160;::lambda::core::util::Log::GetClientLogger()-&gt;trace(__VA_ARGS__)</td></tr>
-<tr class="memdesc:af7dd270979f01739a9945ae4bb65bd98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log tracing information within the application. <br /></td></tr>
+<tr class="memitem:af7dd270979f01739a9945ae4bb65bd98"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Log_8h.html#af7dd270979f01739a9945ae4bb65bd98">LAMBDA_CLIENT_TRACE</a>(...)</td></tr>
+<tr class="memdesc:af7dd270979f01739a9945ae4bb65bd98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log tracing information within the application.  <a href="Log_8h.html#af7dd270979f01739a9945ae4bb65bd98">More...</a><br /></td></tr>
 <tr class="separator:af7dd270979f01739a9945ae4bb65bd98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e48dd618def0abe6995e89f33b1ae85"><td class="memItemLeft" align="right" valign="top"><a id="a5e48dd618def0abe6995e89f33b1ae85"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Log_8h.html#a5e48dd618def0abe6995e89f33b1ae85">LAMBDA_CLIENT_INFO</a>(...)&#160;&#160;&#160;::lambda::core::util::Log::GetClientLogger()-&gt;info(__VA_ARGS__)</td></tr>
-<tr class="memdesc:a5e48dd618def0abe6995e89f33b1ae85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log informational information within the application. <br /></td></tr>
+<tr class="memitem:a5e48dd618def0abe6995e89f33b1ae85"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Log_8h.html#a5e48dd618def0abe6995e89f33b1ae85">LAMBDA_CLIENT_INFO</a>(...)</td></tr>
+<tr class="memdesc:a5e48dd618def0abe6995e89f33b1ae85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log informational information within the application.  <a href="Log_8h.html#a5e48dd618def0abe6995e89f33b1ae85">More...</a><br /></td></tr>
 <tr class="separator:a5e48dd618def0abe6995e89f33b1ae85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefefce9598626949609abe71f5090f8f"><td class="memItemLeft" align="right" valign="top"><a id="aefefce9598626949609abe71f5090f8f"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Log_8h.html#aefefce9598626949609abe71f5090f8f">LAMBDA_CLIENT_WARN</a>(...)&#160;&#160;&#160;::lambda::core::util::Log::GetClientLogger()-&gt;warn(__VA_ARGS__)</td></tr>
-<tr class="memdesc:aefefce9598626949609abe71f5090f8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log warning information within the application. <br /></td></tr>
+<tr class="memitem:aefefce9598626949609abe71f5090f8f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Log_8h.html#aefefce9598626949609abe71f5090f8f">LAMBDA_CLIENT_WARN</a>(...)</td></tr>
+<tr class="memdesc:aefefce9598626949609abe71f5090f8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log warning information within the application.  <a href="Log_8h.html#aefefce9598626949609abe71f5090f8f">More...</a><br /></td></tr>
 <tr class="separator:aefefce9598626949609abe71f5090f8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab358dd1138472e546b2e238a9e10b7f9"><td class="memItemLeft" align="right" valign="top"><a id="ab358dd1138472e546b2e238a9e10b7f9"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Log_8h.html#ab358dd1138472e546b2e238a9e10b7f9">LAMBDA_CLIENT_ERROR</a>(...)&#160;&#160;&#160;::lambda::core::util::Log::GetClientLogger()-&gt;error(__VA_ARGS__)</td></tr>
-<tr class="memdesc:ab358dd1138472e546b2e238a9e10b7f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log error information within the application. <br /></td></tr>
+<tr class="memitem:ab358dd1138472e546b2e238a9e10b7f9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Log_8h.html#ab358dd1138472e546b2e238a9e10b7f9">LAMBDA_CLIENT_ERROR</a>(...)</td></tr>
+<tr class="memdesc:ab358dd1138472e546b2e238a9e10b7f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log error information within the application.  <a href="Log_8h.html#ab358dd1138472e546b2e238a9e10b7f9">More...</a><br /></td></tr>
 <tr class="separator:ab358dd1138472e546b2e238a9e10b7f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52f1de866a56eaea50b5aa0b1f29e101"><td class="memItemLeft" align="right" valign="top"><a id="a52f1de866a56eaea50b5aa0b1f29e101"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Log_8h.html#a52f1de866a56eaea50b5aa0b1f29e101">LAMBDA_CLIENT_FATAL</a>(...)&#160;&#160;&#160;::lambda::core::util::Log::GetClientLogger()-&gt;fatal(__VA_ARGS__)</td></tr>
-<tr class="memdesc:a52f1de866a56eaea50b5aa0b1f29e101"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log fatal information within the application. <br /></td></tr>
+<tr class="memitem:a52f1de866a56eaea50b5aa0b1f29e101"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Log_8h.html#a52f1de866a56eaea50b5aa0b1f29e101">LAMBDA_CLIENT_FATAL</a>(...)</td></tr>
+<tr class="memdesc:a52f1de866a56eaea50b5aa0b1f29e101"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log fatal information within the application.  <a href="Log_8h.html#a52f1de866a56eaea50b5aa0b1f29e101">More...</a><br /></td></tr>
 <tr class="separator:a52f1de866a56eaea50b5aa0b1f29e101"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The engines util utility. </p>
 <p>Can be used both in the engine and client application. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ab358dd1138472e546b2e238a9e10b7f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab358dd1138472e546b2e238a9e10b7f9">&#9670;&nbsp;</a></span>LAMBDA_CLIENT_ERROR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LAMBDA_CLIENT_ERROR</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">    SPDLOG_LOGGER_ERROR( \</div>
+<div class="line">        ::lambda::core::util::Log::GetClientLogger(), __VA_ARGS__);</div>
+</div><!-- fragment -->
+<p>Log error information within the application. </p>
+
+</div>
+</div>
+<a id="a52f1de866a56eaea50b5aa0b1f29e101"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52f1de866a56eaea50b5aa0b1f29e101">&#9670;&nbsp;</a></span>LAMBDA_CLIENT_FATAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LAMBDA_CLIENT_FATAL</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">    SPDLOG_LOGGER_FATAL( \</div>
+<div class="line">        ::lambda::core::util::Log::GetClientLogger(), __VA_ARGS__);</div>
+</div><!-- fragment -->
+<p>Log fatal information within the application. </p>
+
+</div>
+</div>
+<a id="a5e48dd618def0abe6995e89f33b1ae85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e48dd618def0abe6995e89f33b1ae85">&#9670;&nbsp;</a></span>LAMBDA_CLIENT_INFO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LAMBDA_CLIENT_INFO</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">    SPDLOG_LOGGER_INFO(\</div>
+<div class="line">        ::lambda::core::util::Log::GetClientLogger(), __VA_ARGS__);</div>
+</div><!-- fragment -->
+<p>Log informational information within the application. </p>
+
+</div>
+</div>
+<a id="af7dd270979f01739a9945ae4bb65bd98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7dd270979f01739a9945ae4bb65bd98">&#9670;&nbsp;</a></span>LAMBDA_CLIENT_TRACE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LAMBDA_CLIENT_TRACE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">    SPDLOG_LOGGER_TRACE( \</div>
+<div class="line">        ::lambda::core::util::Log::GetClientLogger(), __VA_ARGS__);</div>
+</div><!-- fragment -->
+<p>Log tracing information within the application. </p>
+
+</div>
+</div>
+<a id="aefefce9598626949609abe71f5090f8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefefce9598626949609abe71f5090f8f">&#9670;&nbsp;</a></span>LAMBDA_CLIENT_WARN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LAMBDA_CLIENT_WARN</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">    SPDLOG_LOGGER_WARN( \</div>
+<div class="line">        ::lambda::core::util::Log::GetClientLogger(), __VA_ARGS__);</div>
+</div><!-- fragment -->
+<p>Log warning information within the application. </p>
+
+</div>
+</div>
 <a id="aed67b7a2d90134e256d18c22fbce4f16"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aed67b7a2d90134e256d18c22fbce4f16">&#9670;&nbsp;</a></span>LAMBDA_CORE_ERROR</h2>
 
@@ -198,13 +301,57 @@ Macros</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>...</em></td><td>)</td>
-          <td>&#160;&#160;&#160;::lambda::core::util::Log::GetCoreLogger()-&gt;error(__VA_ARGS__)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<b>Value:</b><div class="fragment"><div class="line">    SPDLOG_LOGGER_ERROR( \</div>
+<div class="line">        ::lambda::core::util::Log::GetCoreLogger(), __VA_ARGS__);</div>
+</div><!-- fragment -->
 <p>Log error information within the engine. </p>
 <p>Log fatal information within the engine. </p>
+
+</div>
+</div>
+<a id="af5b660a062ae0414be34cbbdaa00fdeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5b660a062ae0414be34cbbdaa00fdeb">&#9670;&nbsp;</a></span>LAMBDA_CORE_FATAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LAMBDA_CORE_FATAL</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">    SPDLOG_LOGGER_FATAL( \</div>
+<div class="line">        ::lambda::core::util::Log::GetCoreLogger(), __VA_ARGS__);</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a4645443c6bdf15c6ce5ce845e4e9387b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4645443c6bdf15c6ce5ce845e4e9387b">&#9670;&nbsp;</a></span>LAMBDA_CORE_TRACE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LAMBDA_CORE_TRACE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">    SPDLOG_LOGGER_TRACE( \</div>
+<div class="line">        ::lambda::core::util::Log::GetCoreLogger(), __VA_ARGS__);</div>
+</div><!-- fragment -->
+<p>Log tracing information within the engine. </p>
 
 </div>
 </div>

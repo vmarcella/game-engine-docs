@@ -119,36 +119,44 @@ $(document).ready(function(){initNavTree('Log_8h_source.html',''); initResizable
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}  <span class="comment">// namespace lambda</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#define LAMBDA_CORE_TRACE(...) \</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="Log_8h.html#a4645443c6bdf15c6ce5ce845e4e9387b">   44</a></span>&#160;<span class="preprocessor">    ::lambda::core::util::Log::GetCoreLogger()-&gt;trace(__VA_ARGS__)</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#define LAMBDA_CORE_INFO(...)  \</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="Log_8h.html#ab350551e0bdde041ec250056213e25a6">   49</a></span>&#160;<span class="preprocessor">    ::lambda::core::util::Log::GetCoreLogger()-&gt;info(__VA_ARGS__)</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#define LAMBDA_CORE_WARN(...)  \</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="Log_8h.html#a7fdc0f830c10c5e68aefee6192a2e9d1">   54</a></span>&#160;<span class="preprocessor">    ::lambda::core::util::Log::GetCoreLogger()-&gt;warn(__VA_ARGS__)</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#define LAMBDA_CORE_ERROR(...) \</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">    ::lambda::core::util::Log::GetCoreLogger()-&gt;error(__VA_ARGS__)</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#define LAMBDA_CORE_FATAL(...) \</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">    ::lambda::core::util::Log::GetCoreLogger()-&gt;fatal(__VA_ARGS__)</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#define LAMBDA_CLIENT_TRACE(...) \</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="Log_8h.html#af7dd270979f01739a9945ae4bb65bd98">   69</a></span>&#160;<span class="preprocessor">    ::lambda::core::util::Log::GetClientLogger()-&gt;trace(__VA_ARGS__)</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#define LAMBDA_CLIENT_INFO(...)  \</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="Log_8h.html#a5e48dd618def0abe6995e89f33b1ae85">   74</a></span>&#160;<span class="preprocessor">    ::lambda::core::util::Log::GetClientLogger()-&gt;info(__VA_ARGS__)</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#define LAMBDA_CLIENT_WARN(...)  \</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="Log_8h.html#aefefce9598626949609abe71f5090f8f">   79</a></span>&#160;<span class="preprocessor">    ::lambda::core::util::Log::GetClientLogger()-&gt;warn(__VA_ARGS__)</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="Log_8h.html#a4645443c6bdf15c6ce5ce845e4e9387b">   44</a></span>&#160;<span class="preprocessor">    SPDLOG_LOGGER_TRACE( \</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">        ::lambda::core::util::Log::GetCoreLogger(), __VA_ARGS__);</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#define LAMBDA_CORE_INFO(...)  \</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="Log_8h.html#ab350551e0bdde041ec250056213e25a6">   50</a></span>&#160;<span class="preprocessor">    SPDLOG_LOGGER_INFO(::lambda::core::util::Log::GetCoreLogger(), __VA_ARGS__);</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#define LAMBDA_CORE_WARN(...)  \</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="Log_8h.html#a7fdc0f830c10c5e68aefee6192a2e9d1">   55</a></span>&#160;<span class="preprocessor">    SPDLOG_LOGGER_WARN(::lambda::core::util::Log::GetCoreLogger(), __VA_ARGS__);</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#define LAMBDA_CORE_ERROR(...) \</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">    SPDLOG_LOGGER_ERROR( \</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">        ::lambda::core::util::Log::GetCoreLogger(), __VA_ARGS__);</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#define LAMBDA_CORE_FATAL(...) \</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">    SPDLOG_LOGGER_FATAL( \</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">        ::lambda::core::util::Log::GetCoreLogger(), __VA_ARGS__);</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#define LAMBDA_CLIENT_TRACE(...) \</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="Log_8h.html#af7dd270979f01739a9945ae4bb65bd98">   72</a></span>&#160;<span class="preprocessor">    SPDLOG_LOGGER_TRACE( \</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">        ::lambda::core::util::Log::GetClientLogger(), __VA_ARGS__);</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#define LAMBDA_CLIENT_INFO(...)  \</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="Log_8h.html#a5e48dd618def0abe6995e89f33b1ae85">   78</a></span>&#160;<span class="preprocessor">    SPDLOG_LOGGER_INFO(\</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">        ::lambda::core::util::Log::GetClientLogger(), __VA_ARGS__);</span></div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#define LAMBDA_CLIENT_ERROR(...) \</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="Log_8h.html#ab358dd1138472e546b2e238a9e10b7f9">   84</a></span>&#160;<span class="preprocessor">    ::lambda::core::util::Log::GetClientLogger()-&gt;error(__VA_ARGS__)</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#define LAMBDA_CLIENT_FATAL(...) \</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="Log_8h.html#a52f1de866a56eaea50b5aa0b1f29e101">   89</a></span>&#160;<span class="preprocessor">    ::lambda::core::util::Log::GetClientLogger()-&gt;fatal(__VA_ARGS__)</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#endif  // LAMBDA_SRC_LAMBDA_CORE_UTIL_LOG_H_</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#define LAMBDA_CLIENT_WARN(...)  \</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="Log_8h.html#aefefce9598626949609abe71f5090f8f">   84</a></span>&#160;<span class="preprocessor">    SPDLOG_LOGGER_WARN( \</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">        ::lambda::core::util::Log::GetClientLogger(), __VA_ARGS__);</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">#define LAMBDA_CLIENT_ERROR(...) \</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="Log_8h.html#ab358dd1138472e546b2e238a9e10b7f9">   90</a></span>&#160;<span class="preprocessor">    SPDLOG_LOGGER_ERROR( \</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">        ::lambda::core::util::Log::GetClientLogger(), __VA_ARGS__);</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">#define LAMBDA_CLIENT_FATAL(...) \</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="Log_8h.html#a52f1de866a56eaea50b5aa0b1f29e101">   96</a></span>&#160;<span class="preprocessor">    SPDLOG_LOGGER_FATAL( \</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">        ::lambda::core::util::Log::GetClientLogger(), __VA_ARGS__);</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#endif  // LAMBDA_SRC_LAMBDA_CORE_UTIL_LOG_H_</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclasslambda_1_1core_1_1util_1_1Log_html"><div class="ttname"><a href="classlambda_1_1core_1_1util_1_1Log.html">lambda::core::util::Log</a></div><div class="ttdoc">The engine wide logging API. Should primarily be used through the macros exposed at the bottom of the...</div><div class="ttdef"><b>Definition:</b> Log.h:22</div></div>

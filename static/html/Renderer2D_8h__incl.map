@@ -1,6 +1,11 @@
 <map id="lambda/src/Lambda/core/renderer/Renderer2D.h" name="lambda/src/Lambda/core/renderer/Renderer2D.h">
-<area shape="rect" id="node1" title="The 2D rendering implementation." alt="" coords="58,5,241,47"/>
-<area shape="rect" id="node2" href="$OrthographicCamera_8h.html" title="A 2D orthographic camera implementation that is compatible with the renderer." alt="" coords="63,95,236,136"/>
-<area shape="rect" id="node3" title=" " alt="" coords="5,184,109,211"/>
-<area shape="rect" id="node4" title=" " alt="" coords="134,184,351,211"/>
+<area shape="rect" id="node1" title="The 2D rendering implementation." alt="" coords="367,5,549,47"/>
+<area shape="rect" id="node2" href="$Pointers_8h.html" title="Abstraction for handling pointers within the engine. Currently just aliases for unique and shared poi..." alt="" coords="375,184,541,225"/>
+<area shape="rect" id="node4" href="$OrthographicCamera_8h.html" title="A 2D orthographic camera implementation that is compatible with the renderer." alt="" coords="213,95,386,136"/>
+<area shape="rect" id="node7" href="$Texture_8h.html" title="The Abstract Texture implementation." alt="" coords="503,95,669,136"/>
+<area shape="rect" id="node3" title=" " alt="" coords="419,273,497,300"/>
+<area shape="rect" id="node5" title=" " alt="" coords="247,191,351,218"/>
+<area shape="rect" id="node6" title=" " alt="" coords="5,191,223,218"/>
+<area shape="rect" id="node8" title=" " alt="" coords="648,191,785,218"/>
+<area shape="rect" id="node9" title=" " alt="" coords="565,191,623,218"/>
 </map>
